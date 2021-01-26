@@ -1,0 +1,326 @@
+body  {    
+    margin: 0 ;
+    padding: 0px ;
+      
+}
+ 
+ul , li{
+    padding: 0px;
+    margin: 0px;
+}
+
+.all{
+    width: 100vw;
+    padding: 0 5vw ;
+    
+    
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    display: flex;
+    align-content: center;      
+}
+
+.nav{
+    width: 100%;
+    height: 54px;
+       
+    display: flex;
+    justify-content: space-between;     
+}
+
+.navleft{    
+    display: flex;
+}
+
+.logo{    
+    width: 137px;
+    height: 53px;
+
+    margin-left: 5px;
+    padding:15px 15px 15px 0px;
+    box-sizing: border-box;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cont{
+    display: flex;
+}
+
+.navright{
+    margin-right: 0px;
+    display: flex;
+}
+
+.ul1{
+    margin: auto;
+}
+
+.litop , .litop1{
+    padding:0px 0px 0px 12px;
+    margin-right:0px ; 
+
+    font-size: 13px;
+    list-style: none;
+
+    display: inline;
+}
+
+.banner{
+    width: 100%;
+    margin: auto;
+    
+    position: relative;  
+}
+
+.bnc{
+    display: none;
+
+}    
+
+.bnc2{
+    display: none;
+}
+
+/* 絕對位置 */
+.xx1{
+    position: absolute;
+    top: calc(50% - 61px);
+    left: 80px ;   
+}
+
+.bannerpic{
+    width: 100%;
+    height: 65vh;
+   
+    padding: 0px ;
+       
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    position: relative;       
+}
+
+.bannertittle{
+    font-size: 34px;
+    font-weight: 600;    
+}
+
+.bannercontent{
+    font-size: 15px;
+    margin:15px 0px 25px 0px;
+}
+
+.bannerbutton{
+    padding: 10px;
+    margin-top: 25px;
+
+    background-color: black;
+}
+
+.x1{
+    background-color: black;
+    color: white;
+}
+
+.x1:hover{
+    text-decoration:underline;
+    
+}
+
+.box{
+    width: 100%;
+    height: 129px;
+
+    padding-top: 48px;
+    
+    display: flex;
+}
+
+.allicon{    
+    margin: auto;    
+    display: flex;       
+}
+
+.icon{
+    width: 184px;
+    height: 112px;
+    
+    
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+}
+
+.iconpic{
+    width: 40px;
+    height: 40px;
+
+    margin: auto;        
+    margin-bottom: 8px; 
+}
+
+.icon1{
+    width: 125px;
+    height: 40px;
+
+    display: flex;
+    text-align: center;
+    margin: auto;
+    line-height: 20px; 
+
+    font-size: 15px;    
+}
+
+.icon1:hover{
+    text-decoration:underline;    
+}
+
+.content1{
+    width: 100%;
+    padding-top: 16px;
+
+    display: flex;     
+}
+
+.box2{
+    width: 100%;
+    padding-bottom: 60px;    
+}
+
+.box2-1{
+    width: 98%;
+}
+.box2pic{
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: auto;      
+}
+
+.box2pic:hover{
+    opacity: 0.6;
+}
+
+.box2tittle{    
+    height: 7px;
+
+    margin-top: 37px;
+    font-size: 20px;
+    font-family: 'Segoe UI',SegoeUI,'Microsoft JhengHei',微軟正黑體,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;    
+}
+
+.box2content{
+    width:100%;
+    height: 40px;
+
+    font-size: 15px;
+
+    margin-top: 25px;
+}
+
+.box2link{
+    color: blue;
+    padding-top: 8px;
+    font-weight: 700;
+}
+
+.box2link:hover{
+    text-decoration:underline;
+    text-decoration-color: blue;   
+}
+
+.tittle2{
+    padding: 30px 0px 10px 0px;
+    
+    font-size: 25px;   
+    font-family: 'Segoe UI',SegoeUI,'Microsoft JhengHei',微軟正黑體,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+}
+
+.iconlast{
+    margin: 50px 0px;
+}
+
+.fb{
+    color: rgb(52, 52, 173);
+    font-size: 25px;
+
+    padding-right: 15px; 
+}
+
+.yt{
+    color: red;
+    font-size: 25px;
+
+    padding-right: 15px; 
+}
+
+.lastall{
+   padding-right: 15px; 
+   margin: auto;
+}
+
+.footerall{
+    width: 100vw;
+    background-color: rgba(201, 199, 199, 0.267);
+}
+
+.footer{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    
+    margin: auto;   
+}
+
+.footerbox{
+    width: 20%;
+    padding: 36px 0px 4px 0px;
+}
+
+.lilast{
+    display: inherit;
+    padding: 0px;
+    font-size: 12px;
+    padding: 8px 0px;    
+}
+
+.lilast:hover{
+    text-decoration:underline;
+}
+
+
+.litop{
+    text-decoration:none;
+}
+
+.litop:hover{
+    text-decoration:underline;
+}
+
+.fa-angle-right{
+    color: blue;
+}
+
+a{
+    text-decoration:none;
+    color: black;    
+}
+
+.white{
+    color: white;
+}
+
+.blue{
+    color: blue;
+}
+
+
+    
