@@ -67,14 +67,19 @@
         .cards{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            /* justify-content: space-between; */
         }
         .box{
             width: 350px;
             padding: 50px 20px;
             font-size: 26px;
             font-weight: 600;
+            margin-right: 33.3333px;
             color: rgb(121, 114, 102);
+        }
+
+        .box:nth-child(4n){
+            margin-right: 0px;
         }
 
         
@@ -219,12 +224,15 @@
                     btn.classList.remove("active")
                 }
             }); 
-        }                                    
+        } 
+        
+       
+        
         
 
         // html裡面的onclick事件
         function text(i,object) {
-
+            console.log(object);
             // 清除所有內容
             clearall()
 
@@ -239,7 +247,8 @@
 
                 // 假設text(i==card裡面的tag1或tag2)
                 if (i==card.tag1|| i==card.tag2) {
-                // 若i符合card裡面的內容則顯示    
+                // 若i符合card裡面的內容則顯示  
+                // console.log(card.tag1);  
                     add(card)
                                         
                 } 
