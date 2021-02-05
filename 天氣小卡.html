@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0px;
+        }
+
+        
+
+        nav{
+            width: 100vw;
+            display: flex;
+            background-color: brown;
+            
+        }
+
+        .navbar{
+            max-width: 1500px;
+            height: 100px;
+            
+            background-color: brown;
+            justify-content: center;
+            margin: auto;
+            
+        }
+
+        .box{
+            font-size: 50px;
+            font-weight: 800;
+            line-height: 100px; 
+        }
+
+        section{
+            display: flex;
+            /* background-color: burlywood; */
+            background-color: bisque;
+        }
+
+        .content{
+            width: 1600px;
+            min-height: calc(100vh - 50px);
+            background-color: bisque;
+            margin: auto;
+            
+            
+            
+        }
+        .card{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .cards{
+            width: 400px;
+            margin:15px 10px;
+                                  
+        }
+        
+        p{
+            margin-top: 0px;
+        }
+
+        .img{
+            width: 100%;
+            height: 280px;
+            
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+
+        }
+        .cont{
+            padding: 10px 0px 10px 20px;
+            width: 100%;
+            
+            /* background-color: coral; */
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <div class="navbar ">
+        <div class="box">天氣小卡</div>
+    </div>
+</nav>
+<main>
+    <section>
+        <div class="content ">
+            <div class="card">
+                <!-- <div class="img">
+                    <img src="" alt="">
+                </div>
+                <div class="cont">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+</main>
+
+    <script>
+        fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-B5282D9D-8FDD-40E9-AD48-B1DF3270465D')
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(weather) {
+                
+                var weatherecontent = weather.records.location
+
+                weatherecontent.forEach(element => {
+                    
+                    var ciytname =element.locationName
+                    var wx =element.weatherElement[0].time[0].parameter.parameterName
+                    var pop =element.weatherElement[1].time[0].parameter.parameterName 
+                    var mint =element.weatherElement[2].time[0].parameter.parameterName 
+                    var ci =element.weatherElement[3].time[0].parameter.parameterName
+                    var maxt =element.weatherElement[4].time[0].parameter.parameterName 
+
+                    var pic
+                    
+                    if (pop>=50) {
+                        pic="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPmv4v_Hc2EVF637RYHRp1MBvLADHmL-Lwjg&usqp=CAU"
+                        
+                        
+                    }else if(pop>0){
+                        pic="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShWzf4qnhRJSCyThXdDstq7XPsGaD58vMFTw&usqp=CAU"
+
+                    }else if(pop==0){
+                        
+                        pic="https://n.sinaimg.cn/translate/499/w600h699/20190122/LxEG-hryfqhk8267670.gif"
+                    }
+                        
+                    
+
+                       allcard.innerHTML +=` 
+            <div class="cards">
+                <div class="img">
+                    <img src="${pic}" alt="">
+                    
+                </div>
+                <div class="cont">
+                    <p>${ciytname}</p>
+                    <p>天氣現象${wx}</p>
+                    <p>最高溫度${maxt}</p>
+                    <p>最低溫度${mint}</p>
+                    <p>舒適度${ci}</p>
+                    <p>降雨機率${pop}</p>
+                </div>
+            </div>` 
+
+                });
+
+             
+            
+            });
+
+            var allcard = document.querySelector(".card")
+
+            
+
+    </script>
+</body>
+</html>

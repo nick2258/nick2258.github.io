@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上益家具存貨系統</title>
+    <style>
+
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        margin: 0px;
+        display: flex;
+    }
+
+    nav{
+        width: 300px;
+        height: auto;
+        background-attachment: fixed;
+        background-color: bisque;
+        display: flex;
+        
+        flex-direction: column;
+    }
+
+    .btn{
+        width: 70%;
+        height: 100px;
+        background-color: rgb(136, 78, 45);
+        margin: auto;
+        font-size: 30px;
+        font-weight: 800;
+        color: rgb(233, 228, 221);
+        text-align: center;
+        line-height: 100px;
+    }
+
+    .btn.active{
+        background-color: rgb(62, 45, 136);
+        
+    }
+
+    main{
+        width: calc(100% - 300px);
+        min-height: 100vh;
+        /* background-color: cornflowerblue; */
+        background-color: gainsboro;
+    }
+    .allcards{        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .card{
+        width: 450px;
+        margin: 20px 10px 0px 10px;
+         
+    }
+
+    .name{
+        width: 100%;
+        background-color: rgb(158, 131, 80);
+        padding: 10px 0px;
+        font-size: 30px;
+        font-weight: 800;
+        text-align: center;
+        color: burlywood;
+    }
+
+    .img{
+        width: 100%;
+        
+        background-color: rgb(197, 204, 226);
+   
+    }
+
+    img{
+        width: 100%;
+        height: 300px;
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .sale{
+        width: 100%;
+        height: 40px;
+        position: absolute;
+        top: -40px;
+        background-color: rgba(255, 0, 0, 0.884);
+        opacity: 0.8;
+        color: rgb(233, 228, 221);
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 40px;
+
+    }
+
+    .text{
+        width: 100%;
+        /* height: 80px; */
+        background-color:rgb(104, 104, 196);
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding: 20px 0px;
+    }
+
+    
+
+    .all  {
+        width: 50%;
+        /* height: 50px; */
+        font-size: 24px;
+        color: bisque;
+        padding: 0px ;
+        text-align: center;
+    }
+
+    .alltext{
+        font-size: 16px;
+    }
+
+    .price{
+        width: 50%;
+          
+        font-size: 24px;
+        color: bisque;
+        padding-top: 3px ;
+        text-align: center;
+
+    }
+     
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="btn " data-amount="0">台中廠</div>
+        <div class="btn" data-amount="1">高雄廠</div>
+        <div class="btn" data-amount="2">台北廠</div>
+    </nav>
+    <main>
+        <section>
+            <div class="allcards"></div>
+            
+        </section>
+       
+    </main>
+   
+    <script>
+        // 資料網址
+        // https://run.mocky.io/v3/a1bd9f89-926c-46ac-930a-1d1cae8dd7e5
+       
+        var btns = document.querySelectorAll(".btn")
+
+        btns.forEach(btn => {
+            
+
+            btn.onclick = function () {
+                
+            btn.classList.add("active")    
+            btn.classList.remove("active")
+            
+            
+            // 帶入btn.dataset.amount值
+            allvalue(btn.dataset.amount) ;
+            
+                          
+            }
+            
+        });
+
+        // locationamount為任何值帶入這個function的名稱，並非數值
+        function allvalue(locationamount){
+
+            var allcard = document.querySelector(".allcards")
+
+            // 刪除所有內容
+            allcard.innerHTML=``
+        fetch('https://run.mocky.io/v3/a1bd9f89-926c-46ac-930a-1d1cae8dd7e5')
+        .then(function(response) {
+        return response.json();
+        })
+        .then(function(card) {
+           
+            var cards = card.records.product
+                cards.forEach(element => {
+                        // 品名
+                        var name = element.productName
+                        // 圖
+                        var pic = element.imageURL
+                        // 數量
+                        var amounts = element.states.stock.location[locationamount].amount 
+                        // 打折後售價
+                        var cost =(element.states.sale.price)*(element.states.sale.onsale)
+                        // 幾折
+                        var onsale = element.states.sale.onsale
+                        // 讓onsale變成字串，並將當中0.變成沒有東西
+                        onsale = onsale.toString().replace("0.","")
+
+                    // 1.正常 amounts>3
+                    // 2.0<數量<=3 (amounts<=3 && amounts>0)
+                    
+                    // 4.有折扣(onsale!=1)
+                    // 5.數量小於3又有折扣(amounts<=3 && amounts>0 && onsale!=1)
+                    // 3.沒有貨 (amount==0)
+                    var textstyle
+                    if(amounts>3){
+                        textstyle =`
+                        <div class="text">
+                            <span class="all">存貨:${amounts}個</span>
+                            <span class="price">售價${cost}元</span>
+                        </div>
+                        `
+                    }
+
+                    if(amounts<=3 && amounts>0){
+                        textstyle =`
+                        <div class="text">
+                            
+                            <span class="all">存貨:
+                                <span class="alltext">最後</span>${amounts}個
+                            </span>
+                            <span class="price">售價${cost}元</span>
+                        </div>
+                        `
+                    }
+
+                    if(onsale!=1){
+                        textstyle =`
+                        <div class="text">
+                            <div class="sale">85折優惠中 </div>
+                            <span class="all">存貨:${amounts}個</span>
+                            <span class="price">售價${cost}元</span>
+                        </div>
+                        `
+                    }
+
+                    if(amounts<=3 && amounts>0 && onsale!=1){
+                        textstyle =`
+                        <div class="text">
+                            <div class="sale">85折優惠中 </div>
+                            <span class="all">存貨:
+                                <span class="alltext">最後</span>${amounts}個
+                            </span>
+                            <span class="price">售價${cost}元</span>
+                        </div>
+                        `
+                    }
+                    // 要最後寫以免跟折扣重複判讀
+                    if(amounts==0){
+                        textstyle =`
+                        <div class="text">
+                            <span class="all">暫無存貨</span>
+                            
+                        </div>
+                        `
+                    }
+
+                        allcard.innerHTML +=`
+                            <div class="card">
+                                <div class="name">${name}</div>
+                                <div class="img">                                
+                                    <img src="${pic}" alt="">
+                            </div>
+                            ${textstyle}
+                            </div>
+                            `                        
+                    });             
+            });
+            }
+        
+               
+            
+                           
+  
+    </script>
+</body>
+
+</html>
