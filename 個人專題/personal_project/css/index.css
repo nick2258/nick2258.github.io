@@ -146,6 +146,15 @@ nav .mr-auto .nav-item.active .nav-link:hover {
   color: #605D4F;
 }
 
+nav .mr-auto .dropdown-menu {
+  background-color: #D9CEC5;
+  border: 0px;
+}
+
+nav .mr-auto .dropdown-menu .dropdown-item {
+  background-color: transparent;
+}
+
 main {
   overflow-x: hidden;
   max-width: 1920px;
@@ -164,7 +173,13 @@ main .banner .pic {
 
 main .banner .pic .img {
   width: 100%;
-  height: 873px;
+  height: auto;
+}
+
+@media screen and (max-width: 1279px) {
+  main .banner .pic .img {
+    height: auto;
+  }
 }
 
 main .banner .pic .name {
@@ -178,10 +193,14 @@ main .banner .pic .name {
   position: absolute;
   right: 5vw;
   top: 10vw;
-  width: 15vw;
-  height: auto;
   background-color: rgba(255, 255, 255, 0.644);
   padding: 30px;
+}
+
+@media screen and (max-width: 1280px) {
+  main .banner .pic .name {
+    padding: 20px;
+  }
 }
 
 main .banner .pic .name img {
@@ -190,14 +209,18 @@ main .banner .pic .name img {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1600px) {
+  main .banner .pic .name img {
+    margin-bottom: 20px;
+  }
+}
+
 main .banner .pic .name img:nth-child(1) {
-  -webkit-transform: translateX(5vw);
-          transform: translateX(5vw);
+  margin-left: 5vw;
 }
 
 main .banner .pic .name img:nth-child(2) {
-  -webkit-transform: translateX(5vw);
-          transform: translateX(5vw);
+  margin-left: 5vw;
 }
 
 main .management {
@@ -245,9 +268,30 @@ main .management .top .title {
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1279px) {
   main .management .top .title {
-    font-size: 32px;
+    font-size: 34px;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  main .management .top .title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .management .top .title {
+    font-size: 28px;
+    margin-top: -20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .management .top .title {
+    font-size: 24px;
+    margin-top: -20px;
   }
 }
 
@@ -268,6 +312,35 @@ main .management .top .title .text {
 @media screen and (max-width: 1720px) {
   main .management .top .title .text {
     height: 42vw;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  main .management .top .title .text {
+    height: 43vw;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  main .management .top .title .text {
+    height: 47vw;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .management .top .title .text {
+    height: 48vw;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .management .top .title .text {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
 }
 
@@ -305,6 +378,12 @@ main .management .bottom .mycontainer {
   max-width: calc(100% - 10vw);
 }
 
+@media screen and (max-width: 1279px) {
+  main .management .bottom .mycontainer {
+    margin-top: 30px;
+  }
+}
+
 main .management .bottom .mycontainer .title {
   text-align: center;
   font-weight: bold;
@@ -325,7 +404,13 @@ main .management .bottom .mycontainer .title {
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1279px) {
+  main .management .bottom .mycontainer .title {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 1110px) {
   main .management .bottom .mycontainer .title {
     font-size: 32px;
   }
@@ -350,6 +435,12 @@ main .management .bottom .mycontainer .text {
 @media screen and (max-width: 1400px) {
   main .management .bottom .mycontainer .text {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .management .bottom .mycontainer .text {
+    font-size: 18px;
   }
 }
 
@@ -398,6 +489,18 @@ main .buliding .mycontainer .text {
   }
 }
 
+@media screen and (max-width: 1100px) {
+  main .buliding .mycontainer .text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  main .buliding .mycontainer .text {
+    font-size: 16px;
+  }
+}
+
 main .buliding .mycontainer .title {
   position: absolute;
   display: -webkit-box;
@@ -416,9 +519,17 @@ main .buliding .mycontainer .title {
 
 main .buliding .mycontainer .title .title_bg .title_text {
   font-size: 60px;
+  font-weight: bold;
   color: #BFB3A4;
+  letter-spacing: 2px;
   background-color: #605D4F;
   padding: 10px 15px 10px 9px;
+}
+
+@media screen and (max-width: 1400px) {
+  main .buliding .mycontainer .title .title_bg .title_text {
+    font-size: 48px;
+  }
 }
 
 main .buliding .mycontainer .content_bg {
@@ -445,6 +556,21 @@ main .buliding .mycontainer .content_bg .part_1_bg .part_1 {
   }
 }
 
+@media screen and (max-width: 1280px) {
+  main .buliding .mycontainer .content_bg .part_1_bg .part_1 {
+    width: calc(100% - 150px);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_1_bg .part_1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 main .buliding .mycontainer .content_bg .part_1_bg .part_1 .left_pic {
   width: auto;
 }
@@ -467,6 +593,31 @@ main .buliding .mycontainer .content_bg .part_1_bg .part_1 .left_pic .big_pic {
 
 @media screen and (max-width: 1570px) {
   main .buliding .mycontainer .content_bg .part_1_bg .part_1 .left_pic .big_pic {
+    margin-left: 5vw;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  main .buliding .mycontainer .content_bg .part_1_bg .part_1 .left_pic .big_pic {
+    margin-left: 6vw;
+    width: 600px;
+    height: 397px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main .buliding .mycontainer .content_bg .part_1_bg .part_1 .left_pic .big_pic {
+    width: 550px;
+    height: 363px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  main .buliding .mycontainer .content_bg .part_1_bg .part_1 .left_pic .big_pic {
+    width: 450px;
+    height: 297px;
     margin: auto;
   }
 }
@@ -501,6 +652,22 @@ main .buliding .mycontainer .content_bg .part_1_bg .part_1 .left_pic .big_pic .p
   }
 }
 
+@media screen and (max-width: 1570px) {
+  main .buliding .mycontainer .content_bg .part_1_bg .part_1 .left_pic .big_pic .people_pic {
+    width: 130px;
+    height: 149px;
+    right: -30px;
+    top: 300px;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  main .buliding .mycontainer .content_bg .part_1_bg .part_1 .left_pic .big_pic .people_pic {
+    right: -30px;
+    top: 160px;
+  }
+}
+
 main .buliding .mycontainer .content_bg .part_1_bg .part_1 .left_pic .big_pic .people_pic img {
   width: 100%;
   height: 100%;
@@ -513,6 +680,14 @@ main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right {
 @media screen and (max-width: 1570px) {
   main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right {
     width: auto;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right {
+    max-width: 90%;
+    width: auto;
+    margin: auto;
   }
 }
 
@@ -537,6 +712,12 @@ main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right .right_text {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right .right_text {
+    padding: 20px;
+  }
+}
+
 @media screen and (max-width: 1570px) {
   main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right .right_text {
     padding: 30px 30px 30px 30px;
@@ -553,11 +734,41 @@ main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right .right_text {
     margin: auto;
     margin-left: 60px;
   }
+}
+
+@media screen and (max-width: 1570px) and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right .right_text {
+    width: auto;
+    -webkit-writing-mode: initial;
+        -ms-writing-mode: initial;
+            writing-mode: initial;
+    padding: 30px 80px;
+  }
+}
+
+@media screen and (max-width: 1570px) and (max-width: 859px) {
+  main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right .right_text {
+    padding: 30px 30px;
+  }
+}
+
+@media screen and (max-width: 1570px) {
   main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right .right_text p {
     margin-left: 10px;
+    margin-bottom: 0px;
   }
   main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right .right_text p:nth-last-child(1) {
     margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 1570px) and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right .right_text p {
+    width: auto;
+    margin: auto;
+  }
+  main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right .right_text p:nth-last-child(1) {
+    margin: auto;
   }
 }
 
@@ -580,6 +791,12 @@ main .buliding .mycontainer .content_bg .part_2_bg .part_2 {
           justify-content: center;
 }
 
+@media screen and (max-width: 1280px) {
+  main .buliding .mycontainer .content_bg .part_2_bg .part_2 {
+    width: calc(100% - 150px);
+  }
+}
+
 main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -587,6 +804,15 @@ main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto .left_text {
@@ -611,6 +837,16 @@ main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto .left_text p:nt
   margin-left: 0px;
 }
 
+@media screen and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto .left_text {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: -60px;
+    position: relative;
+    z-index: 2;
+  }
+}
+
 main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto .pic {
   margin-left: 60px;
   width: 853px;
@@ -631,6 +867,20 @@ main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto .pic {
   }
 }
 
+@media screen and (max-width: 1280px) {
+  main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto .pic {
+    width: 550px;
+    height: 310px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto .pic {
+    width: 90%;
+    height: auto;
+  }
+}
+
 main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto .pic img {
   width: 100%;
   height: 100%;
@@ -638,6 +888,12 @@ main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto .pic img {
 
 main .buliding .mycontainer .content_bg .part_3_bg {
   padding: 60px 0px 170px 0px;
+}
+
+@media screen and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_3_bg {
+    padding-bottom: 45px;
+  }
 }
 
 main .buliding .mycontainer .content_bg .part_3_bg .part_3 {
@@ -655,8 +911,32 @@ main .buliding .mycontainer .content_bg .part_3_bg .part_3 {
   }
 }
 
+@media screen and (max-width: 1279px) {
+  main .buliding .mycontainer .content_bg .part_3_bg .part_3 {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_3_bg .part_3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 main .buliding .mycontainer .content_bg .part_3_bg .part_3 .left {
   position: relative;
+}
+
+@media screen and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_3_bg .part_3 .left {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
 }
 
 main .buliding .mycontainer .content_bg .part_3_bg .part_3 .left .big_pic {
@@ -687,6 +967,20 @@ main .buliding .mycontainer .content_bg .part_3_bg .part_3 .left .big_pic {
   }
 }
 
+@media screen and (max-width: 1279px) {
+  main .buliding .mycontainer .content_bg .part_3_bg .part_3 .left .big_pic {
+    width: 550px;
+    height: 376px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_3_bg .part_3 .left .big_pic {
+    width: 67vw;
+    height: 43vw;
+  }
+}
+
 main .buliding .mycontainer .content_bg .part_3_bg .part_3 .left .big_pic img {
   width: 100%;
   height: 100%;
@@ -704,6 +998,13 @@ main .buliding .mycontainer .content_bg .part_3_bg .part_3 .left .big_pic .small
   main .buliding .mycontainer .content_bg .part_3_bg .part_3 .left .big_pic .small_pic {
     width: 180px;
     height: 256px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  main .buliding .mycontainer .content_bg .part_3_bg .part_3 .left .big_pic .small_pic {
+    width: 130px;
+    height: 184px;
   }
 }
 
@@ -733,6 +1034,15 @@ main .buliding .mycontainer .content_bg .part_3_bg .part_3 .left .big_pic .pic {
     width: 280px;
     height: 210px;
     right: -80px;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  main .buliding .mycontainer .content_bg .part_3_bg .part_3 .left .big_pic .pic {
+    width: 200px;
+    height: 150px;
+    right: -40px;
+    bottom: -80px;
   }
 }
 
@@ -768,12 +1078,44 @@ main .buliding .mycontainer .content_bg .part_3_bg .part_3 .right .right_text {
   }
 }
 
+@media screen and (max-width: 1279px) {
+  main .buliding .mycontainer .content_bg .part_3_bg .part_3 .right .right_text {
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_3_bg .part_3 .right .right_text {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: 0px;
+    -webkit-writing-mode: initial;
+        -ms-writing-mode: initial;
+            writing-mode: initial;
+    padding-right: 30vw;
+    padding-top: 60px;
+    margin-top: -30px;
+    margin-left: 30px;
+  }
+}
+
 main .buliding .mycontainer .content_bg .part_3_bg .part_3 .right .right_text p {
   margin-left: 10px;
 }
 
 main .buliding .mycontainer .content_bg .part_3_bg .part_3 .right .right_text p:nth-last-child(1) {
   margin-left: 0px;
+}
+
+@media screen and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_3_bg .part_3 .right .right_text p {
+    margin-left: 0px;
+    margin-bottom: 5px;
+  }
+  main .buliding .mycontainer .content_bg .part_3_bg .part_3 .right .right_text p:nth-last-child(1) {
+    margin-bottom: 0px;
+  }
 }
 
 main .buliding .mycontainer .content_bg .part_4_bg .part_4 {
@@ -798,6 +1140,15 @@ main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto {
           align-items: center;
 }
 
+@media screen and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto .left_text {
   padding: 30px;
   display: -webkit-box;
@@ -812,8 +1163,25 @@ main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto .left_text {
           writing-mode: vertical-rl;
 }
 
+@media screen and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto .left_text {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: -300px;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+  }
+}
+
 main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto .left_text p {
   margin-left: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto .left_text p {
+    margin-bottom: 0px;
+  }
 }
 
 main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto .left_text p:nth-last-child(1) {
@@ -824,6 +1192,20 @@ main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto .pic {
   margin-left: 60px;
   width: 758px;
   height: 480px;
+}
+
+@media screen and (max-width: 1200px) {
+  main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto .pic {
+    width: 650px;
+    height: 411px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto .pic {
+    width: 86%;
+    height: auto;
+  }
 }
 
 main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto .pic img {
@@ -879,6 +1261,21 @@ main .buliding .mycontainer .content_bg .part_5_bg .part_5 .left {
   }
 }
 
+@media screen and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_5_bg .part_5 .left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+}
+
 main .buliding .mycontainer .content_bg .part_5_bg .part_5 .left .pic {
   width: 562px;
   height: 375px;
@@ -895,6 +1292,20 @@ main .buliding .mycontainer .content_bg .part_5_bg .part_5 .left .pic {
   main .buliding .mycontainer .content_bg .part_5_bg .part_5 .left .pic {
     width: 750px;
     height: 500px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main .buliding .mycontainer .content_bg .part_5_bg .part_5 .left .pic {
+    width: 650px;
+    height: 433px;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  main .buliding .mycontainer .content_bg .part_5_bg .part_5 .left .pic {
+    width: 550px;
+    height: 366px;
   }
 }
 
@@ -930,6 +1341,19 @@ main .buliding .mycontainer .content_bg .part_5_bg .part_5 .left .left_text {
   }
   main .buliding .mycontainer .content_bg .part_5_bg .part_5 .left .left_text p:nth-last-child(1) {
     margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_5_bg .part_5 .left .left_text {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-right: -60px;
+    margin-top: -230px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    padding: 20px;
   }
 }
 
@@ -970,6 +1394,28 @@ main .buliding .mycontainer .content_bg .part_5_bg .part_5 .right .right_text {
   }
 }
 
+@media screen and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_5_bg .part_5 .right .right_text {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-right: -120px;
+    position: relative;
+    z-index: 2;
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  main .buliding .mycontainer .content_bg .part_5_bg .part_5 .right .right_text {
+    margin-right: -90px;
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+}
+
 main .buliding .mycontainer .content_bg .part_5_bg .part_5 .right .right_text p {
   margin-left: 10px;
 }
@@ -988,6 +1434,21 @@ main .buliding .mycontainer .content_bg .part_5_bg .part_5 .right .pic {
   main .buliding .mycontainer .content_bg .part_5_bg .part_5 .right .pic {
     width: 650px;
     height: 408px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .buliding .mycontainer .content_bg .part_5_bg .part_5 .right .pic {
+    margin-right: -20px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  main .buliding .mycontainer .content_bg .part_5_bg .part_5 .right .pic {
+    width: 550px;
+    height: 345px;
   }
 }
 
@@ -1037,14 +1498,42 @@ main .product_bg .mycontainer .product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+main .product_bg .mycontainer .product:nth-child(n) {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+main .product_bg .mycontainer .product:nth-child(2n) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 @media screen and (max-width: 1600px) {
   main .product_bg .mycontainer .product {
-    margin-bottom: 5vw;
+    margin-bottom: 8vw;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  main .product_bg .mycontainer .product {
+    margin-bottom: 12vw;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .product_bg .mycontainer .product {
+    margin-bottom: 15vw;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  main .product_bg .mycontainer .product {
+    margin-bottom: 18vw;
   }
 }
 
@@ -1063,8 +1552,22 @@ main .product_bg .mycontainer .product .product_pic {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 48vw;
-    height: 38vw;
+    width: 40vw;
+    height: 40vw;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  main .product_bg .mycontainer .product .product_pic {
+    width: 45vw;
+    height: 45vw;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  main .product_bg .mycontainer .product .product_pic {
+    width: 44vw;
+    height: 44vw;
   }
 }
 
@@ -1078,8 +1581,19 @@ main .product_bg .mycontainer .product .product_pic .pic {
   background-repeat: no-repeat;
 }
 
+main .product_bg .mycontainer .product .product_pic .pic:nth-child(n) {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+main .product_bg .mycontainer .product .product_pic .pic:nth-child(2n) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 main .product_bg .mycontainer .product .content {
-  width: 790px;
+  max-width: 790px;
+  width: 790;
   font-size: 24px;
   font-family: fangsong;
   font-weight: 700;
@@ -1088,12 +1602,21 @@ main .product_bg .mycontainer .product .content {
 @media screen and (max-width: 1600px) {
   main .product_bg .mycontainer .product .content {
     font-size: 22px;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
   }
 }
 
 @media screen and (max-width: 1450px) {
   main .product_bg .mycontainer .product .content {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .product_bg .mycontainer .product .content {
+    font-size: 18px;
   }
 }
 
@@ -1125,6 +1648,36 @@ main .product_bg .mycontainer .product:nth-child(n) .content {
   main .product_bg .mycontainer .product:nth-child(n) .content {
     margin-top: -100px;
   }
+  main .product_bg .mycontainer .product:nth-child(n) .content p {
+    margin-left: 15px;
+  }
+  main .product_bg .mycontainer .product:nth-child(n) .content p:nth-child(1) {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 1600px) and (max-width: 1100px) {
+  main .product_bg .mycontainer .product:nth-child(n) .content p {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 1600px) and (max-width: 859px) {
+  main .product_bg .mycontainer .product:nth-child(n) .content p {
+    margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  main .product_bg .mycontainer .product:nth-child(n) .content {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  main .product_bg .mycontainer .product:nth-child(n) .content {
+    padding-left: 20px;
+  }
 }
 
 main .product_bg .mycontainer .product:nth-child(2n) .content {
@@ -1148,8 +1701,42 @@ main .product_bg .mycontainer .product:nth-child(2n) .content {
   }
 }
 
+@media screen and (max-width: 1279px) {
+  main .product_bg .mycontainer .product:nth-child(2n) .content {
+    padding-right: 30px;
+  }
+}
+
 main .product_bg .mycontainer .product:nth-child(2n) .content p {
   margin-left: 15px;
+}
+
+@media screen and (max-width: 1100px) {
+  main .product_bg .mycontainer .product:nth-child(2n) .content p {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  main .product_bg .mycontainer .product:nth-child(2n) .content p {
+    margin-left: 8px;
+  }
+}
+
+main .product_bg .mycontainer .product:nth-child(2n) .content p:nth-child(1) {
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 1100px) {
+  main .product_bg .mycontainer .product:nth-child(2n) .content p:nth-child(1) {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  main .product_bg .mycontainer .product:nth-child(2n) .content p:nth-child(1) {
+    margin-left: 8px;
+  }
 }
 
 main .product_bg .mycontainer .product:nth-child(2n) .content p:nth-last-child(1) {
@@ -1274,6 +1861,21 @@ main .restaurant .mycontainer .pic {
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: relative;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+@media screen and (max-width: 1279px) {
+  main .restaurant .mycontainer .pic {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+  }
 }
 
 main .restaurant .mycontainer .pic .title {
@@ -1291,6 +1893,21 @@ main .restaurant .mycontainer .pic .title {
   padding: 30px 20px;
 }
 
+@media screen and (max-width: 1279px) {
+  main .restaurant .mycontainer .pic .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    background-color: initial;
+  }
+}
+
 main .restaurant .mycontainer .pic .title img {
   width: 7vw;
   height: 7vw;
@@ -1303,6 +1920,11 @@ main .restaurant .mycontainer .pic .title img {
   }
 }
 
+main .restaurant .mycontainer .pic .title img:nth-child(1) {
+  width: 7.05vw;
+  height: 7.05vw;
+}
+
 main .restaurant .mycontainer .pic .title img:nth-child(2) {
   margin: 20px 0px;
   margin-left: -3px;
@@ -1310,8 +1932,8 @@ main .restaurant .mycontainer .pic .title img:nth-child(2) {
 
 @media screen and (max-width: 1500px) {
   main .restaurant .mycontainer .pic .title img:nth-child(2) {
-    width: 6vw;
-    height: 6vw;
+    width: 5.8vw;
+    height: 5.8vw;
   }
 }
 
@@ -1335,6 +1957,9 @@ main .restaurant .mycontainer .pic .restaurant_text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 @media screen and (max-width: 1700px) {
@@ -1359,6 +1984,36 @@ main .restaurant .mycontainer .pic .restaurant_text {
 @media screen and (max-width: 1400px) {
   main .restaurant .mycontainer .pic .restaurant_text {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  main .restaurant .mycontainer .pic .restaurant_text {
+    position: relative;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    font-size: 22px;
+    right: 0px;
+    top: 0px;
+    margin-right: 20vw;
+    margin-top: -15vw;
+    background-color: initial;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 1279px) and (max-width: 768px) {
+  main .restaurant .mycontainer .pic .restaurant_text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  main .restaurant .mycontainer .pic .restaurant_text p {
+    margin-left: 3vw;
   }
 }
 
@@ -1418,6 +2073,17 @@ main .restaurant .mycontainer .recipt .menu {
   }
 }
 
+@media screen and (max-width: 1279px) {
+  main .restaurant .mycontainer .recipt .menu {
+    margin-top: 12vw;
+    left: 0px;
+    background-color: initial;
+    padding: 0px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
 main .restaurant .mycontainer .recipt .menu .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1436,15 +2102,15 @@ main .restaurant .mycontainer .recipt .menu .main .icon {
 
 @media screen and (max-width: 1800px) {
   main .restaurant .mycontainer .recipt .menu .main .icon {
-    width: 3vw;
-    height: 3vw;
+    width: 45px;
+    height: 45px;
   }
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1279px) {
   main .restaurant .mycontainer .recipt .menu .main .icon {
-    width: 2vw;
-    height: 2vw;
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -1464,6 +2130,12 @@ main .restaurant .mycontainer .recipt .menu .main .text {
   font-size: 24px;
   font-weight: 600;
   margin-top: 15px;
+}
+
+@media screen and (max-width: 1279px) {
+  main .restaurant .mycontainer .recipt .menu .main .text {
+    font-size: 18px;
+  }
 }
 
 main .order {
@@ -1493,6 +2165,12 @@ main .order .order_content {
   }
 }
 
+@media screen and (max-width: 1100px) {
+  main .order .order_content {
+    max-width: calc(100% - 200px);
+  }
+}
+
 main .order .order_content .information {
   font-size: 36px;
   font-weight: bold;
@@ -1501,8 +2179,7 @@ main .order .order_content .information {
 }
 
 main .order .order_content .all_content {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1524,8 +2201,25 @@ main .order .order_content .all_content {
   }
 }
 
+@media screen and (max-width: 1100px) {
+  main .order .order_content .all_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    width: 50%;
+  }
+}
+
 main .order .order_content .all_content .content {
   width: 50%;
+}
+
+@media screen and (max-width: 1100px) {
+  main .order .order_content .all_content .content {
+    width: 100%;
+  }
 }
 
 main .order .order_content .all_content .content .name .name_button {
@@ -1544,6 +2238,12 @@ main .order .order_content .all_content .content .phone_number .phone {
 
 main .order .order_content .all_content .map .address {
   margin: 0px 0px 10px 0px;
+}
+
+@media screen and (max-width: 1100px) {
+  main .order .order_content .all_content .map .address {
+    margin-left: 0px;
+  }
 }
 
 main .order .order_content .all_content .map .map_pic .map_information {
