@@ -1482,6 +1482,12 @@ main .product_bg .title {
   letter-spacing: 8px;
 }
 
+@media screen and (max-width: 1400px) {
+  main .product_bg .title {
+    font-size: 48px;
+  }
+}
+
 @media screen and (max-width: 1800px) {
   main .product_bg .mycontainer {
     max-width: calc(100% - 200px);
@@ -1748,9 +1754,8 @@ main .all_parallax .parallax {
   height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  display: block;
   background-attachment: fixed;
-  background-color: #605D4F;
 }
 
 main .sale {
@@ -1762,6 +1767,12 @@ main .sale {
 main .sale .title {
   font-size: 60px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1400px) {
+  main .sale .title {
+    font-size: 48px;
+  }
 }
 
 main .sale .all_btn {
@@ -2150,6 +2161,12 @@ main .order .title {
   text-align: center;
 }
 
+@media screen and (max-width: 1400px) {
+  main .order .title {
+    font-size: 48px;
+  }
+}
+
 main .order .order_content {
   margin-top: 30px;
   height: 500px;
@@ -2165,9 +2182,18 @@ main .order .order_content {
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1800px) {
   main .order .order_content {
     max-width: calc(100% - 200px);
+  }
+}
+
+@media screen and (max-width: 859px) {
+  main .order .order_content {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: calc(100% - 150px);
   }
 }
 
@@ -2201,14 +2227,30 @@ main .order .order_content .all_content {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  main .order .order_content .all_content {
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   main .order .order_content .all_content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    font-size: 22px;
     margin: auto;
-    width: 50%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 0px 60px;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  main .order .order_content .all_content {
+    font-size: 20px;
   }
 }
 
@@ -2246,6 +2288,14 @@ main .order .order_content .all_content .map .address {
   }
 }
 
+@media screen and (max-width: 1100px) {
+  main .order .order_content .all_content .map .map_pic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 main .order .order_content .all_content .map .map_pic .map_information {
   width: 30vw;
   height: 30vw;
@@ -2274,6 +2324,12 @@ main .social_media .mycontainer {
   display: flex;
 }
 
+@media screen and (max-width: 1200px) {
+  main .social_media .mycontainer {
+    width: calc(100% - 80px);
+  }
+}
+
 main .social_media .mycontainer .title {
   -webkit-writing-mode: vertical-lr;
   -ms-writing-mode: tb-lr;
@@ -2282,6 +2338,12 @@ main .social_media .mycontainer .title {
   font-weight: 700;
   padding: 0px 60px 0px 0px;
   letter-spacing: 8px;
+}
+
+@media screen and (max-width: 1400px) {
+  main .social_media .mycontainer .title {
+    font-size: 48px;
+  }
 }
 
 main .social_media .mycontainer .content {
@@ -2313,18 +2375,37 @@ main .social_media .mycontainer .content .all .icon {
   text-align: center;
   font-size: 80px;
   border-bottom: 3px solid gray;
+  margin: 50px 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  main .social_media .mycontainer .content .all .icon {
+    margin: 40px 0px;
+  }
 }
 
 main .social_media .mycontainer .content .all .icon img {
-  width: 100px;
+  width: 7vw;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   padding-bottom: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+  main .social_media .mycontainer .content .all .icon img {
+    width: 10vw;
+  }
+}
+
 main .social_media .mycontainer .content .all .icon .yt {
-  width: 142px;
+  width: 10vw;
+}
+
+@media screen and (max-width: 1200px) {
+  main .social_media .mycontainer .content .all .icon .yt {
+    width: 12vw;
+  }
 }
 
 main .social_media .mycontainer .content .all .pic {
@@ -2334,32 +2415,86 @@ main .social_media .mycontainer .content .all .pic {
   display: flex;
 }
 
+@media screen and (max-width: 1200px) {
+  main .social_media .mycontainer .content .all .pic {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 main .social_media .mycontainer .content .all .pic img {
-  width: 32vw;
+  width: 36vw;
   height: auto;
-  background-color: black;
-  margin: 50px 0px;
   background-position: center;
   background-size: contain;
+}
+
+@media screen and (max-width: 1200px) {
+  main .social_media .mycontainer .content .all .pic img {
+    width: 55vw;
+  }
 }
 
 main .social_media .mycontainer .content .all .pic img:nth-child(2) {
   margin-left: 45px;
 }
 
-main .social_media .mycontainer .content .all:nth-child(2) .pic {
-  margin: auto;
+@media screen and (max-width: 1200px) {
+  main .social_media .mycontainer .content .all .pic img:nth-child(2) {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
 }
 
-main .social_media .mycontainer .content .all:nth-child(2) .pic img {
+main .social_media .mycontainer .content .all .pic2 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  background-position: center;
+  background-size: contain;
+}
+
+@media screen and (max-width: 1200px) {
+  main .social_media .mycontainer .content .all .pic2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main .social_media .mycontainer .content .all .pic2 img {
   width: 20vw;
   height: auto;
   background-color: black;
 }
 
-main .social_media .mycontainer .content .all:nth-child(2) .pic img:nth-child(2) {
+@media screen and (max-width: 1200px) {
+  main .social_media .mycontainer .content .all .pic2 img {
+    width: 38vw;
+  }
+}
+
+main .social_media .mycontainer .content .all .pic2 img:nth-child(2) {
   margin-left: 45px;
   margin-right: 45px;
+}
+
+@media screen and (max-width: 1200px) {
+  main .social_media .mycontainer .content .all .pic2 img:nth-child(2) {
+    margin: 30px 0px;
+  }
 }
 
 main .contact {
