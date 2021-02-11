@@ -77,6 +77,12 @@ input, select {
   }
 }
 
+@media screen and (max-width: 1279px) {
+  #top {
+    font-size: 30px;
+  }
+}
+
 #top .top_text {
   color: #47307e;
   text-align: center;
@@ -98,6 +104,13 @@ input, select {
   #top img {
     width: 70px;
     height: 70px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  #top img {
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -163,26 +176,29 @@ main {
 
 main .banner {
   width: 100%;
+  background-color: #f2f0ed;
+  height: auto;
   position: relative;
   z-index: 3;
 }
 
 main .banner .pic {
+  width: calc(100% - 100px);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 main .banner .pic .img {
-  width: 100%;
-  height: auto;
-}
-
-@media screen and (max-width: 1279px) {
-  main .banner .pic .img {
-    height: auto;
-  }
+  width: 80vw;
+  height: 45.5vw;
 }
 
 main .banner .pic .name {
+  margin-left: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,16 +206,12 @@ main .banner .pic .name {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
-  right: 5vw;
-  top: 10vw;
-  background-color: rgba(255, 255, 255, 0.644);
-  padding: 30px;
+  margin-top: 8vw;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1100px) {
   main .banner .pic .name {
-    padding: 20px;
+    margin-left: 40px;
   }
 }
 
@@ -233,7 +245,7 @@ main .management {
 }
 
 main .management .top {
-  width: calc(100% - 10vw);
+  width: calc(100% - 160px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,30 +280,36 @@ main .management .top .title {
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1500px) {
   main .management .top .title {
     font-size: 34px;
     margin-top: -30px;
   }
 }
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 1200px) {
   main .management .top .title {
     font-size: 30px;
+    margin-left: 30px;
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
   main .management .top .title {
     font-size: 28px;
     margin-top: -20px;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1050px) {
   main .management .top .title {
     font-size: 24px;
-    margin-top: -20px;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  main .management .top .title {
+    font-size: 22px;
   }
 }
 
@@ -311,36 +329,19 @@ main .management .top .title .text {
 
 @media screen and (max-width: 1720px) {
   main .management .top .title .text {
-    height: 42vw;
+    height: 38vw;
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
   main .management .top .title .text {
     height: 43vw;
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 950px) {
   main .management .top .title .text {
-    height: 47vw;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  main .management .top .title .text {
-    height: 48vw;
-    -webkit-transform: translateY(40px);
-            transform: translateY(40px);
-  }
-}
-
-@media screen and (max-width: 900px) {
-  main .management .top .title .text {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    height: 45vw;
   }
 }
 
@@ -349,8 +350,20 @@ main .management .top .title .text p {
   padding: top 1vw;
 }
 
+@media screen and (max-width: 1200px) {
+  main .management .top .title .text p {
+    padding-left: 15px;
+  }
+}
+
 main .management .top .title .text .p:nth-child(2) {
   padding-top: 18vw;
+}
+
+@media screen and (max-width: 1720px) {
+  main .management .top .title .text .p:nth-child(2) {
+    padding-top: 16vw;
+  }
 }
 
 main .management .top .pic {
@@ -359,7 +372,8 @@ main .management .top .pic {
 }
 
 main .management .top .pic video {
-  height: 38vw;
+  width: auto;
+  height: 37.5vw;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-box-shadow: 20px 20px  #D9CEC5;
@@ -369,7 +383,15 @@ main .management .top .pic video {
 @media screen and (max-width: 1720px) {
   main .management .top .pic video {
     width: auto;
-    height: 40vw;
+    height: 36vw;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  main .management .top .pic video {
+    margin-top: 15px;
+    -webkit-box-shadow: 10px 10px  #D9CEC5;
+            box-shadow: 10px 10px  #D9CEC5;
   }
 }
 
@@ -441,6 +463,12 @@ main .management .bottom .mycontainer .text {
 @media screen and (max-width: 900px) {
   main .management .bottom .mycontainer .text {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  main .management .bottom .mycontainer .text {
+    letter-spacing: 1px;
   }
 }
 
@@ -2327,6 +2355,10 @@ main .social_media .mycontainer {
 @media screen and (max-width: 1200px) {
   main .social_media .mycontainer {
     width: calc(100% - 80px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -2346,6 +2378,16 @@ main .social_media .mycontainer .title {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  main .social_media .mycontainer .title {
+    -webkit-writing-mode: initial;
+        -ms-writing-mode: initial;
+            writing-mode: initial;
+    padding: 0px;
+    text-align: center;
+  }
+}
+
 main .social_media .mycontainer .content {
   width: 100%;
   height: auto;
@@ -2357,6 +2399,12 @@ main .social_media .mycontainer .content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (max-width: 1200px) {
+  main .social_media .mycontainer .content {
+    margin-top: 0px;
+  }
 }
 
 main .social_media .mycontainer .content .all {
@@ -2504,6 +2552,10 @@ main .contact {
   color: #33322a;
 }
 
+main .contact .mycontainer {
+  width: calc(100% - 200px);
+}
+
 main .contact .mycontainer .title {
   font-size: 60px;
   font-weight: 700;
@@ -2511,12 +2563,21 @@ main .contact .mycontainer .title {
   text-align: center;
 }
 
+@media screen and (max-width: 1400px) {
+  main .contact .mycontainer .title {
+    font-size: 48px;
+  }
+}
+
 main .contact .mycontainer .content {
-  width: 80%;
+  width: auto;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 24px;
   font-weight: 600;
 }
@@ -2527,76 +2588,117 @@ main .contact .mycontainer .content {
   }
 }
 
-main .contact .mycontainer .content .information {
-  width: 40%;
-}
-
-main .contact .mycontainer .content .information .name {
-  padding-bottom: 15px;
-}
-
-main .contact .mycontainer .content .information .address {
-  padding-bottom: 15px;
-}
-
-main .contact .mycontainer .content .information .date {
-  padding-bottom: 15px;
-}
-
-main .contact .mycontainer .content .sales {
-  width: 30%;
-  letter-spacing: 1px;
-}
-
-main .contact .mycontainer .content .sales .sale_information {
-  margin-bottom: 51px;
-}
-
-@media screen and (max-width: 1400px) {
-  main .contact .mycontainer .content .sales .sale_information {
-    margin-bottom: 63px;
+@media screen and (max-width: 1050px) {
+  main .contact .mycontainer .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
-main .contact .mycontainer .content .sales .sale_information a {
+main .contact .mycontainer .content .information {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-right: 120px;
+}
+
+@media screen and (max-width: 1050px) {
+  main .contact .mycontainer .content .information {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+main .contact .mycontainer .content .information .name {
+  margin-bottom: 30px;
+}
+
+main .contact .mycontainer .content .information .address {
+  margin-bottom: 30px;
+}
+
+main .contact .mycontainer .content .information .date {
+  margin-bottom: 30px;
+}
+
+main .contact .mycontainer .content .sale_information {
+  margin: 30px 0px;
+}
+
+main .contact .mycontainer .content .sale_information a {
   text-decoration: none;
   color: black;
 }
 
-main .contact .mycontainer .content .sales .icons a {
+@media screen and (max-width: 1050px) {
+  main .contact .mycontainer .content .icons {
+    margin-bottom: 30px;
+  }
+}
+
+main .contact .mycontainer .content .icons a {
   text-decoration: none;
 }
 
-main .contact .mycontainer .content .sales .icons a img {
+main .contact .mycontainer .content .icons a img {
   width: 80px;
 }
 
 @media screen and (max-width: 1600px) {
-  main .contact .mycontainer .content .sales .icons a img {
+  main .contact .mycontainer .content .icons a img {
     width: 70px;
   }
 }
 
 @media screen and (max-width: 1400px) {
-  main .contact .mycontainer .content .sales .icons a img {
+  main .contact .mycontainer .content .icons a img {
     width: 60px;
   }
 }
 
 @media screen and (max-width: 1400px) {
-  main .contact .mycontainer .content .sales .icons a img {
+  main .contact .mycontainer .content .icons a img {
     width: 50px;
   }
 }
 
+@media screen and (max-width: 1050px) {
+  main .contact .mycontainer .content .icons a img {
+    width: 40px;
+  }
+}
+
 main .contact .mycontainer .content .map {
-  width: 30%;
   height: auto;
 }
 
+@media screen and (max-width: 1050px) {
+  main .contact .mycontainer .content .map {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
 main .contact .mycontainer .content .map .map_pic {
-  width: 20vw;
-  height: 20vw;
+  width: 32vw;
+  height: 32vw;
+}
+
+@media screen and (max-width: 1050px) {
+  main .contact .mycontainer .content .map .map_pic {
+    width: 50vw;
+    height: 50vw;
+  }
 }
 
 footer {
@@ -2604,7 +2706,7 @@ footer {
   height: auto;
   width: 100%;
   background-color: #E6D3BE;
-  padding: 45px 0px;
+  padding: 0px 0px 20px 0px;
   text-align: center;
 }
 
