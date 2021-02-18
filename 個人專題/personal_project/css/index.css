@@ -2052,6 +2052,13 @@ main .restaurant .mycontainer .pic {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
 }
 
 @media screen and (max-width: 1279px) {
@@ -2067,18 +2074,20 @@ main .restaurant .mycontainer .pic {
 }
 
 main .restaurant .mycontainer .pic .title {
-  position: absolute;
-  right: 20px;
-  top: 3vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.637);
-  padding: 30px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: initial;
 }
 
 @media screen and (max-width: 1279px) {
@@ -2126,28 +2135,28 @@ main .restaurant .mycontainer .pic .title img:nth-child(2) {
 }
 
 main .restaurant .mycontainer .pic .restaurant_text {
-  background-color: rgba(255, 255, 255, 0.637);
-  color: #33322a;
-  position: absolute;
-  right: 12vw;
-  top: 5vw;
   font-size: 28px;
   font-weight: 700;
   letter-spacing: 1px;
-  padding: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 22px;
+  right: 0px;
+  top: 0px;
+  margin-right: 15 vw;
+  margin-top: -10vw;
+  background-color: initial;
+  padding: 0px;
 }
 
 @media screen and (max-width: 1700px) {
