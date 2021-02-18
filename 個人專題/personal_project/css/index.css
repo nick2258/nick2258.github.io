@@ -1792,80 +1792,229 @@ main .sale {
   padding: 60px 0px;
 }
 
-main .sale .title {
+main .sale .mycontainer {
+  width: calc(100% - 200px);
+  margin: auto;
+}
+
+main .sale .mycontainer .title {
   font-size: 60px;
   font-weight: bold;
 }
 
 @media screen and (max-width: 1400px) {
-  main .sale .title {
+  main .sale .mycontainer .title {
     font-size: 48px;
   }
 }
 
-main .sale .all_btn {
+main .sale .mycontainer .all_btn {
+  max-width: calc(100% - 200px);
+  width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 60px 0px 60px 0px;
+  height: auto;
+  margin: auto;
 }
 
-main .sale .all_btn .sale_btn {
-  padding: 5px 10px;
+main .sale .mycontainer .all_btn .btns {
+  width: unset;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: auto;
+}
+
+main .sale .mycontainer .all_btn .btns .sale_btn {
+  padding: 5px 20px;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-right: 45px;
+  margin-bottom: 30px;
   background-color: #E3BFA6;
-  border-radius: 6%;
 }
 
-main .sale .all_sale_card {
+main .sale .mycontainer .all_sale_card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-main .sale .all_sale_card .card {
-  width: 350px;
+main .sale .mycontainer .all_sale_card .card {
+  border: 0px;
+  width: calc(25% - 33.75px);
+  height: auto;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  margin-right: 45px;
+}
+
+@media screen and (max-width: 1500px) {
+  main .sale .mycontainer .all_sale_card .card {
+    width: calc(33.333% - 30px);
+  }
+  main .sale .mycontainer .all_sale_card .card:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1500px) and (max-width: 1200px) {
+  main .sale .mycontainer .all_sale_card .card:nth-child(3n) {
+    margin-right: 45px;
+  }
+}
+
+@media screen and (max-width: 1500px) and (max-width: 750px) {
+  main .sale .mycontainer .all_sale_card .card:nth-child(3n) {
+    margin-right: 0px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main .sale .mycontainer .all_sale_card .card {
+    width: calc(50% - 22.5px);
+  }
+  main .sale .mycontainer .all_sale_card .card:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (max-width: 750px) {
+  main .sale .mycontainer .all_sale_card .card:nth-child(2n) {
+    margin-right: 0px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main .sale .mycontainer .all_sale_card .card {
+    width: 75%;
+    margin-right: 0px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+main .sale .mycontainer .all_sale_card .card:nth-child(4n) {
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 1500px) {
+  main .sale .mycontainer .all_sale_card .card:nth-child(4n) {
+    margin-right: 45px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main .sale .mycontainer .all_sale_card .card:nth-child(4n) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main .sale .mycontainer .all_sale_card .card:nth-child(4n) {
+    margin-right: 0px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+main .sale .mycontainer .all_sale_card .card .pic {
+  width: 100%;
+  height: 16vw;
+  background-color: cadetblue;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1500px) {
+  main .sale .mycontainer .all_sale_card .card .pic {
+    height: 18vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main .sale .mycontainer .all_sale_card .card .pic {
+    height: 24vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main .sale .mycontainer .all_sale_card .card .pic {
+    height: 30vw;
+  }
+}
+
+main .sale .mycontainer .all_sale_card .card .pic img {
+  width: 100%;
+  height: 100%;
+}
+
+main .sale .mycontainer .all_sale_card .card .card_content {
+  width: calc(100% - 30px);
+  margin: auto;
+  font-weight: 600;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+main .sale .mycontainer .all_sale_card .card .card_content .card_title {
+  font-size: 20px;
+  height: 60px;
+  min-height: 60px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+main .sale .mycontainer .all_sale_card .card .card_content .price {
+  font-size: 18px;
+  font-weight: 600;
+  height: 27px;
+  max-height: 27px;
+  margin-bottom: 15px;
+}
+
+main .sale .mycontainer .all_sale_card .card .card_content .date {
+  font-size: 18px;
+  height: 27px;
+  max-height: 27px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+main .sale .mycontainer .all_sale_card .card .card_content .content {
+  font-size: 15px;
+  height: 66px;
+  max-height: 66px;
+  font-weight: 600;
   margin-bottom: 40px;
 }
 
-main .sale .all_sale_card .card .pic {
-  width: 100%;
-  height: 350px;
-  background-color: cadetblue;
-  margin-bottom: 10px;
-}
-
-main .sale .all_sale_card .card .title, main .sale .all_sale_card .card .price {
-  font-size: 18px;
+main .sale .mycontainer .all_sale_card .card .card_content .btn {
+  font-size: 20px;
   font-weight: 600;
-  margin-bottom: 10px;
-}
-
-main .sale .all_sale_card .card .date {
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-main .sale .all_sale_card .card .content {
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-main .sale .all_sale_card .card .btn {
-  font-size: 18px;
-  font-weight: 600;
-  padding: 10px;
+  padding: 10px 20px;
   background-color: chocolate;
-  margin-left: 10px;
 }
 
 main .restaurant {
@@ -1980,7 +2129,7 @@ main .restaurant .mycontainer .pic .restaurant_text {
   background-color: rgba(255, 255, 255, 0.637);
   color: #33322a;
   position: absolute;
-  right: 200px;
+  right: 12vw;
   top: 5vw;
   font-size: 28px;
   font-weight: 700;
@@ -2004,6 +2153,7 @@ main .restaurant .mycontainer .pic .restaurant_text {
 @media screen and (max-width: 1700px) {
   main .restaurant .mycontainer .pic .restaurant_text {
     font-size: 26px;
+    right: 13vw;
   }
 }
 
@@ -2016,7 +2166,6 @@ main .restaurant .mycontainer .pic .restaurant_text {
 @media screen and (max-width: 1500px) {
   main .restaurant .mycontainer .pic .restaurant_text {
     font-size: 22px;
-    right: 12vw;
   }
 }
 
