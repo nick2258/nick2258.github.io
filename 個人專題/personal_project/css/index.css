@@ -2035,7 +2035,7 @@ main .restaurant .mycontainer {
 
 @media screen and (max-width: 1800px) {
   main .restaurant .mycontainer {
-    max-width: calc(100% - 200px);
+    width: calc(100% - 200px);
   }
 }
 
@@ -2062,6 +2062,12 @@ main .restaurant .mycontainer .pic {
 @media screen and (max-width: 1300px) {
   main .restaurant .mycontainer .pic {
     width: 92%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .restaurant .mycontainer .pic {
+    width: 98%;
   }
 }
 
@@ -2123,9 +2129,6 @@ main .restaurant .mycontainer .pic .title img:nth-child(2) {
 }
 
 main .restaurant .mycontainer .pic .restaurant_text {
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 1px;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -2136,33 +2139,70 @@ main .restaurant .mycontainer .pic .restaurant_text {
   width: max-content;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  font-size: 32px;
   margin-right: calc(6vw + 20px);
   margin-top: 5vw;
   background-color: initial;
   padding: 0px;
 }
 
+@media screen and (max-width: 1100px) {
+  main .restaurant .mycontainer .pic .restaurant_text {
+    margin-right: 5vw;
+  }
+}
+
 main .restaurant .mycontainer .pic .restaurant_text p {
   margin-left: 4vw;
   margin-bottom: 0px;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+@media screen and (max-width: 1100px) {
+  main .restaurant .mycontainer .pic .restaurant_text p {
+    margin-left: 2.5vw;
+  }
 }
 
 @media screen and (max-width: 1700px) {
-  main .restaurant .mycontainer .pic .restaurant_text {
+  main .restaurant .mycontainer .pic .restaurant_text p {
     font-size: 30px;
   }
 }
 
 @media screen and (max-width: 1600px) {
-  main .restaurant .mycontainer .pic .restaurant_text {
+  main .restaurant .mycontainer .pic .restaurant_text p {
     font-size: 28px;
   }
 }
 
 @media screen and (max-width: 1500px) {
-  main .restaurant .mycontainer .pic .restaurant_text {
+  main .restaurant .mycontainer .pic .restaurant_text p {
     font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .restaurant .mycontainer .pic .restaurant_text p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  main .restaurant .mycontainer .pic .restaurant_text p {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  main .restaurant .mycontainer .pic .restaurant_text p {
+    font-size: 20px;
   }
 }
 
@@ -2191,18 +2231,6 @@ main .restaurant .mycontainer .pic .recipt .menu {
   padding: 0px;
   -ms-flex-item-align: start;
       align-self: flex-start;
-}
-
-@media screen and (max-width: 1800px) {
-  main .restaurant .mycontainer .pic .recipt .menu {
-    padding: 70px 35px;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  main .restaurant .mycontainer .pic .recipt .menu {
-    padding: 60px 20px;
-  }
 }
 
 @media screen and (max-width: 1279px) {
@@ -2238,10 +2266,10 @@ main .restaurant .mycontainer .pic .recipt .menu .main .icon {
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 850px) {
   main .restaurant .mycontainer .pic .recipt .menu .main .icon {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -2265,13 +2293,19 @@ main .restaurant .mycontainer .pic .recipt .menu .main .text {
 
 @media screen and (max-width: 1279px) {
   main .restaurant .mycontainer .pic .recipt .menu .main .text {
-    font-size: 18px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  main .restaurant .mycontainer .pic .recipt .menu .main .text {
+    font-size: 20px;
   }
 }
 
 main .restaurant .mycontainer .big_pic {
   width: 90%;
-  height: 800px;
+  height: 42vw;
   margin: auto;
 }
 
