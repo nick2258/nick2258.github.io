@@ -845,18 +845,30 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.js"></script>
+
 <script>
+//     let url = 'https://nick2258.github.io/%E5%AE%AE%E5%8E%9F%E7%9C%BC%E7%A7%91%E7%94%A2%E5%93%81%E6%B8%85%E5%96%AE%E8%B3%87%E6%96%99.txt'
+// fetch(url) .then(function(myJson) {
+//     console.log(myJson);
+//   });
+
+// const asyncRun = async () => {
+//   let mingRun = await runPromise('https://nick2258.github.io/%E5%AE%AE%E5%8E%9F%E7%9C%BC%E7%A7%91%E7%94%A2%E5%93%81%E6%B8%85%E5%96%AE%E8%B3%87%E6%96%99.txt');
+//   console.log(mingRun);
+//   let auntieRun = await runPromise('漂亮阿姨', 2500);
+//   return `${mingRun}`
+ 
+// }
 
      fetch('https://nick2258.github.io/%E5%AE%AE%E5%8E%9F%E7%9C%BC%E7%A7%91%E7%94%A2%E5%93%81%E6%B8%85%E5%96%AE%E8%B3%87%E6%96%99.txt')
   .then(function(response) {
     return response.json();
   })
-//   .then(function(myJson) {
-//     console.log(myJson);
-//   });
+  .then(function(myJson) {
+    console.log(myJson);
+  });
     
 
-</script>
 </script>
 </body>
 </html>
