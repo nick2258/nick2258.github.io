@@ -486,7 +486,7 @@
                     </div>
 
                     <div class="all_sale_card">
-                        <div class="card">
+                        <!-- <div class="card">
                             <div class="pic" >
                                 <img src="./img/線上購買/購物車拍攝-鳳梨酥_17號鳳梨酥禮盒 (1).png" alt="">
                             </div>
@@ -555,7 +555,7 @@
                                     、蛋、乳酪、麥芽糖、海藻糖、奶粉、百香果、鹽</div>
                                 <span class="btn">點我購買</span>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
         </section>
@@ -774,6 +774,7 @@
                 </div>
             </div>
         </section>
+        
 
         <section class="contact" id="contact">
                 <div class="mycontainer">
@@ -847,26 +848,148 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.js"></script>
 
 <script>
-//     let url = 'https://nick2258.github.io/%E5%AE%AE%E5%8E%9F%E7%9C%BC%E7%A7%91%E7%94%A2%E5%93%81%E6%B8%85%E5%96%AE%E8%B3%87%E6%96%99.txt'
-// fetch(url) .then(function(myJson) {
-//     console.log(myJson);
-//   });
+    // var btns = document.querySelectorAll('.sale_btn')
+    // for (let index = 0; index < 1; index++) {
+    //     const element = btns;
+    //     console.log(element[1]);
+        
+    // }
+    // btns.forEach(element => {
+        
+    // });
 
-// const asyncRun = async () => {
-//   let mingRun = await runPromise('https://nick2258.github.io/%E5%AE%AE%E5%8E%9F%E7%9C%BC%E7%A7%91%E7%94%A2%E5%93%81%E6%B8%85%E5%96%AE%E8%B3%87%E6%96%99.txt');
-//   console.log(mingRun);
-//   let auntieRun = await runPromise('漂亮阿姨', 2500);
-//   return `${mingRun}`
- 
-// }
+    fetch('https://nick2258.github.io/%E5%AE%AE%E5%8E%9F%E7%9C%BC%E7%A7%91%E7%94%A2%E5%93%81%E6%B8%85%E5%96%AE%E8%B3%87%E6%96%99%E5%BA%AB.html')
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(products) {
+        
+        var all_sale_card = document.querySelector('.all_sale_card')
+        var product_types = products.records.product
+        var product_type1 = products.records.product[0].product_details
+        product_type1.forEach(p => {
+            var p_name = p.name
+            var p_pic = p.pic
+            var p_price = p.price
+            var p_date = p.date
+            var p_ingredient = p.ingredient
+            var p_link = p.link
 
-     fetch('https://nick2258.github.io/%E5%AE%AE%E5%8E%9F%E7%9C%BC%E7%A7%91%E7%94%A2%E5%93%81%E6%B8%85%E5%96%AE%E8%B3%87%E6%96%99.txt')
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(myJson) {
-    console.log(myJson);
-  });
+            all_sale_card.innerHTML +=`
+            <div class="card">
+                            <div class="pic">
+                                <img src="${p_pic}" alt="">
+                            </div>
+                            <div class="card_content">
+                                <div class="card_title ">產品名稱:${p_name}</div>
+                                <div class="price">產品價格:${p_price}</div>
+                                <div class="date">保存期限:${p_date}</div>
+                                <div class="content">成份：${p_ingredient}</div>
+                                <span class="btn"><a href="${p_link}">點我購買</a></span>
+                            </div>
+                        </div>`
+            
+        });
+        // console.log(product_type1);
+        
+        var btns = document.querySelectorAll('.sale_btn')
+
+        btns[0].classList.add("active")
+
+        btns.forEach((btn,index) => {
+            // const element = btns[1]; 
+            
+            // console.log(btn);
+            btn.onclick = function(){
+                clearallcard()    
+                clearall()
+                
+                btn.classList.add("active")
+                // console.log(product_types[index]);
+                const products = product_types[index].product_details
+                // console.log(products);
+
+                products.forEach(element => {
+                var product_name = element.name
+                var product_pic = element.pic
+                var product_price = element.price
+                var product_date = element.date
+                var product_ingredient = element.ingredient
+                var product_link = element.link
+                
+                // console.log(product_name);
+                // console.log(product_pic);
+                // console.log(product_date);
+                // console.log(product_ingredient);
+                // console.log(product_link);
+
+                
+                    
+                
+            all_sale_card.innerHTML +=`
+            <div class="card">
+                            <div class="pic">
+                                <img src="${product_pic}" alt="">
+                            </div>
+                            <div class="card_content">
+                                <div class="card_title ">產品名稱:${product_name}</div>
+                                <div class="price">產品價格:${product_price}</div>
+                                <div class="date">保存期限:${product_date}</div>
+                                <div class="content">成份：${product_ingredient}</div>
+                                <span class="btn"><a href="${product_link}">點我購買</a></span>
+                            </div>
+                        </div>`
+                
+            });
+        }
+            
+    });
+
+        function clearall(){
+            btns.forEach((btn,index) => {
+                btn.classList.remove("active")
+                
+            });
+        }
+        function clearallcard(){
+            all_sale_card.innerHTML =''
+        }
+
+        
+
+
+        for (let index = 0; index <1; index++) {
+            const element = product_types[1];
+            // console.log(element);
+            
+        }
+
+        // 這邊要跟按鈕一起回圈
+        product_types.forEach(product_type => {
+            // console.log(product_types[0]);
+
+            var products = product_type.product_details
+            // console.log(products);
+            
+
+            products.forEach(element => {
+                var product_name = element.name
+                var product_pic = element.pic
+                var product_date = element.date
+                var product_ingredient = element.ingredient
+                var product_link = element.link
+                
+                // console.log(product_name);
+                // console.log(product_pic);
+                // console.log(product_date);
+                // console.log(product_ingredient);
+                // console.log(product_link);
+                
+            });
+
+        });
+
+    });
     
 
 </script>

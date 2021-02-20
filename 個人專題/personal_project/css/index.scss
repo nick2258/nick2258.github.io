@@ -1233,6 +1233,9 @@ main{
                         margin-bottom: 30px;
                         background-color:#E3BFA6 ;
                         // border-radius: 6%;
+                        &.active{
+                            background-color: blue;
+                        }
                     }  
                 }
                 

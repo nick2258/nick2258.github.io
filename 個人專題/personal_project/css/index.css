@@ -1846,6 +1846,10 @@ main .sale .mycontainer .all_btn .btns .sale_btn {
   background-color: #E3BFA6;
 }
 
+main .sale .mycontainer .all_btn .btns .sale_btn.active {
+  background-color: blue;
+}
+
 main .sale .mycontainer .all_sale_card {
   display: -webkit-box;
   display: -ms-flexbox;
