@@ -56,6 +56,7 @@ input,select{
     font-size: 36px;
     font-weight: bold;
     background-attachment: fixed;
+    text-decoration: none;
     @media screen and (max-width:1600px){
         font-size: 32px;   
     }
@@ -63,9 +64,10 @@ input,select{
         font-size: 30px;   
     }
     .top_text{
-        color: #47307e;
+        color: #605D4F;
         text-align: center;
         .fa-angle-double-up{
+            
             display: none;
         }
     }
@@ -74,6 +76,7 @@ input,select{
         align-self: center;
         width: 80px;
         height: 80px;
+        
         @media screen and (max-width:1600px){
             width: 70px;
             height:70px;  
@@ -89,6 +92,7 @@ input,select{
             display: none;
         }
         .fa-angle-double-up{
+            
             display: block;
         }
     }
@@ -155,6 +159,7 @@ main{
         position: relative;
         z-index: 3;
         .pic{
+           
             width: calc(100% - 100px);
 
             align-self: flex-start;
@@ -162,7 +167,7 @@ main{
             display: flex;
  
             .img{
-                
+                display: block;
                 width: 80vw;
                 height: 45.5vw;
                 // width: 1577px;
@@ -411,6 +416,9 @@ main{
                     padding: 10px 15px 10px 9px;
                     @media screen and (max-width:1400px){
                         font-size:48px;        
+                    } 
+                    @media screen and (max-width:860px){
+                        font-size:42px;        
                     } 
                 }
             }
@@ -994,13 +1002,6 @@ main{
     }
 }
 
-    // 冰凍畫未補
-    .ice{
-        width: 100%;
-        height: 800px;
-        background-color: aqua;
-    }
-
     // 產品
     .product_bg{
         background-color:#F9E1C2 ;
@@ -1013,9 +1014,13 @@ main{
             display: flex;
             justify-content: center;
             letter-spacing: 8px;
+            
             @media screen and (max-width:1400px){
                 font-size:48px;        
             }
+            @media screen and (max-width:860px){
+                font-size:42px;        
+            } 
         }
         .mycontainer{
             @media screen and (max-width:1800px){
@@ -1206,9 +1211,13 @@ main{
             .title{
                 font-size: 60px;
                 font-weight: bold;
+                
                 @media screen and (max-width:1400px){
                     font-size:48px;        
                 }
+                @media screen and (max-width:860px){
+                    font-size:42px;        
+                } 
             }
             .all_btn{
                 max-width: calc(100% - 200px);
@@ -1216,7 +1225,31 @@ main{
                 justify-content: center;
                 display: flex;
                 height: auto;
-                margin: auto;
+                // margin: auto;
+                margin: 45px auto;
+                @media screen and (max-width:1500px){
+                    max-width: calc(100% - 80px);
+                    margin: 30px auto;
+                }
+                @media screen and (max-width:1279px){
+                    max-width: calc(100% - 60px);
+                    margin: 30px auto;
+                }
+                @media screen and (max-width:1279px){
+                    max-width: calc(100% - 60px);
+                    margin: 30px auto;
+                }
+                @media screen and (max-width:1000px){
+                    // max-width: 60%;
+                    max-width: calc(60% + 60px);
+                    margin: 30px auto;
+                }
+                @media screen and (max-width:800px){
+                    // max-width: 60%;
+                    max-width: calc(70% + 60px);
+                    margin: 30px auto;
+                }
+
                 .btns{
                     width: unset;
                     max-width: max-content;
@@ -1233,22 +1266,47 @@ main{
                         margin-bottom: 30px;
                         background-color:#E3BFA6 ;
                         // border-radius: 6%;
+                        @media screen and (max-width:1500px){
+                            padding: 5px 20px;
+                            font-size: 32px;
+                        }
+                        @media screen and (max-width:1279px){
+                            padding: 5px 15px;
+                            font-size: 28px;
+                            margin-right: 25px;
+                        }
+                        // @media screen and (max-width:860px){
+                        //     display: none;
+                        // }
+                        &:hover{
+                            background-color:#e3bfa6ce ;
+                            color: #33322ac0;
+                        }
                         &.active{
-                            background-color: blue;
+                            background-color: #ac8970cb;
                         }
                     }  
                 }
+                // .btns860{
+                //     display: none;
+                //     width: 300px;
+                //     @media screen and (max-width:860px){
+                //         display: block;
+                //     }
+                // }
                 
             }
             .all_sale_card{
-                // max-width: calc(100% - 135px);
                 display: flex;
-                // justify-content: space-between;
                 flex-wrap: wrap;
+                @media screen and (max-width:1200px){
+                    max-width: calc(100% - 40px); 
+                    margin: auto; 
+                }
                 .card{
                     border: 0px;
                     width: calc(25% - 33.75px);
-                    // width: 350px;
+
                     height: auto;
                     margin-bottom: 40px;
                     padding-bottom: 20px;
@@ -1260,7 +1318,7 @@ main{
                             @media screen and (max-width:1200px){
                                 margin-right:45px ;  
                             }
-                            @media screen and (max-width:750px){
+                            @media screen and (max-width:768px){
                                 margin-right:0px ;  
                                 margin: auto;
                                 margin-bottom: 20px;
@@ -1272,14 +1330,14 @@ main{
                         width: calc(50% - 22.5px);  
                         &:nth-child(2n){
                             margin-right: 0px;
-                            @media screen and (max-width:750px){
+                            @media screen and (max-width:768px){
                                 margin-right:0px ;  
                                 margin: auto;
                                 margin-bottom: 20px;
                             }
                         }    
                     }
-                    @media screen and (max-width:750px){
+                    @media screen and (max-width:768px){
                         width: 75%;  
                         margin-right: 0px;
                         margin: auto;
@@ -1294,7 +1352,7 @@ main{
                         @media screen and (max-width:1200px){
                             margin-right:0px ;  
                         }
-                        @media screen and (max-width:750px){
+                        @media screen and (max-width:768px){
                             margin-right:0px ;  
                             margin: auto;
                             margin-bottom: 20px;
@@ -1303,19 +1361,17 @@ main{
                     .pic{
                         width: 100%;
                         height: 16vw;
-                        background-color: cadetblue;
+
                         background-position: center;
                         background-repeat: no-repeat;
-                        // background-size:;
-                        // // margin-bottom: 10px;
                         @media screen and (max-width:1500px){
                             height: 18vw;   
                         }
                         @media screen and (max-width:1200px){
                             height: 24vw;   
                         }
-                        @media screen and (max-width:750px){
-                            height: 30vw;   
+                        @media screen and (max-width:768px){
+                            height: 35vw;   
                         }
                         img{
                             width: 100%;
@@ -1328,19 +1384,20 @@ main{
                         font-weight: 600;
                         margin-top: 20px;
                         letter-spacing: 2px;
+                       
     
                         
                         .card_title{
                             font-size: 20px;
                             height: 60px;
                             min-height: 60px;
-                            font-weight: 600;
+
                             margin-bottom: 20px;
                             height: min-content;
                         }
                         .price{
                             font-size: 18px;
-                            font-weight: 600;
+                            
                             height: 27px;
                             max-height: 27px;
                             margin-bottom: 15px;
@@ -1349,8 +1406,12 @@ main{
                             font-size: 18px;
                             height: 27px;
                             max-height: 27px;
-                            font-weight: 600;
+                            
                             margin-bottom: 15px;
+                            @media screen and (max-width:880px){                                  
+                                height: 54px;
+                                max-height: 54px;  
+                            }
                         }
                         .content{
                             font-size: 15px;
@@ -1360,10 +1421,24 @@ main{
                             margin-bottom: 40px;
                         }
                         .btn{
-                            font-size: 20px;
-                            font-weight: 600;
-                            padding: 10px 20px;
-                            background-color: chocolate;
+                            a{
+                                font-size: 20px;
+                                font-weight: 600;
+                                padding: 10px 20px;
+
+                                background-color:#E3BFA6 ;
+                                color: #33322a;
+                                text-decoration: none;
+                                &:link{
+                                    color: #33322a;
+
+                                }
+                                &:hover{
+                                    background-color:#e2a172 ;
+                                    color: #33322ac0;
+                                }                               
+                            }
+                            
                            
                         }
                     }
@@ -1380,10 +1455,6 @@ main{
             display: flex;
             flex-direction: column;
             width: calc(100% - 300px);
-            // flex-direction: row-reverse;
-            // justify-content: space-between;
-
-            
             @media screen and (max-width:1800px){
                 width: calc(100% - 200px);
             }
@@ -1391,23 +1462,16 @@ main{
            
             .pic{
                 display: flex;
-                // justify-content: flex-end;
                 margin: auto;
                 position: relative;
                 height: max-content;
                 flex-direction: row-reverse;
 
-
-                // flex-direction: column;
                 justify-content: initial;
                 width: 82%;
 
                 margin-bottom: 30px;
-                // @media screen and (max-width:1279px){
-                    
-                //     flex-direction: column;
-                //     justify-content: initial;
-                // }
+
                 @media screen and (max-width:1300px){
                     width: 92%;
                     
@@ -1417,25 +1481,18 @@ main{
                     
                 }
                 .title{
-                    // position: absolute;
-                    // right: 20px;
-                    // top: 3vw;
-                    // display: flex;
                     flex-direction: column;
-                    // background-color: rgba(255, 255, 255, 0.637);
-                    // padding: 30px 20px ;
-
 
                     display: flex;
                     position: relative;
                     width: max-content;
-                    // align-self: flex-end;
+
                     background-color: initial;
                     @media screen and (max-width:1279px){
                         display: flex;
                         position: relative;
                         width: max-content;
-                        // align-self: flex-end;
+
                         background-color: initial;
                     }
                     img{
@@ -1460,37 +1517,21 @@ main{
                     }
                 }
                 .restaurant_text{
-                    // background-color: rgba(255, 255, 255, 0.637);
-                    // color: #33322a;
-                    // position: absolute;
-                    // right: 12vw;
-                    // top: 5vw;
-
-                    
-
-                    // padding: 30px;
-                    // display: flex;
-                    // flex-direction: column;
-
                     writing-mode: vertical-rl; 
                     height:auto;
-
 
                     position: relative;
                     width: max-content;
                     align-self: flex-end;
-                    
-                    // right:0px;
-                    // top:0px;
+
                     margin-right:calc(6vw + 20px);
                     margin-top: 5vw;
                     background-color: initial;
                     padding: 0px;
                     @media screen and (max-width:1100px){
-                        // margin-right:calc(5vw + 10px);
+
                         margin-right:5vw ;
                     }
-                    
                     p{
                         margin-left: 4vw;
                         margin-bottom: 0px;
@@ -1505,15 +1546,12 @@ main{
                         }
                         @media screen and (max-width:1700px){
                             font-size: 30px;
-                            // right: calc(8vw + 20px);
                         }
                         @media screen and (max-width:1600px){
-                            font-size: 28px;
-                            
+                            font-size: 28px;    
                         }
                         @media screen and (max-width:1500px){
                             font-size: 26px;
-      
                         }
                         @media screen and (max-width:1100px){
                             font-size: 24px;
@@ -1526,66 +1564,26 @@ main{
                         }
 
                     }
-                    
-                    // @media screen and(max-width:1279px){
-                    //     position: relative;
-                    //     width: max-content;
-                    //     align-self: flex-end;
-                    //     font-size: 22px;
-                    //     right:0px;
-                    //     top:0px;
-                    //     margin-right: 20vw;
-                    //     // margin-top: -15vw;
-                    //     background-color: initial;
-                    //     padding: 0px;
-                    //     @media screen and (max-width:768px){
-                    //         font-size: 20px;
-                    //     }
-                    //     p{
-                    //         margin-left: 3vw;
-                    //     }
-                    // }
                 }
 
                 .recipt{
                     height: auto;
                     display: flex;
-                    // align-items: flex-end;
                     align-self:flex-end;
-                    
-                    
-                    // transform: translateY(30px);
-                    
                     position: absolute;
                     left: 0px;
                     
                     z-index: 2;
-    
-                    // margin-top: -20vw;
-    
-    
                     .menu{
-                        // position: absolute;
-                        // background-color: #D9D6D0;
-                        // padding: 80px 45px ;
                         display: flex;
                         flex-direction: row-reverse;
-                        // justify-content: flex-end;
-                        // transform: translateX(30px);
-    
-                        // margin-top: -12vw;
+
                         left: 0px;
                         background-color: initial;
                         padding: 0px;
                         align-self: flex-start;
-                        // @media screen and (max-width:1800px){
-                        //     padding: 70px 35px ;
-                        // }
-                        // @media screen and (max-width:1600px){
-                        //     padding: 60px 20px ;
-                        // }
+
                         @media screen and (max-width:1279px){
-                            // margin-top: 12vw;
                             left: 0px;
                             background-color: initial;
                             padding: 0px;
@@ -1596,6 +1594,9 @@ main{
                             display: flex;
                             flex-direction: column;
                             margin: 0px 10px;
+                            a{
+                                text-decoration: none;
+                            }
                             .icon{
                                 width: 60px;
                                 height: 60px;
@@ -1630,110 +1631,18 @@ main{
                         }
                     }
                 }
-
-                // .big_pic{
-                //     width: 100%;
-                //     height: 800px;
-                //     margin-top: 20px;
-                //     // @media screen and (max-width:1800px){
-                //     //     width: 79vw;
-                //     //     height: 45vw;
-                //     // }   
-                // }
             }
-            // .recipt{
-            //     height: auto;
-            //     display: flex;
-            //     align-items: flex-end;
-            //     // transform: translateY(30px);
-                
-            //     position: relative;
-            //     z-index: 2;
-
-            //     margin-top: -20vw;
-
-
-            //     .menu{
-            //         // position: absolute;
-            //         // background-color: #D9D6D0;
-            //         // padding: 80px 45px ;
-            //         display: flex;
-            //         flex-direction: row-reverse;
-            //         // justify-content: flex-end;
-            //         // transform: translateX(30px);
-
-            //         // margin-top: -12vw;
-            //         left: 0px;
-            //         background-color: initial;
-            //         padding: 0px;
-            //         align-self: flex-start;
-            //         @media screen and (max-width:1800px){
-            //             padding: 70px 35px ;
-            //         }
-            //         @media screen and (max-width:1600px){
-            //             padding: 60px 20px ;
-            //         }
-            //         @media screen and (max-width:1279px){
-            //             // margin-top: 12vw;
-            //             left: 0px;
-            //             background-color: initial;
-            //             padding: 0px;
-            //             align-self: flex-start;
-            //         }
-
-            //         .main{
-            //             display: flex;
-            //             flex-direction: column;
-            //             margin: 0px 10px;
-            //             .icon{
-            //                 width: 60px;
-            //                 height: 60px;
-            //                 @media screen and (max-width:1800px){
-            //                     width: 45px;
-            //                     height: 45px;
-            //                 }
-            //                 @media screen and (max-width:1279px){
-            //                     width: 30px;
-            //                     height: 30px;
-            //                 }
-            //                 img{
-            //                     width: 100%;
-            //                     height: 100%;
-            //                 }
-            //             }
-            //             .text{
-            //                 writing-mode: vertical-rl;
-
-            //                 color: #605D4F;
-            //                 align-self: center;
-            //                 font-size: 24px;
-            //                 font-weight: 600;
-            //                 margin-top: 15px; 
-            //                 @media screen and (max-width:1279px){
-            //                     font-size: 18px;
-            //                 }
-            //             }
-            //         }
-            //     }
-            // }
             .big_pic{
                 width: 90%;
-                // height: 800px;
                 height: 42vw;
                 margin: auto;
-                // margin-top: 20px;
                 @media screen and (max-width:1300px){
-                    width: 100%;
-                    
+                    width: 100%;   
                 }
                 img{
                     width: 100%;
                     height: 100%;
                 }
-                // @media screen and (max-width:1800px){
-                //     width: 79vw;
-                //     height: 45vw;
-                // }   
             }
         } 
          
@@ -1749,6 +1658,9 @@ main{
             @media screen and (max-width:1400px){
                 font-size:48px;        
             }
+            @media screen and (max-width:860px){
+                font-size:42px;        
+            } 
         }
         .order_content{    
             margin-top: 30px;
@@ -1871,95 +1783,81 @@ main{
                     padding: 0px;
                     text-align: center;
                 }
+                @media screen and (max-width:860px){
+                    font-size:42px;        
+                } 
             }
-            .content{
-                width: 100%;
-                height: auto;
-                margin-top: 50px;
-                display: flex;
-                flex-direction: column;
+            .allcontent{
+                width: 90%;
                 @media screen and (max-width:1200px){
-                    margin-top: 0px;
-                }
-                .all{
+                    width: 100%;      
+                } 
+                .contents{
                     width: 100%;
+                    height: auto;
                     display: flex;
-                    flex-direction: column;
-                    .icon{
-                        width: 100%;;
-                        text-align: center;
-                        font-size: 80px;
-                        border-bottom: 3px solid gray;
-                        margin: 50px 0px;
-                        @media screen and (max-width:1200px){
-                            margin: 40px 0px;
-                        }
-                        img{
-                            width: 7vw;
-                            align-self: center;
-                            padding-bottom: 20px;
-                            @media screen and (max-width:1200px){
-                                width: 10vw;
+                    justify-content: space-around;
+                    flex-wrap: nowrap;
+                    .content{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        margin: auto;
+                        margin-top: 0px;
+                        .icon{
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;  
+                            margin: auto;
+                            border-bottom: 3px solid rgb(112, 95, 95);
+                            margin-bottom: 20px;
+                            img{
+                                width: 120px ;
+                                margin: 20px 0px;
+                                @media screen and (max-width:1200px){
+                                    width: 100px;
+                                }
                             }   
                         }
-                        .yt{
-                            width: 10vw;
+                        .pics{
+                            display: flex;
+                            
+                            width: 96%;
+                            margin: auto;
                             @media screen and (max-width:1200px){
-                                width: 12vw;
+                                flex-direction: column;
                             }
-                        }
-                    }
-                    .pic{
-                        margin: auto;
-                        display: flex;
-                        @media screen and (max-width:1200px){
-                            flex-direction: column;
-                        }
-                        img{
-                            width:36vw;
-                            height: auto;
-                            background-position: center;
-                            background-size: contain;
-                            @media screen and (max-width:1200px){
-                                width: 55vw;  
-                            }
-                            &:nth-child(2){
-                                margin-left : 45px; 
-                                @media screen and (max-width:1200px){
-                                    margin-top: 30px;
-                                    margin-left: 0px;   
+                            
+                            
+                            .pic{
+                                width:calc(50% - 30px);
+                                display: flex;
+                                height: auto;
+                                margin-right: 60px;
+                                &:last-child{
+                                    margin-right: 0px;
                                 }
-                            }
-                        }
-                    }
-                    .pic2{
-                        width: max-content;
-                        align-self: center;
-                        justify-content: center;
-                        display: flex;    
-                        margin: auto;
-                        
-                        background-position: center;
-                        background-size: contain;
-                        @media screen and (max-width:1200px){
-                            flex-direction: column;
-                        }
-                        img{
-                            width:20vw;
-                            height: auto;
-                            background-color: black;
-                            @media screen and (max-width:1200px){
-                                width: 38vw;   
-                            }
-                            &:nth-child(2){
-                                margin-left: 45px;
-                                margin-right: 45px;
-                                @media screen and (max-width:1200px){
-                                    margin: 30px 0px;
+                                iframe{
+                                    width: 100%;
+                                    height: 20vw;
+   
                                 }
-                            }
-                        }  
-                    } 
+                                @media screen and (max-width:1200px){
+                                    width:100%  ;
+                                    margin-right: 0px;
+                                    margin-bottom: 30px;
+                                    &:last-child{
+                                        margin-bottom: 0px;
+                                    }
+                                    iframe{
+                                        width: 100%;
+                                        height: 30vw;
+       
+                                    }
+                                }
+                            }                            
+                        }    
+                    }
                 }
             }
         }    
@@ -1980,6 +1878,9 @@ main{
                 @media screen and (max-width:1400px){
                     font-size:48px;        
                 }
+                @media screen and (max-width:860px){
+                    font-size:42px;        
+                } 
             }
             .content{
                 width: auto;

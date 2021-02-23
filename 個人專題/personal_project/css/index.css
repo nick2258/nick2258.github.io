@@ -69,6 +69,7 @@ input, select {
   font-size: 36px;
   font-weight: bold;
   background-attachment: fixed;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1600px) {
@@ -84,7 +85,7 @@ input, select {
 }
 
 #top .top_text {
-  color: #47307e;
+  color: #605D4F;
   text-align: center;
 }
 
@@ -193,6 +194,7 @@ main .banner .pic {
 }
 
 main .banner .pic .img {
+  display: block;
   width: 80vw;
   height: 45.5vw;
 }
@@ -557,6 +559,12 @@ main .buliding .mycontainer .title .title_bg .title_text {
 @media screen and (max-width: 1400px) {
   main .buliding .mycontainer .title .title_bg .title_text {
     font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  main .buliding .mycontainer .title .title_bg .title_text {
+    font-size: 42px;
   }
 }
 
@@ -1485,12 +1493,6 @@ main .buliding .mycontainer .content_bg .part_5_bg .part_5 .right .pic img {
   height: 100%;
 }
 
-main .ice {
-  width: 100%;
-  height: 800px;
-  background-color: aqua;
-}
-
 main .product_bg {
   background-color: #F9E1C2;
   padding: 60px 0px;
@@ -1513,6 +1515,12 @@ main .product_bg .title {
 @media screen and (max-width: 1400px) {
   main .product_bg .title {
     font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  main .product_bg .title {
+    font-size: 42px;
   }
 }
 
@@ -1808,6 +1816,12 @@ main .sale .mycontainer .title {
   }
 }
 
+@media screen and (max-width: 860px) {
+  main .sale .mycontainer .title {
+    font-size: 42px;
+  }
+}
+
 main .sale .mycontainer .all_btn {
   max-width: calc(100% - 200px);
   width: auto;
@@ -1818,7 +1832,42 @@ main .sale .mycontainer .all_btn {
   display: -ms-flexbox;
   display: flex;
   height: auto;
-  margin: auto;
+  margin: 45px auto;
+}
+
+@media screen and (max-width: 1500px) {
+  main .sale .mycontainer .all_btn {
+    max-width: calc(100% - 80px);
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  main .sale .mycontainer .all_btn {
+    max-width: calc(100% - 60px);
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  main .sale .mycontainer .all_btn {
+    max-width: calc(100% - 60px);
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .sale .mycontainer .all_btn {
+    max-width: calc(60% + 60px);
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main .sale .mycontainer .all_btn {
+    max-width: calc(70% + 60px);
+    margin: 30px auto;
+  }
 }
 
 main .sale .mycontainer .all_btn .btns {
@@ -1846,8 +1895,28 @@ main .sale .mycontainer .all_btn .btns .sale_btn {
   background-color: #E3BFA6;
 }
 
+@media screen and (max-width: 1500px) {
+  main .sale .mycontainer .all_btn .btns .sale_btn {
+    padding: 5px 20px;
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  main .sale .mycontainer .all_btn .btns .sale_btn {
+    padding: 5px 15px;
+    font-size: 28px;
+    margin-right: 25px;
+  }
+}
+
+main .sale .mycontainer .all_btn .btns .sale_btn:hover {
+  background-color: #e3bfa6ce;
+  color: #33322ac0;
+}
+
 main .sale .mycontainer .all_btn .btns .sale_btn.active {
-  background-color: blue;
+  background-color: #ac8970cb;
 }
 
 main .sale .mycontainer .all_sale_card {
@@ -1856,6 +1925,13 @@ main .sale .mycontainer .all_sale_card {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1200px) {
+  main .sale .mycontainer .all_sale_card {
+    max-width: calc(100% - 40px);
+    margin: auto;
+  }
 }
 
 main .sale .mycontainer .all_sale_card .card {
@@ -1882,7 +1958,7 @@ main .sale .mycontainer .all_sale_card .card {
   }
 }
 
-@media screen and (max-width: 1500px) and (max-width: 750px) {
+@media screen and (max-width: 1500px) and (max-width: 768px) {
   main .sale .mycontainer .all_sale_card .card:nth-child(3n) {
     margin-right: 0px;
     margin: auto;
@@ -1899,7 +1975,7 @@ main .sale .mycontainer .all_sale_card .card {
   }
 }
 
-@media screen and (max-width: 1200px) and (max-width: 750px) {
+@media screen and (max-width: 1200px) and (max-width: 768px) {
   main .sale .mycontainer .all_sale_card .card:nth-child(2n) {
     margin-right: 0px;
     margin: auto;
@@ -1907,7 +1983,7 @@ main .sale .mycontainer .all_sale_card .card {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   main .sale .mycontainer .all_sale_card .card {
     width: 75%;
     margin-right: 0px;
@@ -1932,7 +2008,7 @@ main .sale .mycontainer .all_sale_card .card:nth-child(4n) {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   main .sale .mycontainer .all_sale_card .card:nth-child(4n) {
     margin-right: 0px;
     margin: auto;
@@ -1943,7 +2019,6 @@ main .sale .mycontainer .all_sale_card .card:nth-child(4n) {
 main .sale .mycontainer .all_sale_card .card .pic {
   width: 100%;
   height: 16vw;
-  background-color: cadetblue;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1960,9 +2035,9 @@ main .sale .mycontainer .all_sale_card .card .pic {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   main .sale .mycontainer .all_sale_card .card .pic {
-    height: 30vw;
+    height: 35vw;
   }
 }
 
@@ -1983,7 +2058,6 @@ main .sale .mycontainer .all_sale_card .card .card_content .card_title {
   font-size: 20px;
   height: 60px;
   min-height: 60px;
-  font-weight: 600;
   margin-bottom: 20px;
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -1992,7 +2066,6 @@ main .sale .mycontainer .all_sale_card .card .card_content .card_title {
 
 main .sale .mycontainer .all_sale_card .card .card_content .price {
   font-size: 18px;
-  font-weight: 600;
   height: 27px;
   max-height: 27px;
   margin-bottom: 15px;
@@ -2002,8 +2075,14 @@ main .sale .mycontainer .all_sale_card .card .card_content .date {
   font-size: 18px;
   height: 27px;
   max-height: 27px;
-  font-weight: 600;
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 880px) {
+  main .sale .mycontainer .all_sale_card .card .card_content .date {
+    height: 54px;
+    max-height: 54px;
+  }
 }
 
 main .sale .mycontainer .all_sale_card .card .card_content .content {
@@ -2014,11 +2093,22 @@ main .sale .mycontainer .all_sale_card .card .card_content .content {
   margin-bottom: 40px;
 }
 
-main .sale .mycontainer .all_sale_card .card .card_content .btn {
+main .sale .mycontainer .all_sale_card .card .card_content .btn a {
   font-size: 20px;
   font-weight: 600;
   padding: 10px 20px;
-  background-color: chocolate;
+  background-color: #E3BFA6;
+  color: #33322a;
+  text-decoration: none;
+}
+
+main .sale .mycontainer .all_sale_card .card .card_content .btn a:link {
+  color: #33322a;
+}
+
+main .sale .mycontainer .all_sale_card .card .card_content .btn a:hover {
+  background-color: #e2a172;
+  color: #33322ac0;
 }
 
 main .restaurant {
@@ -2258,6 +2348,10 @@ main .restaurant .mycontainer .pic .recipt .menu .main {
   margin: 0px 10px;
 }
 
+main .restaurant .mycontainer .pic .recipt .menu .main a {
+  text-decoration: none;
+}
+
 main .restaurant .mycontainer .pic .recipt .menu .main .icon {
   width: 60px;
   height: 60px;
@@ -2339,6 +2433,12 @@ main .order .title {
 @media screen and (max-width: 1400px) {
   main .order .title {
     font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  main .order .title {
+    font-size: 42px;
   }
 }
 
@@ -2535,10 +2635,35 @@ main .social_media .mycontainer .title {
   }
 }
 
-main .social_media .mycontainer .content {
+@media screen and (max-width: 860px) {
+  main .social_media .mycontainer .title {
+    font-size: 42px;
+  }
+}
+
+main .social_media .mycontainer .allcontent {
+  width: 90%;
+}
+
+@media screen and (max-width: 1200px) {
+  main .social_media .mycontainer .allcontent {
+    width: 100%;
+  }
+}
+
+main .social_media .mycontainer .allcontent .contents {
   width: 100%;
   height: auto;
-  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+main .social_media .mycontainer .allcontent .contents .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2546,122 +2671,45 @@ main .social_media .mycontainer .content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-@media screen and (max-width: 1200px) {
-  main .social_media .mycontainer .content {
-    margin-top: 0px;
-  }
-}
-
-main .social_media .mycontainer .content .all {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-main .social_media .mycontainer .content .all .icon {
-  width: 100%;
-  text-align: center;
-  font-size: 80px;
-  border-bottom: 3px solid gray;
-  margin: 50px 0px;
-}
-
-@media screen and (max-width: 1200px) {
-  main .social_media .mycontainer .content .all .icon {
-    margin: 40px 0px;
-  }
-}
-
-main .social_media .mycontainer .content .all .icon img {
-  width: 7vw;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  padding-bottom: 20px;
-}
-
-@media screen and (max-width: 1200px) {
-  main .social_media .mycontainer .content .all .icon img {
-    width: 10vw;
-  }
-}
-
-main .social_media .mycontainer .content .all .icon .yt {
-  width: 10vw;
-}
-
-@media screen and (max-width: 1200px) {
-  main .social_media .mycontainer .content .all .icon .yt {
-    width: 12vw;
-  }
-}
-
-main .social_media .mycontainer .content .all .pic {
   margin: auto;
+  margin-top: 0px;
+}
+
+main .social_media .mycontainer .allcontent .contents .content .icon {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@media screen and (max-width: 1200px) {
-  main .social_media .mycontainer .content .all .pic {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-main .social_media .mycontainer .content .all .pic img {
-  width: 36vw;
-  height: auto;
-  background-position: center;
-  background-size: contain;
-}
-
-@media screen and (max-width: 1200px) {
-  main .social_media .mycontainer .content .all .pic img {
-    width: 55vw;
-  }
-}
-
-main .social_media .mycontainer .content .all .pic img:nth-child(2) {
-  margin-left: 45px;
-}
-
-@media screen and (max-width: 1200px) {
-  main .social_media .mycontainer .content .all .pic img:nth-child(2) {
-    margin-top: 30px;
-    margin-left: 0px;
-  }
-}
-
-main .social_media .mycontainer .content .all .pic2 {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  -ms-flex-item-align: center;
-      align-self: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: auto;
-  background-position: center;
-  background-size: contain;
+  border-bottom: 3px solid #705f5f;
+  margin-bottom: 20px;
+}
+
+main .social_media .mycontainer .allcontent .contents .content .icon img {
+  width: 120px;
+  margin: 20px 0px;
 }
 
 @media screen and (max-width: 1200px) {
-  main .social_media .mycontainer .content .all .pic2 {
+  main .social_media .mycontainer .allcontent .contents .content .icon img {
+    width: 100px;
+  }
+}
+
+main .social_media .mycontainer .allcontent .contents .content .pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 96%;
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  main .social_media .mycontainer .allcontent .contents .content .pics {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2669,26 +2717,36 @@ main .social_media .mycontainer .content .all .pic2 {
   }
 }
 
-main .social_media .mycontainer .content .all .pic2 img {
-  width: 20vw;
+main .social_media .mycontainer .allcontent .contents .content .pics .pic {
+  width: calc(50% - 30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: auto;
-  background-color: black;
+  margin-right: 60px;
+}
+
+main .social_media .mycontainer .allcontent .contents .content .pics .pic:last-child {
+  margin-right: 0px;
+}
+
+main .social_media .mycontainer .allcontent .contents .content .pics .pic iframe {
+  width: 100%;
+  height: 20vw;
 }
 
 @media screen and (max-width: 1200px) {
-  main .social_media .mycontainer .content .all .pic2 img {
-    width: 38vw;
+  main .social_media .mycontainer .allcontent .contents .content .pics .pic {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
   }
-}
-
-main .social_media .mycontainer .content .all .pic2 img:nth-child(2) {
-  margin-left: 45px;
-  margin-right: 45px;
-}
-
-@media screen and (max-width: 1200px) {
-  main .social_media .mycontainer .content .all .pic2 img:nth-child(2) {
-    margin: 30px 0px;
+  main .social_media .mycontainer .allcontent .contents .content .pics .pic:last-child {
+    margin-bottom: 0px;
+  }
+  main .social_media .mycontainer .allcontent .contents .content .pics .pic iframe {
+    width: 100%;
+    height: 30vw;
   }
 }
 
@@ -2713,6 +2771,12 @@ main .contact .mycontainer .title {
 @media screen and (max-width: 1400px) {
   main .contact .mycontainer .title {
     font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  main .contact .mycontainer .title {
+    font-size: 42px;
   }
 }
 
