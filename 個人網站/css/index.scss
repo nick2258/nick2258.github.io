@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mycontainer{
+    max-width: 1600px;
+    margin: auto;
+    // border: 1px solid black;
+}
+
+nav{
+    width: 100%;
+    max-width: 1920px;
+    
+    background-color: brown;
+    .mycontainer{
+        height: 48px;
+        background-color: burlywood;
+    }
+}
+
+main{
+    // background-color: chocolate;
+    .introduction{
+        
+        .mycontainer{
+            // height: 200px;
+            // background-color: cadetblue;
+            .content{
+                margin:30px 0px;
+                border-bottom:1px solid black ;
+                .top{
+                    border-bottom:1px solid black ;
+                    margin:30px 0px;
+                    display: flex;
+                    .pic{
+                        width: 18vw;
+                        height: 18vw;
+                        
+                        
+                        margin-right: 60px;
+                        margin-bottom: 30px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            background-color: cornflowerblue;
+                        }
+                    }
+                    .short_text{
+                        font-size: 28px;
+                        letter-spacing: 2px;
+                        p{
+                            margin-bottom: 20px;
+                            &:last-child{
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                }
+                .bottom{
+                    box-sizing: border-box;
+                    .longtext{
+                        // background-color: darkgoldenrod;
+                        font-size: 28px;
+                        padding: 20px 50px;
+                        
+                    }
+                }
+
+            }
+            
+        }
+    }
+    .certification{
+        margin-top: 60px;
+        .mycontainer{
+            height: auto;
+            // background-color: rgb(39, 49, 49);
+            box-sizing: border-box;
+            .title{
+                font-size: 48px;
+                font-weight: 600;
+                text-align: center;
+                padding: 30px 0px;
+                border-bottom:1px solid black ;
+
+                
+
+            }
+            .content{
+                padding: 20px 50px;
+                p{
+                  font-size: 28px;  
+                  margin-bottom: 30px;
+                  &:last-child{
+                    margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+    .portfolio{
+        margin-top: 60px;
+        .mycontainer{
+            height: 200px;
+            // background-color: rgb(39, 49, 49);
+            .title{ 
+                font-size: 48px ;
+                text-align: center;
+                padding: 30px 0px;
+                border-bottom:1px solid black ;
+            }
+            .web{
+                // box-sizing: border-box;
+                .web_title{
+                    font-size: 28px;   
+                    padding: 30px 0px;
+                    border-bottom:1px solid black ;        
+                    text-align: center;      
+                }
+                .content{
+                    // padding:20px 50px ;
+                    .card{
+                        width:100% ;
+                        border-bottom:1px solid black ;
+                        
+                        .card_container{
+                            display: flex;
+                            margin: 30px auto;
+                            width: 96%;
+                            .pic{
+                                width: 35%;
+                                height: 20vw;
+                                margin-right: 60px;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    background-color: darkgray;
+                                }
+                            }
+                            .card_content{
+                                // text-align: center;
+                                width: calc(65% - 60px);
+                                .titles{
+                                    margin-bottom: 20px;
+                                    &:last-child{
+                                        margin-bottom: 0px;
+                                    }
+                                    .card_title{
+                                        font-size: 24px;
+                                    }
+                                    .text{
+                                        font-size: 20px;
+                                    }
+    
+                                }
+                                // .card_title{
+                                //     font-size: 24px;
+                                // }
+                                // .card_title_text{
+                                //     font-size: 20px;
+                                // }
+                                // .size_title{
+                                //     font-size: 24px;
+                                // }
+                                // .size_title_text{
+                                //     font-size: 20px;
+                                // }
+                                // .introduction_title{
+                                //     font-size: 24px;
+                                // }
+                                // .introduction_title_text{
+                                //     font-size: 20px;
+                                // }
+                                // .skill_title{
+                                //     font-size: 24px;
+                                // }
+                                // .skill_title_text{
+                                //     font-size: 20px;
+                                // }
+                                a{
+                                    color: white;
+                                    font-size: 18px;
+                                    padding: 10px 20px;
+                                    background-color: darkred;
+                                    position: relative;
+                                    bottom: 0px;
+                                    left: 10px;
+                                }
+                            }
+                        }
+
+                        
+
+                    }
+                }
+
+            }
+        }
+    }
+    
+
+}
