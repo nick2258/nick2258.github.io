@@ -6,41 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
-    <nav>
-        <div class="mycontainer">
-            <div class="content"></div>
-        </div>
-    </nav>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light nav_bg active" >
+        <!-- <a class="navbar-brand" href="#">
+            <img src="./img/logo/leading-img1 (2).png" alt="">
+        </a> -->
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse mycontainer" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto row col-auto">
 
-    <main>
+            <li class="nav-item  active">
+                <a  class="nav-link " href="#introduction"  role="button"  aria-haspopup="true" aria-expanded="false">
+                    個人簡介
+                </a>
+            </li>
+
+            <li class="nav-item  active">
+                <a  class="nav-link " href="#certification"  role="button"  aria-haspopup="true" aria-expanded="false">
+                    認證、證照
+                </a>
+            </li>
+
+            <li class="nav-item dropdown active">
+                <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    作品集
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item " href="#web1">網頁切版</a>
+                  <a class="dropdown-item" href="#web2">API資料串接</a>
+                </div>
+            </li>
+
+            <!-- <li class="nav-item dropdown active">
+                <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    產品資訊 
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item " href="#product_bg">產品簡介</a>
+                  <a class="dropdown-item" href="#sale">線上訂購</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown active">
+                <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    醉月樓
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item " href="#restaurant">醉月樓簡介</a>
+                  <a class="dropdown-item" href="#order">線上訂位</a>
+                </div>
+            </li> -->
+            <li class="nav-item dropdown">
+              
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+    <main id="introduction">
         <section class="introduction">
-            <div class="mycontainer">
+            <div class="mycontainer" >
                 <div class="content">
                     <div class="top">
                         <div class="pic">
-                            <img src="" alt="">
+                            <img src="./img/資產 3.png" alt="">
                         </div>
                         <div class="short_text">
                             <p>姓名：魏薪展</p>
-                            <p>手機:0979033896</p>
-                            <p>信箱:w22081764@gmail.com</p>
+                            <p>手機：0979033896</p>
+                            <p>信箱：w22081764@gmail.com</p>
                             <p>生日：1997/07/04</p>
-                            <p>學歷:亞洲大學經營管理學系行銷管理組</p>
-                            <p>技能:HTML5、 CSS、Javascript、SCSS 、Bootstrap、RWD網頁製作</p>
+                            <p>學歷：亞洲大學經營管理學系行銷管理組</p>
+                            <p>技能：HTML5、 CSS、Javascript、SCSS 、Bootstrap、RWD網頁製作、Photoshop、Illustrator</p>
                         </div>
                     </div>
 
+                    
+
                     <div class="bottom">
                         <div class="longtext">
-                            我是一位勇於挑戰事情的人，並抱持著不斷學習的態度。求學期間學習行銷相關知識和技能，畢業後學習HTML、CSS、SCSS、JavaScript進行網頁切版排版，希望能進入貴公司，運用所學為貴公司盡一份心力。
+                            我是一位勇於挑戰事情的人，並抱持著不斷學習的態度。求學期間學習行銷相關知識和運用技能，畢業後學習HTML、CSS、SCSS、JavaScript進行網頁切版排版，希望能進入貴公司，運用所學為貴公司盡一份心力。
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="certification">
+        <section class="certification"  id="certification" >
             <div class="mycontainer">
                 <div class="title">認證、證照</div>
                 <div class="content">
@@ -57,149 +119,249 @@
             <div class="mycontainer">
                 <div class="title">作品集</div>
                 <div class="content">
-                    <div class="web">
+                    <div class="web" id="web1">
                         <div class="web_title">網頁切版</div>
                         <div class="content">
                             
-                            <div class="card">
+                            <div class="mycard">
                                 <div class="card_container">
                                     <div class="pic">
-                                    <img src="" alt="">
+                                        <img src="./img/觀光局.png" alt="">
+                                    </div>
+                                    <div class="card_content">
+
+                                        <div class="titles">
+                                            <span class="card_title">作品名稱:</span>
+                                            <span class="text">觀光局最新消息內頁仿切</span>
+                                        </div>
+
+                                        <div class="titles">
+                                            <span class="card_title">適用螢幕尺寸:</span>
+                                            <span class="text">1600px-1920px</span>
+                                        </div>
+
+                                        <div class="titles">
+                                            <span class="card_title">介紹:</span>
+                                            <span class="text">以觀光局最新消息內頁為範例參考，進行以CSS進行仿切，並運用onscroll、fix屬性，讓Nav超過自身高度時，能釘選在最上面</span>
+                                        </div>
+
+                                        <div class="titles">
+                                            <span class="card_title">運用技能:</span>
+                                            <span class="text">CSS、JavaScript</span>
+                                        </div>
+                                        <a href="">作品連結</a>
+                                    </div>
                                 </div>
-                                <div class="card_content">
+                            </div>    
 
-                                    <div class="titles">
-                                        <span class="card_title">標題:</span>
-                                        <span class="text">觀光局內頁仿仿切</span>
+                            <div class="mycard">
+                                <div class="card_container">
+                                    <div class="pic">
+                                        <img src="./img/鋼鐵人.png" alt="">
                                     </div>
+                                    <div class="card_content">
 
-                                    <div class="titles">
-                                        <span class="card_title">尺寸:</span>
-                                        <span class="text">11111</span>
-                                    </div>
+                                        <div class="titles">
+                                            <span class="card_title">作品名稱:</span>
+                                            <span class="text">鋼鐵人列表頁切版</span>
+                                        </div>
 
-                                    <div class="titles">
-                                        <span class="card_title">介紹:</span>
-                                        <span class="text">11111</span>
-                                    </div>
+                                        <div class="titles">
+                                            <span class="card_title">適用螢幕尺寸:</span>
+                                            <span class="text">320px-1920px</span>
+                                        </div>
 
-                                    <div class="titles">
-                                        <span class="card_title">技能:</span>
-                                        <span class="text">11111</span>
+                                        <div class="titles">
+                                            <span class="card_title">介紹:</span>
+                                            <span class="text">依設計稿以SCSS進行列表頁的RWD切版，運用overflow-x:hidden的屬性，使背景符合設計稿，並使用before、after的屬性，製作banner的hover效果，以及使用AOS動畫套件，讓畫面內容更有互動性
+                                            </span>
+                                        </div>
+
+                                        <div class="titles">
+                                            <span class="card_title">運用技能:</span>
+                                            <span class="text">SCSS、JavaScript、AOS動畫套件</span>
+                                        </div>
+                                        <a href="">作品連結</a>
                                     </div>
-                                    <a href="">作品連結</a>
                                 </div>
-                                
+                            </div>
+                            
+                            <div class="mycard">
+                                <div class="card_container">
+                                    <div class="pic">
+                                        <img src="./img/宮原眼科.png" alt="">
+                                    </div>
+                                    <div class="card_content">
+                                        
 
-                                    <!-- <div class="card_title_text">觀光局內頁仿仿切</div> -->
+                                        <div class="titles">
+                                            <span class="card_title">作品名稱:</span>
+                                            <span class="text">宮原眼科一頁式網站</span>
+                                        </div>
+
+                                        
+
+                                        <div class="titles">
+                                            <span class="card_title">適用螢幕尺寸:</span>
+                                            <span class="text">768px-1920px	</span>
+                                        </div>
+
+                                        <div class="titles">
+                                            <span class="card_title">介紹:</span>
+                                            <span class="text">以宮原眼科為主題進行網站的企劃、設計，以SCSS進行網頁切版，NAV使用Bootstrap進行RWD的版面切換，利用iframe、video等屬性，匯入影片、地圖等資訊。線上訂購由json格式透過fetch將資料呈現於畫面上。產品介紹、線上訂購，運用AOS動畫套件，讓畫面更加生動。</span>
+                                        </div>
+
+                                        <div class="titles">
+                                            <span class="card_title">運用技能:</span>
+                                            <span class="text">SCSS、JavaScript、AOS動畫套件、Bootstrap、fetch資料串接</span>
+                                        </div>
+                                        <a href="">作品連結</a>
+                                    </div>
+                                </div>
+                            </div>  
                                     
-                                    <!-- <div class="size_title">222222</div>
-                                    <div class="introduction_title">介紹</div>
-                                    <div class="introduction_text">111111111111111111111111111111111111111111111111</div>
-                                    <div class="skill_title">運用技能</div>
-                                    <div class="skill_text">111111111111111111111111111111111111111111111111</div> -->
-                                    
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="pic">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="card_content">
-                                    <div class="card_title">作品名稱</div>
-                                    <div class="card_title_text">鋼鐵人列表頁切版</div>
-                                    <div class="size_title">適用螢幕尺寸</div>
-                                    <div class="size_title">222222</div>
-                                    <div class="introduction_title">介紹</div>
-                                    <div class="introduction_text">111111111111111111111111111111111111111111111111</div>
-                                    <div class="skill_title">運用技能</div>
-                                    <div class="skill_text">111111111111111111111111111111111111111111111111</div>
-                                    <a href="">作品連結</a>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="pic">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="card_content">
-                                    <div class="card_title">作品名稱</div>
-                                    <div class="card_title_text">宮原眼科一頁式網站切版</div>
-                                    <div class="size_title">適用螢幕尺寸</div>
-                                    <div class="size_title">222222</div>
-                                    <div class="introduction_title">介紹</div>
-                                    <div class="introduction_text">111111111111111111111111111111111111111111111111</div>
-                                    <div class="skill_title">運用技能</div>
-                                    <div class="skill_text">111111111111111111111111111111111111111111111111</div>
-                                    <a href="">作品連結</a>
-                                </div>
-                            </div>
+                               
                         </div>
                     </div>
 
-                    <div class="web">
-                        <div class="title">API資料串接</div>
+                    <div class="web" id="web2">
+                        <div class="web_title">API資料串接</div>
                         <div class="content">
+                            
+                            <div class="mycard">
+                                <div class="card_container">
+                                    <div class="pic">
+                                        <img src="./img/天氣小卡.png" alt="">
+                                    </div>
+                                    <div class="card_content">
 
-                            <div class="card">
-                                <div class="pic">
-                                    <img src="" alt="">
+                                        <div class="titles">
+                                            <span class="card_title">作品名稱:</span>
+                                            <span class="text">氣象局天氣小卡</span>
+                                        </div>
+
+                                        <div class="titles">
+                                            <span class="card_title">適用螢幕尺寸:</span>
+                                            <span class="text">860px-1920px</span>
+                                        </div>
+
+                                        <div class="titles">
+                                            <span class="card_title">介紹:</span>
+                                            <span class="text">
+                                                串接氣象局的API資料，以CSS呈現，透過fetch的方式，將台灣各縣市的最高溫度、最低溫度、舒適度、降雨機率呈現於畫面，並使用判斷式，依造不同降雨機率呈現不同的圖片</span>
+                                        </div>
+
+                                        <div class="titles">
+                                            <span class="card_title">運用技能:</span>
+                                            <span class="text">CSS、JavaScript、fetch資料串接</span>
+                                        </div>
+                                        <a href="">作品連結</a>
+                                    </div>
                                 </div>
-                                <div class="card_content">
-                                    <div class="card_title">作品名稱</div>
-                                    <div class="card_title_text">觀光局內頁仿仿切</div>
-                                    <div class="size_title">適用螢幕尺寸</div>
-                                    <div class="size_title">222222</div>
-                                    <div class="introduction_title">介紹</div>
-                                    <div class="introduction_text">111111111111111111111111111111111111111111111111</div>
-                                    <div class="skill_title">運用技能</div>
-                                    <div class="skill_text">111111111111111111111111111111111111111111111111</div>
-                                    <a href="">作品連結</a>
+                            </div>    
+
+                            <div class="mycard">
+                                <div class="card_container">
+                                    <div class="pic">
+                                        <img src="./img/上益好好吃.png" alt="">
+                                    </div>
+                                    <div class="card_content">
+
+                                        <div class="titles">
+                                            <span class="card_title">作品名稱:</span>
+                                            <span class="text">上益好好吃產品清單</span>
+                                        </div>
+
+                                        <div class="titles">
+                                            <span class="card_title">適用螢幕尺寸:</span>
+                                            <span class="text">1280px-1920px</span>
+                                        </div>
+
+                                        <div class="titles">
+                                            <span class="card_title">介紹:</span>
+                                            <span class="text">
+                                                透過fetch將陣列中的物件資料以CSS呈現於畫面上，並點擊各類按鈕顯示該類別的產品圖片、名稱、內容物、售價</span>
+                                        </div>
+
+                                        <div class="titles">
+                                            <span class="card_title">運用技能:</span>
+                                            <span class="text">CSS、JavaScript、fetch資料串接</span>
+                                        </div>
+                                        <a href="">作品連結</a>
+                                    </div>
                                 </div>
                             </div>
+                            
+                            <div class="mycard">
+                                <div class="card_container">
+                                    <div class="pic">
+                                        <img src="./img/FireShot Capture 078 - 上益家具存貨系統 - 127.0.0.1.png" alt="">
+                                    </div>
+                                    <div class="card_content">
 
-                            <div class="card">
-                                <div class="pic">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="card_content">
-                                    <div class="card_title">作品名稱</div>
-                                    <div class="card_title_text">鋼鐵人列表頁切版</div>
-                                    <div class="size_title">適用螢幕尺寸</div>
-                                    <div class="size_title">222222</div>
-                                    <div class="introduction_title">介紹</div>
-                                    <div class="introduction_text">111111111111111111111111111111111111111111111111</div>
-                                    <div class="skill_title">運用技能</div>
-                                    <div class="skill_text">111111111111111111111111111111111111111111111111</div>
-                                    <a href="">作品連結</a>
-                                </div>
-                            </div>
+                                        <div class="titles">
+                                            <span class="card_title">作品名稱:</span>
+                                            <span class="text">上益家具存貨系統</span>
+                                        </div>
 
-                            <div class="card">
-                                <div class="pic">
-                                    <img src="" alt="">
+                                        <div class="titles">
+                                            <span class="card_title">適用螢幕尺寸:</span>
+                                            <span class="text">1280px-1920px</span>
+                                        </div>
+
+                                        <div class="titles">
+                                            <span class="card_title">介紹:</span>
+                                            <span class="text">透過fetch將json格式的資料串接,以CSS將該廠的產品圖片、存貨數量、價格、特價資訊透過判斷式呈現於畫面上,畫面一進入時，先顯示台中廠資訊,點擊其他廠按鈕，顯示該廠庫存資訊</span>
+                                        </div>
+
+                                        <div class="titles">
+                                            <span class="card_title">運用技能:</span>
+                                            <span class="text">CSS、JavaScript、fetch資料串接</span>
+                                        </div>
+                                        <a href="">作品連結</a>
+                                    </div>
                                 </div>
-                                <div class="card_content">
-                                    <div class="card_title">作品名稱</div>
-                                    <div class="card_title_text">宮原眼科一頁式網站切版</div>
-                                    <div class="size_title">適用螢幕尺寸</div>
-                                    <div class="size_title">222222</div>
-                                    <div class="introduction_title">介紹</div>
-                                    <div class="introduction_text">111111111111111111111111111111111111111111111111</div>
-                                    <div class="skill_title">運用技能</div>
-                                    <div class="skill_text">111111111111111111111111111111111111111111111111</div>
-                                    <a href="">作品連結</a>
-                                </div>
-                            </div>
+                            </div>  
+                                    
+                               
                         </div>
                     </div>
+
+                    
+
+
+
+
+
+                    
                 </div>
             </div>
+            
+            
         </section>
         <section></section>
     </main>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+    <script>
+        var navbar = document.querySelector(".navbar")
     
+    
+    
+        window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      if (document.body.scrollTop > 68 || document.documentElement.scrollTop > 68) {
+        navbar.classList.add("fixed");
+      }else{
+        navbar.classList.remove("fixed");
+      }
+    
+    }
+    
+    </script>
 </body>
 </html>

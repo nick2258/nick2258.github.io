@@ -49,16 +49,26 @@
         /* background-color: cornflowerblue; */
         background-color: gainsboro;
     }
-    .allcards{        
+    .allcards{ 
+        padding-top: 60px;
+        width: 96%;      
+        margin: auto; 
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        /* justify-content: space-around; */
     }
 
     .card{
-        width: 450px;
-        margin: 20px 10px 0px 10px;
+        width: calc(33.333% - 30px);
+        /* width: 450px; */
+        /* margin: 20px 10px 0px 10px; */
+        margin-right: 45px;
+        margin-bottom: 45px;
          
+    }
+
+    .card:nth-child(3n){
+        margin-right: 0px;
     }
 
     .name{
@@ -80,7 +90,7 @@
 
     img{
         width: 100%;
-        height: 300px;
+        height: 15vw;
         
         background-position: center;
         background-repeat: no-repeat;
@@ -160,8 +170,11 @@
         // https://run.mocky.io/v3/a1bd9f89-926c-46ac-930a-1d1cae8dd7e5
        
         var btns = document.querySelectorAll(".btn")
+        allvalue(btns[0].dataset.amount) ;
 
         btns.forEach(btn => {
+            
+            
             
 
             btn.onclick = function () {
@@ -274,7 +287,9 @@
                             ${textstyle}
                             </div>
                             `                        
-                    });             
+                    }); 
+                    
+                    
             });
             }
         

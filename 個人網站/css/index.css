@@ -3,10 +3,39 @@
           box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .mycontainer {
   max-width: 1600px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1650px) {
+  .mycontainer {
+    max-width: calc(100% - 160px);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .mycontainer {
+    max-width: calc(100% - 120px);
+  }
+}
+
+@media screen and (max-width: 859px) {
+  .mycontainer {
+    max-width: calc(100% - 80px);
+  }
+}
+
+#navbarSupportedContent {
+  width: 1600px;
+  margin: auto;
+}
+
+.collapse {
+  width: 1600px;
   margin: auto;
 }
 
@@ -16,48 +45,210 @@ nav {
   background-color: brown;
 }
 
-nav .mycontainer {
-  height: 48px;
-  background-color: burlywood;
+.navbar.active {
+  position: fixed;
+  z-index: 99;
 }
 
-main .introduction .mycontainer .content {
-  margin: 30px 0px;
-  border-bottom: 1px solid black;
+nav {
+  width: 100%;
+  background-color: #D9CEC5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+nav .navbar-toggler {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+nav .mycontainer .mr-auto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  position: relative;
+  z-index: 10;
+}
+
+nav .mycontainer .mr-auto .nav-item {
+  margin-right: 30px;
+}
+
+nav .mycontainer .mr-auto .nav-item.active .nav-link {
+  position: relative;
+  z-index: 30;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav .mycontainer .mr-auto .nav-item.active .nav-link:hover {
+  color: #605D4F;
+}
+
+nav .mycontainer .mr-auto .dropdown-menu {
+  background-color: #D9CEC5;
+  border: 0px;
+}
+
+nav .mycontainer .mr-auto .dropdown-menu .dropdown-item {
+  background-color: transparent;
+}
+
+main {
+  background-color: #F2ECE4;
+  padding-top: 68px;
 }
 
 main .introduction .mycontainer .content .top {
-  border-bottom: 1px solid black;
-  margin: 30px 0px;
+  border-bottom: 3px solid  #BFB8A1;
+  padding: 45px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+@media screen and (max-width: 1250px) {
+  main .introduction .mycontainer .content .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 main .introduction .mycontainer .content .top .pic {
-  width: 18vw;
-  height: 18vw;
+  width: 560px;
+  height: auto;
+  background-color: transparent;
   margin-right: 60px;
-  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1900px) {
+  main .introduction .mycontainer .content .top .pic {
+    width: calc(30vw + 30px);
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  main .introduction .mycontainer .content .top .pic {
+    width: calc(32vw + 30px);
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  main .introduction .mycontainer .content .top .pic {
+    width: calc(34vw + 45px);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  main .introduction .mycontainer .content .top .pic {
+    width: calc(36vw + 45px);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  main .introduction .mycontainer .content .top .pic {
+    width: calc(40vw + 45px);
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  main .introduction .mycontainer .content .top .pic {
+    width: calc(25vw + 45px);
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-bottom: 30px;
+  }
 }
 
 main .introduction .mycontainer .content .top .pic img {
   width: 100%;
-  height: 100%;
-  background-color: cornflowerblue;
+  height: auto;
+  border-radius: 50%;
+  border: 8px solid rgba(139, 0, 0, 0.438);
 }
 
 main .introduction .mycontainer .content .top .short_text {
   font-size: 28px;
-  letter-spacing: 2px;
+  font-weight: 600;
+  letter-spacing: 3.5px;
+}
+
+@media screen and (max-width: 1650px) {
+  main .introduction .mycontainer .content .top .short_text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  main .introduction .mycontainer .content .top .short_text {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  main .introduction .mycontainer .content .top .short_text {
+    font-size: 20px;
+    margin: auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-top: 30px;
+    border-top: 3px solid  #BFB8A1;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .introduction .mycontainer .content .top .short_text {
+    font-size: 20px;
+  }
 }
 
 main .introduction .mycontainer .content .top .short_text p {
   margin-bottom: 20px;
+  color: #403E3C;
+}
+
+@media screen and (max-width: 1650px) {
+  main .introduction .mycontainer .content .top .short_text p {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .introduction .mycontainer .content .top .short_text p {
+    margin-bottom: 10px;
+  }
 }
 
 main .introduction .mycontainer .content .top .short_text p:last-child {
   margin-bottom: 0px;
+  color: #606D73;
 }
 
 main .introduction .mycontainer .content .bottom {
@@ -66,8 +257,24 @@ main .introduction .mycontainer .content .bottom {
 }
 
 main .introduction .mycontainer .content .bottom .longtext {
-  font-size: 28px;
+  color: #595754;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 56px;
   padding: 20px 50px;
+}
+
+@media screen and (max-width: 1650px) {
+  main .introduction .mycontainer .content .bottom .longtext {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  main .introduction .mycontainer .content .bottom .longtext {
+    font-size: 22px;
+  }
 }
 
 main .certification {
@@ -81,20 +288,37 @@ main .certification .mycontainer {
 }
 
 main .certification .mycontainer .title {
-  font-size: 48px;
-  font-weight: 600;
+  font-size: 42px;
+  color: #403E3C;
+  font-weight: bold;
+  letter-spacing: 4px;
   text-align: center;
   padding: 30px 0px;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid  #BFB8A1;
 }
 
 main .certification .mycontainer .content {
   padding: 20px 50px;
+  color: #595754;
+  letter-spacing: 2px;
 }
 
 main .certification .mycontainer .content p {
-  font-size: 28px;
+  font-size: 26px;
+  font-weight: 600;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1650px) {
+  main .certification .mycontainer .content p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  main .certification .mycontainer .content p {
+    font-size: 22px;
+  }
 }
 
 main .certification .mycontainer .content p:last-child {
@@ -102,79 +326,348 @@ main .certification .mycontainer .content p:last-child {
 }
 
 main .portfolio {
-  margin-top: 60px;
-}
-
-main .portfolio .mycontainer {
-  height: 200px;
+  margin-top: 10px;
 }
 
 main .portfolio .mycontainer .title {
-  font-size: 48px;
+  font-size: 42px;
+  font-weight: bold;
+  color: #403E3C;
+  letter-spacing: 4px;
   text-align: center;
-  padding: 30px 0px;
-  border-bottom: 1px solid black;
+  padding: 45px 0px;
+  border-bottom: 3px solid  #BFB8A1;
+}
+
+main .portfolio .mycontainer .web {
+  letter-spacing: 1.5px;
 }
 
 main .portfolio .mycontainer .web .web_title {
-  font-size: 28px;
+  font-size: 32px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  color: #403E3C;
   padding: 30px 0px;
-  border-bottom: 1px solid black;
   text-align: center;
 }
 
-main .portfolio .mycontainer .web .content .card {
+main .portfolio .mycontainer .web .content .mycard {
   width: 100%;
-  border-bottom: 1px solid black;
+  height: auto;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  border-top: 2px solid #BFB8A1;
 }
 
-main .portfolio .mycontainer .web .content .card .card_container {
+main .portfolio .mycontainer .web .content .mycard:nth-child(1) {
+  border-top: 3px solid #BFB8A1;
+}
+
+main .portfolio .mycontainer .web .content .mycard:last-child {
+  padding-bottom: 60px;
+}
+
+main .portfolio .mycontainer .web .content .mycard .card_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 30px auto;
-  width: 96%;
+  margin: auto;
+  width: 97%;
+  height: auto;
 }
 
-main .portfolio .mycontainer .web .content .card .card_container .pic {
-  width: 35%;
-  height: 20vw;
+@media screen and (max-width: 1200px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main .portfolio .mycontainer .web .content .mycard .card_container .pic {
+  width: 40%;
   margin-right: 60px;
 }
 
-main .portfolio .mycontainer .web .content .card .card_container .pic img {
+@media screen and (max-width: 1280px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .pic {
+    margin-right: 45px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .pic {
+    width: 86%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .pic {
+    width: 94%;
+  }
+}
+
+main .portfolio .mycontainer .web .content .mycard .card_container .pic img {
   width: 100%;
-  height: 100%;
+  min-height: 23vw;
+  height: auto;
   background-color: darkgray;
 }
 
-main .portfolio .mycontainer .web .content .card .card_container .card_content {
-  width: calc(65% - 60px);
+@media screen and (max-width: 1500px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .pic img {
+    min-height: calc(24vw + 30px);
+  }
 }
 
-main .portfolio .mycontainer .web .content .card .card_container .card_content .titles {
+@media screen and (max-width: 1400px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .pic img {
+    min-height: calc(26vw + 30px);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .pic img {
+    min-height: calc(27vw + 30px);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .pic img {
+    min-height: calc(31vw + 30px);
+  }
+}
+
+main .portfolio .mycontainer .web .content .mycard .card_container .card_content {
+  width: calc(60% - 60px);
+  height: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 1280px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content {
+    width: calc(60% - 45px);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content {
+    width: 86%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content {
+    width: 94%;
+  }
+}
+
+main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles {
   margin-bottom: 20px;
+  color: #595754;
+  font-weight: 600;
+  letter-spacing: 3px;
 }
 
-main .portfolio .mycontainer .web .content .card .card_container .card_content .titles:last-child {
+@media screen and (max-width: 1500px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles {
+    margin-bottom: 15px;
+  }
+}
+
+main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:last-child {
   margin-bottom: 0px;
 }
 
-main .portfolio .mycontainer .web .content .card .card_container .card_content .titles .card_title {
-  font-size: 24px;
+main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles .card_title {
+  font-size: 22px;
 }
 
-main .portfolio .mycontainer .web .content .card .card_container .card_content .titles .text {
-  font-size: 20px;
+@media screen and (max-width: 1650px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles .card_title {
+    font-size: 20px;
+  }
 }
 
-main .portfolio .mycontainer .web .content .card .card_container .card_content a {
+@media screen and (max-width: 1500px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles .card_title {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles .card_title {
+    font-size: 16px;
+  }
+}
+
+main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles .text {
+  font-size: 22px;
+}
+
+@media screen and (max-width: 1650px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles .text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles .text {
+    font-size: 18px;
+  }
+}
+
+main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:nth-child(1) {
+  font-weight: bold;
+  color: #403E3C;
+}
+
+main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:nth-child(1) .card_title {
+  font-size: 28px;
+}
+
+@media screen and (max-width: 1650px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:nth-child(1) .card_title {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:nth-child(1) .card_title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:nth-child(1) .card_title {
+    font-size: 22px;
+  }
+}
+
+main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:nth-child(1) .text {
+  font-size: 28px;
+}
+
+@media screen and (max-width: 1650px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:nth-child(1) .text {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:nth-child(1) .text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:nth-child(1) .text {
+    font-size: 22px;
+  }
+}
+
+main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:nth-child(3) {
+  padding-bottom: 25px;
+}
+
+@media screen and (max-width: 1500px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:nth-child(3) {
+    padding-bottom: 15px;
+  }
+}
+
+main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:nth-child(4) {
+  color: #606D73;
+}
+
+main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:nth-child(4) .card_title {
+  font-size: 26px;
+}
+
+@media screen and (max-width: 1650px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:nth-child(4) .card_title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:nth-child(4) .card_title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:nth-child(4) .card_title {
+    font-size: 20px;
+  }
+}
+
+main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:nth-child(4) .text {
+  font-size: 26px;
+}
+
+@media screen and (max-width: 1650px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:nth-child(4) .text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:nth-child(4) .text {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles:nth-child(4) .text {
+    font-size: 20px;
+  }
+}
+
+main .portfolio .mycontainer .web .content .mycard .card_container .card_content a {
   color: white;
   font-size: 18px;
-  padding: 10px 20px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  padding: 10px 25px;
   background-color: darkred;
-  position: relative;
+  position: absolute;
   bottom: 0px;
-  left: 10px;
+  right: 0px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1500px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content a {
+    padding: 10px 25px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main .portfolio .mycontainer .web .content .mycard .card_container .card_content a {
+    font-size: 18px;
+    padding: 10px 15px;
+    top: -80px;
+    right: 15px;
+    bottom: initial;
+  }
 }
 /*# sourceMappingURL=index.css.map */

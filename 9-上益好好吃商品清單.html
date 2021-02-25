@@ -11,15 +11,16 @@
 
         body{
             margin: 0px;
+            background-color: bisque;
         }
         .container {
-            max-width: 1500px;
+            /* max-width: 1500px; */
             
             margin: auto;
         }
 
         nav{
-            width: 100vw;
+            width: 100%;
             background-color:rgb(197, 100, 64);
             
         }
@@ -52,29 +53,34 @@
         }
 
         main{
+
             background-color: bisque;
+            height: auto;
+            padding: 60px 0px;
         }
         .btn.active{
             background-color: darkblue;
         }
-
-        
-        .cont{           
-            min-height:calc(100vh - 80px) ;
+     
+        .cont{
+             width:calc(100% - 200px) ;        
+            height: auto;
+            margin: auto;
             
         }
 
         .cards{
+              
             display: flex;
             flex-wrap: wrap;
-            /* justify-content: space-between; */
         }
         .box{
-            width: 350px;
-            padding: 50px 20px;
-            font-size: 26px;
+            width: calc(25% - 45px);
+            margin-right: 60px;
+            margin-bottom: 30px;
+            font-size: 20px;
             font-weight: 600;
-            margin-right: 33.3333px;
+            /* margin-right: 33.3333px; */
             color: rgb(121, 114, 102);
         }
 
@@ -83,11 +89,13 @@
         }
 
         
-
         .img img{
             width: 100%;
-            height: 200px;
+            height: 15vw;
             margin-bottom: 15px;
+        }
+        .box div{
+            padding-bottom: 15px;
         }
 
         .img img:hover{
@@ -107,7 +115,7 @@
         </div>
     </nav>
     <main>
-        <section  class="cont container">
+        <section  class="cont">
             <div class="cards"></div>
         </section>
     </main>
@@ -115,13 +123,6 @@
     
 
     <script>
-        //版面請自己來
-        //一進入網頁，先把全部的商品顯示出來
-        //商品的顯示內容包含 1.商品名稱 2.商品照片 3.內容物 4.價錢  (排版方式不設限)
-
-        //有過濾器(filter)    ex) 按下"甜點"按鈕 只顯示被歸類在甜點的商品
-
-
         // 以下是上益好好吃的商品清單
         var allcard = document.querySelector(".cards")
 
@@ -188,9 +189,9 @@
                 <div class="img">                 
             <img src="${card.img}" alt="">
             
-                <div>品名:${card.name}</div>               
-                <div >內容物:${card.content}</div>
-                <div>售價:${card.price}</div>   
+                <div class"texts">品名:${card.name}</div>               
+                <div class"texts" >內容物:${card.content}</div>
+                <div class"texts">售價:${card.price}</div>   
             </div>`            
         });
         
@@ -206,9 +207,9 @@
                 <div class="img">                 
             <img src="${card.img}" alt="">
             </div>
-                <div>品名${card.name}</div>               
-                <div >內容物${card.content}</div>
-                <div>售價${card.price}</div>                
+                <div class"texts">品名${card.name}</div>               
+                <div class"texts">內容物${card.content}</div>
+                <div class"texts">售價${card.price}</div>                
             </div>
         </div>`                                    
         }
@@ -225,10 +226,6 @@
                 }
             }); 
         } 
-        
-       
-        
-        
 
         // html裡面的onclick事件
         function text(i,object) {
