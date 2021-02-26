@@ -55,6 +55,8 @@ input, select {
 }
 
 #top {
+  font-size: 36px;
+  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,8 +68,6 @@ input, select {
   z-index: 99;
   bottom: 1vw;
   right: 10px;
-  font-size: 36px;
-  font-weight: bold;
   background-attachment: fixed;
   text-decoration: none;
 }
@@ -94,11 +94,11 @@ input, select {
 }
 
 #top img {
+  width: 80px;
+  height: 80px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 80px;
-  height: 80px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -150,10 +150,10 @@ nav .mr-auto {
 }
 
 nav .mr-auto .nav-item.active .nav-link {
-  position: relative;
-  z-index: 30;
   font-size: 24px;
   font-weight: bold;
+  position: relative;
+  z-index: 30;
 }
 
 nav .mr-auto .nav-item.active .nav-link:hover {
@@ -177,30 +177,29 @@ main {
 
 main .banner {
   width: 100%;
-  background-color: #f2f0ed;
   height: auto;
+  background-color: #f2f0ed;
   position: relative;
   z-index: 3;
 }
 
 main .banner .pic {
   width: calc(100% - 100px);
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: relative;
 }
 
 main .banner .pic .img {
-  display: block;
   width: 80vw;
   height: 45.5vw;
+  display: block;
 }
 
 main .banner .pic .name {
-  margin-left: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,6 +207,7 @@ main .banner .pic .name {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 60px;
   margin-top: 8vw;
 }
 
@@ -239,15 +239,16 @@ main .banner .pic .name img:nth-child(2) {
 
 main .management {
   width: 100%;
+  background-color: #f2f0ed;
+  color: #605D4F;
   font-family: fangsong;
   padding-top: 45px;
   padding-bottom: 100px;
-  background-color: #f2f0ed;
-  color: #605D4F;
 }
 
 main .management .top {
   width: calc(100% - 160px);
+  border-bottom: 3px solid #605D4F;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,18 +257,17 @@ main .management .top {
           justify-content: space-evenly;
   padding-bottom: -20px;
   margin: auto;
-  border-bottom: 3px solid #605D4F;
 }
 
 main .management .top .title {
-  margin-top: 20px;
-  margin-left: 45px;
   font-size: 48px;
   font-weight: bold;
   -webkit-writing-mode: vertical-lr;
   -ms-writing-mode: tb-lr;
       writing-mode: vertical-lr;
   letter-spacing: 4px;
+  margin-top: 20px;
+  margin-left: 45px;
 }
 
 @media screen and (max-width: 1900px) {
@@ -316,8 +316,6 @@ main .management .top .title {
 }
 
 main .management .top .title .text {
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px);
   height: 40vw;
   border-left: 3px solid #605D4F;
   display: -webkit-box;
@@ -327,6 +325,8 @@ main .management .top .title .text {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
 }
 
 @media screen and (max-width: 1720px) {
@@ -369,8 +369,8 @@ main .management .top .title .text .p:nth-child(2) {
 }
 
 main .management .top .pic {
-  z-index: 1;
   width: auto;
+  z-index: 1;
 }
 
 main .management .top .pic video {
@@ -398,8 +398,8 @@ main .management .top .pic video {
 }
 
 main .management .bottom .mycontainer {
-  margin-top: 15px;
   max-width: calc(100% - 10vw);
+  margin-top: 15px;
 }
 
 @media screen and (max-width: 1279px) {
@@ -409,11 +409,11 @@ main .management .bottom .mycontainer {
 }
 
 main .management .bottom .mycontainer .title {
+  font-size: 48px;
+  letter-spacing: 10px;
   text-align: center;
   font-weight: bold;
-  letter-spacing: 10px;
   padding-bottom: 15px;
-  font-size: 48px;
 }
 
 @media screen and (max-width: 1900px) {
@@ -441,6 +441,10 @@ main .management .bottom .mycontainer .title {
 }
 
 main .management .bottom .mycontainer .text {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  border-bottom: 3px solid #605D4F;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,12 +452,8 @@ main .management .bottom .mycontainer .text {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: 3px;
   margin: auto;
   padding-bottom: 30px;
-  border-bottom: 3px solid #605D4F;
 }
 
 @media screen and (max-width: 1400px) {
@@ -502,9 +502,9 @@ main .buliding .mycontainer {
 main .buliding .mycontainer .text {
   font-size: 24px;
   font-weight: 700;
+  letter-spacing: 2px;
   color: #605D4F;
   background-color: #D9D6D0;
-  letter-spacing: 2px;
 }
 
 @media screen and (max-width: 1620px) {
@@ -532,6 +532,9 @@ main .buliding .mycontainer .text {
 }
 
 main .buliding .mycontainer .title {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -540,9 +543,6 @@ main .buliding .mycontainer .title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
   -webkit-transform: translateY(-80px);
           transform: translateY(-80px);
 }
@@ -550,9 +550,9 @@ main .buliding .mycontainer .title {
 main .buliding .mycontainer .title .title_bg .title_text {
   font-size: 60px;
   font-weight: bold;
-  color: #BFB3A4;
   letter-spacing: 2px;
   background-color: #605D4F;
+  color: #BFB3A4;
   padding: 10px 15px 10px 9px;
 }
 
@@ -612,12 +612,12 @@ main .buliding .mycontainer .content_bg .part_1_bg .part_1 .left_pic {
 }
 
 main .buliding .mycontainer .content_bg .part_1_bg .part_1 .left_pic .big_pic {
-  margin-top: 60px;
-  margin-left: 179px;
   width: 776px;
   height: 485px;
   position: relative;
   z-index: 1;
+  margin-top: 60px;
+  margin-left: 179px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -636,9 +636,9 @@ main .buliding .mycontainer .content_bg .part_1_bg .part_1 .left_pic .big_pic {
 
 @media screen and (max-width: 1279px) {
   main .buliding .mycontainer .content_bg .part_1_bg .part_1 .left_pic .big_pic {
-    margin-left: 6vw;
     width: 600px;
     height: 397px;
+    margin-left: 6vw;
   }
 }
 
@@ -654,7 +654,6 @@ main .buliding .mycontainer .content_bg .part_1_bg .part_1 .left_pic .big_pic {
   main .buliding .mycontainer .content_bg .part_1_bg .part_1 .left_pic .big_pic {
     width: 450px;
     height: 297px;
-    margin: auto;
   }
 }
 
@@ -692,14 +691,11 @@ main .buliding .mycontainer .content_bg .part_1_bg .part_1 .left_pic .big_pic .p
   main .buliding .mycontainer .content_bg .part_1_bg .part_1 .left_pic .big_pic .people_pic {
     width: 130px;
     height: 149px;
-    right: -30px;
-    top: 300px;
   }
 }
 
 @media screen and (max-width: 859px) {
   main .buliding .mycontainer .content_bg .part_1_bg .part_1 .left_pic .big_pic .people_pic {
-    right: -30px;
     top: 160px;
   }
 }
@@ -728,10 +724,10 @@ main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right {
 }
 
 main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right .right_text {
+  max-width: 97%;
   padding: 100px 25px 30px 100px;
   margin-top: 385px;
   margin-left: -70px;
-  max-width: 97%;
 }
 
 @media screen and (max-width: 1620px) {
@@ -756,7 +752,9 @@ main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right .right_text {
 
 @media screen and (max-width: 1570px) {
   main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right .right_text {
-    padding: 30px 30px 30px 30px;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -764,9 +762,7 @@ main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right .right_text {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-writing-mode: vertical-rl;
-        -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl;
+    padding: 30px 30px 30px 30px;
     margin: auto;
     margin-left: 60px;
   }
@@ -813,9 +809,7 @@ main .buliding .mycontainer .content_bg .part_2_bg {
 }
 
 main .buliding .mycontainer .content_bg .part_2_bg .part_2 {
-  margin: auto;
   width: 1480px;
-  padding: 45px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -825,6 +819,8 @@ main .buliding .mycontainer .content_bg .part_2_bg .part_2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 45px 0px;
+  margin: auto;
 }
 
 @media screen and (max-width: 1280px) {
@@ -852,7 +848,9 @@ main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto {
 }
 
 main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto .left_text {
-  padding: 30px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -860,9 +858,7 @@ main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto .left_text {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  padding: 30px;
 }
 
 main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto .left_text p {
@@ -877,16 +873,16 @@ main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto .left_text p:nt
   main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto .left_text {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    margin-top: -60px;
     position: relative;
     z-index: 2;
+    margin-top: -60px;
   }
 }
 
 main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto .pic {
-  margin-left: 60px;
   width: 853px;
   height: 480px;
+  margin-left: 60px;
 }
 
 @media screen and (max-width: 1430px) {
@@ -1059,9 +1055,9 @@ main .buliding .mycontainer .content_bg .part_3_bg .part_3 .left .big_pic .pic {
 
 @media screen and (max-width: 1720px) {
   main .buliding .mycontainer .content_bg .part_3_bg .part_3 .left .big_pic .pic {
-    bottom: -170px;
     width: 360px;
     height: 270px;
+    bottom: -170px;
   }
 }
 
@@ -1100,7 +1096,9 @@ main .buliding .mycontainer .content_bg .part_3_bg .part_3 .right .right_text {
 
 @media screen and (max-width: 1570px) {
   main .buliding .mycontainer .content_bg .part_3_bg .part_3 .right .right_text {
-    padding: 30px 30px 30px 30px;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1108,9 +1106,7 @@ main .buliding .mycontainer .content_bg .part_3_bg .part_3 .right .right_text {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-writing-mode: vertical-rl;
-        -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl;
+    padding: 30px 30px 30px 30px;
   }
 }
 
@@ -1125,7 +1121,6 @@ main .buliding .mycontainer .content_bg .part_3_bg .part_3 .right .right_text {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    margin-left: 0px;
     -webkit-writing-mode: initial;
         -ms-writing-mode: initial;
             writing-mode: initial;
@@ -1155,7 +1150,6 @@ main .buliding .mycontainer .content_bg .part_3_bg .part_3 .right .right_text p:
 }
 
 main .buliding .mycontainer .content_bg .part_4_bg .part_4 {
-  padding: 45px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1165,6 +1159,7 @@ main .buliding .mycontainer .content_bg .part_4_bg .part_4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 45px 0px;
 }
 
 main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto {
@@ -1186,7 +1181,9 @@ main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto {
 }
 
 main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto .left_text {
-  padding: 30px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1194,19 +1191,17 @@ main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto .left_text {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  padding: 30px;
 }
 
 @media screen and (max-width: 1100px) {
   main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto .left_text {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    margin-top: -300px;
-    padding: 20px;
     position: relative;
     z-index: 2;
+    margin-top: -300px;
+    padding: 20px;
   }
 }
 
@@ -1225,9 +1220,9 @@ main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto .left_text p:nt
 }
 
 main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto .pic {
-  margin-left: 60px;
   width: 758px;
   height: 480px;
+  margin-left: 60px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1261,11 +1256,11 @@ main .buliding .mycontainer .content_bg .part_5_bg .part_5 {
 
 @media screen and (max-width: 1700px) {
   main .buliding .mycontainer .content_bg .part_5_bg .part_5 {
+    width: 1300px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 1300px;
   }
 }
 
@@ -1303,12 +1298,6 @@ main .buliding .mycontainer .content_bg .part_5_bg .part_5 .left {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
   }
 }
 
@@ -1365,12 +1354,12 @@ main .buliding .mycontainer .content_bg .part_5_bg .part_5 .left .left_text {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: initial;
     -webkit-writing-mode: vertical-rl;
         -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl;
     margin-left: 60px;
     margin-top: 0px;
-    text-align: initial;
   }
   main .buliding .mycontainer .content_bg .part_5_bg .part_5 .left .left_text p {
     margin-left: 10px;
@@ -1385,10 +1374,10 @@ main .buliding .mycontainer .content_bg .part_5_bg .part_5 .left .left_text {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    margin-right: -60px;
-    margin-top: -230px;
     -ms-flex-item-align: end;
         align-self: flex-end;
+    margin-right: -60px;
+    margin-top: -230px;
     padding: 20px;
   }
 }
@@ -1402,10 +1391,10 @@ main .buliding .mycontainer .content_bg .part_5_bg .part_5 .right {
 @media screen and (max-width: 1700px) {
   main .buliding .mycontainer .content_bg .part_5_bg .part_5 .right {
     max-width: 1100px;
-    position: relative;
-    right: 60px;
     -ms-flex-item-align: end;
         align-self: flex-end;
+    position: relative;
+    right: 60px;
   }
 }
 
@@ -1435,12 +1424,12 @@ main .buliding .mycontainer .content_bg .part_5_bg .part_5 .right .right_text {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    margin-right: -120px;
     position: relative;
     z-index: 2;
     -webkit-transform: translateY(-150px);
             transform: translateY(-150px);
     padding: 20px;
+    margin-right: -120px;
   }
 }
 
@@ -1495,13 +1484,13 @@ main .buliding .mycontainer .content_bg .part_5_bg .part_5 .right .pic img {
 
 main .product_bg {
   background-color: #F9E1C2;
-  padding: 60px 0px;
   color: #605D4F;
+  padding: 60px 0px;
 }
 
 main .product_bg .title {
   font-size: 60px;
-  padding-bottom: 60px;
+  letter-spacing: 8px;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1509,7 +1498,7 @@ main .product_bg .title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  letter-spacing: 8px;
+  padding-bottom: 60px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -1582,8 +1571,8 @@ main .product_bg .mycontainer .product:nth-child(2n) {
 main .product_bg .mycontainer .product .product_pic {
   width: 750px;
   height: 750px;
-  margin-top: -100px;
   position: relative;
+  margin-top: -100px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1591,11 +1580,11 @@ main .product_bg .mycontainer .product .product_pic {
 
 @media screen and (max-width: 1600px) {
   main .product_bg .mycontainer .product .product_pic {
+    width: 40vw;
+    height: 40vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 40vw;
-    height: 40vw;
   }
 }
 
@@ -1723,7 +1712,10 @@ main .product_bg .mycontainer .product:nth-child(n) .content {
 }
 
 main .product_bg .mycontainer .product:nth-child(2n) .content {
-  padding: 75px 60px 0px 0px;
+  letter-spacing: 1px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1731,10 +1723,7 @@ main .product_bg .mycontainer .product:nth-child(2n) .content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  letter-spacing: 1px;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  padding: 75px 60px 0px 0px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -1825,13 +1814,13 @@ main .sale .mycontainer .title {
 main .sale .mycontainer .all_btn {
   max-width: calc(100% - 200px);
   width: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 45px auto;
 }
 
@@ -1845,28 +1834,18 @@ main .sale .mycontainer .all_btn {
 @media screen and (max-width: 1279px) {
   main .sale .mycontainer .all_btn {
     max-width: calc(100% - 60px);
-    margin: 30px auto;
-  }
-}
-
-@media screen and (max-width: 1279px) {
-  main .sale .mycontainer .all_btn {
-    max-width: calc(100% - 60px);
-    margin: 30px auto;
   }
 }
 
 @media screen and (max-width: 1000px) {
   main .sale .mycontainer .all_btn {
     max-width: calc(60% + 60px);
-    margin: 30px auto;
   }
 }
 
 @media screen and (max-width: 800px) {
   main .sale .mycontainer .all_btn {
     max-width: calc(70% + 60px);
-    margin: 30px auto;
   }
 }
 
@@ -1875,37 +1854,37 @@ main .sale .mycontainer .all_btn .btns {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: auto;
 }
 
 main .sale .mycontainer .all_btn .btns .sale_btn {
-  padding: 5px 20px;
+  background-color: #E3BFA6;
   font-size: 36px;
   font-weight: 600;
   letter-spacing: 2px;
+  padding: 5px 20px;
   margin-right: 45px;
   margin-bottom: 30px;
-  background-color: #E3BFA6;
 }
 
 @media screen and (max-width: 1500px) {
   main .sale .mycontainer .all_btn .btns .sale_btn {
-    padding: 5px 20px;
     font-size: 32px;
+    padding: 5px 20px;
   }
 }
 
 @media screen and (max-width: 1279px) {
   main .sale .mycontainer .all_btn .btns .sale_btn {
-    padding: 5px 15px;
     font-size: 28px;
+    padding: 5px 15px;
     margin-right: 25px;
   }
 }
@@ -1935,9 +1914,9 @@ main .sale .mycontainer .all_sale_card {
 }
 
 main .sale .mycontainer .all_sale_card .card {
-  border: 0px;
   width: calc(25% - 33.75px);
   height: auto;
+  border: 0px;
   margin-bottom: 40px;
   padding-bottom: 20px;
   margin-right: 45px;
@@ -2048,33 +2027,30 @@ main .sale .mycontainer .all_sale_card .card .pic img {
 
 main .sale .mycontainer .all_sale_card .card .card_content {
   width: calc(100% - 30px);
-  margin: auto;
   font-weight: 600;
-  margin-top: 20px;
   letter-spacing: 2px;
+  margin: auto;
+  margin-top: 20px;
 }
 
 main .sale .mycontainer .all_sale_card .card .card_content .card_title {
-  font-size: 20px;
   height: 60px;
   min-height: 60px;
+  font-size: 20px;
   margin-bottom: 20px;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
 }
 
 main .sale .mycontainer .all_sale_card .card .card_content .price {
-  font-size: 18px;
-  height: 27px;
   max-height: 27px;
   margin-bottom: 15px;
+  height: 27px;
+  font-size: 18px;
 }
 
 main .sale .mycontainer .all_sale_card .card .card_content .date {
-  font-size: 18px;
   height: 27px;
   max-height: 27px;
+  font-size: 18px;
   margin-bottom: 15px;
 }
 
@@ -2086,20 +2062,20 @@ main .sale .mycontainer .all_sale_card .card .card_content .date {
 }
 
 main .sale .mycontainer .all_sale_card .card .card_content .content {
-  font-size: 15px;
-  height: 66px;
   max-height: 66px;
+  height: 66px;
+  font-size: 15px;
   font-weight: 600;
   margin-bottom: 40px;
 }
 
 main .sale .mycontainer .all_sale_card .card .card_content .btn a {
-  font-size: 20px;
-  font-weight: 600;
-  padding: 10px 20px;
   background-color: #E3BFA6;
   color: #33322a;
+  font-size: 20px;
+  font-weight: 600;
   text-decoration: none;
+  padding: 10px 20px;
 }
 
 main .sale .mycontainer .all_sale_card .card .card_content .btn a:link {
@@ -2117,6 +2093,7 @@ main .restaurant {
 }
 
 main .restaurant .mycontainer {
+  width: calc(100% - 300px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2124,7 +2101,6 @@ main .restaurant .mycontainer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: calc(100% - 300px);
 }
 
 @media screen and (max-width: 1800px) {
@@ -2134,14 +2110,14 @@ main .restaurant .mycontainer {
 }
 
 main .restaurant .mycontainer .pic {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
-  position: relative;
+  width: 82%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -2149,7 +2125,7 @@ main .restaurant .mycontainer .pic {
   -webkit-box-pack: initial;
       -ms-flex-pack: initial;
           justify-content: initial;
-  width: 82%;
+  margin: auto;
   margin-bottom: 30px;
 }
 
@@ -2166,31 +2142,18 @@ main .restaurant .mycontainer .pic {
 }
 
 main .restaurant .mycontainer .pic .title {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   background-color: initial;
-}
-
-@media screen and (max-width: 1279px) {
-  main .restaurant .mycontainer .pic .title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    background-color: initial;
-  }
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main .restaurant .mycontainer .pic .title img {
@@ -2226,16 +2189,16 @@ main .restaurant .mycontainer .pic .restaurant_text {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
-  height: auto;
-  position: relative;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  height: auto;
+  background-color: initial;
+  position: relative;
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-right: calc(6vw + 20px);
   margin-top: 5vw;
-  background-color: initial;
   padding: 0px;
 }
 
@@ -2246,8 +2209,6 @@ main .restaurant .mycontainer .pic .restaurant_text {
 }
 
 main .restaurant .mycontainer .pic .restaurant_text p {
-  margin-left: 4vw;
-  margin-bottom: 0px;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -2256,6 +2217,8 @@ main .restaurant .mycontainer .pic .restaurant_text p {
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
+  margin-left: 4vw;
+  margin-bottom: 0px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -2302,17 +2265,19 @@ main .restaurant .mycontainer .pic .restaurant_text p {
 
 main .restaurant .mycontainer .pic .recipt {
   height: auto;
+  position: absolute;
+  left: 0px;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  position: absolute;
-  left: 0px;
-  z-index: 2;
 }
 
 main .restaurant .mycontainer .pic .recipt .menu {
+  background-color: initial;
+  left: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2320,21 +2285,9 @@ main .restaurant .mycontainer .pic .recipt .menu {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  left: 0px;
-  background-color: initial;
-  padding: 0px;
   -ms-flex-item-align: start;
       align-self: flex-start;
-}
-
-@media screen and (max-width: 1279px) {
-  main .restaurant .mycontainer .pic .recipt .menu {
-    left: 0px;
-    background-color: initial;
-    padding: 0px;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-  }
+  padding: 0px;
 }
 
 main .restaurant .mycontainer .pic .recipt .menu .main {
@@ -2381,11 +2334,11 @@ main .restaurant .mycontainer .pic .recipt .menu .main .text {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   color: #605D4F;
+  font-size: 24px;
+  font-weight: 600;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-size: 24px;
-  font-weight: 600;
   margin-top: 15px;
 }
 
@@ -2420,8 +2373,8 @@ main .restaurant .mycontainer .big_pic img {
 
 main .order {
   background-color: #E5DDD4;
-  padding-bottom: 60px;
   color: #33322a;
+  padding-bottom: 60px;
 }
 
 main .order .title {
@@ -2443,18 +2396,11 @@ main .order .title {
 }
 
 main .order .order_content {
-  margin-top: 30px;
-  height: 500px;
-  background-color: #D9D6D0;
-  padding: 60px 0px;
-  letter-spacing: 1.5px;
   height: auto;
-}
-
-@media screen and (max-width: 1800px) {
-  main .order .order_content {
-    max-width: calc(100% - 200px);
-  }
+  letter-spacing: 1.5px;
+  background-color: #D9D6D0;
+  margin-top: 30px;
+  padding: 60px 0px;
 }
 
 @media screen and (max-width: 1800px) {
@@ -2475,19 +2421,19 @@ main .order .order_content {
 main .order .order_content .information {
   font-size: 36px;
   font-weight: bold;
-  padding: 0px 0px 30px 0px;
   text-align: center;
+  padding: 0px 0px 30px 0px;
 }
 
 main .order .order_content .all_content {
   width: 100%;
+  font-size: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 24px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -2510,15 +2456,15 @@ main .order .order_content .all_content {
 
 @media screen and (max-width: 1100px) {
   main .order .order_content .all_content {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 22px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    font-size: 22px;
     margin: auto;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
     padding: 0px 60px;
   }
 }
@@ -2577,9 +2523,9 @@ main .order .order_content .all_content .map .map_pic .map_information {
 }
 
 main .order .submit {
+  font-size: 30px;
   text-align: center;
   padding: 30px 0px;
-  font-size: 30px;
 }
 
 main .order .submit input {
@@ -2589,8 +2535,8 @@ main .order .submit input {
 
 main .social_media {
   background-color: #BEDAE6;
-  padding: 45px;
   color: #33322a;
+  padding: 45px;
 }
 
 main .social_media .mycontainer {
@@ -2615,8 +2561,8 @@ main .social_media .mycontainer .title {
       writing-mode: vertical-lr;
   font-size: 60px;
   font-weight: 700;
-  padding: 0px 60px 0px 0px;
   letter-spacing: 8px;
+  padding: 0px 60px 0px 0px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -2630,8 +2576,8 @@ main .social_media .mycontainer .title {
     -webkit-writing-mode: initial;
         -ms-writing-mode: initial;
             writing-mode: initial;
-    padding: 0px;
     text-align: center;
+    padding: 0px;
   }
 }
 
@@ -2664,6 +2610,7 @@ main .social_media .mycontainer .allcontent .contents {
 }
 
 main .social_media .mycontainer .allcontent .contents .content {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2671,13 +2618,13 @@ main .social_media .mycontainer .allcontent .contents .content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
   margin: auto;
   margin-top: 0px;
 }
 
 main .social_media .mycontainer .allcontent .contents .content .icon {
   width: 100%;
+  border-bottom: 3px solid #705f5f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2685,7 +2632,6 @@ main .social_media .mycontainer .allcontent .contents .content .icon {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
-  border-bottom: 3px solid #705f5f;
   margin-bottom: 20px;
 }
 
@@ -2701,10 +2647,10 @@ main .social_media .mycontainer .allcontent .contents .content .icon img {
 }
 
 main .social_media .mycontainer .allcontent .contents .content .pics {
+  width: 96%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 96%;
   margin: auto;
 }
 
@@ -2719,10 +2665,10 @@ main .social_media .mycontainer .allcontent .contents .content .pics {
 
 main .social_media .mycontainer .allcontent .contents .content .pics .pic {
   width: calc(50% - 30px);
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: auto;
   margin-right: 60px;
 }
 
@@ -2751,10 +2697,10 @@ main .social_media .mycontainer .allcontent .contents .content .pics .pic iframe
 }
 
 main .contact {
-  padding-bottom: 60px;
   height: auto;
   background-color: #E6D3BE;
   color: #33322a;
+  padding-bottom: 60px;
 }
 
 main .contact .mycontainer {
@@ -2764,8 +2710,8 @@ main .contact .mycontainer {
 main .contact .mycontainer .title {
   font-size: 60px;
   font-weight: 700;
-  padding: 60px 0px 60px 0px;
   text-align: center;
+  padding: 60px 0px 60px 0px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -2782,15 +2728,15 @@ main .contact .mycontainer .title {
 
 main .contact .mycontainer .content {
   width: auto;
-  margin: auto;
+  font-size: 24px;
+  font-weight: 600;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 24px;
-  font-weight: 600;
+  margin: auto;
 }
 
 @media screen and (max-width: 1400px) {
@@ -2801,13 +2747,13 @@ main .contact .mycontainer .content {
 
 @media screen and (max-width: 1050px) {
   main .contact .mycontainer .content {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
     -ms-flex-line-pack: center;
         align-content: center;
     -ms-flex-item-align: center;
@@ -2916,26 +2862,26 @@ footer {
   max-width: 1920px;
   height: auto;
   width: 100%;
+  text-align: center;
   background-color: #E6D3BE;
   padding: 0px 0px 20px 0px;
-  text-align: center;
 }
 
 footer .mycontainer {
   max-width: 1700px;
   width: calc(100% - 150px);
+  font-size: 18px;
+  font-weight: 500;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  font-size: 18px;
-  font-weight: 500;
 }
 
 footer .mycontainer .copyright {
-  margin: auto;
   -ms-grid-column-align: center;
       justify-self: center;
+  margin: auto;
 }
 
 footer .mycontainer .back {

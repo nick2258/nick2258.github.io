@@ -7,515 +7,468 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <style>
-        body{
-            padding: 0px;
-            margin: 0px;
-            box-sizing: border-box;
-        }
-
-        /* .clear{
-            clear: none;
-        } */
-
-        nav{
-
-
-            display: flex;
-            flex-direction: column;
-            /* align-content: center; */
-        }
-
-        .navtop{
-
-            background-color: #f0f0f0;
-            /* padding: 15px 0px;
-            align-items: center;
-            justify-content: space-between; */
-        }
-
-        .navtop .container{
-            display: flex;
-            padding: 15px 0px;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .navtopright{
-            display: flex;
-            align-items: center
-        }
-
-        .navtopright .borderright{
-            border-right: 1px grey solid;
-        }
-
-        .navtop .container span{
-            font-size: 15.2px;
-            padding: 0px 15px;
-
-        }
-
-        .navtop .logopic img{
-            max-width: 110px;
-            height: 40px;
-
-        }
-
-        .navtop .icon{
-            width: 38px;
-            height: 38px;
-        }
-
-        .navbottom{
-            background-color: #f0f0f0;
-        }
-
-        .navbottom .search{
-            color: #db3b00;
-            font-size:25.6px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .navbottom .date{
-            color: black;
-            padding: 3px 13px 20px 13px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-            font-size: 19.2px;
-            display: flex;
-            align-items: center;
-            border-bottom:1px grey solid;
-        }
-
-        .navbottom .date input{
-            padding: 5px 10px;
-            background-color: #e5e5e5;
-            border: grey;
-            margin: 0px 15px;
-
-        }
-
-        .navbottom .keyword{
-            padding: 10px;
-        }
-
-        .navbottom .keyword span{
-            padding: 3px 13px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-            font-size: 19.2px;
-            font-weight: bold;
-        }
-
-
-
-        .container{
-            max-width: 1400px;
-            margin: auto;
-        }
-
-        .navmiddle{
-            padding: 15px;
-            margin: 0px;
-            background-color: white;
-
-        }
-
-
-        .allnavmiddle .container{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-
-
-        .navmiddle.fixed{
-            position: fixed;
-            padding: 15px;
-            margin: auto;
-            background-color: white;
-            width: 100%;
-
-        }
-
-        .allnavmiddle .container span{
-            padding: 5px 20px;
-            font-size: 17.6px;
-            font-weight:bold;
-
-        }
-
-
-        main{
-            height: auto;
-        }
-
-        footer{
-            height: 150px;
-            width: 100%;
-
-
-        }
-
-
-
-        .icons{
-            margin: 30px 0px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .iconimg{
-            width: 60px;
-            height: 60px;
-            border-radius:50%;
-            margin: 10px;
-        }
-
-        .fb{
-
-            background-color: #3b5998;
-        }
-
-        .twitter{
-            background-color: #00aced;
-        }
-
-        .p{
-            background-color: #c6602b;
-        }
-
-        .line{
-            background-color: #2cbf13;
-        }
-
-        .lastdate{
-            font-size: 18px;
-            margin-bottom: 20px;
-            margin-right:0px;
-            padding-top: 5px;
-            text-align: right;
-            position: relative;
-            right: 0px;
-
-        }
-
-
-
-        .er{
-            margin-bottom: 20px;
-            height: 34px;
-        }
-
-        .error{
-            color: red;
-            font-size: 18px;
-            text-align: right;
-
-            background-color: gainsboro;
-            padding: 5px 10px;
-            float: right;
-        }
-
-        .showmore{
-            display: flex;
-            justify-content: center;
-            padding: 20px 0px;
-            background-color: gainsboro;
-            border-top: 1px rgb(179, 176, 176) solid;
-            border-bottom: 1px rgb(179, 176, 176) solid;
-        }
-
-        .showmoretext{
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .footernews{
-            width: 100%;
-            padding: 30px 0px 50px 0px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .logopic{
-            display: flex;
-            flex-direction: column;
-            padding-right:20px;
-        }
-
-        .logo{
-            width: 120px;
-            height: 37px;
-            margin-bottom: 10px;
-
-        }
-
-        .logo1{
-            width: 120px;
-            height: 31px;
-
-        }
-
-        .information{
-            margin-left:-150px;
-        }
-
-        .phone{
-            font-size: 19.2px;
-            font-weight: bold;
-            margin-bottom:10px ;
-        }
-
-        .number{
-            color: #c53e00;
-
-        }
-
-        .font14{
-            font-size: 14px;
-            padding: 10px 0px;
-        }
-
-        .borderred{
-            border: 1px red solid;
-            padding: 5px;
-        }
-
-        .safe{
-            padding: 0px 0px 0px 20px ;
-            border-left:1px gray solid;
-
-        }
-
-        .font-14{
-            font-size: 14px;
-            padding: 5px 0px;
-        }
-
-
-    /* .fa-shopping-cart{
-        color: black;
-        font-size: 48px;
-        position: fixed;
-        right: 40px;
-        bottom: 30vh;
+<style>
+    body{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
     }
-    .fa-shopping-cart .qty{
-        position: absolute;
-        color: #000;
-        width:35px;
-        height: 35px;
-        border: 1px solid #000;
-        border-radius: 50%;
-        background: #FFF;
-        font-size: 16px;
-        top:0;
-        right: 0;
-        transform: translate(40%,-40%);
+
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navtop{
+        background-color: #f0f0f0;
+    }
+
+    .navtop .container{
+        padding: 15px 0px;
+
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navtopright{
+        display: flex;
+        align-items: center
+    }
+
+    .navtopright .borderright{
+        border-right: 1px grey solid;
+    }
+
+    .navtop .container span{
+        font-size: 15.2px;
+        padding: 0px 15px;
+    }
+
+    .navtop .logopic img{
+        max-width: 110px;
+        height: 40px;
+    }
+
+    .navtop .icon{
+        width: 38px;
+        height: 38px;
+    }
+
+    .navbottom{
+        background-color: #f0f0f0;
+    }
+
+    .navbottom .search{
+        color: #db3b00;
+        font-size:25.6px;
+        font-weight: bold;
+
+        margin-bottom: 20px;
+    }
+
+    .navbottom .date{
+        color: black;
+        border-bottom:1px grey solid;
+
+        padding: 3px 13px 20px 13px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-size: 19.2px;
+
+        display: flex;
+        align-items: center;      
+    }
+
+    .navbottom .date input{
+        background-color: #e5e5e5;
+        border: grey;
+
+        padding: 5px 10px;        
+        margin: 0px 15px;
+    }
+
+    .navbottom .keyword{
+        padding: 10px;
+    }
+
+    .navbottom .keyword span{
+        font-size: 19.2px;
+        font-weight: bold;
+
+        padding: 3px 13px;
+        margin-right: 10px;
+        margin-bottom: 10px;  
+    }
+
+    .container{
+        max-width: 1400px;
+
+        margin: auto;
+    }
+
+    .navmiddle{
+        background-color: white;
+
+        padding: 15px;
+        margin: 0px;
+    }
+
+    .allnavmiddle .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navmiddle.fixed{
+        width: 100%;
+        background-color: white;
+
+        position: fixed;
+
+        padding: 15px;
+        margin: auto;
+    }
+
+    .allnavmiddle .container span{
+        font-size: 17.6px;
+        font-weight:bold;
+
+        padding: 5px 20px;
+    }
+
+    main{
+        height: auto;
+    }
+
+    footer{
+        width: 100%;
+        height: 150px;     
+    }
+
+    .icons{
+        margin: 30px 0px;
+
         display: flex;
         justify-content: center;
-        align-items: center;
+    }
 
-    } */
+    .iconimg{
+        width: 60px;
+        height: 60px;
 
-    body{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
+        border-radius:50%;
 
-        .container{
-            max-width: 1400px;
+        margin: 10px;
+    }
 
-            margin: auto;
-        }
+    .fb{
+        background-color: #3b5998;
+    }
 
-        .alltitle{
-            margin-bottom: 20px;
-        }
+    .twitter{
+        background-color: #00aced;
+    }
 
-        .date{
-            font-size: 18px;
-            padding: 0px 10px 0px 0px ;
-        }
+    .p{
+        background-color: #c6602b;
+    }
 
-        .black{
-            color: black;
-        }
+    .line{
+        background-color: #2cbf13;
+    }
 
-        .red{
-            color: red;
-        }
+    .lastdate{
+        font-size: 18px;
+        text-align: right;
 
-        .content{
-            border-top: 1px gainsboro solid;
+        position: relative;
+        right: 0px;
 
-        }
+        margin-bottom: 20px;
+        margin-right:0px;
+        padding-top: 5px;
+    }
 
-        p{
-            font-size: 18px;
-            margin-bottom: 18px;
-            letter-spacing: 0.5px;
-            line-height: 1.8em;
+    .er{
+        height: 34px;
 
-        }
+        margin-bottom: 20px; 
+    }
 
-        .icon{
-            width: 45px;
-            height: 45px;
-        }
+    .error{
+        font-size: 18px;
+        text-align: right;
 
-        .pictitle{
-            display: flex;
-            align-content: center;
-            margin-bottom: 20px;
+        color: red;
+        background-color: gainsboro;
 
-        }
+        padding: 5px 10px;
+        float: right;
+    }
 
-        .pt{
-            font-size: 1.6rem;
-            font-weight: bold;
+    .showmore{
+        background-color: gainsboro;
+        border-top: 1px rgb(179, 176, 176) solid;
+        border-bottom: 1px rgb(179, 176, 176) solid;
 
-        }
+        display: flex;
+        justify-content: center;
 
-        .alltitle{
-            font-size: 18px;
-            margin-bottom: 10px;
-            padding: 3px 5px;
+        padding: 20px 0px;   
+    }
 
-        }
+    .showmoretext{
+        font-size: 18px;
+        font-weight: bold;
+    }
 
-        .text{
-            font-size: 18px;
-            margin-bottom: 10px;
-            padding: 3px 5px;
-            background-color: rgb(221, 221, 221);
-        }
+    .footernews{
+        width: 100%;
 
-        .allpiccard{
-            margin: 30px 0px 0px 0px;
-            display: flex;
+        display: flex;
+        justify-content: space-between;
 
-        }
+        padding: 30px 0px 50px 0px;          
+    }
 
-        .allpiccard{
-            /* margin: 30px 0px 0px 0px; */
-            display: flex;
-            flex-wrap:wrap;
-            /* justify-content: space-between */
+    .logopic{
+        display: flex;
+        flex-direction: column;
 
-        }
+        padding-right:20px;
+    }
 
-        .allpiccard .card{
-            width: 32%;
-            margin-top:30px;
-            border: 1px rgb(204, 204, 204) solid;
-            margin-right: 20px;
-        }
+    .logo{
+        width: 120px;
+        height: 37px;
 
-        .cardpic{
-            width: 100%;
-            max-height: 320px;
-            height: 20vw;
-        }
+        margin-bottom: 10px;
+    }
 
+    .logo1{
+        width: 120px;
+        height: 31px;
+    }
 
-        .pictext{
-            padding: 10px 10px;
-            font-size: 18px;
-        }
+    .information{
+        margin-left:-150px;
+    }
 
-        .boder{
-            padding: 30px 0px;
-            border-bottom: 1px gainsboro solid;
-        }
+    .phone{
+        font-size: 19.2px;
+        font-weight: bold;
 
-        .nextbox{
-            margin-top:30px;
-        }
+        margin-bottom:10px ;
+    }
 
-        .next{
-            font-size: 18px;
-            padding: 10px 20px;
-            border: 1px solid black;
-            margin-right: 10px;
+    .number{
+        color: #c53e00;
+    }
 
-        }
+    .font14{
+        font-size: 14px;
 
-        .nexttext{
-            font-size: 18px;
-            color: red
-        }
+        padding: 10px 0px;
+    }
 
-        .lastdate{
-            display: flex;
-            justify-content:flex-end;
-            margin-bottom: 20px;
-            height: 34px;
-        }
+    .borderred{
+        border: 1px red solid;
 
-        .day{
+        padding: 5px;
+    }
 
-            font-size: 18px;
-            text-align: right;
+    .safe{
+        border-left:1px gray solid;
 
+        padding: 0px 0px 0px 20px ;  
+    }
 
-            /* float: right; */
-        }
+    .font-14{
+        font-size: 14px;
 
-        .top{
-            display: flex;
-            justify-content: center;
-            margin: 20px 0px;
-        }
+        padding: 5px 0px;
+    }
 
-        .toptext{
-            padding: 5px 10px;
-            font-size: 18px;
-            border: 2px black solid;
-        }
-    </style>
+    .alltitle{
+        margin-bottom: 20px;
+    }
+
+    .date{
+        font-size: 18px;
+
+        padding: 0px 10px 0px 0px ;
+    }
+
+    .black{
+        color: black;
+    }
+
+    .red{
+        color: red;
+    }
+
+    .content{
+        border-top: 1px gainsboro solid;
+    }
+
+    p{
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        line-height: 1.8em;
+
+        margin-bottom: 18px;
+    }
+
+    .icon{
+        width: 45px;
+        height: 45px;
+    }
+
+    .pictitle{
+        display: flex;
+        align-content: center;
+
+        margin-bottom: 20px;
+    }
+
+    .pt{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .alltitle{
+        font-size: 18px;
+
+        margin-bottom: 10px;
+        padding: 3px 5px;
+    }
+
+    .text{
+        font-size: 18px;
+
+        background-color: rgb(221, 221, 221);
+
+        margin-bottom: 10px;
+        padding: 3px 5px; 
+    }
+
+    .allpiccard{
+        display: flex;
+
+        margin: 30px 0px 0px 0px;     
+    }
+
+    .allpiccard{
+        display: flex;
+        flex-wrap:wrap;
+    }
+
+    .allpiccard .card{
+        width: 32%;
+        border: 1px rgb(204, 204, 204) solid;
+
+        margin-top:30px;
+        margin-right: 20px;
+    }
+
+    .cardpic{
+        width: 100%;
+        max-height: 320px;
+        height: 20vw;
+    }
+
+    .pictext{
+        font-size: 18px;
+
+        padding: 10px 10px;       
+    }
+
+    .boder{
+        border-bottom: 1px gainsboro solid;
+        padding: 30px 0px;
+    }
+
+    .nextbox{
+        margin-top:30px;
+    }
+
+    .next{
+        font-size: 18px;
+        border: 1px solid black;
+
+        padding: 10px 20px;
+        margin-right: 10px;
+    }
+
+    .nexttext{
+        font-size: 18px;
+        color: red
+    }
+
+    .lastdate{
+        height: 34px;
+
+        display: flex;
+        justify-content:flex-end;
+
+        margin-bottom: 20px;
+    }
+
+    .day{
+        font-size: 18px;
+        text-align: right;
+    }
+
+    .top{
+        display: flex;
+        justify-content: center;
+
+        margin: 20px 0px;
+    }
+
+    .toptext{
+        font-size: 18px;
+        border: 2px black solid;
+
+        padding: 5px 10px;     
+    }
+</style>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
 <body>
     <nav>
         <div class="navtop">
-                <div class="container">
-                     <div class="logopic">
-                        <img src="https://www.taiwan.net.tw/images/logo.png" alt="">
-                    </div>
-
-                    <div class="navtopright">
-                        <span class="borderright">網站導覽</span>
-                        <span class="borderright">聯絡我們</span>
-                        <span class="borderright">行政資訊網</span>
-                        <span class="borderright">兒童網</span>
-                        <span>回首頁</span>
-                        <span>
-                            <img class="icon" src="https://www.taiwan.net.tw/images/icon/facebook.svg" alt="">
-                        </span>
-                        <span>
-                            <img class="icon" src="https://www.taiwan.net.tw/images/icon/line.svg" alt="">
-                        </span>
-                        <span>
-                            <img class="icon" src="https://www.taiwan.net.tw/images/icon/youtube.svg" alt=""></span>
-                        <span>Language
-                        </span>
-                    </div>
+            <div class="container">
+                <div class="logopic">
+                    <img src="https://www.taiwan.net.tw/images/logo.png" alt="">
                 </div>
+
+                <div class="navtopright">
+                    <span class="borderright">網站導覽</span>
+                    <span class="borderright">聯絡我們</span>
+                    <span class="borderright">行政資訊網</span>
+                    <span class="borderright">兒童網</span>
+                    <span>回首頁</span>
+                    <span>
+                        <img class="icon" src="https://www.taiwan.net.tw/images/icon/facebook.svg" alt="">
+                    </span>
+                    <span>
+                        <img class="icon" src="https://www.taiwan.net.tw/images/icon/line.svg" alt="">
+                    </span>
+                    <span>
+                        <img class="icon" src="https://www.taiwan.net.tw/images/icon/youtube.svg" alt=""></span>
+                    <span>Language</span>
+                </div>
+            </div>
         </div>
 
 
         <div class="navmiddle ">
-
-                <div class="allnavmiddle container">
-                    <div  class="container">
-                        <span >旅遊情報</span>
+            <div class="allnavmiddle container">
+                <div  class="container">
+                    <span >旅遊情報</span>
                     <span>景點</span>
                     <span>節慶活動</span>
                     <span>美食</span>
@@ -524,10 +477,8 @@
                     <span>旅遊指南</span>
                     <span>主題推薦</span>
                     <span>多媒體影音</span>
-                    </div>
-
                 </div>
-
+            </div>
         </div>
 
         <div class="navbottom">
@@ -545,26 +496,20 @@
                 <div class="keyword">
                     <span>關鍵字</span>
                     <input type="text" placeholder="請輸入關鍵字">
-
                 </div>
             </div>
-
         </div>
-
-
     </nav>
+
     <main id="app">
         <div class="card container">
-
             <div class="alltitle">
                 <h2>觀光局視各縣市政府執行需求 評估增撥安心旅遊行政費</h2>
-    
                 <div class="date">
                     <span class="date black">發布日期：</span>
                     <span class="date red">2020-12-22</span>
                     <span class="date black">瀏覽次數：</span>
-                    <span class="date red">548
-                    </span>
+                    <span class="date red">548</span>
                 </div>
             </div>
     
@@ -576,11 +521,9 @@
                 <p>交通部觀光局表示，已就各縣市安心旅遊補助之執行情形及其實際需求進行整體評估，將視預算情形增撥仍有行政費需求之縣市，亦已請臺北市政府加速辦理其核銷撥款速度，並隨時掌握各縣市核銷之進度，以避免旅館業者資金運用之困境。</p>
     
             <div class="allpic">
-    
                 <div class="pictitle">
                     <img class="icon" src="https://www.taiwan.net.tw/images/icon/album.svg" alt="">
                     <div class="pt">照片</div>
-    
                 </div>
                 <span class="text">點擊檢視本網站使用鍵操作相簿說明:</span>
     
@@ -599,31 +542,28 @@
                 <div class="boder">
                     <div class="nextbox">
                         <span class="next">上一則</span>
-                    <span class="nexttext" >「台灣觀巴」優質貼心服務伴您便捷暢遊全臺</span>
+                        <span class="nexttext" >「台灣觀巴」優質貼心服務伴您便捷暢遊全臺</span>
                     </div>
                     <div class="nextbox">
                         <span class="next">下一則</span>
-                    <span class="nexttext nextborder" >觀光局視各縣市政府執行需求 評估增撥安心旅遊行政費</span>
+                        <span class="nexttext nextborder" >觀光局視各縣市政府執行需求 評估增撥安心旅遊行政費</span>
                     </div>
     
                 </div>
+
                 <div class="lastdate">
                     <span class="day">最後更新時間： 2020-12-25</span>
                 </div>
+
                 <div class="top">
                     <span class="toptext">回列表頁</span>
                 </div>
-    
             </div>
-        </div>
-
-        
+        </div>    
     </main>
 
     <footer>
         <div class=" footer">
-            <!-- <div class="lastdate">最後更新時間： 2020-12-24</div>
-            <div class="backtop">回列表頁</div>  -->
             <div class="er container">
                 <span class="error">網站除錯報馬仔</span>
             </div>
@@ -639,41 +579,38 @@
                 <span class="showmoretext">展開更多連結</span>
             </div>
         </div>
-        <div class="">
-            <div class="footernews container">
-                <div class="logopic">
-                    <img class="logo" src="https://www.taiwan.net.tw/images/logo.png" alt="">
-                    <img class="logo1" src="https://www.taiwan.net.tw/images/aa.png" alt="">
+
+        <div class="footernews container">
+            <div class="logopic">
+                <img class="logo" src="https://www.taiwan.net.tw/images/logo.png" alt="">
+                <img class="logo1" src="https://www.taiwan.net.tw/images/aa.png" alt="">
+            </div>
+            <div class="information">
+                <div >
+                    <span class="phone">24小時免付費旅遊諮詢熱線：</span>
+                    <span class="phone number">0800-011765</span>
                 </div>
-                <div class="information">
-                    <div >
-                        <span class="phone">24小時免付費旅遊諮詢熱線：</span>
-                        <span class="phone number">0800-011765</span>
-                    </div>
-                    <div>
-                        <span class="phone">免付費安心旅遊、紓困專線：</span>
-                        <span class="phone number ">0800-211734</span>
-                    </div>
-                    <div class="font14" >中華民國交通部觀光局 版權所有</div>
-                    <div>
-                        <span class="font14">地址：</span>
-                        <span class="font14 borderred">106433台北市忠孝東路4段209號9樓</span>
-                        <span class="font14">電話：</span>
-                        <span class="font14 borderred">(02)2349-1500</span>
-                    </div>
-                    <div class="font14">建議瀏覽器：Chrome，Firefox，IE10.0以上版本 (螢幕最佳顯示效果為1920 * 1280)</div>
+                <div>
+                    <span class="phone">免付費安心旅遊、紓困專線：</span>
+                    <span class="phone number ">0800-211734</span>
                 </div>
-                <div class="safe">
-                    <div class="font-14">網站資訊安全政策</div>
-                    <div class="font-14">隱私權保護政策</div>
-                    <div class="font-14">聯絡我們</div>
-                    <div class="font-14">問卷調查</div>
-                    <div class="font-14">你是本站第123456789位訪客</div>
+                <div class="font14" >中華民國交通部觀光局 版權所有</div>
+                <div>
+                    <span class="font14">地址：</span>
+                    <span class="font14 borderred">106433台北市忠孝東路4段209號9樓</span>
+                    <span class="font14">電話：</span>
+                    <span class="font14 borderred">(02)2349-1500</span>
                 </div>
+                <div class="font14">建議瀏覽器：Chrome，Firefox，IE10.0以上版本 (螢幕最佳顯示效果為1920 * 1280)</div>
+            </div>
+            <div class="safe">
+                <div class="font-14">網站資訊安全政策</div>
+                <div class="font-14">隱私權保護政策</div>
+                <div class="font-14">聯絡我們</div>
+                <div class="font-14">問卷調查</div>
+                <div class="font-14">你是本站第123456789位訪客</div>
             </div>
         </div>
-
-
     </footer>
 
 <script>
@@ -681,19 +618,18 @@
 
 
 
-    window.onscroll = function() {myFunction()};
+    window.onscroll = function() {
+        myFunction()
+    };
 
-function myFunction() {
-  if (document.body.scrollTop > 74 || document.documentElement.scrollTop > 74) {
-    navmiddle.classList.add("fixed");
-  }else{
-    navmiddle.classList.remove("fixed");
-  }
-
-}
-
+    function myFunction() {
+        if (document.body.scrollTop > 74 || document.documentElement.scrollTop > 74) {
+            navmiddle.classList.add("fixed");
+        }else{
+            navmiddle.classList.remove("fixed");
+        }
+    }
 </script>
-<script src="{{ asset('js/app.js') }}" ></script>
 
 </body>
 </html>

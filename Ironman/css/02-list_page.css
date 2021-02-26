@@ -414,12 +414,12 @@ main .banner .pic .banner_mask {
 }
 
 main .banner .pic .banner_mask button {
-  outline-style: none;
-  background: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
   height: 100%;
+  outline-style: none;
+  background: none;
   font-size: 60px;
   color: #FFFFFF;
   position: relative;
@@ -596,22 +596,22 @@ main .content .background .triangle_bg .all_big .big_triangle {
 main .content .background .triangle_bg .all_big .big_mask {
   width: 100%;
   height: 100%;
+  background-color: rgba(216, 163, 59, 0.5);
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(216, 163, 59, 0.5);
 }
 
 main .content .background .triangle_bg .all_small_top {
   width: 510px;
   height: 1020px;
+  -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
+          clip-path: polygon(100% 0, 0 50%, 100% 100%);
   position: absolute;
   top: 0;
   right: 0;
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
-  -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
-          clip-path: polygon(100% 0, 0 50%, 100% 100%);
 }
 
 @media screen and (max-width: 1200px) {
@@ -663,20 +663,20 @@ main .content .background .triangle_bg .all_small_top .top_small_triangle {
 main .content .background .triangle_bg .all_small_top .small_top_bg {
   width: 100%;
   height: 100%;
+  background-color: rgba(216, 163, 59, 0.5);
   position: absolute;
   top: 0px;
   right: 0%;
-  background-color: rgba(216, 163, 59, 0.5);
 }
 
 main .content .background .triangle_bg .all_small_bt {
   width: 510px;
   height: 1020px;
+  -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
+          clip-path: polygon(100% 0, 0 50%, 100% 100%);
   position: absolute;
   bottom: 0;
   right: 0;
-  -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%);
-          clip-path: polygon(100% 0, 0 50%, 100% 100%);
   -webkit-transform: translateY(76%);
           transform: translateY(76%);
 }
@@ -746,19 +746,19 @@ main .content .background .triangle_bg .all_small_bt .bt_small_triangle {
 main .content .background .triangle_bg .all_small_bt .small_bottom_bg {
   width: 100%;
   height: 100%;
+  background-color: rgba(216, 163, 59, 0.5);
   position: absolute;
   bottom: 0;
   right: 0;
-  background-color: rgba(216, 163, 59, 0.5);
 }
 
 main .content .background .triangle_bg .bg_white {
   width: 100%;
   height: 515px;
+  background-color: #FFFFFF;
   position: absolute;
   top: 0px;
   z-index: -1;
-  background-color: #FFFFFF;
 }
 
 @media screen and (max-width: 1200px) {
@@ -822,7 +822,6 @@ main .content .page .mycontainer {
 
 main .content .page .mycontainer .now_page {
   padding-top: 20px;
-  --animate-duration: 0.5s;
 }
 
 @media screen and (max-width: 320px) {
@@ -837,9 +836,9 @@ main .content .page .mycontainer .now_page .index {
 }
 
 main .content .page .mycontainer .now_page .arrow {
-  margin: 0px 10px;
   font-size: 18px;
   color: #808080;
+  margin: 0px 10px;
 }
 
 main .content .page .mycontainer .now_page .in_page {
@@ -852,10 +851,6 @@ main .content .all_btns {
 }
 
 main .content .all_btns .mycontainer {
-  padding-bottom: 50px;
-  position: relative;
-  top: 0px;
-  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -866,6 +861,10 @@ main .content .all_btns .mycontainer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  top: 0px;
+  z-index: 2;
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -883,13 +882,13 @@ main .content .all_btns .mycontainer {
 }
 
 main .content .all_btns .mycontainer .search {
-  margin: auto;
+  color: #960014;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: auto;
   margin-top: 35px;
   margin-bottom: 45px;
-  color: #960014;
   --animate-duration: 0.5s;
 }
 
@@ -917,9 +916,9 @@ main .content .all_btns .mycontainer .search input::-webkit-input-placeholder {
 }
 
 main .content .all_btns .mycontainer .search .btn {
-  border: solid 1px #960014;
-  text-align: center;
   font-size: 20px;
+  text-align: center;
+  border: solid 1px #960014;
   padding: 0px;
 }
 
@@ -939,16 +938,16 @@ main .content .all_btns .mycontainer .search .btn {
 }
 
 main .content .all_btns .mycontainer .search .fa-search:before {
-  line-height: 60px;
   font-size: 30px;
+  line-height: 60px;
   position: absolute;
   right: 30px;
 }
 
 @media screen and (max-width: 710px) {
   main .content .all_btns .mycontainer .search .fa-search:before {
-    line-height: 45px;
     font-size: 26px;
+    line-height: 45px;
   }
 }
 
@@ -961,7 +960,6 @@ main .content .all_btns .mycontainer .btn_selector {
   height: 45px;
   background-color: #960014;
   color: #FFFFFF;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -969,14 +967,15 @@ main .content .all_btns .mycontainer .btn_selector {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  margin: auto;
   display: none;
   --animate-duration: 0.5s;
 }
 
 @media screen and (max-width: 710px) {
   main .content .all_btns .mycontainer .btn_selector {
-    display: block;
     font-size: 20px;
+    display: block;
   }
 }
 
@@ -1000,11 +999,11 @@ main .content .all_btns .mycontainer .btns {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: auto;
-  --animate-duration: 0.5s;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: auto;
+  --animate-duration: 0.5s;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1022,11 +1021,11 @@ main .content .all_btns .mycontainer .btns {
 main .content .all_btns .mycontainer .btns .btn_classification {
   width: unset;
   min-width: 168px;
+  text-align: center;
+  line-height: 45px;
   margin-right: 30px;
   margin-bottom: 30px;
   padding: 0 20px;
-  text-align: center;
-  line-height: 45px;
 }
 
 main .content .all_cards {
@@ -1053,9 +1052,6 @@ main .content .all_cards {
 }
 
 main .content .all_cards .mycontainer {
-  position: relative;
-  z-index: 2;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1065,6 +1061,9 @@ main .content .all_cards .mycontainer {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+  margin: auto;
   letter-spacing: 0.1rem;
 }
 
@@ -1079,11 +1078,11 @@ main .content .all_cards .mycontainer {
 main .content .all_cards .mycontainer .card {
   width: 370px;
   height: auto;
-  margin-right: 30px;
-  margin-bottom: 30px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0 0 15px -10px #000000;
           box-shadow: 0 0 15px -10px #000000;
+  margin-right: 30px;
+  margin-bottom: 30px;
   transition: -2s;
   --animate-duration: 0.3s;
 }
@@ -1138,8 +1137,8 @@ main .content .all_cards .mycontainer .card .pic {
 }
 
 main .content .all_cards .mycontainer .card .pic img {
-  height: 246px;
   width: 100%;
+  height: 246px;
   margin-left: -1px;
   margin-top: -1px;
   background-position: center;
@@ -1190,11 +1189,10 @@ main .content .all_cards .mycontainer .card .pic .card_classification {
   width: auto;
   height: auto;
   text-align: left;
-  list-style: height 15px;
-  padding: 5px 9px;
   position: absolute;
   left: 20px;
   top: 20px;
+  padding: 5px 9px;
 }
 
 @media screen and (max-width: 320px) {
@@ -1206,8 +1204,8 @@ main .content .all_cards .mycontainer .card .pic .card_classification {
 main .content .all_cards .mycontainer .card .card_container {
   width: calc(100% - 20px);
   font-size: 20px;
-  margin: auto;
   position: relative;
+  margin: auto;
   margin-top: 45px;
 }
 
@@ -1242,11 +1240,11 @@ main .content .all_cards .mycontainer .card .card_container a:hover {
 }
 
 main .content .all_cards .mycontainer .card .card_container a .card_introduction {
+  min-height: 70px;
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 30px;
   padding-top: 10px;
-  min-height: 70px;
 }
 
 @media screen and (max-width: 1147px) {
@@ -1305,6 +1303,7 @@ main .content .all_cards .mycontainer .card .card_container a .card_introduction
 }
 
 main .content .all_cards .mycontainer .card .card_container .card_content {
+  min-height: 120px;
   overflow: hidden;
   font-size: 20px;
   text-overflow: ellipsis;
@@ -1313,7 +1312,6 @@ main .content .all_cards .mycontainer .card .card_container .card_content {
   -webkit-box-orient: vertical;
   white-space: normal;
   background-color: #FFFFFF;
-  min-height: 120px;
 }
 
 main .content .all_cards .mycontainer .card .card_container a {
@@ -1402,18 +1400,18 @@ main .content .btn_more .btn_show_more {
 }
 
 main .content .btn_more .btn_show_more .text {
+  text-align: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  text-align: center;
   margin: auto;
 }
 
 main .content .btn_more .btn_show_more .arrow {
   height: 60px;
+  line-height: 58px;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  line-height: 58px;
   position: absolute;
   right: 35px;
 }

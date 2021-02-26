@@ -28,12 +28,9 @@ p{
     margin-bottom: 5px;
 }
 
-
-
 input,select{
     height: auto;
-    font-size: 24px;
-    
+    font-size: 24px; 
     @media screen and (max-width:1600px){
         font-size: 22px;
      }
@@ -45,7 +42,11 @@ input,select{
 #nav{
     position: relative;
 }
+// 返回首頁
 #top{
+    font-size: 36px;
+    font-weight: bold;
+
     display: flex;
     flex-direction: column;
     
@@ -53,9 +54,9 @@ input,select{
     z-index: 99;
     bottom: 1vw;
     right: 10px;
-    font-size: 36px;
-    font-weight: bold;
+    
     background-attachment: fixed;
+
     text-decoration: none;
     @media screen and (max-width:1600px){
         font-size: 32px;   
@@ -66,17 +67,15 @@ input,select{
     .top_text{
         color: #605D4F;
         text-align: center;
-        .fa-angle-double-up{
-            
+        .fa-angle-double-up{  
             display: none;
         }
     }
-    
     img{
-        align-self: center;
         width: 80px;
         height: 80px;
-        
+
+        align-self: center;
         @media screen and (max-width:1600px){
             width: 70px;
             height:70px;  
@@ -85,22 +84,20 @@ input,select{
             width: 60px;
             height:60px;  
         }
-
     }
     &:hover{
         .top{
             display: none;
         }
-        .fa-angle-double-up{
-            
+        .fa-angle-double-up{  
             display: block;
         }
     }
 }
 
-
 nav{
     width: 100%;
+
     background-color: #D9CEC5;
     .navbar-brand{
         img{
@@ -117,22 +114,15 @@ nav{
         width: auto;
         position: relative;
         z-index: 10;
-
         // 漢堡標
-        // background-color: #D9CEC5;
-        // width: 200px;
-    
         .nav-item.active{
-            
            .nav-link{
             //    手機板
-            //   width: 320px;
-            //   background-color: khaki;
-               position: relative;
-               z-index: 30;
-               font-size: 24px;
+                font-size: 24px;
                 font-weight: bold;
-                // color: white;
+
+                position: relative;
+                z-index: 30;
                 &:hover{
                     color: #605D4F;
                 }
@@ -151,32 +141,35 @@ nav{
 main{
     overflow-x: hidden;
     max-width: 1920px;
+
     position: relative;
+    // banner
     .banner{
         width: 100%;
-        background-color: #f2f0ed;
         height: auto;
+
+        background-color: #f2f0ed;
+        
         position: relative;
         z-index: 3;
         .pic{
-           
             width: calc(100% - 100px);
 
-            align-self: flex-start;
-            position: relative;
             display: flex;
- 
+            align-self: flex-start;
+
+            position: relative;
             .img{
-                display: block;
                 width: 80vw;
                 height: 45.5vw;
-                // width: 1577px;
-                // height: 873px;
+
+                display: block;
             }
-            .name{
-                margin-left: 60px;
+            .name{ 
                 display: flex;
                 flex-direction: column;
+
+                margin-left: 60px;
                 margin-top:8vw;
                 @media screen and (max-width:1100px){
                     margin-left: 40px; 
@@ -184,6 +177,7 @@ main{
                 img{
                     width: 5vw;
                     height: auto;
+
                     margin-bottom: 30px;
                     @media screen and (max-width:1600px){
                         margin-bottom: 20px; 
@@ -199,51 +193,55 @@ main{
         }
     }
   
+    // 經營理念
     .management{
         width: 100%;
+
+        background-color: #f2f0ed;
+        color: #605D4F;
+
         font-family: fangsong;
 
         padding-top: 45px;
         padding-bottom: 100px;
-
-        background-color: #f2f0ed;
-        color: #605D4F;
         .top{
             width:calc(100% - 160px);
+
+            border-bottom:3px solid #605D4F ;
+
             display: flex;
             justify-content: space-evenly;
 
             padding-bottom: -20px;
             margin: auto;
-
-            border-bottom:3px solid #605D4F ;
             .title{ 
-                margin-top: 20px;
-                margin-left:45px ;
-                
                 font-size: 48px;
                 font-weight: bold;
-
                 -webkit-writing-mode: vertical-lr;
                 writing-mode: vertical-lr; 
                 letter-spacing: 4px;
+
+                margin-top: 20px;
+                margin-left:45px ;
                 @media screen and (max-width:1900px){
                     font-size: 42px;
                 }
                 @media screen and (max-width:1700px){
-                    font-size: 36px;
-                    
+                    font-size: 36px; 
                 }
                 @media screen and (max-width:1500px){
                     font-size: 34px;   
+
                     margin-top: -30px;
                 }
                 @media screen and (max-width:1200px){
-                    font-size: 30px;   
+                    font-size: 30px; 
+
                     margin-left: 30px;
                 }
                 @media screen and (max-width:1150px){
-                    font-size: 28px;   
+                    font-size: 28px; 
+
                     margin-top: -20px;
                 }
                 @media screen and (max-width:1050px){
@@ -253,16 +251,16 @@ main{
                     font-size: 22px;   
                 }
                 .text{
-                    transform: translateY(30px);
                     height: 40vw;
 
                     border-left: 3px solid #605D4F;
 
                     display: flex;
                     flex-direction: column-reverse;
+
+                    transform: translateY(30px);
                     @media screen and (max-width:1720px){
-                        height: 38vw;
-                        
+                        height: 38vw;  
                     }
                     @media screen and (max-width:1500px){
                         height: 43vw;
@@ -280,16 +278,14 @@ main{
                     .p:nth-child(2){
                         padding-top: 18vw;
                         @media screen and (max-width:1720px){
-                            padding-top: 16vw;
-                            
+                            padding-top: 16vw;  
                         }
                     }    
                 }
             }
-
             .pic{
-                z-index: 1;
                 width: auto;
+                z-index: 1;             
                 video{
                     width: auto;
                     height: 37.5vw;
@@ -299,29 +295,29 @@ main{
                     @media screen and (max-width:1720px){
                         width: auto;
                         height: 36vw;
-
                     }
                     @media screen and (max-width:950px){
                         margin-top: 15px;
                         box-shadow:10px 10px  #D9CEC5;
-  
                     }
                 } 
             }  
         }
         .bottom { 
             .mycontainer{
-                margin-top: 15px;
                 max-width:calc(100% - 10vw);
+
+                margin-top: 15px;
                 @media screen and (max-width:1279px){
                     margin-top: 30px;    
                 }
                 .title{
+                    font-size: 48px;
+                    letter-spacing: 10px;
                     text-align: center;
                     font-weight: bold;
-                    letter-spacing: 10px;
-                    padding-bottom: 15px ;
-                    font-size: 48px;
+                    
+                    padding-bottom: 15px ; 
                     @media screen and (max-width:1900px){
                         font-size: 42px;
                     }
@@ -336,16 +332,17 @@ main{
                     }                 
                 } 
                .text{
-                    display: flex;
-                    flex-direction: column;
-
                     font-size: 24px;
                     font-weight: 600;
                     letter-spacing: 3px;
+
+                    border-bottom: 3px solid #605D4F;
+
+                    display: flex;
+                    flex-direction: column;
+
                     margin: auto;
                     padding-bottom: 30px ;
-                    border-bottom: 3px solid #605D4F;
-                    
                     @media screen and (max-width:1400px){
                         font-size: 20px;
                     }
@@ -364,6 +361,7 @@ main{
         }
     }
 
+    // 建築
     .buliding{
         height: auto;
 
@@ -371,7 +369,6 @@ main{
         
         font-family: fangsong;
         
-
         display: flex;
         flex-direction: column;
         padding-top: 20px;
@@ -380,10 +377,10 @@ main{
             .text{
                 font-size: 24px;
                 font-weight: 700;
-                color: #605D4F;
-
-                background-color: #D9D6D0;
                 letter-spacing: 2px;
+
+                color: #605D4F;
+                background-color: #D9D6D0;
                 @media screen and (max-width:1620px){
                     font-size: 22px;
                 }
@@ -398,21 +395,23 @@ main{
                 }   
             }
             .title{
+                writing-mode: vertical-rl; 
+
                 position: absolute;
+
                 display: flex;
                 flex-direction: column;
-                
-                writing-mode: vertical-rl; 
 
                 transform: translateY(-80px);
             .title_bg{
                 .title_text{
                     font-size: 60px;
                     font-weight: bold;
-                    color: #BFB3A4;
                     letter-spacing: 2px;
                     
                     background-color: #605D4F;
+                    color: #BFB3A4;
+
                     padding: 10px 15px 10px 9px;
                     @media screen and (max-width:1400px){
                         font-size:48px;        
@@ -423,7 +422,6 @@ main{
                 }
             }
         }
-
         .content_bg{
             font-size: 24px;
             letter-spacing:2px;
@@ -433,6 +431,7 @@ main{
                     display: flex;
                     @media screen and (max-width:1570px){                       
                         max-width:  1100px;
+
                         justify-content: space-evenly;   
                     }
                     @media screen and (max-width:1280px){
@@ -444,39 +443,42 @@ main{
                     .left_pic{
                         width: auto;  
                         .big_pic{
-                            margin-top: 60px;
-                            margin-left: 179px;
                             width: 776px;
                             height: 485px;
+
                             position: relative;
                             z-index: 1;
+
+                            margin-top: 60px;
+                            margin-left: 179px;
                             @media screen and (max-width:1600px){
                                 width: 680px;
                                 height: 450px;
                             }
                             @media screen and (max-width:1570px){
-                               margin-left: 5vw;
+                                margin-left: 5vw;
+
                                 margin: auto;                        
                             }
                             @media screen and (max-width:1279px){
-                                margin-left: 6vw;
                                 width: 600px;
-                                height: 397px;                     
+                                height: 397px;
+
+                                margin-left: 6vw;                       
                             }
                             @media screen and (max-width:1200px){
                                 width: 550px;
-                                height: 363px; 
-                                margin: auto;               
+                                height: 363px;
+                                
+                                margin: auto;
                             }
                             @media screen and (max-width:859px){
                                 width: 450px;
                                 height: 297px; 
-                                margin: auto;               
                             }
                             img{
                                 width: 100%;
-                                height: 100%;
-                                
+                                height: 100%;   
                             }
                             .people_pic{
                                 width: 308px;
@@ -489,23 +491,20 @@ main{
                                 z-index: 2;
                                 @media screen and (max-width:1600px){
                                     width: 280px;
-                                    height: 323px;
-                                    
+                                    height: 323px;  
                                 }
                                 @media screen and (max-width:1570px){
                                     width: 150px;
                                     height: 173px;
+
                                     right: -30px;
                                     top: 300px;                            
                                 }
                                 @media screen and (max-width:1570px){
                                     width: 130px;
-                                    height: 149px;
-                                    right: -30px;
-                                    top: 300px;                            
+                                    height: 149px;                          
                                 }
                                 @media screen and (max-width:859px){
-                                    right: -30px;
                                     top: 160px;               
                                 }
                                 img{
@@ -513,8 +512,7 @@ main{
                                     height: 100%;
                                 }
                             }
-                        }
-                        
+                        }  
                     }
                     .right{
                         width: 100%;
@@ -524,39 +522,42 @@ main{
                         @media screen and (max-width:1100px){
                             max-width: 90%;
                             width: auto;
+
                             margin: auto;                            
                         }
-                        
                         .right_text{
+                            max-width: 97%;
+
                             padding: 100px 25px 30px 100px;
                             margin-top: 385px;
                             margin-left: -70px;
-                            max-width: 97%;
                             @media screen and (max-width:1620px){
                                 max-width: 115%;
+
                                 margin-top: 375px;  
                             }
                             @media screen and (max-width:1600px){
                                 max-width: 100%;
+
                                 margin-top: 355px;   
                             }
                             @media screen and (max-width:1200px){
                                 padding: 20px;   
                             }
                             @media screen and (max-width:1570px){
-                                padding: 30px 30px 30px 30px;
-                               
-                                display: flex;
-                                flex-direction: column;
-                                
                                 writing-mode: vertical-rl; 
 
+                                display: flex;
+                                flex-direction: column;
+
+                                padding: 30px 30px 30px 30px;
                                 margin: auto;
                                 margin-left: 60px;
                                 @media screen and (max-width:1100px){
                                     width: auto;
                                    
                                     writing-mode:initial; 
+
                                     padding: 30px 80px;                
                                 }
                                 @media screen and (max-width:859px){
@@ -570,6 +571,7 @@ main{
                                     }
                                     @media screen and (max-width:1100px){
                                         width: auto;
+                                        
                                         margin: auto;
                                         &:nth-last-child(1){
                                             margin: auto; 
@@ -584,14 +586,14 @@ main{
             .part_2_bg{            
                 padding: 30px 0px 75px 0px;
                 .part_2{
-                    margin: auto;
                     width: 1480px;
-
-                    padding: 45px 0px;
 
                     display: flex;
                     align-items: center;
                     justify-content: center;
+
+                    padding: 45px 0px;
+                    margin: auto;
                     @media screen and (max-width:1280px){
                         width: calc(100% - 150px);
                     }
@@ -602,11 +604,12 @@ main{
                             flex-direction: column-reverse;   
                         }
                         .left_text{ 
-                            padding: 30px;
+                            writing-mode: vertical-rl; 
+
                             display: flex;
                             flex-direction: column;
-                            
-                            writing-mode: vertical-rl; 
+
+                            padding: 30px;
                             p{
                                 margin-left: 10px;
                                 &:nth-last-child(1){
@@ -615,16 +618,18 @@ main{
                             }
                             @media screen and (max-width:1100px){
                                 align-self: flex-start;
-                                margin-top: -60px;
+
                                 position: relative;
                                 z-index: 2;
+
+                                margin-top: -60px;  
                             }
                         }
                         .pic{
-                            margin-left: 60px;
-
                             width: 853px;
                             height: 480px;
+
+                            margin-left: 60px;
                             @media screen and (max-width:1430px){
                                 width: 750px;
                                 height: 422px;
@@ -641,7 +646,6 @@ main{
                                 width: 90%;
                                 height: auto;
                             }
-
                             img{
                                 width: 100%;
                                 height: 100%;
@@ -660,8 +664,8 @@ main{
                     display: flex;
                     @media screen and (max-width:1570px){
                         max-width:  1100px;
-                        justify-content: space-between;
-                        
+
+                        justify-content: space-between;   
                     }
                     @media screen and (max-width:1279px){
                         justify-content: initial;
@@ -674,10 +678,10 @@ main{
                         @media screen and (max-width:1100px){
                             align-self: flex-start;
                         }
-                        
                         .big_pic{
                             width: 875px;
                             height: 600px;
+
                             position: relative;
                             left: 80px;
                             @media screen and (max-width:1720px){
@@ -707,6 +711,7 @@ main{
                             .small_pic{
                                 width: 200px;
                                 height: 285px;
+
                                 position: absolute;
                                 top: -50px;
                                 left: -80px;
@@ -726,22 +731,26 @@ main{
                             .pic{
                                 width: 400px;
                                 height: 300px;
+
                                 position: absolute;
                                 bottom: -110px;
                                 right: -575px;
                                 @media screen and (max-width:1720px){
-                                    bottom: -170px;
                                     width: 360px;
                                     height: 270px;
+
+                                    bottom: -170px;
                                 }
                                 @media screen and (max-width:1570px){
                                     width: 280px;
                                     height: 210px;
+
                                     right: -80px;
                                 }
                                 @media screen and (max-width:859px){
                                     width: 200px;
                                     height: 150px;
+
                                     right: -40px;
                                     bottom: -80px;                                 
                                 }
@@ -752,30 +761,29 @@ main{
                             }
                         }
                     }
-    
                     .right{
                         .right_text{
-                            
                             padding:30px 30px 150px 120px;
                             margin:30px 0px 0px 0px;
                             @media screen and (max-width:1720px){
                                 padding-bottom: 100px;
                             }
                             @media screen and (max-width:1570px){
-                                padding: 30px 30px 30px 30px;
-                               
+                                writing-mode: vertical-rl;
+                                
                                 display: flex;
                                 flex-direction: column;
-                                
-                                writing-mode: vertical-rl; 
+
+                                padding: 30px 30px 30px 30px;    
                             }
                             @media screen and (max-width:1279px){
                                 margin-left: 150px;
                             }
                             @media screen and (max-width:1100px){
                                 width: max-content;
-                                margin-left: 0px;
+
                                 writing-mode: initial;
+
                                 padding-right:30vw ;
                                 padding-top:60px ;
                                 margin-top: -30px;
@@ -794,40 +802,39 @@ main{
                                     }
                                 }
                             }
-                        }
-                       
-                       
+                        }  
                     }
                 }
             }
     
             .part_4_bg{
                 .part_4{
-                    padding: 45px 0px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
+
+                    padding: 45px 0px;          
                     .auto{
                         display: flex;
                         align-items: center;
                         @media screen and (max-width:1100px){
                             flex-direction:column-reverse ;
-
                         }
-
                         .left_text{
-                            padding: 30px;
+                            writing-mode: vertical-rl; 
 
                             display: flex;
                             flex-direction: column;
-                            
-                            writing-mode: vertical-rl;  
+
+                            padding: 30px; 
                             @media screen and (max-width:1100px){
                                 align-self: flex-start;
-                                margin-top: -300px;
-                                padding: 20px;
+
                                 position: relative;
                                 z-index: 2;
+
+                                margin-top: -300px;
+                                padding: 20px;                               
                             }
                             p{
                                 margin-left: 10px;
@@ -840,9 +847,10 @@ main{
                             }
                         }
                         .pic{
-                            margin-left: 60px;
                             width: 758px;
                             height: 480px;
+
+                            margin-left: 60px;
                             @media screen and (max-width:1200px){
                                 width: 650px;
                                 height: 411px;
@@ -865,8 +873,9 @@ main{
                 .part_5{
                     display: flex;
                     @media screen and (max-width:1700px){
-                        flex-direction: column;
                         width: 1300px;
+
+                        flex-direction: column;
                     }
                     .left{
                         display: flex;
@@ -878,9 +887,7 @@ main{
                             align-self: start;
                         }
                         @media screen and (max-width:1100px){
-                            flex-direction: column;
-                            justify-content: start;
-                            align-self: start;   
+                            flex-direction: column;   
                         }
                         .pic{
                             width: 562px;
@@ -914,11 +921,12 @@ main{
                             @media screen and (max-width:1700px){
                                 display: flex;
                                 flex-direction: column;
-                                
+
+                                text-align: initial;
                                 writing-mode: vertical-rl; 
+
                                 margin-left: 60px;
                                 margin-top: 0px;
-                                text-align: initial;
                                 p{
                                     margin-left: 10px;
                                     &:nth-last-child(1){
@@ -928,9 +936,11 @@ main{
                             }
                             @media screen and (max-width:1100px){
                                 width: max-content;
+
+                                align-self: flex-end;
+
                                 margin-right: -60px;
                                 margin-top: -230px;
-                                align-self: flex-end;
                                 padding: 20px;  
                             }
                         }
@@ -939,32 +949,37 @@ main{
                         display: flex;
                         @media screen and (max-width:1700px){
                             max-width: 1100px;
-                            position: relative;
-                            right: 60px;
+                            
                             align-self: flex-end;
+
+                            position: relative;
+                            right: 60px;                            
                         }
                         .right_text{
                             display: flex;
                             flex-direction: column;
                             
                             writing-mode: vertical-rl; 
-                            margin: 170px 0px 0px 100px;
-                            
+
+                            margin: 170px 0px 0px 100px;  
                             padding: 30px;
                             @media screen and (max-width:1700px){
                                 margin: 80px 0px 0px 0px; 
                             }
                             @media screen and (max-width:1100px){
                                 width: max-content;
-                                margin-right: -120px;
 
                                 position: relative;
                                 z-index: 2;
+
                                 transform: translateY(-150px);
+
                                 padding: 20px;
+                                margin-right: -120px;
                             }
                             @media screen and (max-width:859px){
                                 margin-right: -90px;
+
                                 transform: translateY(-80px);
                             }
                             p{
@@ -977,6 +992,7 @@ main{
                         .pic{
                             width: 720px;
                             height: 452px;
+
                             margin: 75px 0px 0px 30px;
                             @media screen and (max-width:1820px){
                                 width: 650px;
@@ -984,6 +1000,7 @@ main{
                             }
                             @media screen and (max-width:1100px){   
                                 margin-right: -20px; 
+
                                 align-self: flex-end;
                             }
                             @media screen and (max-width:859px){
@@ -1005,16 +1022,18 @@ main{
     // 產品
     .product_bg{
         background-color:#F9E1C2 ;
-        padding: 60px 0px;
         color: #605D4F;
+
+        padding: 60px 0px;
         .title{
             font-size: 60px;
-            padding-bottom: 60px;
+            letter-spacing: 8px;
             font-weight: bold;
+
             display: flex;
             justify-content: center;
-            letter-spacing: 8px;
             
+            padding-bottom: 60px;
             @media screen and (max-width:1400px){
                 font-size:48px;        
             }
@@ -1029,7 +1048,6 @@ main{
             @media screen and (max-width:1600px){
                 max-width: calc(100% - 150px);
              }
-            
             .product{
                 display: flex;
                 &:nth-child(n){
@@ -1054,15 +1072,19 @@ main{
                 .product_pic{
                     width: 750px;
                     height: 750px;
-                    margin-top: -100px;
+
                     position: relative;
+
+                    margin-top: -100px;
+
                     background-position: center;
                     background-size: contain;
                     background-repeat: no-repeat;
                     @media screen and (max-width:1600px){
-                        display: flex;
                         width: 40vw;  
                         height: 40vw;
+
+                        display: flex;
                     }
                     @media screen and (max-width:1280px){  
                         width: 45vw;  
@@ -1075,13 +1097,13 @@ main{
                     .pic{  
                         width: 100%;
                         height: 100%;
+
                         border-radius: 50%;
                         position: absolute;
                         
                         background-position: center;
                         background-size: contain;
-                        background-repeat: no-repeat;
-                        
+                        background-repeat: no-repeat; 
                         &:nth-child(n){
                             align-self: flex-start;
                         }
@@ -1150,17 +1172,18 @@ main{
                 }
                 &:nth-child(2n){
                     .content{
-                        padding: 75px 60px 0px 0px;
+                        letter-spacing: 1px;
+                        writing-mode: vertical-rl;
+                        
                         display: flex;
                         flex-direction: column;
-                        letter-spacing: 1px;
 
-                        writing-mode: vertical-rl; 
+                        padding: 75px 60px 0px 0px; 
                         @media screen and (max-width:1600px){
                             margin-top: -100px;
                         }
                         @media screen and (max-width:1279px){
-                        padding-right: 30px;
+                            padding-right: 30px;
                         } 
                         p{
                             margin-left: 15px;
@@ -1200,18 +1223,20 @@ main{
             background-attachment: fixed;
         }
     }
+
+    // 線上購買
     .sale{
         color: #33322a;
-
         background: #F9E1C2;
+
         padding: 60px 0px;
         .mycontainer{
             width: calc(100% - 200px);
+
             margin: auto;
             .title{
                 font-size: 60px;
                 font-weight: bold;
-                
                 @media screen and (max-width:1400px){
                     font-size:48px;        
                 }
@@ -1222,62 +1247,55 @@ main{
             .all_btn{
                 max-width: calc(100% - 200px);
                 width: auto;
-                justify-content: center;
-                display: flex;
                 height: auto;
-                // margin: auto;
+
+                display: flex;
+                justify-content: center;
+
                 margin: 45px auto;
                 @media screen and (max-width:1500px){
                     max-width: calc(100% - 80px);
+
                     margin: 30px auto;
                 }
                 @media screen and (max-width:1279px){
                     max-width: calc(100% - 60px);
-                    margin: 30px auto;
-                }
-                @media screen and (max-width:1279px){
-                    max-width: calc(100% - 60px);
-                    margin: 30px auto;
                 }
                 @media screen and (max-width:1000px){
-                    // max-width: 60%;
                     max-width: calc(60% + 60px);
-                    margin: 30px auto;
                 }
                 @media screen and (max-width:800px){
-                    // max-width: 60%;
                     max-width: calc(70% + 60px);
-                    margin: 30px auto;
                 }
-
                 .btns{
                     width: unset;
                     max-width: max-content;
-                    align-content: center;
-                    display: flex;
-                    flex-wrap: wrap;
                     height: auto;
+
+                    display: flex;
+                    align-content: center;
+                    flex-wrap: wrap;
                     .sale_btn{
-                        padding: 5px 20px;
+                        background-color:#E3BFA6 ;
+
                         font-size: 36px;
                         font-weight: 600;
                         letter-spacing: 2px;
+
+                        padding: 5px 20px;
                         margin-right: 45px;
                         margin-bottom: 30px;
-                        background-color:#E3BFA6 ;
-                        // border-radius: 6%;
                         @media screen and (max-width:1500px){
-                            padding: 5px 20px;
                             font-size: 32px;
+
+                            padding: 5px 20px;     
                         }
                         @media screen and (max-width:1279px){
-                            padding: 5px 15px;
                             font-size: 28px;
+
+                            padding: 5px 15px;
                             margin-right: 25px;
                         }
-                        // @media screen and (max-width:860px){
-                        //     display: none;
-                        // }
                         &:hover{
                             background-color:#e3bfa6ce ;
                             color: #33322ac0;
@@ -1287,27 +1305,21 @@ main{
                         }
                     }  
                 }
-                // .btns860{
-                //     display: none;
-                //     width: 300px;
-                //     @media screen and (max-width:860px){
-                //         display: block;
-                //     }
-                // }
-                
             }
             .all_sale_card{
                 display: flex;
                 flex-wrap: wrap;
                 @media screen and (max-width:1200px){
-                    max-width: calc(100% - 40px); 
+                    max-width: calc(100% - 40px);
+
                     margin: auto; 
                 }
                 .card{
-                    border: 0px;
                     width: calc(25% - 33.75px);
-
                     height: auto;
+
+                    border: 0px;
+
                     margin-bottom: 40px;
                     padding-bottom: 20px;
                     margin-right: 45px;
@@ -1322,7 +1334,6 @@ main{
                                 margin-right:0px ;  
                                 margin: auto;
                                 margin-bottom: 20px;
-                                
                             }
                         }    
                     }
@@ -1339,10 +1350,10 @@ main{
                     }
                     @media screen and (max-width:768px){
                         width: 75%;  
+
                         margin-right: 0px;
                         margin: auto;
-                        margin-bottom: 20px;
-                       
+                        margin-bottom: 20px; 
                     }
                     &:nth-child(4n){
                         margin-right: 0px;
@@ -1380,32 +1391,32 @@ main{
                     }
                     .card_content{
                         width: calc(100% - 30px);
-                        margin: auto;
+
                         font-weight: 600;
-                        margin-top: 20px;
                         letter-spacing: 2px;
-                       
-    
-                        
-                        .card_title{
-                            font-size: 20px;
+
+                        margin: auto;
+                        margin-top: 20px;
+                        .card_title{     
                             height: 60px;
                             min-height: 60px;
 
+                            font-size: 20px;
+
                             margin-bottom: 20px;
-                            height: min-content;
                         }
                         .price{
-                            font-size: 18px;
-                            
-                            height: 27px;
                             max-height: 27px;
                             margin-bottom: 15px;
-                        }
-                        .date {
+                            height: 27px;
+
                             font-size: 18px;
+                        }
+                        .date { 
                             height: 27px;
                             max-height: 27px;
+
+                            font-size: 18px;
                             
                             margin-bottom: 15px;
                             @media screen and (max-width:880px){                                  
@@ -1413,88 +1424,80 @@ main{
                                 max-height: 54px;  
                             }
                         }
-                        .content{
-                            font-size: 15px;
-                            height: 66px;
+                        .content{                     
                             max-height:  66px ;
+                            height: 66px;
+
+                            font-size: 15px;
                             font-weight: 600;
+
                             margin-bottom: 40px;
                         }
                         .btn{
                             a{
-                                font-size: 20px;
-                                font-weight: 600;
-                                padding: 10px 20px;
-
                                 background-color:#E3BFA6 ;
                                 color: #33322a;
+
+                                font-size: 20px;
+                                font-weight: 600;
                                 text-decoration: none;
+
+                                padding: 10px 20px;
                                 &:link{
                                     color: #33322a;
-
                                 }
                                 &:hover{
                                     background-color:#e2a172 ;
                                     color: #33322ac0;
                                 }                               
                             }
-                            
-                           
                         }
-                    }
-                    
+                    } 
                 } 
             }
-        
         }
     }
+
+    // 餐廳
     .restaurant{
         background-color:#E5DDD4 ;
+
         padding: 60px 0px;
         .mycontainer{
+            width: calc(100% - 300px);
+
             display: flex;
             flex-direction: column;
-            width: calc(100% - 300px);
             @media screen and (max-width:1800px){
                 width: calc(100% - 200px);
             }
-            
-           
             .pic{
-                display: flex;
-                margin: auto;
-                position: relative;
-                height: max-content;
-                flex-direction: row-reverse;
-
-                justify-content: initial;
                 width: 82%;
+                height: max-content;
 
+                position: relative;
+
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: initial;
+                
+                margin: auto;
                 margin-bottom: 30px;
-
                 @media screen and (max-width:1300px){
-                    width: 92%;
-                    
+                    width: 92%; 
                 }
                 @media screen and (max-width:1100px){
-                    width: 98%;
-                    
+                    width: 98%;   
                 }
                 .title{
-                    flex-direction: column;
-
-                    display: flex;
-                    position: relative;
                     width: max-content;
 
                     background-color: initial;
-                    @media screen and (max-width:1279px){
-                        display: flex;
-                        position: relative;
-                        width: max-content;
 
-                        background-color: initial;
-                    }
+                    position: relative;
+
+                    display: flex;
+                    flex-direction: column;
                     img{
                         width: 7vw;
                         height: 7vw;
@@ -1508,6 +1511,7 @@ main{
                         }
                         &:nth-child(2){
                             margin: 20px 0px;
+
                             margin-left: -3px;
                             @media screen and (max-width:1500px){
                                 width: 5.8vw;
@@ -1518,29 +1522,31 @@ main{
                 }
                 .restaurant_text{
                     writing-mode: vertical-rl; 
+                    width: max-content;
                     height:auto;
 
+                    background-color: initial;
+
                     position: relative;
-                    width: max-content;
+                    
                     align-self: flex-end;
 
                     margin-right:calc(6vw + 20px);
                     margin-top: 5vw;
-                    background-color: initial;
                     padding: 0px;
                     @media screen and (max-width:1100px){
-
                         margin-right:5vw ;
                     }
                     p{
-                        margin-left: 4vw;
-                        margin-bottom: 0px;
                         font-size: 32px;
                         font-weight: 700;
                         letter-spacing: 1px;
+
                         display: flex;
                         align-content: center;
-                        
+
+                        margin-left: 4vw;
+                        margin-bottom: 0px;
                         @media screen and (max-width:1100px){
                             margin-left: 2.5vw;
                         }
@@ -1562,37 +1568,31 @@ main{
                         @media screen and (max-width:767px){
                             font-size: 20px;
                         }
-
                     }
                 }
-
                 .recipt{
                     height: auto;
-                    display: flex;
-                    align-self:flex-end;
+
                     position: absolute;
                     left: 0px;
-                    
                     z-index: 2;
+
+                    display: flex;
+                    align-self:flex-end;
                     .menu{
-                        display: flex;
-                        flex-direction: row-reverse;
+                        background-color: initial;
 
                         left: 0px;
-                        background-color: initial;
-                        padding: 0px;
+
+                        display: flex;
+                        flex-direction: row-reverse;
                         align-self: flex-start;
 
-                        @media screen and (max-width:1279px){
-                            left: 0px;
-                            background-color: initial;
-                            padding: 0px;
-                            align-self: flex-start;
-                        }
-    
+                        padding: 0px;  
                         .main{
                             display: flex;
                             flex-direction: column;
+
                             margin: 0px 10px;
                             a{
                                 text-decoration: none;
@@ -1615,11 +1615,13 @@ main{
                             }
                             .text{
                                 writing-mode: vertical-rl;
-    
                                 color: #605D4F;
-                                align-self: center;
+
                                 font-size: 24px;
                                 font-weight: 600;
+
+                                align-self: center;
+                                
                                 margin-top: 15px; 
                                 @media screen and (max-width:1279px){
                                     font-size:22px;
@@ -1635,6 +1637,7 @@ main{
             .big_pic{
                 width: 90%;
                 height: 42vw;
+
                 margin: auto;
                 @media screen and (max-width:1300px){
                     width: 100%;   
@@ -1647,10 +1650,13 @@ main{
         } 
          
     }
+
+    // 表單
     .order{
         background-color:#E5DDD4;
-        padding-bottom: 60px;
         color: #33322a;
+        
+        padding-bottom: 60px;
         .title{
             font-size: 60px;
             font-weight: 700;
@@ -1662,17 +1668,15 @@ main{
                 font-size:42px;        
             } 
         }
-        .order_content{    
-            margin-top: 30px;
-            height: 500px;
-            background-color: #D9D6D0;
-            padding: 60px 0px ;
-            
-            letter-spacing: 1.5px;
+        .order_content{   
             height: auto;
-            @media screen and (max-width:1800px){
-                max-width: calc(100% - 200px);
-            }
+
+            letter-spacing: 1.5px;
+
+            background-color: #D9D6D0;
+
+            margin-top: 30px;
+            padding: 60px 0px ;
             @media screen and (max-width:1800px){
                 max-width: calc(100% - 200px);
             }
@@ -1683,14 +1687,17 @@ main{
             .information{
                 font-size: 36px;
                 font-weight: bold;
-                padding: 0px 0px 30px 0px;
                 text-align: center;
+
+                padding: 0px 0px 30px 0px;
             }
             .all_content{
                 width: 100%;
+
+                font-size: 24px;
+
                 display: flex;
                 justify-content: center;
-                font-size: 24px;
                 @media screen and (max-width:1600px){
                     font-size: 22px;
                 }
@@ -1701,10 +1708,13 @@ main{
                     font-size: 18px;
                 }
                 @media screen and (max-width:1100px){
-                    flex-direction: column;
-                    font-size: 22px;
-                    margin: auto;
                     width: max-content;
+
+                    font-size: 22px;
+
+                    flex-direction: column;
+                    
+                    margin: auto;
                     padding: 0px 60px;
                 }
                 @media screen and (max-width:859px){
@@ -1724,6 +1734,7 @@ main{
                         height: 32px;
                         .phone{
                             width: 100px;
+
                             align-self: flex-start;
                         }
                     }
@@ -1737,7 +1748,7 @@ main{
                     }
                     .map_pic{
                         @media screen and (max-width:1100px){
-                                display: flex;
+                            display: flex;
                         }
                         .map_information{
                             width: 30vw;
@@ -1748,9 +1759,10 @@ main{
             } 
         }
         .submit{
-            text-align: center;
-            padding: 30px 0px;
             font-size: 30px;
+            text-align: center;
+
+            padding: 30px 0px;
             input{
                 width: 150px;
                 height: 50px;
@@ -1758,14 +1770,17 @@ main{
         }
     }
 
+    // 影音專區
     .social_media{
         background-color: #BEDAE6;
-        padding: 45px;
         color: #33322a;
+
+        padding: 45px;
         .mycontainer{
             display: flex;
             @media screen and (max-width:1200px){
                 width: calc(100% - 80px);
+
                 flex-direction: column;
             }
             .title{
@@ -1773,15 +1788,17 @@ main{
                 writing-mode: vertical-lr;  
                 font-size: 60px;
                 font-weight: 700;
-                padding: 0px 60px 0px 0px ;
                 letter-spacing:8px;
+
+                padding: 0px 60px 0px 0px ;
                 @media screen and (max-width:1400px){
                     font-size:48px;        
                 }
                 @media screen and (max-width:1200px){
                     writing-mode: initial;
-                    padding: 0px;
                     text-align: center;
+
+                    padding: 0px;
                 }
                 @media screen and (max-width:860px){
                     font-size:42px;        
@@ -1795,24 +1812,31 @@ main{
                 .contents{
                     width: 100%;
                     height: auto;
+
                     display: flex;
                     justify-content: space-around;
                     flex-wrap: nowrap;
                     .content{
+                        width: 100%;
+
                         display: flex;
                         flex-direction: column;
-                        width: 100%;
+                        
                         margin: auto;
                         margin-top: 0px;
                         .icon{
                             width: 100%;
-                            display: flex;
-                            justify-content: center;  
-                            margin: auto;
+
                             border-bottom: 3px solid rgb(112, 95, 95);
+
+                            display: flex;
+                            justify-content: center;
+
+                            margin: auto;
                             margin-bottom: 20px;
                             img{
                                 width: 120px ;
+
                                 margin: 20px 0px;
                                 @media screen and (max-width:1200px){
                                     width: 100px;
@@ -1820,19 +1844,20 @@ main{
                             }   
                         }
                         .pics{
-                            display: flex;
-                            
                             width: 96%;
+
+                            display: flex;
+
                             margin: auto;
                             @media screen and (max-width:1200px){
                                 flex-direction: column;
                             }
-                            
-                            
                             .pic{
                                 width:calc(50% - 30px);
-                                display: flex;
                                 height: auto;
+
+                                display: flex;
+                                
                                 margin-right: 60px;
                                 &:last-child{
                                     margin-right: 0px;
@@ -1840,10 +1865,10 @@ main{
                                 iframe{
                                     width: 100%;
                                     height: 20vw;
-   
                                 }
                                 @media screen and (max-width:1200px){
                                     width:100%  ;
+
                                     margin-right: 0px;
                                     margin-bottom: 30px;
                                     &:last-child{
@@ -1852,7 +1877,6 @@ main{
                                     iframe{
                                         width: 100%;
                                         height: 30vw;
-       
                                     }
                                 }
                             }                            
@@ -1863,18 +1887,22 @@ main{
         }    
     }
 
+    // 聯絡我們
     .contact{
-        padding-bottom: 60px;
         height: auto;
+
         background-color: #E6D3BE;
         color: #33322a;
+
+        padding-bottom: 60px;    
         .mycontainer{
             width: calc(100% - 200px);   
             .title{
                 font-size: 60px;
                 font-weight: 700;
-                padding: 60px 0px 60px 0px;
                 text-align: center;
+
+                padding: 60px 0px 60px 0px;
                 @media screen and (max-width:1400px){
                     font-size:48px;        
                 }
@@ -1884,22 +1912,28 @@ main{
             }
             .content{
                 width: auto;
-                margin: auto;
-                display: flex;
-                justify-content: center;
+
                 font-size: 24px;
                 font-weight: 600;
+
+                
+                display: flex;
+                justify-content: center;
+
+                margin: auto;
                 @media screen and (max-width:1400px){
                     font-size: 22px;
                 }
                 @media screen and (max-width:1050px){
-                    flex-direction: column;
                     width:max-content;
+
+                    flex-direction: column;
                     align-content: center;
                     align-self: center;
                 }
                 .information{
                     width: max-content;
+
                     margin-right: 120px;
                     @media screen and (max-width:1050px){
                         align-self: flex-start;
@@ -1967,20 +2001,25 @@ footer{
     max-width: 1920px;
     height: auto;
     width: 100%;
-    
-    background-color: #E6D3BE;
-    padding: 0px 0px 20px 0px;
+
     text-align: center;
+
+    background-color: #E6D3BE;
+
+    padding: 0px 0px 20px 0px;
     .mycontainer{
         max-width: 1700px;
         width: calc(100% - 150px);
-        display: flex;
-        position: relative;
+
         font-size: 18px;
         font-weight: 500;
+
+        display: flex;
+        position: relative;
         .copyright{  
-        margin: auto;
-        justify-self: center;
+            justify-self: center;
+
+            margin: auto;
         }
         .back{
             position: absolute;
