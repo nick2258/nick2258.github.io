@@ -12,59 +12,62 @@
     }
 
     body{
-        margin: 0px;
         display: flex;
+
+        margin: 0px;   
     }
 
     nav{
         width: 300px;
         height: auto;
+
         background-attachment: fixed;
         background-color: bisque;
-        display: flex;
-        
+
+        display: flex;  
         flex-direction: column;
     }
 
     .btn{
         width: 70%;
         height: 100px;
+
         background-color: rgb(136, 78, 45);
-        margin: auto;
+        color: rgb(233, 228, 221);
+
         font-size: 30px;
         font-weight: 800;
-        color: rgb(233, 228, 221);
-        text-align: center;
         line-height: 100px;
+        text-align: center;
+
+        margin: auto; 
     }
 
     .btn.active{
-        background-color: rgb(62, 45, 136);
-        
+        background-color: rgb(62, 45, 136);  
     }
 
     main{
         width: calc(100% - 300px);
         min-height: 100vh;
-        /* background-color: cornflowerblue; */
+
         background-color: gainsboro;
     }
     .allcards{ 
-        padding-top: 60px;
-        width: 96%;      
-        margin: auto; 
+        width: 96%; 
+        
         display: flex;
         flex-wrap: wrap;
-        /* justify-content: space-around; */
+
+        padding-top: 60px;
+        margin: auto; 
     }
 
     .card{
         width: calc(33.333% - 30px);
-        /* width: 450px; */
-        /* margin: 20px 10px 0px 10px; */
+
         margin-right: 45px;
-        margin-bottom: 45px;
-         
+        margin-bottom: 45px;   
     }
 
     .card:nth-child(3n){
@@ -73,19 +76,21 @@
 
     .name{
         width: 100%;
+
         background-color: rgb(158, 131, 80);
-        padding: 10px 0px;
+        color: burlywood;
+        
         font-size: 30px;
         font-weight: 800;
         text-align: center;
-        color: burlywood;
+
+        padding: 10px 0px;
     }
 
     .img{
         width: 100%;
         
         background-color: rgb(197, 204, 226);
-   
     }
 
     img{
@@ -95,43 +100,47 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-
     }
 
     .sale{
         width: 100%;
         height: 40px;
-        position: absolute;
-        top: -40px;
+
         background-color: rgba(255, 0, 0, 0.884);
-        opacity: 0.8;
         color: rgb(233, 228, 221);
+        opacity: 0.8;
+
         font-size: 24px;
         font-weight: 600;
-        text-align: center;
         line-height: 40px;
-
+        text-align: center;
+        
+        position: absolute;
+        top: -40px;
     }
 
     .text{
         width: 100%;
-        /* height: 80px; */
+
         background-color:rgb(104, 104, 196);
+
         display: flex;
         justify-content: center;
+
         position: relative;
+
         padding: 20px 0px;
     }
 
-    
-
     .all  {
         width: 50%;
-        /* height: 50px; */
-        font-size: 24px;
+
         color: bisque;
-        padding: 0px ;
+
+        font-size: 24px;
         text-align: center;
+
+        padding: 0px ; 
     }
 
     .alltext{
@@ -140,12 +149,13 @@
 
     .price{
         width: 50%;
+
+        color: bisque;
           
         font-size: 24px;
-        color: bisque;
-        padding-top: 3px ;
         text-align: center;
-
+ 
+        padding-top: 3px ;
     }
      
     </style>
@@ -157,12 +167,11 @@
         <div class="btn" data-amount="1">高雄廠</div>
         <div class="btn" data-amount="2">台北廠</div>
     </nav>
+
     <main>
         <section>
-            <div class="allcards"></div>
-            
-        </section>
-       
+            <div class="allcards"></div> 
+        </section>     
     </main>
    
     <script>
@@ -173,20 +182,13 @@
         allvalue(btns[0].dataset.amount) ;
 
         btns.forEach(btn => {
-            
-            
-            
 
-            btn.onclick = function () {
-                
-            btn.classList.add("active")    
-            btn.classList.remove("active")
-            
-            
-            // 帶入btn.dataset.amount值
-            allvalue(btn.dataset.amount) ;
-            
-                          
+            btn.onclick = function () {    
+                btn.classList.add("active")    
+                btn.classList.remove("active")
+                      
+                // 帶入btn.dataset.amount值
+                allvalue(btn.dataset.amount) ;             
             }
             
         });
@@ -198,14 +200,14 @@
 
             // 刪除所有內容
             allcard.innerHTML=``
-        fetch('https://run.mocky.io/v3/a1bd9f89-926c-46ac-930a-1d1cae8dd7e5')
-        .then(function(response) {
-        return response.json();
-        })
-        .then(function(card) {
-           
-            var cards = card.records.product
-                cards.forEach(element => {
+            fetch('https://run.mocky.io/v3/a1bd9f89-926c-46ac-930a-1d1cae8dd7e5')
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(card) {
+            
+                var cards = card.records.product
+                    cards.forEach(element => {
                         // 品名
                         var name = element.productName
                         // 圖
@@ -219,78 +221,75 @@
                         // 讓onsale變成字串，並將當中0.變成沒有東西
                         onsale = onsale.toString().replace("0.","")
 
-                    // 1.正常 amounts>3
-                    // 2.0<數量<=3 (amounts<=3 && amounts>0)
-                    
-                    // 4.有折扣(onsale!=1)
-                    // 5.數量小於3又有折扣(amounts<=3 && amounts>0 && onsale!=1)
-                    // 3.沒有貨 (amount==0)
-                    var textstyle
-                    if(amounts>3){
-                        textstyle =`
-                        <div class="text">
-                            <span class="all">存貨:${amounts}個</span>
-                            <span class="price">售價${cost}元</span>
-                        </div>
-                        `
-                    }
-
-                    if(amounts<=3 && amounts>0){
-                        textstyle =`
-                        <div class="text">
-                            
-                            <span class="all">存貨:
-                                <span class="alltext">最後</span>${amounts}個
-                            </span>
-                            <span class="price">售價${cost}元</span>
-                        </div>
-                        `
-                    }
-
-                    if(onsale!=1){
-                        textstyle =`
-                        <div class="text">
-                            <div class="sale">85折優惠中 </div>
-                            <span class="all">存貨:${amounts}個</span>
-                            <span class="price">售價${cost}元</span>
-                        </div>
-                        `
-                    }
-
-                    if(amounts<=3 && amounts>0 && onsale!=1){
-                        textstyle =`
-                        <div class="text">
-                            <div class="sale">85折優惠中 </div>
-                            <span class="all">存貨:
-                                <span class="alltext">最後</span>${amounts}個
-                            </span>
-                            <span class="price">售價${cost}元</span>
-                        </div>
-                        `
-                    }
-                    // 要最後寫以免跟折扣重複判讀
-                    if(amounts==0){
-                        textstyle =`
-                        <div class="text">
-                            <span class="all">暫無存貨</span>
-                            
-                        </div>
-                        `
-                    }
-
-                        allcard.innerHTML +=`
-                            <div class="card">
-                                <div class="name">${name}</div>
-                                <div class="img">                                
-                                    <img src="${pic}" alt="">
+                        // 1.正常 amounts>3
+                        // 2.0<數量<=3 (amounts<=3 && amounts>0)
+                        
+                        // 4.有折扣(onsale!=1)
+                        // 5.數量小於3又有折扣(amounts<=3 && amounts>0 && onsale!=1)
+                        // 3.沒有貨 (amount==0)
+                        var textstyle
+                        if(amounts>3){
+                            textstyle =`
+                            <div class="text">
+                                <span class="all">存貨:${amounts}個</span>
+                                <span class="price">售價${cost}元</span>
                             </div>
-                            ${textstyle}
+                            `
+                        }
+
+                        if(amounts<=3 && amounts>0){
+                            textstyle =`
+                            <div class="text">                               
+                                <span class="all">存貨:
+                                    <span class="alltext">最後</span>${amounts}個
+                                </span>
+                                <span class="price">售價${cost}元</span>
                             </div>
-                            `                        
-                    }); 
-                    
-                    
-            });
+                            `
+                        }
+
+                        if(onsale!=1){
+                            textstyle =`
+                            <div class="text">
+                                <div class="sale">85折優惠中 </div>
+                                <span class="all">存貨:${amounts}個</span>
+                                <span class="price">售價${cost}元</span>
+                            </div>
+                            `
+                        }
+
+                        if(amounts<=3 && amounts>0 && onsale!=1){
+                            textstyle =`
+                            <div class="text">
+                                <div class="sale">85折優惠中 </div>
+                                <span class="all">存貨:
+                                    <span class="alltext">最後</span>${amounts}個
+                                </span>
+                                <span class="price">售價${cost}元</span>
+                            </div>
+                            `
+                        }
+                        // 要最後寫以免跟折扣重複判讀
+                        if(amounts==0){
+                            textstyle =`
+                            <div class="text">
+                                <span class="all">暫無存貨</span>
+                                
+                            </div>
+                            `
+                        }
+
+                            allcard.innerHTML +=`
+                                <div class="card">
+                                    <div class="name">${name}</div>
+                                    <div class="img">                                
+                                        <img src="${pic}" alt="">
+                                </div>
+                                ${textstyle}
+                                </div>
+                                `                        
+                        });        
+                });
             }
         
                
