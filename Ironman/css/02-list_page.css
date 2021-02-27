@@ -1008,6 +1008,9 @@ main .content .all_btns .mycontainer .btns {
 
 @media screen and (max-width: 1200px) {
   main .content .all_btns .mycontainer .btns {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
     width: 570px;
   }
 }
@@ -1026,6 +1029,12 @@ main .content .all_btns .mycontainer .btns .btn_classification {
   margin-right: 30px;
   margin-bottom: 30px;
   padding: 0 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  main .content .all_btns .mycontainer .btns .btn_classification:nth-child(3n) {
+    margin-right: 0px;
+  }
 }
 
 main .content .all_cards {
@@ -1093,6 +1102,12 @@ main .content .all_cards .mycontainer .card {
   }
 }
 
+@media screen and (max-width: 900px) {
+  main .content .all_cards .mycontainer .card {
+    width: calc(50% - 15px);
+  }
+}
+
 @media screen and (max-width: 768px) {
   main .content .all_cards .mycontainer .card {
     width: calc(50% - 15px);
@@ -1148,37 +1163,31 @@ main .content .all_cards .mycontainer .card .pic img {
 @media screen and (max-width: 1200px) {
   main .content .all_cards .mycontainer .card .pic img {
     width: calc(100% + 2px);
-    height: 30vw;
+    height: 22vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .content .all_cards .mycontainer .card .pic img {
+    height: 26vw;
   }
 }
 
 @media screen and (max-width: 768px) {
   main .content .all_cards .mycontainer .card .pic img {
-    height: 35vw;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  main .content .all_cards .mycontainer .card .pic img {
-    height: 38vw;
+    height: 28vw;
   }
 }
 
 @media screen and (max-width: 650px) {
   main .content .all_cards .mycontainer .card .pic img {
-    height: 40vw;
+    height: 30vw;
   }
 }
 
 @media screen and (max-width: 540px) {
   main .content .all_cards .mycontainer .card .pic img {
     height: 60vw;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  main .content .all_cards .mycontainer .card .pic img {
-    height: 193px;
   }
 }
 
@@ -1347,6 +1356,12 @@ main .content .all_cards .mycontainer .card:nth-child(3n) {
   margin-right: 0px;
 }
 
+@media screen and (max-width: 900px) {
+  main .content .all_cards .mycontainer .card:nth-child(3n) {
+    margin-right: 30px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   main .content .all_cards .mycontainer .card:nth-child(3n) {
     margin-right: 30px;
@@ -1355,6 +1370,12 @@ main .content .all_cards .mycontainer .card:nth-child(3n) {
 
 @media screen and (max-width: 540px) {
   main .content .all_cards .mycontainer .card:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main .content .all_cards .mycontainer .card:nth-child(2n) {
     margin-right: 0px;
   }
 }

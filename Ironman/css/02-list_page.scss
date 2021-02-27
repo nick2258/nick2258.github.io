@@ -662,6 +662,7 @@ main {
                     --animate-duration: 0.5s;
                     
                     @media screen and (max-width:1200px) {
+                        justify-content: initial;
                         width: 570px;
                     }
                     // 隱藏按鈕
@@ -678,6 +679,13 @@ main {
                         margin-right: 30px;
                         margin-bottom: 30px;
                         padding: 0 20px;
+                        &:nth-child(3n){
+                            @media screen and (max-width:1200px) {
+                                margin-right: 0px;
+                            }
+                            
+
+                        }
                     }   
                 }
             }
@@ -723,6 +731,9 @@ main {
                     @media screen and (max-width:1200px) {    
                         width: calc(33.333% - 20px);
                     }
+                    @media screen and (max-width:900px) {
+                        width:calc(50% - 15px);
+                    }
                     @media screen and (max-width:768px) {
                         width:calc(50% - 15px);
                     }
@@ -761,22 +772,19 @@ main {
                             background-repeat: no-repeat;
                             @media screen and (max-width:1200px) {
                                 width: calc(100% + 2px);
-                                height: 30vw;      
+                                height: 22vw;      
+                            }
+                            @media screen and (max-width:900px) {
+                                height: 26vw;
                             }
                             @media screen and (max-width:768px) {
-                                height: 35vw;
-                            }
-                            @media screen and (max-width:700px) {
-                                height: 38vw;
+                                height: 28vw;
                             }
                             @media screen and (max-width:650px) {
-                                height: 40vw;
+                                height: 30vw;
                             }
                             @media screen and (max-width:540px) {
                                 height: 60vw;                    
-                            }
-                            @media screen and (max-width:320px) {
-                                height: 193px;
                             }
                         }
                         .card_classification {
@@ -909,6 +917,9 @@ main {
                 }
                 .card:nth-child(3n) {
                     margin-right: 0px;
+                    @media screen and (max-width:900px) {
+                        margin-right: 30px;                  
+                    }
                     @media screen and (max-width:768px) {
                         margin-right: 30px;                  
                     }
@@ -917,6 +928,9 @@ main {
                     }
                 }
                 .card:nth-child(2n) {
+                    @media screen and (max-width:900px) {
+                        margin-right: 0px;                  
+                    }
                     @media screen and (max-width:768px) {
                         margin-right: 0px;                  
                     }
