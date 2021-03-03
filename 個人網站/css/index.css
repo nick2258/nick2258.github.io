@@ -34,23 +34,13 @@
   margin: auto;
 }
 
-.collapse {
-  width: 1600px;
-  margin: auto;
-}
-
-nav {
-  width: 100%;
-  max-width: 1920px;
-  background-color: brown;
-}
-
 .navbar.active {
   position: fixed;
   z-index: 99;
 }
 
 nav {
+  max-width: 1920px;
   width: 100%;
   background-color: #D9CEC5;
   display: -webkit-box;
@@ -73,10 +63,10 @@ nav .navbar-toggler {
 }
 
 nav .mycontainer .mr-auto {
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: auto;
   position: relative;
   z-index: 10;
 }
@@ -95,10 +85,10 @@ nav .mycontainer .mr-auto .nav-item {
 }
 
 nav .mycontainer .mr-auto .nav-item.active .nav-link {
-  position: relative;
-  z-index: 30;
   font-size: 24px;
   font-weight: bold;
+  position: relative;
+  z-index: 30;
 }
 
 nav .mycontainer .mr-auto .nav-item.active .nav-link:hover {
@@ -106,8 +96,8 @@ nav .mycontainer .mr-auto .nav-item.active .nav-link:hover {
 }
 
 nav .mycontainer .mr-auto .dropdown-menu {
-  background-color: #D9CEC5;
   border: 0px;
+  background-color: #D9CEC5;
 }
 
 nav .mycontainer .mr-auto .dropdown-menu .dropdown-item {
@@ -122,10 +112,10 @@ main {
 main .introduction .mycontainer .content .top {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 45px  0px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 45px  0px 0px 0px;
 }
 
 @media screen and (max-width: 1250px) {
@@ -215,12 +205,12 @@ main .introduction .mycontainer .content .top .short_text {
 @media screen and (max-width: 1250px) {
   main .introduction .mycontainer .content .top .short_text {
     font-size: 20px;
-    margin: auto;
+    border-top: 3px solid  #BFB8A1;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    margin: auto;
     padding-top: 30px;
-    border-top: 3px solid  #BFB8A1;
   }
 }
 
@@ -231,8 +221,8 @@ main .introduction .mycontainer .content .top .short_text {
 }
 
 main .introduction .mycontainer .content .top .short_text p {
-  margin-bottom: 20px;
   color: #403E3C;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1650px) {
@@ -248,18 +238,18 @@ main .introduction .mycontainer .content .top .short_text p {
 }
 
 main .introduction .mycontainer .content .top .short_text p:last-child {
-  margin-bottom: 0px;
   color: #606D73;
+  margin-bottom: 0px;
 }
 
 main .introduction .mycontainer .content .big_title {
   font-size: 42px;
   font-weight: 600;
   text-align: center;
+  color: #403E3C;
+  border-bottom: 3px solid  #BFB8A1;
   padding: 45px 0px;
   padding-top: 80px;
-  border-bottom: 3px solid  #BFB8A1;
-  color: #403E3C;
 }
 
 main .introduction .mycontainer .content .skills {
@@ -268,11 +258,11 @@ main .introduction .mycontainer .content .skills {
 }
 
 main .introduction .mycontainer .content .skills .title {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 4px;
   text-align: center;
   border-bottom: 3px solid  #BFB8A1;
-  font-size: 32px;
-  letter-spacing: 4px;
-  font-weight: 600;
   color: #403E3C;
   padding: 30px 0px;
 }
@@ -284,14 +274,14 @@ main .introduction .mycontainer .content .skills .title {
 }
 
 main .introduction .mycontainer .content .skills .skill {
-  padding: 20px 50px 0px 50px;
   letter-spacing: 2px;
+  padding: 20px 50px 0px 50px;
 }
 
 main .introduction .mycontainer .content .skills .skill .fa-check {
   font-size: 36px;
-  padding-bottom: 15px;
   color: #403E3C;
+  padding-bottom: 15px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -312,8 +302,8 @@ main .introduction .mycontainer .content .skills .skill .fa-check .skill_title {
 
 main .introduction .mycontainer .content .skills .skill .text {
   font-size: 24px;
-  color: #606D73;
   font-weight: 600;
+  color: #606D73;
 }
 
 @media screen and (max-width: 1500px) {
@@ -323,17 +313,17 @@ main .introduction .mycontainer .content .skills .skill .text {
 }
 
 main .introduction .mycontainer .content .bottom {
-  padding-top: 45px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding-top: 45px;
 }
 
 main .introduction .mycontainer .content .bottom .title {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 4px;
   text-align: center;
   border-bottom: 3px solid  #BFB8A1;
-  font-size: 32px;
-  letter-spacing: 4px;
-  font-weight: 600;
   color: #403E3C;
   padding: 30px 0px;
 }
@@ -345,11 +335,11 @@ main .introduction .mycontainer .content .bottom .title {
 }
 
 main .introduction .mycontainer .content .bottom .longtext {
-  color: #595754;
   font-size: 26px;
   font-weight: 600;
   letter-spacing: 2px;
   line-height: 56px;
+  color: #595754;
   padding: 20px 50px 0px 50px;
 }
 
@@ -377,12 +367,12 @@ main .certification .mycontainer {
 
 main .certification .mycontainer .title {
   font-size: 42px;
-  color: #403E3C;
   font-weight: bold;
   letter-spacing: 4px;
   text-align: center;
-  padding: 30px 0px;
+  color: #403E3C;
   border-bottom: 3px solid  #BFB8A1;
+  padding: 30px 0px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -392,9 +382,9 @@ main .certification .mycontainer .title {
 }
 
 main .certification .mycontainer .content {
-  padding: 20px 50px 0px 50px;
   color: #595754;
   letter-spacing: 2px;
+  padding: 20px 50px 0px 50px;
 }
 
 main .certification .mycontainer .content p {
@@ -426,11 +416,11 @@ main .portfolio {
 main .portfolio .mycontainer .title {
   font-size: 42px;
   font-weight: bold;
-  color: #403E3C;
   letter-spacing: 4px;
   text-align: center;
-  padding: 45px 0px;
+  color: #403E3C;
   border-bottom: 3px solid  #BFB8A1;
+  padding: 45px 0px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -445,11 +435,11 @@ main .portfolio .mycontainer .web {
 
 main .portfolio .mycontainer .web .web_title {
   font-size: 32px;
-  letter-spacing: 4px;
   font-weight: 600;
+  letter-spacing: 4px;
+  text-align: center;
   color: #403E3C;
   padding: 30px 0px;
-  text-align: center;
 }
 
 @media screen and (max-width: 1500px) {
@@ -461,9 +451,9 @@ main .portfolio .mycontainer .web .web_title {
 main .portfolio .mycontainer .web .content .mycard {
   width: 100%;
   height: auto;
+  border-top: 2px solid #BFB8A1;
   padding-top: 45px;
   padding-bottom: 45px;
-  border-top: 2px solid #BFB8A1;
 }
 
 main .portfolio .mycontainer .web .content .mycard:nth-child(1) {
@@ -475,12 +465,12 @@ main .portfolio .mycontainer .web .content .mycard:last-child {
 }
 
 main .portfolio .mycontainer .web .content .mycard .card_container {
+  width: 97%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  width: 97%;
-  height: auto;
 }
 
 @media screen and (max-width: 1200px) {
@@ -581,10 +571,10 @@ main .portfolio .mycontainer .web .content .mycard .card_container .card_content
 }
 
 main .portfolio .mycontainer .web .content .mycard .card_container .card_content .titles {
-  margin-bottom: 20px;
-  color: #595754;
   font-weight: 600;
   letter-spacing: 3px;
+  color: #595754;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -746,31 +736,30 @@ main .portfolio .mycontainer .web .content .mycard .card_container .card_content
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  color: white;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 3px;
-  padding: 10px 25px;
   background-color: darkred;
+  border: 1.5px solid darkred;
   position: absolute;
   bottom: 0px;
   right: 0px;
+  padding: 10px 25px;
   text-decoration: none;
 }
 
 main .portfolio .mycontainer .web .content .mycard .card_container .card_content a button {
   width: auto;
   height: auto;
-  border: 0px;
   color: white;
-  text-decoration: none;
   background-color: transparent;
+  border: 0px;
+  text-decoration: none;
   outline: none;
 }
 
 main .portfolio .mycontainer .web .content .mycard .card_container .card_content a:hover {
   background-color: white;
-  border: 1.5px solid darkred;
 }
 
 main .portfolio .mycontainer .web .content .mycard .card_container .card_content a:hover button {
@@ -792,10 +781,10 @@ main .portfolio .mycontainer .web .content .mycard .card_container .card_content
 @media screen and (max-width: 1200px) {
   main .portfolio .mycontainer .web .content .mycard .card_container .card_content a {
     font-size: 18px;
-    padding: 10px 15px;
     top: -80px;
     right: 15px;
     bottom: initial;
+    padding: 10px 15px;
   }
 }
 /*# sourceMappingURL=index.css.map */

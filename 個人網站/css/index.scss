@@ -8,7 +8,6 @@
 .mycontainer{
     max-width: 1600px;
     margin: auto;
-    // border: 1px solid black;
     @media screen and(max-width: 1650px) {
         max-width: calc(100% - 160px);
     }
@@ -20,64 +19,46 @@
     }
 }
 
+
+// nav
+
+// 限制內容寬度
 #navbarSupportedContent{
-    // padding: 0px 5vw;
     width: 1600px;
+
     margin: auto;
 }
 
-.collapse{
-    width: 1600px;
-    margin: auto;
-}
-
-nav{
-    width: 100%;
-    max-width: 1920px;
-    
-    
-    background-color: brown;
-    .mycontainer{
-        // height: 60px;
-        // // background-color: burlywood;
-    }
-}
-
+// 下拉式選單不被覆蓋
 .navbar.active{
     position: fixed;
     z-index: 99;
 }
 
 nav{
+    max-width: 1920px;
     width: 100%;
+
     background-color: #D9CEC5;
 
     display: flex;
-    // flex-direction: column;
-    // float: unset;
-    // background-attachment: fixed;
-    // // position: initial;
-    // // position: fixed;
+    // 下拉式選單直向排列
     @media screen and(max-width: 1000px) { 
-        // display: flex;
         flex-direction: column;
     }
     .navbar-toggler{
         align-self: flex-start;
     }
-    
-    .mycontainer{
-        
+    .mycontainer{   
         .mr-auto{
-            display: flex;
-            // flex-direction: column;
             width: auto;
+
+            display: flex;
+            
             position: relative;
             z-index: 10;
-    
+            
             // 漢堡標
-            // background-color: #D9CEC5;
-            // width: 200px;
             @media screen and(max-width: 1000px) { 
                 flex-direction: column;
             }
@@ -85,51 +66,48 @@ nav{
                 margin-right: 30px;
             }
             .nav-item.active{
-                
                .nav-link{
-                //    手機板
-                //   width: 320px;
-                //   background-color: khaki;
-                   position: relative;
-                   z-index: 30;
-                   font-size: 24px;
+                    font-size: 24px;
                     font-weight: bold;
-                    // color: white;
+
+                    position: relative;
+                    z-index: 30;               
                     &:hover{
                         color: #605D4F;
                     }
                 } 
             }
             .dropdown-menu{
-                background-color: #D9CEC5;
                 border: 0px;
+
+                background-color: #D9CEC5;   
                 .dropdown-item{
                     background-color: transparent;
                 }
             }  
         }  
-    }
-
-    
+    } 
 }
 
 main{
     background-color:#F2ECE4;
-    padding-top: 68px;
-    .introduction{
-        
-        .mycontainer{
 
+    padding-top: 68px;
+    // 個人簡介
+    .introduction{ 
+        .mycontainer{
             .content{
                 .top{
                     box-sizing: border-box;
-                    padding: 45px  0px 0px 0px;
+
                     display: flex;
+
+                    padding: 45px  0px 0px 0px;  
                     @media screen and(max-width: 1250px) { 
                         flex-direction: column;
                     }
+                    // 大頭
                     .pic{
-                        // border:6px solid #BFB8A1 ;
                         width: 560px;
                         height: auto;
                         
@@ -154,26 +132,27 @@ main{
                         }
                         @media screen and(max-width: 1250px) { 
                             width: calc(25vw + 45px);
+
                             align-self: center;
+
                             padding-bottom: 30px;
                             margin-right: 0px;
-
                         }
                         img{
                             width: 100%;
                             height: auto;
+
                             border-radius: 50%;
-                            // background-color: wheat;
+
                             border:8px solid rgba(139, 0, 0, 0.438) ;
-                            // box-shadow:  5px  gold;
-                            // background-color: cornflowerblue;
                         }
                     }
+                    // 簡介
                     .short_text{
                         font-size: 28px;
-                        font-weight: 600;
-                        
+                        font-weight: 600;                       
                         letter-spacing: 3.5px;
+
                         padding: 20px 50px 0px 50px;
                         @media screen and(max-width: 1650px) { 
                             font-size: 24px;
@@ -183,17 +162,21 @@ main{
                         }
                         @media screen and(max-width: 1250px) { 
                             font-size: 20px;
-                            margin: auto;
-                            align-self: center;
-                            padding-top: 30px;
+
                             border-top:3px solid  #BFB8A1 ;
+
+                            align-self: center;
+
+                            margin: auto;  
+                            padding-top: 30px;   
                         }
                         @media screen and(max-width: 1000px) { 
                             font-size: 20px;
                         }
                         p{
-                            margin-bottom: 20px;
                             color: #403E3C;
+
+                            margin-bottom: 20px;
                             @media screen and(max-width: 1650px) { 
                                 margin-bottom: 15px;
                             }
@@ -201,56 +184,56 @@ main{
                                 margin-bottom: 10px;
                             }
                             &:last-child{
-                                margin-bottom: 0px;
                                 color:#606D73;
+
+                                margin-bottom: 0px;     
                             }
                         }
                     }
                 }
 
-
+                // 自我簡介標題
                 .big_title{
                     font-size: 42px;
                     font-weight: 600;
                     text-align: center;
-                    padding: 45px 0px;
-                    padding-top: 80px;
 
-                    
-                    border-bottom: 3px solid  #BFB8A1;
-                    
                     color: #403E3C;
 
+                    border-bottom: 3px solid  #BFB8A1;
+
+                    padding: 45px 0px;
+                    padding-top: 80px;   
                 }
-
-
+                // 技能介紹
                 .skills{
-                    // padding: 30px 0px;
-                    // padding-top: 60px;
-                    // border-bottom: 3px solid  #BFB8A1;
                     box-sizing: border-box;
+                    // 技能介紹標題
                     .title{
+                        font-size: 32px; 
+                        font-weight: 600; 
+                        letter-spacing: 4px;
                         text-align: center;
 
                         border-bottom: 3px solid  #BFB8A1;
-                        font-size: 32px;  
-                        letter-spacing: 4px;
 
-                        font-weight: 600; 
                         color: #403E3C;
+
                         padding: 30px 0px;
                         @media screen and(max-width: 1500px) { 
                             font-size: 28px;
                         }
-            
                     }
                     .skill{
-                        padding: 20px 50px 0px 50px;
                         letter-spacing: 2px;
+
+                        padding: 20px 50px 0px 50px;
                         .fa-check{
                             font-size:36px;
-                            padding-bottom: 15px;
+
                             color: #403E3C;
+
+                            padding-bottom: 15px;
                             @media screen and(max-width: 1500px) { 
                                 font-size: 32px;
                             }
@@ -258,94 +241,93 @@ main{
                                 font-size: 28px;
                                 @media screen and(max-width: 1500px) { 
                                     font-size: 26px;
-                                }
-                                 
+                                }    
                             }
                         }
-            
                         .text{
                             font-size: 24px;
-                            color: #606D73;
                             font-weight: 600;
+
+                            color: #606D73;   
                             @media screen and(max-width: 1500px) { 
                                 font-size: 22px;
                             }
                         }
-                    }
-                    
-                    
+                    }    
                 }
+                // 較長的自我介紹
                 .bottom{
-                    padding-top:45px ;
                     box-sizing: border-box;
+
+                    padding-top:45px ;
                     .title{
+                        font-size: 32px; 
+                        font-weight: 600;  
+                        letter-spacing: 4px;
                         text-align: center;
 
                         border-bottom: 3px solid  #BFB8A1;
-                        font-size: 32px;  
-                        letter-spacing: 4px;
-
-                        font-weight: 600; 
+                        
                         color: #403E3C;
+
                         padding: 30px 0px;
                         @media screen and(max-width: 1500px) { 
                             font-size: 28px;
                         }
-
                     }
-                    .longtext{
-                        // background-color: darkgoldenrod;
-                        color:#595754;
+                    .longtext{     
                         font-size: 26px;
                         font-weight: 600;
                         letter-spacing: 2px;
                         line-height: 56px;
+
+                        color:#595754;
+
                         padding: 20px 50px 0px 50px;
                         @media screen and(max-width: 1650px) { 
                             font-size: 24px;
                         }
                         @media screen and(max-width: 1500px) { 
                             font-size: 22px;
-                        }
-                        
+                        }    
                     }
                 }
-
-            }
-            
+            }   
         }
     }
 
-    
+    // 認證證照
     .certification{
         padding-top: 80px;
         .mycontainer{
             height: auto;
-            // background-color: rgb(39, 49, 49);
+
             box-sizing: border-box;
             .title{
                 font-size: 42px;
-                color: #403E3C;
                 font-weight: bold;
                 letter-spacing: 4px;
                 text-align: center;
-                padding: 30px 0px;
+
+                color: #403E3C;
+                
                 border-bottom:3px solid  #BFB8A1 ;
+                
+                padding: 30px 0px;
                 @media screen and(max-width: 1500px) { 
                     font-size: 38px;
                 }
-                
-                
-
             }
             .content{
-                padding: 20px 50px 0px 50px;
                 color:#595754;
+
                 letter-spacing: 2px;
 
+                padding: 20px 50px 0px 50px;
                 p{
                     font-size: 26px;  
                     font-weight: 600;
+
                     margin-bottom: 30px;
                     @media screen and(max-width: 1650px) { 
                     font-size: 24px;
@@ -353,9 +335,6 @@ main{
                     @media screen and(max-width: 1500px) { 
                         font-size: 22px;
                     }
-
-                
-                
                     &:last-child{
                     margin-bottom: 0px;
                     }
@@ -363,102 +342,80 @@ main{
             }
         }
     }
+
+    // 作品集
     .portfolio{
         margin-top: 10px;
         .mycontainer{
-            // height: 200px;
-            // background-color: rgb(39, 49, 49);
+            // 大標
             .title{ 
                 font-size: 42px ;
                 font-weight: bold;
-                color: #403E3C;
                 letter-spacing: 4px;
-
-
                 text-align: center;
-                padding: 45px 0px;
+
+                color: #403E3C;
+                
                 border-bottom:3px solid  #BFB8A1 ;
+
+                padding: 45px 0px;
                 @media screen and(max-width: 1500px) { 
                     font-size: 38px;
                 }
             }
             .web{
-                // box-sizing: border-box;
                 letter-spacing: 1.5px;
+                // 小標
                 .web_title{
                     font-size: 32px;  
-                    letter-spacing: 4px;
-
                     font-weight: 600; 
+                    letter-spacing: 4px;
+                    text-align: center;
+
                     color: #403E3C;
 
-                    
-                    padding: 30px 0px;
-                    
-                    // border-bottom:3px solid  #BFB8A1 ;        
-                    text-align: center;
+                    padding: 30px 0px;                
                     @media screen and(max-width: 1500px) { 
                         font-size: 28px;
-                    }
-                    // &:nth-child(2){
-                    //     margin-top: 30px;
-                    //     .card{
-                    //         &:last-child{
-                    //             // border-bottom:0px solid #BFB8A1 ;
-                    //         }
-                    //     }
-                            
-
-                    // }      
+                    }    
                 }
                 .content{
-                    // padding:20px 50px ;
-                   
+                    // 作品集卡片
                     .mycard{
                         width:100% ;
                         height: auto;
-                        // margin:90px 0px ;
+
+                        border-top:2px solid #BFB8A1 ;
+
                         padding-top:45px ;
                         padding-bottom: 45px;
-                        // padding: 45px 0px;
-                        // height: auto;
-                        // padding-top: 45px;
-                        // margin-bottom: 45px;
-                        // border-radius: 5%;
-                        // border-radius: 1%;
-                        // background-color: blueviolet;
-                        border-top:2px solid #BFB8A1 ;
                         &:nth-child(1){
                             border-top:3px solid #BFB8A1 ;
                         }
                         &:last-child{
-                            padding-bottom: 60px;
-                            
+                            padding-bottom: 60px;    
                         }
-                        
                         .card_container{
-                            display: flex;
-                            margin:auto;
                             width: 97%;
                             height: auto;
+
+                            display: flex;
+
+                            margin:auto;
                             @media screen and(max-width: 1200px) { 
                                 flex-direction: column;
                             }
-                            
-                            
-                            
+                            // 圖片
                             .pic{
                                 width: 40%;
-                                // height:20vw  ;
-                                // height: auto;
+
                                 margin-right: 60px;
                                 @media screen and(max-width: 1280px) { 
-                                    margin-right: 45px;
-
-                                    
+                                    margin-right: 45px;  
                                 }
                                 @media screen and(max-width: 1200px) {
                                     width: 86%; 
+
                                     margin: auto;
                                     margin-bottom:20px ;
                                 }
@@ -469,11 +426,10 @@ main{
                                     width: 100%;
                                     min-height: 23vw;
                                     height: auto;
+
                                     background-color: darkgray;
                                     @media screen and(max-width: 1500px) { 
                                         min-height:calc(24vw + 30px) ;
-
-                                    
                                     }
                                     @media screen and(max-width: 1400px) { 
                                         min-height:calc(26vw + 30px) ;
@@ -483,18 +439,15 @@ main{
                                     }
                                     @media screen and(max-width: 1200px) { 
                                         min-height:calc(31vw + 30px) ;
-                                    }
-                                    
+                                    }   
                                 }
                             }
                             .card_content{
-                                // text-align: center;
                                 width: calc(60% - 60px);
                                 height: auto;
-                                // padding: -90px 0px;
-                                // height:calc(18vw + 60px) ;
-                                
+
                                 position: relative;
+
                                 display: flex;
                                 flex-direction: column;
                                 @media screen and(max-width: 1280px) {
@@ -502,21 +455,23 @@ main{
                                 }
                                 @media screen and(max-width: 1200px) {
                                     width: 86%; 
+
                                     margin: auto;
                                 }
                                 @media screen and(max-width:859px) {
                                     width: 94%; 
                                 }
+                                // 卡片內容標題
                                 .titles{
-                                    margin-bottom: 20px;
-                                    color:#595754;
                                     font-weight: 600;
                                     letter-spacing: 3px;
+
+                                    color:#595754;
+
+                                    margin-bottom: 20px; 
                                     @media screen and(max-width: 1500px) {
                                         margin-bottom: 15px;
                                     }  
-
-                                    
                                     &:last-child{
                                         margin-bottom: 0px;
                                     }
@@ -540,13 +495,10 @@ main{
                                         @media screen and(max-width: 1500px) {
                                             font-size: 18px;
                                         }   
-                                        // @media screen and(max-width: 1370px) {
-                                        //     font-size: 16px;
-                                        // }          
-                                        
                                     }
                                     &:nth-child(1){
                                         font-weight:bold;
+
                                         color: #403E3C;
                                         .card_title{
                                             font-size: 28px;
@@ -571,21 +523,13 @@ main{
                                             @media screen and(max-width: 1370px) {
                                                 font-size: 22px;
                                             }  
-                                        };
+                                        }
                                     }
                                     &:nth-child(3){
                                         padding-bottom: 25px;
-                                        // @media screen and(max-width: 1650px) {
-                                        //     font-size: 23px;
-                                        // }  
                                         @media screen and(max-width: 1500px) {
-                                            // font-size: 21px;
                                             padding-bottom: 15px;
-                                        }
-                                        // @media screen and(max-width: 1370px) {
-                                        //     font-size: 19px;
-                                        // }   
-                                        
+                                        }                                   
                                     }
                                     &:nth-child(4){
                                         color:#606D73;
@@ -615,70 +559,67 @@ main{
                                                 font-size: 20px;
                                             }  
                                         }
-                                    }
-                                    
+                                    }   
                                 }
-
-
                                 
+                                // 作品連結
                                 a{
                                     width: max-content;
-                                    color: white;
+
                                     font-size: 18px;
                                     font-weight: 500;
                                     letter-spacing: 3px;
-                                    padding: 10px 25px;
+
                                     background-color: darkred;
+
+                                    border: 1.5px solid darkred ;
+                                       
                                     position: absolute;
                                     bottom :0px; 
                                     right: 0px;
+
+                                    padding: 10px 25px;
+
                                     text-decoration: none;
                                     button{
                                         width: auto;
                                         height: auto;
-                                        border: 0px;
+
                                         color: white;
-                                        text-decoration: none;
                                         background-color: transparent;
+
+                                        border: 0px;
+
+                                        text-decoration: none;                           
                                         outline:none;
-    
                                     }
                                     &:hover{
                                         background-color: white;
-                                        border: 1.5px solid darkred ;
                                         button{
-
                                             color: darkred;
-
-        
                                         }
-
                                     }
                                     @media screen and(max-width: 1500px) {
                                         font-size: 16px;
-
                                     } 
                                     @media screen and(max-width: 1370px) {
                                         padding: 10px 25px;
                                     }  
                                     @media screen and(max-width: 1200px) {
                                         font-size: 18px;
-                                        padding: 10px 15px;
+
                                         top: -80px;
                                         right: 15px;
                                         bottom: initial;
-                                    }
-                                    
+
+                                        padding: 10px 15px;                         
+                                    }                            
                                 }
                             }
                         }
-
                     }
                 }
-
             }
         }
     }
-    
-
 }
