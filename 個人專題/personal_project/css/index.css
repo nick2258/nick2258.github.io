@@ -744,12 +744,6 @@ main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right .right_text {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right .right_text {
-    padding: 20px;
-  }
-}
-
 @media screen and (max-width: 1570px) {
   main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right .right_text {
     -webkit-writing-mode: vertical-rl;
@@ -775,6 +769,7 @@ main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right .right_text {
         -ms-writing-mode: initial;
             writing-mode: initial;
     padding: 30px 80px;
+    margin-left: 0px;
   }
 }
 
@@ -871,6 +866,9 @@ main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto .left_text p:nt
 
 @media screen and (max-width: 1100px) {
   main .buliding .mycontainer .content_bg .part_2_bg .part_2 .auto .left_text {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     -ms-flex-item-align: start;
         align-self: flex-start;
     position: relative;
@@ -1196,6 +1194,9 @@ main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto .left_text {
 
 @media screen and (max-width: 1100px) {
   main .buliding .mycontainer .content_bg .part_4_bg .part_4 .auto .left_text {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     -ms-flex-item-align: start;
         align-self: flex-start;
     position: relative;

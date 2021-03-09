@@ -541,9 +541,9 @@ main{
 
                                 margin-top: 355px;   
                             }
-                            @media screen and (max-width:1200px){
-                                padding: 20px;   
-                            }
+                            // @media screen and (max-width:1200px){
+                            //     padding: 20px;   
+                            // }
                             @media screen and (max-width:1570px){
                                 writing-mode: vertical-rl; 
 
@@ -558,7 +558,8 @@ main{
                                    
                                     writing-mode:initial; 
 
-                                    padding: 30px 80px;                
+                                    padding: 30px 80px;
+                                    margin-left: 0px;                
                                 }
                                 @media screen and (max-width:859px){
                                     padding: 30px 30px;         
@@ -617,6 +618,7 @@ main{
                                 }
                             }
                             @media screen and (max-width:1100px){
+                                width: max-content;
                                 align-self: flex-start;
 
                                 position: relative;
@@ -828,6 +830,7 @@ main{
 
                             padding: 30px; 
                             @media screen and (max-width:1100px){
+                                width: max-content;
                                 align-self: flex-start;
 
                                 position: relative;
