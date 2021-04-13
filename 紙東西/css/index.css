@@ -15,10 +15,14 @@ nav {
   height: -moz-max-content;
   height: max-content;
   padding: 15px 0px;
+  background-color: rgba(211, 211, 211, 0.678);
 }
 
 nav .nav {
   width: 85%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,6 +37,13 @@ nav .nav a {
   font-weight: 600;
   color: black;
   text-decoration: none;
+  line-height: 90px;
+  height: 90px;
+}
+
+nav .nav a img {
+  width: auto;
+  height: 90px;
 }
 
 main {
@@ -47,6 +58,11 @@ main .banner {
   background-color: blanchedalmond;
 }
 
+main .banner img {
+  width: 100%;
+  height: 100%;
+}
+
 main .hot {
   width: 50%;
   margin: auto;
@@ -57,14 +73,19 @@ main .hot .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main .hot .title .a {
-  font-size: 24px;
+  font-size: 32px;
   padding: 15px 10px;
+  font-weight: 600;
 }
 
-main .hot .content {
+main .hot .title .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,15 +96,30 @@ main .hot .content {
           justify-content: space-between;
 }
 
-main .hot .content .card {
-  width: 33%;
-  height: 150px;
-  background-color: brown;
+main .hot .title .content .card {
+  width: 15vw;
+  height: 15vw;
   margin: 20px 0px;
 }
 
+main .hot .title .content .card img {
+  width: 100%;
+  height: 100%;
+}
+
+main .hot .title:nth-child(2) .content .card {
+  width: 15vw;
+  height: 15vw;
+}
+
+main .hot .title:nth-child(2) .content .card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
 main .search {
-  width: 70%;
+  width: 85%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,19 +131,68 @@ main .search {
 }
 
 main .search .b {
+  position: relative;
+}
+
+main .search .b .title {
   font-size: 36px;
-  width: 200px;
-  height: 200px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.596);
+  padding: 10px 15px;
+  border-radius: 5%;
+  color: dimgray;
+}
+
+main .search .b img {
+  width: 20vw;
+  height: 20vw;
   border-radius: 50%;
-  border: 1px solid black;
-  text-align: center;
-  line-height: 200px;
+  border: 3px solid lightgrey;
 }
 
 footer {
   width: 100%;
   max-width: 1920px;
-  height: 300px;
-  background-color: #a5742a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0px;
+  background-color: rgba(211, 211, 211, 0.678);
+}
+
+footer .content {
+  width: 85%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .content ul {
+  width: 24%;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px  0px;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+footer .content ul li {
+  list-style: none;
+  padding: 10px 0px;
+}
+
+footer .content ul li a {
+  font-size: 20px;
+  color: dimgray;
+  text-decoration: none;
 }
 /*# sourceMappingURL=index.css.map */

@@ -13,17 +13,26 @@ nav{
     // background-color: azure;
     height: max-content;
     padding: 15px 0px;
-    
+    background-color: rgba(211, 211, 211, 0.678);
+
     .nav{
         width: 85%;
+        height: max-content;
         margin: auto;
         display: flex;
         justify-content: space-between;
         a{
-        font-size: 24px;
-        font-weight: 600;
-        color: black;
-        text-decoration: none;
+            font-size: 24px;
+            font-weight: 600;
+            color: black;
+            text-decoration: none;
+            line-height: 90px;
+            height: 90px;
+            img{
+                width: auto;
+                height: 90px;
+                
+            }
         }
     }
     
@@ -38,6 +47,10 @@ main{
         width: 100%;
         height: 40vw;
         background-color: blanchedalmond;
+        img{
+            width: 100%;
+            height: 100%;
+        }
     }
     .hot{
         width: 50%;
@@ -45,41 +58,74 @@ main{
         padding: 20px 0px;
         .title{
             display: flex;
+            flex-direction: column;
             .a{
-                font-size: 24px;
+                font-size: 32px;
                 padding: 15px 10px ;
-
+                font-weight: 600;
             }
-            
-        }
-        .content{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            .card{
-                width: 33%;
-                height: 150px;
-                background-color: brown;
-                margin: 20px 0px;
-
+            .content{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .card{
+                    width: 15vw;
+                    height: 15vw;
+                    // background-color: brown;
+                    margin: 20px 0px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+    
+                }
+             
             }
+            &:nth-child(2){
+                .content{
+                    .card{
+                        width: 15vw;
+                        height: 15vw;
+                        // border-radius: 50%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }   
         }
-
     }
     .search{
-        width: 70%;
+        width: 85%;
         margin: auto;
         display: flex;
         justify-content: space-evenly;
         padding: 30px 0px;
         .b{
-            font-size: 36px;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border: 1px solid black;
-            text-align: center;
-            line-height: 200px;
+            position: relative;
+            .title{
+                font-size: 36px;
+                font-weight: 600; 
+                
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                background-color: rgba(255, 255, 255, 0.596);
+                padding: 10px 15px;
+                border-radius: 5%;
+                color: dimgray;
+
+            }
+            img{
+                width: 20vw;
+                height: 20vw;
+                border-radius: 50%;
+                border: 3px solid lightgrey;
+            }
+           
         }
 
     }
@@ -88,6 +134,41 @@ main{
 footer{
     width: 100%;
     max-width: 1920px;
-    height: 300px;
-    background-color: rgb(165, 116, 42);
+    // height: 300px;
+    // background-color: rgb(165, 116, 42);
+    display: flex;
+    padding: 20px 0px;
+    background-color: rgba(211, 211, 211, 0.678);
+
+    .content{
+        width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        // border-top: 2px solid dimgray;
+
+        ul{
+            width:24%;
+            font-size: 24px;
+            font-weight: 600;
+            padding: 10px  0px;
+            text-align: center;
+            margin: 10px 0px;
+            
+            li{
+                list-style: none;
+                padding: 10px 0px;
+                a{
+                    font-size: 20px;
+                    // padding: 10px 0px;
+                    color: dimgray;
+                    text-decoration: none;
+               
+                }
+                
+            }
+
+        }
+    }
+    
 }

@@ -43,88 +43,75 @@ nav{
 main{
     max-width: 1920px;
     width: 100%;
-    .banner{
-        max-width: 100%;
-        width: 100%;
-        height: 40vw;
-        background-color: blanchedalmond;
+    .article{
+        width: 85%;
+        margin: auto;
+        padding: 30px 0px;
+        display: flex;
+        justify-content: space-between;
         img{
-            width: 100%;
-            height: 100%;
+            width: 18vw;
+            height: 18vw;
+            border-radius: 50%;
+        }
+        .introduction{
+            width: 63vw;
+            letter-spacing: 2px;
+            color: dimgray;
+            .name{
+                font-size: 28px;
+                font-weight: 600;
+                padding: 10px 5px;
+
+            }
+            .text{
+                font-size: 20px;
+                font-weight: 600;
+                padding: 10px 5px;
+                line-height: 42px;
+            }
         }
     }
-    .articles{
+  
+    .products{
         width: 80%;
         margin: auto;
         display: flex;
-        flex-direction: column;
-        
-        
+        justify-content: space-between;
         padding: 30px 0px;
-        .article_type{
+        .product_type{
             width:max-content;
-            margin: auto;
-            margin: 15px auto 30px;
-            // display: flex;
-            // flex-direction: row;
             // background-color: burlywood;
             ul{
-                display: flex;
-                justify-content: center;
                 li{
                     color: lightgrey;
                     font-size: 24px;
                     padding: 10px  15px;
-                    margin: 0px 10px;
                     margin-bottom:10px ;
-
                     background-color: firebrick;
                     list-style: none;
-                    border:2px solid darkred ;
-                    border-radius: 3%;
+                    border:2px solid darkred ;                    border-radius: 3%;
+
                 }
             }
         }
-        .allarticle{
+        .allproduct{
             width: 70%;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            margin: auto;
-            a{
-                // width: 30%;
-                color: black;
-                text-decoration: none;
-                font-size: 24px;
-                font-weight: 600;
-                position: relative;
-                margin-bottom: 30px;
-
-                .article{
-                    
-
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
-                    background-color: rgba(255, 255, 255, 0.596);
-                    padding: 10px 15px;
-                    border-radius: 5%;
-                    color: dimgray;
-    
-
-    
-                }
+            .card{
+                width: 15vw;
+                height: 15vw;
+                // background-color: brown;
+                margin: 20px 0px;
                 img{
-                    width: 16vw;
-                    height: 16vw;
-                    border-radius: 50%;
-
-
+                    width: 100%;
+                    height: 100%;
                 }
+
             }
         }
-            
     }
 }
 

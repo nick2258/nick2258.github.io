@@ -51,53 +51,65 @@ main {
   width: 100%;
 }
 
-main .banner {
-  max-width: 100%;
-  width: 100%;
-  height: 40vw;
-  background-color: blanchedalmond;
+main .article {
+  width: 85%;
+  margin: auto;
+  padding: 30px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-main .banner img {
-  width: 100%;
-  height: 100%;
+main .article img {
+  width: 18vw;
+  height: 18vw;
+  border-radius: 50%;
 }
 
-main .articles {
+main .article .introduction {
+  width: 63vw;
+  letter-spacing: 2px;
+  color: dimgray;
+}
+
+main .article .introduction .name {
+  font-size: 28px;
+  font-weight: 600;
+  padding: 10px 5px;
+}
+
+main .article .introduction .text {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 5px;
+  line-height: 42px;
+}
+
+main .products {
   width: 80%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 30px 0px;
 }
 
-main .articles .article_type {
+main .products .product_type {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  margin: auto;
-  margin: 15px auto 30px;
 }
 
-main .articles .article_type ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main .articles .article_type ul li {
+main .products .product_type ul li {
   color: lightgrey;
   font-size: 24px;
   padding: 10px  15px;
-  margin: 0px 10px;
   margin-bottom: 10px;
   background-color: firebrick;
   list-style: none;
@@ -105,7 +117,7 @@ main .articles .article_type ul li {
   border-radius: 3%;
 }
 
-main .articles .allarticle {
+main .products .allproduct {
   width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,34 +127,17 @@ main .articles .allarticle {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: auto;
 }
 
-main .articles .allarticle a {
-  color: black;
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: 600;
-  position: relative;
-  margin-bottom: 30px;
+main .products .allproduct .card {
+  width: 15vw;
+  height: 15vw;
+  margin: 20px 0px;
 }
 
-main .articles .allarticle a .article {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.596);
-  padding: 10px 15px;
-  border-radius: 5%;
-  color: dimgray;
-}
-
-main .articles .allarticle a img {
-  width: 16vw;
-  height: 16vw;
-  border-radius: 50%;
+main .products .allproduct .card img {
+  width: 100%;
+  height: 100%;
 }
 
 footer {
@@ -185,4 +180,4 @@ footer .content ul li a {
   color: dimgray;
   text-decoration: none;
 }
-/*# sourceMappingURL=articls.css.map */
+/*# sourceMappingURL=article.css.map */
