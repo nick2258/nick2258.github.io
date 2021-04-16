@@ -7,6 +7,28 @@ body {
   padding: 0px;
   margin: 0px;
   background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
+  background-color: cadetblue;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.texts {
+  position: absolute;
+  color: white;
+  background-color: rgba(155, 153, 153, 0.781);
+  padding: 8px 10px;
+  top: 20px;
+  left: 15px;
+  font-size: 22px;
+  letter-spacing: 3px;
+  font-weight: 800;
 }
 
 .mycontainer {
@@ -23,9 +45,13 @@ body {
 }
 
 .navbar {
-  width: 72vw;
+  width: 90%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin: auto;
   background-color: initial;
+  margin: auto;
 }
 
 .navbar a img {
@@ -44,6 +70,8 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 99;
+  background-color: cadetblue;
 }
 
 nav .navbar-nav .nav-item {
@@ -82,12 +110,25 @@ main {
   background-position: center;
 }
 
+main .mycontainer .banner {
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+main .mycontainer .banner img {
+  width: 70vw;
+  height: 32vw;
+  border: 3px  solid black;
+}
+
 main .mycontainer .six_card {
   width: 100%;
-  width: 70vw;
+  width: 45vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -99,6 +140,7 @@ main .mycontainer .six_card a {
   width: calc(10vw - 16.6px);
   height: calc(10vw - 16.6px);
   position: relative;
+  margin-bottom: 45px;
 }
 
 main .mycontainer .six_card a img {
@@ -108,15 +150,16 @@ main .mycontainer .six_card a img {
 }
 
 main .mycontainer .six_card a .text {
-  position: absolute;
   color: white;
   background-color: rgba(155, 153, 153, 0.781);
   padding: 8px 10px;
-  top: 15px;
-  left: 20px;
   font-size: 18px;
   letter-spacing: 2.5px;
   font-weight: 800;
+  bottom: 0px;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 main .mycontainer .four_card {
@@ -208,7 +251,7 @@ main .mycontainer .three_card {
 }
 
 main .mycontainer .three_card a {
-  width: calc(26vw - 20px);
+  width: calc(26.5vw - 20px);
   height: calc(17vw - 10px);
   position: relative;
   margin-bottom: 40px;
@@ -217,7 +260,7 @@ main .mycontainer .three_card a {
 main .mycontainer .three_card a img {
   width: 100%;
   height: 100%;
-  border-radius: 14px;
+  border-radius: 5px;
 }
 
 main .mycontainer .three_card a .text {
@@ -277,8 +320,8 @@ main .mycontainer .second a .text {
 }
 
 main .mycontainer .shop {
-  width: 80%;
-  width: 60vw;
+  width: 50%;
+  width: 56vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,28 +330,35 @@ main .mycontainer .shop {
           justify-content: space-between;
   margin: auto;
   margin-bottom: 30px;
-  margin-top: 60px;
 }
 
 main .mycontainer .shop a {
-  width: calc(18vw - 60px);
-  height: calc(18vw - 60px);
-  width: calc(28vw - 30px);
-  height: calc(16vw - 12px);
   position: relative;
 }
 
 main .mycontainer .shop a:hover .mask {
   display: block;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 main .mycontainer .shop a:hover .mask_text {
   display: block;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+main .mycontainer .shop a:hover .notext {
+  display: none;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 main .mycontainer .shop a img {
   width: 100%;
   height: 100%;
+  width: calc(28vw - 20px);
+  height: 16vw;
   border-radius: 14px;
 }
 
@@ -317,10 +367,12 @@ main .mycontainer .shop a .text {
   color: white;
   background-color: rgba(155, 153, 153, 0.781);
   padding: 8px 10px;
-  top: 15px;
-  left: 20px;
-  font-size: 22px;
-  letter-spacing: 2.5px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 28px;
+  letter-spacing: 3px;
   font-weight: 800;
 }
 
@@ -365,6 +417,111 @@ main .mycontainer .shop a .mask_text p {
   letter-spacing: 1px;
   line-height: 42px;
   margin: auto;
+}
+
+main .mycontainer .all {
+  width: 64vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 42vw;
+}
+
+main .mycontainer .all .left {
+  width: calc(65% - 10px);
+}
+
+main .mycontainer .all .left .left_top {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main .mycontainer .all .left .left_top a {
+  width: 100%;
+  height: calc(25vw - 10px);
+  height: initial;
+  background-color: salmon;
+  position: relative;
+  z-index: 5;
+}
+
+main .mycontainer .all .left .left_top a img {
+  width: 100%;
+  height: calc(25vw - 10px);
+}
+
+main .mycontainer .all .left .left_top a .text {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  background-color: white;
+  color: burlywood;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  padding: 8px 10px;
+}
+
+main .mycontainer .all .left .left_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+main .mycontainer .all .left .left_bottom a {
+  width: calc(50% - 10px);
+}
+
+main .mycontainer .all .left .left_bottom a img {
+  width: 100%;
+  height: calc(15vw - 10px);
+}
+
+main .mycontainer .all .right {
+  width: calc(35% - 10px);
+}
+
+main .mycontainer .all .right .right_top {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main .mycontainer .all .right .right_top a {
+  width: 100%;
+  background-color: salmon;
+}
+
+main .mycontainer .all .right .right_top a img {
+  width: 100%;
+  height: calc(16vw - 10px);
+}
+
+main .mycontainer .all .right .right_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+main .mycontainer .all .right .right_bottom a {
+  width: 100%;
+  background-color: salmon;
+}
+
+main .mycontainer .all .right .right_bottom a img {
+  width: 100%;
+  height: calc(24vw - 10px);
 }
 
 footer {
