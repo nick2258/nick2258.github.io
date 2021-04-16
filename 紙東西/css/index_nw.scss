@@ -33,6 +33,11 @@ a{
     font-weight: 800;
 
 }
+.dropdown-item{
+    #ul{
+        display: none;
+    }
+}
 
 
 
@@ -53,59 +58,6 @@ a{
     // background-color: blue;
 }
 
-
-
-// #dropdown-item{
-//     .menu-list{
-//         display: none;
-//     }
-//     &:active {
-//         background-color: darkcyan;
-//     }
-    
-// }
-
-
-    
-    // label{
-    //    display: block;
-    //     border: 1px solid #ccc;
-    //     padding: 6px;
-    //     cursor: pointer ;
-    //     input{
-    //         display: none; 
-    //         &:checked{
-    //             max-height: 300px; //重點
-    //             .menu-list{
-    //                 max-height: 300px; //重點
-    //             }
-    //         }
-    //     }
-    //     .drop-menu{
-    //         max-width: 300px;
-    //     }
-    //     .menu-list{
-    //         background-color: #FFF;
-           
-    //         overflow: hidden ;//重點
-    //         max-height: 0 ;//重點
-    //         transition: .3s; //重點
-            
-    //         a{
-    //             display: block;
-    //             padding: 4px;
-    //             border-bottom: 1px dashed #ccc;
-    
-    //         }
-    //     }
-
-    // }
-        
-    
-        
-    
-        
-    
 
 .navbar{
     
@@ -160,6 +112,7 @@ nav{
             right: 0px;   
             top: 50%;
             transform: translate(0%,-50%);
+            
         }
     }
     

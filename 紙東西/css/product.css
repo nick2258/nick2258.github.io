@@ -95,10 +95,72 @@ main .product .content {
   font-size: 28px;
   letter-spacing: 2px;
   position: relative;
+  padding-top: 45px;
+  height: 30vw;
+}
+
+main .product .content .title {
+  font-size: 32px;
+}
+
+main .product .content .article {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 25px;
+  border-bottom: 2px  solid gainsboro;
+}
+
+main .product .content .article img {
+  margin-left: 30px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+main .product .content .article .name {
+  line-height: 80px;
+  padding: 0px  20px;
+}
+
+main .product .content .prices .price {
+  font-size: 36px;
+  font-weight: 800;
+  color: orangered;
+  letter-spacing: 2px;
+}
+
+main .product .content .prices .number {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+main .product .content .numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  line-height: 50px;
+}
+
+main .product .content .numbers select {
+  font-size: 24px;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+}
+
+main .product .content .numbers select option {
+  font-size: 24px;
 }
 
 main .product .content .a {
-  padding: 15px 0px;
+  padding: 10px 0px;
+  padding-left: 30px;
+  font-weight: 600;
+  letter-spacing: 3px;
 }
 
 main .product .content .shopping_cart {
