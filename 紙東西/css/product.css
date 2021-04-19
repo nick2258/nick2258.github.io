@@ -229,13 +229,20 @@ main .allcontent {
   max-width: 68vw;
   width: 68vw;
   margin: auto;
+  position: relative;
 }
 
 main .allcontent .btns {
+  z-index: 99;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  padding-top: 30px;
 }
 
 main .allcontent .btns .btn {
@@ -267,24 +274,45 @@ main .allcontent .contents .product_content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 main .allcontent .contents .product_content.active {
   display: block;
 }
 
-main .allcontent .contents .product_content img {
+main .allcontent .contents .product_content video {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 25vw;
+}
+
+main .allcontent .contents .product_content .pics {
+  padding-top: 30vw;
+}
+
+main .allcontent .contents .product_content .pics img {
   width: 60%;
   height: 25vw;
   border: 1px solid black;
   margin-bottom: 45px;
 }
 
-main .allcontent .contents .product_content img:nth-child(2n) {
+main .allcontent .contents .product_content .pics img:nth-child(2n) {
   -ms-flex-item-align: end;
       align-self: flex-end;
   -webkit-transform: translateX(66.5%);
           transform: translateX(66.5%);
+}
+
+main .allcontent .contents .product_content .text {
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding-bottom: 10px;
 }
 
 main .c {

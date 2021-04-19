@@ -4,6 +4,7 @@
 }
 
 body {
+  position: relative;
   padding: 0px;
   margin: 0px;
   background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
@@ -131,6 +132,9 @@ nav {
           align-items: center;
   z-index: 99;
   background-color: cadetblue;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
 }
 
 nav .navbar-nav .nav-item {

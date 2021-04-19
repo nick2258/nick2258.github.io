@@ -40,6 +40,7 @@
             <div class="pics">
                 <div class="big_pics">
                     <img class="big_pic big_pic1 " src="./img/找商品.jpg" alt="">
+                    
                     <img class="big_pic big_pic2" src="./img/產品9.jpg" alt="">
                     <img class="big_pic big_pic3" src="./img/產品8.jpg" alt="">
                     <img class="big_pic big_pic4" src="./img/產品7.jpg" alt="">
@@ -160,15 +161,28 @@
             </div>
 
             <div class="contents">
+             
                 <div class="product_content">
-                    <img src="./img/產品8.jpg" alt="">
-                    <img src="./img/產品7.jpg" alt="">
-                    <img src="./img/產品6.jpg" alt="">
-                    <img src="./img/產品5.jpg" alt="">
+                   <video autoplay="true" controls="true" src="http://www.papergoods.com.tw/ds/ProductDefine/001-文創紙品/001-2D便條紙/001-P01ABCA/Film.mp4"></video>
+                    <div class="pics">
+                        
+                        <img src="./img/產品8.jpg" alt="">
+                        <img src="./img/產品7.jpg" alt="">
+                        <img src="./img/產品6.jpg" alt="">
+                        <img src="./img/產品5.jpg" alt="">
+                    </div>
+                    
                 </div>
+
                 <div class="product_content">
-                    <div class="text">測試測試測試</div>
+                    <div class="text">品名：2D便條紙 - 黑貓系列
+                    </div>
+                    <div class="text">材質：美術紙</div>
+                    <div class="text">尺寸：8 x 7 cm</div>
+                    <div class="text">張數：40張</div>
+                    <div class="text">包裝：底板+OPP袋</div>
                 </div>
+                
                 <div class="product_content">
                     <div class="text">111111</div>
                 </div>
@@ -332,13 +346,13 @@
 
             
        
-            clearallsmall()
+            clearbtn()
            btn.classList.add("active")
 
 
-            clearallbig()
+           clearcontent()
 
-            // const content = contents[index]
+
             contents.forEach(content=> {
 
 
@@ -350,14 +364,14 @@
         
     });
 
-    function clearallsmall(){
+    function clearbtn(){
        btns.forEach(btn => {
            btn.classList.remove("active")
     });
     
     }
 
-    function clearallbig(){
+    function clearcontent(){
         contents.forEach(content => {
             content.classList.remove("active")
     });
