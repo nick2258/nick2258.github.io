@@ -34,14 +34,59 @@ a{
 
 }
 .dropdown-item{
+    padding: 0px;
     #ul{
         display: none;
     }
 }
 
+ul,li{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
 
+ul,.type{
+    padding: initial;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    .dropdown-item{
+        font-size: 20px;
+    }
+    
+    .type_detail{
+        text-align: center;
+        display: none;
+        transition: 0.8s;
+        background-color: white;
+        li{
+            &:hover{
+                background-color: gray;
+            }
+            a{
+                color: rgb(138, 138, 138);
+                padding: 3px 0px;
+                font-size: 18px;
+            }
+        }
+    }
+}
 
+.dropdown-menu{
+    padding: 0px;
+}
 
+.type:hover .type_detail{
+    display: block;
+    transition: 0.8s;
+}
+
+.type ~ .type_detail{
+    display: block;
+    transition: 0.8s;
+
+}
 
 
 .mycontainer{
@@ -96,7 +141,7 @@ nav{
     
     .navbar-nav{
         .nav-item{
-            font-size: 22px;
+            font-size: 24px;
             font-weight: 600;
             padding: 0px 5px;
             margin: 0px 10px;
@@ -146,13 +191,24 @@ main{
             
         // }
         .banner{
-            margin: auto;
+           
+            width: 90%;
             margin-bottom: 30px;
+            margin: auto;
             img{
-                width: 70vw;
-                height: 32vw;
+                width: 100%;
+                height: 34vw;
                 border: 3px  solid black;
+                
+
             }
+        }
+        .six_card_title{
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-align: center;
+            margin: 20px 0px 0px;
         }
         .six_card{
             width: 100%;

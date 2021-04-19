@@ -38,14 +38,17 @@
     <main>
         <section class="product">
             <div class="pics">
-                <div class="big_pic">
-                    <img src="./img/找商品.jpg" alt="">
+                <div class="big_pics">
+                    <img class="big_pic big_pic1 " src="./img/找商品.jpg" alt="">
+                    <img class="big_pic big_pic2" src="./img/產品9.jpg" alt="">
+                    <img class="big_pic big_pic3" src="./img/產品8.jpg" alt="">
+                    <img class="big_pic big_pic4" src="./img/產品7.jpg" alt="">
                 </div>
                 <div class="small_pics">
-                    <img src="./img/找商品.jpg" alt="">
-                    <img src="./img/找商品.jpg" alt="">
-                    <img src="./img/找商品.jpg" alt="">
-                    <img src="./img/找商品.jpg" alt="">
+                    <img class="small_pic small_pic1" src="./img/找商品.jpg" alt="">
+                    <img class="small_pic small_pic2" src="./img/產品9.jpg" alt="">
+                    <img class="small_pic small_pic3" src="./img/產品8.jpg" alt="">
+                    <img class="small_pic small_pic4" src="./img/產品7.jpg" alt="">
                 </div>
                 
 
@@ -53,6 +56,12 @@
             
             <div class="content">
                 <div class="title a">好眠枕頭</div>
+                <div class="content_texts">
+                    <div class="text ">商品描述說明</div>
+                    <div class="text ">商品描述說明</div>
+                    <div class="text ">商品描述說明</div>
+                    <div class="text ">商品描述說明</div>
+                </div>
                 <div class="article ">
                     <img src="./img/找創作者.jpg" alt="">
                     <div class="name">創作者</div>
@@ -64,7 +73,14 @@
                 </div>
 
                 <div class="numbers a">購買數量：
-                    <select name="" id="">
+                    <!-- <button class="reduce">
+                        -
+                    </button> -->
+                    <input class="total" value="1" min="1" type="number">
+                    <!-- <button class="add">
+                        +
+                    </button> -->
+                    <!-- <select name="" id="">
                         <option value="">1</option>
                         <option value="">2</option>
                         <option value="">3</option>
@@ -79,21 +95,24 @@
                         <option value="">3</option>
                         <option value="">3</option>
                         <option value="">9</option>
-                    </select>
+                    </select> -->
                 </div>
                 <!-- <div class="ingredient a">成分：羽毛、棉</div> -->
-                <div class="spend">
-                    金額：$250元
-                </div>
-                <div class="shopping_cart">
-                    
+              
+                <!-- <div class="shopping_cart">
+                    <div class="cost b">放入購物車</div>
                     <div class="cost b">點我結帳</div>
-                </div>
+                </div> -->
 
             </div>
+            <div class="shopping_cart">
+                <div class="cost b">放入購物車</div>
+                <div class="cost b">點我結帳</div>
+            </div>
+            
         </section>
 
-        <section class="product_introduction">
+        <!-- <section class="product_introduction">
             <div class="details">
                 <img src="./img/找商品.jpg" alt="">
                 <div class="text">
@@ -131,8 +150,33 @@
             </div>
 
            
-        </section>
+        </section> -->
 
+        <section class="allcontent">
+            <div class="btns">
+                <div class="btn">商品說明</div>
+                <div class="btn">商品規格</div>
+                <div class="btn">送貨及付款方式</div>
+            </div>
+
+            <div class="contents">
+                <div class="product_content">
+                    <img src="./img/產品8.jpg" alt="">
+                    <img src="./img/產品7.jpg" alt="">
+                    <img src="./img/產品6.jpg" alt="">
+                    <img src="./img/產品5.jpg" alt="">
+                </div>
+                <div class="product_content">
+                    <div class="text">測試測試測試</div>
+                </div>
+                <div class="product_content">
+                    <div class="text">111111</div>
+                </div>
+                
+
+            </div>
+            
+        </section>
         <section class="relative c">
             <div class="title">相關商品</div>
             <div class="products">
@@ -152,6 +196,8 @@
             </div>
 
         </section>
+
+        
 
     </main>
 
@@ -218,6 +264,109 @@
             </ul>
         </div>
     </footer>
+
+    <script>
+        var big_pics = document.querySelectorAll('.big_pic')
+        var small_pics = document.querySelectorAll('.small_pic')
+
+        var small_pic1 = small_pics[0]
+        small_pic1.classList.add('active')
+
+        var big_pic1 = big_pics[0]
+        big_pic1.classList.add('active')
+
+        small_pics.forEach((small_pic,index) => {
+            small_pics[index].onclick =function(){
+                console.log(small_pic);
+
+                
+           
+                clearallsmall()
+                small_pic.classList.add("active")
+
+
+                clearallbig()
+
+                // const big_pic = big_pics[index]
+                big_pics.forEach(big_pic=> {
+
+
+                big_pics[index].classList.add("active")
+
+                });
+            }
+            
+            
+        });
+
+        function clearallsmall(){
+            small_pics.forEach(small_pic => {
+                small_pic.classList.remove("active")
+        });
+        
+        }
+
+        function clearallbig(){
+            big_pics.forEach(big_pic => {
+                big_pic.classList.remove("active")
+        });
+        
+        }
+
+    </script>
+
+<script>
+    var contents = document.querySelectorAll('.product_content')
+    var btns = document.querySelectorAll('.btn')
+
+    var btn1 =btns[0]
+   btn1.classList.add('active')
+
+    var content1 = contents[0]
+    console.log(content1);
+    content1.classList.add('active')
+
+   btns.forEach((btn,index) => {
+       btns[index].onclick =function(){
+            console.log(btn);
+
+            
+       
+            clearallsmall()
+           btn.classList.add("active")
+
+
+            clearallbig()
+
+            // const content = contents[index]
+            contents.forEach(content=> {
+
+
+            contents[index].classList.add("active")
+
+            });
+        }
+        
+        
+    });
+
+    function clearallsmall(){
+       btns.forEach(btn => {
+           btn.classList.remove("active")
+    });
+    
+    }
+
+    function clearallbig(){
+        contents.forEach(content => {
+            content.classList.remove("active")
+    });
+    
+    }
+
+</script>
+
+
 
     
     

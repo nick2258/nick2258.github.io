@@ -31,8 +31,63 @@ a {
   font-weight: 800;
 }
 
+.dropdown-item {
+  padding: 0px;
+}
+
 .dropdown-item #ul {
   display: none;
+}
+
+ul, li {
+  list-style: none;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul, .type {
+  padding: initial;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+ul .dropdown-item, .type .dropdown-item {
+  font-size: 20px;
+}
+
+ul .type_detail, .type .type_detail {
+  text-align: center;
+  display: none;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  background-color: white;
+}
+
+ul .type_detail li:hover, .type .type_detail li:hover {
+  background-color: gray;
+}
+
+ul .type_detail li a, .type .type_detail li a {
+  color: #8a8a8a;
+  padding: 3px 0px;
+  font-size: 18px;
+}
+
+.dropdown-menu {
+  padding: 0px;
+}
+
+.type:hover .type_detail {
+  display: block;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.type ~ .type_detail {
+  display: block;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .mycontainer {
@@ -79,7 +134,7 @@ nav {
 }
 
 nav .navbar-nav .nav-item {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   padding: 0px 5px;
   margin: 0px 10px;
@@ -115,14 +170,23 @@ main {
 }
 
 main .mycontainer .banner {
-  margin: auto;
+  width: 90%;
   margin-bottom: 30px;
+  margin: auto;
 }
 
 main .mycontainer .banner img {
-  width: 70vw;
-  height: 32vw;
+  width: 100%;
+  height: 34vw;
   border: 3px  solid black;
+}
+
+main .mycontainer .six_card_title {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 20px 0px 0px;
 }
 
 main .mycontainer .six_card {
