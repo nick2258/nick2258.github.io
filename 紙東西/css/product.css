@@ -256,6 +256,8 @@ main .allcontent .btns .btn {
 main .allcontent .btns .btn.active {
   background-color: darkred;
   color: white;
+  color: #333;
+  color: #999;
 }
 
 main .allcontent .btns .btn:hover {

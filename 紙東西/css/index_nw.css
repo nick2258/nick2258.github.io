@@ -23,10 +23,11 @@ a {
 .texts {
   position: absolute;
   color: white;
-  background-color: rgba(155, 153, 153, 0.781);
-  padding: 8px 10px;
-  top: 20px;
-  left: 15px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(153, 153, 153, 0.582);
+  padding: 10px 0px;
+  top: 0px;
   font-size: 22px;
   letter-spacing: 3px;
   font-weight: 800;
@@ -176,13 +177,32 @@ main {
 main .mycontainer .banner {
   width: 90%;
   margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: auto;
 }
 
-main .mycontainer .banner img {
-  width: 100%;
-  height: 34vw;
-  border: 3px  solid black;
+main .mycontainer .banner .brand {
+  width: 10px;
+  height: 38vw;
+  margin-left: 10px;
+  padding: 30px 0px;
+}
+
+main .mycontainer .banner .text {
+  width: 40%;
+  height: 28vw;
+  background-color: white;
+  -webkit-transform: translate(-5%, 0px);
+          transform: translate(-5%, 0px);
+  margin-top: 100px;
+  z-index: 2;
+}
+
+main .mycontainer .banner .pic {
+  width: 65%;
+  height: 30vw;
 }
 
 main .mycontainer .six_card_title {
@@ -210,28 +230,26 @@ main .mycontainer .six_card {
 
 main .mycontainer .six_card a {
   width: calc(10vw - 16.6px);
-  height: calc(10vw - 16.6px);
   position: relative;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
 }
 
 main .mycontainer .six_card a img {
   width: 100%;
-  height: 100%;
+  height: calc(10vw - 16.6px);
   border-radius: 14px;
 }
 
 main .mycontainer .six_card a .text {
   color: white;
-  background-color: rgba(155, 153, 153, 0.781);
+  background-color: #333;
   padding: 8px 10px;
+  border-radius: 20px;
   font-size: 18px;
   letter-spacing: 2.5px;
   font-weight: 800;
-  bottom: 0px;
   text-align: center;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  margin: 20px  0px;
 }
 
 main .mycontainer .four_card {
@@ -393,7 +411,7 @@ main .mycontainer .second a .text {
 
 main .mycontainer .shop {
   width: 50%;
-  width: 56vw;
+  width: 78vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -429,8 +447,8 @@ main .mycontainer .shop a:hover .notext {
 main .mycontainer .shop a img {
   width: 100%;
   height: 100%;
-  width: calc(28vw - 20px);
-  height: 16vw;
+  width: 18vw;
+  height: 14vw;
   border-radius: 14px;
 }
 
@@ -573,7 +591,7 @@ main .mycontainer .all .right .right_top a {
 
 main .mycontainer .all .right .right_top a img {
   width: 100%;
-  height: calc(16vw - 10px);
+  height: 19.5vw;
 }
 
 main .mycontainer .all .right .right_bottom {
@@ -593,7 +611,7 @@ main .mycontainer .all .right .right_bottom a {
 
 main .mycontainer .all .right .right_bottom a img {
   width: 100%;
-  height: calc(24vw - 10px);
+  height: 19.5vw;
 }
 
 footer {
