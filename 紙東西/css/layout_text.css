@@ -7,403 +7,92 @@ body {
   padding: 0px;
   margin: 0px;
   background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
+  height: 3000px;
 }
 
-.mycontainer {
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.navbar {
-  width: 72vw;
-  margin: auto;
-  background-color: initial;
-}
-
-.navbar a img {
-  width: auto;
-  height: 60px;
-}
-
-nav {
-  padding: 30px;
+html {
   position: relative;
+}
+
+.part2 {
+  padding: 10px 0px;
+  /* background-color: rgba(220, 220, 220, 0.637); */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.part2 .all {
+  position: relative;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.637);
+  width: 1140px;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  line-height: 50px;
 }
 
-nav .navbar-nav .nav-item {
-  font-size: 22px;
-  font-weight: 600;
-  padding: 0px 5px;
-  margin: 0px 10px;
+.part2 .all .pic img {
+  width: 80px;
+  height: 50px;
 }
 
-nav .navbar-nav .nav-item .dropdown-menu {
-  background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
+.part2 .all .item {
+  padding: 0px 60px;
+  line-height: 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80px;
 }
 
-nav .navbar-nav .nav-item .dropdown-menu .nav-link {
-  font-size: 20px;
-}
-
-nav .navbar-nav form {
+.part2 .all .right {
   position: absolute;
   right: 0px;
-  top: 50%;
-  -webkit-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
+  line-height: 50px;
 }
 
-.border {
-  width: 90%;
-  border: 3px solid gainsboro;
+.banner {
+  width: 70%;
   margin: auto;
 }
 
-main {
-  max-width: 1920px;
+.banner img {
   width: 100%;
-  background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
-  background-position: center;
-}
-
-main .mycontainer .six_card {
-  width: 100%;
-  width: 70vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 20px;
-  margin: 30px auto;
-}
-
-main .mycontainer .six_card a {
-  width: calc(10vw - 16.6px);
-  height: calc(10vw - 16.6px);
-  position: relative;
-}
-
-main .mycontainer .six_card a img {
-  width: 100%;
-  height: 100%;
-  border-radius: 14px;
-}
-
-main .mycontainer .six_card a .text {
-  position: absolute;
-  color: white;
-  background-color: rgba(155, 153, 153, 0.781);
-  padding: 8px 10px;
-  top: 15px;
-  left: 20px;
-  font-size: 18px;
-  letter-spacing: 2.5px;
-  font-weight: 800;
-}
-
-main .mycontainer .four_card {
-  width: 94%;
-  width: 60vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-main .mycontainer .four_card a {
-  width: calc(15vw - 60px);
-  height: calc(15vw - 60px);
-  position: relative;
-}
-
-main .mycontainer .four_card a img {
-  width: 100%;
-  height: 100%;
-  border-radius: 14px;
-}
-
-main .mycontainer .four_card a .text {
-  position: absolute;
-  color: white;
-  background-color: rgba(155, 153, 153, 0.781);
-  padding: 8px 10px;
-  top: 15px;
-  left: 20px;
-  font-size: 18px;
-  letter-spacing: 2.5px;
-  font-weight: 800;
-}
-
-main .mycontainer .four_card a .mask {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.315);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-main .mycontainer .four_card a .mask_text {
-  position: absolute;
-  color: white;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-main .mycontainer .four_card a .mask_text p {
-  margin: auto;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-main .mycontainer .three_card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 80vw;
-  margin-bottom: 30px;
-  margin: auto;
-}
-
-main .mycontainer .three_card a {
-  width: calc(26vw - 20px);
-  height: calc(17vw - 10px);
-  position: relative;
-  margin-bottom: 40px;
-}
-
-main .mycontainer .three_card a img {
-  width: 100%;
-  height: 100%;
-  border-radius: 14px;
-}
-
-main .mycontainer .three_card a .text {
-  position: absolute;
-  color: white;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 20px;
-  letter-spacing: 2.5px;
-  font-weight: 800;
-  color: white;
-  background-color: rgba(155, 153, 153, 0.781);
-  padding: 8px 10px;
-}
-
-main .mycontainer .second {
-  width: 90%;
-  width: 64vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: auto;
-}
-
-main .mycontainer .second a {
-  width: calc(22vw - 30px);
-  height: calc(12vw - 12px);
-  border-radius: 14px;
-  position: relative;
-  margin-bottom: 30px;
-}
-
-main .mycontainer .second a img {
-  width: 100%;
-  height: 100%;
-  border-radius: 14px;
-}
-
-main .mycontainer .second a .text {
-  position: absolute;
-  color: white;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 20px;
-  letter-spacing: 2.5px;
-  font-weight: 800;
-  color: white;
-  background-color: rgba(155, 153, 153, 0.781);
-  padding: 8px 10px;
-}
-
-main .mycontainer .shop {
-  width: 80%;
-  width: 60vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: auto;
-  margin-bottom: 30px;
-  margin-top: 60px;
-}
-
-main .mycontainer .shop a {
-  width: calc(18vw - 60px);
-  height: calc(18vw - 60px);
-  width: calc(28vw - 30px);
-  height: calc(16vw - 12px);
-  position: relative;
-}
-
-main .mycontainer .shop a:hover .mask {
+  height: 30vw;
   display: block;
 }
 
-main .mycontainer .shop a:hover .mask_text {
-  display: block;
-}
-
-main .mycontainer .shop a img {
-  width: 100%;
-  height: 100%;
-  border-radius: 14px;
-}
-
-main .mycontainer .shop a .text {
-  position: absolute;
-  color: white;
-  background-color: rgba(155, 153, 153, 0.781);
-  padding: 8px 10px;
-  top: 15px;
-  left: 20px;
-  font-size: 22px;
-  letter-spacing: 2.5px;
-  font-weight: 800;
-}
-
-main .mycontainer .shop a .mask {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.315);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  display: none;
-}
-
-main .mycontainer .shop a .mask_text {
-  position: absolute;
-  color: white;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  display: none;
-  text-align: center;
-}
-
-main .mycontainer .shop a .mask_text p {
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  line-height: 42px;
-  margin: auto;
-}
-
-footer {
-  width: 100%;
-  max-width: 1920px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 20px 0px;
-}
-
-footer .content {
-  width: 85%;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-footer .content ul {
-  width: 24%;
-  font-size: 24px;
-  font-weight: 600;
-  padding: 10px  0px;
-  text-align: center;
-  margin: 10px 0px;
-}
-
-footer .content ul li {
-  list-style: none;
+.part3 {
   padding: 10px 0px;
+  /* background-color: gainsboro; */
+  /* border: 1px solid gray; */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 60px;
 }
 
-footer .content ul li a {
-  font-size: 20px;
-  color: dimgray;
-  text-decoration: none;
+.part3 .types {
+  width: 1140px;
+  -webkit-transform: translateX(40px);
+          transform: translateX(40px);
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.432);
+}
+
+.part3 .types .type {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.432);
+  font-size: 18px;
+  padding: 0px 60px;
 }
 /*# sourceMappingURL=layout_text.css.map */
