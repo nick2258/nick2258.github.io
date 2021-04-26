@@ -15,7 +15,7 @@
   display: -ms-flexbox;
   display: flex;
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-size: 20px;
   /* 頁籤內容區 */
 }
@@ -37,16 +37,62 @@
 }
 
 .container .tab-title .tab-contents {
-  border: 1px solid #E0E0E0;
+  border: 1px solid #1d1c1c;
+}
+
+.container .tab-title .tab-contents .content .part {
+  font-size: 80px;
+}
+
+.container .tab-title .tab-contents .content .part img {
+  width: 50px;
+  height: 50px;
+}
+
+.container .tab-title .tab-contents .content .part .title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.container .tab-title .tab-contents .content .accordion .card {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .container .tab-title .tab-contents .content .accordion .card .cards {
   padding: 10px;
 }
 
-.container .tab-title .tab-contents .content .accordion .card .cards .btn {
+.container .tab-title .tab-contents .content .accordion .card .cards h2 {
+  margin-bottom: 0px;
+}
+
+.container .tab-title .tab-contents .content .accordion .card .cards h2 .btn {
   color: black;
   outline: none;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.container .tab-title .tab-contents .content .accordion .card .collapse .card-body ul {
+  list-style: none;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container .tab-title .tab-contents .content .accordion .card .collapse .card-body ul li {
+  font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+  border-bottom: 1px  solid grey;
+}
+
+.container .tab-title .tab-contents .content .accordion .card .collapse .card-body table thead tr th {
+  padding: 10px;
+}
+
+.container .tab-title .tab-contents .content .accordion .card .collapse .card-body table tbody tr td {
+  padding: 5px 10px;
 }
 
 .container .tab-title .active {
