@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* 頁籤頭 */
+.container {
+  max-width: 1000px;
+  width: 80vw;
+  margin: auto;
+  padding: 30px  0px;
+}
+
+.container .tab-title {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  /* 頁籤內容區 */
+}
+
+.container .tab-title .active {
+  background-color: rgba(139, 130, 130, 0.233) !important;
+}
+
+.container .tab-title li {
+  display: inline-block;
+}
+
+.container .tab-title li a {
+  font-size: 20px;
+  display: block;
+  padding: 8px  10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.container .tab-title .tab-contents {
+  border: 1px solid #E0E0E0;
+}
+
+.container .tab-title .tab-contents .content .accordion .card .cards {
+  padding: 10px;
+}
+
+.container .tab-title .tab-contents .content .accordion .card .cards .btn {
+  color: black;
+  outline: none;
+}
+
+.container .tab-title .active {
+  background: #E0E0E0;
+}
+
+.allcollapse {
+  /* 手風琴的頭 */
+}
+
+.allcollapse .collapse h3 {
+  position: relative;
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.allcollapse .collapse h3 a {
+  display: block;
+  padding: .5rem;
+  background: #E0E0E0;
+  text-decoration: none;
+  color: #000;
+}
+
+.allcollapse .collapse h3::after {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.allcollapse .collapse .open::after {
+  content: '-';
+}
+
+.allcollapse .collapse .collapse-content {
+  padding: .5rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.allcollapse .collapse .collapse-contentt:last-of-type {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=user_detail.css.map */

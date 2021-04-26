@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/user_detail.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  
+</head>
+<body>
+    <!--
+  官方文件說明：https://os.alfajango.com/easytabs/
+-->
+
+
+<div class="container">
+
+    <!-- 樣式的部份看css  -->
+    <div id="tab-container">
+   
+     <!--  頁籤頭  -->
+     <ul class="tab-title">
+      <!-- 每一個 a href 對應下面的 div id -->
+      <li><a href="#tab-1">個人資料</a></li>
+      <li><a href="#tab-2">活動紀錄</a></li>
+      <li><a href="#tab-3">我的商品</a></li>
+      <li><a href="#tab-4">訂單管理</a></li>
+
+     </ul>
+   
+     <!--  頁籤內容  -->
+     <div class="tab-contents">
+      <!-- 每一個 id 對應上面的 a href -->
+      <div id="tab-1" class="content">
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="cards" id="headingOne">
+                <h2 class="mb-0">
+                  <div class="btn " type="div" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="outline: navajowhite;">
+                    帳戶資料
+                  </div>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry 
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="cards" id="headingTwo">
+                <h2 class="mb-0">
+                  <div class="btn  collapsed" type="div" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Collapsible Group Item #2
+                  </div>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia 
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="cards" id="headingThree">
+                <h2 class="mb-0">
+                  <div class="btn  collapsed" type="div" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Collapsible Group Item #3
+                  </div>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim 
+                </div>
+              </div>
+            </div>
+          </div>
+       
+       
+   
+      </div>
+      <div id="tab-2" class="content">
+       <h2>Heading 2</h2>
+       <p>Stuff from the second tab.</p>
+      </div>
+      <div id="tab-3" class="content">
+       <h2>Heading 3</h2>
+       <p>More stuff from the last tab.</p>
+      </div>
+      <div id="tab-4" class="content">
+        <h2>Heading 3</h2>
+        <p>More stuff from the last tab.</p>
+       </div>
+     </div>
+    </div>
+   
+   </div>
+
+   <!--
+  官方說明文件：https://github.com/danielstocks/jQuery-Collapse
+-->
+
+
+
+
+
+
+<!-- <div class="allcollapse">
+
+    
+    <div id="collapse" class="collapse" data-collapse>
+   
+  
+     <h3>collapse-1</h3>
+     <div class="collapse-content">
+      <p>collapse 1 contents</p>
+     </div>
+   
+   
+     <h3>collapse-2</h3>
+     <div class="collapse-content">
+      <p>collapse 2 contents</p>
+     </div>
+   
+    </div>
+   
+</div> -->
+    
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+
+   <!-- 引用的jquery，版本要超過1.7.X -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<!-- 引用js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-hashchange/1.3/jquery.ba-hashchange.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js"></script>
+<script>
+ $(function($) {
+  $("#tab-container").easytabs();
+ });
+</script>
+
+
+
+
+
+<!-- 引用的jquery，版本要超過1.7.X -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<!-- 引用js -->
+<script src="https://cdn.jsdelivr.net/npm/jquery-collapse@1.1.2/src/jquery.collapse.js"></script>
+<script>
+ $(function() {
+  var collapse = new jQueryCollapse($("#collapse"));
+  collapse.open(0); // 預設第幾個打開就填入第幾個的數字
+ });
+</script>
+
+
+
+</body>
+</html>

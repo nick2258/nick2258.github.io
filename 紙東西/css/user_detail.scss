@@ -1,0 +1,144 @@
+
+
+/* 頁籤頭 */
+.container{
+    max-width: 1000px;
+    width: 80vw;
+    margin: auto;
+    padding: 30px  0px;
+    .tab-title {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-size: 20px;
+
+        & .active{
+            background-color: rgba(139, 130, 130, 0.233) !important;
+        }
+        li {
+            display: inline-block;
+            a{
+                font-size: 20px;
+                display: block;
+                padding:8px  10px;
+                text-decoration: none;
+                color: #000;
+               
+            }
+
+        }
+        /* 頁籤內容區 */
+        .tab-contents {
+            border: 1px solid #E0E0E0;
+            .content {
+               .accordion{
+                   .card{
+                       .cards{
+                           padding: 10px;
+                           .btn{
+                               color: black;
+                               outline:none;
+                           }
+                       }
+                   }
+               }
+                // .allcollapse{
+                //     .collapse{
+                //         padding-top: 20px;
+
+                //         .h3 {
+                //             position: relative;
+                //             margin: 0;
+                            
+                //             border: 1px solid rgba(0,0,0,.2);
+                //             background-color: crimson;
+                //             width: max-content;
+                //             max-height: 28px;
+ 
+                //             a {
+                                
+                //                 display: block;
+                //                 padding: 0rem;
+                //                 background: brown !important;
+                //                 text-decoration: none;
+                //                 color: #000;
+                //                 font-size: 20px;    
+
+                //             }
+                //             &::after {
+                //                 content: '+';
+                //                 position: absolute;
+                //                 top: 50%;
+                //                 right: 1rem;
+                //                 transform: translateY(-50%);
+                //                 pointer-events: none;
+                //             }
+                //         }
+                //         .open::after {
+                //             content: '-';
+                //         }
+                //         .collapse-content {
+                //             padding:5px 10px;
+                //             &:nth-last-child(1){
+                //                 border-bottom: 1px solid rgba(0,0,0,.2) ;
+                //             }
+                //             &:nth-last-child(1){
+                //                 border-bottom: 1px solid rgba(0,0,0,.2) !important;
+                //             }
+
+                //         }
+                
+                //     } 
+                // }
+            }
+        }
+        & .active {
+            background: #E0E0E0;
+        }
+    }
+}
+
+
+.allcollapse{
+    /* 手風琴的頭 */
+    .collapse{
+        h3 {
+            position: relative;
+            margin: 0;
+            border: 1px solid rgba(0,0,0,.2);
+            a {
+                display: block;
+                padding: .5rem;
+                background: #E0E0E0;
+                text-decoration: none;
+                color: #000;
+            }
+
+            &::after {
+                content: '+';
+                position: absolute;
+                top: 50%;
+                right: 1rem;
+                transform: translateY(-50%);
+                pointer-events: none;
+            }
+        }
+        .open::after {
+            content: '-';
+        }
+        .collapse-content {
+            padding: .5rem;
+            border-left: 1px solid rgba(0,0,0,.2);
+            border-right: 1px solid rgba(0,0,0,.2);
+            &t:last-of-type {
+                border-bottom: 1px solid rgba(0,0,0,.2);
+            }
+        }
+
+    } 
+}
+
+

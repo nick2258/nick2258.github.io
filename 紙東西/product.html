@@ -279,6 +279,53 @@
         </div>
     </footer>
 
+    <div class="container">
+
+        <!-- 樣式的部份看css  -->
+        <div id="tab-container">
+       
+         <!--  頁籤頭  -->
+         <ul class="tab-title">
+          <!-- 每一個 a href 對應下面的 div id -->
+          <li><a href="#tab-1">Tab 1</a></li>
+          <li><a href="#tab-2">Tab 2</a></li>
+          <li><a href="#tab-3">Tab 3</a></li>
+         </ul>
+       
+         <!--  頁籤內容  -->
+         <div class="tab-contents">
+          <!-- 每一個 id 對應上面的 a href -->
+          <div id="tab-1" class="content">
+           <h2>Heading 1</h2>
+           <p>This is the content of the first tab.</p>
+           <img src="./img/logo.jpg" alt="">
+           <img src="./img/找商品.jpg" alt="">
+           <img src="./img/產品4.jpg" alt="">
+          </div>
+          <div id="tab-2" class="content">
+           <h2>Heading 2</h2>
+           <p>Stuff from the second tab.</p>
+          </div>
+          <div id="tab-3" class="content">
+           <h2>Heading 3</h2>
+           <p>More stuff from the last tab.</p>
+          </div>
+         </div>
+        </div>
+       
+       </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<!-- 引用js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-hashchange/1.3/jquery.ba-hashchange.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js"></script>
+<script>
+ $(function($) {
+  $("#tab-container").easytabs();
+ });
+</script>
+
     <script>
         var big_pics = document.querySelectorAll('.big_pic')
         var small_pics = document.querySelectorAll('.small_pic')

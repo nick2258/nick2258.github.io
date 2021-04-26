@@ -203,7 +203,7 @@ nav .content .right .right_item span img {
   /* border: 1px solid gray; */
   position: -webkit-sticky;
   position: sticky;
-  top: 50px;
+  top: 55px;
   background-color: white;
   z-index: 10;
 }
@@ -251,9 +251,14 @@ nav .content .right .right_item span img {
 .part3 .types .type .content .item {
   width: 200px;
   padding: 5px;
-  border: 1px solid bisque;
   text-align: center;
   background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
+}
+
+.part3 .types .type .content .item:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: rgba(11, 11, 126, 0.76);
 }
 
 .part3 .types .type .content .item .details a {
@@ -636,11 +641,18 @@ nav .content .right .right_item span img {
 }
 
 .sale .content .four .pic .heart {
+  width: 40px;
+  height: 40px;
+  background-color: #6b6760;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
   position: absolute;
   top: 5px;
   right: 5px;
   font-size: 22px;
   color: #685656;
+  color: white;
 }
 
 .sale .content .four .pic .heart.active {
