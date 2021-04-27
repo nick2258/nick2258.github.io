@@ -1,143 +1,77 @@
-@charset "UTF-8";
-/* 頁籤頭 */
-.container {
-  max-width: 1000px;
-  width: 80vw;
+main {
+  width: 1000px;
   margin: auto;
   padding: 30px  0px;
+  /* Style the tab content */
 }
 
-.container .tab-title {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+main .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
   border-radius: 5px;
-  margin-bottom: 40px;
-  font-size: 20px;
-  /* 頁籤內容區 */
 }
 
-.container .tab-title .active {
-  background-color: rgba(139, 130, 130, 0.233) !important;
-}
-
-.container .tab-title li {
-  display: inline-block;
-}
-
-.container .tab-title li a {
-  font-size: 20px;
-  display: block;
-  padding: 8px  10px;
-  text-decoration: none;
-  color: #000;
-}
-
-.container .tab-title .tab-contents {
-  border: 1px solid #1d1c1c;
-}
-
-.container .tab-title .tab-contents .content .part {
-  font-size: 80px;
-}
-
-.container .tab-title .tab-contents .content .part img {
-  width: 50px;
-  height: 50px;
-}
-
-.container .tab-title .tab-contents .content .part .title {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.container .tab-title .tab-contents .content .accordion .card {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-}
-
-.container .tab-title .tab-contents .content .accordion .card .cards {
-  padding: 10px;
-}
-
-.container .tab-title .tab-contents .content .accordion .card .cards h2 {
-  margin-bottom: 0px;
-}
-
-.container .tab-title .tab-contents .content .accordion .card .cards h2 .btn {
-  color: black;
+main .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
   outline: none;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.container .tab-title .tab-contents .content .accordion .card .collapse .card-body ul {
-  list-style: none;
-  text-decoration: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-.container .tab-title .tab-contents .content .accordion .card .collapse .card-body ul li {
+  cursor: pointer;
+  padding: 10px 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   font-size: 20px;
-  list-style: none;
-  text-decoration: none;
-  border-bottom: 1px  solid grey;
+  font-weight: 500;
+  letter-spacing: 1.5px;
 }
 
-.container .tab-title .tab-contents .content .accordion .card .collapse .card-body table thead tr th {
-  padding: 10px;
+main .tab button:hover {
+  background-color: #ddd;
 }
 
-.container .tab-title .tab-contents .content .accordion .card .collapse .card-body table tbody tr td {
-  padding: 5px 10px;
+main .tab button.active {
+  background-color: #ccc;
 }
 
-.container .tab-title .active {
-  background: #E0E0E0;
+main .tabcontent {
+  margin-top: 20px;
+  display: none;
+  font-size: 18px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+  letter-spacing: 1.5px;
+  /* Fade in tabs */
 }
 
-.allcollapse {
-  /* 手風琴的頭 */
+main .tabcontent .contents .content .btn {
+  background-color: #ccc;
+  padding: 10px 15px;
+  margin-top: 1px;
+  font-size: 18px;
 }
 
-.allcollapse .collapse h3 {
-  position: relative;
-  margin: 0;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+main .tabcontent .contents .content .text {
+  display: none;
+  background-color: #bbb;
+  padding: 2em 1em;
 }
 
-.allcollapse .collapse h3 a {
-  display: block;
-  padding: .5rem;
-  background: #E0E0E0;
-  text-decoration: none;
-  color: #000;
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.allcollapse .collapse h3::after {
-  content: '+';
-  position: absolute;
-  top: 50%;
-  right: 1rem;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  pointer-events: none;
-}
-
-.allcollapse .collapse .open::after {
-  content: '-';
-}
-
-.allcollapse .collapse .collapse-content {
-  padding: .5rem;
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.allcollapse .collapse .collapse-contentt:last-of-type {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=user_detail.css.map */

@@ -573,6 +573,7 @@ nav .content .right .right_item span img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 20px;
 }
 
 .sale .content .four .pic {
