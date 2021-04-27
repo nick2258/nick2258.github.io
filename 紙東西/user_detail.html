@@ -14,7 +14,7 @@
     <!-- <h3>Fade in Tabs</h3> -->
     <main>
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'Userinformation')">個人資料</button>
+            <button class="tablinks" onclick="openCity(event, 'Userinformation')" id="defaultOpen">個人資料</button>
             <button class="tablinks" onclick="openCity(event, 'Like')">我的收藏</button>
             <button class="tablinks" onclick="openCity(event, 'Art')">我的設計</button>
             <button class="tablinks" onclick="openCity(event, 'Product')">我的商店</button>
@@ -621,6 +621,8 @@
           document.getElementById(cityName).style.display = "block";
           evt.currentTarget.className += " active";
         }
+        document.getElementById("defaultOpen").click();
+
 
 
 
