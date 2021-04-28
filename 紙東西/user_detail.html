@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/user_detail.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css" >
+     
+</head>
+<body>
+    <!-- <h3>Fade in Tabs</h3> -->
+    <main>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Userinformation')" id="defaultOpen">個人資料</button>
+            <button class="tablinks" onclick="openCity(event, 'Like')">我的收藏</button>
+            <button class="tablinks" onclick="openCity(event, 'Art')">我的設計</button>
+            <button class="tablinks" onclick="openCity(event, 'Product')">我的商店</button>
+            <button class="tablinks" onclick="openCity(event, 'Event')">活動紀錄</button>  
+            <button class="tablinks" onclick="openCity(event, 'Order')">訂單紀錄</button>
+          </div>
+          
+          <div id="Userinformation" class="tabcontent ">
+            <div class="js-basic-accordion contents">
+                <div class="js-b-accgroup content active">
+                    <div class="js-b-accitem btn">帳戶資訊
+                        <span class="small_title">(會員基本資訊)</span>
+          
+                    </div>
+                    <div class="js-b-acclist texts">
+                        <div class="text">名稱:Nick</div>
+                        <div class="text">信箱:1234@gmail.com</div>
+                        <div class="text">手機:09090909</div>
+                        <div class="text">密碼:1234</div>
+                    </div>
+                </div>
+        
+                <div class="js-b-accgroup content ">
+                    <div class="js-b-accitem btn">紅利管理
+                        <span class="small_title">(會員商品紅利)</span>
+
+                    </div>
+                    <div class="js-b-acclist texts">
+                        <div class="red">
+                            <div class="title">紅利資訊</div>
+                            <div class="all_points">
+                                <div class="points">剩餘 <span class="point">50</span> 點 
+                                </div>
+                                <div class="points">已使用 <span class="point">500</span> 點 
+                                </div>
+                                <div class="title">紅利紀錄</div>
+                            </div>
+                            
+                            <table>
+                                <tr>
+                                  <th>日期</th>
+                                  <th>活動</th>
+                                  <th>點數</th>
+                                </tr>
+                                <tr>
+                                  <td>108/3/22</td>
+                                  <td>活動1</td>
+                                  <td>8</td>
+                                </tr>
+                                <tr>
+                                  <td>108/2/5</td>
+                                  <td>活動2</td>
+                                  <td>5</td>
+                                </tr>
+                                <tr>
+                                  <td>107/8/9</td>
+                                  <td>活動3</td>
+                                  <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>108/3/22</td>
+                                    <td>活動1</td>
+                                    <td>8</td>
+                                  </tr>
+                                  <tr>
+                                    <td>108/2/5</td>
+                                    <td>活動2</td>
+                                    <td>5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>107/8/9</td>
+                                    <td>活動3</td>
+                                    <td>10</td>
+                                  </tr>
+                                  <tr>
+                                    <td>108/3/22</td>
+                                    <td>活動1</td>
+                                    <td>8</td>
+                                  </tr>
+                                  <tr>
+                                    <td>108/2/5</td>
+                                    <td>活動2</td>
+                                    <td>5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>107/8/9</td>
+                                    <td>活動3</td>
+                                    <td>10</td>
+                                  </tr>
+                                  <tr>
+                                    <td>107/8/9</td>
+                                    <td>活動3</td>
+                                    <td>10</td>
+                                  </tr>
+
+                              </table>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+          </div>
+
+          <div id="Like" class="tabcontent">
+            <div class="js-basic-accordion contents">
+                <div class="js-b-accgroup content active">
+                    <div class="js-b-accitem btn">商品收藏
+                        <span class="small_title">(收藏喜愛商品)</span>
+
+                    </div>
+                    <div class="js-b-acclist texts">
+                        <div class="likes">
+                            <div class="likecard">
+                                <div class="pic">
+                                    <img src="./img/台北.jpg" alt="">
+                                </div>
+                                <div class="name text">商品名稱</div>
+                                <div class="price text">$250</div>
+                            </div>
+
+                            <div class="likecard">
+                                <div class="pic">
+                                    <img src="./img/台北.jpg" alt="">
+                                </div>
+                                <div class="name text">商品名稱</div>
+                                <div class="price text">$250</div>
+                            </div>
+                            <div class="likecard">
+                                <div class="pic">
+                                    <img src="./img/台北.jpg" alt="">
+                                </div>
+                                <div class="name text">商品名稱</div>
+                                <div class="price text">$250</div>
+                            </div>
+                            <div class="likecard">
+                                <div class="pic">
+                                    <img src="./img/台北.jpg" alt="">
+                                </div>
+                                <div class="name text">商品名稱</div>
+                                <div class="price text">$250</div>
+                            </div>
+                            <div class="likecard">
+                                <div class="pic">
+                                    <img src="./img/台北.jpg" alt="">
+                                </div>
+                                <div class="name text">商品名稱</div>
+                                <div class="price text">$250</div>
+                            </div>
+                            <div class="likecard">
+                                <div class="pic">
+                                    <img src="./img/台北.jpg" alt="">
+                                </div>
+                                <div class="name text">商品名稱</div>
+                                <div class="price text">$250</div>
+                            </div>
+                            <div class="likecard">
+                                <div class="pic">
+                                    <img src="./img/台北.jpg" alt="">
+                                </div>
+                                <div class="name text">商品名稱</div>
+                                <div class="price text">$250</div>
+                            </div>
+                            <div class="likecard">
+                                <div class="pic">
+                                    <img src="./img/台北.jpg" alt="">
+                                </div>
+                                <div class="name text">商品名稱</div>
+                                <div class="price text">$250</div>
+                            </div>
+                            <div class="likecard">
+                                <div class="pic">
+                                    <img src="./img/台北.jpg" alt="">
+                                </div>
+                                <div class="name text">商品名稱</div>
+                                <div class="price text">$250</div>
+                            </div>
+                            <div class="likecard">
+                                <div class="pic">
+                                    <img src="./img/台北.jpg" alt="">
+                                </div>
+                                <div class="name text">商品名稱</div>
+                                <div class="price text">$250</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="js-b-accgroup content ">
+                    <div class="js-b-accitem btn">作者收藏
+                        <span class="small_title">(收藏喜愛作者)</span>
+                    </div>
+                        <div class="js-b-acclist texts">
+                            <div class="likes articles">
+                                <div class="likecard ">
+                                    <div class="pic">
+                                        <img src="./img/找創作者.jpg" alt="">
+                                    </div>
+                                    <div class="article"> Nick </div>
+                                </div>
+                                
+                                <div class="likecard ">
+                                    <div class="pic">
+                                        <img src="./img/找創作者.jpg" alt="">
+                                    </div>
+                                    <div class="article"> Nick </div>
+                                </div>
+
+                                <div class="likecard ">
+                                    <div class="pic">
+                                        <img src="./img/找創作者.jpg" alt="">
+                                    </div>
+                                    <div class="article"> Nick </div>
+                                </div>
+
+                                <div class="likecard ">
+                                    <div class="pic">
+                                        <img src="./img/找創作者.jpg" alt="">
+                                    </div>
+                                    <div class="article"> Nick </div>
+                                </div>
+
+                                <div class="likecard ">
+                                    <div class="pic">
+                                        <img src="./img/找創作者.jpg" alt="">
+                                    </div>
+                                    <div class="article"> Nick </div>
+                                </div>
+
+                                <div class="likecard ">
+                                    <div class="pic">
+                                        <img src="./img/找創作者.jpg" alt="">
+                                    </div>
+                                    <div class="article"> Nick </div>
+                                </div>
+
+                                <div class="likecard ">
+                                    <div class="pic">
+                                        <img src="./img/找創作者.jpg" alt="">
+                                    </div>
+                                    <div class="article"> Nick </div>
+                                </div>
+
+                                <div class="likecard ">
+                                    <div class="pic">
+                                        <img src="./img/找創作者.jpg" alt="">
+                                    </div>
+                                    <div class="article"> Nick </div>
+                                </div>
+
+                                <div class="likecard ">
+                                    <div class="pic">
+                                        <img src="./img/找創作者.jpg" alt="">
+                                    </div>
+                                    <div class="article"> Nick </div>
+                                </div>
+
+                                <div class="likecard ">
+                                    <div class="pic">
+                                        <img src="./img/找創作者.jpg" alt="">
+                                    </div>
+                                    <div class="article"> Nick </div>
+                                </div>
+
+                                
+                        </div>
+                        
+                    </div>
+                </div>
+             
+            </div>
+          </div>
+
+          <div id="Art" class="tabcontent">
+            <div class="js-basic-accordion contents">
+                <div class="js-b-accgroup content active">
+                    <div class="js-b-accitem btn">客製商品
+                        <span class="small_title">(客製化自己的商品)</span>
+
+                    </div>
+                    <div class="js-b-acclist texts">
+                    </div>
+                </div>
+        
+             
+             
+            </div>
+          </div>
+
+          <div id="Product" class="tabcontent">
+            <div class="js-basic-accordion contents">
+                <div class="js-b-accgroup content active">
+                    <div class="js-b-accitem btn">商品管理
+                        <span class="small_title">(管理上架商品)</span>
+                    </div>
+                    <div class="js-b-acclist texts">
+                        <div class="product_manage">
+                            <table>
+                                <tr>
+                                  <th>品名</th>
+                                  <th>圖片</th>
+                                  <th>售價</th>
+                                  <th>上市日期</th>
+                                  <th>編輯</th>
+                                </tr>
+                                <tr>
+                                    <td>商品1</td>
+                                    <td>
+                                        <img src="./img/台中.jpg" alt="">
+                                    </td>
+                                    <td>$250</td>
+                                    <td>108/3/22</td>
+                                    <td>刪除</td>
+                                </tr>
+                                <tr>
+                                    <td>測試測試測試測試測試測試測試測試測試測試測試測試測試測試</td>
+                                    <td>
+                                        <img src="./img/台中.jpg" alt="">
+                                    </td>
+                                    <td>$250</td>
+                                    <td>108/3/22</td>
+                                    <td>刪除</td>
+                                </tr>
+                                <tr>
+                                    <td>商品1</td>
+                                    <td>
+                                        <img src="./img/台中.jpg" alt="">
+                                    </td>
+                                    <td>$250</td>
+                                    <td>108/3/22</td>
+                                    <td>刪除</td>
+                                </tr>
+                                <tr>
+                                    <td>商品1</td>
+                                    <td>
+                                        <img src="./img/台中.jpg" alt="">
+                                    </td>
+                                    <td>$250</td>
+                                    <td>108/3/22</td>
+                                    <td>刪除</td>
+                                </tr>
+                                
+                               
+                                
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="js-b-accgroup content ">
+                    <div class="js-b-accitem btn">商品紅利
+                        <span class="small_title">(商品紅利回饋)</span>
+
+                    </div>
+                    <div class="js-b-acclist texts">
+                        <div class="feedback">
+                            <div class="months">
+                                <button class="month">1月</button>
+                                <button class="month">2月</button>
+                                <button class="month">3月</button>
+                                <button class="month">4月</button>
+                                <button class="month">5月</button>
+                                <button class="month">6月</button>
+                                <button class="month">7月</button>
+                                <button class="month">8月</button>
+                                <button class="month">9月</button>
+                                <button class="month">10月</button>
+                                <button class="month">11月</button>
+                                <button class="month">12月</button>
+                            </div>
+                            <div class="content">
+                                <table>
+                                    <tr>
+                                      <th>品名</th>
+                                      <th>紅利</th>
+                                      <th>備註</th>
+                                    </tr>
+                                    <tr>
+                                        <td>商品1</td>
+                                        <td>50</td>
+                                        <td>123</td>
+                                    </tr>
+                                    <tr>
+                                        <td>商品1</td>
+                                        <td>50</td>
+                                        <td>123</td>
+                                    </tr>
+                                    <tr>
+                                        <td>商品1</td>
+                                        <td>50</td>
+                                        <td>123</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+             
+            </div>
+          </div>
+          
+          <div id="Event" class="tabcontent">
+            <div class="js-basic-accordion contents">
+                <div class="js-b-accgroup content active">
+                    <div class="js-b-accitem btn">近期瀏覽
+                        <span class="small_title">(近期瀏覽商品)</span>
+
+                    </div>
+                    <div class="js-b-acclist texts">
+                        <div class="last_view">
+                            <table>
+                                <tr>
+                                  <th>品名</th>
+                                  <th>圖片</th>
+                                  <th>日期</th>
+                                </tr>
+                                <tr>
+                                    <td>商品1</td>
+                                    <td>
+                                        <img src="./img/台中.jpg" alt="">
+                                    </td>
+                                    <td>108/3/22</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>商品1</td>
+                                    <td>
+                                        <img src="./img/台中.jpg" alt="">
+                                    </td>
+                                    <td>108/3/22</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>商品1</td>
+                                    <td>
+                                        <img src="./img/台中.jpg" alt="">
+                                    </td>
+                                    <td>108/3/22</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>商品1</td>
+                                    <td>
+                                        <img src="./img/台中.jpg" alt="">
+                                    </td>
+                                    <td>108/3/22</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>商品1</td>
+                                    <td>
+                                        <img src="./img/台中.jpg" alt="">
+                                    </td>
+                                    <td>108/3/22</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>測試測試測試測試測試測試測試測試測試測試測試測試測試測試</td>
+                                    <td>
+                                        <img src="./img/台中.jpg" alt="">
+                                    </td>
+                                    <td>108/3/22</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>商品1</td>
+                                    <td>
+                                        <img src="./img/台中.jpg" alt="">
+                                    </td>
+                                    <td>108/3/22</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>商品1</td>
+                                    <td>
+                                        <img src="./img/台中.jpg" alt="">
+                                    </td>
+                                    <td>108/3/22</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>商品1</td>
+                                    <td>
+                                        <img src="./img/台中.jpg" alt="">
+                                    </td>
+                                    <td>108/3/22</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>商品1</td>
+                                    <td>
+                                        <img src="./img/台中.jpg" alt="">
+                                    </td>
+                                    <td>108/3/22</td>
+                                </tr>
+                                
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+          </div>
+          
+          
+
+          <div id="Order" class="tabcontent">
+            <div class="js-basic-accordion contents">
+                <div class="js-b-accgroup content active">
+                    <div class="js-b-accitem btn">訂單紀錄
+                        <span class="small_title">(管理訂單內容)</span>
+
+                    </div>
+                    <div class="js-b-acclist texts">
+                        <div class="orders">
+                            <table>
+                                <tr>
+                                  <th>訂單</th>
+                                  <th>金額</th>
+                                  <th>日期</th>
+                                  <th>付款</th>
+                                  <th>配送</th>
+                                  <th>退貨</th>
+                                </tr>
+                                <tr>
+                                    <td>編號1</td>
+                                    <td>$250</td>
+                                    <td>109/3/22</td>
+                                    <td>未付款</td>
+                                    <td>出貨中</td>
+                                    <td>無</td>
+                                </tr>
+                                <tr>
+                                    <td>編號2</td>
+                                    <td>$750</td>
+                                    <td>109/3/10</td>
+                                    <td>已付款</td>
+                                    <td>已送達</td>
+                                    <td>無</td>
+                                </tr>
+                                <tr>
+                                    <td>編號3</td>
+                                    <td>$450</td>
+                                    <td>109/2/10</td>
+                                    <td>未付款</td>
+                                    <td>已送捯</td>
+                                    <td>已退貨</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- <div class="js-b-accgroup content ">
+                    <div class="js-b-accitem btn">2按鈕觸發區</div>
+                    <div class="js-b-acclist texts">下拉區</div>
+                </div> -->
+             
+            </div>
+          </div>
+    </main>
+
+<!-- 
+    <div class="js-basic-accordion contents">
+        <div class="js-b-accgroup content active">
+            <div class="js-b-accitem btn">1按鈕觸發區</div>
+            <div class="js-b-acclist text">下拉區</div>
+        </div>
+
+        <div class="js-b-accgroup content ">
+            <div class="js-b-accitem btn">2按鈕觸發區</div>
+            <div class="js-b-acclist text">下拉區</div>
+        </div>
+     
+    </div> -->
+   
+
+   
+    
+
+
+     <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" ></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" ></script> -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+
+
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            
+            tabcontent[i].style.display = "none";
+           
+          
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+
+
+
+
+
+        $(".js-b-accgroup.active .js-b-acclist").show();
+
+        $(".js-basic-accordion").each(function() {
+            $(this).on("click", ".js-b-accitem", function(e) {
+                e.preventDefault();
+                $(this)
+                    .siblings(".js-b-acclist")
+                    .stop(true, false)
+                    .slideToggle();
+                $(this)
+                    .parent(".js-b-accgroup")
+                    .siblings()
+                    .find(".js-b-acclist")
+                    .stop(true, false)
+                    .slideUp();
+                $(this)
+                    .parent(".js-b-accgroup")
+                    .toggleClass("active")
+                    .siblings()
+                    .removeClass("active");
+            });
+        });
+
+
+
+       
+    </script>
+  
+</body>
+</html>
