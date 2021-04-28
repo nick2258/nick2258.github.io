@@ -210,8 +210,8 @@ nav .content .right .right_item span img {
 
 .part3 .types {
   width: 1140px;
-  -webkit-transform: translateX(110px);
-          transform: translateX(110px);
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,7 +221,7 @@ nav .content .right .right_item span img {
 }
 
 .part3 .types .type {
-  padding: 10px 20px;
+  padding: 10px 25px;
   position: relative;
   cursor: pointer;
 }

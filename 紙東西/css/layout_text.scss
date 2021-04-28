@@ -196,14 +196,14 @@ nav{
 
     .types{
         width: 1140px;
-        transform: translateX(110px);
+        transform: translateX(100px);
         margin: auto;
         display: flex;
         // justify-content: center;
         font-weight: 600;
         color: rgba(0, 0, 0, 0.432);
         .type{
-            padding: 10px 20px;
+            padding: 10px 25px;
             position: relative;
             cursor: pointer; 
             .title{
