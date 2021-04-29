@@ -111,7 +111,6 @@ main .product_details .product_content .top .article .small_text {
 }
 
 main .product_details .product_content .top .article .mylove {
-  font-size: 16px;
   position: absolute;
   right: 0px;
   padding: 3px 8px;
@@ -119,7 +118,30 @@ main .product_details .product_content .top .article .mylove {
   border: 1px solid #f38275be;
   color: #f1f1f1;
   font-weight: 600;
+  text-align: center;
+}
+
+main .product_details .product_content .top .article .mylove .text {
+  font-size: 16px;
   letter-spacing: 1.5px;
+}
+
+main .product_details .product_content .top .article .mylove .fa-heart {
+  font-size: 18px;
+  padding: 5px;
+  display: none;
+}
+
+main .product_details .product_content .top .article .mylove:hover .text {
+  display: none;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+main .product_details .product_content .top .article .mylove:hover .fa-heart {
+  display: block;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 main .product_details .product_content .top .colors {
@@ -148,6 +170,10 @@ main .product_details .product_content .top .colors .all_color .color {
   height: 25px;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+main .product_details .product_content .top .colors .all_color .color:hover {
+  opacity: 0.7;
 }
 
 main .product_details .product_content .top .price {
@@ -190,6 +216,8 @@ main .product_details .product_content .top .allnumber .numbers {
   width: 120px;
   margin: 0px  20px;
   border: 1px solid gainsboro;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 main .product_details .product_content .top .allnumber .a {
@@ -200,9 +228,15 @@ main .product_details .product_content .top .allnumber .a {
   border: 1px solid gainsboro;
 }
 
-main .product_details .product_content .top .bg {
-  font-size: 18px;
-  letter-spacing: 6px;
+main .product_details .product_content .top .allnumber .a:active {
+  background-color: darkgrey;
+  color: wheat;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+main .product_details .product_content .top .shoppingcart {
+  position: relative;
   font-weight: 600;
   width: 100%;
   margin: auto;
@@ -213,6 +247,27 @@ main .product_details .product_content .top .bg {
   border: 1px solid #f38275be;
   color: white;
   border-radius: 5px;
+}
+
+main .product_details .product_content .top .shoppingcart .text {
+  font-size: 18px;
+  letter-spacing: 6px;
+}
+
+main .product_details .product_content .top .shoppingcart .fa-shopping-cart {
+  font-size: 24px;
+  font-weight: 600;
+  display: none;
+}
+
+main .product_details .product_content .top .shoppingcart:hover .text {
+  display: none;
+}
+
+main .product_details .product_content .top .shoppingcart:hover .fa-shopping-cart {
+  display: block;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 main .product_details .product_content .contents {
@@ -371,13 +426,15 @@ main .product_detail .detail .pay a {
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
+.tablinks img:hover {
+  opacity: 0.8;
+  border-radius: 15px;
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
+.tablinks.active img {
+  opacity: 0.7;
+  border-radius: 10px;
 }
 
 /* Style the tab content */

@@ -83,7 +83,6 @@ main{
                         letter-spacing: 1.5px;
                     }
                     .mylove{
-                        font-size: 16px;
                         position: absolute;
                         right: 0px;
                         padding: 3px 8px;
@@ -91,7 +90,28 @@ main{
                         border: 1px solid #f38275be;
                         color: #f1f1f1;
                         font-weight: 600;
-                        letter-spacing: 1.5px;
+                        text-align: center;
+                        .text{
+                            font-size: 16px;
+                            // display: none;
+                            letter-spacing: 1.5px;
+                        }
+                        .fa-heart{
+                            font-size: 18px;
+                            padding: 5px;
+                            
+                            display: none;
+                        }
+                        &:hover .text{
+                            display: none;
+                            transition: 0.6s;
+                        }
+                        &:hover .fa-heart{
+                            display: block;
+                            transition: 0.8s;
+                        }
+
+                        
 
                     }
                 }
@@ -111,8 +131,11 @@ main{
                             height: 25px;
                             margin-right: 10px;
                             margin-bottom: 10px;
-
+                            &:hover{
+                                opacity: 0.7;
+                            }
                         }
+
                     }
                     
                 }
@@ -155,22 +178,27 @@ main{
                         width: 120px;
                         margin: 0px  20px;
                         border: 1px solid gainsboro;
+                        transition: 0.5s;
                     }
                     .a{
                         line-height: 23px;
                         font-size: 20px;
                         font-weight: 600;
                         padding: 10px 15px;
-                        border: 1px solid gainsboro; 
+                        border: 1px solid gainsboro;
+                        &:active{
+                            background-color:darkgrey;
+                            color: wheat;
+                            transition: 0.1s;
+                        } 
 
 
                     }
     
                 }
                 
-                .bg{
-                    font-size: 18px;
-                    letter-spacing: 6px;
+                .shoppingcart{
+                    position: relative;
                     font-weight: 600;
                     width: 100%;
                     margin: auto;
@@ -181,7 +209,24 @@ main{
                     border: 1px solid #f38275be;
                     color: white;
                     border-radius: 5px;
-                    
+                    .text{
+                        font-size: 18px;
+                        letter-spacing: 6px; 
+                        // display: none;
+                    }
+                    .fa-shopping-cart{
+                        font-size: 24px;
+                        font-weight: 600;
+                        display: none;
+                    }
+                    &:hover .text{
+                        display: none;
+                    }
+
+                    &:hover .fa-shopping-cart{
+                        display: block;
+                        transition: 0.8s;
+                    }
                 }
             }
             .contents{
@@ -330,13 +375,15 @@ main{
   }
   
   /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
+  .tablinks img:hover {
+    opacity: 0.8;
+    border-radius: 15px;
+}
   
   /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #ccc;
+  .tablinks.active img{
+    opacity: 0.7;
+    border-radius: 10px;
   }
   
   /* Style the tab content */
