@@ -14,6 +14,8 @@ main{
     // background-color: brown;
     .product_details{
         display: flex;
+        padding-bottom: 20px;
+        border-bottom: 1px solid gainsboro;
         .product_pics{
             width: calc(60% - 40px);
             margin-right: 40px;
@@ -38,8 +40,8 @@ main{
                 .small_pic{
                     img{
                         display: block;
-                        width: 70px;
-                        height: 70px;
+                        width: 120px;
+                        height: 120px;
                     }
                 }
             }
@@ -61,8 +63,12 @@ main{
                 }
                 .article{
                     // line-height: 28px;
+                    // line-height: 34px;
                     display: flex;
+                    padding-right: 80px;
+                    position: relative;
                     .pic{
+                        height: max-content;
                         img{
                             width: 28px;
                             height: 28px;
@@ -72,17 +78,50 @@ main{
                     .small_text{
                         margin-left: 8px;
                         font-size: 18px;
-                        height: 37px;
-                        line-height: 37px;
+                        height: 28px;
+                        line-height: 28px;
                         letter-spacing: 1.5px;
                     }
+                    .mylove{
+                        font-size: 16px;
+                        position: absolute;
+                        right: 0px;
+                        padding: 3px 8px;
+                        background-color: #f38275;
+                        border: 1px solid #f38275be;
+                        color: #f1f1f1;
+                        font-weight: 600;
+                        letter-spacing: 1.5px;
+
+                    }
+                }
+                .colors{
+                    display: flex;
+                    .color_title{
+                        margin-right: 20px;
+                        font-size: 20px;
+                        letter-spacing: 1.5px;
+                    }
+                    .all_color{
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 320px;
+                        .color{
+                            width: 25px;
+                            height: 25px;
+                            margin-right: 10px;
+                            margin-bottom: 10px;
+
+                        }
+                    }
+                    
                 }
                 .price{
                     display: flex;
                     .costs{
                         .cost{
                             color: rgb(180, 14, 14);
-                            font-size: 18px;
+                            font-size: 24px;
                         }
                         .number{
                             font-size: 18px;
@@ -90,21 +129,43 @@ main{
                         
                     }
                     
-                    .allnumber{
-                        display: flex;
-                        font-size: 20px;
-                        height: 30px;
-                        line-height: 30px;
-                        .mumber_text{
-                            margin-right: 15px;
-                        }
-                        input{
-                            font-size: 20px;
-                            width: 120px;
-                            height: 30px;
-                        }
-        
+                    
+                }
+                .allnumber{
+                    display: flex;
+                    font-size: 20px;
+                    height: 45px;
+                    line-height: 45px;
+                    // margin-left: 20px;
+                    // font-size: 20px;
+                    // height: 30px;
+                    // line-height: 30px;
+                    .mumber_text{
+                        margin-right: 15px;
                     }
+                    input{
+                        font-size: 20px;
+                        width: 120px;
+                        margin: 0px  20px;
+                        // height: 30px;
+                    }
+                    .numbers{
+                        text-align: center;
+                        font-size: 20px;
+                        width: 120px;
+                        margin: 0px  20px;
+                        border: 1px solid gainsboro;
+                    }
+                    .a{
+                        line-height: 23px;
+                        font-size: 20px;
+                        font-weight: 600;
+                        padding: 10px 15px;
+                        border: 1px solid gainsboro; 
+
+
+                    }
+    
                 }
                 
                 .bg{
@@ -131,6 +192,123 @@ main{
             }
         }
     }
+
+    .product_main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid gainsboro;
+        .all{
+            width: 76%;
+            margin: auto;
+            margin-top: 20px;
+            video{
+                width: 100%;
+            }
+            .pic{
+                width: 100%;
+                margin-bottom: 20px;
+                img{
+                    width: 100%;
+                }
+            }
+        }     
+    }
+    .product_detail{
+        margin-top: 30px;
+        .product_detail_btn{
+            display: flex;
+            font-size: 26px;
+            .btn{
+                padding: 8px 15px;
+                background-color: rgba(128, 128, 128, 0.356);
+                justify-content: space-between;
+                margin-right:30px ;
+                border-radius: 5px;
+                letter-spacing: 2px;
+            }       
+        }
+        .detail{
+            margin-top: 20px;
+            .detailcontent{
+                padding-left: 8px;
+                .describle{
+                    .title{
+                        font-size: 22px;
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                        margin: 10px 0px;
+
+                    }
+                    .content{
+                        font-size: 18px;
+                        letter-spacing: 1.5px;
+                        color: rgb(14, 14, 15);
+                        line-height: 32px;
+                    }
+                    
+                }
+            }
+            .product_specification{
+                font-size: 18px;
+                font-size: 18px;
+                letter-spacing: 1.5px;
+                color: rgb(14, 14, 15);
+                line-height: 36px;
+            }
+            .pay{
+                .title{
+                    font-size: 22px;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    margin: 10px 0px;
+                }
+                .content{
+                    padding-bottom: 20px;
+                    .titles{
+                        .smalltitle{
+                            display: flex;
+                            width: max-content;
+                            font-size: 18px;
+                            font-weight: 600;
+                            padding: 5px  12px;
+                            border-radius: 5px;
+                            background-color: rgba(128, 128, 128, 0.329);
+                            margin: 15px 0px;
+                            letter-spacing: 2px;
+                            .no{
+                                font-size:14px ;
+                                line-height: 28px;
+                                color: rgb(54, 54, 54);
+                            }
+                        }
+                        .text{
+                            font-size: 18px;
+                            letter-spacing: 1.5px;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+                a{
+                    color: black;
+                    font-size: 16px;
+                    letter-spacing: 2px;
+                    text-decoration: none;
+                    list-style: none;
+                    background-color: rgba(189, 186, 178, 0.432);
+                    padding: 8px 15px;
+                    border-radius: 5px;
+                }
+            }
+            // .shipping{
+            //     .content{
+            //         display: flex;
+
+            //     }
+            // }
+        }
+    }
     
 }
 
@@ -138,11 +316,7 @@ main{
 
 
 /* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-  }
+
   
   /* Style the buttons that are used to open the tab content */
   .tab .tablinks {
@@ -170,9 +344,16 @@ main{
 
     display: none;
     // padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+  
   }
+  .detailcontent {
+
+    display: none;
+    // padding: 6px 12px;
+  
+  }
+
+
 
 
 

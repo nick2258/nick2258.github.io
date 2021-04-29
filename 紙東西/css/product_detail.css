@@ -18,6 +18,8 @@ main .product_details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gainsboro;
 }
 
 main .product_details .product_pics {
@@ -55,8 +57,8 @@ main .product_details .product_pics .small_pics {
 
 main .product_details .product_pics .small_pics .small_pic img {
   display: block;
-  width: 70px;
-  height: 70px;
+  width: 120px;
+  height: 120px;
 }
 
 main .product_details .product_content {
@@ -84,6 +86,14 @@ main .product_details .product_content .top .article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 80px;
+  position: relative;
+}
+
+main .product_details .product_content .top .article .pic {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 main .product_details .product_content .top .article .pic img {
@@ -95,9 +105,49 @@ main .product_details .product_content .top .article .pic img {
 main .product_details .product_content .top .article .small_text {
   margin-left: 8px;
   font-size: 18px;
-  height: 37px;
-  line-height: 37px;
+  height: 28px;
+  line-height: 28px;
   letter-spacing: 1.5px;
+}
+
+main .product_details .product_content .top .article .mylove {
+  font-size: 16px;
+  position: absolute;
+  right: 0px;
+  padding: 3px 8px;
+  background-color: #f38275;
+  border: 1px solid #f38275be;
+  color: #f1f1f1;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+main .product_details .product_content .top .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .product_details .product_content .top .colors .color_title {
+  margin-right: 20px;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+
+main .product_details .product_content .top .colors .all_color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 320px;
+}
+
+main .product_details .product_content .top .colors .all_color .color {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 main .product_details .product_content .top .price {
@@ -108,30 +158,46 @@ main .product_details .product_content .top .price {
 
 main .product_details .product_content .top .price .costs .cost {
   color: #b40e0e;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 main .product_details .product_content .top .price .costs .number {
   font-size: 18px;
 }
 
-main .product_details .product_content .top .price .allnumber {
+main .product_details .product_content .top .allnumber {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 20px;
-  height: 30px;
-  line-height: 30px;
+  height: 45px;
+  line-height: 45px;
 }
 
-main .product_details .product_content .top .price .allnumber .mumber_text {
+main .product_details .product_content .top .allnumber .mumber_text {
   margin-right: 15px;
 }
 
-main .product_details .product_content .top .price .allnumber input {
+main .product_details .product_content .top .allnumber input {
   font-size: 20px;
   width: 120px;
-  height: 30px;
+  margin: 0px  20px;
+}
+
+main .product_details .product_content .top .allnumber .numbers {
+  text-align: center;
+  font-size: 20px;
+  width: 120px;
+  margin: 0px  20px;
+  border: 1px solid gainsboro;
+}
+
+main .product_details .product_content .top .allnumber .a {
+  line-height: 23px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 15px;
+  border: 1px solid gainsboro;
 }
 
 main .product_details .product_content .top .bg {
@@ -156,13 +222,143 @@ main .product_details .product_content .contents {
   line-height: 32px;
 }
 
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+main .product_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gainsboro;
 }
 
+main .product_main .all {
+  width: 76%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+main .product_main .all video {
+  width: 100%;
+}
+
+main .product_main .all .pic {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main .product_main .all .pic img {
+  width: 100%;
+}
+
+main .product_detail {
+  margin-top: 30px;
+}
+
+main .product_detail .product_detail_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 26px;
+}
+
+main .product_detail .product_detail_btn .btn {
+  padding: 8px 15px;
+  background-color: rgba(128, 128, 128, 0.356);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 30px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+}
+
+main .product_detail .detail {
+  margin-top: 20px;
+}
+
+main .product_detail .detail .detailcontent {
+  padding-left: 8px;
+}
+
+main .product_detail .detail .detailcontent .describle .title {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 10px 0px;
+}
+
+main .product_detail .detail .detailcontent .describle .content {
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: #0e0e0f;
+  line-height: 32px;
+}
+
+main .product_detail .detail .product_specification {
+  font-size: 18px;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: #0e0e0f;
+  line-height: 36px;
+}
+
+main .product_detail .detail .pay .title {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 10px 0px;
+}
+
+main .product_detail .detail .pay .content {
+  padding-bottom: 20px;
+}
+
+main .product_detail .detail .pay .content .titles .smalltitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px  12px;
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.329);
+  margin: 15px 0px;
+  letter-spacing: 2px;
+}
+
+main .product_detail .detail .pay .content .titles .smalltitle .no {
+  font-size: 14px;
+  line-height: 28px;
+  color: #363636;
+}
+
+main .product_detail .detail .pay .content .titles .text {
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+main .product_detail .detail .pay a {
+  color: black;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  list-style: none;
+  background-color: rgba(189, 186, 178, 0.432);
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* Style the tab */
 /* Style the buttons that are used to open the tab content */
 .tab .tablinks {
   background-color: inherit;
@@ -187,7 +383,9 @@ main .product_details .product_content .contents {
 /* Style the tab content */
 .tabcontent {
   display: none;
-  border: 1px solid #ccc;
-  border-top: none;
+}
+
+.detailcontent {
+  display: none;
 }
 /*# sourceMappingURL=product_detail.css.map */
