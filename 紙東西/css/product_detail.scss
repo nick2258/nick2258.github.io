@@ -135,13 +135,14 @@ main{
                     display: flex;
                     width: max-content;
                     .type_selector{
+                        font-weight: 600;
                         width: 400px;
                         text-align: center;
                         font-size: 16px;
                         padding: 8px  10px;
                         border: 1px solid gainsboro;
                         letter-spacing: 1.5px;
-                        color: rgb(59, 59, 59);
+                        color: rgb(94, 93, 93);
                         background-image: url(/img/lightpaperfibers.png);
 
                         // background-color: gray;

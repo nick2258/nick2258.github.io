@@ -163,13 +163,14 @@ main .product_details .product_content .top .types {
 }
 
 main .product_details .product_content .top .types .type_selector {
+  font-weight: 600;
   width: 400px;
   text-align: center;
   font-size: 16px;
   padding: 8px  10px;
   border: 1px solid gainsboro;
   letter-spacing: 1.5px;
-  color: #3b3b3b;
+  color: #5e5d5d;
   background-image: url(/img/lightpaperfibers.png);
 }
 
