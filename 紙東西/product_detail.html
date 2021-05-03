@@ -11,7 +11,7 @@
 <body>
     <main>
         <div class="now_page">
-            首頁 > 全部商品 > 文創紙品 > 2D便條紙 > 黑貓2D便條紙
+            首頁 > 全部商品 > 文創紙品 > 2D便條紙 > 貓貓2D便條紙
         </div>
         <div class="product_details">
             <div class="product_pics">
@@ -31,6 +31,14 @@
                     <div id="pic_04" class="tabcontent big_pic">
                         <img src="./img/16-9-1.jpg" alt="">
                     </div>
+
+                    <div id="pic_05" class="tabcontent big_pic">
+                        <img src="./img/16-9-3.jpg" alt="">
+
+                    </div>
+                    <div id="pic_06" class="tabcontent big_pic">
+                        <img src="./img/16-9-1.jpg" alt="">
+                    </div>
                   </div>
                   
             
@@ -44,7 +52,13 @@
                     <div class="tablinks small_pic" onclick="openCity(event, 'pic_03')">                         
                         <img src="./img/16-9-3.jpg" alt="">
                     </div>
-                    <div class="tablinks small_pic" onclick="openCity(event, 'pic_04')" id="defaultOpen">
+                    <div class="tablinks small_pic" onclick="openCity(event, 'pic_04')" >
+                        <img src="./img/16-9-1.jpg" alt="">
+                    </div>
+                    <div class="tablinks small_pic" onclick="openCity(event, 'pic_05')">                         
+                        <img src="./img/16-9-3.jpg" alt="">
+                    </div>
+                    <div class="tablinks small_pic" onclick="openCity(event, 'pic_06')" >
                         <img src="./img/16-9-1.jpg" alt="">
                     </div>
                   
@@ -52,7 +66,7 @@
             </div>
             <div class="product_content">
                 <div class="top">
-                    <div class="name text b">黑貓2D便條紙黑貓2D便條紙</div>
+                    <div class="name text b">貓貓2D便條紙貓貓2D便條紙</div>
 
                     <div class="article b">
                         <span class="pic">
@@ -60,43 +74,69 @@
                         </span>
                         <span class="small_text">Nick</span>
                         <div class="mylove  b">
-                            <div class="text">收藏商品</div>   
+                            <div class="text">商品收藏</div>   
                             <i class="fas fa-heart"></i>
                         </div>
 
                     </div>
 
-                    <div class="colors b">
-                        <div class="color_title">顏色</div>
-                        <div class="all_color">
-                            <div class="color" style="background-color: rgb(30, 210, 99);"></div>
-                            <div class="color" style="background-color: chocolate;"></div>
-                            <div class="color" style="background-color: rgb(30, 153, 210);"></div>
-                            <div class="color" style="background-color: rgb(69, 30, 210);"></div>
-                            <div class="color" style="background-color: rgb(168, 30, 210);"></div>
-                            <div class="color" style="background-color: rgb(210, 30, 30);"></div>
-                            <div class="color" style="background-color: rgb(30, 210, 99);"></div>
-                            <div class="color" style="background-color: chocolate;"></div>
-                            <div class="color" style="background-color: rgb(30, 153, 210);"></div>
-                            <div class="color" style="background-color: rgb(69, 30, 210);"></div>
-                            <div class="color" style="background-color: rgb(168, 30, 210);"></div>
-                            <div class="color" style="background-color: rgb(210, 30, 30);"></div>
-                        </div>
+                    <div class="types b">
+                        <select class="type_selector">
+                            <option>選擇您的商品款式</option>
+                            <option>黑貓</option>
+                            <option>白貓</option>
+                            <option>灰貓</option>
+                            <option>花貓</option>
+                            <option>豹紋貓</option>
+                            <option>三色貓</option>
+                        </select>
+                        
+
+
+                        <!-- <div class="type_title">款式</div>
+                        <div class="all_type">
+                            <div class="type" ></div>
+                            <div class="type" ></div>
+                            <div class="type" ></div>
+                            <div class="type" ></div>
+                            <div class="type" ></div>
+                            <div class="type" ></div>
+                        </div> -->
+                        
+                    </div>
+                    <div class="types b">
+                        <select class="type_selector">
+                            <option>選擇您的商品規格</option>
+                            <option>一組20張</option>
+                            <option>一組40張</option>
+                            <option>一組60張</option>
+                            <option>一組80張</option>
+                            <option>一組100張</option>
+                        </select>
+                        <!-- <div class="type_title">一個</div>
+                        <div class="all_type">
+                            <div class="type" >20張</div>
+                            <div class="type" >40張</div>
+                            <div class="type" >60張</div>
+                            <div class="type" >80張</div>
+                        </div> -->
                         
                     </div>
 
                     <div class="price b">
                         <div class="costs">
-                            <span class="cost">NT $ 90 </span>
-                            <span class="number">/1個</span>
-                            
+                            <div class="cost">NT $ 90 </div>
+                            <div class="number">/1個</div>
+                            <div  class="tnumber">剩餘數量  0  個</div>                            
                         </div>
                     </div>
+
+                    
 
                     <div class="allnumber b">
                         <div class="mumber_text">購買數量</div>
                         <div class=" a remove">-</div>
-                        <!-- <input class="numbers" type="" min="1" value="1"> -->
+
                         <div class="numbers">1</div>
                         <div class=" a add">+</div>
                     </div>
@@ -107,14 +147,18 @@
                             放入購物車
                         </div>
                         <i class="fas fa-shopping-cart"></i>
-                        
                     </div>
+
+                    <div class="small_text" >本商品為「接單訂製」。付款後，從開始製作到寄出商品為 3 個工作天。（不包含假日）</div>
+
+                    <!-- <div  class="sale_out b">熱銷補貨中</div> -->
+
 
                 </div>
                 
 
                 <div class="contents">
-                    商品簡述商品簡述商品簡述商品簡述商品簡述商品簡述商品簡述商品簡述商品簡述商品簡述商品簡述商品簡述商品簡述商品簡述商品簡述
+                    這是一款超級可愛的貓貓2D便條紙，當使用完便條紙後，會有隻可愛貓貓出現，現在就馬上購買，把可愛貓貓帶回家吧
                 </div>
 
             </div>
@@ -209,18 +253,18 @@
                                 
                             </div>
 
-                            <div class="titles">
+                            <!-- <div class="titles">
                                 <div class="smalltitle">超商貨到付款
                                     <div class="no">(不含客製化商品)</div> 
                                 </div>
                                 <div class="text">可於統一、全家、萊爾富或OK超商取貨繳款</div>
-                            </div>
+                            </div> -->
 
                             <div class="titles">
-                                <div class="smalltitle">超商代碼繳費
-                                    <div class="no">(不含客製化商品)</div> </div>
+                                <div class="smalltitle">超商代碼繳費</div>
                                 <div class="text">可至統一、全家、萊爾富或OK超商取貨繳款</div>
                             </div>
+
                         <a href="">詳細商品付款資訊 >></a>    
                         </div>
                         
@@ -245,12 +289,12 @@
                                 <div class="cost text">運費： NT $ 60</div>
                             </div>
 
-                            <div class="titles">
+                            <!-- <div class="titles">
                                 <div class="smalltitle">紙東西門市取貨 </div>
                                 <div class="text">營業時間： 週一~週五 9:00AM~6:00PM</div>
                                 <div class="text">台中門市：台中市西屯區大河街8號</div>
                                 <div class="cost text">運費：無</div>
-                            </div>
+                            </div> -->
 
                           
                         <a href="">詳細商品配送資訊 >></a>    
@@ -390,6 +434,18 @@
             evt.currentTarget.className += " active";
         }
         document.getElementById("Open").click();
+
+
+        var btnlinks = document.querySelectorAll(".detaillinks")
+
+        btnlinks.forEach(btnlink => {
+            console.log(btnlink);
+            btnlink.addEventListener('click',color)
+        });
+
+        function color() {
+            document.getElementsByClassName("detaillinks").add('.active')
+        }
 
         // ----------------------------------------------------------------------
 

@@ -5,6 +5,12 @@
 body{
     margin: 0px;
     padding: 0px;
+    background-image: url(/img/lightpaperfibers.png);
+    // background-image: url(/img/background.png);
+    // background-image: url(/img/soft_wallpaper_@2X.png);
+    // background-image: url(/img/ricepaper2_@2X.png);
+
+
 }
 
 main{
@@ -24,6 +30,7 @@ main{
         display: flex;
         padding-bottom: 20px;
         border-bottom: 1px solid gainsboro;
+
         .product_pics{
             width: calc(60% - 40px);
             margin-right: 40px;
@@ -34,7 +41,7 @@ main{
                     // background-color: blue;
                     img{
                         width: 100%;
-                        height: 350px;
+                        min-height: 420px;
                         height: auto;
                         display: block;
                     }
@@ -48,15 +55,15 @@ main{
                 .small_pic{
                     img{
                         display: block;
-                        width: 120px;
-                        height: 120px;
+                        width: 85px;
+                        height: 85px;
                     }
                 }
             }
         }
         .product_content{
             width: 40%;
-            padding-top: 10px;
+            // padding-top: 10px;
             .top{
                 padding-bottom: 20px;
                 border-bottom: 1px solid rgba(0, 0, 0, 0.281);
@@ -99,6 +106,7 @@ main{
                         color: #f1f1f1;
                         font-weight: 600;
                         text-align: center;
+                        cursor: pointer;
                         .text{
                             font-size: 16px;
                             // display: none;
@@ -123,39 +131,67 @@ main{
 
                     }
                 }
-                .colors{
+                .types{
                     display: flex;
-                    .color_title{
+                    width: max-content;
+                    .type_selector{
+                        width: 400px;
+                        text-align: center;
+                        font-size: 16px;
+                        padding: 8px  10px;
+                        border: 1px solid gainsboro;
+                        letter-spacing: 1.5px;
+                        color: rgb(59, 59, 59);
+                        // background-color: gray;
+                    }
+                    .type_title{
                         margin-right: 20px;
                         font-size: 20px;
                         letter-spacing: 1.5px;
                     }
-                    .all_color{
+                    .all_type{
+                        // width: max-content;
                         display: flex;
                         flex-wrap: wrap;
-                        width: 320px;
-                        .color{
-                            width: 25px;
-                            height: 25px;
+                        width: 340px;
+                        .type{
+                            font-size: 16px;
+                            padding: 5px 8px ;
                             margin-right: 10px;
                             margin-bottom: 10px;
+                            border: 1px solid gainsboro;
+                            cursor: pointer;
+                            letter-spacing: 1.5px;
                             &:hover{
-                                opacity: 0.7;
+                                // opacity: 0.7;
                             }
                         }
+                        
 
                     }
                     
                 }
                 .price{
                     display: flex;
+                    position: relative;
                     .costs{
+                        display: flex;
                         .cost{
                             color: rgb(180, 14, 14);
                             font-size: 24px;
                         }
                         .number{
                             font-size: 18px;
+                            margin-left: 5px;
+                            letter-spacing: 1.5px;
+                        }
+                        .tnumber{
+                            letter-spacing: 1.5px;
+                            font-size: 16px;
+                            position: absolute;
+                            right: 5px; 
+                            line-height: 27px;
+                            
                         }
                         
                     }
@@ -183,7 +219,7 @@ main{
                     .numbers{
                         text-align: center;
                         font-size: 20px;
-                        width: 120px;
+                        width: 80px;
                         margin: 0px  20px;
                         border: 1px solid gainsboro;
                         transition: 0.5s;
@@ -194,6 +230,7 @@ main{
                         font-weight: 600;
                         padding: 10px 15px;
                         border: 1px solid gainsboro;
+                        cursor: pointer;
                         // margin-bottom: 20px;
                         &:active{
                             background-color:darkgrey;
@@ -217,7 +254,8 @@ main{
                     background-color: #f38275;
                     border: 1px solid #f38275be;
                     color: white;
-                    border-radius: 5px;
+                    border-radius: 3px;
+                    cursor: pointer;
                     .text{
                         font-size: 18px;
                         letter-spacing: 6px; 
@@ -236,13 +274,31 @@ main{
                         display: block;
                         transition: 0.8s;
                     }
+                   
+                }
+                .small_text{
+                    font-size: 14px;
+                    color: gray;
+                    letter-spacing: 1.5px;
+
+                }
+                .sale_out{
+                    // position: absolute;
+                    // right: 5px;
+                    text-align: center;
+                    padding: 10px 0px;
+                    background-color: darkred;
+                    color: whitesmoke;
+                    letter-spacing: 1.5px;
+                    
+
                 }
             }
             .contents{
-                margin-top: 20px;
-                font-size: 18px;
-                letter-spacing: 1.5px;
-                line-height: 32px;
+                margin-top: 15px;
+                font-size: 16px;
+                letter-spacing: 1px;
+                line-height: 28px;
                 padding: 0px 5px;
             }
         }
@@ -287,7 +343,13 @@ main{
                 justify-content: space-between;
                 margin-right:30px ;
                 border-radius: 5px;
-                letter-spacing: 2px;
+                letter-spacing: 2.5px;
+                font-weight: 600;
+                cursor: pointer;
+                background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+                &:hover{
+                    color:rgb(56, 55, 55) ;
+                }
             }       
         }
         .detail{
@@ -296,10 +358,15 @@ main{
                 padding-left: 8px;
                 .describle{
                     .title{
-                        font-size: 22px;
+                        font-size: 18px;
                         font-weight: 600;
                         letter-spacing: 2px;
                         margin: 10px 0px;
+                        padding: 5px  12px;
+                        border-radius: 5px;
+                        background-color: rgba(128, 128, 128, 0.329);
+                        width: max-content;
+                        background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 
                     }
                     .content{
@@ -319,12 +386,12 @@ main{
                 line-height: 36px;
             }
             .pay{
-                .title{
-                    font-size: 22px;
-                    font-weight: 600;
-                    letter-spacing: 2px;
-                    margin: 10px 0px;
-                }
+                // .title{
+                //     font-size: 22px;
+                //     font-weight: 600;
+                //     letter-spacing: 2px;
+                //     margin: 10px 0px;
+                // }
                 .content{
                     // padding-bottom: 20px;
                     height: max-content;
@@ -339,17 +406,16 @@ main{
                             background-color: rgba(128, 128, 128, 0.329);
                             margin: 15px 0px;
                             letter-spacing: 2px;
+                            background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+
                             .no{
                                 font-size:14px ;
                                 line-height: 28px;
                                 color: rgb(54, 54, 54);
                             }
+                            
                         }
-                        .text{
-                            font-size: 18px;
-                            letter-spacing: 1.5px;
-                            margin-bottom: 15px;
-                        }
+                        
                     }
                     a{
                         width: max-content;
@@ -363,6 +429,7 @@ main{
                         border-radius: 5px;
                         // margin-bottom: 15px;
                         display: block;
+                        margin-top: 15px;
                         
                        
                     }
@@ -392,8 +459,6 @@ main{
             padding: 0px 8px;
             .foryou_card{
                 width: calc(25% - 15px);
-                // height: 300px;
-                // background-color: yellowgreen;
                 margin-right: 20px;
                 margin-bottom: 20px;
                 &:nth-child(4){
@@ -403,6 +468,9 @@ main{
                     img{
                         width: 100%;
                         height: 150px;
+                        &:hover{
+                            opacity: 0.7;
+                        }
                     }
                 }
                 .p{
@@ -410,7 +478,6 @@ main{
                     letter-spacing: 1.5px;
                     font-size: 18px;
                     padding: 5px;
-
                 }
             }
         }
@@ -438,13 +505,13 @@ main{
   /* Change background color of buttons on hover */
   .tablinks img:hover {
     opacity: 0.8;
-    border-radius: 15px;
+    border-radius: 5px;
 }
   
   /* Create an active/current tablink class */
   .tablinks.active img{
     opacity: 0.7;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   
   /* Style the tab content */
@@ -453,6 +520,10 @@ main{
     display: none;
     // padding: 6px 12px;
   
+  }
+
+  .detaillinks,.active{
+    background-color: red;
   }
   .detailcontent {
 
