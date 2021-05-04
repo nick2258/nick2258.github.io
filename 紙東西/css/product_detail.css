@@ -20,7 +20,8 @@ main .now_page {
   letter-spacing: 2px;
   color: gray;
   margin-bottom: 20px;
-  padding-left: 8px;
+  padding: 0px 0px 12px 8px;
+  border-bottom: 1px  solid gainsboro;
 }
 
 main .product_details {

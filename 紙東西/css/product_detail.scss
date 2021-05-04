@@ -6,7 +6,8 @@ body{
     margin: 0px;
     padding: 0px;
     background-image: url(/img/lightpaperfibers.png);
-    // background-image: url(/img/background.png);
+    // background-image: url(https://coneri.jp/images/bg_pattern.jpg);
+    
     // background-image: url(/img/soft_wallpaper_@2X.png);
     // background-image: url(/img/ricepaper2_@2X.png);
 
@@ -24,7 +25,9 @@ main{
         // font-weight: 600;
         color: gray;
         margin-bottom: 20px;
-        padding-left: 8px;
+        padding: 0px 0px 12px 8px;
+        // border-top: 1px solid gainsboro;
+        border-bottom: 1px  solid gainsboro;
     }
     .product_details{
         display: flex;
