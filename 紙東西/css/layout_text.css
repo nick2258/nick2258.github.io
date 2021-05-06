@@ -7,6 +7,7 @@ body {
   padding: 0px;
   margin: 0px;
   background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
+  background-image: url(/img/lightpaperfibers.png);
   font-family: Noto Serif TC;
 }
 
@@ -24,6 +25,7 @@ nav {
   background-color: #e7f2fa;
   z-index: 60;
   padding: 5px;
+  padding-bottom: 0px;
 }
 
 nav .content {
@@ -186,7 +188,7 @@ nav .content .right .right_item span img {
 }
 
 .banner {
-  margin: auto;
+  margin: 30px auto;
 }
 
 .banner img {
@@ -200,6 +202,7 @@ nav .content .right .right_item span img {
 
 .allpart3 {
   padding: 8px  0px;
+  padding-top: 0px;
   position: -webkit-sticky;
   position: sticky;
   top: 55px;
@@ -728,8 +731,6 @@ nav .content .right .right_item span img {
 }
 
 .sale .content .four .pic .heart {
-  width: 40px;
-  height: 40px;
   background-color: #6b6760;
   border-radius: 50%;
   text-align: center;
@@ -770,7 +771,7 @@ nav .content .right .right_item span img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
 }
 
 .sale .content .four1 .product_card {
@@ -787,6 +788,18 @@ nav .content .right .right_item span img {
   width: 320px;
   height: 230px;
   display: block;
+}
+
+.sale .content .four1 .product_card .pic .heart_text {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  background-color: lightcoral;
+  color: white;
+  padding: 3px  10px;
+  border-radius: 2px;
 }
 
 .sale .content .four1 .product_card .pic .heart {
@@ -822,6 +835,7 @@ nav .content .right .right_item span img {
 
 .sale .content .four1 .product_card .text {
   padding: 10px;
+  position: relative;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -829,6 +843,8 @@ nav .content .right .right_item span img {
   font-size: 18px;
   color: #080808;
   z-index: 5;
+  padding-bottom: 25px;
+  letter-spacing: 1.5px;
 }
 
 .sale .content .four1 .product_card .text .article {
@@ -839,6 +855,9 @@ nav .content .right .right_item span img {
   display: -ms-flexbox;
   display: flex;
   padding: 8px 0px;
+  padding-right: 30px;
+  width: 100%;
+  height: auto;
 }
 
 .sale .content .four1 .product_card .text .article .pic {
@@ -853,14 +872,50 @@ nav .content .right .right_item span img {
   border-radius: 50%;
 }
 
+.sale .content .four1 .product_card .text .article .pic .article_name {
+  width: calc(100% - 230px);
+  height: auto;
+}
+
 .sale .content .four1 .product_card .text .cost {
-  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  font-size: 18px;
   color: #003354;
+  font-weight: 600;
 }
 
 .sale .content .four1 .product_card .text .name {
   font-weight: 600;
   letter-spacing: 2px;
+  padding-right: 100px;
+}
+
+.sale .content .four1 .product_card .text .buy {
+  font-size: 14px;
+  padding: 5px  10px;
+  background-color: #818080;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  border-radius: 3px;
+}
+
+.sale .content .four1 .product_card .text .heart {
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  font-size: 24px;
+  color: #cfb6b6;
+}
+
+.sale .content .four1 .product_card .text .heart:active {
+  color: darkred;
 }
 
 .sale .content .middle {

@@ -61,6 +61,13 @@
                     <div class="tablinks small_pic" onclick="openCity(event, 'pic_06')" >
                         <img src="./img/16-9-1.jpg" alt="">
                     </div>
+
+                    <div class="tablinks small_pic" onclick="openCity(event, 'pic_05')">                         
+                        <img src="./img/16-9-3.jpg" alt="">
+                    </div>
+                    <div class="tablinks small_pic" onclick="openCity(event, 'pic_06')" >
+                        <img src="./img/16-9-1.jpg" alt="">
+                    </div>
                   
                   </div>
             </div>
@@ -88,47 +95,31 @@
                             <option>灰貓</option>
                             <option>花貓</option>
                             <option>豹紋貓</option>
-                            <option>讓我來試試看這可以打幾個字不會讓這行文字爆掉讓我</option>
+                            
                         </select>
                         
-
-
-                        <!-- <div class="type_title">款式</div>
-                        <div class="all_type">
-                            <div class="type" ></div>
-                            <div class="type" ></div>
-                            <div class="type" ></div>
-                            <div class="type" ></div>
-                            <div class="type" ></div>
-                            <div class="type" ></div>
-                        </div> -->
-                        
                     </div>
-                    <div class="types b">
+
+                    <div class="types b" >
                         <select class="type_selector" style="outline: none">
-                            <!-- 什麼內容value就帶什麼給後端 標題給空值 -->
-                            <option>選擇您的商品規格</option>
-                            <option value="一組20張">一組20張</option>
-                            <option value="一組40張">一組40張</option>
-                            <option value="一組60張">一組60張</option>
-                            <option value="一組80張">一組80張</option>
-                            <option value="一組100張">一組100張</option>
+                              <!-- 什麼內容value就帶什麼給後端 標題給空值 -->
+                              <option>選擇您的商品規格</option>
+                              <option value="一組20張">一組20張</option>
+                              <option value="一組40張">一組40張</option>
+                              <option value="一組60張">一組60張</option>
+                              <option value="一組80張">一組80張</option>
+                              <option value="一組100張">一組100張</option>
                         </select>
-                        <!-- <div class="type_title">一個</div>
-                        <div class="all_type">
-                            <div class="type" >20張</div>
-                            <div class="type" >40張</div>
-                            <div class="type" >60張</div>
-                            <div class="type" >80張</div>
-                        </div> -->
                         
                     </div>
+
+                  
 
                     <div class="price b">
                         <div class="costs">
                             <div class="cost">NT $ 90 </div>
                             <div class="number">/1個</div>
-                            <div  class="tnumber">剩餘數量  0  個</div>                            
+                                                  
                         </div>
                     </div>
 
@@ -138,10 +129,13 @@
                         <div class="mumber_text">購買數量</div>
                         <div class=" a remove">-</div>
 
-                        <div class="numbers">1</div>
+                        <!-- <div class="numbers">1</div> -->
+                        <input  id="Str" class="numbers" type="text" min="1"  value="1"  oninput="if(value>50)value=50"   / onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"  
+                        onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}"  onchange="ShowStr(this.id)" >
                         <div class=" a add">+</div>
+                        <div  class="tnumber">庫存數量  50  個</div>                            
                     </div>
-                    
+                    <div class="show " id="show">已達數量上限</div>
 
                     <div class="shoppingcart bg b">
                         <div class="text">
@@ -159,7 +153,24 @@
                 
 
                 <div class="contents">
-                    這是一款超級可愛的貓貓2D便條紙，當使用完便條紙後，會有隻可愛貓貓出現，現在就馬上購買，把可愛貓貓帶回家吧
+                    <div class="title">
+                        商品介紹
+                    </div>
+                    <div class="text"> 這是一款超級可愛的貓貓2D便條紙，當使用完便條紙後，會有隻可愛貓貓出現，現在就馬上購買，把可愛貓貓帶回家吧 這是一款超級可愛的貓貓2D便條紙，當使用完便條紙後，會有隻可愛貓貓出現，現在就馬上購買，把可愛貓貓帶回家吧 這是一款超級可愛的貓貓2D便條紙，當使用完便條紙後，會有隻可愛貓貓出現，現在就馬上購買，把可愛貓貓帶回家吧</div>
+
+                    <div class="title">
+                        商品資訊
+                    </div>
+                    <div class="text"> 
+                        <ul>
+                            <li>這是一款超級可愛的貓貓2D便條紙，當使用完便條紙後，會有隻可愛貓貓出現</li>
+                            <li>這是一款超級可愛的貓貓2D便條紙，當使用完便條紙後，會有隻可愛貓貓出現</li>
+                            <li>這是一款超級可愛的貓貓2D便條紙，當使用完便條紙後，會有隻可愛貓貓出現</li>
+                            <li>這是一款超級可愛的貓貓2D便條紙，當使用完便條紙後，會有隻可愛貓貓出現</li>
+
+                        </ul>
+                    </div>
+                   
                 </div>
 
             </div>
@@ -169,7 +180,7 @@
             <div class="all">
                 <video class="pic b" autoplay="true" controls="true" src="./img/3D立體人像製作.mp4"></video>
                 <video class="pic b" autoplay="true" controls="true" src="http://www.papergoods.com.tw/ds/ProductDefine/001-%E6%96%87%E5%89%B5%E7%B4%99%E5%93%81/001-2D%E4%BE%BF%E6%A2%9D%E7%B4%99/001-P01ABCA/Film.mp4"></video>
-                <div class="pic ">
+                <!-- <div class="pic ">
                     <img src="http://www.papergoods.com.tw/ds/ProductDefine/001-%E6%96%87%E5%89%B5%E7%B4%99%E5%93%81/001-2D%E4%BE%BF%E6%A2%9D%E7%B4%99/001-P01ABCA/M.jpg" alt="">
                 </div>
 
@@ -179,17 +190,17 @@
 
                 <div class="pic">
                     <img src="http://www.papergoods.com.tw/ds/ProductDefine/001-%E6%96%87%E5%89%B5%E7%B4%99%E5%93%81/001-2D%E4%BE%BF%E6%A2%9D%E7%B4%99/001-P01ABCA/3.jpg" alt="">
-                </div>
+                </div> -->
             </div>
             
         </div>
 
         <div class="product_detail">
             <div class="detail product_detail_btn">
-                <div class="detaillinks btn" onclick="productdetail(event, 'product_detail_01')" id="Open">
+                <!-- <div class="detaillinks btn" onclick="productdetail(event, 'product_detail_01')" id="Open">
                     商品資訊
-                </div>
-                <div class="detaillinks btn" onclick="productdetail(event, 'product_detail_02')">
+                </div> -->
+                <div class="detaillinks btn" onclick="productdetail(event, 'product_detail_02')" id="Open">
                 商品規格
                 </div>
                 <div class="detaillinks btn" onclick="productdetail(event, 'product_detail_03')">                         
@@ -201,7 +212,7 @@
             </div>
 
             <div class="detail">
-                <div id="product_detail_01" class="detailcontent detail">
+                <!-- <div id="product_detail_01" class="detailcontent detail">
                     <div class="describle">
                         <div class="title">商品描述</div>
                         <div class="content">貓奴們，讓貓星人來幫你們傳達訊息吧！喵～
@@ -214,7 +225,7 @@
                             商品圖檔顏色因電腦螢幕設定差異會略有不同，以實際商品顏色為準。
                         </div>
                     </div>
-                </div>
+                </div> -->
                 
                 <div id="product_detail_02" class="detailcontent detail">
                     <div class="product_specification">
@@ -457,33 +468,64 @@
 
     // STEP 2: 透過 querySelector 選擇到 HTML 中的「數字」元素
     const numberElement = document.querySelector(".numbers");
-    console.log(numberElement);
+    const currentNumber = Number(numberElement.value);
+     var show = document.getElementById('show')
+    
 
+    
     // STEP 3: 監聽 click 事件，並執行對應的行為
     upElement.addEventListener("click", e => {
         // STEP 4: 取得當前網頁上的數字
-        const currentNumber = Number(numberElement.textContent);
+        const currentNumber = Number(numberElement.value);
 
-        // STEP 5: 將數字增加後帶回網頁上
-        numberElement.textContent = currentNumber + 1;
+        // 取得數字變化
+
+        // STEP 5: 將數字增加後帶回網頁上 textContent
+        numberElement.value = currentNumber + 1;
+        if ( numberElement.value > 50  ) {
+        numberElement.value = currentNumber ;
+        
+    }
+    
     });
 
     downElement.addEventListener("click", e => {
-    const currentNumber = Number(numberElement.textContent);
-    numberElement.textContent = currentNumber - 1;
-    if ( numberElement.textContent == 0  ) {
-        numberElement.textContent = currentNumber ;
+    const currentNumber = Number(numberElement.value);
+    numberElement.value = currentNumber - 1;
+    if ( numberElement.value == 0  ) {
+        numberElement.value = currentNumber ;
     }
     });
 
+    function ShowStr(x){
+　var Str=document.getElementById(x).value;
+// 　alert(Str);
+        if (Str == 50 || Str > 50) {
+            Str == 50
+            show.classList.add("active"); 
+        } else{
+                show.classList.remove("active"); 
 
+        }
+        if (Str == '-') {
+            alert(請輸入正確數值)
+        }
+}
 
+   
+    // var showvalue = numberElement.value
+    // function show() {
+    //   var show = document.getElementById('show')
+      
+    //   console.log(show);
+    //   console.log(showvalue);
+    //     if (showvalue == 50) {
+    //         show.classList.add("active");
+    //     }
+    // }
 
-
-
-
-
-
+    // show();
+    
       </script>
     
 </body>

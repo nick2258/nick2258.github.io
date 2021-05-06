@@ -24,7 +24,7 @@ main{
         letter-spacing: 2px;
         // font-weight: 600;
         color: gray;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
         padding: 0px 0px 12px 8px;
         // border-top: 1px solid gainsboro;
         border-bottom: 1px  solid gainsboro;
@@ -38,19 +38,26 @@ main{
         .product_pics{
             // width: calc(60% - 40px);
             // margin-right: 40px;
-            width: 95%;
+            // width: 95%;
+            padding: 30px  8px;
             margin: auto;
             display: flex;
+            padding-bottom: 30px;
+            border-bottom: 1px solid gainsboro;
             .big_pics{
                 width: 100%;
+                height:max-content;
+                
                 margin-right: 20px;
                 .big_pic{
                     width: 100%;
                     // background-color: blue;
                     img{
                         width: 100%;
-                        min-height: 420px;
-                        height: auto;
+                        // min-height: 420px;
+                        height: 540px;
+                        height: 580px;
+                        // height: auto;
                         display: block;
                     }
                 }
@@ -62,24 +69,32 @@ main{
                 width: 60px;
                 .small_pic{
                     margin-bottom: 20px;
+                    &:nth-last-child(1){
+                        margin-bottom: 0px;
+                    }
                     img{
                         display: block;
-                        width: 60px;
-                        height: 60px;
+
+                        width: 50px;
+                        height: 50px;
+                        width: 55px;
+                        height: 55px;
                     }
                 }
             }
         }
         .product_content{
-            width: 95%;
+            // width: 95%;
+            padding: 0px  8px;
             margin: auto;
-            margin-top: 30px;
+            padding-top: 30px;
             display: flex;
             // padding-top: 10px;
             .top{
-                width: 42%;
+                width:calc(50% - 15px);
+                margin-right: 30px;
                 padding-bottom: 20px;
-                border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+                // border-bottom: 1px solid rgba(0, 0, 0, 0.281);
                 .b{
                     margin-bottom: 15px;
                 }
@@ -146,10 +161,12 @@ main{
                 }
                 .types{
                     display: flex;
-                    width: max-content;
+                    // width: max-content;
+                    width: 100%;
                     .type_selector{
+                        width: 100%;
                         font-weight: 600;
-                        width: 400px;
+                        // width: 400px;
                         text-align: center;
                         font-size: 16px;
                         padding: 8px  10px;
@@ -219,6 +236,7 @@ main{
                     font-size: 20px;
                     height: 45px;
                     line-height: 45px;
+                    position: relative;
                     // margin-left: 20px;
                     // font-size: 20px;
                     // height: 30px;
@@ -240,6 +258,16 @@ main{
                         border: 1px solid gainsboro;
                         transition: 0.5s;
                     }
+                    .tnumber{
+                        letter-spacing: 1.5px;
+                        font-size: 16px;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 5px; 
+                        line-height: 27px;
+                        
+                    }
                     .a{
                         line-height: 23px;
                         font-size: 20px;
@@ -258,12 +286,17 @@ main{
                     }
     
                 }
-                
+                .show{
+                    display: none;
+                }
+                .show.active{
+                    display: block;
+                }
                 .shoppingcart{
                     position: relative;
                     font-weight: 600;
                     width: 100%;
-                    width: 400px;
+                    // width: 400px;
                     // margin: auto;
                     margin-bottom: 15px;
                     text-align: center;
@@ -313,13 +346,36 @@ main{
                 }
             }
             .contents{
-                width: calc(58% - 30px);
-                margin-left: 30px;
-                margin-top: 15px;
-                font-size: 16px;
-                letter-spacing: 1px;
-                line-height: 28px;
+                width:calc(50% - 15px);
+                // margin-left: 30px;
+                // margin-top: 15px;
+                
                 // padding: 0px 5px;
+                .title{
+                    font-size: 20px;
+                    width: max-content;
+                    padding: 5px 12px;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    border-radius: 3px;
+                    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+                    // margin-bottom: 10px;
+                }
+                .text{
+                    font-size: 16px;
+                    letter-spacing: 1.5px;
+                    line-height: 30px;
+                    padding: 10px  0px;
+                    padding-left: 12px;
+                    ul{
+                        margin: 0px;
+                        padding: 0px;
+                        padding-left: 12px;
+                        li{
+                            padding: 0px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -328,17 +384,21 @@ main{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-bottom: 20px;
+        padding: 30px 0px;
         border-bottom: 1px solid gainsboro;
         .all{
             width: 76%;
             margin: auto;
-            margin-top: 20px;
+            // margin-top: 20px;
             video{
                 width: 100%;
             }
             .pic{
                 width: 100%;
+                margin-bottom: 20px;
+                &:nth-last-child(1){
+                    margin-bottom: 0px;
+                }
                 
                 img{
                     width: 100%;
@@ -346,7 +406,7 @@ main{
                 }
             }
             .b{
-                margin-bottom: 20px;
+                
             }
         }     
     }
@@ -526,12 +586,15 @@ main{
   .tablinks img:hover {
     opacity: 0.8;
     border-radius: 2px;
+    transition: .8s;
 }
   
   /* Create an active/current tablink class */
   .tablinks.active img{
     opacity: 0.7;
     border-radius: 2px;
+    transition: .8s;
+
   }
   
   /* Style the tab content */
@@ -542,9 +605,9 @@ main{
   
   }
 
-  .detaillinks,.active{
-    background-color: red;
-  }
+//   .detaillinks,.active{
+//     background-color: red;
+//   }
   .detailcontent {
 
     display: none;

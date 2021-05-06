@@ -19,7 +19,6 @@ main .now_page {
   font-size: 15px;
   letter-spacing: 2px;
   color: gray;
-  margin-bottom: 20px;
   padding: 0px 0px 12px 8px;
   border-bottom: 1px  solid gainsboro;
 }
@@ -30,15 +29,20 @@ main .product_details {
 }
 
 main .product_details .product_pics {
-  width: 95%;
+  padding: 30px  8px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 30px;
+  border-bottom: 1px solid gainsboro;
 }
 
 main .product_details .product_pics .big_pics {
   width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   margin-right: 20px;
 }
 
@@ -48,8 +52,8 @@ main .product_details .product_pics .big_pics .big_pic {
 
 main .product_details .product_pics .big_pics .big_pic img {
   width: 100%;
-  min-height: 420px;
-  height: auto;
+  height: 540px;
+  height: 580px;
   display: block;
 }
 
@@ -64,25 +68,31 @@ main .product_details .product_pics .small_pics .small_pic {
   margin-bottom: 20px;
 }
 
+main .product_details .product_pics .small_pics .small_pic:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
 main .product_details .product_pics .small_pics .small_pic img {
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
+  width: 55px;
+  height: 55px;
 }
 
 main .product_details .product_content {
-  width: 95%;
+  padding: 0px  8px;
   margin: auto;
-  margin-top: 30px;
+  padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 main .product_details .product_content .top {
-  width: 42%;
+  width: calc(50% - 15px);
+  margin-right: 30px;
   padding-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.281);
 }
 
 main .product_details .product_content .top .b {
@@ -163,14 +173,12 @@ main .product_details .product_content .top .types {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 100%;
 }
 
 main .product_details .product_content .top .types .type_selector {
+  width: 100%;
   font-weight: 600;
-  width: 400px;
   text-align: center;
   font-size: 16px;
   padding: 8px  10px;
@@ -244,6 +252,7 @@ main .product_details .product_content .top .allnumber {
   font-size: 20px;
   height: 45px;
   line-height: 45px;
+  position: relative;
 }
 
 main .product_details .product_content .top .allnumber .mumber_text {
@@ -266,6 +275,17 @@ main .product_details .product_content .top .allnumber .numbers {
   transition: 0.5s;
 }
 
+main .product_details .product_content .top .allnumber .tnumber {
+  letter-spacing: 1.5px;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 5px;
+  line-height: 27px;
+}
+
 main .product_details .product_content .top .allnumber .a {
   line-height: 23px;
   font-size: 20px;
@@ -282,11 +302,18 @@ main .product_details .product_content .top .allnumber .a:active {
   transition: 0.1s;
 }
 
+main .product_details .product_content .top .show {
+  display: none;
+}
+
+main .product_details .product_content .top .show.active {
+  display: block;
+}
+
 main .product_details .product_content .top .shoppingcart {
   position: relative;
   font-weight: 600;
   width: 100%;
-  width: 400px;
   margin-bottom: 15px;
   text-align: center;
   padding: 10px 0px;
@@ -333,12 +360,38 @@ main .product_details .product_content .top .sale_out {
 }
 
 main .product_details .product_content .contents {
-  width: calc(58% - 30px);
-  margin-left: 30px;
-  margin-top: 15px;
+  width: calc(50% - 15px);
+}
+
+main .product_details .product_content .contents .title {
+  font-size: 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 5px 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#cfd9df), to(#e2ebf0));
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+main .product_details .product_content .contents .text {
   font-size: 16px;
-  letter-spacing: 1px;
-  line-height: 28px;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  padding: 10px  0px;
+  padding-left: 12px;
+}
+
+main .product_details .product_content .contents .text ul {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 12px;
+}
+
+main .product_details .product_content .contents .text ul li {
+  padding: 0px;
 }
 
 main .product_main {
@@ -352,14 +405,13 @@ main .product_main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 20px;
+  padding: 30px 0px;
   border-bottom: 1px solid gainsboro;
 }
 
 main .product_main .all {
   width: 76%;
   margin: auto;
-  margin-top: 20px;
 }
 
 main .product_main .all video {
@@ -368,15 +420,16 @@ main .product_main .all video {
 
 main .product_main .all .pic {
   width: 100%;
+  margin-bottom: 20px;
+}
+
+main .product_main .all .pic:nth-last-child(1) {
+  margin-bottom: 0px;
 }
 
 main .product_main .all .pic img {
   width: 100%;
   display: block;
-}
-
-main .product_main .all .b {
-  margin-bottom: 20px;
 }
 
 main .product_detail {
@@ -556,21 +609,21 @@ main .foryou .content .foryou_card .p {
 .tablinks img:hover {
   opacity: 0.8;
   border-radius: 2px;
+  -webkit-transition: .8s;
+  transition: .8s;
 }
 
 /* Create an active/current tablink class */
 .tablinks.active img {
   opacity: 0.7;
   border-radius: 2px;
+  -webkit-transition: .8s;
+  transition: .8s;
 }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
-}
-
-.detaillinks, .active {
-  background-color: red;
 }
 
 .detailcontent {
