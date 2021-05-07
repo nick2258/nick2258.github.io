@@ -201,8 +201,7 @@ nav .content .right .right_item span img {
 }
 
 .allpart3 {
-  padding: 8px  0px;
-  padding-top: 0px;
+  padding: 5px  0px;
   position: -webkit-sticky;
   position: sticky;
   top: 55px;
@@ -503,10 +502,11 @@ nav .content .right .right_item span img {
 }
 
 .news .content .new {
+  position: relative;
   border-radius: 30px;
   font-size: 20px;
   font-weight: 600;
-  letter-spacing: 3px;
+  letter-spacing: 2.5px;
   padding: 10px 20px;
 }
 
@@ -514,6 +514,17 @@ nav .content .right .right_item span img {
   background-color: rgba(128, 128, 128, 0.445);
   background-image: -webkit-gradient(linear, left bottom, left top, from(#cfd9df), to(#e2ebf0));
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.news .content .new .date {
+  position: absolute;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: #003354;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 15px;
 }
 
 .news1 {
@@ -673,7 +684,7 @@ nav .content .right .right_item span img {
 .sale .content .four .pic img {
   width: 235px;
   width: 320px;
-  height: 230px;
+  height: 200px;
   display: block;
 }
 
@@ -786,20 +797,20 @@ nav .content .right .right_item span img {
 .sale .content .four1 .product_card .pic img {
   width: 235px;
   width: 320px;
-  height: 230px;
+  height: 210px;
   display: block;
 }
 
 .sale .content .four1 .product_card .pic .heart_text {
   position: absolute;
-  top: 8px;
+  top: 10px;
   left: 8px;
   font-size: 14px;
   letter-spacing: 1.5px;
   background-color: lightcoral;
   color: white;
   padding: 3px  10px;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .sale .content .four1 .product_card .pic .heart {

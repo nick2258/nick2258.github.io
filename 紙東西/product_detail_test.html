@@ -135,7 +135,10 @@
                         <input  id="Str" class="numbers" type="text" min="1"  value="1"  oninput="if(value>50)value=50"   / onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"  
                         onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}"  onchange="ShowStr(this.id)" >
                         <div class=" a add">+</div>
-                        <div  class="tnumber">庫存數量  50  個</div>                            
+                        <div  class="tnumber">庫存數量 
+                            <div class="tnumber_detail" id="tnumber_detail"> 50 </div>
+                             
+                             個</div>                            
                     </div>
                     <div class="show " id="show">已達庫存數量數量上限</div>
                     <div class="enough">庫存充足</div>
@@ -510,7 +513,7 @@
     });
 
     function ShowStr(x){
-　var Str=document.getElementById(x).value;
+　var Str = document.getElementById(x).value;
 // 　alert(Str);
         if (Str == 50 || Str > 50) {
             Str == 50
@@ -518,9 +521,6 @@
         } else{
                 show.classList.remove("active"); 
 
-        }
-        if (Str == '-') {
-            alert(請輸入正確數值)
         }
 }
 
@@ -537,6 +537,28 @@
     // }
 
     // show();
+
+    // --------------------------------------------------------------------------
+
+    // const tnumber = document.getElementsByClassName('tnumber_detail')
+    // const enough = document.getElementsByClassName("enough")
+    // const some = document.getElementsByClassName("some")
+    // const lttle = document.getElementsByClassName("lttle")
+    // const tnumberdetail = tnumber.textContent;
+
+    
+    // console.log(enough);
+    // console.log(tnumberdetail);
+    // console.log(some);
+    // console.log(lttle);
+    // function showtext() {
+    //     if (tnumber.textContent > 80) {
+    //         enough.classList.add("active"); 
+    //     }if (tnumber.textContent > 40 || tnumber.textContent < 80) {
+    //         some.classList.add("active"); 
+
+    //     }
+    // }
 
         
     

@@ -28,7 +28,7 @@ main{
             }
             .type_selector{
                 font-size: 14px;
-                width: 150px;
+                width: 120px;
                 padding:0px  8px;
                 letter-spacing: 1.5px;
                 border: gainsboro 1px solid;
@@ -70,6 +70,7 @@ main{
                 .date_type{
                     display: flex;
                     line-height: 19px;
+                    position: relative;
                     .b{
                         font-size: 14px;
                         color: gray;
@@ -79,6 +80,23 @@ main{
                     }
                     .date{
                         border-right: 1px solid gainsboro;
+                    }
+                    .video{
+                        font-weight: 600;
+                        font-size: 14px;
+                        // color:rgb(44, 44, 100);
+                        color: gainsboro;
+                        letter-spacing: 2px;
+                        position: absolute;
+                        right: 8px;
+                        padding: 2px 5px ;
+                        border-radius: 1px;
+                        background-color: rgb(167, 30, 30);
+                        background-color: rgb(96, 121, 131);
+                        top: 50%;
+                        transform: translateY(-50%);
+
+
                     }
                 }
                 .text{

@@ -37,7 +37,7 @@ main .all_select .type .type_title {
 
 main .all_select .type .type_selector {
   font-size: 14px;
-  width: 150px;
+  width: 120px;
   padding: 0px  8px;
   letter-spacing: 1.5px;
   border: gainsboro 1px solid;
@@ -93,6 +93,7 @@ main .cards .news_card .content .date_type {
   display: -ms-flexbox;
   display: flex;
   line-height: 19px;
+  position: relative;
 }
 
 main .cards .news_card .content .date_type .b {
@@ -105,6 +106,22 @@ main .cards .news_card .content .date_type .b {
 
 main .cards .news_card .content .date_type .date {
   border-right: 1px solid gainsboro;
+}
+
+main .cards .news_card .content .date_type .video {
+  font-weight: 600;
+  font-size: 14px;
+  color: gainsboro;
+  letter-spacing: 2px;
+  position: absolute;
+  right: 8px;
+  padding: 2px 5px;
+  border-radius: 1px;
+  background-color: #a71e1e;
+  background-color: #607983;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 main .cards .news_card .content .text {

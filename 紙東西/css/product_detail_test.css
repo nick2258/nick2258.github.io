@@ -285,6 +285,13 @@ main .product_details .product_content .top .allnumber .tnumber {
           transform: translateY(-50%);
   right: 5px;
   line-height: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .product_details .product_content .top .allnumber .tnumber .tnumber_detail {
+  padding: 0px  5px;
 }
 
 main .product_details .product_content .top .allnumber .a {
