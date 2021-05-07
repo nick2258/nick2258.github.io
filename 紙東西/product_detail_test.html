@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/product_detail_test.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 </head>
 <body>
     <main>
@@ -135,7 +136,10 @@
                         <div class=" a add">+</div>
                         <div  class="tnumber">庫存數量  50  個</div>                            
                     </div>
-                    <div class="show " id="show">已達數量上限</div>
+                    <div class="show " id="show">已達庫存數量數量上限</div>
+                    <div class="enough">庫存充足</div>
+                    <div class="some">庫存尚可</div>
+                    <div class="lttle">庫存較少</div>
 
                     <div class="shoppingcart bg b">
                         <div class="text">
@@ -325,7 +329,7 @@
         </div>
         <div class="foryou">
             <div class="title">系列商品</div>
-            <div class="content">
+            <div class="content foryou_content">
                 <div class="foryou_card">
                     <div class="pic">
                         <img src="./img/台北.jpg" alt="">
@@ -360,7 +364,7 @@
             </div>
 
             <div class="title">推薦商品</div>
-            <div class="content">
+            <div class="content foryou_content">
                 <div class="foryou_card">
                     <div class="pic">
                         <img src="./img/台中.jpg" alt="">
@@ -398,7 +402,8 @@
     </main>
       <!-- Tab content -->
      
-
+  
+ 
 
       <script>
           function openCity(evt, cityName) {
@@ -482,18 +487,24 @@
 
         // STEP 5: 將數字增加後帶回網頁上 textContent
         numberElement.value = currentNumber + 1;
-        if ( numberElement.value > 50  ) {
-        numberElement.value = currentNumber ;
-        
-    }
+        if ( numberElement.value > 50 ) {
+            numberElement.value = currentNumber ;
+            show.classList.add("active"); 
+        }else{
+                show.classList.remove("active"); 
+
+        }
     
     });
 
     downElement.addEventListener("click", e => {
     const currentNumber = Number(numberElement.value);
     numberElement.value = currentNumber - 1;
-    if ( numberElement.value == 0  ) {
+    if ( numberElement.value == 0 ) {
         numberElement.value = currentNumber ;
+    }if ( numberElement.value < 50) {
+         show.classList.remove("active"); 
+
     }
     });
 
@@ -525,8 +536,12 @@
     // }
 
     // show();
+
+        const
     
       </script>
+
+
     
 </body>
 </html>

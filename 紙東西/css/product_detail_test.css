@@ -310,6 +310,30 @@ main .product_details .product_content .top .show.active {
   display: block;
 }
 
+main .product_details .product_content .top .enough {
+  display: none;
+}
+
+main .product_details .product_content .top .enough.active {
+  display: block;
+}
+
+main .product_details .product_content .top .some {
+  display: none;
+}
+
+main .product_details .product_content .top .some.active {
+  display: block;
+}
+
+main .product_details .product_content .top .lttle {
+  display: none;
+}
+
+main .product_details .product_content .top .lttle.active {
+  display: block;
+}
+
 main .product_details .product_content .top .shoppingcart {
   position: relative;
   font-weight: 600;
@@ -560,33 +584,37 @@ main .foryou .title {
   padding-left: 8px;
 }
 
-main .foryou .content {
+main .foryou .foryou_content {
+  width: 1000px;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0px 8px;
 }
 
-main .foryou .content .foryou_card {
+main .foryou .foryou_content .foryou_card {
   width: calc(25% - 15px);
   margin-right: 20px;
   margin-bottom: 20px;
 }
 
-main .foryou .content .foryou_card:nth-child(4) {
+main .foryou .foryou_content .foryou_card:nth-child(4) {
   margin-right: 0px;
 }
 
-main .foryou .content .foryou_card .pic img {
+main .foryou .foryou_content .foryou_card .pic img {
   width: 100%;
   height: 150px;
 }
 
-main .foryou .content .foryou_card .pic img:hover {
+main .foryou .foryou_content .foryou_card .pic img:hover {
   opacity: 0.7;
 }
 
-main .foryou .content .foryou_card .p {
+main .foryou .foryou_content .foryou_card .p {
+  width: 100%;
+  width: 300px;
   text-align: center;
   letter-spacing: 1.5px;
   font-size: 18px;

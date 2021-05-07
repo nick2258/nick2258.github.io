@@ -292,6 +292,25 @@ main{
                 .show.active{
                     display: block;
                 }
+                .enough{
+                    display: none;
+                }
+                .enough.active{
+                    display: block;
+                }
+                .some{
+                    display: none;
+                }
+                .some.active{
+                    display: block;
+                }
+                .lttle{
+                    display: none;
+                }
+                .lttle.active{
+                    display: block;
+                }
+                
                 .shoppingcart{
                     position: relative;
                     font-weight: 600;
@@ -534,18 +553,23 @@ main{
             letter-spacing: 2px;
             padding-left: 8px;
         }
-        .content{
+        .foryou_content{
+            width: 1000px;
+            margin: auto;
             display: flex;
             padding: 0px 8px;
             .foryou_card{
                 width: calc(25% - 15px);
+                // max-width: 300px !important;
                 margin-right: 20px;
                 margin-bottom: 20px;
                 &:nth-child(4){
                     margin-right: 0px;
                 }
                 .pic{
+                    // width: 300px;
                     img{
+                        // width: 300px;
                         width: 100%;
                         height: 150px;
                         &:hover{
@@ -554,6 +578,8 @@ main{
                     }
                 }
                 .p{
+                    width: 100%;
+                    width: 300px;
                     text-align: center;
                     letter-spacing: 1.5px;
                     font-size: 18px;
