@@ -592,6 +592,157 @@ main .foryou .title {
   padding-left: 8px;
 }
 
+main .foryou .four1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 45px;
+}
+
+main .foryou .four1 .product_card {
+  width: calc(33.33% - 13.33px);
+  margin-right: 20px;
+}
+
+main .foryou .four1 .product_card .pic {
+  position: relative;
+}
+
+main .foryou .four1 .product_card .pic img {
+  width: 235px;
+  width: 320px;
+  height: 210px;
+  display: block;
+}
+
+main .foryou .four1 .product_card .pic .heart_text {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  background-color: lightcoral;
+  color: white;
+  padding: 3px  10px;
+  border-radius: 3px;
+}
+
+main .foryou .four1 .product_card .pic .heart {
+  width: 40px;
+  height: 40px;
+  background-color: #6b6760;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 22px;
+  color: #685656;
+  color: white;
+}
+
+main .foryou .four1 .product_card .pic .heart.active {
+  color: darkred;
+}
+
+main .foryou .four1 .product_card .pic:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+main .foryou .four1 .product_card .pic:hover .mask {
+  display: block;
+}
+
+main .foryou .four1 .product_card .pic:hover .heart {
+  color: honeydew;
+}
+
+main .foryou .four1 .product_card .text {
+  padding: 10px;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  width: 100%;
+  font-size: 18px;
+  color: #080808;
+  z-index: 5;
+  padding-bottom: 25px;
+  letter-spacing: 1.5px;
+}
+
+main .foryou .four1 .product_card .text .article {
+  z-index: 3;
+  font-size: 14px;
+  color: #2e2d2d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px 0px;
+  padding-right: 30px;
+  width: 100%;
+  height: auto;
+}
+
+main .foryou .four1 .product_card .text .article .pic {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+main .foryou .four1 .product_card .text .article .pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+main .foryou .four1 .product_card .text .article .pic .article_name {
+  width: calc(100% - 230px);
+  height: auto;
+}
+
+main .foryou .four1 .product_card .text .cost {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  font-size: 18px;
+  color: #003354;
+  font-weight: 600;
+}
+
+main .foryou .four1 .product_card .text .name {
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-right: 100px;
+}
+
+main .foryou .four1 .product_card .text .buy {
+  font-size: 14px;
+  padding: 5px  10px;
+  background-color: #818080;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  border-radius: 3px;
+}
+
+main .foryou .four1 .product_card .text .heart {
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  font-size: 24px;
+  color: #cfb6b6;
+}
+
+main .foryou .four1 .product_card .text .heart:active {
+  color: darkred;
+}
+
 main .foryou .foryou_content {
   width: 1000px;
   margin: auto;
@@ -622,7 +773,6 @@ main .foryou .foryou_content .foryou_card .pic img:hover {
 
 main .foryou .foryou_content .foryou_card .p {
   width: 100%;
-  width: 300px;
   text-align: center;
   letter-spacing: 1.5px;
   font-size: 18px;

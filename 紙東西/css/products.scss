@@ -257,6 +257,180 @@ main{
                 }
             } 
         }
+        .four1{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 45px;
+            .product_card{
+                width: calc(33.33% - 13.33px);
+                margin-right: 20px;
+                margin-bottom: 40px;
+                &:nth-child(3n){
+                    margin-right: 0px;
+                }
+                .pic{
+                    // margin-right: 20px;
+                    position: relative;
+    
+                    img{
+                        width: 235px;
+                        width: 320px;
+                        height: 210px;
+                        display: block; 
+                    }
+                    .heart_text{
+                        position: absolute;
+                        // bottom: 8px;
+                        // right: 8px;
+                        top: 10px;
+                        left: 8px;
+                        font-size: 14px;
+                        letter-spacing: 1.5px;
+                        background-color: lightcoral;
+                        color: white;
+                        padding: 3px  10px;
+                        border-radius: 3px;
+                    }
+                  
+                    
+                    .heart{
+                        width: 40px;
+                        height:40px;
+                        
+                        background-color: rgb(107, 103, 96);
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 42px;
+                        position: absolute;
+                        top: 5px;
+                        right: 5px;
+                        font-size: 22px;
+                        // color: rgb(173, 13, 13);
+                        color: rgb(104, 86, 86);
+                        color: white;
+                        // &:active{
+                        //     color: rgb(160, 6, 6);
+                        // }
+                        &.active{
+                            color: darkred;
+                        }
+                    }
+                    &:nth-last-child(1){
+                        margin-right: 0px;
+                    }
+                    &:hover .mask{
+                        display: block;
+                    }
+                    // &:hover .text{
+                    //     display: block;
+                    // }
+                    // &:hover .article{
+                    //     color: honeydew;
+                    // }
+                    &:hover .heart{
+                        color: honeydew;
+                    }
+                }
+                .text{
+                    padding: 10px;
+                    position: relative;
+                    width: max-content;
+                    width: 100%;
+                  
+                    font-size: 18px;
+                    color: rgb(8, 8, 8);
+                    z-index: 5;
+                    padding-bottom: 25px;
+                    letter-spacing: 1.5px;
+
+  
+                    .article{
+                        z-index: 3;
+                        font-size: 14px;
+                        color: rgb(46, 45, 45);
+                        display: flex;
+                        // line-height: 30px;
+                        padding: 8px 0px;
+                        padding-right: 30px;
+                        width: 100%;
+                        // height: max-content;
+                        height: auto;
+                        
+                        .pic{
+                            width: 18px;
+                            height: 18px;
+                            margin-right:5px;
+    
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 50%;
+                            }
+                            .article_name{
+                                width: calc(100% - 230px);
+                                // padding-right: 30px;
+                                height: auto;
+                            }
+                        }
+    
+                    }
+                    .p{
+                        // padding-top: 8px;
+                    }
+                    .cost{
+                        position: absolute;
+                        top: 10px;
+                        right: 8px;
+                        font-size: 18px;
+                        color: #003354;
+                        font-weight: 600;
+                    }
+                    .name{
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                        padding-right: 100px;
+                    }
+                    .buy{
+                        font-size: 14px;
+                        // font-weight: 600;
+                        padding: 5px  10px;
+                        background-color: rgb(129, 128, 128);
+                        color: white;
+                        position: absolute;
+                        bottom: 0px;
+                        right: 10px;
+                        border-radius: 3px;
+                    }
+                    .heart{
+                        // width: 40px;
+                        // height:40px;
+                        
+                        // background-color: rgb(107, 103, 96);
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 42px;
+                        position: absolute;
+                        top: 3px;
+                        right: 10px;
+                        font-size: 24px;
+                        // color: rgb(173, 13, 13);
+                        color: rgb(207, 182, 182);
+                        // color: white;
+                        // &:active{
+                        //     color: rgb(160, 6, 6);
+                        // }
+                        &:active{
+                            color: darkred;
+                        }
+    
+    
+                    }
+                    
+                }
+            }
+            
+            
+        }
         .products{
             width: 1000px;
             margin: auto;
