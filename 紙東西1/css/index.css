@@ -1,0 +1,342 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  max-width: 1920px;
+  width: 100%;
+  background-color: lightgray;
+}
+
+nav .content {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0px;
+}
+
+nav .content button {
+  outline: transparent;
+}
+
+nav .content .dropdown-toggle::after {
+  border-top: 0px;
+}
+
+nav .content .btn {
+  background-color: lightgray;
+  color: black;
+  padding: 8px 15px;
+  border: 0px;
+  margin: 0px 10px;
+  font-size: 20px;
+}
+
+main {
+  max-width: 1920px;
+  width: 100%;
+}
+
+main .banner {
+  max-width: 100%;
+  width: 100%;
+  height: 40vw;
+  background-color: blanchedalmond;
+}
+
+main .banner img {
+  width: 100%;
+  height: 100%;
+}
+
+main .sale {
+  max-width: 70vw;
+  width: 70vw;
+  margin: auto;
+  padding: 30px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .sale .month_sale {
+  width: 42vw;
+  height: 42vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+main .sale .month_sale:hover .black_mask {
+  display: none;
+}
+
+main .sale .month_sale:hover .text {
+  display: none;
+}
+
+main .sale .month_sale .black_mask {
+  width: 42vw;
+  height: 42vw;
+  position: absolute;
+  background-color: rgba(173, 173, 173, 0.144);
+  z-index: 3;
+  border-radius: 3%;
+}
+
+main .sale .month_sale .text {
+  font-size: 32px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.479);
+  padding: 10px 15px;
+  border-radius: 2%;
+  z-index: 4;
+}
+
+main .sale .month_sale a {
+  width: calc(50% - 15px);
+  height: calc(50% - 15px);
+  position: relative;
+}
+
+main .sale .month_sale a img {
+  width: 100%;
+  height: 100%;
+  background-color: burlywood;
+  border: 2px solid gainsboro;
+  border-radius: 5%;
+}
+
+main .sale .month_sale a .product_text {
+  font-size: 32px;
+  font-weight: 600;
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(211, 211, 211, 0.534);
+  border-radius: 2%;
+  color: black;
+  padding: 10px 15px;
+  z-index: 3;
+}
+
+main .sale .month_sale a .prouct_mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(126, 124, 124, 0.404);
+  z-index: 2;
+  display: none;
+  position: absolute;
+  top: 0px;
+}
+
+main .sale .month_sale a:hover .product_text {
+  display: block;
+}
+
+main .sale .month_sale a:hover .prouct_mask {
+  display: block;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  border-radius: 5%;
+}
+
+main .sale .onsale {
+  width: calc(28vw - 60px);
+  height: calc(28vw - 60px);
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+main .sale .onsale a {
+  width: calc(50% - 15px);
+  height: calc(50% - 15px);
+  position: relative;
+}
+
+main .sale .onsale a:nth-child(2n) {
+  margin-left: 30px;
+}
+
+main .sale .onsale a:hover .onsale_text {
+  display: none;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+main .sale .onsale a:hover .product_text {
+  display: block;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+main .sale .onsale img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid gainsboro;
+}
+
+main .sale .onsale .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: rgba(20, 20, 20, 0.479);
+  padding: 10px  15px;
+  color: white;
+  border-radius: 2%;
+}
+
+main .sale .onsale .product_text {
+  display: none;
+}
+
+main .product {
+  width: 70vw;
+  margin: auto;
+  height: 34.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0px;
+}
+
+main .product .a {
+  width: calc(25% - 20px);
+  width: calc(25% - 60px);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .product .a a {
+  width: 100%;
+  height: calc(50% - 15px);
+  height: calc(50% - 60px);
+}
+
+main .product .a a img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+main .product .b {
+  width: calc(50% - 20px);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+main .product .b a {
+  width: calc(50% - 3px);
+  height: calc(50% - 3px);
+}
+
+main .product .b a img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+footer {
+  width: 100%;
+  max-width: 1920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0px;
+  background-color: rgba(211, 211, 211, 0.678);
+}
+
+footer .content {
+  width: 85%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .content ul {
+  width: 24%;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px  0px;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+footer .content ul li {
+  list-style: none;
+  padding: 10px 0px;
+}
+
+footer .content ul li a {
+  font-size: 20px;
+  color: dimgray;
+  text-decoration: none;
+}
+/*# sourceMappingURL=index.css.map */

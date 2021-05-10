@@ -1,0 +1,573 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url(/img/lightpaperfibers.png);
+}
+
+main {
+  width: 1000px;
+  margin: auto;
+  padding: 45px  0px;
+}
+
+main .now_page {
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: gray;
+  margin-bottom: 20px;
+  padding: 0px 0px 12px 8px;
+  border-bottom: 1px  solid gainsboro;
+}
+
+main .product_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gainsboro;
+}
+
+main .product_details .product_pics {
+  width: calc(60% - 40px);
+  margin-right: 40px;
+}
+
+main .product_details .product_pics .big_pics {
+  width: 100%;
+}
+
+main .product_details .product_pics .big_pics .big_pic {
+  width: 100%;
+}
+
+main .product_details .product_pics .big_pics .big_pic img {
+  width: 100%;
+  min-height: 420px;
+  height: auto;
+  display: block;
+}
+
+main .product_details .product_pics .small_pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 20px;
+}
+
+main .product_details .product_pics .small_pics .small_pic img {
+  display: block;
+  width: 85px;
+  height: 85px;
+}
+
+main .product_details .product_content {
+  width: 40%;
+}
+
+main .product_details .product_content .top {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+}
+
+main .product_details .product_content .top .b {
+  margin-bottom: 15px;
+}
+
+main .product_details .product_content .top .name {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  color: rgba(0, 0, 0, 0.781);
+}
+
+main .product_details .product_content .top .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 80px;
+  position: relative;
+}
+
+main .product_details .product_content .top .article .pic {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+main .product_details .product_content .top .article .pic img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+main .product_details .product_content .top .article .small_text {
+  margin-left: 8px;
+  font-size: 18px;
+  height: 28px;
+  line-height: 28px;
+  letter-spacing: 1.5px;
+}
+
+main .product_details .product_content .top .article .mylove {
+  position: absolute;
+  right: 0px;
+  padding: 3px 8px;
+  background-color: #f38275;
+  border: 1px solid #f38275be;
+  color: #f1f1f1;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+
+main .product_details .product_content .top .article .mylove .text {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+
+main .product_details .product_content .top .article .mylove .fa-heart {
+  font-size: 18px;
+  padding: 5px;
+  display: none;
+}
+
+main .product_details .product_content .top .article .mylove:hover .text {
+  display: none;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+main .product_details .product_content .top .article .mylove:hover .fa-heart {
+  display: block;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+main .product_details .product_content .top .types {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+main .product_details .product_content .top .types .type_selector {
+  font-weight: 600;
+  width: 400px;
+  text-align: center;
+  font-size: 16px;
+  padding: 8px  10px;
+  border: 1px solid gainsboro;
+  letter-spacing: 1.5px;
+  color: #5e5d5d;
+  background-image: url(/img/lightpaperfibers.png);
+}
+
+main .product_details .product_content .top .types .type_title {
+  margin-right: 20px;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+
+main .product_details .product_content .top .types .all_type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 340px;
+}
+
+main .product_details .product_content .top .types .all_type .type {
+  font-size: 16px;
+  padding: 5px 8px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid gainsboro;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+
+main .product_details .product_content .top .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+main .product_details .product_content .top .price .costs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .product_details .product_content .top .price .costs .cost {
+  color: #b40e0e;
+  font-size: 24px;
+}
+
+main .product_details .product_content .top .price .costs .number {
+  font-size: 18px;
+  margin-left: 5px;
+  letter-spacing: 1.5px;
+}
+
+main .product_details .product_content .top .price .costs .tnumber {
+  letter-spacing: 1.5px;
+  font-size: 16px;
+  position: absolute;
+  right: 5px;
+  line-height: 27px;
+}
+
+main .product_details .product_content .top .allnumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  height: 45px;
+  line-height: 45px;
+}
+
+main .product_details .product_content .top .allnumber .mumber_text {
+  margin-right: 15px;
+}
+
+main .product_details .product_content .top .allnumber input {
+  font-size: 20px;
+  width: 120px;
+  margin: 0px  20px;
+}
+
+main .product_details .product_content .top .allnumber .numbers {
+  text-align: center;
+  font-size: 20px;
+  width: 80px;
+  margin: 0px  20px;
+  border: 1px solid gainsboro;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .product_details .product_content .top .allnumber .a {
+  line-height: 23px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 15px;
+  border: 1px solid gainsboro;
+  cursor: pointer;
+}
+
+main .product_details .product_content .top .allnumber .a:active {
+  background-color: darkgrey;
+  color: wheat;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+main .product_details .product_content .top .shoppingcart {
+  position: relative;
+  font-weight: 600;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 10px 0px;
+  background-color: #f38275;
+  border: 1px solid #f38275be;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+main .product_details .product_content .top .shoppingcart .text {
+  font-size: 18px;
+  letter-spacing: 6px;
+}
+
+main .product_details .product_content .top .shoppingcart .fa-shopping-cart {
+  font-size: 24px;
+  font-weight: 600;
+  display: none;
+}
+
+main .product_details .product_content .top .shoppingcart:hover .text {
+  display: none;
+}
+
+main .product_details .product_content .top .shoppingcart:hover .fa-shopping-cart {
+  display: block;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+main .product_details .product_content .top .small_text {
+  font-size: 14px;
+  color: gray;
+  letter-spacing: 1.5px;
+}
+
+main .product_details .product_content .top .sale_out {
+  text-align: center;
+  padding: 10px 0px;
+  background-color: darkred;
+  color: whitesmoke;
+  letter-spacing: 1.5px;
+}
+
+main .product_details .product_content .contents {
+  margin-top: 15px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 28px;
+  padding: 0px 5px;
+}
+
+main .product_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gainsboro;
+}
+
+main .product_main .all {
+  width: 76%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+main .product_main .all video {
+  width: 100%;
+}
+
+main .product_main .all .pic {
+  width: 100%;
+}
+
+main .product_main .all .pic img {
+  width: 100%;
+  display: block;
+}
+
+main .product_main .all .b {
+  margin-bottom: 20px;
+}
+
+main .product_detail {
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gainsboro;
+}
+
+main .product_detail .product_detail_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 26px;
+}
+
+main .product_detail .product_detail_btn .btn {
+  padding: 8px 15px;
+  background-color: rgba(128, 128, 128, 0.356);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 30px;
+  border-radius: 5px;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#cfd9df), to(#e2ebf0));
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+main .product_detail .product_detail_btn .btn:hover {
+  color: #383737;
+}
+
+main .product_detail .detail {
+  margin-top: 20px;
+}
+
+main .product_detail .detail .detailcontent {
+  padding-left: 8px;
+}
+
+main .product_detail .detail .detailcontent .describle .title {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 10px 0px;
+  padding: 5px  12px;
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.329);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#cfd9df), to(#e2ebf0));
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+main .product_detail .detail .detailcontent .describle .content {
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: #0e0e0f;
+  line-height: 32px;
+}
+
+main .product_detail .detail .product_specification {
+  font-size: 18px;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: #0e0e0f;
+  line-height: 36px;
+}
+
+main .product_detail .detail .pay .content {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+main .product_detail .detail .pay .content .titles .smalltitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px  12px;
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.329);
+  margin: 15px 0px;
+  letter-spacing: 2px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#cfd9df), to(#e2ebf0));
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+main .product_detail .detail .pay .content .titles .smalltitle .no {
+  font-size: 14px;
+  line-height: 28px;
+  color: #363636;
+}
+
+main .product_detail .detail .pay .content a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: black;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  list-style: none;
+  background-color: rgba(189, 186, 178, 0.432);
+  padding: 8px 15px;
+  border-radius: 5px;
+  display: block;
+  margin-top: 15px;
+}
+
+main .foryou {
+  margin-top: 20px;
+}
+
+main .foryou .title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-left: 8px;
+}
+
+main .foryou .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 8px;
+}
+
+main .foryou .content .foryou_card {
+  width: calc(25% - 15px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+main .foryou .content .foryou_card:nth-child(4) {
+  margin-right: 0px;
+}
+
+main .foryou .content .foryou_card .pic img {
+  width: 100%;
+  height: 150px;
+}
+
+main .foryou .content .foryou_card .pic img:hover {
+  opacity: 0.7;
+}
+
+main .foryou .content .foryou_card .p {
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  padding: 5px;
+}
+
+/* Style the tab */
+/* Style the buttons that are used to open the tab content */
+.tab .tablinks {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tablinks img:hover {
+  opacity: 0.8;
+  border-radius: 2px;
+}
+
+/* Create an active/current tablink class */
+.tablinks.active img {
+  opacity: 0.7;
+  border-radius: 2px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+}
+
+.detaillinks, .active {
+  background-color: red;
+}
+
+.detailcontent {
+  display: none;
+}
+/*# sourceMappingURL=product_detail.css.map */
