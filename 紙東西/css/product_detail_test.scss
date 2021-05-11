@@ -57,9 +57,11 @@ main{
                         width: 100%;
                         // min-height: 420px;
                         height: 540px;
-                        height: 580px;
+                        height: 510px;
                         // height: auto;
                         display: block;
+                        width: 50vw;
+                        height: 26.5vw;
                     }
                 }
             }
@@ -69,7 +71,7 @@ main{
                 height: max-content;
                 width: 60px;
                 .small_pic{
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                     &:nth-last-child(1){
                         margin-bottom: 0px;
                     }

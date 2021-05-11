@@ -285,11 +285,12 @@ nav .content .right .right_item span img {
   font-size: 18px;
   letter-spacing: 2px;
   font-weight: 600;
-  padding: 5px 20px;
+  padding: 5px 5px;
   position: absolute;
-  bottom: 0px;
+  top: 0px;
+  right: 0px;
   color: #1d1d1d;
-  border-radius: 0px  8px 0px 0px;
+  border-radius: 0px  8px 0px 8px;
 }
 
 .cards1 .content {

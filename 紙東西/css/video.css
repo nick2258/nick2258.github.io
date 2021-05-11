@@ -76,8 +76,7 @@ main .cards {
 main .cards .news_card {
   width: calc(33.333% - 20px);
   margin-right: 30px;
-  margin-bottom: 30px;
-  padding-bottom: 45px;
+  margin-bottom: 45px;
   position: relative;
 }
 
@@ -99,7 +98,9 @@ main .cards .news_card .pic img {
 }
 
 main .cards .news_card .content {
+  background-color: rgba(112, 179, 218, 0.13);
   padding: 5px 8px;
+  padding-bottom: 20px;
 }
 
 main .cards .news_card .content .title {
@@ -159,16 +160,35 @@ main .cards .news_card .content .text {
   overflow: hidden;
 }
 
-main .cards .news_card .more {
-  position: absolute;
-  right: 8px;
-  bottom: 0px;
-  font-size: 16px;
-  letter-spacing: 1.5px;
-  padding: 5px  12px;
-  border-radius: 3px;
-  background-color: #537683;
-  color: white;
+main .cards .news_card .bm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 8px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .cards .news_card .bm .video {
+  font-weight: 600;
+  font-size: 14px;
+  color: gainsboro;
+  letter-spacing: 2px;
+  padding: 3px 18px;
+  border-radius: 1px;
+  background-color: #a71e1e;
+}
+
+main .cards .news_card .bm .more {
+  font-weight: 600;
+  font-size: 14px;
+  color: gainsboro;
+  letter-spacing: 2px;
+  padding: 3px 18px;
+  border-radius: 1px;
+  background-color: #a71e1e;
+  background-color: #607983;
+  background-color: #314a6b;
 }
 
 main .pagination {
