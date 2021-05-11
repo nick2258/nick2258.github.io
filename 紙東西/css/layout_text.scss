@@ -13,6 +13,18 @@ html{
     position: relative;
 }
 
+a{
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    border-bottom:none ;
+    &:hover{
+        text-decoration: none;
+        list-style: none;
+        border-bottom:none ;
+    }
+}
+
 .navbar{
     position: sticky;
     top: 0px;
@@ -134,6 +146,8 @@ nav{
     z-index: 10;
     background-color: white;
     background-color: rgb(151, 183, 206);
+    background-color: rgb(168, 204, 230);
+
     .part3{
         .types{
             width: 1000px;
@@ -619,11 +633,11 @@ footer{
 
     .content{
         margin: auto;
-        width: 1140px;
+        width: 1000px;
         display: flex;
         letter-spacing: 2px;
         ul{
-            font-size: 24px;
+            font-size: 18px;
             width: 16.666%;
             list-style: none;
             // margin-bottom: 20px;
@@ -636,11 +650,12 @@ footer{
                 border-right: 0px;
             }
             li{
-                font-size: 18px;
+                font-size: 15px;
                 padding: 5px 0px;
+                font-weight: 500;
                 &:nth-child(1){
                     // padding-top: 15px;
-                    margin-top: 20px;
+                    margin-top: 10px;
                     // border-top: 1px solid gray;
                 }
             }
