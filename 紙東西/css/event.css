@@ -1,3 +1,8 @@
+@charset "UTF-8";
+body {
+  background-image: url(/img/lightpaperfibers.png);
+}
+
 main {
   width: 1000px;
   margin: auto;
@@ -58,9 +63,7 @@ main .cards {
 main .cards .news_card {
   width: calc(33.333% - 20px);
   margin-right: 30px;
-  margin-bottom: 30px;
-  padding-bottom: 60px;
-  position: relative;
+  margin-bottom: 45px;
 }
 
 main .cards .news_card:nth-child(3n) {
@@ -74,10 +77,13 @@ main .cards .news_card .pic {
 main .cards .news_card .pic img {
   width: 100%;
   height: 200px;
+  display: block;
 }
 
 main .cards .news_card .content {
+  background-color: rgba(112, 179, 218, 0.13);
   padding: 5px 8px;
+  padding-bottom: 20px;
 }
 
 main .cards .news_card .content .title {
@@ -108,41 +114,80 @@ main .cards .news_card .content .date_type .date {
   border-right: 1px solid gainsboro;
 }
 
-main .cards .news_card .content .date_type .video {
-  font-weight: 600;
-  font-size: 14px;
-  color: gainsboro;
-  letter-spacing: 2px;
-  position: absolute;
-  right: 8px;
-  padding: 2px 5px;
-  border-radius: 1px;
-  background-color: #a71e1e;
-  background-color: #607983;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
 main .cards .news_card .content .text {
   padding-top: 10px;
   font-size: 16px;
   letter-spacing: 1.5px;
   line-height: 26px;
-  max-height: 90px;
+  /* -webkit-box 尚在實驗性的屬性值 */
+  display: -webkit-box;
+  /* 用來設定一個元素是水平還是垂直方向排列其內容 */
+  -webkit-box-orient: vertical;
+  /* 限制指定的行數 */
+  -webkit-line-clamp: 2;
+  overflow: hidden;
   color: #2c2929;
 }
 
-main .cards .news_card .more {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  font-size: 16px;
-  letter-spacing: 1.5px;
-  padding: 5px  12px;
-  border-radius: 3px;
-  background-color: #7d8588;
-  color: white;
+main .cards .news_card .content .bm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 8px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .cards .news_card .content .bm .video {
+  font-weight: 600;
+  font-size: 14px;
+  color: gainsboro;
+  letter-spacing: 2px;
+  padding: 3px 18px;
+  border-radius: 1px;
+  background-color: #a71e1e;
+}
+
+main .cards .news_card .content .bm .more {
+  font-weight: 600;
+  font-size: 14px;
+  color: gainsboro;
+  letter-spacing: 2px;
+  padding: 3px 18px;
+  border-radius: 1px;
+  background-color: #a71e1e;
+  background-color: #607983;
+  background-color: #314a6b;
+}
+
+main .cards .news_card .content .cm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 8px;
+}
+
+main .cards .news_card .content .cm .video {
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  color: gainsboro;
+  letter-spacing: 2px;
+  padding: 3px 18px;
+  border-radius: 1px;
+  background-color: #a71e1e;
+}
+
+main .cards .news_card .content .cm .more {
+  font-weight: 600;
+  font-size: 14px;
+  color: gainsboro;
+  letter-spacing: 2px;
+  padding: 3px 18px;
+  border-radius: 1px;
+  background-color: #a71e1e;
+  background-color: #607983;
+  background-color: #314a6b;
 }
 
 main .pagination {

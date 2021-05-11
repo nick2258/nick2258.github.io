@@ -261,7 +261,7 @@ main{
                     }
                     .tnumber{
                         letter-spacing: 1.5px;
-                        font-size: 16px;
+                        font-size: 14px;
                         position: absolute;
                         top: 50%;
                         transform: translateY(-50%);
@@ -293,6 +293,11 @@ main{
                 }
                 .show{
                     display: none;
+                    font-size: 16px;
+                    color: rgb(151, 10, 10);
+                    letter-spacing: 1.5px;
+                    margin-bottom: 15px;
+                    font-weight: 600;
                 }
                 .show.active{
                     display: block;
@@ -314,6 +319,12 @@ main{
                 }
                 .lttle.active{
                     display: block;
+                }
+                .max{
+                    font-size: 14px;
+                    color: gray;
+                    letter-spacing: 1.5px;
+                    margin-bottom: 15px;
                 }
                 
                 .shoppingcart{
@@ -560,10 +571,14 @@ main{
         }
         .four1{
             display: flex;
-            margin-bottom: 45px;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
             .product_card{
                 width: calc(33.33% - 13.33px);
                 margin-right: 20px;
+                &:nth-child(3n){
+                    margin-right: 0px;
+                }
                 .pic{
                     // margin-right: 20px;
                     position: relative;
@@ -640,11 +655,13 @@ main{
                         color: rgb(46, 45, 45);
                         display: flex;
                         // line-height: 30px;
-                        padding: 8px 0px;
+                        padding: 15px 0px;
                         padding-right: 30px;
                         width: 100%;
                         // height: max-content;
                         height: auto;
+                        position: relative;
+
                         .pic{
                             width: 18px;
                             height: 18px;
@@ -658,8 +675,22 @@ main{
                             .article_name{
                                 width: calc(100% - 230px);
                                 // padding-right: 30px;
-                                height: auto;
+                                height: auto;                                
                             }
+                        }
+                        .buy{
+                            font-size: 12px;
+                            // font-weight: 600;
+                            padding: 5px  10px;
+                            background-color: rgb(129, 128, 128);
+                            color: white;
+                            position: absolute;
+                            // top: 50%;
+                            transform: translateY(-35%);
+                            bottom: 0px;
+                            right: 0px;
+                            border-radius: 3px;
+                            z-index: 3;
                         }
     
                     }

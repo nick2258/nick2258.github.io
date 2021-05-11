@@ -132,15 +132,16 @@
                         <div class=" a remove">-</div>
 
                         <!-- <div class="numbers">1</div> -->
-                        <input  id="Str" class="numbers" type="text" min="1"  value="1"  oninput="if(value>50)value=50"   / onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"  
+                        <input  id="Str" class="numbers" type="text" min="1"  value="1"  oninput="if(value>99)value=99"   / onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"  
                         onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}"  onchange="ShowStr(this.id)" >
                         <div class=" a add">+</div>
                         <div  class="tnumber">已售出數量 
-                            <div class="tnumber_detail" id="tnumber_detail"> 50 </div>
+                            <div class="tnumber_detail" id="tnumber_detail"> 1500 </div>
                              
                              個</div>                            
                     </div>
-                    <div class="show " id="show">已達庫存數量數量上限</div>
+                    <div class="show " id="show">已達最高購買數量</div>
+                    <div class="max">購買99個以上為大宗採購，如有需要請洽詢線上客服專員</div>
                     <div class="enough">庫存充足</div>
                     <div class="some">庫存尚可</div>
                     <div class="lttle">庫存較少</div>
@@ -152,7 +153,7 @@
                         <i class="fas fa-shopping-cart"></i>
                     </div>
 
-                    <div class="small_text" >本商品為「接單訂製」。付款後，從開始製作到寄出商品為 3 個工作天。（不包含假日）</div>
+                    <div class="small_text" >本商品為「接單訂製」。付款後，從開始製作到寄出商品為 5-7 個工作天。（不包含假日），依購買數量不同，出貨時間有所不同，請耐心等候您的商品</div>
 
                     <!-- <div  class="sale_out b">熱銷補貨中</div> -->
 
@@ -375,7 +376,7 @@
                               商品收藏
                           </div>
                     </div>
-    
+
                     <div class="text">
                         <div class="name p">黑貓便條紙黑貓便</div>
                         <div class="article">
@@ -383,16 +384,22 @@
                                 <img src="./img/找創作者.jpg" alt="">
                                 
                             </div>
-                                <div class="article_name">假如八個字的名字</div>
+                                <div class="article_name">假如八個字的名字
+                                    
+                                </div>
+                                <div class="buy">
+                                    購買商品    <i class="fas fa-angle-double-right"></i>
+                                </div>
                         </div>
                         <div class="cost p">NT $250元</div>
-                        <div class="buy">
+                        <!-- <div class="buy">
                             購買商品    <i class="fas fa-angle-double-right"></i>
-                        </div>
+                        </div> -->
                        
                         
                     </div>
                 </div>
+
                 <div class="product_card animate__zoomIn animate__animated ">
                     <div class="pic">
                         <img src="./img/台中.jpg" alt="">
@@ -401,7 +408,7 @@
                               商品收藏
                           </div>
                     </div>
-    
+
                     <div class="text">
                         <div class="name p">黑貓便條紙黑貓便</div>
                         <div class="article">
@@ -409,16 +416,22 @@
                                 <img src="./img/找創作者.jpg" alt="">
                                 
                             </div>
-                                <div class="article_name">假如八個字的名字</div>
+                                <div class="article_name">假如八個字的名字
+                                    
+                                </div>
+                                <div class="buy">
+                                    購買商品    <i class="fas fa-angle-double-right"></i>
+                                </div>
                         </div>
                         <div class="cost p">NT $250元</div>
-                        <div class="buy">
+                        <!-- <div class="buy">
                             購買商品    <i class="fas fa-angle-double-right"></i>
-                        </div>
+                        </div> -->
                        
                         
                     </div>
                 </div>
+
                 <div class="product_card animate__zoomIn animate__animated ">
                     <div class="pic">
                         <img src="./img/台中.jpg" alt="">
@@ -427,7 +440,7 @@
                               商品收藏
                           </div>
                     </div>
-    
+
                     <div class="text">
                         <div class="name p">黑貓便條紙黑貓便</div>
                         <div class="article">
@@ -435,49 +448,118 @@
                                 <img src="./img/找創作者.jpg" alt="">
                                 
                             </div>
-                                <div class="article_name">假如八個字的名字</div>
+                                <div class="article_name">假如八個字的名字
+                                    
+                                </div>
+                                <div class="buy">
+                                    購買商品    <i class="fas fa-angle-double-right"></i>
+                                </div>
                         </div>
                         <div class="cost p">NT $250元</div>
-                        <div class="buy">
+                        <!-- <div class="buy">
                             購買商品    <i class="fas fa-angle-double-right"></i>
-                        </div>
+                        </div> -->
                        
                         
                     </div>
                 </div>
             </div>
             <div class="title">推薦商品</div>
-            <div class="content foryou_content">
-                <div class="foryou_card">
+            <div class="top four1">
+                <div class="product_card animate__zoomIn animate__animated ">
                     <div class="pic">
                         <img src="./img/台中.jpg" alt="">
+                          <!-- <i class="fas fa-heart heart"></i> -->
+                          <div class="heart_text">
+                              商品收藏
+                          </div>
                     </div>
-                    <div class="name p">產品A</div>
-                    <div class="price p">$500</div>
+
+                    <div class="text">
+                        <div class="name p">黑貓便條紙黑貓便</div>
+                        <div class="article">
+                            <div class="pic">
+                                <img src="./img/找創作者.jpg" alt="">
+                                
+                            </div>
+                                <div class="article_name">假如八個字的名字
+                                    
+                                </div>
+                                <div class="buy">
+                                    購買商品    <i class="fas fa-angle-double-right"></i>
+                                </div>
+                        </div>
+                        <div class="cost p">NT $250元</div>
+                        <!-- <div class="buy">
+                            購買商品    <i class="fas fa-angle-double-right"></i>
+                        </div> -->
+                       
+                        
+                    </div>
                 </div>
 
-                <div class="foryou_card">
+                <div class="product_card animate__zoomIn animate__animated ">
                     <div class="pic">
                         <img src="./img/台中.jpg" alt="">
+                          <!-- <i class="fas fa-heart heart"></i> -->
+                          <div class="heart_text">
+                              商品收藏
+                          </div>
                     </div>
-                    <div class="name p">產品A</div>
-                    <div class="price p">$500</div>
+
+                    <div class="text">
+                        <div class="name p">黑貓便條紙黑貓便</div>
+                        <div class="article">
+                            <div class="pic">
+                                <img src="./img/找創作者.jpg" alt="">
+                                
+                            </div>
+                                <div class="article_name">假如八個字的名字
+                                    
+                                </div>
+                                <div class="buy">
+                                    購買商品    <i class="fas fa-angle-double-right"></i>
+                                </div>
+                        </div>
+                        <div class="cost p">NT $250元</div>
+                        <!-- <div class="buy">
+                            購買商品    <i class="fas fa-angle-double-right"></i>
+                        </div> -->
+                       
+                        
+                    </div>
                 </div>
 
-                <div class="foryou_card">
+                <div class="product_card animate__zoomIn animate__animated ">
                     <div class="pic">
                         <img src="./img/台中.jpg" alt="">
+                          <!-- <i class="fas fa-heart heart"></i> -->
+                          <div class="heart_text">
+                              商品收藏
+                          </div>
                     </div>
-                    <div class="name p">產品A</div>
-                    <div class="price p">$500</div>
-                </div>
 
-                <div class="foryou_card">
-                    <div class="pic">
-                        <img src="./img/台中.jpg" alt="">
+                    <div class="text">
+                        <div class="name p">黑貓便條紙黑貓便</div>
+                        <div class="article">
+                            <div class="pic">
+                                <img src="./img/找創作者.jpg" alt="">
+                                
+                            </div>
+                                <div class="article_name">假如八個字的名字
+                                    
+                                </div>
+                                <div class="buy">
+                                    購買商品    <i class="fas fa-angle-double-right"></i>
+                                </div>
+                        </div>
+                        <div class="cost p">NT $250元</div>
+                        <!-- <div class="buy">
+                            購買商品    <i class="fas fa-angle-double-right"></i>
+                        </div> -->
+                       
+                        
                     </div>
-                    <div class="name p">產品A</div>
-                    <div class="price p">$500</div>
                 </div>
             </div>
         </div>
@@ -570,7 +652,7 @@
 
         // STEP 5: 將數字增加後帶回網頁上 textContent
         numberElement.value = currentNumber + 1;
-        if ( numberElement.value > 50 ) {
+        if ( numberElement.value > 99 ) {
             numberElement.value = currentNumber ;
             show.classList.add("active"); 
         }else{
@@ -583,9 +665,9 @@
     downElement.addEventListener("click", e => {
     const currentNumber = Number(numberElement.value);
     numberElement.value = currentNumber - 1;
-    if ( numberElement.value == 0 ) {
+    if ( numberElement.value < 1 ) {
         numberElement.value = currentNumber ;
-    }if ( numberElement.value < 50) {
+    }if ( numberElement.value < 99) {
          show.classList.remove("active"); 
 
     }
@@ -594,8 +676,8 @@
     function ShowStr(x){
 　var Str = document.getElementById(x).value;
 // 　alert(Str);
-        if (Str == 50 || Str > 50) {
-            Str == 50
+        if (Str == 99 || Str > 99) {
+            Str == 99
             show.classList.add("active"); 
         } else{
                 show.classList.remove("active"); 

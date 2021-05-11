@@ -278,7 +278,7 @@ main .product_details .product_content .top .allnumber .numbers {
 
 main .product_details .product_content .top .allnumber .tnumber {
   letter-spacing: 1.5px;
-  font-size: 16px;
+  font-size: 14px;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -312,6 +312,11 @@ main .product_details .product_content .top .allnumber .a:active {
 
 main .product_details .product_content .top .show {
   display: none;
+  font-size: 16px;
+  color: #970a0a;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+  font-weight: 600;
 }
 
 main .product_details .product_content .top .show.active {
@@ -340,6 +345,13 @@ main .product_details .product_content .top .lttle {
 
 main .product_details .product_content .top .lttle.active {
   display: block;
+}
+
+main .product_details .product_content .top .max {
+  font-size: 14px;
+  color: gray;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
 }
 
 main .product_details .product_content .top .shoppingcart {
@@ -596,12 +608,18 @@ main .foryou .four1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 45px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 main .foryou .four1 .product_card {
   width: calc(33.33% - 13.33px);
   margin-right: 20px;
+}
+
+main .foryou .four1 .product_card:nth-child(3n) {
+  margin-right: 0px;
 }
 
 main .foryou .four1 .product_card .pic {
@@ -679,10 +697,11 @@ main .foryou .four1 .product_card .text .article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 8px 0px;
+  padding: 15px 0px;
   padding-right: 30px;
   width: 100%;
   height: auto;
+  position: relative;
 }
 
 main .foryou .four1 .product_card .text .article .pic {
@@ -700,6 +719,20 @@ main .foryou .four1 .product_card .text .article .pic img {
 main .foryou .four1 .product_card .text .article .pic .article_name {
   width: calc(100% - 230px);
   height: auto;
+}
+
+main .foryou .four1 .product_card .text .article .buy {
+  font-size: 12px;
+  padding: 5px  10px;
+  background-color: #818080;
+  color: white;
+  position: absolute;
+  -webkit-transform: translateY(-35%);
+          transform: translateY(-35%);
+  bottom: 0px;
+  right: 0px;
+  border-radius: 3px;
+  z-index: 3;
 }
 
 main .foryou .four1 .product_card .text .cost {
