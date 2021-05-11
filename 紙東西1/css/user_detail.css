@@ -1,0 +1,316 @@
+main {
+  width: 1000px;
+  margin: auto;
+  padding: 30px  0px;
+  /* Style the tab content */
+}
+
+main .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+main .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+main .tab button:hover {
+  background-color: #ddd;
+}
+
+main .tab button.active {
+  background-color: #ccc;
+}
+
+main .tabcontent {
+  margin-top: 20px;
+  display: none;
+  font-size: 20px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+  letter-spacing: 2px;
+  /* Fade in tabs */
+}
+
+main .tabcontent .contents .content .btn {
+  width: 1000px;
+  background-color: #ccc;
+  padding: 5px 0px;
+  padding-left: 15px;
+  margin-top: 1px;
+  font-size: 18px;
+  text-align: left;
+}
+
+main .tabcontent .contents .content .btn .small_title {
+  font-size: 15px;
+  color: #353333;
+}
+
+main .tabcontent .contents .content .texts {
+  display: none;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+main .tabcontent .contents .content .texts .text {
+  padding-bottom: 5px;
+}
+
+main .tabcontent .contents .content .texts .text:nth-last-child(1) {
+  margin-bottom: 15px;
+}
+
+main .tabcontent .contents .content .texts .red .title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+main .tabcontent .contents .content .texts .red .title:nth-last-child(1) {
+  margin-top: 15px;
+}
+
+main .tabcontent .contents .content .texts .red .all_points .points {
+  font-size: 16px;
+}
+
+main .tabcontent .contents .content .texts .red .all_points .points .point {
+  font-size: 20px;
+  color: darkred;
+}
+
+main .tabcontent .contents .content .texts .red table {
+  width: 1000px;
+  width: unset;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+}
+
+main .tabcontent .contents .content .texts .red table tr:nth-child(2n) {
+  background-color: rgba(128, 128, 128, 0.253);
+}
+
+main .tabcontent .contents .content .texts .red table tr th, main .tabcontent .contents .content .texts .red table tr td {
+  padding: 12px 0px;
+  text-align: left;
+  padding: 8px;
+  padding-right: 200px;
+}
+
+main .tabcontent .contents .content .texts .likes {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .tabcontent .contents .content .texts .likes .likecard {
+  width: calc(20% - 16px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+main .tabcontent .contents .content .texts .likes .likecard:nth-child(5n) {
+  margin-right: 0px;
+}
+
+main .tabcontent .contents .content .texts .likes .likecard .pic img {
+  width: 100%;
+  height: 120px;
+  border-radius: 8px;
+}
+
+main .tabcontent .contents .content .texts .likes .likecard .text {
+  padding: 3px 5px;
+  font-size: 16px;
+}
+
+main .tabcontent .contents .content .texts .articles {
+  width: 100%;
+}
+
+main .tabcontent .contents .content .texts .articles .likecard {
+  width: calc(20% - 16px);
+}
+
+main .tabcontent .contents .content .texts .articles .likecard .pic img {
+  width: 100%;
+  height: 177px;
+  border-radius: 50%;
+}
+
+main .tabcontent .contents .content .texts .articles .likecard .article {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+main .tabcontent .contents .content .texts .last_view table {
+  width: 1000px;
+  width: unset;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+}
+
+main .tabcontent .contents .content .texts .last_view table tr:nth-child(2n) {
+  background-color: rgba(128, 128, 128, 0.253);
+}
+
+main .tabcontent .contents .content .texts .last_view table tr th, main .tabcontent .contents .content .texts .last_view table tr td {
+  padding: 12px 0px;
+  text-align: left;
+  padding: 8px;
+  padding-right: 50px;
+}
+
+main .tabcontent .contents .content .texts .last_view table tr td {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 670px;
+}
+
+main .tabcontent .contents .content .texts .last_view table tr td img {
+  width: 100px;
+  height: 60px;
+}
+
+main .tabcontent .contents .content .texts .product_manage table {
+  width: 1000px;
+  width: unset;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+}
+
+main .tabcontent .contents .content .texts .product_manage table tr:nth-child(2n) {
+  background-color: rgba(128, 128, 128, 0.253);
+}
+
+main .tabcontent .contents .content .texts .product_manage table tr th, main .tabcontent .contents .content .texts .product_manage table tr td {
+  padding: 12px 0px;
+  text-align: left;
+  padding: 8px;
+  padding-right: 50px;
+}
+
+main .tabcontent .contents .content .texts .product_manage table tr td {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 460px;
+}
+
+main .tabcontent .contents .content .texts .product_manage table tr td img {
+  width: 100px;
+  height: 60px;
+}
+
+main .tabcontent .contents .content .texts .feedback .months {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .tabcontent .contents .content .texts .feedback .months input {
+  outline: none;
+}
+
+main .tabcontent .contents .content .texts .feedback .months .month {
+  padding: 5px 0px;
+  text-align: center;
+  margin-right: 20px;
+  background-color: rgba(129, 129, 119, 0.43);
+  width: calc(8.33% - 18.333px);
+}
+
+main .tabcontent .contents .content .texts .feedback .months .month:hover {
+  background-color: rgba(129, 129, 119, 0.23);
+}
+
+main .tabcontent .contents .content .texts .feedback .months .month:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+main .tabcontent .contents .content .texts .feedback .content table {
+  width: 1000px;
+  width: unset;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+}
+
+main .tabcontent .contents .content .texts .feedback .content table tr:nth-child(2n) {
+  background-color: rgba(128, 128, 128, 0.253);
+}
+
+main .tabcontent .contents .content .texts .feedback .content table tr th, main .tabcontent .contents .content .texts .feedback .content table tr td {
+  padding: 12px 0px;
+  text-align: left;
+  padding: 8px;
+  padding-right: 50px;
+}
+
+main .tabcontent .contents .content .texts .feedback .content table tr td {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 670px;
+}
+
+main .tabcontent .contents .content .texts .orders table {
+  width: 1000px;
+  width: unset;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+}
+
+main .tabcontent .contents .content .texts .orders table tr:nth-child(2n) {
+  background-color: rgba(128, 128, 128, 0.253);
+}
+
+main .tabcontent .contents .content .texts .orders table tr th, main .tabcontent .contents .content .texts .orders table tr td {
+  padding: 12px 0px;
+  text-align: left;
+  padding: 8px;
+  padding-right: 50px;
+}
+
+main .tabcontent .contents .content .texts .orders table tr td {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 670px;
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=user_detail.css.map */
