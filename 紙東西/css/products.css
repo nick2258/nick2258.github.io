@@ -214,14 +214,13 @@ main .contents .product_news {
   font-weight: 500;
   letter-spacing: 2px;
   padding: 10px 0px 10px 8px;
-  margin-bottom: 20px;
 }
 
 main .contents .now_page {
   font-size: 15px;
   letter-spacing: 2px;
   color: gray;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   padding-left: 8px;
 }
 
@@ -231,7 +230,7 @@ main .contents .selectors {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px auto;
+  margin: 12px auto;
 }
 
 main .contents .selectors .select {
@@ -383,8 +382,8 @@ main .contents .four1 .product_card .text .article .buy {
   background-color: #818080;
   color: white;
   position: absolute;
-  -webkit-transform: translateY(-35%);
-          transform: translateY(-35%);
+  -webkit-transform: translateY(-42%);
+          transform: translateY(-42%);
   bottom: 0px;
   right: 0px;
   border-radius: 3px;

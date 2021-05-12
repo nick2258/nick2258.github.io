@@ -252,8 +252,7 @@ main .product_details .product_content .top .allnumber {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 20px;
-  height: 45px;
+  font-size: 18px;
   line-height: 45px;
   position: relative;
 }
@@ -263,15 +262,17 @@ main .product_details .product_content .top .allnumber .mumber_text {
 }
 
 main .product_details .product_content .top .allnumber input {
-  font-size: 20px;
+  font-size: 18px;
   width: 120px;
   margin: 0px  20px;
 }
 
 main .product_details .product_content .top .allnumber .numbers {
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   width: 80px;
+  height: 45px;
+  line-height: 45px;
   margin: 0px  20px;
   border: 1px solid gainsboro;
   -webkit-transition: 0.5s;
@@ -286,7 +287,7 @@ main .product_details .product_content .top .allnumber .tnumber {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 5px;
-  line-height: 27px;
+  line-height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,12 +298,14 @@ main .product_details .product_content .top .allnumber .tnumber .tnumber_detail 
 }
 
 main .product_details .product_content .top .allnumber .a {
-  line-height: 23px;
-  font-size: 20px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 18px;
   font-weight: 600;
-  padding: 10px 15px;
   border: 1px solid gainsboro;
   cursor: pointer;
+  width: 45px;
+  height: 45px;
 }
 
 main .product_details .product_content .top .allnumber .a:active {
@@ -729,8 +732,8 @@ main .foryou .four1 .product_card .text .article .buy {
   background-color: #818080;
   color: white;
   position: absolute;
-  -webkit-transform: translateY(-35%);
-          transform: translateY(-35%);
+  -webkit-transform: translateY(-42%);
+          transform: translateY(-42%);
   bottom: 0px;
   right: 0px;
   border-radius: 3px;

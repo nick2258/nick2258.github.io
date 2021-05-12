@@ -208,14 +208,14 @@ main{
             font-weight: 500;
             letter-spacing:2px;
             padding: 10px 0px 10px 8px;
-            margin-bottom: 20px;
+            // margin-bottom: 20px;
         }
         .now_page{
             font-size: 15px;
             letter-spacing: 2px;
             // font-weight: 600;
             color: gray;
-            margin-bottom: 20px;
+            margin-bottom: 12px;
             padding-left: 8px;
         }
         
@@ -223,7 +223,7 @@ main{
             width: 1000px;
             margin: auto;
             display: flex;
-            margin: 20px auto;
+            margin: 12px auto;
             // justify-content: center;
             .select{
                 position: relative;
@@ -374,7 +374,7 @@ main{
                             color: white;
                             position: absolute;
                             // top: 50%;
-                            transform: translateY(-35%);
+                            transform: translateY(-42%);
                             bottom: 0px;
                             right: 0px;
                             border-radius: 3px;

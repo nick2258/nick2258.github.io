@@ -549,8 +549,8 @@ nav .content .right .right_item span img {
   background-color: #818080;
   color: white;
   position: absolute;
-  -webkit-transform: translateY(-35%);
-          transform: translateY(-35%);
+  -webkit-transform: translateY(-42%);
+          transform: translateY(-42%);
   bottom: 0px;
   right: 0px;
   border-radius: 3px;
