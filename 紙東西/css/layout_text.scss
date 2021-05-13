@@ -585,8 +585,10 @@ nav{
     .content{
         width: 100%;
         display: flex;
+        height: max-content;
         justify-content: space-between;
         // padding: 0px 15px;
+        height:240px;
         .pic{
             width: 350px;
             height: 240px;
@@ -594,7 +596,8 @@ nav{
             margin-bottom: 30px;
             img{
                 width: 100%;
-                height: 100%;
+                // height: 100%;
+                height: 240px;
             }
         }
         .map{
@@ -603,6 +606,8 @@ nav{
             font-weight: 600;
             letter-spacing: 2px;
             // width: max-content;
+            position: relative;
+            height: 240px;
             .p{
                 margin-bottom: 10px;
                 color: rgb(37, 35, 20);
@@ -617,6 +622,20 @@ nav{
                     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
                     border-radius: 3px;
                 }
+            }
+            a{
+                font-size: 14px;
+                padding: 5px  10px;
+                background-color: rgb(83, 118, 131);
+                width: max-content;
+                color: rgba(255, 255, 255, 0.89);
+                position: absolute;
+                right: 10px;
+                bottom: 30px;
+                .fa-angle-double-right{
+                    margin-left: 5px;
+                }
+
             }
         }
     }

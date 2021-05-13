@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+main{
+    padding-top: 20px;
+    width: 1000px;
+    margin: auto;
+    .now_page{
+        font-size: 12px;
+        letter-spacing: 2px;
+        // font-weight: 600;
+        color: gray;
+        padding-bottom: 10px;
+        border-bottom: 1px  solid gainsboro;
+        margin-bottom: 20px;
+        padding-left: 8px;
+    }
+    .brand_pic{
+        img{
+            width: 100%;
+        }
+    }
+}
