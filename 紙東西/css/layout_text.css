@@ -636,33 +636,32 @@ nav .content .right .right_item span img {
 
 .maps .content .map {
   width: calc(100% - 395px);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 2px;
 }
 
 .maps .content .map .p {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: #252314;
   padding-left: 15px;
 }
 
 .maps .content .map .p:nth-child(1) {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   color: #1d1c24;
   padding: 8px 15px;
   background-color: rgba(128, 128, 128, 0.301);
   background-image: -webkit-gradient(linear, left bottom, left top, from(#cfd9df), to(#e2ebf0));
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 footer {
   max-width: 1920px;
   padding: 30px 0px;
   width: 100%;
-  margin-top: 60px;
   background-color: rgba(128, 128, 128, 0.445);
   background-color: rgba(128, 128, 128, 0.301);
   background-color: #e7f2fa;
