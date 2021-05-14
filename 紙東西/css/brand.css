@@ -9,7 +9,7 @@ body {
 }
 
 main {
-  padding-top: 20px;
+  padding: 20px 0px;
   width: 1000px;
   margin: auto;
 }
@@ -26,5 +26,119 @@ main .now_page {
 
 main .brand_pic img {
   width: 100%;
+  height: 400px;
+}
+
+main .brand_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px  0px;
+}
+
+main .brand_title .text {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  padding: 2px  12px;
+  color: #5e5b5b;
+}
+
+main .brand_title .fa-paper-plane {
+  font-size: 14px;
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+}
+
+main .band_text {
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+main .band_text p {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  padding-bottom: 15px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+main .band_text p:nth-child(1) {
+  padding-top: 15px;
+}
+
+main .contents {
+  padding: 0px  8px;
+}
+
+main .contents .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+main .contents .content:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+main .contents .content:nth-child(2n) .pic {
+  margin-left: 20px;
+}
+
+main .contents .content .pic {
+  margin-right: 20px;
+}
+
+main .contents .content .pic img {
+  width: 100%;
+  height: 250px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+}
+
+main .contents .content .texts {
+  width: calc(50% - 15px);
+  width: 50%;
+  padding-top: 15px;
+}
+
+main .contents .content .texts .small_title {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: 15px;
+  font-size: 28px;
+  font-weight: 600;
+  border-radius: 50%;
+  padding: 4.5px 9px;
+  border: 2px solid #8f3c3c;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+main .contents .content .texts .text {
+  padding: 0px  15px;
+  padding-top: 10px;
+  border-top: 1px  solid gainsboro;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 26px;
+  padding-top: 10px;
 }
 /*# sourceMappingURL=brand.css.map */
