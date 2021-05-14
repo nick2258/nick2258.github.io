@@ -480,39 +480,38 @@ main .product_main .all .pic img {
 }
 
 main .product_detail {
-  margin-top: 30px;
-  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
   border-bottom: 1px solid gainsboro;
 }
 
 main .product_detail .product_detail_btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 26px;
+  font-size: 22px;
 }
 
 main .product_detail .product_detail_btn .btn {
-  padding: 8px 15px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 3px 10px;
   background-color: rgba(128, 128, 128, 0.356);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-right: 30px;
+  margin-right: 20px;
   border-radius: 5px;
   letter-spacing: 2.5px;
   font-weight: 600;
   cursor: pointer;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#cfd9df), to(#e2ebf0));
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  margin-bottom: 20px;
 }
 
 main .product_detail .product_detail_btn .btn:hover {
   color: #383737;
-}
-
-main .product_detail .detail {
-  margin-top: 20px;
 }
 
 main .product_detail .detail .detailcontent {
@@ -543,16 +542,45 @@ main .product_detail .detail .detailcontent .describle .content {
 
 main .product_detail .detail .product_specification {
   font-size: 18px;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 1.5px;
   color: #0e0e0f;
-  line-height: 36px;
+  line-height: 28px;
+}
+
+main .product_detail .detail .pay #content1 .titles {
+  max-width: 52%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-right: 30px;
+}
+
+main .product_detail .detail .pay #content1 .titles:nth-last-child(1) {
+  margin-right: 0px;
 }
 
 main .product_detail .detail .pay .content {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .product_detail .detail .pay .content .titles {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  width: calc(33.33% - 20px);
+  margin-right: 30px;
+}
+
+main .product_detail .detail .pay .content .titles:nth-last-child(1) {
+  margin-right: 0px;
 }
 
 main .product_detail .detail .pay .content .titles .smalltitle {
@@ -562,7 +590,7 @@ main .product_detail .detail .pay .content .titles .smalltitle {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   padding: 5px  12px;
   border-radius: 5px;
@@ -571,12 +599,18 @@ main .product_detail .detail .pay .content .titles .smalltitle {
   letter-spacing: 2px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#cfd9df), to(#e2ebf0));
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  margin-top: 0px;
 }
 
 main .product_detail .detail .pay .content .titles .smalltitle .no {
   font-size: 14px;
   line-height: 28px;
   color: #363636;
+}
+
+main .product_detail .detail .pay .content .titles .text {
+  font-size: 14px;
+  letter-spacing: 1.5px;
 }
 
 main .product_detail .detail .pay .content a {
@@ -590,6 +624,22 @@ main .product_detail .detail .pay .content a {
   list-style: none;
   background-color: rgba(189, 186, 178, 0.432);
   padding: 8px 15px;
+  border-radius: 5px;
+  display: block;
+  margin-top: 15px;
+}
+
+main .product_detail .detail .pay a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: black;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  list-style: none;
+  background-color: rgba(189, 186, 178, 0.432);
+  padding: 5px 12px;
   border-radius: 5px;
   display: block;
   margin-top: 15px;

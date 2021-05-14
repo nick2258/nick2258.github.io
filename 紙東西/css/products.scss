@@ -237,9 +237,11 @@ main{
     
                     // margin-right: 30px;
                     // padding:10px 25px 10px 15px;
-                    padding: 8px 5px;
-                    font-size: 17px;
+                    padding: 3px 5px;
+                    font-size: 16px;
                     border-radius: 5px;
+                    letter-spacing: 1.5px;
+                    border: solid 1px gainsboro;
                     // position: relative;
         
                      /*移除箭頭樣式*/
@@ -261,6 +263,7 @@ main{
             display: flex;
             flex-wrap: wrap;
             margin-bottom: 10px;
+            padding: 0px 5px;
             .product_card{
                 width: calc(33.33% - 20px);
                 margin-right: 30px;
