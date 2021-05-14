@@ -439,6 +439,7 @@ nav .content .right .right_item span img {
   width: calc(33.33% - 13.33px);
   width: calc(33.33% - 20px);
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .sale .content .four1 .product_card:nth-child(3n) {
@@ -453,18 +454,19 @@ nav .content .right .right_item span img {
   width: 100%;
   height: 200px;
   display: block;
+  border-radius: 10px 10px  0px 0px;
 }
 
 .sale .content .four1 .product_card .pic .heart_text {
   position: absolute;
   top: 10px;
-  left: 8px;
-  font-size: 14px;
-  letter-spacing: 1.5px;
+  left: 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
   background-color: lightcoral;
   color: white;
-  padding: 3px  10px;
-  border-radius: 3px;
+  padding: 2px  6px;
+  border-radius: 2px;
 }
 
 .sale .content .four1 .product_card .pic .heart {
@@ -508,8 +510,10 @@ nav .content .right .right_item span img {
   font-size: 18px;
   color: #080808;
   z-index: 5;
-  padding-bottom: 25px;
+  padding-top: 15px;
   letter-spacing: 1.5px;
+  border-radius: 0px 0px  10px 10px;
+  background-color: rgba(209, 224, 238, 0.63);
 }
 
 .sale .content .four1 .product_card .text .article {
@@ -545,21 +549,38 @@ nav .content .right .right_item span img {
 
 .sale .content .four1 .product_card .text .article .buy {
   font-size: 12px;
-  padding: 5px  10px;
+  padding: 3px  8px;
   background-color: #818080;
   color: white;
   position: absolute;
-  -webkit-transform: translateY(-42%);
-          transform: translateY(-42%);
-  bottom: 0px;
+  bottom: 13px;
   right: 0px;
   border-radius: 3px;
-  z-index: 3;
+  border: 1px solid rgba(250, 242, 242, 0.219);
+}
+
+.sale .content .four1 .product_card .text .article .buy:hover {
+  background-color: rgba(250, 242, 242, 0.568);
+  color: darkred;
+  -webkit-transition: .2s;
+  transition: .2s;
+  border: 1px solid darkred;
+}
+
+.sale .content .four1 .product_card .text .article .buy:hover .fa-angle-double-right {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sale .content .four1 .product_card .text .article .buy .fa-angle-double-right {
+  margin-left: 1px;
 }
 
 .sale .content .four1 .product_card .text .cost {
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 8px;
   font-size: 18px;
   color: #003354;
@@ -570,17 +591,6 @@ nav .content .right .right_item span img {
   font-weight: 600;
   letter-spacing: 2px;
   padding-right: 100px;
-}
-
-.sale .content .four1 .product_card .text .buy {
-  font-size: 14px;
-  padding: 5px  10px;
-  background-color: #818080;
-  color: white;
-  position: absolute;
-  bottom: 0px;
-  right: 10px;
-  border-radius: 3px;
 }
 
 .sale .content .four1 .product_card .text .heart {
@@ -639,6 +649,7 @@ nav .content .right .right_item span img {
 }
 
 .maps .content .map {
+  max-width: 1920px;
   width: calc(100% - 395px);
   font-size: 16px;
   font-weight: 600;

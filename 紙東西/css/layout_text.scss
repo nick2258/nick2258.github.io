@@ -401,12 +401,14 @@ nav{
                 width: calc(33.33% - 13.33px);
                 width: calc(33.33% - 20px);
                 margin-right: 20px;
+                margin-bottom: 20px;
                 &:nth-child(3n){
                     margin-right: 0px;
                 }
                 .pic{
                     // margin-right: 20px;
                     position: relative;
+
     
                     img{
                         // width: 235px;
@@ -414,22 +416,21 @@ nav{
                         width: 100%;
                         height: 200px;
                         display: block; 
+                        border-radius: 10px 10px  0px 0px;
                     }
                     .heart_text{
                         position: absolute;
                         // bottom: 8px;
                         // right: 8px;
                         top: 10px;
-                        left: 8px;
-                        font-size: 14px;
-                        letter-spacing: 1.5px;
+                        left: 10px;
+                        font-size: 12px;
+                        letter-spacing: 1px;
                         background-color: lightcoral;
                         color: white;
-                        padding: 3px  10px;
-                        border-radius: 3px;
+                        padding: 2px  6px;
+                        border-radius: 2px;
                     }
-                  
-                    
                     .heart{
                         width: 40px;
                         height:40px;
@@ -471,8 +472,10 @@ nav{
                     font-size: 18px;
                     color: rgb(8, 8, 8);
                     z-index: 5;
-                    padding-bottom: 25px;
+                    padding-top: 15px;
                     letter-spacing: 1.5px;
+                    border-radius: 0px 0px  10px 10px;
+                    background-color: rgba(209, 224, 238, 0.63);
 
   
                     .article{
@@ -507,16 +510,30 @@ nav{
                         .buy{
                             font-size: 12px;
                             // font-weight: 600;
-                            padding: 5px  10px;
+                            padding: 3px  8px;
                             background-color: rgb(129, 128, 128);
                             color: white;
                             position: absolute;
-                            // top: 50%;
-                            transform: translateY(-42%);
-                            bottom: 0px;
+                            bottom: 13px;
                             right: 0px;
                             border-radius: 3px;
-                            z-index: 3;
+                            border: 1px solid rgba(250, 242, 242, 0.219);
+    
+                            &:hover{
+                                background-color: rgba(250, 242, 242, 0.568);
+                                color: darkred;
+                                transition: .2s;
+                                border: 1px solid darkred;
+                                // padding: 2px  6px;
+                               
+                            }
+                            &:hover .fa-angle-double-right{
+                                transform: translateX(5px);
+                                transition: .4s;
+                            }
+                            .fa-angle-double-right{
+                                margin-left: 1px;
+                            }
                         }
     
                     }
@@ -525,7 +542,7 @@ nav{
                     }
                     .cost{
                         position: absolute;
-                        top: 10px;
+                        top: 15px;
                         right: 8px;
                         font-size: 18px;
                         color: #003354;
@@ -536,17 +553,7 @@ nav{
                         letter-spacing: 2px;
                         padding-right: 100px;
                     }
-                    .buy{
-                        font-size: 14px;
-                        // font-weight: 600;
-                        padding: 5px  10px;
-                        background-color: rgb(129, 128, 128);
-                        color: white;
-                        position: absolute;
-                        bottom: 0px;
-                        right: 10px;
-                        border-radius: 3px;
-                    }
+                    
                     .heart{
                         border-radius: 50%;
                         text-align: center;
@@ -601,6 +608,7 @@ nav{
             }
         }
         .map{
+            max-width: 1920px;
             width: calc(100% - 395px);
             font-size: 16px;
             font-weight: 600;
@@ -608,6 +616,7 @@ nav{
             // width: max-content;
             position: relative;
             height: 240px;
+         
             .p{
                 margin-bottom: 10px;
                 color: rgb(37, 35, 20);

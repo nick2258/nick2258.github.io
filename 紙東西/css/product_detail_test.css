@@ -56,8 +56,6 @@ main .product_details .product_pics .big_pics .big_pic img {
   height: 540px;
   height: 510px;
   display: block;
-  width: 50vw;
-  height: 26.5vw;
 }
 
 main .product_details .product_pics .small_pics {
