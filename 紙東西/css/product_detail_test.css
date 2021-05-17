@@ -30,31 +30,28 @@ main .product_details {
 
 main .product_details .product_pics {
   padding: 30px  8px;
+  padding: 20px 50px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 30px;
   border-bottom: 1px solid gainsboro;
 }
 
 main .product_details .product_pics .big_pics {
-  width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  margin-right: 20px;
-}
-
-main .product_details .product_pics .big_pics .big_pic {
-  width: 100%;
+  margin-right: 30px;
 }
 
 main .product_details .product_pics .big_pics .big_pic img {
   width: 100%;
   width: 100%;
+  width: 730px;
+  width: 740px;
   height: 540px;
-  height: 510px;
+  height: 480px;
   display: block;
 }
 
@@ -63,14 +60,21 @@ main .product_details .product_pics .small_pics {
   height: -moz-max-content;
   height: max-content;
   width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 130px;
 }
 
 main .product_details .product_pics .small_pics .small_pic {
-  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
-main .product_details .product_pics .small_pics .small_pic:nth-last-child(1) {
-  margin-bottom: 0px;
+main .product_details .product_pics .small_pics .small_pic:nth-child(2n) {
+  margin-right: 0px;
 }
 
 main .product_details .product_pics .small_pics .small_pic img {
@@ -122,16 +126,16 @@ main .product_details .product_content .top .article .pic {
 }
 
 main .product_details .product_content .top .article .pic img {
-  width: 28px;
-  height: 28px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
 }
 
 main .product_details .product_content .top .article .small_text {
   margin-left: 8px;
-  font-size: 18px;
-  height: 28px;
-  line-height: 28px;
+  font-size: 16px;
+  height: 2px;
+  line-height: 25px;
   letter-spacing: 1.5px;
 }
 
@@ -148,7 +152,7 @@ main .product_details .product_content .top .article .mylove {
 }
 
 main .product_details .product_content .top .article .mylove .text {
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1.5px;
 }
 
@@ -250,7 +254,7 @@ main .product_details .product_content .top .allnumber {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 45px;
   position: relative;
 }
@@ -411,11 +415,11 @@ main .product_details .product_content .contents {
 }
 
 main .product_details .product_content .contents .title {
-  font-size: 20px;
+  font-size: 18px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding: 5px 12px;
+  padding: 3px 10px;
   font-weight: 600;
   letter-spacing: 2px;
   border-radius: 3px;
@@ -424,9 +428,9 @@ main .product_details .product_content .contents .title {
 }
 
 main .product_details .product_content .contents .text {
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 1.5px;
-  line-height: 30px;
+  line-height: 28px;
   padding: 10px  0px;
   padding-left: 12px;
 }
@@ -634,15 +638,15 @@ main .product_detail .detail .pay a {
   width: -moz-max-content;
   width: max-content;
   color: black;
-  font-size: 12px;
+  color: #868686;
+  font-size: 14px;
   letter-spacing: 2px;
   text-decoration: none;
   list-style: none;
-  background-color: rgba(189, 186, 178, 0.432);
-  padding: 5px 12px;
+  padding: 0px 0px;
   border-radius: 5px;
   display: block;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 main .foryou {
