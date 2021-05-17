@@ -130,6 +130,10 @@ nav{
 .banner{
     // width: 70%;
     margin-top:30px ;
+    position: relative;
+    width: 1000px;
+    margin: auto;
+    margin-top: 30px;
     video{
         width: 100%;
         height:30vw;
@@ -138,6 +142,7 @@ nav{
         margin: auto;
         display: block;
     }
+
 }
 .allpart3{
     padding: 5px  0px;
@@ -160,7 +165,7 @@ nav{
             color: rgba(0, 0, 0, 0.432);
             // justify-content: space-between;
             .type{
-                padding: 3px 47.5px;
+                padding: 3px 50px;
                 // padding-bottom: 5px;
                 position: relative;
                 cursor: pointer; 
@@ -176,7 +181,7 @@ nav{
                 .title{
                     font-weight: 600;
                     color: rgba(0, 0, 0, 0.432);        
-                    font-size: 15px;
+                    font-size: 14px;
                 }
                 .content{
                     position: absolute;
@@ -399,7 +404,7 @@ nav{
             margin-bottom: 10px;
             .product_card{
                 width: calc(33.33% - 13.33px);
-                width: calc(33.33% - 20px);
+                // width: calc(33.33% - 20px);
                 margin-right: 20px;
                 margin-bottom: 20px;
                 &:nth-child(3n){
@@ -465,6 +470,7 @@ nav{
                 }
                 .text{
                     padding: 10px;
+                    // padding-bottom: 0px;
                     position: relative;
                     width: max-content;
                     width: 100%;
@@ -645,6 +651,54 @@ nav{
                     margin-left: 5px;
                 }
 
+            }
+        }
+    }
+    
+}
+.shop{
+    width: 1000px;
+    margin: auto;
+    margin: 20px  auto;
+    padding-bottom: 20px;
+    .cards{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px  15px;
+        // padding: 0px;
+        .shop_card{
+            width: calc(50% - 2.5px);
+            // width: 50%;
+            margin-right: 5px;
+            margin-bottom: 5px;            
+            &:hover img{
+                border-radius: 5px;
+                opacity: .8;
+            }
+            &:nth-child(2n){
+                margin-right: 0px;
+            }
+            &:nth-child(1):hover{
+                transform: translate(-15px,-15px);
+            }
+            &:nth-child(2):hover{
+                transform: translate(15px,-15px);
+            }
+            &:nth-child(3):hover{
+                transform: translate(-15px,15px);
+            }
+            &:nth-child(4):hover{
+                transform: translate(15px,15px);
+            }
+            &:hover{
+                transition: .5s;
+            }
+            img{
+                width: 100%;
+                height: 250px;
+                border-radius: 3px;
+                opacity: 1;
             }
         }
     }

@@ -163,7 +163,7 @@ nav .content .right .right_item span img {
 }
 
 .allpart3 .part3 .types .type {
-  padding: 3px 47.5px;
+  padding: 3px 50px;
   position: relative;
   cursor: pointer;
   border-right: 1px solid gainsboro;
@@ -181,7 +181,7 @@ nav .content .right .right_item span img {
 .allpart3 .part3 .types .type .title {
   font-weight: 600;
   color: rgba(0, 0, 0, 0.432);
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .allpart3 .part3 .types .type .content {
