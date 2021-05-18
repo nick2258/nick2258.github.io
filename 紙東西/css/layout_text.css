@@ -382,6 +382,85 @@ nav .content .right .right_item span img {
   padding-left: 15px;
 }
 
+.news .cats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.news .cats .b {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.news .cats .b img {
+  width: 400px;
+  opacity: .7;
+}
+
+.news .cats .cat {
+  padding: 20px 0px;
+  width: calc(50% - 15px);
+  margin-right: 30px;
+  position: relative;
+}
+
+.news .cats .cat:nth-child(2n) {
+  margin-right: 0px;
+}
+
+.news .cats .cat .pic {
+  position: relative;
+}
+
+.news .cats .cat .pic .fa-paperclip {
+  position: absolute;
+  font-size: 32px;
+  color: rgba(107, 107, 107, 0.829);
+  left: 50%;
+  top: -15%;
+}
+
+.news .cats .cat .pic img {
+  width: 80px;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -70%);
+          transform: translate(-50%, -70%);
+  -webkit-transform: translate(-50%, -70%) rotate(20deg);
+          transform: translate(-50%, -70%) rotate(20deg);
+}
+
+.news .cats .cat .pic .mask {
+  width: 100%;
+  padding: 20px 15px;
+  padding-bottom: 30px;
+  letter-spacing: 1.5px;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #5a5656;
+  background-color: #e6eef1;
+  border-radius: 10px;
+  border: 1px solid gainsboro;
+}
+
+.news .cats .cat .pic .date {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: #6e6b6b;
+}
+
 .news .content {
   color: rgba(0, 0, 0, 0.767);
 }

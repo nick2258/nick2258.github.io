@@ -353,6 +353,90 @@ nav{
         color: rgba(0, 0, 0, 0.884);
         padding-left: 15px;
     }
+    .cats{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        .b{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            img{
+                width: 400px;
+                opacity: .7;
+            }
+        }
+        .cat{
+           padding: 20px 0px;
+           width: calc(50% - 15px);
+           margin-right: 30px;
+        //    margin-bottom: 20px;
+          
+           position: relative;
+           &:nth-child(2n){
+               margin-right: 0px;
+           }
+          
+        //    &:nth-child(2){
+        //         .pic{
+        //             img{
+        //                 transform: translate(-50%,-70%) rotate(-45deg);
+        //             }
+        //         }
+        //     }
+        //     &:nth-child(3){
+        //         .pic{
+        //             img{
+        //                 transform: translate(-50%,-70%) rotate(-45deg);
+        //             }
+        //         }
+        //     }
+
+            .pic{
+                position: relative;
+                .fa-paperclip{
+                    position: absolute;
+                    font-size: 32px;
+                    color: rgba(107, 107, 107, 0.829);
+                    left: 50%;
+                    top: -15%;
+                }
+                img{
+                    width: 80px;
+                    z-index: 1;
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%,-70%);
+                    transform: translate(-50%,-70%) rotate(20deg);
+                }
+                .mask{
+                    width: 100%;
+                    padding: 20px 15px;
+                    padding-bottom: 30px;
+                    letter-spacing: 1.5px;
+                    line-height: 28px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: rgb(90, 86, 86);
+                    // height:px;
+                    // padding: 10px;
+                    background-color: rgb(230, 238, 241);
+                    // background-color: yellow;
+                    border-radius: 10px;
+                    border: 1px solid gainsboro;
+                }
+                .date{
+                    position: absolute;
+                    bottom: 10px;
+                    right: 15px;
+                    font-size: 14px;
+                    letter-spacing: 1.5px;
+                    color: rgb(110, 107, 107);
+                }
+            }
+        }
+    }
     .content{
         color: rgba(0, 0, 0, 0.767);
         .new{
