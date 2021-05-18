@@ -182,6 +182,7 @@ main .tabcontent .contents .content .texts .articles .likecard:nth-child(6n) {
 main .tabcontent .contents .content .texts .articles .likecard .pic img {
   width: 100%;
   height: 147px;
+  height: 147px;
   border-radius: 50%;
 }
 
