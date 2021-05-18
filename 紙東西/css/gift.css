@@ -20,6 +20,46 @@ main {
   padding-top: 15px;
 }
 
+main .titles {
+  padding: 0px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px  0px;
+  position: relative;
+  padding: 15px 8px;
+}
+
+main .titles .title_left {
+  left: 0px;
+}
+
+main .titles .title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.568);
+}
+
+main .titles .title_right {
+  right: 0px;
+}
+
+main .titles .g {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 40%;
+  height: 1px;
+  background-color: #686565;
+}
+
 main .now_page {
   font-size: 12px;
   letter-spacing: 2px;
