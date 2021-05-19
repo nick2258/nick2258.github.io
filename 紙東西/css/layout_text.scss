@@ -81,9 +81,9 @@ nav{
                     .dropdown-menu.show{
 
                         width: max-content;
-                        top: -11px;
+                        // top: -11px;
                         position: absolute;
-                        transform: translateY(-11px);
+                        // transform: translateY(-11px);
                         z-index: 99;
                         background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
                     }
@@ -144,10 +144,89 @@ nav{
     }
 
 }
+.brand_concept{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    margin: 30px auto;
+    margin-bottom: 0px;
+    position: relative;
+    padding: 0px 15px;
+    .pic{
+        width: 45%;
+        height: 450px;
+        background-color: palegoldenrod;
+        transform: translateY(40px);
+        z-index: 1;
+        img{
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 30px;
+        }
+    }
+    .texts{
+        width: 54%;
+        height:400px;
+        background-color: rgba(236, 240, 220, 0.705);
+        // position: absolute;
+        // right: 30px;
+        // bottom: 30px;
+        transform: translate(-50px,140px);
+        padding: 30px  90px;
+        position: relative;
+        border-radius: 8px;
+        padding-left: 140px;
+        .small_title{
+            font-size: 28px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            color: rgb(165, 112, 42);
+            margin-bottom: 15px;
+        }
+        .text{
+            font-size: 18px;
+            letter-spacing: 2px;
+            line-height: 34px;
+            color: rgb(148, 124, 92);
+            font-weight: 600;
+        }
+        .titles{
+            padding: 0px 80px;
+            // background-color: palegreen;
+            position: absolute;
+            top: 0px;
+            display: flex;
+            transform: translate(-90px,-110%);
+            // height: 72px;
+            .border{
+                width: 80px;
+                border: 100px;
+                height: 5px;
+                // background-color:palegreen ;
+                margin-right: 20px;
+                
+                transform: translateY(54px);
+                background-color: rgb(181, 187, 156);
+            }
+            .title{
+                font-size: 60px;
+                letter-spacing: 1.5px;
+                font-weight: 600;
+                color:rgb(181, 187, 156) ;
+                
+            }
+        }
+    }
+    img{
+        margin-left: auto;
+        height: 580px;
+    }
+}
 .allpart3{
     padding: 5px  0px;
     position: sticky;
-    top: 70px;
+    top: 74px;
     z-index: 10;
     background-color: white;
     background-color: rgb(151, 183, 206);
@@ -357,6 +436,7 @@ nav{
         display: flex;
         flex-wrap: wrap;
         position: relative;
+        padding: 0px  15px;
         .b{
             position: absolute;
             top: 50%;
@@ -371,6 +451,7 @@ nav{
            padding: 20px 0px;
            width: calc(50% - 15px);
            margin-right: 30px;
+          
         //    margin-bottom: 20px;
           
            position: relative;
@@ -398,9 +479,18 @@ nav{
                 .fa-paperclip{
                     position: absolute;
                     font-size: 32px;
+                    // color: rgba(62, 85, 185, 0.829);
+                    left: 50%;
+                    top: -12%;
+                    transform: rotate(-15deg);
+                }
+                .fa-thumbtack{
+                    position: absolute;
+                    font-size: 32px;
                     color: rgba(62, 85, 185, 0.829);
                     left: 50%;
-                    top: -15%;
+                    top: -18%;
+                    transform: rotate(30deg);
                 }
                 img{
                     width: 80px;
@@ -427,12 +517,16 @@ nav{
                     border: 1px solid gainsboro;
                 }
                 .date{
+                    padding: 5px 12px;
                     position: absolute;
                     bottom: 10px;
-                    right: 15px;
+                    right: 10px;
                     font-size: 14px;
                     letter-spacing: 1.5px;
+                    // background-color: rgb(187, 193, 206);
                     color: rgb(110, 107, 107);
+                    // color: white;
+                    border-radius: 2px;
                 }
             }
         }
@@ -488,10 +582,11 @@ nav{
             margin-bottom: 10px;
             .product_card{
                 width: calc(33.33% - 13.33px);
+                width: calc(25% - 15px);
                 // width: calc(33.33% - 20px);
                 margin-right: 20px;
                 margin-bottom: 20px;
-                &:nth-child(3n){
+                &:nth-child(4n){
                     margin-right: 0px;
                 }
                 .pic{
@@ -580,6 +675,7 @@ nav{
                         // height: max-content;
                         height: auto;
                         position: relative;
+                        
 
                         .pic{
                             width: 18px;
@@ -642,6 +738,214 @@ nav{
                         font-weight: 600;
                         letter-spacing: 2px;
                         padding-right: 100px;
+                    }
+                    
+                    .heart{
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 42px;
+                        position: absolute;
+                        top: 3px;
+                        right: 10px;
+                        font-size: 24px;
+                        // color: rgb(173, 13, 13);
+                        color: rgb(207, 182, 182);
+                        &:active{
+                            color: darkred;
+                        }
+    
+    
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+.sale1{
+    width: 1000px;
+    margin: auto;
+    padding: 0px  15px;
+    .title{
+        font-size: 24px;
+        font-weight: 600;
+        padding: 20px  0px;
+        letter-spacing: 5px;
+        color: rgba(0, 0, 0, 0.884);
+    }
+    .content{
+        // display: flex;
+        .four1{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+            .product_card{
+                width: calc(33.33% - 13.33px);
+                width: calc(25% - 15px);
+                margin-right: 20px;
+                margin-bottom: 20px;
+
+                &:nth-child(4n){
+                    margin-right: 0px;
+                }
+                .pic{
+                    // margin-right: 20px;
+                    position: relative;
+                    &:hover {
+                        opacity: .7;
+                    }
+                    &:hover .buy{
+                        display: block;
+                        transition: .8s;
+                    }
+                    .buy{
+                        width: 100%;
+                        display: none;
+                        font-size: 14px;
+                        // font-weight: 600;
+                        padding: 5px  0px;
+                        background-color: rgb(129, 128, 128);
+                        color: white;
+                        position: absolute;
+                        bottom: 0px;
+                        // right: 0px;
+                        border-radius: 3px;
+                        border: 1px solid rgba(250, 242, 242, 0.219);
+                        text-align: center;
+                        margin-top: 10px;
+
+                        &:hover{
+                            background-color: rgba(250, 242, 242, 0.568);
+                            color: darkred;
+                            transition: .2s;
+                            border: 1px solid darkred;
+                            // padding: 2px  6px;
+                           
+                        }
+                        &:hover .fa-angle-double-right{
+                            transform: translateX(5px);
+                            transition: .4s;
+                        }
+                        .fa-angle-double-right{
+                            margin-left: 1px;
+                        }
+                    }
+                    .article{
+                        z-index: 3;
+                        font-size: 14px;
+                        color: rgb(46, 45, 45);
+                        display: flex;
+                        // line-height: 30px;
+                        padding: 15px 0px;
+                        padding-right: 30px;
+                        width: 100%;
+
+                        height: auto;
+                        position: relative;
+
+                        position: absolute;
+                        z-index: 3;
+                        bottom: 8px;
+                        .pic{
+                            width: 18px;
+                            height: 18px;
+                            margin-right:5px;
+    
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 50%;
+                            }
+                            .article_name{
+                                width: calc(100% - 230px);
+                                // padding-right: 30px;
+                                height: auto;                                
+                            }
+                        }
+                    }
+                    img{
+                        width: 100%;
+                        height: 200px;
+                        height: 150px;
+                        display: block; 
+                        border-radius: 10px ;
+                    }
+                    .heart_text{
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        font-size: 12px;
+                        letter-spacing: 1px;
+                        background-color: rgb(224, 95, 95);
+                        color: white;
+                        padding: 2px  6px;
+                        border-radius: 2px;
+                    }
+                    .heart{
+                        width: 40px;
+                        height:40px;
+                        
+                        background-color: rgb(107, 103, 96);
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 42px;
+                        position: absolute;
+                        top: 5px;
+                        right: 5px;
+                        font-size: 22px;
+                        // color: rgb(173, 13, 13);
+                        color: rgb(104, 86, 86);
+                        color: white;
+                        // &:active{
+                        //     color: rgb(160, 6, 6);
+                        // }
+                        &.active{
+                            color: darkred;
+                        }
+                    }
+                    &:nth-last-child(1){
+                        margin-right: 0px;
+                    }
+                    &:hover .mask{
+                        display: block;
+                    }
+                    &:hover .heart{
+                        color: honeydew;
+                    }
+                }
+                .text{
+                    padding: 10px;
+                    // padding-bottom: 0px;
+                    position: relative;
+                    width: max-content;
+                    width: 100%;
+                  
+                    font-size: 14px;
+                    color: rgb(8, 8, 8);
+                    z-index: 5;
+                    padding-top: 10px;
+                    letter-spacing: 1.5px;
+                    border-radius: 0px 0px  10px 10px;
+                    text-align: center;
+                    // background-color: rgba(209, 224, 238, 0.63);
+                   
+                    .p{
+                        // padding-top: 8px;
+                    }
+                    .cost{
+                        // position: absolute;
+                        // top: 15px;
+                        // right: 8px;
+                        // font-size: 18px;
+                        color: #003354;
+                        font-weight: 600;
+                    }
+                    .name{
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                        font-size: 16px;
+                        // padding-right: 100px;
                     }
                     
                     .heart{

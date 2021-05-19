@@ -91,10 +91,7 @@ nav .content .collapse .navbar-nav .nav-item .dropdown-menu.show {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  top: -11px;
   position: absolute;
-  -webkit-transform: translateY(-11px);
-          transform: translateY(-11px);
   z-index: 99;
   background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
 }
@@ -156,11 +153,100 @@ nav .content .right .right_item span img {
   display: block;
 }
 
+.brand_concept {
+  width: 1000px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px auto;
+  margin-bottom: 0px;
+  position: relative;
+  padding: 0px 15px;
+}
+
+.brand_concept .pic {
+  width: 45%;
+  height: 450px;
+  background-color: palegoldenrod;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  z-index: 1;
+}
+
+.brand_concept .pic img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 30px;
+}
+
+.brand_concept .texts {
+  width: 54%;
+  height: 400px;
+  background-color: rgba(236, 240, 220, 0.705);
+  -webkit-transform: translate(-50px, 140px);
+          transform: translate(-50px, 140px);
+  padding: 30px  90px;
+  position: relative;
+  border-radius: 8px;
+  padding-left: 140px;
+}
+
+.brand_concept .texts .small_title {
+  font-size: 28px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #a5702a;
+  margin-bottom: 15px;
+}
+
+.brand_concept .texts .text {
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 34px;
+  color: #947c5c;
+  font-weight: 600;
+}
+
+.brand_concept .texts .titles {
+  padding: 0px 80px;
+  position: absolute;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translate(-90px, -110%);
+          transform: translate(-90px, -110%);
+}
+
+.brand_concept .texts .titles .border {
+  width: 80px;
+  border: 100px;
+  height: 5px;
+  margin-right: 20px;
+  -webkit-transform: translateY(54px);
+          transform: translateY(54px);
+  background-color: #b5bb9c;
+}
+
+.brand_concept .texts .titles .title {
+  font-size: 60px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: #b5bb9c;
+}
+
+.brand_concept img {
+  margin-left: auto;
+  height: 580px;
+}
+
 .allpart3 {
   padding: 5px  0px;
   position: -webkit-sticky;
   position: sticky;
-  top: 70px;
+  top: 74px;
   z-index: 10;
   background-color: white;
   background-color: #97b7ce;
@@ -389,6 +475,7 @@ nav .content .right .right_item span img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
+  padding: 0px  15px;
 }
 
 .news .cats .b {
@@ -422,9 +509,20 @@ nav .content .right .right_item span img {
 .news .cats .cat .pic .fa-paperclip {
   position: absolute;
   font-size: 32px;
+  left: 50%;
+  top: -12%;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+.news .cats .cat .pic .fa-thumbtack {
+  position: absolute;
+  font-size: 32px;
   color: rgba(62, 85, 185, 0.829);
   left: 50%;
-  top: -15%;
+  top: -18%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
 }
 
 .news .cats .cat .pic img {
@@ -453,12 +551,14 @@ nav .content .right .right_item span img {
 }
 
 .news .cats .cat .pic .date {
+  padding: 5px 12px;
   position: absolute;
   bottom: 10px;
-  right: 15px;
+  right: 10px;
   font-size: 14px;
   letter-spacing: 1.5px;
   color: #6e6b6b;
+  border-radius: 2px;
 }
 
 .news .content {
@@ -520,11 +620,12 @@ nav .content .right .right_item span img {
 
 .sale .content .four1 .product_card {
   width: calc(33.33% - 13.33px);
+  width: calc(25% - 15px);
   margin-right: 20px;
   margin-bottom: 20px;
 }
 
-.sale .content .four1 .product_card:nth-child(3n) {
+.sale .content .four1 .product_card:nth-child(4n) {
   margin-right: 0px;
 }
 
@@ -687,6 +788,215 @@ nav .content .right .right_item span img {
 }
 
 .sale .content .four1 .product_card .text .heart:active {
+  color: darkred;
+}
+
+.sale1 {
+  width: 1000px;
+  margin: auto;
+  padding: 0px  15px;
+}
+
+.sale1 .title {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px  0px;
+  letter-spacing: 5px;
+  color: rgba(0, 0, 0, 0.884);
+}
+
+.sale1 .content .four1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.sale1 .content .four1 .product_card {
+  width: calc(33.33% - 13.33px);
+  width: calc(25% - 15px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.sale1 .content .four1 .product_card:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.sale1 .content .four1 .product_card .pic {
+  position: relative;
+}
+
+.sale1 .content .four1 .product_card .pic:hover {
+  opacity: .7;
+}
+
+.sale1 .content .four1 .product_card .pic:hover .buy {
+  display: block;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.sale1 .content .four1 .product_card .pic .buy {
+  width: 100%;
+  display: none;
+  font-size: 14px;
+  padding: 5px  0px;
+  background-color: #818080;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 3px;
+  border: 1px solid rgba(250, 242, 242, 0.219);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sale1 .content .four1 .product_card .pic .buy:hover {
+  background-color: rgba(250, 242, 242, 0.568);
+  color: darkred;
+  -webkit-transition: .2s;
+  transition: .2s;
+  border: 1px solid darkred;
+}
+
+.sale1 .content .four1 .product_card .pic .buy:hover .fa-angle-double-right {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sale1 .content .four1 .product_card .pic .buy .fa-angle-double-right {
+  margin-left: 1px;
+}
+
+.sale1 .content .four1 .product_card .pic .article {
+  z-index: 3;
+  font-size: 14px;
+  color: #2e2d2d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0px;
+  padding-right: 30px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  position: absolute;
+  z-index: 3;
+  bottom: 8px;
+}
+
+.sale1 .content .four1 .product_card .pic .article .pic {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+.sale1 .content .four1 .product_card .pic .article .pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.sale1 .content .four1 .product_card .pic .article .pic .article_name {
+  width: calc(100% - 230px);
+  height: auto;
+}
+
+.sale1 .content .four1 .product_card .pic img {
+  width: 100%;
+  height: 200px;
+  height: 150px;
+  display: block;
+  border-radius: 10px;
+}
+
+.sale1 .content .four1 .product_card .pic .heart_text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  background-color: #e05f5f;
+  color: white;
+  padding: 2px  6px;
+  border-radius: 2px;
+}
+
+.sale1 .content .four1 .product_card .pic .heart {
+  width: 40px;
+  height: 40px;
+  background-color: #6b6760;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 22px;
+  color: #685656;
+  color: white;
+}
+
+.sale1 .content .four1 .product_card .pic .heart.active {
+  color: darkred;
+}
+
+.sale1 .content .four1 .product_card .pic:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+.sale1 .content .four1 .product_card .pic:hover .mask {
+  display: block;
+}
+
+.sale1 .content .four1 .product_card .pic:hover .heart {
+  color: honeydew;
+}
+
+.sale1 .content .four1 .product_card .text {
+  padding: 10px;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  width: 100%;
+  font-size: 14px;
+  color: #080808;
+  z-index: 5;
+  padding-top: 10px;
+  letter-spacing: 1.5px;
+  border-radius: 0px 0px  10px 10px;
+  text-align: center;
+}
+
+.sale1 .content .four1 .product_card .text .cost {
+  color: #003354;
+  font-weight: 600;
+}
+
+.sale1 .content .four1 .product_card .text .name {
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+.sale1 .content .four1 .product_card .text .heart {
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  font-size: 24px;
+  color: #cfb6b6;
+}
+
+.sale1 .content .four1 .product_card .text .heart:active {
   color: darkred;
 }
 

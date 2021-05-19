@@ -8,6 +8,8 @@ body {
   margin: 0px;
   background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
   background-image: url(/img/lightpaperfibers.png);
+  height: 1500px;
+  position: relative;
 }
 
 html {
@@ -31,51 +33,62 @@ a:hover {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
+  padding: 2px !important;
 }
 
 nav {
+  max-width: 1920px;
   background-color: #e7f2fa;
-  z-index: 60;
-  padding: 5px 0px;
+  width: 100%;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0px;
+  z-index: 99;
 }
 
 nav .content {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  width: 1140px;
-  width: 1000px;
+  max-width: 1000px;
+  width: 100vw;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 99;
   position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 nav .content .navbar-brand {
-  padding: 0px;
-  margin-right: 0px;
+  margin: 0px;
 }
 
 nav .content .navbar-brand img {
   width: 120px;
   height: auto;
   height: 60px;
-  margin-right: 30px;
 }
 
-nav .content .collapse {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
+nav .content .all_links {
   position: absolute;
-  right: 0px;
-  top: 28px;
+  bottom: 3px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
-nav .content .collapse .navbar-nav .nav-item .nav-link {
+nav .content .all_links .navbar-toggler {
+  width: 50px;
+  height: 50px;
+}
+
+nav .content .all_links .navbar-collapse {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+nav .content .all_links .navbar-collapse .navbar-nav .nav-item .nav-link {
   font-size: 16px;
   line-height: 34px;
   font-weight: 600;
@@ -83,20 +96,15 @@ nav .content .collapse .navbar-nav .nav-item .nav-link {
   padding: 0px 0px 0px 20px;
 }
 
-nav .content .collapse .navbar-nav .nav-item .nav-link:nth-child(2) {
+nav .content .all_links .navbar-collapse .navbar-nav .nav-item .nav-link:nth-child(2) {
   padding-right: 0px;
 }
 
-nav .content .collapse .navbar-nav .nav-item .dropdown-menu.show {
+nav .content .all_links .navbar-collapse .navbar-nav .nav-item .dropdown-menu.show {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  top: -11px;
-  position: absolute;
-  -webkit-transform: translateY(-11px);
-          transform: translateY(-11px);
-  z-index: 99;
-  background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
+  z-index: 99 !important;
 }
 
 nav .content .right {
@@ -143,8 +151,7 @@ nav .content .right .right_item span img {
   padding: 5px  0px;
   position: -webkit-sticky;
   position: sticky;
-  top: 70px;
-  z-index: 10;
+  top: 74px;
   background-color: white;
   background-color: #97b7ce;
   background-color: #a8cce6;

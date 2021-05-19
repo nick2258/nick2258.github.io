@@ -7,6 +7,8 @@ body{
     margin: 0px;
     background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
     background-image: url(/img/lightpaperfibers.png);
+    height: 1500px;
+    position: relative;
 }
 
 html{
@@ -28,64 +30,187 @@ a{
 .navbar{
     position: sticky;
     top: 0px;
+    padding: 2px !important;
 }
 
+// nav{
+    
+//     background-color: rgb(231, 242, 250);
+//     z-index: 60;
+//     padding:5px 0px;
+//     .content{
+//         position: sticky;
+//         top: 0px;
+//         width: 1140px;
+//         max-width: 1000px;
+       
+//         margin: auto;
+//         display: flex;
+//         z-index: 99;
+//         position: relative;
+//         @media (max-width:1000px) {
+//             width: 100%;
+//         }
+//         .navbar-brand{
+//             padding: 0px;
+//             margin-right: 0px;
+//             margin: auto;
+//             img{
+//                 width: 120px;
+//                 height: auto;
+//                 height: 60px;
+//                 margin-right: 30px;
+//             }
+//         }
+//             .collapse{
+//                 width: max-content;
+//                 display: flex;
+//                 margin-left:auto ;
+//                 position: absolute;
+//                 right: 0px;
+//                 top: 28px;
+//                 .navbar-nav{
+//                     .nav-item{
+                       
+//                         .nav-link{
+//                             font-size: 16px;
+             
+//                             line-height: 34px;
+//                             font-weight: 600;
+//                             color: rgba(0, 0, 0, 0.637);
+                 
+//                             padding: 0px 0px 0px 20px;
+//                             &:nth-child(2){
+//                                 padding-right: 0px;
+//                             }
+//                         }
+//                         .dropdown-menu.show{
+    
+//                             width: max-content;
+//                             top: -11px;
+//                             position: absolute;
+//                             transform: translateY(-11px);
+//                             z-index: 99;
+//                             background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
+//                         }
+//                     }
+//                 }
+//             }
+        
+//         .right{
+//             display: flex;
+//             position: absolute;
+//             top: 0px;
+//             right: 0px;
+//             line-height: 30px;
+//             height: 20px;
+//             margin-left: auto;
+//             .right_item{
+//                 display: flex;
+//                 span{
+//                     padding: 0px 3px;
+               
+//                     font-size: 14px;
+//                     .fa-heart{
+//                         font-size: 14px;
+//                         color: rgb(201, 13, 13);
+//                     }
+//                     .fa-shopping-cart{
+//                         font-size: 14px;
+//                     }
+//                     img{
+//                         width: 20px;
+//                         height:20px;
+//                         border-radius: 50%;
+//                         transform: translateY(-2px);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 nav{
-    // background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
-    background-color: rgb(231, 242, 250);
-    z-index: 60;
-    padding:5px 0px;
-    // padding-bottom: 0px;
+    max-width: 1920px;
+    background-color: #e7f2fa;
+
+    width: 100%;
+    position: sticky !important;
+    top: 0px;
+    // padding:5px 0px;
+    z-index: 99;
+
+
     .content{
-        position: sticky;
-        top: 0px;
-        width: 1140px;
-        width: 1000px;
+        max-width: 1000px;
+        width: 100vw;
         margin: auto;
         display: flex;
-        z-index: 99;
         position: relative;
-        // background-color: black;
+
+        // 手機板要把這個註解掉
+        flex-direction: column;
+
+        // 手機板要加這個
+        // min-height: 100px;
+
         .navbar-brand{
-            padding: 0px;
-            margin-right: 0px;
-            // margin: auto;
+            margin: 0px;
+
+            // 手機板
+            // position: absolute;
+            // left: 50%;
+            // transform: translateX(-50%);
             img{
                 width: 120px;
                 height: auto;
                 height: 60px;
-                margin-right: 30px;
+                // margin-right: 30px;
             }
         }
-        .collapse{
-            display: flex;
-            margin-left:auto ;
+        .all_links{
+            // 手機板註解absolute
             position: absolute;
-            right: 0px;
-            top: 28px;
-            .navbar-nav{
-                .nav-item{
-                    // position: relative;
-                    .nav-link{
-                        font-size: 16px;
-                        // padding: 0px 15px;
-                        line-height: 34px;
-                        font-weight: 600;
-                        color: rgba(0, 0, 0, 0.637);
-                        // padding-left: 15px;
-                        padding: 0px 0px 0px 20px;
-                        &:nth-child(2){
-                            padding-right: 0px;
-                        }
-                    }
-                    .dropdown-menu.show{
+            bottom: 3px;
 
-                        width: max-content;
-                        top: -11px;
-                        position: absolute;
-                        transform: translateY(-11px);
-                        z-index: 99;
-                        background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
+            // 電腦版
+            align-self: flex-end ;
+
+
+            // 手機板
+            // align-self: flex-start;
+            // z-index: 99;
+            .navbar-toggler{
+                width: 50px;
+                height: 50px;
+            }
+            .navbar-collapse{
+                width: max-content;
+                // align-self: flex-start;
+
+                .navbar-nav{
+                    .nav-item{
+                        
+                        .nav-link{
+                            font-size: 16px;
+                
+                            line-height: 34px;
+                            font-weight: 600;
+                            color: rgba(0, 0, 0, 0.637);
+                    
+                            padding: 0px 0px 0px 20px;
+                            &:nth-child(2){
+                                padding-right: 0px;
+                            }
+                        }
+                        .dropdown-menu.show{
+
+                            width: max-content;
+                            // top: -11px;
+                            // position: absolute;
+                            // transform: translateY(-11px);
+                            z-index: 99 !important;
+                            // background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
+                        }
                     }
                 }
             }
@@ -100,37 +225,35 @@ nav{
             margin-left: auto;
             .right_item{
                 display: flex;
-                // margin-left: 5px;
                 span{
                     padding: 0px 3px;
-                    // line-height: 50px;
+               
                     font-size: 14px;
                     .fa-heart{
                         font-size: 14px;
                         color: rgb(201, 13, 13);
-                        // line-height: 50px;
                     }
                     .fa-shopping-cart{
                         font-size: 14px;
-                        // line-height: 50px;
                     }
                     img{
                         width: 20px;
                         height:20px;
-                        // line-height: 50px;
                         border-radius: 50%;
                         transform: translateY(-2px);
                     }
                 }
             }
         }
+        
+        
     }
 }
 .allpart3{
     padding: 5px  0px;
     position: sticky;
-    top: 70px;
-    z-index: 10;
+    top: 74px;
+    // z-index: 10;
     background-color: white;
     background-color: rgb(151, 183, 206);
     background-color: rgb(168, 204, 230);
