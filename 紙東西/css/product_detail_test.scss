@@ -50,8 +50,11 @@ main{
         .swiper-pagination{
             bottom: 40px;
         }
+        .swiper-pagination-bullet{
+            background-color: rgb(36, 49, 71);
+        }
         .swiper-pagination-bullet-active{
-            color: red !important;
+            background-color: rgb(64, 94, 151);
         }
    
     }

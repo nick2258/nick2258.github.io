@@ -51,8 +51,12 @@ main .mySwipers .swiper-pagination {
   bottom: 40px;
 }
 
+main .mySwipers .swiper-pagination-bullet {
+  background-color: #243147;
+}
+
 main .mySwipers .swiper-pagination-bullet-active {
-  color: red !important;
+  background-color: #405e97;
 }
 
 main .product_details {
