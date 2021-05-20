@@ -207,13 +207,9 @@ main .contents {
   margin-top: 20px;
 }
 
-main .contents .product_news {
-  background-color: #f5e8d0;
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  padding: 10px 0px 10px 8px;
+main .contents .product_news img {
+  width: 100%;
+  height: 180px;
 }
 
 main .contents .now_page {
