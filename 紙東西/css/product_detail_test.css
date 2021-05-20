@@ -23,6 +23,38 @@ main .now_page {
   border-bottom: 1px  solid gainsboro;
 }
 
+main .mySwipers {
+  padding: 30px 60px;
+  width: 100%;
+  border-bottom: 1px  solid gainsboro;
+}
+
+main .mySwipers .swiper-wrapper {
+  width: 100%;
+}
+
+main .mySwipers .swiper-wrapper img {
+  width: 100%;
+  height: 480px;
+}
+
+main .mySwipers .color::after {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+main .mySwipers .color {
+  color: gray;
+}
+
+main .mySwipers .swiper-pagination {
+  bottom: 40px;
+}
+
+main .mySwipers .swiper-pagination-bullet-active {
+  color: red !important;
+}
+
 main .product_details {
   padding-bottom: 20px;
   border-bottom: 1px solid gainsboro;
@@ -492,7 +524,7 @@ main .product_detail {
 }
 
 main .product_detail .product_detail_btn {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 main .product_detail .product_detail_btn .btn {
@@ -594,7 +626,7 @@ main .product_detail .detail .pay .content .titles .smalltitle {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   padding: 5px  12px;
   border-radius: 5px;
@@ -867,6 +899,133 @@ main .foryou .foryou_content .foryou_card .p {
   letter-spacing: 1.5px;
   font-size: 18px;
   padding: 5px;
+}
+
+main .else_product {
+  width: 1000px;
+}
+
+main .else_product .title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin: 15px 0px;
+}
+
+main .else_product .mySwiper {
+  height: 100%;
+}
+
+main .else_product .mySwiper .swiper-wrapper .swiper-slide {
+  width: 100%;
+}
+
+main .else_product .mySwiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+main .else_product .mySwiper .swiper-wrapper .swiper-slide .card .pic {
+  position: relative;
+}
+
+main .else_product .mySwiper .swiper-wrapper .swiper-slide .card .pic img {
+  height: 160px;
+}
+
+main .else_product .mySwiper .swiper-wrapper .swiper-slide .card .pic:hover {
+  opacity: .7;
+}
+
+main .else_product .mySwiper .swiper-wrapper .swiper-slide .card .pic:hover .buy {
+  display: block;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+main .else_product .mySwiper .swiper-wrapper .swiper-slide .card .pic .buy {
+  width: 100%;
+  display: none;
+  font-size: 14px;
+  padding: 5px  0px;
+  background-color: #818080;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 3px;
+  border: 1px solid rgba(250, 242, 242, 0.219);
+  text-align: center;
+  margin-top: 10px;
+}
+
+main .else_product .mySwiper .swiper-wrapper .swiper-slide .card .pic .buy:hover {
+  background-color: rgba(250, 242, 242, 0.568);
+  color: darkred;
+  -webkit-transition: .2s;
+  transition: .2s;
+  border: 1px solid darkred;
+}
+
+main .else_product .mySwiper .swiper-wrapper .swiper-slide .card .pic .buy:hover .fa-angle-double-right {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+main .else_product .mySwiper .swiper-wrapper .swiper-slide .card .pic .buy .fa-angle-double-right {
+  margin-left: 1px;
+}
+
+main .else_product .mySwiper .swiper-wrapper .swiper-slide .card .content {
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+main .else_product .mySwiper .swiper-wrapper .swiper-slide .card .content .text {
+  padding-bottom: 5px;
+}
+
+main .else_product .mySwiper .swiper-wrapper .swiper-slide .card .content .buy {
+  font-size: 12px;
+  padding: 5px 0px;
+  width: 100%;
+  background-color: #c1d8e6;
+  color: #635e5e;
+  border-radius: 3px;
+  border: 1px solid #6893ad;
+}
+
+main .else_product .mySwiper .swiper-button-prev::after {
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+main .else_product .mySwiper .swiper-button-next::after {
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+main .else_product .mySwiper .swiper-pagination {
+  font-size: 14px;
+  font-weight: 600;
+  display: none;
+}
+
+main .else_product .mySwiper .color {
+  color: #4273a1;
+}
+
+main .else_product .mySwiper .swiper-pagination {
+  color: brown;
 }
 
 /* Style the tab */

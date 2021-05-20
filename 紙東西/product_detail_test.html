@@ -7,6 +7,13 @@
     <title>產品說明頁</title>
     <link rel="stylesheet" href="./css/product_detail_test.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+   <!-- swiper -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
 
 </head>
 <body>
@@ -14,8 +21,43 @@
         <div class="now_page">
             首頁 > 全部商品 > 節慶送禮 > 喜帖 > 喜帖A
         </div>
-        <div class="product_details">
-            <div class="product_pics">
+        <div class="swiper-container mySwipers">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/轉存/資產 2.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/轉存/資產 3.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/轉存/資產 4.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/轉存/資產 5.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/轉存/資產 6.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/轉存/資產 7.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/轉存/資產 8.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/轉存/資產 9.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/轉存/資產 10.png" />
+              </div>
+            </div>
+            <div class="swiper-button-next color"></div>
+            <div class="swiper-button-prev color"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        <div class="product_details" > 
+            <div class="product_pics" style="display: none;">
                 <div class="big_pics">
                     <div id="pic_01" class="tabcontent big_pic">
                         <!-- <img src="./img/轉存/資產 8.png" alt=""> -->
@@ -339,42 +381,10 @@
         
             
         </div>
-        <div class="foryou">
+        <div class="foryou" style="display: none;">
             <div class="title">系列商品</div>
-            <!-- <div class="content foryou_content">
-                <div class="foryou_card">
-                    <div class="pic">
-                        <img src="./img/台北.jpg" alt="">
-                    </div>
-                    <div class="name p">產品A</div>
-                    <div class="price p">$500</div>
-                </div>
-
-                <div class="foryou_card">
-                    <div class="pic">
-                        <img src="./img/台北.jpg" alt="">
-                    </div>
-                    <div class="name p">產品A</div>
-                    <div class="price p">$500</div>
-                </div>
-
-                <div class="foryou_card">
-                    <div class="pic">
-                        <img src="./img/台北.jpg" alt="">
-                    </div>
-                    <div class="name p">產品A</div>
-                    <div class="price p">$500</div>
-                </div>
-
-                <div class="foryou_card">
-                    <div class="pic">
-                        <img src="./img/台北.jpg" alt="">
-                    </div>
-                    <div class="name p">產品A</div>
-                    <div class="price p">$500</div>
-                </div>
-            </div> -->
-            <div class="top four1">
+        
+            <div class="top  " style="display: none;">
                 <div class="product_card animate__zoomIn animate__animated ">
                     <div class="pic">
                         <img src="./img/轉存/資產 5.png" alt="">
@@ -570,6 +580,194 @@
                 </div>
             </div>
         </div>
+
+        <div class="else_product">
+            <div class="title">系列商品</div>
+            <div class="swiper-container mySwiper " >
+                <div class="swiper-wrapper " >
+                    <div class="swiper-slide"> 
+                        <div class="card">
+                            <div class="pic">
+                                  <div class="buy">購買商品</div>
+                                <img src="./img/轉存/資產 6.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="text">喜帖</div>
+                                <div class="text">NT$250</div>
+                              
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="swiper-slide"> 
+                        <div class="card">
+                            <div class="pic">
+                                  <div class="buy">購買商品</div>
+                                <img src="./img/轉存/資產 2.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="text">喜帖</div>
+                                <div class="text">NT$250</div>
+                              
+                            </div>
+                        </div>                    
+                    </div>
+        
+                    <div class="swiper-slide"> 
+                         <div class="card">
+                            <div class="pic">
+                                  <div class="buy">購買商品</div>
+                                <img src="./img/轉存/資產 3.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="text">喜帖</div>
+                                <div class="text">NT$250</div>
+                              
+                            </div>
+                        </div>                    
+                    </div>
+        
+                    <div class="swiper-slide"> 
+                        <div class="card">
+                            <div class="pic">
+                                  <div class="buy">購買商品</div>
+                                <img src="./img/轉存/資產 4.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="text">喜帖</div>
+                                <div class="text">NT$250</div>
+                              
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="swiper-slide"> 
+                        <div class="card">
+                            <div class="pic">
+                                  <div class="buy">購買商品</div>
+                                <img src="./img/轉存/資產 5.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="text">喜帖</div>
+                                <div class="text">NT$250</div>
+                              
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="swiper-slide"> 
+                        <div class="card">
+                            <div class="pic">
+                                  <div class="buy">購買商品</div>
+                                <img src="./img/轉存/資產 6.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="text">喜帖</div>
+                                <div class="text">NT$250</div>
+                              
+                            </div>
+                        </div>                   
+                    </div>
+                </div>
+                <div class="swiper-button-next color"></div>
+                <div class="swiper-button-prev color"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+
+            <div class="title">推薦商品</div>
+            <div class="swiper-container mySwiper " >
+                <div class="swiper-wrapper " >
+                    <div class="swiper-slide"> 
+                        <div class="card">
+                            <div class="pic">
+                                  <div class="buy">購買商品</div>
+                                <img src="./img/轉存/資產 6.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="text">喜帖</div>
+                                <div class="text">NT$250</div>
+                              
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="swiper-slide"> 
+                        <div class="card">
+                            <div class="pic">
+                                  <div class="buy">購買商品</div>
+                                <img src="./img/轉存/資產 2.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="text">喜帖</div>
+                                <div class="text">NT$250</div>
+                              
+                            </div>
+                        </div>                    
+                    </div>
+        
+                    <div class="swiper-slide"> 
+                         <div class="card">
+                            <div class="pic">
+                                  <div class="buy">購買商品</div>
+                                <img src="./img/轉存/資產 3.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="text">喜帖</div>
+                                <div class="text">NT$250</div>
+                              
+                            </div>
+                        </div>                    
+                    </div>
+        
+                    <div class="swiper-slide"> 
+                        <div class="card">
+                            <div class="pic">
+                                  <div class="buy">購買商品</div>
+                                <img src="./img/轉存/資產 4.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="text">喜帖</div>
+                                <div class="text">NT$250</div>
+                              
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="swiper-slide"> 
+                        <div class="card">
+                            <div class="pic">
+                                  <div class="buy">購買商品</div>
+                                <img src="./img/轉存/資產 5.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="text">喜帖</div>
+                                <div class="text">NT$250</div>
+                              
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="swiper-slide"> 
+                        <div class="card">
+                            <div class="pic">
+                                  <div class="buy">購買商品</div>
+                                <img src="./img/轉存/資產 6.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="text">喜帖</div>
+                                <div class="text">NT$250</div>
+                              
+                            </div>
+                        </div>                   
+                    </div>
+                </div>
+                <div class="swiper-button-next color"></div>
+                <div class="swiper-button-prev color"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
+
+        
        
     </main>
       <!-- Tab content -->
@@ -731,6 +929,60 @@
         
     
       </script>
+
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+       slidesPerView:1,
+       spaceBetween:10,
+       loop: true,
+       pagination: {
+           el: ".swiper-pagination",
+           type: "fraction",
+
+       },
+       navigation: {
+           nextEl: ".swiper-button-next",
+           prevEl: ".swiper-button-prev",
+       },
+        breakpoints: {
+           
+           600: {
+               slidesPerView: 1,
+               spaceBetweenSlides: 30
+           },
+           800: {
+               slidesPerView: 2,
+               spaceBetweenSlides: 30
+           },
+           
+           1000: {
+               slidesPerView: 4,
+               spaceBetweenSlides: 20
+           }
+       }
+   });
+  </script>
+
+<script>
+    var swiper = new Swiper(".mySwipers", {
+      spaceBetween: 30,
+      effect: "fade",
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 
 
     

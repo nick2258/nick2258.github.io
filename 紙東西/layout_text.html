@@ -209,8 +209,8 @@
     </div>
 
 
-    <div class="swiper-container mySwiper">
-        <div class="swiper-wrapper">
+    <div class="swiper-container mySwiper " >
+        <div class="swiper-wrapper " >
             <div class="swiper-slide"> 
                 <img src="./img/bbbbbbbbbb.jpg" alt="">
             </div>
@@ -992,15 +992,19 @@
    <!-- Initialize Swiper -->
    <script>
      var swiper = new Swiper(".mySwiper", {
-       pagination: {
-         el: ".swiper-pagination",
-         type: "fraction",
-       },
-       navigation: {
-         nextEl: ".swiper-button-next",
-         prevEl: ".swiper-button-prev",
-       },
-     });
+        slidesPerView:1,
+        spaceBetween:10,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
    </script>
 
     <script>
