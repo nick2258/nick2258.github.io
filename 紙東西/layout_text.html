@@ -13,6 +13,9 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
 
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
 </head>
 <body>
     <!-- 刪除navbar class -->
@@ -205,13 +208,59 @@
        
     </div>
 
-    <div class="banner">
+
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"> 
+                <img src="./img/bbbbbbbbbb.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide"> 
+                <img src="./img/16-9-2.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide"> 
+                <img src="./img/16-9-3.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide"> 
+                <img src="./img/16-9-1.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide"> 
+                <img src="./img/16-9-2.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide"> 
+                <img src="./img/16-9-3.jpg" alt="">
+            </div>
+        </div>
+        <div class="swiper-button-next color"></div>
+        <div class="swiper-button-prev color"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    <div class="brand">
+        <div class="brand_title">
+            <div class="brand_border"></div>
+            <div class="title">About</div>
+            <div class="brand_border"></div>
+        </div>
+        <div class="texts">    
+            <div class="text"> 紙東西品牌概念文字描述紙東西品牌概念文字描述</div>       
+            <div class="text"> 紙東西品牌概念文字描述紙東西品牌概念文字描述</div>   
+            <div class="text"> 紙東西品牌概念文字描述紙東西品牌概念文字描述</div>   
+            <div class="text"> 紙東西品牌概念文字描述紙東西品牌概念文字描述</div>       
+        </div>
+    </div>
+
+    <div class="banner" style="display: none;">
         <!-- <img src="./img/16-9-1.jpg" alt=""> -->
         <video class="pic b" autoplay="true" controls="true" src="http://www.papergoods.com.tw/ds/ProductDefine/001-%E6%96%87%E5%89%B5%E7%B4%99%E5%93%81/001-2D%E4%BE%BF%E6%A2%9D%E7%B4%99/001-P01ABCA/Film.mp4"></video>
         <!-- <img class="scroll" src="https://www.dot-st.com/static/docs/jeanasis/pages/media/img/top/caption_aboutJeanasis.png?set0001" alt=""> -->
     </div>
 
-    <div class="brand_concept" >
+    <div class="brand_concept" style="display: none;">
         <div class="pic">
             <img src="./img/台中.jpg" alt="">
         </div>
@@ -276,7 +325,7 @@
             <div class="cat">
                 <div class="pic">
                     <!-- <i class="fas fa-paperclip"></i> -->
-                    <i class="fas fa-thumbtack"></i>
+                    <!-- <i class="fas fa-thumbtack"></i> -->
                   
                     <div class="mask">紙東西於5/20-5/21將在勤美舉辦紙藝品市集，歡迎紙粉一同前往共襄盛舉共襄盛舉 </div>
                     <div class="date">2020.04.01</div>
@@ -286,7 +335,7 @@
             <div class="cat">
                 <div class="pic">
                     <!-- <i class="fas fa-paperclip"></i> -->
-                    <i class="fas fa-thumbtack"></i>
+                    <!-- <i class="fas fa-thumbtack"></i> -->
                   
                     <div class="mask">紙東西於5/20-5/21將在勤美舉辦紙藝品市集，歡迎紙粉一同前往共襄盛舉共襄盛舉 </div>
                     <div class="date">2020.04.01</div>
@@ -296,7 +345,7 @@
             <div class="cat">
                 <div class="pic">
                     <!-- <i class="fas fa-paperclip"></i> -->
-                    <i class="fas fa-thumbtack"></i>
+                    <!-- <i class="fas fa-thumbtack"></i> -->
                   
                     <div class="mask">紙東西於5/20-5/21將在勤美舉辦紙藝品市集，歡迎紙粉一同前往共襄盛舉共襄盛舉 </div>
                     <div class="date">2020.04.01</div>
@@ -306,7 +355,7 @@
             <div class="cat">
                 <div class="pic">
                     <!-- <i class="fas fa-paperclip"></i> -->
-                    <i class="fas fa-thumbtack"></i>
+                    <!-- <i class="fas fa-thumbtack"></i> -->
                   
                     <div class="mask">紙東西於5/20-5/21將在勤美舉辦紙藝品市集，歡迎紙粉一同前往共襄盛舉共襄盛舉 </div>
                     <div class="date">2020.04.01</div>
@@ -936,6 +985,23 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+   <!-- Swiper JS -->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+     var swiper = new Swiper(".mySwiper", {
+       pagination: {
+         el: ".swiper-pagination",
+         type: "fraction",
+       },
+       navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+       },
+     });
+   </script>
 
     <script>
         var hearts = document.querySelectorAll(".heart")
