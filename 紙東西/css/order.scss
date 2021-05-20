@@ -1,0 +1,45 @@
+main{
+    width: 1000px;
+    margin:30px  auto;
+    .title{
+        margin: 15px 0px;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    .panel-group{
+        .panel{
+            .panel-heading{
+                padding: 0px;
+                .panel-title{
+                    a{
+                        width: 100%;
+                        height: max-content;
+                        text-align: left;
+                        color: black;
+                        font-size: 16px;
+                        font-weight: 600;
+                        letter-spacing: 1.5px;
+                        text-decoration: none;
+                    }
+                }
+                
+            }
+            .collapse{
+                .panel-body{
+                  
+                   .imgs{
+                    width: 100px;
+                    display: flex;
+                    flex-direction: column;
+                       img{
+                            width: 100px;
+                            height: 20px;
+                       }
+                       
+                   }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+main {
+  width: 1000px;
+  margin: 30px  auto;
+}
+
+main .title {
+  margin: 15px 0px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+main .panel-group .panel .panel-heading {
+  padding: 0px;
+}
+
+main .panel-group .panel .panel-heading .panel-title a {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: left;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+}
+
+main .panel-group .panel .collapse .panel-body .imgs {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .panel-group .panel .collapse .panel-body .imgs img {
+  width: 100px;
+  height: 20px;
+}
+/*# sourceMappingURL=order.css.map */
