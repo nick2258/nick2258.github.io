@@ -237,7 +237,7 @@
         </div>
         <div class="swiper-button-next color"></div>
         <div class="swiper-button-prev color"></div>
-        <!-- <div class="swiper-pagination"></div> -->
+        <div class="swiper-pagination"></div>
       </div>
 
     <div class="brand">
@@ -995,10 +995,14 @@
         slidesPerView:1,
         spaceBetween:10,
         loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            type: "fraction",
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     type: "fraction",
 
+        // },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
         },
         navigation: {
             nextEl: ".swiper-button-next",

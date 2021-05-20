@@ -155,8 +155,14 @@ nav{
         font-size: 15px;
         font-weight: 600;
     }
+    .swiper-pagination-bullet{
+        background-color: rgb(36, 49, 71);
+    }
+    .swiper-pagination-bullet-active{
+        background-color: white;
+    }
     .color{
-        color: rgb(66, 115, 161);
+        color: rgb(255, 255, 255);
     }
     .swiper-pagination{
         color: brown;

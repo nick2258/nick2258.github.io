@@ -168,8 +168,16 @@ nav .content .right .right_item span img {
   font-weight: 600;
 }
 
+.swiper-container .swiper-pagination-bullet {
+  background-color: #243147;
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+  background-color: white;
+}
+
 .swiper-container .color {
-  color: #4273a1;
+  color: white;
 }
 
 .swiper-container .swiper-pagination {
