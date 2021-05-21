@@ -190,7 +190,8 @@ nav .content .right .right_item span img {
   text-align: center;
 }
 
-.brand .brand_title {
+.brand .big_title {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,20 +200,29 @@ nav .content .right .right_item span img {
           justify-content: center;
 }
 
-.brand .brand_title .title {
-  font-size: 32px;
+.brand .big_title .title {
+  font-size: 36px;
   letter-spacing: 4px;
   font-weight: 600;
   color: #b5bb9c;
   padding: 0px 30px;
 }
 
-.brand .brand_title .brand_border {
-  width: 350px;
+.brand .big_title .brand_border {
+  width: 500px;
+  max-width: 800px;
   height: 2px;
   background-color: #b5bb9c;
-  -webkit-transform: translateY(28px);
-          transform: translateY(28px);
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+.brand .small_title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  color: darkslategray;
 }
 
 .brand .texts {
@@ -472,6 +482,42 @@ nav .content .right .right_item span img {
   padding-top: 10px;
 }
 
+.index_cards .big_title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.index_cards .big_title .title {
+  font-size: 36px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  color: #b5bb9c;
+  padding: 0px 30px;
+}
+
+.index_cards .big_title .brand_border {
+  width: 500px;
+  max-width: 800px;
+  height: 2px;
+  background-color: #b5bb9c;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+.index_cards .small_title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: darkslategray;
+}
+
 .index_cards .title {
   font-size: 24px;
   font-weight: 700;
@@ -597,13 +643,41 @@ nav .content .right .right_item span img {
   margin: 10px auto;
 }
 
-.news .title {
-  font-size: 24px;
-  font-weight: 700;
-  padding: 20px  0px;
-  letter-spacing: 5px;
-  color: rgba(0, 0, 0, 0.884);
-  padding-left: 15px;
+.news .big_title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.news .big_title .title {
+  font-size: 36px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  color: #b5bb9c;
+  padding: 0px 30px;
+}
+
+.news .big_title .brand_border {
+  width: 500px;
+  max-width: 800px;
+  height: 2px;
+  background-color: #b5bb9c;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+.news .small_title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: darkslategray;
 }
 
 .news .cats {
@@ -935,12 +1009,40 @@ nav .content .right .right_item span img {
   padding: 0px  15px;
 }
 
-.sale1 .title {
-  font-size: 24px;
+.sale1 .big_title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sale1 .big_title .title {
+  font-size: 36px;
+  letter-spacing: 4px;
   font-weight: 600;
-  padding: 20px  0px;
-  letter-spacing: 5px;
-  color: rgba(0, 0, 0, 0.884);
+  color: #b5bb9c;
+  padding: 0px 30px;
+}
+
+.sale1 .big_title .brand_border {
+  width: 500px;
+  max-width: 800px;
+  height: 2px;
+  background-color: #b5bb9c;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+.sale1 .small_title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: darkslategray;
 }
 
 .sale1 .content .four1 {
@@ -1225,6 +1327,42 @@ nav .content .right .right_item span img {
   margin: auto;
   margin: 20px  auto;
   padding-bottom: 20px;
+}
+
+.shop .big_title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shop .big_title .title {
+  font-size: 36px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  color: #b5bb9c;
+  padding: 0px 30px;
+}
+
+.shop .big_title .brand_border {
+  width: 500px;
+  max-width: 800px;
+  height: 2px;
+  background-color: #b5bb9c;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+.shop .small_title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: darkslategray;
 }
 
 .shop .cards {

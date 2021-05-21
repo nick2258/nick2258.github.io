@@ -238,14 +238,16 @@ main .contents .selectors .select {
 }
 
 main .contents .selectors .select select {
+  /*移除箭頭樣式*/
   text-align: center;
   width: 235px;
-  padding: 3px 5px;
+  padding: 5px 15px;
   font-size: 16px;
   border-radius: 5px;
   letter-spacing: 1.5px;
   border: solid 1px gainsboro;
-  /*移除箭頭樣式*/
+  border-radius: 30px;
+  outline: none;
 }
 
 main .contents .selectors .select .fa-sort-down {
