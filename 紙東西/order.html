@@ -1,237 +1,578 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>訂購資訊</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/order.css">
-
-    <main>
-        <div class="title">一般訂購</div>
-        <div>
-            <!-- <button type="button"
-                    class="btn btn-default" onclick="myfunction2()">
-                <span class="glyphicon glyphicon-arrow-up"></span>
-            </button> -->
-            <!-- <button type="button" onclick="myfunction()"
-                    class="btn btn-default">
-                <span class="glyphicon glyphicon-arrow-down"></span>
-            </button> -->
-        </div>
-        <div class="panel-group" id="accordion">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse_01">
-                  Collapsible Group Item #1
-                </a>
-              </h4>
-            </div>
-            <div id="collapse_01" class="panel-collapse collapse">
-              <div class="panel-body">
-                <div class="imgs">
-                    <img src="./img/首頁1.jpg" alt="">
-                    <img src="./img/首頁1.jpg" alt="">
-                    <img src="./img/首頁1.jpg" alt="">
-
-                </div>
-              </div>
-            </div>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="./css/order.css">
+<body>
+  <main>
+    <div class="title">一般購買</div>
+    <button class="collapsible collapsible1 active">訂購流程</button>
+    <div class="content " style="max-height: max-content;">
+      <div class="allprocess">
+        <div class="process">
+          <div class="pic">
+            <img src="./img/購買1-1.jpg" alt="">
           </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse_02">
-                  Collapsible Group Item #2
-                </a>
-              </h4>
-            </div>
-            <div id="collapse_02" class="panel-collapse collapse">
-              <div class="panel-body">
-             2
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse_03">
-                  Collapsible Group Item #3
-                </a>
-              </h4>
-            </div>
-            <div id="collapse_03" class="panel-collapse collapse">
-              <div class="panel-body">
-             3
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse_04">
-                  Collapsible Group Item #4
-                </a>
-              </h4>
-            </div>
-            <div id="collapse_04" class="panel-collapse collapse">
-              <div class="panel-body">
-             4
-              </div>
-            </div>
+          <div class="texts">
+            <div class="small_title">1. 會員登入</div>
+            <div class="text">登入會員帳號、密碼
+              尚未加入，麻煩請先註冊會員。</div>
           </div>
         </div>
+
         
 
-        <div class="title">大宗採購</div>
-        <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse_05">
-                    Collapsible Group Item #5
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse_05" class="panel-collapse collapse">
-                <div class="panel-body">
-                  5
-                </div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse_06">
-                    Collapsible Group Item #6
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse_06" class="panel-collapse collapse">
-                <div class="panel-body">
-               6
-                </div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse_07">
-                    Collapsible Group Item #7
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse_07" class="panel-collapse collapse">
-                <div class="panel-body">
-               7
-                </div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse_08">
-                      Collapsible Group Item #8
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapse_08" class="panel-collapse collapse">
-                  <div class="panel-body">
-                 8
-                  </div>
-                </div>
-              </div>
+        <div class="process">
+          <div class="pic">
+            <img src="./img/購買2-2.jpg" alt="">
           </div>
-
-        <div class="title">客製商品</div>
-        <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse_09">
-                    Collapsible Group Item #9
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse_09" class="panel-collapse collapse">
-                <div class="panel-body">
-                  9
-                </div>
-              </div>
+          <div class="texts">
+            <div class="small_title">2. 挑選或客製商品
             </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse_010">
-                    Collapsible Group Item #10
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse_10" class="panel-collapse collapse">
-                <div class="panel-body">
-               10
-                </div>
-              </div>
+            <div class="text">您可以在商品列表中挑選您喜歡的商品或選擇客製商品。
             </div>
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse_11">
-                    Collapsible Group Item #11
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse_11" class="panel-collapse collapse">
-                <div class="panel-body">
-               11
-                </div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse_12">
-                      Collapsible Group Item #12
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapse_12" class="panel-collapse collapse">
-                  <div class="panel-body">
-                 12
-                  </div>
-                </div>
-              </div>
           </div>
-    </main>
-    
+        </div>
 
-    
+        <div class="process">
+          <div class="pic">
+            <img src="./img/購買3-3.jpg" alt="">
+          </div>
+          <div class="texts">
+            <div class="small_title">3. 下單購買
+            </div>
+            <div class="text">線上信用卡、ATM轉帳、門市付款。
+              收到款項後3~5天宅配寄送(不含週六日及國定假日)。</div>
+          </div>
+        </div>
 
-     
+        <div class="process">
+          <div class="pic">
+            <img src="./img/購買4-4.jpg" alt="">
+          </div>
+          <div class="texts">
+            <div class="small_title">4. 完成訂單
+            </div>
+            <div class="text">收到商品完成訂購。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="collapsible collapsible1">付款方式</button>
+    <div class="content">
+      <div class="pays os">
+        <div class="pay o">
+          <div class="pay_title o_title">線上信用卡付款
+          </div>
+          <div class="text o_text">可使用VISA、Master、JCB信用卡付款
+          </div>
+        </div>
 
+       
 
+        <div class="pay o">
+          <div class="pay_title o_title">ATM轉帳付款
 
+          </div>
+          <div class="text o_text">請於訂單完成三日內(不含週六日及國定假日)，完成指定帳號及訂購金額匯款／ATM轉帳，就能輕鬆完成付款！
 
+          </div>
+          <ul>
+            <li>本服務提供繳款日期與轉帳金額的核對功能，每一張訂單的轉帳帳號只限該次訂購單專用。
+            </li>
+            <li>使用自動櫃員機(金融卡)繳款者，得依帳單(通知單)所列繳款金額繳付，不受3萬元之限制，仍可維持原來之交易模式辦理。
+            </li>
+            <li>使用ATM付款，請於訂單成立後三個工作日內(不含週六日及國定假日)，完成轉帳付款的訂購程序。如未能於期限前完成付款，系統將自動刪除此筆訂單。
+            </li>
+            <li>ATM轉帳者，會員專區之訂單狀態將於2-3個工作天內完成更新敬請您留意。(不含週六日及國定假日)
+            </li>
+            <li>如遺失繳款轉帳帳號，請至「訂單查詢」，即可於訂單編號下方看到超商繳費單，點選後即可展開繳費單內容，此繳費單提供超商繳費及ATM轉帳資訊，請多加利用。
+            </li>
+        
+          </ul>
+        </div>
 
+        <div class="pay o">
+          <div class="pay_title o_title">超商繳款
+          </div>
+          <div class="text o_text">請於訂單完成三日內(不含週六日及國定假日)，印出超商繳費單，至統一、全家、萊爾富或OK超商繳款！
+          </div>
+          <div class="o_text">
+            <ul>
+              <li>本服務需由會員自行列印繳費單，列印時請確保列印條碼清晰完整，避免超商無法感應繳費。
+              </li>
+              <li>超商繳款確認入帳需6-10個工作天(不含週六日及國定假日)，會員專區之訂單狀態將於入帳後更新完成，敬請您留意。(不含週六日及國定假日) 。
+              </li>
+              <li>超商代收另加10元手續費。
+              </li>
+              <li>若超商無法讀取條碼時，繳費單最下方附上該訂單的ATM轉帳帳號及應繳金額資訊以提供繳款操作，敬請多加利用。
+  
+              </li>
+              <li>如遺失繳費單，請至「訂單查詢」，即可於訂單編號下方看到超商繳費單，點選後即可展開繳費單內容，此繳費單提供超商繳費及ATM轉帳資訊，請多加利用。
+  
+              </li>
+          
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <button class="collapsible collapsible1">寄貨方式
+    </button>
+    <div class="content">
+     <div class="os">
+       <div class="o">
+         <div class="o_title">宅配寄送
+        </div>
+         <div class="o_text">
+          <ul>
+            <li>僅提供宅配【台灣本島】配送服務
+            </li>
+            <li>確認收到款項後，需3~5個工作天(不含週六日及國定假日)，您即可收到訂購之商品及發票(除偏遠地區或遇天災等不可抗拒之特殊因素外)。
+            </li>
+            <li>ATM轉帳與超商繳款確認收到款項需等待7個工作天，建議使用線上信用卡付款較不需等待。
+            </li>
+            <li>查詢訂單處理情形，請登入「會員中心」查詢。
+            </li>
+          </ul>
+  
+         </div>
+        
+       </div>
 
+       <div class="o">
+        <div class="o_title">門市取貨
+       </div>
+       <div class="o_text">營業時間： 週一~週五 9:00AM~6:00PM
+      </div>
+        <div class="o_text">
+         <ul>
+           <li>台北門市：新北市中和區中山路二段351號4樓之4
+           </li>
+           <li>台中門市：台中市西屯區大河街8號
+           </li>
+         </ul>
+ 
+        </div>
+      </div>
+     </div>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <button class="collapsible collapsible1">商品退換
+    </button>
+    <div class="content">
+    <div class="o_text">請務必於鑑賞期(7日)內與客服人員聯絡，並告知我們退貨之原因、方便聯繫之市內電話、行動電話、及取件地址，後續我們將會安排宅配人員於5個工作天內前往取貨。
+      </div>
+      <div class="o_text">
+        提醒您：
+      </div>
+      <div class="o_text">
+        <ul>
+          <li>請您先行下載【退換貨申請書】並填寫完整資料後，一併放置於商品包裝內，以便加快處理速度。
+          </li>
+          <li>所退回的商品必須保持商品本體、原廠內外包裝、配件、贈品及所有附隨文件或資料的完整性，切勿缺漏任何配件。
+          </li>
+          <li>請您儘量以原送貨使用之包裝紙箱將商品包裝妥當，若原紙箱已遺失，請另使用其他紙箱包覆於商品原廠包裝之外，切勿直接於原廠包裝上黏貼紙張、書寫文字及任何會損毀外盒的行為。
+          </li>
+        </ul>
+      </div>
+      <div class="o_text">
+        待我們收到您欲退貨之完整商品後，確認無誤將會為您辦理退貨，提醒您：處理時間約需5到10個工作天。您也可至「訂單查詢」的訂單查詢中確認訂單狀態是否已變更為退貨。
+      </div>
+    </div>
+
+    <div class="title">大宗採購</div>
+    <button class="collapsible collapsible2 ">訂購流程</button>
+    <div class="content">
+      <div class="allprocess">
+        <div class="process">
+          <div class="pic">
+            <img src="./img/購買1-1.jpg" alt="">
+          </div>
+          <div class="texts">
+            <div class="small_title">1. 會員登入</div>
+            <div class="text">登入會員帳號、密碼
+              尚未加入，麻煩請先註冊會員。</div>
+          </div>
+        </div>
+
+        
+
+        <div class="process">
+          <div class="pic">
+            <img src="./img/購買2-2.jpg" alt="">
+          </div>
+          <div class="texts">
+            <div class="small_title">2. 挑選或客製商品
+            </div>
+            <div class="text">您可以在商品列表中挑選您喜歡的商品或選擇客製商品。
+            </div>
+          </div>
+        </div>
+
+        <div class="process">
+          <div class="pic">
+            <img src="./img/購買3-3.jpg" alt="">
+          </div>
+          <div class="texts">
+            <div class="small_title">3. 下單購買
+            </div>
+            <div class="text">線上信用卡、ATM轉帳、門市付款。
+              收到款項後3~5天宅配寄送(不含週六日及國定假日)。</div>
+          </div>
+        </div>
+
+        <div class="process">
+          <div class="pic">
+            <img src="./img/購買4-4.jpg" alt="">
+          </div>
+          <div class="texts">
+            <div class="small_title">4. 完成訂單
+            </div>
+            <div class="text">收到商品完成訂購。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="collapsible collapsible2">付款方式</button>
+    <div class="content">
+      <div class="pays os">
+        <div class="pay o">
+          <div class="pay_title o_title">線上信用卡付款
+          </div>
+          <div class="text o_text">可使用VISA、Master、JCB信用卡付款
+          </div>
+        </div>
+
+       
+
+        <div class="pay o">
+          <div class="pay_title o_title">ATM轉帳付款
+
+          </div>
+          <div class="text o_text">請於訂單完成三日內(不含週六日及國定假日)，完成指定帳號及訂購金額匯款／ATM轉帳，就能輕鬆完成付款！
+
+          </div>
+          <ul>
+            <li>本服務提供繳款日期與轉帳金額的核對功能，每一張訂單的轉帳帳號只限該次訂購單專用。
+            </li>
+            <li>使用自動櫃員機(金融卡)繳款者，得依帳單(通知單)所列繳款金額繳付，不受3萬元之限制，仍可維持原來之交易模式辦理。
+            </li>
+            <li>使用ATM付款，請於訂單成立後三個工作日內(不含週六日及國定假日)，完成轉帳付款的訂購程序。如未能於期限前完成付款，系統將自動刪除此筆訂單。
+            </li>
+            <li>ATM轉帳者，會員專區之訂單狀態將於2-3個工作天內完成更新敬請您留意。(不含週六日及國定假日)
+            </li>
+            <li>如遺失繳款轉帳帳號，請至「訂單查詢」，即可於訂單編號下方看到超商繳費單，點選後即可展開繳費單內容，此繳費單提供超商繳費及ATM轉帳資訊，請多加利用。
+            </li>
+        
+          </ul>
+        </div>
+
+        <div class="pay o">
+          <div class="pay_title o_title">超商繳款
+          </div>
+          <div class="text o_text">請於訂單完成三日內(不含週六日及國定假日)，印出超商繳費單，至統一、全家、萊爾富或OK超商繳款！
+          </div>
+          <div class="o_text">
+            <ul>
+              <li>本服務需由會員自行列印繳費單，列印時請確保列印條碼清晰完整，避免超商無法感應繳費。
+              </li>
+              <li>超商繳款確認入帳需6-10個工作天(不含週六日及國定假日)，會員專區之訂單狀態將於入帳後更新完成，敬請您留意。(不含週六日及國定假日) 。
+              </li>
+              <li>超商代收另加10元手續費。
+              </li>
+              <li>若超商無法讀取條碼時，繳費單最下方附上該訂單的ATM轉帳帳號及應繳金額資訊以提供繳款操作，敬請多加利用。
+  
+              </li>
+              <li>如遺失繳費單，請至「訂單查詢」，即可於訂單編號下方看到超商繳費單，點選後即可展開繳費單內容，此繳費單提供超商繳費及ATM轉帳資訊，請多加利用。
+  
+              </li>
+          
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <button class="collapsible collapsible2">寄貨方式
+    </button>
+    <div class="content">
+     <div class="os">
+       <div class="o">
+         <div class="o_title">宅配寄送
+        </div>
+         <div class="o_text">
+          <ul>
+            <li>僅提供宅配【台灣本島】配送服務
+            </li>
+            <li>確認收到款項後，需3~5個工作天(不含週六日及國定假日)，您即可收到訂購之商品及發票(除偏遠地區或遇天災等不可抗拒之特殊因素外)。
+            </li>
+            <li>ATM轉帳與超商繳款確認收到款項需等待7個工作天，建議使用線上信用卡付款較不需等待。
+            </li>
+            <li>查詢訂單處理情形，請登入「會員中心」查詢。
+            </li>
+          </ul>
+  
+         </div>
+        
+       </div>
+
+       <div class="o">
+        <div class="o_title">門市取貨
+       </div>
+       <div class="o_text">營業時間： 週一~週五 9:00AM~6:00PM
+      </div>
+        <div class="o_text">
+         <ul>
+           <li>台北門市：新北市中和區中山路二段351號4樓之4
+           </li>
+           <li>台中門市：台中市西屯區大河街8號
+           </li>
+         </ul>
+ 
+        </div>
+      </div>
+     </div>
+    </div>
+
+    <button class="collapsible collapsible2">商品退換
+    </button>
+    <div class="content">
+    <div class="o_text">請務必於鑑賞期(7日)內與客服人員聯絡，並告知我們退貨之原因、方便聯繫之市內電話、行動電話、及取件地址，後續我們將會安排宅配人員於5個工作天內前往取貨。
+      </div>
+      <div class="o_text">
+        提醒您：
+      </div>
+      <div class="o_text">
+        <ul>
+          <li>請您先行下載【退換貨申請書】並填寫完整資料後，一併放置於商品包裝內，以便加快處理速度。
+          </li>
+          <li>所退回的商品必須保持商品本體、原廠內外包裝、配件、贈品及所有附隨文件或資料的完整性，切勿缺漏任何配件。
+          </li>
+          <li>請您儘量以原送貨使用之包裝紙箱將商品包裝妥當，若原紙箱已遺失，請另使用其他紙箱包覆於商品原廠包裝之外，切勿直接於原廠包裝上黏貼紙張、書寫文字及任何會損毀外盒的行為。
+          </li>
+        </ul>
+      </div>
+      <div class="o_text">
+        待我們收到您欲退貨之完整商品後，確認無誤將會為您辦理退貨，提醒您：處理時間約需5到10個工作天。您也可至「訂單查詢」的訂單查詢中確認訂單狀態是否已變更為退貨。
+      </div>
+    </div>
+
+    <div class="title">客製商品</div>
+    <button class="collapsible collapsible3">訂購流程</button>
+    <div class="content">
+      <div class="allprocess">
+        <div class="process">
+          <div class="pic">
+            <img src="./img/購買1-1.jpg" alt="">
+          </div>
+          <div class="texts">
+            <div class="small_title">1. 會員登入</div>
+            <div class="text">登入會員帳號、密碼
+              尚未加入，麻煩請先註冊會員。</div>
+          </div>
+        </div>
+
+        
+
+        <div class="process">
+          <div class="pic">
+            <img src="./img/購買2-2.jpg" alt="">
+          </div>
+          <div class="texts">
+            <div class="small_title">2. 挑選或客製商品
+            </div>
+            <div class="text">您可以在商品列表中挑選您喜歡的商品或選擇客製商品。
+            </div>
+          </div>
+        </div>
+
+        <div class="process">
+          <div class="pic">
+            <img src="./img/購買3-3.jpg" alt="">
+          </div>
+          <div class="texts">
+            <div class="small_title">3. 下單購買
+            </div>
+            <div class="text">線上信用卡、ATM轉帳、門市付款。
+              收到款項後3~5天宅配寄送(不含週六日及國定假日)。</div>
+          </div>
+        </div>
+
+        <div class="process">
+          <div class="pic">
+            <img src="./img/購買4-4.jpg" alt="">
+          </div>
+          <div class="texts">
+            <div class="small_title">4. 完成訂單
+            </div>
+            <div class="text">收到商品完成訂購。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="collapsible collapsible3">付款方式</button>
+    <div class="content">
+      <div class="pays os">
+        <div class="pay o">
+          <div class="pay_title o_title">線上信用卡付款
+          </div>
+          <div class="text o_text">可使用VISA、Master、JCB信用卡付款
+          </div>
+        </div>
+
+       
+
+        <div class="pay o">
+          <div class="pay_title o_title">ATM轉帳付款
+
+          </div>
+          <div class="text o_text">請於訂單完成三日內(不含週六日及國定假日)，完成指定帳號及訂購金額匯款／ATM轉帳，就能輕鬆完成付款！
+
+          </div>
+          <ul>
+            <li>本服務提供繳款日期與轉帳金額的核對功能，每一張訂單的轉帳帳號只限該次訂購單專用。
+            </li>
+            <li>使用自動櫃員機(金融卡)繳款者，得依帳單(通知單)所列繳款金額繳付，不受3萬元之限制，仍可維持原來之交易模式辦理。
+            </li>
+            <li>使用ATM付款，請於訂單成立後三個工作日內(不含週六日及國定假日)，完成轉帳付款的訂購程序。如未能於期限前完成付款，系統將自動刪除此筆訂單。
+            </li>
+            <li>ATM轉帳者，會員專區之訂單狀態將於2-3個工作天內完成更新敬請您留意。(不含週六日及國定假日)
+            </li>
+            <li>如遺失繳款轉帳帳號，請至「訂單查詢」，即可於訂單編號下方看到超商繳費單，點選後即可展開繳費單內容，此繳費單提供超商繳費及ATM轉帳資訊，請多加利用。
+            </li>
+        
+          </ul>
+        </div>
+
+        <div class="pay o">
+          <div class="pay_title o_title">超商繳款
+          </div>
+          <div class="text o_text">請於訂單完成三日內(不含週六日及國定假日)，印出超商繳費單，至統一、全家、萊爾富或OK超商繳款！
+          </div>
+          <div class="o_text">
+            <ul>
+              <li>本服務需由會員自行列印繳費單，列印時請確保列印條碼清晰完整，避免超商無法感應繳費。
+              </li>
+              <li>超商繳款確認入帳需6-10個工作天(不含週六日及國定假日)，會員專區之訂單狀態將於入帳後更新完成，敬請您留意。(不含週六日及國定假日) 。
+              </li>
+              <li>超商代收另加10元手續費。
+              </li>
+              <li>若超商無法讀取條碼時，繳費單最下方附上該訂單的ATM轉帳帳號及應繳金額資訊以提供繳款操作，敬請多加利用。
+  
+              </li>
+              <li>如遺失繳費單，請至「訂單查詢」，即可於訂單編號下方看到超商繳費單，點選後即可展開繳費單內容，此繳費單提供超商繳費及ATM轉帳資訊，請多加利用。
+  
+              </li>
+          
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <button class="collapsible collapsible3">寄貨方式
+    </button>
+    <div class="content">
+     <div class="os">
+       <div class="o">
+         <div class="o_title">宅配寄送
+        </div>
+         <div class="o_text">
+          <ul>
+            <li>僅提供宅配【台灣本島】配送服務
+            </li>
+            <li>確認收到款項後，需3~5個工作天(不含週六日及國定假日)，您即可收到訂購之商品及發票(除偏遠地區或遇天災等不可抗拒之特殊因素外)。
+            </li>
+            <li>ATM轉帳與超商繳款確認收到款項需等待7個工作天，建議使用線上信用卡付款較不需等待。
+            </li>
+            <li>查詢訂單處理情形，請登入「會員中心」查詢。
+            </li>
+          </ul>
+  
+         </div>
+        
+       </div>
+
+       <div class="o">
+        <div class="o_title">門市取貨
+       </div>
+       <div class="o_text">營業時間： 週一~週五 9:00AM~6:00PM
+      </div>
+        <div class="o_text">
+         <ul>
+           <li>台北門市：新北市中和區中山路二段351號4樓之4
+           </li>
+           <li>台中門市：台中市西屯區大河街8號
+           </li>
+         </ul>
+ 
+        </div>
+      </div>
+     </div>
+    </div>
+
+    <button class="collapsible collapsible3">商品退換
+    </button>
+    <div class="content">
+    <div class="o_text">請務必於鑑賞期(7日)內與客服人員聯絡，並告知我們退貨之原因、方便聯繫之市內電話、行動電話、及取件地址，後續我們將會安排宅配人員於5個工作天內前往取貨。
+      </div>
+      <div class="o_text">
+        提醒您：
+      </div>
+      <div class="o_text">
+        <ul>
+          <li>請您先行下載【退換貨申請書】並填寫完整資料後，一併放置於商品包裝內，以便加快處理速度。
+          </li>
+          <li>所退回的商品必須保持商品本體、原廠內外包裝、配件、贈品及所有附隨文件或資料的完整性，切勿缺漏任何配件。
+          </li>
+          <li>請您儘量以原送貨使用之包裝紙箱將商品包裝妥當，若原紙箱已遺失，請另使用其他紙箱包覆於商品原廠包裝之外，切勿直接於原廠包裝上黏貼紙張、書寫文字及任何會損毀外盒的行為。
+          </li>
+        </ul>
+      </div>
+      <div class="o_text">
+        待我們收到您欲退貨之完整商品後，確認無誤將會為您辦理退貨，提醒您：處理時間約需5到10個工作天。您也可至「訂單查詢」的訂單查詢中確認訂單狀態是否已變更為退貨。
+      </div>
+    </div>
+  </main>
+ 
 
 <script>
-    $('.collapse').collapse({ toggle: false });
-function myfunction(){
-   $('.collapse').collapse('show');
-}
-function myfunction2(){
-  $('.collapse').collapse('hide');
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+// var firstcontent = document.getElementsByClassName("firstcontent");
+// firstcontent.style.height === max_content;
+
+for (i = 0; i < coll.length; i++) {
+  coll[0].addEventListener("", function() {
+    coll[0].classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
 }
 </script>
-</head>
-<body>
-    
+
 </body>
 </html>

@@ -1,34 +1,62 @@
 main {
   width: 1000px;
-  margin: 30px  auto;
+  margin: auto;
 }
 
 main .title {
+  font-size: 20px;
+  font-weight: 600;
   margin: 15px 0px;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 2px;
+  padding-left: 20px;
 }
 
-main .panel-group .panel .panel-heading {
-  padding: 0px;
-}
-
-main .panel-group .panel .panel-heading .panel-title a {
+main .collapsible {
+  background-color: #838db8;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  padding: 8px 12px;
+  padding: 8px 20px;
   width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  border: none;
   text-align: left;
-  color: black;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  text-decoration: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 30px;
 }
 
-main .panel-group .panel .collapse .panel-body .imgs {
-  width: 100px;
+main .active, main .collapsible:hover {
+  background-color: #555;
+}
+
+main .collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+main .active:after {
+  content: "\2212";
+}
+
+main .content {
+  padding: 0 12px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  margin: 10px 0px;
+}
+
+main .content .allprocess {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .content .allprocess .process {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,10 +64,59 @@ main .panel-group .panel .collapse .panel-body .imgs {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 20%;
+  margin-right: 15px;
 }
 
-main .panel-group .panel .collapse .panel-body .imgs img {
-  width: 100px;
-  height: 20px;
+main .content .allprocess .process:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+main .content .allprocess .process .pic {
+  margin: 10px  auto;
+}
+
+main .content .allprocess .process .pic img {
+  width: 80px;
+  height: 80px;
+}
+
+main .content .allprocess .process .texts {
+  padding: 0px 8px;
+  padding-top: 10px;
+  border-top: 1px  solid gainsboro;
+}
+
+main .content .allprocess .process .texts .small_title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+main .content .allprocess .process .texts .text {
+  font-size: 14px;
+}
+
+main .content .os .o {
+  margin-bottom: 20px;
+}
+
+main .content .os .o .o_title {
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 8px;
+  padding-bottom: 10px;
+}
+
+main .content .os .o .o_text {
+  font-size: 14px;
+  padding: 0px 8px;
+  padding-top: 10px;
+  border-top: 1px  solid gainsboro;
+}
+
+main .content .os .o .o_text ul {
+  margin: 0px 0px;
 }
 /*# sourceMappingURL=order.css.map */
