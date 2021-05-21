@@ -3,6 +3,14 @@ main {
   margin: auto;
 }
 
+main .now_page {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: gray;
+  padding: 0px 0px 10px 8px;
+  border-bottom: 1px  solid gainsboro;
+}
+
 main .title {
   font-size: 20px;
   font-weight: 600;
@@ -107,13 +115,13 @@ main .content .os .o .o_title {
   font-weight: 600;
   padding-left: 8px;
   padding-bottom: 10px;
+  border-bottom: 1px solid gainsboro;
 }
 
 main .content .os .o .o_text {
   font-size: 14px;
   padding: 0px 8px;
   padding-top: 10px;
-  border-top: 1px  solid gainsboro;
 }
 
 main .content .os .o .o_text ul {
