@@ -75,8 +75,8 @@ main .tabcontent {
   display: none;
   -webkit-transition: .3s;
   transition: .3s;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1s;
+  transition: 1s;
   padding: 20px 8px;
   border-top: none;
   background-color: #7dacc2;
@@ -95,7 +95,7 @@ main .tabcontent .title {
 main .tabcontent .collapsible {
   background-color: #838db8;
   background-color: #666d8d;
-  background-color: #949494;
+  background-color: #818181;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -134,30 +134,19 @@ main .tabcontent .content {
   margin: 10px 0px;
 }
 
-main .tabcontent .content .allprocess {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 main .tabcontent .content .allprocess .process {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 20%;
   margin-right: 15px;
+  padding: 15px 0px;
+  border-bottom: 1px  solid #989898;
 }
 
 main .tabcontent .content .allprocess .process:nth-last-child(1) {
   margin-right: 0px;
-}
-
-main .tabcontent .content .allprocess .process .pic {
-  margin: 10px  auto;
+  padding-bottom: 0px;
+  border-bottom: 0px  solid #989898;
 }
 
 main .tabcontent .content .allprocess .process .pic img {
@@ -168,18 +157,18 @@ main .tabcontent .content .allprocess .process .pic img {
 main .tabcontent .content .allprocess .process .texts {
   padding: 0px 8px;
   padding-top: 10px;
-  border-top: 1px  solid gainsboro;
 }
 
 main .tabcontent .content .allprocess .process .texts .small_title {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 5px;
-  text-align: center;
 }
 
 main .tabcontent .content .allprocess .process .texts .text {
   font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 20px;
 }
 
 main .tabcontent .content .os .o {
@@ -191,16 +180,44 @@ main .tabcontent .content .os .o .o_title {
   font-weight: 600;
   padding-left: 8px;
   padding-bottom: 10px;
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 1px solid #989898;
 }
 
 main .tabcontent .content .os .o .o_text {
   font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 24px;
   padding: 0px 8px;
   padding-top: 10px;
 }
 
 main .tabcontent .content .os .o .o_text ul {
   margin: 0px 0px;
+}
+
+main .tabcontent .content .os .o .o_text ul li {
+  padding-top: 5px;
+}
+
+main .tabcontent .content .os .o .o_text ul li:nth-child(1) {
+  padding-top: 0px;
+}
+
+ul {
+  margin: 0px;
+}
+
+li {
+  padding-top: 5px;
+  font-size: 14px;
+}
+
+li:nth-child(1) {
+  padding-top: 0px;
+}
+
+.o_text {
+  line-height: 24px;
+  padding-top: 10px;
 }
 /*# sourceMappingURL=order.css.map */
