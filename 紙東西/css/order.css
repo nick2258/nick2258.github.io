@@ -17,6 +17,7 @@ main .now_page {
 main .tab {
   overflow: hidden;
   background-color: #f1f1f1;
+  border-radius: 10px 10px 0px 0px;
 }
 
 main .tab button {
@@ -25,10 +26,37 @@ main .tab button {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 5px 28px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 20px;
+  font-weight: 600;
+  -webkit-clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+}
+
+main .tab button:nth-child(2) {
+  -webkit-clip-path: polygon(0 0, 85% 0, 100% 100%, 18% 100%);
+          clip-path: polygon(0 0, 85% 0, 100% 100%, 18% 100%);
+  -webkit-clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+          clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+  -webkit-transform: translateX(-18px);
+          transform: translateX(-18px);
+}
+
+main .tab button:nth-child(3) {
+  -webkit-clip-path: polygon(0 0, 85% 0, 100% 100%, 18% 100%);
+          clip-path: polygon(0 0, 85% 0, 100% 100%, 18% 100%);
+  -webkit-clip-path: polygon(0 0, 77% 0, 100% 100%, 25% 100%);
+          clip-path: polygon(0 0, 77% 0, 100% 100%, 25% 100%);
+  -webkit-clip-path: polygon(26% 0, 100% 0, 79% 99%, 0 100%);
+          clip-path: polygon(26% 0, 100% 0, 79% 99%, 0 100%);
+  -webkit-clip-path: polygon(26% 0, 100% 0, 100% 99%, 0 100%);
+          clip-path: polygon(26% 0, 100% 0, 100% 99%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+          clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+  -webkit-transform: translateX(-36px);
+          transform: translateX(-36px);
 }
 
 main .tab button:hover {
@@ -43,16 +71,18 @@ main .tab button.active {
 
 main .tabcontent {
   display: none;
-  padding: 6px 12px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding: 20px 8px;
   border-top: none;
   background-color: #7dacc2;
   background-color: #eee1d1;
   background-color: floralwhite;
+  border-radius: 10px 0px 10px 10px;
 }
 
 main .tabcontent .title {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
   margin: 15px 0px;
   padding-left: 20px;
 }
