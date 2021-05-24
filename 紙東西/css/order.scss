@@ -27,47 +27,33 @@ main{
             border: none;
             outline: none;
             cursor: pointer;
-            // padding: 14px 16px;
             padding: 5px 28px ;
             transition: 0.3s;
             font-size: 20px;
             font-weight: 600;
-            // border-radius: 10px;
             clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
             &:nth-child(2){
                 clip-path: polygon(0 0, 85% 0, 100% 100%, 18% 100%);
-                // clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
                 clip-path: polygon(0 0, 85% 0, 100% 100%,15% 100%);
-                // clip-path: polygon(26% 0, 100% 0, 79% 99%, 0 100%);
-                // padding-left: 36px;
-                transform: translateX(-18px);
+                transform: translateX(-22px);
             }
             &:nth-child(3){
                 clip-path: polygon(0 0, 85% 0, 100% 100%, 18% 100%);
-                // clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
                 clip-path: polygon(0 0, 77% 0, 100% 100%, 25% 100%);
                 clip-path: polygon(26% 0, 100% 0, 79% 99%, 0 100%);
                 clip-path: polygon(26% 0, 100% 0, 100% 99%, 0 100%);
                 clip-path: polygon(0 0, 85% 0, 100% 100%,15% 100%);
-                transform: translateX(-36px);
-
-
-
-                // padding-left: 36px;
-                // transform: translateX(-8px);
-
+                transform: translateX(-44px);
             }
             &:hover{
                 background-color: #ddd;
-                // background-color: #838db8;
-
+                background-color: #c3ced4;
             }
             &.active {
                 background-color: #ccc;
                 background-color: rgb(238, 225, 209);
                 background-color: floralwhite;
-                // background-color: #838db8;
-
+                background-color: #c3ced4;
               }
           }   
       } 
@@ -75,24 +61,26 @@ main{
       .tabcontent {
         display: none;
         transition: .3s;
+
+        transition: 2s;
         padding: 20px 8px;
-        // border: 1px solid #ccc;
         border-top: none;
         background-color: rgb(125, 172, 194);
         background-color: rgb(238, 225, 209);
         background-color: floralwhite;
-        border-radius:10px 0px 10px 10px;
+        background-color: #c3ced4;
+
+        border-radius:0px 0px 10px 10px;
         .title{
             font-size: 18px;
-            // font-weight: 600;
             margin: 15px 0px;
             padding-left: 20px;
         }
         .collapsible {
-            // background-color: rgb(105, 137, 151);
             background-color: #838db8;
-            
-    
+            background-color: #666d8d;
+            background-color: rgb(148, 148, 148);
+
             color: white;
             cursor: pointer;
             padding: 18px;
@@ -103,7 +91,6 @@ main{
             text-align: left;
             outline: none;
             font-size: 18px;
-            // margin-top: 15px;
             border-radius: 30px;
           }
           .active, .collapsible:hover {
@@ -126,12 +113,9 @@ main{
            
             overflow: hidden;
             transition: max-height 0.2s ease-out;
-            // background-color: #f1f1f1;
-         
             margin: 10px 0px;
             .allprocess{
                 display: flex;
-                // flex-direction: column;
                 .process{
                     display: flex;
                     flex-direction: column;
@@ -177,7 +161,6 @@ main{
                         font-size: 14px;
                         padding: 0px 8px;
                         padding-top: 10px;
-                        // border-top: 1px  solid gainsboro;
                         ul{
                             margin: 0px 0px;
                         }
@@ -185,9 +168,7 @@ main{
                 }
             }
         }
-      }
-      
-   
+    }
 }
 
   

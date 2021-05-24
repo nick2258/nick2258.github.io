@@ -40,8 +40,8 @@ main .tab button:nth-child(2) {
           clip-path: polygon(0 0, 85% 0, 100% 100%, 18% 100%);
   -webkit-clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
           clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
-  -webkit-transform: translateX(-18px);
-          transform: translateX(-18px);
+  -webkit-transform: translateX(-22px);
+          transform: translateX(-22px);
 }
 
 main .tab button:nth-child(3) {
@@ -55,30 +55,35 @@ main .tab button:nth-child(3) {
           clip-path: polygon(26% 0, 100% 0, 100% 99%, 0 100%);
   -webkit-clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
           clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
-  -webkit-transform: translateX(-36px);
-          transform: translateX(-36px);
+  -webkit-transform: translateX(-44px);
+          transform: translateX(-44px);
 }
 
 main .tab button:hover {
   background-color: #ddd;
+  background-color: #c3ced4;
 }
 
 main .tab button.active {
   background-color: #ccc;
   background-color: #eee1d1;
   background-color: floralwhite;
+  background-color: #c3ced4;
 }
 
 main .tabcontent {
   display: none;
   -webkit-transition: .3s;
   transition: .3s;
+  -webkit-transition: 2s;
+  transition: 2s;
   padding: 20px 8px;
   border-top: none;
   background-color: #7dacc2;
   background-color: #eee1d1;
   background-color: floralwhite;
-  border-radius: 10px 0px 10px 10px;
+  background-color: #c3ced4;
+  border-radius: 0px 0px 10px 10px;
 }
 
 main .tabcontent .title {
@@ -89,6 +94,8 @@ main .tabcontent .title {
 
 main .tabcontent .collapsible {
   background-color: #838db8;
+  background-color: #666d8d;
+  background-color: #949494;
   color: white;
   cursor: pointer;
   padding: 18px;

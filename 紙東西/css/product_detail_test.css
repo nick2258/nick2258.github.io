@@ -1022,14 +1022,14 @@ main .else_product .mySwiper .swiper-wrapper .swiper-slide .card .content .buy {
 }
 
 main .else_product .mySwiper .swiper-button-prev::after {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   -webkit-transform: translateY(-40px);
           transform: translateY(-40px);
 }
 
 main .else_product .mySwiper .swiper-button-next::after {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   -webkit-transform: translateY(-40px);
           transform: translateY(-40px);
@@ -1043,6 +1043,25 @@ main .else_product .mySwiper .swiper-pagination {
 
 main .else_product .mySwiper .color {
   color: #4273a1;
+}
+
+main .else_product .mySwiper .color::after {
+  color: white;
+  color: #405e97;
+  padding: 5px 5px;
+  background-color: #405e97;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+main .else_product .mySwiper .next::after {
+  -webkit-clip-path: polygon(90% 50%, 0 10%, 0 90%);
+          clip-path: polygon(90% 50%, 0 10%, 0 90%);
+}
+
+main .else_product .mySwiper .prev::after {
+  -webkit-clip-path: polygon(10% 50%, 100% 10%, 100% 90%);
+          clip-path: polygon(10% 50%, 100% 10%, 100% 90%);
 }
 
 main .else_product .mySwiper .swiper-pagination {

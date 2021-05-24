@@ -990,12 +990,12 @@ main{
                 }
             }
             .swiper-button-prev::after{
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: 600;
                 transform: translateY(-40px);
             }
             .swiper-button-next::after{
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: 600;
                 transform: translateY(-40px);
             }
@@ -1006,6 +1006,19 @@ main{
             }
             .color{
                 color: rgb(66, 115, 161);
+            }
+            .color::after{
+                color: rgb(255, 255, 255);
+                color: rgb(64, 94, 151);
+                padding: 5px 5px ;
+                background-color: rgb(64, 94, 151);
+                transform: translateY(-40px);
+            }
+            .next::after{
+                clip-path: polygon(90% 50%, 0 10%, 0 90%);
+            }
+            .prev::after{
+                clip-path: polygon(10% 50%, 100% 10%, 100% 90%);
             }
             .swiper-pagination{
                 color: brown;
