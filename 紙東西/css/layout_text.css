@@ -154,12 +154,12 @@ nav .content .right .right_item span img {
 }
 
 .swiper-container .swiper-button-prev::after {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 600;
 }
 
 .swiper-container .swiper-button-next::after {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 600;
 }
 
@@ -178,6 +178,9 @@ nav .content .right .right_item span img {
 
 .swiper-container .color {
   color: white;
+  padding: 5px 20px;
+  background-color: #9bc9ee;
+  border-radius: 50%;
 }
 
 .swiper-container .swiper-pagination {
@@ -274,6 +277,7 @@ nav .content .right .right_item span img {
   color: white;
   width: 30px;
   height: 30px;
+  padding: 8px 12px;
   border-radius: 50%;
   background-color: #bcd3f5;
 }
@@ -546,11 +550,38 @@ nav .content .right .right_item span img {
   display: block;
 }
 
+.index_cards .cards .index_card .pic:hover ~ .text {
+  display: none;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.index_cards .cards .index_card .pic:hover .mask {
+  display: block;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .index_cards .cards .index_card .pic img {
   width: 100%;
   height: 200px;
   display: block;
   border-radius: 10px;
+}
+
+.index_cards .cards .index_card .pic .mask {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  text-align: center;
+  top: 0%;
+  line-height: 200px;
+  background-color: rgba(255, 255, 255, 0.548);
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .index_cards .cards .index_card .text {

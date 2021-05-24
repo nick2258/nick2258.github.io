@@ -56,9 +56,10 @@ main .tabcontent .contents .content .btn {
   background-color: #c3ced4;
   padding: 5px 0px;
   padding-left: 15px;
-  margin-top: 1px;
+  margin-top: 5px;
   font-size: 16px;
   text-align: left;
+  border-radius: 30px;
 }
 
 main .tabcontent .contents .content .btn .small_title {
@@ -255,6 +256,38 @@ main .tabcontent .contents .content .texts .product_manage table tr td {
 main .tabcontent .contents .content .texts .product_manage table tr td img {
   width: 100px;
   height: 60px;
+}
+
+main .tabcontent .contents .content .texts .feedback .allselectors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .tabcontent .contents .content .texts .feedback .allselectors .selectors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+main .tabcontent .contents .content .texts .feedback .allselectors .selectors .title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+main .tabcontent .contents .content .texts .feedback .allselectors .selectors select {
+  width: 150px;
+  font-size: 16px;
+  border-radius: 30px;
+  outline: none;
+  border: 1px solid gainsboro;
+}
+
+main .tabcontent .contents .content .texts .feedback .allselectors .selectors select option {
+  font-size: 16px;
 }
 
 main .tabcontent .contents .content .texts .feedback .months {

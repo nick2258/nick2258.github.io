@@ -53,9 +53,10 @@ main{
                     // background-color: blue;
                     padding: 5px 0px;
                     padding-left: 15px;
-                    margin-top: 1px;
+                    margin-top: 5px;
                     font-size: 16px;
                     text-align: left;
+                    border-radius: 30px;
                     .small_title{
                         font-size: 15px;
                         color:rgb(53, 51, 51) ;
@@ -264,6 +265,30 @@ main{
                     }
                     // 我的商店 -- 商品紅利
                     .feedback{
+                        .allselectors{
+                            display: flex;
+                            .selectors{
+                                display: flex;
+                                margin-right: 15px;
+                                margin-bottom: 15px    ;
+                                .title{
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    margin-right: 5px;
+                                }
+                                select{
+                                    width: 150px;
+                                    font-size: 16px;
+                                    border-radius: 30px;
+                                    outline: none;
+                                    border: 1px solid gainsboro;
+                                    option{
+                                        font-size: 16px;
+                                       
+                                    }
+                                }
+                            }
+                        }
                         .months{
                             display: flex;
                             input{
