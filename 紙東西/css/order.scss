@@ -6,128 +6,161 @@ main{
         letter-spacing: 2px;
         // font-weight: 600;
         color: gray;
-        // margin-bottom: 20px;
+        margin-bottom: 20px;
         padding: 0px 0px 10px 8px;
         // border-top: 1px solid gainsboro;
         border-bottom: 1px  solid gainsboro;
     }
-    .title{
-        font-size: 20px;
-        font-weight: 600;
-        margin: 15px 0px;
-        padding-left: 20px;
-    }
-    // .collapsible2{
-    //     background-color: #838db8;
-    // }
-    // .collapsible1{
-    //     background-color: rgb(105, 137, 151);
-    // }
-    // .collapsible3{
-    //     background-color: rgb(151, 140, 105);
-
-    // }
-    .collapsible {
-        // background-color: rgb(105, 137, 151);
-        background-color: #838db8;
-
-        color: white;
-        cursor: pointer;
-        padding: 18px;
-        padding: 8px 12px;
-        padding: 8px 20px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 18px;
-        // margin-top: 15px;
-        border-radius: 30px;
-      }
-      
-      .active, .collapsible:hover {
-        background-color: #555;
-      }
-      
-      .collapsible:after {
-        content: '\002B';
-        color: white;
-        font-weight: bold;
-        float: right;
-        margin-left: 5px;
-      }
-      
-      .active:after {
-        content: "\2212";
-      }
-      
-     
-      .content {
-        padding: 0 12px;
-
-        max-height: 0;
-       
+    .tab {
         overflow: hidden;
-        transition: max-height 0.2s ease-out;
-        // background-color: #f1f1f1;
-     
-        margin: 10px 0px;
-        .allprocess{
-            display: flex;
-            // flex-direction: column;
-            .process{
+        // border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        // background-color: #838db8;
+
+      }
+      /* Style the buttons inside the tab */
+      .tab{
+        button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+            &:hover{
+                background-color: #ddd;
+                // background-color: #838db8;
+
+            }
+            &.active {
+                background-color: #ccc;
+                background-color: rgb(238, 225, 209);
+                background-color: floralwhite;
+                // background-color: #838db8;
+
+              }
+          }   
+      } 
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        // border: 1px solid #ccc;
+        border-top: none;
+        background-color: rgb(125, 172, 194);
+        background-color: rgb(238, 225, 209);
+        background-color: floralwhite;
+
+
+
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            margin: 15px 0px;
+            padding-left: 20px;
+        }
+        .collapsible {
+            // background-color: rgb(105, 137, 151);
+            background-color: #838db8;
+            
+    
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            padding: 8px 12px;
+            padding: 8px 20px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            // margin-top: 15px;
+            border-radius: 30px;
+          }
+          .active, .collapsible:hover {
+            background-color: #555;
+          } 
+          .collapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+          } 
+          .active:after {
+            content: "\2212";
+          }
+          .content {
+            padding: 0 12px;
+    
+            max-height: 0;
+           
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            // background-color: #f1f1f1;
+         
+            margin: 10px 0px;
+            .allprocess{
                 display: flex;
-                flex-direction: column;
-                width: 20%;
-                margin-right:15px ;
-                &:nth-last-child(1){
-                    margin-right: 0px;
-                }
-                .pic{
-                    margin:10px  auto;
-                    img{
-                        width: 80px;
-                        height: 80px;
+                // flex-direction: column;
+                .process{
+                    display: flex;
+                    flex-direction: column;
+                    width: 20%;
+                    margin-right:15px ;
+                    &:nth-last-child(1){
+                        margin-right: 0px;
+                    }
+                    .pic{
+                        margin:10px  auto;
+                        img{
+                            width: 80px;
+                            height: 80px;
+                        }
+                    }
+                    .texts{
+                        padding: 0px 8px;
+                        padding-top: 10px;
+                        border-top: 1px  solid gainsboro;
+                        .small_title{
+                            font-size: 16px;
+                            font-weight: 600;
+                            margin-bottom: 5px;
+                            text-align: center;
+                        }
+                        .text{
+                            font-size: 14px;
+                        }
                     }
                 }
-                .texts{
-                    padding: 0px 8px;
-                    padding-top: 10px;
-                    border-top: 1px  solid gainsboro;
-                    .small_title{
+            }
+            .os{
+                .o{
+                    margin-bottom: 20px;
+                    .o_title{
                         font-size: 16px;
                         font-weight: 600;
-                        margin-bottom: 5px;
-                        text-align: center;
+                        padding-left: 8px;
+                        padding-bottom: 10px;
+                        border-bottom: 1px solid gainsboro;
                     }
-                    .text{
+                    .o_text{
                         font-size: 14px;
+                        padding: 0px 8px;
+                        padding-top: 10px;
+                        // border-top: 1px  solid gainsboro;
+                        ul{
+                            margin: 0px 0px;
+                        }
                     }
                 }
             }
         }
-        .os{
-            .o{
-                margin-bottom: 20px;
-                .o_title{
-                    font-size: 16px;
-                    font-weight: 600;
-                    padding-left: 8px;
-                    padding-bottom: 10px;
-                    border-bottom: 1px solid gainsboro;
-                }
-                .o_text{
-                    font-size: 14px;
-                    padding: 0px 8px;
-                    padding-top: 10px;
-                    // border-top: 1px  solid gainsboro;
-                    ul{
-                        margin: 0px 0px;
-                    }
-                }
-            }
-        }
-    }
+      }
+      
+   
 }
 
   

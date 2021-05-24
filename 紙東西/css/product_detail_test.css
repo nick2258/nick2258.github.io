@@ -59,6 +59,23 @@ main .mySwipers .swiper-pagination-bullet-active {
   background-color: #405e97;
 }
 
+main .mySwipers .color {
+  color: white;
+  color: #405e97;
+  padding: 5px 8px;
+  background-color: #405e97;
+}
+
+main .mySwipers .next {
+  -webkit-clip-path: polygon(90% 50%, 0 10%, 0 90%);
+          clip-path: polygon(90% 50%, 0 10%, 0 90%);
+}
+
+main .mySwipers .prev {
+  -webkit-clip-path: polygon(10% 50%, 100% 10%, 100% 90%);
+          clip-path: polygon(10% 50%, 100% 10%, 100% 90%);
+}
+
 main .product_details {
   padding-bottom: 20px;
   border-bottom: 1px solid gainsboro;

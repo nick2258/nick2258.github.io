@@ -178,9 +178,18 @@ nav .content .right .right_item span img {
 
 .swiper-container .color {
   color: white;
-  padding: 5px 20px;
-  background-color: #9bc9ee;
-  border-radius: 50%;
+  padding: 0px 3px;
+  background-color: white;
+}
+
+.swiper-container .next {
+  -webkit-clip-path: polygon(80% 50%, 0 15%, 0 85%);
+          clip-path: polygon(80% 50%, 0 15%, 0 85%);
+}
+
+.swiper-container .prev {
+  -webkit-clip-path: polygon(20% 50%, 100% 15%, 100% 85%);
+          clip-path: polygon(20% 50%, 100% 15%, 100% 85%);
 }
 
 .swiper-container .swiper-pagination {
@@ -191,6 +200,27 @@ nav .content .right .right_item span img {
   width: 1000px;
   margin: auto;
   text-align: center;
+  position: relative;
+}
+
+.brand .clip {
+  display: none;
+  width: 100%;
+  width: 1920px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  height: 900px;
+  background-color: #cfeefa;
+  position: absolute;
+  z-index: -1;
+  -webkit-clip-path: polygon(100% 69%, 100% 80%, 50% 100%, 0 80%, 0 69%, 50% 79%);
+          clip-path: polygon(100% 69%, 100% 80%, 50% 100%, 0 80%, 0 69%, 50% 79%);
+  -webkit-clip-path: polygon(100% 66%, 100% 90%, 50% 100%, 0 90%, 0 66%, 50% 76%);
+          clip-path: polygon(100% 66%, 100% 90%, 50% 100%, 0 90%, 0 66%, 50% 76%);
+  -webkit-clip-path: polygon(100% 0, 100% 15%, 50% 39%, 0 15%, 0 0, 50% 6%);
+          clip-path: polygon(100% 0, 100% 15%, 50% 39%, 0 15%, 0 0, 50% 6%);
+  top: -60px;
 }
 
 .brand .big_title {
@@ -273,13 +303,21 @@ nav .content .right .right_item span img {
 }
 
 .videos .color {
-  color: rgba(17, 17, 97, 0.918);
   color: white;
-  width: 30px;
-  height: 30px;
-  padding: 8px 12px;
-  border-radius: 50%;
-  background-color: #bcd3f5;
+  color: #5175aa;
+  padding: 0px 3px;
+  background-color: white;
+  background-color: #5175aa;
+}
+
+.videos .next {
+  -webkit-clip-path: polygon(75% 50%, 0 15%, 0 85%);
+          clip-path: polygon(75% 50%, 0 15%, 0 85%);
+}
+
+.videos .prev {
+  -webkit-clip-path: polygon(25% 50%, 100% 15%, 100% 85%);
+          clip-path: polygon(25% 50%, 100% 15%, 100% 85%);
 }
 
 .videos .color::after {

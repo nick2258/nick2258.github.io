@@ -1,24 +1,63 @@
 main {
   width: 1000px;
   margin: auto;
+  /* Style the buttons inside the tab */
+  /* Style the tab content */
 }
 
 main .now_page {
   font-size: 12px;
   letter-spacing: 2px;
   color: gray;
+  margin-bottom: 20px;
   padding: 0px 0px 10px 8px;
   border-bottom: 1px  solid gainsboro;
 }
 
-main .title {
+main .tab {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+main .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+main .tab button:hover {
+  background-color: #ddd;
+}
+
+main .tab button.active {
+  background-color: #ccc;
+  background-color: #eee1d1;
+  background-color: floralwhite;
+}
+
+main .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  background-color: #7dacc2;
+  background-color: #eee1d1;
+  background-color: floralwhite;
+}
+
+main .tabcontent .title {
   font-size: 20px;
   font-weight: 600;
   margin: 15px 0px;
   padding-left: 20px;
 }
 
-main .collapsible {
+main .tabcontent .collapsible {
   background-color: #838db8;
   color: white;
   cursor: pointer;
@@ -33,11 +72,11 @@ main .collapsible {
   border-radius: 30px;
 }
 
-main .active, main .collapsible:hover {
+main .tabcontent .active, main .tabcontent .collapsible:hover {
   background-color: #555;
 }
 
-main .collapsible:after {
+main .tabcontent .collapsible:after {
   content: '\002B';
   color: white;
   font-weight: bold;
@@ -45,11 +84,11 @@ main .collapsible:after {
   margin-left: 5px;
 }
 
-main .active:after {
+main .tabcontent .active:after {
   content: "\2212";
 }
 
-main .content {
+main .tabcontent .content {
   padding: 0 12px;
   max-height: 0;
   overflow: hidden;
@@ -58,13 +97,13 @@ main .content {
   margin: 10px 0px;
 }
 
-main .content .allprocess {
+main .tabcontent .content .allprocess {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .content .allprocess .process {
+main .tabcontent .content .allprocess .process {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,41 +115,41 @@ main .content .allprocess .process {
   margin-right: 15px;
 }
 
-main .content .allprocess .process:nth-last-child(1) {
+main .tabcontent .content .allprocess .process:nth-last-child(1) {
   margin-right: 0px;
 }
 
-main .content .allprocess .process .pic {
+main .tabcontent .content .allprocess .process .pic {
   margin: 10px  auto;
 }
 
-main .content .allprocess .process .pic img {
+main .tabcontent .content .allprocess .process .pic img {
   width: 80px;
   height: 80px;
 }
 
-main .content .allprocess .process .texts {
+main .tabcontent .content .allprocess .process .texts {
   padding: 0px 8px;
   padding-top: 10px;
   border-top: 1px  solid gainsboro;
 }
 
-main .content .allprocess .process .texts .small_title {
+main .tabcontent .content .allprocess .process .texts .small_title {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 5px;
   text-align: center;
 }
 
-main .content .allprocess .process .texts .text {
+main .tabcontent .content .allprocess .process .texts .text {
   font-size: 14px;
 }
 
-main .content .os .o {
+main .tabcontent .content .os .o {
   margin-bottom: 20px;
 }
 
-main .content .os .o .o_title {
+main .tabcontent .content .os .o .o_title {
   font-size: 16px;
   font-weight: 600;
   padding-left: 8px;
@@ -118,13 +157,13 @@ main .content .os .o .o_title {
   border-bottom: 1px solid gainsboro;
 }
 
-main .content .os .o .o_text {
+main .tabcontent .content .os .o .o_text {
   font-size: 14px;
   padding: 0px 8px;
   padding-top: 10px;
 }
 
-main .content .os .o .o_text ul {
+main .tabcontent .content .os .o .o_text ul {
   margin: 0px 0px;
 }
 /*# sourceMappingURL=order.css.map */

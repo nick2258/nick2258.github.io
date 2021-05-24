@@ -111,6 +111,7 @@ main .gifts .gift_card .content .title {
   font-size: 16px;
   font-weight: 600;
   color: #6d6868;
+  margin-bottom: 5px;
 }
 
 main .gifts .gift_card .content .price {

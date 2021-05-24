@@ -131,8 +131,11 @@ nav{
 .swiper-container {
     width: 1000px;
     margin:30px auto;
+    // margin-bottom: 100px;
     height: 100%;
+    
     .swiper-wrapper{
+
         .swiper-slide{
             width:100% ;
             height: 480px;
@@ -150,6 +153,8 @@ nav{
     .swiper-button-next::after{
         font-size: 24px;
         font-weight: 600;
+        // width: 30px;
+        // height: 30px;
     }
     .swiper-pagination{
         font-size: 15px;
@@ -163,9 +168,14 @@ nav{
     }
     .color{
         color: rgb(255, 255, 255);
-        padding: 5px 20px ;
-        background-color: rgb(155, 201, 238);
-        border-radius: 50%;
+        padding: 0px 3px ;
+        background-color: white;
+    }
+    .next{
+        clip-path: polygon(80% 50%, 0 15%, 0 85%);
+    }
+    .prev{
+        clip-path: polygon(20% 50%, 100% 15%, 100% 85%);
     }
     .swiper-pagination{
         color: brown;
@@ -176,7 +186,25 @@ nav{
     width: 1000px;
     margin: auto;
     text-align: center;
+    position: relative;
+    // margin-bottom: 80px;
+    .clip{
+        display: none;
+        width: 100%;
+        width: 1920px;
+        transform: translateX(-50%);
+        left: 50%;
+        height: 900px;
+        background-color: rgb(207, 238, 250);
+        position: absolute;
+        z-index: -1;
+        clip-path: polygon(100% 69%, 100% 80%, 50% 100%, 0 80%, 0 69%, 50% 79%);
+        clip-path: polygon(100% 66%, 100% 90%, 50% 100%, 0 90%, 0 66%, 50% 76%);
+        clip-path: polygon(100% 0, 100% 15%, 50% 39%, 0 15%, 0 0, 50% 6%);
 
+
+        top: -60px;
+    }
     .big_title{
         width: 100%;
         display: flex;
@@ -189,7 +217,6 @@ nav{
             padding: 0px 30px;
         }
         .brand_border{
-            // width: 350px;
             width: 500px;
             max-width: 800px;
             height: 2px;
@@ -250,15 +277,28 @@ nav{
     // .swiper-container-horizontal>.swiper-pagination-progressbar{
     //     bottom: 0px;
     // }
+    // .color{
+    //     color: rgba(17, 17, 97, 0.918);
+    //     color: white;
+    //     width: 30px;
+    //     height: 30px;
+    //     padding: 8px 12px  ;
+    //     border-radius: 50%;
+    //     background-color: rgb(188, 211, 245);
+    //     // font-size: 10px;
+    // }
     .color{
-        color: rgba(17, 17, 97, 0.918);
-        color: white;
-        width: 30px;
-        height: 30px;
-        padding: 8px 12px  ;
-        border-radius: 50%;
-        background-color: rgb(188, 211, 245);
-        // font-size: 10px;
+        color: rgb(255, 255, 255);
+        color:rgb(81, 117, 170);
+        padding: 0px 3px ;
+        background-color: white;
+        background-color: rgb(81, 117, 170);
+    }
+    .next{
+        clip-path: polygon(75% 50%, 0 15%, 0 85%);
+    }
+    .prev{
+        clip-path: polygon(25% 50%, 100% 15%, 100% 85%);
     }
     .color::after{
         font-size: 18px;
