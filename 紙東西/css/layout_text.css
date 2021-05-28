@@ -1232,6 +1232,7 @@ nav .content .right .right_item span img {
   color: white;
   padding: 2px  6px;
   border-radius: 2px;
+  z-index: 10;
 }
 
 .sale1 .content .four1 .product_card .pic .heart {
