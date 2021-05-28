@@ -25,7 +25,7 @@ main{
         background-color: rgb(201, 161, 161);
         background-color: rgb(225, 226, 208);
         border-radius: 5px ;
-        padding: 20px  230px;
+        padding: 20px  227px;
         .title{
             // padding: 20px 0px;
             text-align: center;
@@ -43,10 +43,6 @@ main{
                 margin-left: 0px;
                 padding-left: 0px;
                 font-size: 20px;
-                font-weight: 600;
-                // margin-bottom: 20px;
-                letter-spacing: 2px;
-                // display: flex;
                 width: max-content;
                 margin-right: 120px;
                 margin-bottom: 15px;
@@ -65,9 +61,12 @@ main{
                     letter-spacing: 1.5px;
                     &:nth-child(1){
                         border-left: 6px solid rgb(165, 165, 165);
+                        font-weight: 600;
                         padding-top: 0px;
                         padding: .5px 0px;
                         padding-left: 8px;
+                        letter-spacing: 2px;
+                        font-size: 20px;
                         
                     }
                     .fa-caret-right{

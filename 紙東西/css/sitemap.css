@@ -28,7 +28,7 @@ main .contents {
   background-color: #c9a1a1;
   background-color: #e1e2d0;
   border-radius: 5px;
-  padding: 20px  230px;
+  padding: 20px  227px;
 }
 
 main .contents .title {
@@ -52,8 +52,6 @@ main .contents .content ul {
   margin-left: 0px;
   padding-left: 0px;
   font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 2px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -78,9 +76,12 @@ main .contents .content ul li {
 
 main .contents .content ul li:nth-child(1) {
   border-left: 6px solid #a5a5a5;
+  font-weight: 600;
   padding-top: 0px;
   padding: .5px 0px;
   padding-left: 8px;
+  letter-spacing: 2px;
+  font-size: 20px;
 }
 
 main .contents .content ul li .fa-caret-right {
