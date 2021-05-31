@@ -17,7 +17,14 @@
 
 </head>
 <body>
+    <div class="buy_model">
+        <div class="content">
+            <div class="text">已加入購物車</div>
+            <div class="close_btn">x</div>
+        </div>     
+    </div>
     <main>
+      
         <div class="now_page">
             首頁 > 全部商品 > 節慶送禮 > 喜帖 > 喜帖A
         </div>
@@ -334,8 +341,8 @@
                                 <div class="text">可至統一、全家、萊爾富或OK超商取貨繳款</div>
                             </div> -->
 
-                            <button class="collapsible">ATM轉帳</button>
-                            <div class="collapsible_content">
+                            <button class="collapsible active">ATM轉帳</button>
+                            <div class="collapsible_content" style="max-height: max-content;">
                                 <div class="text">請於訂單完成三日內(不含週六日及國定假日)，完成指定帳號及訂購金額匯款／ATM轉帳</div>
                             </div>
                             <button class="collapsible">線上信用卡付款</button>
@@ -349,7 +356,7 @@
 
 
                         </div>
-                        <a href="">詳細商品付款資訊 >></a>  
+                        <a href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/order.html" target="_blank">詳細商品付款資訊 >></a>  
                         
 
                     </div>
@@ -373,8 +380,8 @@
                                 <div class="cost text">運費： NT $ 60</div>
                             </div> -->
 
-                            <button class="collapsible">宅配到府</button>
-                            <div class="collapsible_content">
+                            <button class="collapsible active">宅配到府</button>
+                            <div class="collapsible_content" style="max-height: max-content;">
                                 <div class="text">僅提供宅配【台灣本島】配送服務</div>
                                 <div class="cost text">運費： NT $ 60</div>
                             </div>
@@ -385,7 +392,7 @@
                             </div>
                          
                         </div>
-                        <a href="">詳細商品配送資訊 >></a>    
+                        <a href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/order.html" target="_blank">詳細商品配送資訊 >></a>    
                         
 
 
@@ -1016,8 +1023,26 @@
         } 
       });
     }
-    </script>
+</script>
 
+<script>
+    const buy = document.getElementsByClassName("shoppingcart")
+    const buymodel = document.getElementsByClassName("buy_model")
+    const close_btn = document.getElementsByClassName("close_btn")
+
+    buy.onclick = function() {
+        buymodel.style.display = "block";
+}
+
+
+    // buy.addEventListener("click", myFunction());
+
+//     function myFunction() {
+//     buymodel.style.display="block";
+// }
+    console.log(buy);
+    console.log(buymodel);
+</script>
 
     
 </body>

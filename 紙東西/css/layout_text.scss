@@ -1060,12 +1060,16 @@ nav{
             .product_card{
                 width: calc(33.33% - 13.33px);
                 // width: calc(25% - 15px);
+                // width: calc(50% - 20px);
                 margin-right: 20px;
                 margin-bottom: 20px;
 
                 &:nth-child(3n){
                     margin-right: 0px;
                 }
+                // &:nth-child(2n){
+                //     margin-right: 0px;
+                // }
                 .pic{
                     // margin-right: 20px;
                     position: relative;

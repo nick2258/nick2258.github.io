@@ -10,7 +10,37 @@ body{
     
     // background-image: url(/img/soft_wallpaper_@2X.png);
     // background-image: url(/img/ricepaper2_@2X.png);
+    position: relative;
 
+
+}
+
+.buy_model{
+    position: sticky;
+    top: 50px;
+    z-index: 20;
+    text-align: center;
+    width: 600px;
+    // height: 150px;
+    background-color: ivory;
+    // line-height:150px;
+    margin: auto;
+    display: none;
+    .content{
+        position: relative;
+        .text{
+            padding: 60px 0px;
+        }
+        .close_btn{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            padding:1px  8px;
+            background-color: lightblue;
+            font-size: 30px;
+            // font-weight: 600;
+        }
+    }
 
 }
 
@@ -19,6 +49,8 @@ main{
     margin: auto;
     padding: 45px  0px;
     // background-color: brown;
+    position: relative;
+   
     .now_page{
         font-size: 15px;
         letter-spacing: 2px;
@@ -191,6 +223,7 @@ main{
                         right: 0px;
                         padding: 3px 8px;
                         background-color: #f38275;
+                        background-color: #B82601;
                         border: 1px solid #f38275be;
                         color: #f1f1f1;
                         font-weight: 600;
@@ -271,7 +304,7 @@ main{
                     .costs{
                         display: flex;
                         .cost{
-                            color: rgb(180, 14, 14);
+                            color: #DF744A;
                             font-size: 24px;
                         }
                         .number{
@@ -410,7 +443,7 @@ main{
                 .show{
                     display: none;
                     font-size: 16px;
-                    color: rgb(151, 10, 10);
+                    color: #DF744A;
                     letter-spacing: 1.5px;
                     margin-bottom: 15px;
                     font-weight: 600;
@@ -451,8 +484,9 @@ main{
                     // margin: auto;
                     margin-bottom: 15px;
                     text-align: center;
-                    padding: 10px 0px;
+                    padding: 8px 0px;
                     background-color: #f38275;
+                    background-color: #DF744A;
                     border: 1px solid #f38275be;
                     color: white;
                     border-radius: 3px;
@@ -569,12 +603,13 @@ main{
         border-bottom: 1px solid gainsboro;
         .product_detail_btn{
             display: flex;
-            font-size: 18px;
             // margin-bottom: 20px;
          
             .btn{
+                font-size: 18px;
+                // font-size: 20px;
                 width: max-content;
-                padding: 5px 12px;
+                padding: 8px 12px;
                 background-color: rgba(128, 128, 128, 0.356);
                 justify-content: space-between;
                 margin-right:20px ;
@@ -661,9 +696,8 @@ main{
                         border: none;
                         text-align: left;
                         outline: none;
-                        font-size: 15px;
 
-                        font-size: 15px;
+                        font-size: 14px;
                         font-weight: 600;
                         letter-spacing: 2px;
                         border-radius: 3px;
@@ -1115,12 +1149,15 @@ main{
             }
             .color{
                 color: rgb(66, 115, 161);
+                color: #A9B7C0;
             }
             .color::after{
-                color: rgb(255, 255, 255);
-                color: rgb(64, 94, 151);
+                // color: rgb(255, 255, 255);
+                // color: rgb(64, 94, 151);
+                color: #1D2731;
+                background-color: #1D2731;
                 padding: 5px 5px ;
-                background-color: rgb(64, 94, 151);
+                // background-color: rgb(64, 94, 151);
                 transform: translateY(-40px);
             }
             .next::after{

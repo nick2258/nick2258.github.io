@@ -7,12 +7,43 @@ body {
   margin: 0px;
   padding: 0px;
   background-image: url(/img/lightpaperfibers.png);
+  position: relative;
+}
+
+.buy_model {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  z-index: 20;
+  text-align: center;
+  width: 600px;
+  background-color: ivory;
+  margin: auto;
+  display: none;
+}
+
+.buy_model .content {
+  position: relative;
+}
+
+.buy_model .content .text {
+  padding: 60px 0px;
+}
+
+.buy_model .content .close_btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 1px  8px;
+  background-color: lightblue;
+  font-size: 30px;
 }
 
 main {
   width: 1000px;
   margin: auto;
   padding: 45px  0px;
+  position: relative;
 }
 
 main .now_page {
@@ -197,6 +228,7 @@ main .product_details .product_content .top .article .mylove {
   right: 0px;
   padding: 3px 8px;
   background-color: #f38275;
+  background-color: #B82601;
   border: 1px solid #f38275be;
   color: #f1f1f1;
   font-weight: 600;
@@ -285,7 +317,7 @@ main .product_details .product_content .top .price .costs {
 }
 
 main .product_details .product_content .top .price .costs .cost {
-  color: #b40e0e;
+  color: #DF744A;
   font-size: 24px;
 }
 
@@ -423,7 +455,7 @@ main .product_details .product_content .top .stars .fa-star, main .product_detai
 main .product_details .product_content .top .show {
   display: none;
   font-size: 16px;
-  color: #970a0a;
+  color: #DF744A;
   letter-spacing: 1.5px;
   margin-bottom: 15px;
   font-weight: 600;
@@ -470,8 +502,9 @@ main .product_details .product_content .top .shoppingcart {
   width: 100%;
   margin-bottom: 15px;
   text-align: center;
-  padding: 10px 0px;
+  padding: 8px 0px;
   background-color: #f38275;
+  background-color: #DF744A;
   border: 1px solid #f38275be;
   color: white;
   border-radius: 3px;
@@ -596,14 +629,14 @@ main .product_detail .product_detail_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 18px;
 }
 
 main .product_detail .product_detail_btn .btn {
+  font-size: 18px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding: 5px 12px;
+  padding: 8px 12px;
   background-color: rgba(128, 128, 128, 0.356);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -682,8 +715,7 @@ main .product_detail .detail .pay .content .collapsible {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
   border-radius: 3px;
@@ -1136,13 +1168,13 @@ main .else_product .mySwiper .swiper-pagination {
 
 main .else_product .mySwiper .color {
   color: #4273a1;
+  color: #A9B7C0;
 }
 
 main .else_product .mySwiper .color::after {
-  color: white;
-  color: #405e97;
+  color: #1D2731;
+  background-color: #1D2731;
   padding: 5px 5px;
-  background-color: #405e97;
   -webkit-transform: translateY(-40px);
           transform: translateY(-40px);
 }
