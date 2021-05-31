@@ -309,6 +309,7 @@ main .product_details .product_content .top .allnumber {
   display: flex;
   font-size: 16px;
   line-height: 45px;
+  line-height: 30px;
   position: relative;
 }
 
@@ -320,6 +321,7 @@ main .product_details .product_content .top .allnumber input {
   font-size: 18px;
   width: 120px;
   margin: 0px  20px;
+  outline: none;
 }
 
 main .product_details .product_content .top .allnumber .numbers {
@@ -328,7 +330,9 @@ main .product_details .product_content .top .allnumber .numbers {
   width: 80px;
   height: 45px;
   line-height: 45px;
-  margin: 0px  20px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0px  15px;
   border: 1px solid gainsboro;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -343,6 +347,7 @@ main .product_details .product_content .top .allnumber .tnumber {
           transform: translateY(-50%);
   right: 5px;
   line-height: 45px;
+  line-height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,15 +357,43 @@ main .product_details .product_content .top .allnumber .tnumber .tnumber_detail 
   padding: 0px  5px;
 }
 
+main .product_details .product_content .top .allnumber .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 10px;
+  line-height: 16px;
+}
+
+main .product_details .product_content .top .allnumber .stars .text {
+  margin-right: 8px;
+  height: 18px;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+main .product_details .product_content .top .allnumber .stars .fa-star, main .product_details .product_content .top .allnumber .stars .fa-star-half {
+  color: #ffd689;
+  font-size: 16px;
+}
+
 main .product_details .product_content .top .allnumber .a {
   text-align: center;
   line-height: 45px;
+  line-height: 30px;
   font-size: 18px;
   font-weight: 600;
   border: 1px solid gainsboro;
   cursor: pointer;
   width: 45px;
   height: 45px;
+  width: 30px;
+  height: 30px;
 }
 
 main .product_details .product_content .top .allnumber .a:active {
@@ -368,6 +401,23 @@ main .product_details .product_content .top .allnumber .a:active {
   color: wheat;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+}
+
+main .product_details .product_content .top .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+main .product_details .product_content .top .stars .text {
+  margin-right: 8px;
+  height: 18px;
+}
+
+main .product_details .product_content .top .stars .fa-star, main .product_details .product_content .top .stars .fa-star-half {
+  color: #ffd689;
+  font-size: 16px;
 }
 
 main .product_details .product_content .top .show {
@@ -453,6 +503,7 @@ main .product_details .product_content .top .small_text {
   font-size: 14px;
   color: gray;
   letter-spacing: 1.5px;
+  padding-top: 8px;
 }
 
 main .product_details .product_content .top .sale_out {
@@ -537,14 +588,14 @@ main .product_main .all .pic img {
 }
 
 main .product_detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 20px;
   border-bottom: 1px solid gainsboro;
 }
 
 main .product_detail .product_detail_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 18px;
 }
 
@@ -552,7 +603,7 @@ main .product_detail .product_detail_btn .btn {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding: 3px 10px;
+  padding: 5px 12px;
   background-color: rgba(128, 128, 128, 0.356);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -569,10 +620,6 @@ main .product_detail .product_detail_btn .btn {
 
 main .product_detail .product_detail_btn .btn:hover {
   color: #383737;
-}
-
-main .product_detail .detail .detailcontent {
-  padding-left: 8px;
 }
 
 main .product_detail .detail .detailcontent .describle .title {
@@ -621,11 +668,58 @@ main .product_detail .detail .pay .content {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+main .product_detail .detail .pay .content .collapsible {
+  background-color: #777;
+  background-color: #819eaf;
+  color: white;
+  cursor: pointer;
+  padding: 8px 12px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 3px;
+}
+
+main .product_detail .detail .pay .content .active, main .product_detail .detail .pay .content .collapsible:hover {
+  background-color: #555;
+  background-color: #687A8F;
+}
+
+main .product_detail .detail .pay .content .collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+main .product_detail .detail .pay .content .active:after {
+  content: "\2212";
+}
+
+main .product_detail .detail .pay .content .collapsible_content {
+  padding: 0 12px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 10px;
+}
+
+main .product_detail .detail .pay .content .collapsible_content .text {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  line-height: 20px;
 }
 
 main .product_detail .detail .pay .content .titles {
@@ -696,10 +790,9 @@ main .product_detail .detail .pay a {
   letter-spacing: 2px;
   text-decoration: none;
   list-style: none;
-  padding: 0px 0px;
+  padding: 10px 12px;
   border-radius: 5px;
   display: block;
-  margin-top: 20px;
 }
 
 main .foryou {

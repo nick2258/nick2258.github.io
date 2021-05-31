@@ -181,12 +181,28 @@
                         <input  id="Str" class="numbers" type="text" min="1"  value="1"  oninput="if(value>99)value=99"   / onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"  
                         onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}"  onchange="ShowStr(this.id)" >
                         <div class=" a add">+</div>
-                        <div  class="tnumber">已售出數量 
+                        <div  class="tnumber" style="display: none;">
+                            已售出數量 
                             <div class="tnumber_detail" id="tnumber_detail"> 1500 </div>
                              
-                             個</div>                            
+                             個
+                        </div>   
+                        <div class="stars">
+                            <div class="text">商品評價</div>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <!-- <i class="fas fa-star-half"></i> -->
+    
+                        </div>
+                        
+                       
                     </div>
+                   
                     <div class="show " id="show">已達最高購買數量</div>
+                    
                     <div class="max">購買99個以上為大宗採購，如有需要請洽詢線上客服專員</div>
                     <div class="enough">庫存充足</div>
                     <div class="some">庫存尚可</div>
@@ -216,15 +232,16 @@
                     <div class="text"> 這是一款超級可愛的貓貓2D便條紙，當使用完便條紙後，會有隻可愛貓貓出現，現在就馬上購買，把可愛貓貓帶回家吧 這是一款超級可愛的貓貓2D便條紙，當使用完便條紙後，會有隻可愛貓貓出現，現在就馬上購買，把可愛貓貓帶回家吧 這是一款超級可愛的貓貓2D便條紙，當使用完便條紙後，會有隻可愛貓貓出現，現在就馬上購買，把可愛貓貓帶回家吧</div>
 
                     <div class="title">
-                        商品資訊
+                        商品規格
                     </div>
                     <div class="text"> 
                         <ul>
-                            <li>這是一款超級可愛的貓貓2D便條紙，當使用完便條紙後，會有隻可愛貓貓出現</li>
-                            <li>這是一款超級可愛的貓貓2D便條紙，當使用完便條紙後，會有隻可愛貓貓出現</li>
-                            <li>這是一款超級可愛的貓貓2D便條紙，當使用完便條紙後，會有隻可愛貓貓出現</li>
-                            <li>這是一款超級可愛的貓貓2D便條紙，當使用完便條紙後，會有隻可愛貓貓出現</li>
-
+                            <li> 品名：2D便條紙 - 黑貓系列</li>
+                            <li>材質：美術紙</li>
+                            <li>尺寸：8 x 7 cm</li>
+                            <li>張數：一件商品內含40張</li>
+                            <li>包裝：底板+OPP袋
+                            </li>
                         </ul>
                     </div>
                    
@@ -246,10 +263,10 @@
                 <!-- <div class="detaillinks btn" onclick="productdetail(event, 'product_detail_01')" id="Open">
                     商品資訊
                 </div> -->
-                <div class="detaillinks btn" onclick="productdetail(event, 'product_detail_02')" id="Open">
+                <!-- <div class="detaillinks btn" onclick="productdetail(event, 'product_detail_02')" id="Open" >
                 商品規格
-                </div>
-                <div class="detaillinks btn" onclick="productdetail(event, 'product_detail_03')">                         
+                </div> -->
+                <div class="detaillinks btn" onclick="productdetail(event, 'product_detail_03')" id="Open">                         
                     商品付款  
                 </div>
                 <div class="detaillinks btn" onclick="productdetail(event, 'product_detail_04')">                         
@@ -273,7 +290,7 @@
                     </div>
                 </div> -->
                 
-                <div id="product_detail_02" class="detailcontent detail">
+                <!-- <div id="product_detail_02" class="detailcontent detail" >
                     <div class="product_specification">
                   
                         品名：2D便條紙 - 黑貓系列
@@ -295,12 +312,12 @@
                     </div> 
                   
 
-                </div>
+                </div> -->
                 
                 <div id="product_detail_03" class="detailcontent detail">
                     <div class="pay">
                         <div class="content">
-                            <div class="titles">
+                            <!-- <div class="titles">
                                 <div class="smalltitle">ATM轉帳</div>
                                 <div class="text">請於訂單完成三日內(不含週六日及國定假日)，完成指定帳號及訂購金額匯款／ATM轉帳</div>
                             </div>
@@ -311,19 +328,26 @@
                                 
                             </div>
 
-                            <!-- <div class="titles">
-                                <div class="smalltitle">超商貨到付款
-                                    <div class="no">(不含客製化商品)</div> 
-                                </div>
-                                <div class="text">可於統一、全家、萊爾富或OK超商取貨繳款</div>
-                            </div> -->
 
                             <div class="titles">
                                 <div class="smalltitle">超商代碼繳費</div>
                                 <div class="text">可至統一、全家、萊爾富或OK超商取貨繳款</div>
+                            </div> -->
+
+                            <button class="collapsible">ATM轉帳</button>
+                            <div class="collapsible_content">
+                                <div class="text">請於訂單完成三日內(不含週六日及國定假日)，完成指定帳號及訂購金額匯款／ATM轉帳</div>
+                            </div>
+                            <button class="collapsible">線上信用卡付款</button>
+                            <div class="collapsible_content">
+                                <div class="text">可使用VISA、Master、JCB信用卡付款</div>
+                            </div>
+                            <button class="collapsible">超商代碼繳費</button>
+                            <div class="collapsible_content">
+                                <div class="text">可至統一、全家、萊爾富或OK超商取貨繳款</div>
                             </div>
 
-                        <!-- <a href="">詳細商品付款資訊 >></a>     -->
+
                         </div>
                         <a href="">詳細商品付款資訊 >></a>  
                         
@@ -336,7 +360,7 @@
                         
                         <div class="content "
                         id="content1">
-                            <div class="titles">
+                            <!-- <div class="titles">
                                 <div class="smalltitle">宅配到府</div>
                                 <div class="text">僅提供宅配【台灣本島】配送服務</div>
                                 <div class="cost text">運費： NT $ 60</div>
@@ -347,17 +371,19 @@
                                 <div class="smalltitle">超商取貨</div>
                                 <div class="text">可至統一、全家、萊爾富或OK超商取貨</div>
                                 <div class="cost text">運費： NT $ 60</div>
-                            </div>
-
-                            <!-- <div class="titles">
-                                <div class="smalltitle">紙東西門市取貨 </div>
-                                <div class="text">營業時間： 週一~週五 9:00AM~6:00PM</div>
-                                <div class="text">台中門市：台中市西屯區大河街8號</div>
-                                <div class="cost text">運費：無</div>
                             </div> -->
 
-                          
-                        <!-- <a href="">詳細商品配送資訊 >></a>     -->
+                            <button class="collapsible">宅配到府</button>
+                            <div class="collapsible_content">
+                                <div class="text">僅提供宅配【台灣本島】配送服務</div>
+                                <div class="cost text">運費： NT $ 60</div>
+                            </div>
+                            <button class="collapsible">超商取貨</button>
+                            <div class="collapsible_content">
+                                <div class="text">可至統一、全家、萊爾富或OK超商取貨</div>
+                                <div class="cost text">運費： NT $ 60</div>
+                            </div>
+                         
                         </div>
                         <a href="">詳細商品配送資訊 >></a>    
                         
@@ -973,7 +999,24 @@
         clickable: true,
       },
     });
-  </script>
+</script>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
 
 
     
