@@ -422,7 +422,7 @@ nav{
             margin: auto;
             display: flex;
             flex-wrap: wrap;
-            // justify-content: center;
+            justify-content: center;
             font-weight: 600;
             color: rgba(0, 0, 0, 0.432);
             // justify-content: space-between;
@@ -433,7 +433,11 @@ nav{
                 cursor: pointer; 
                 border-right: 1px solid gainsboro;
                 // margin-bottom:20px ;
-                &:nth-child(7n){
+                // &:nth-child(5n){
+                //     border-right: none;
+                //     padding-right: 0px;
+                // }
+                &:nth-last-child(1){
                     border-right: none;
                     padding-right: 0px;
                 }

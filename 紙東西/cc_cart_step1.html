@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車 - 確認訂購商品 | 紙東西文創品商城</title>
+    <meta name="description" content="紙東西文創品商城，販售文創商品，客製化的獨特設計，用創意豐富生活!">
+    <meta name="keywords" content="紙東西,PaperGoods,文創,設計,客製化,禮物">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../Images/logo/favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Css/all.css">
+    <link rel="stylesheet" href="./css/cc_cart_step1.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- Fontawesome - Kit -->
+    <script src="https://kit.fontawesome.com/18089327b4.js" crossorigin="anonymous"></script>
+
+    <style type="text/CSS">
+        .trash-box {
+            background-image: url('../Images/trash.png');
+            background-repeat: no-repeat;
+            width: 15px;
+            height: 15px;
+            border: 0px;
+        }
+
+        label {
+            position: relative;
+        }
+
+        #btnFile {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+        }
+
+        #btn {
+            margin-right: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+         <!-- 內容 -->
+         <section class="my-5">
+            <div class="container">
+                <div class="cart_steps">
+                    <div class="step">
+                        <div class="step_text">STEP1</div>
+                        <div class="step_text">確認訂購商品</div>
+                    </div>
+
+                    <i class="fas fa-angle-right"></i>
+
+                    <div class="step">
+                        <div class="step_text">STEP2</div>
+                        <div class="step_text">填寫訂購資料</div>
+                    </div>        
+                    
+                    <i class="fas fa-angle-right"></i>
+
+                    <div class="step">
+                        <div class="step_text">STEP3</div>
+                        <div class="step_text">付款</div>
+                    </div> 
+                    
+                    <i class="fas fa-angle-right"></i>
+
+                    <div class="step">
+                        <div class="step_text">STEP4</div>
+                        <div class="step_text">完成訂購</div>
+                    </div> 
+
+                </div>
+
+                <div class="back_home">
+                    <div class="back_home_text">
+                        尚未選購任何商品，請點擊按鈕
+                    </div>
+                    <a class="back_home_btn">
+                        <div class="btn_text">回首頁</div>
+                        <i class="fas fa-home-alt"></i>
+                        <!-- <i class="fas fa-home-lg"></i> -->
+                    </a>
+                </div>
+
+                <div class="check_products">
+                    <i class="fas fa-check-square"></i>
+                    <div class="title">確認訂購商品</div>
+                </div>
+
+
+                <div class="check_products_cntent">
+                    <ul>
+                        <li>商品</li>
+                        <li>數量</li>
+                        <li>單價</li>
+                        <li>小計</li>
+                    </ul>
+    
+                    <ul>
+                        <li>
+                            <div class="product_name">
+                                <div class="pic">
+                                    <img src="https://i.picsum.photos/id/72/150/150.jpg?hmac=88NNYoUrPKBRE7CbkRKkXumt03IOma2wCZii6DX7jec" alt="">
+                                </div>
+                                <div class="name text">3D便條紙 - 艾菲爾鐵塔
+                                </div>
+                            </div>
+                        </li>
+                        <li>123</li>
+                        <li class="text">
+                            <div class="text">NT$600
+                            </div>
+                        </li>
+                        <li class="text">
+                           
+
+                            <span class="text">NT$600 </span>
+                            <i class="fas fas fa-trash-alt
+                            "></i>
+                        </li>
+                    </ul>
+                </div>
+              
+
+
+                  
+
+               
+
+                <div class="row d-flex justify-content-center">
+                    <div class="col-xl-10">
+                        <!-- 步驟step -->
+                        <!-- <div class="row text-gray-2 d-none d-lg-flex justify-content-center align-items-center">
+                            <div class="cart__step__item mx-3">
+                                <div class="border border-gray-1 text-center p-3 rounded active">
+                                    <span>STEP1</span>
+                                    <span class="m-0 d-block">確認訂購商品</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="cart__step__item mx-3">
+                                <div class="border border-gray-1 text-center p-3 rounded">
+                                    <span>STEP2</span>
+                                    <span class="m-0 d-block">填寫訂購資料</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="cart__step__item mx-3">
+                                <div class="border border-gray-1 text-center p-3 rounded">
+                                    <span>STEP3</span>
+                                    <span class="m-0 d-block">付款</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-angle-right"></i>
+                            <div class="cart__step__item mx-3">
+                                <div class="border border-gray-1 text-center p-3 rounded">
+                                    <span>STEP4</span>
+                                    <span class="m-0 d-block">完成訂購</span>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- 結帳欄位 -->
+
+                        <!-- 無商品時 -->
+                        <!-- <div class="mt-5" id="divNoProduct" >
+                            <div class="col-12 d-flex justify-content-center my-5 py-3 flex-wrap">
+                                <div class="h5 font-weight-normal w-100 text-center text-gray-5">尚未選購任何商品，請點擊按鈕</div>
+                                <a href="../UseCaseHtml/index.html" class="btn btn-minor text-white mt-2">
+                                    回首頁
+                                    <i class="fas fa-caret-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="mt-5 d-flex justify-content-center align-items-center">
+                            <span>
+                                您目前的購物車合計有
+                                <span style="color: red;">0</span>
+                                項商品
+                            </span>
+                        </div> -->
+                        <!-- 有商品時 -->
+                        <div class="mt-5" id="divHasProduct" >
+                            <div class="h5 font-weight-normal pb-4">
+                                <i class="fas fa-caret-square-right text-main"></i>
+                                確認訂購商品
+                            </div>
+                            <div class="row">
+                                <div class="col-12 bg-gray-1 p-2 d-none d-md-flex align-items-center">
+                                    <div class="col-md-6">商品</div>
+                                    <div class="col-md-2 text-center">數量</div>
+                                    <div class="col-md-2 text-right">單價</div>
+                                    <div class="col-md-2 text-right">小計</div>
+                                </div>
+                            </div>
+
+                            <!-- 以下由 java script 依照購物車內容動態產生 -->
+                            <div id="div_cart_root">
+                                <!-- #region 註解區塊 --> 
+                                <!-- 紙東西可客製化商品 -->
+                                <!--<div class="row my-3" id="cartItem_Customization">-->
+                                    <!--<div class="col-12 border-bottom pb-3 d-flex align-items-center px-2">-->
+                                        <!--<div class="col-6 d-flex align-items-center">-->
+                                            <!-- desktop 商品圖片 -->
+                                            <!--<div class="col-md-6 pl-md-0 d-none d-md-block">
+                                                <img src="https://picsum.photos/150" id="imgProductDesktop">
+                                            </div>-->
+                                            <!-- desktop 商品名稱 -->
+                                            <!--<div class="d-none d-md-block col-md-6 font-sm">
+                                                <div id="labProductNameDesktop">3D便條紙</div>
+                                                <div class="d-flex flex-wrap align-items-center font-weight-light text-gray-4 mt-1">
+                                                    <button class="btn btn-sm btn-main-light text-white font-weight-light mt-md-1 mt-lg-0"
+                                                            data-toggle="modal" data-target="#uploadImage"
+                                                            id="btnUploadPic_Desktop">
+                                                        上傳圖片
+                                                    </button>
+                                                </div>
+                                            </div>-->
+                                            <!-- mobile 商品圖片 -->
+                                            <!--<div class="col d-md-none p-0">
+                                                <img src="https://picsum.photos/100" id="imgProductMobile">
+                                            </div>-->
+                                        <!--</div>-->
+                                        <!--<div class="col-6 d-block d-md-flex align-items-center p-0 font-sm">-->
+                                            <!-- mobile 商品名稱 -->
+                                            <!--<div class="d-block d-md-none col-md-6">
+                                                <div id="labProductNameMobile">3D便條紙</div>
+                                                <div class="font-weight-light text-gray-4 mt-1">
+                                                    <button class="btn btn-sm btn-main-light text-white font-weight-light"
+                                                            id="btnUploadPic_Mobile">
+                                                        上傳圖片
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4 p-md-0">
+                                                <div class="d-flex justify-content-md-center py-2 py-md-0">
+                                                    <select class="text-gray-4 border-gray-2" id="cmbQuantity">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                        <option>10</option>
+                                                        <option>11</option>
+                                                        <option>12</option>
+                                                        <option>13</option>
+                                                        <option>14</option>
+                                                        <option>15</option>
+                                                        <option>16</option>
+                                                        <option>17</option>
+                                                        <option>18</option>
+                                                        <option>19</option>
+                                                        <option>20</option>
+                                                    </select>
+                                                    <input class="text-gray-4 input-style" id="txtQty"
+                                                           style="width:50px;">
+                                                    <button class="btn btn-sm btn-gray-2 text-white border-gray-2 ml-2"
+                                                            id="btnMore">
+                                                        更多
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4 d-none d-md-block text-md-right"
+                                                 id="labProductPrice">NT$600</div>
+                                            <div class="col-12 col-md-4 font-weight-bold pl-md-4 text-md-right">
+                                                <span id="labSubTotal">NT$600</span>
+                                                <a href="#"
+                                                   class="text-gray-3 mt-1 mt-md-0 ml-md-2 d-block d-md-inline">
+                                                    <i class="fas fa-trash-alt" id="btnDelete">
+                                                        <span class="d-none d-md-inline d-lg-none font-weight-light">刪除</span>
+                                                    </i>
+                                                </a>
+                                            </div>
+                                            <input id="cc_min_qty_hidden" type="hidden" value="1">-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!-- #endregion -->
+
+                                <!-- 紙東西商品 -->
+                                <div class="row my-3" id="cartItem">
+                                    <div class="col-12 border-bottom pb-3 d-flex align-items-center px-2">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <!-- desktop 商品圖片 -->
+                                            <div class="col-md-6 pl-md-0 d-none d-md-block">
+                                                <img src="https://picsum.photos/150" id="imgProductDesktop">
+                                            </div>
+                                            <!-- desktop 商品名稱 -->
+                                            <div class="d-none d-md-block col-md-6 font-sm">
+                                                <div id="labProductNameDesktop">3D便條紙 - 艾菲爾鐵塔</div>
+                                            </div>
+                                            <!-- mobile 商品圖片 -->
+                                            <div class="col d-md-none p-0">
+                                                <img src="https://picsum.photos/100" id="imgProductMobile">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6 d-block d-md-flex align-items-center p-0 font-sm">
+                                            <!-- mobile 商品名稱 -->
+                                            <div class="d-block d-md-none col-md-6">
+                                                <div id="labProductNameMobile">3D便條紙 - 艾菲爾鐵塔</div>
+                                                <div class="font-weight-light text-gray-4 mt-1"></div>
+                                            </div>
+                                            <div class="col-12 col-md-4 p-md-0">
+                                                <div class="d-flex justify-content-md-center py-2 py-md-0">
+                                                    <select class="text-gray-4 border-gray-2" id="cmbQuantity">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                        <option>10</option>
+                                                        <option>11</option>
+                                                        <option>12</option>
+                                                        <option>13</option>
+                                                        <option>14</option>
+                                                        <option>15</option>
+                                                        <option>16</option>
+                                                        <option>17</option>
+                                                        <option>18</option>
+                                                        <option>19</option>
+                                                        <option>20</option>
+                                                    </select>
+                                                    <input class="text-gray-4 input-style" id="txtQty"
+                                                           style="width:50px;">
+                                                    <button class="btn btn-sm btn-gray-2 text-white border-gray-2 ml-2"
+                                                            id="btnMore">
+                                                        更多
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4 d-none d-md-block text-md-right"
+                                                 id="labProductPrice">NT$600</div>
+                                            <div class="col-12 col-md-4 font-weight-bold pl-md-4 text-md-right">
+                                                <span id="labSubTotal">NT$600</span>
+                                                <a href="#"
+                                                   class="text-gray-3 mt-1 mt-md-0 ml-md-2 d-block d-md-inline">
+                                                    <i class="fas fa-trash-alt" id="btnDelete">
+                                                        <span class="d-none d-md-inline d-lg-none font-weight-light">刪除</span>
+                                                    </i>
+                                                </a>
+                                            </div>
+                                            <input id="cc_min_qty_hidden" type="hidden" value="1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 魔法123作品 -->
+                            <!--
+                            <div id="">
+                                <div class="row my-3">
+                                    <div class="col-12 border-bottom pb-3 d-flex align-items-center px-2">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <!-- desktop 商品圖片
+                                            <div class="col-lg-6 pl-lg-0 d-none d-lg-block">
+                                                <div id="imgProductDesktop"><img src="https://picsum.photos/150"></div>
+                                            </div>
+                                            <!-- desktop 商品名稱
+                                            <div class="d-none d-lg-block col-lg-6">
+                                                <ul id="" class="p-0">
+                                                    <li>精裝蝴蝶書 A4直式 24頁</li>
+                                                    <li>封面上霧膜+單局光 內頁日本相紙190P</li>
+                                                    <li>加工：OPP袋包裝</li>
+                                                    <li>備註：</li>
+                                                </ul>
+                                            </div>
+                                            <!-- mobile 商品圖片
+                                            <div class="col-lg-6 pl-lg-0 d-lg-none">
+                                                <div id="imgProductMobile"><img src="https://picsum.photos/100"></div>
+                                            </div>
+                                        </div>
+                                        <!-- mobile 商品名稱
+                                        <div class="col-6 d-block d-lg-flex align-items-center p-0 font-sm">
+                                            <div class="d-block d-lg-none col-lg-6">
+                                                <ul id="" class="p-0 m-0">
+                                                    <li>精裝蝴蝶書 A4直式 24頁</li>
+                                                    <li>封面上霧膜+單局光 內頁日本相紙190P</li>
+                                                    <li>加工：OPP袋包裝</li>
+                                                    <li>備註：</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-12 col-lg-4 p-lg-0">
+                                                <div class="d-flex justify-content-lg-center align-items-center py-2 py-lg-0">
+                                                    <select class="text-gray-3" id="cmbQuantity">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                        <option>10</option>
+                                                        <option>11</option>
+                                                        <option>12</option>
+                                                        <option>13</option>
+                                                        <option>14</option>
+                                                        <option>15</option>
+                                                        <option>16</option>
+                                                        <option>17</option>
+                                                        <option>18</option>
+                                                        <option>19</option>
+                                                        <option>20</option>
+                                                    </select>
+                                                    <button class="btn btn-sm btn-main text-white ml-2"
+                                                            id="btnMore">
+                                                        更多
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-4 d-none d-lg-block text-lg-right"
+                                                 id="labProductPrice">NT$600</div>
+                                            <div class="col-12 col-lg-4 font-weight-bold pl-lg-4 text-lg-right">
+                                                <span id="labSubTotal">NT$600</span>
+                                                <a href="#"
+                                                   class="text-gray-3 mt-1 mt-lg-0 ml-lg-2 d-block d-lg-inline">
+                                                    <i class="fas fa-trash-alt" id="btnDelete"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            -->
+                            <!-- 以上由 java script 依照購物車內容動態產生 -->
+                            <!-- 運費 -->
+                            <div class="d-flex align-items-center justify-content-end mt-4">
+                                <div id="labFreeDeliveryPrice">(免運費最低下單金額：600)</div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-end mt-3">
+                                <div>
+                                    運費
+                                    <select class="mx-3 select-style" id="cmbDeliveryMethod">
+                                        <option selected="selected">宅配</option>
+                                        <option>台北門市</option>
+                                        <option>台中門市</option>
+                                    </select>
+                                    <span id="labDeliveryPrice"></span>元
+                                </div>
+                            </div>
+
+                            <!-- 總計 -->
+                            <!-- desktop 總計 -->
+                            <div class="d-none d-lg-flex align-items-center justify-content-end mt-3">
+                                購物車內合計有<span class="px-1 font-weight-bold" id="labCounts"></span>項商品，消費總金額NT$
+                                <span class="h4 font-weight-bold pl-2 text-focal mb-0" id="labTotalPriceDesktop"></span>
+                            </div>
+
+                            <!-- mobile 總計 -->
+                            <div class="d-flex align-items-center justify-content-end d-lg-none mt-3">
+                                消費總金額NT$
+                                <span class="h4 font-weight-bold pl-2 text-focal mb-0" id="labTotalPriceMobile"></span>
+                            </div>
+                            <!-- 按鈕 -->
+                            <div class="d-flex align-items-center justify-content-end mt-4">
+                                <!--<button class="btn btn-gray-3 btn-sm text-white">
+                                    <i class="fas fa-redo-alt"></i>
+                                    重新確認金額
+                                </button>-->
+                                <button class="btn btn-sm btn-minor ml-3 px-4 text-white" id="btnGoToStep2">下一步</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- #region 註解區塊 -->
+    </main>
+       
+        <!-- 上傳圖片Modal -->
+        <!-- Scrollable modal -->
+        <!--<div class="modal fade" id="uploadImage" data-backdrop="static" data-keyboard="false" tabindex="-1"
+             aria-labelledby="staticBackdropLabel" aria-hidden="true">-->
+            <!--<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">-->
+                <!--<div class="modal-content">-->
+                    <!--<div class="modal-header d-flex justify-content-between border-0">
+                        <h5 class="modal-title h6 font-weight-normal text-gray-5" id="lblUploadName">灰紙板筆記本</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>-->
+                    <!--<div class="modal-body d-flex bg-gray-1 mx-3">-->
+                        <!--<div class="row font-sm" id="uploadBox">-->
+                            <!--<div class="col-12 d-flex align-items-center px-3 py-2" id="uploadItem">
+                                <div class="bg-white rounded-pill text-center py-1" style="width: 75px;"
+                                     id="lblUploadItemName">
+                                    封面
+                                </div>
+                                <label for="btnFile" class="ml-3 my-auto" style="white-space:nowrap;">
+                                    <input type="button" id="btn" value="選擇檔案"><span id="lblFile">未選擇任何檔案</span>
+                                    <input type="file" accept=".jpg, .png" class="form-control-file" id="btnFile">
+                                </label>
+                            </div>-->
+                            <!-- <div class="col-12 d-flex align-items-center my-2">
+                                    <div class="bg-white rounded-pill text-center py-1" style="width: 100px;">封底</div>
+                                    <input type="file" accept=".pdf, .jpg, .png" class="form-control-file ml-3">
+                                </div> -->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="modal-footer border-0 d-flex justify-content-center">
+                        <button type="button" class="btn btn-sm btn-gray-2 text-white" style="width: 80px;"
+                                data-dismiss="modal">
+                            取消
+                        </button>
+                        <button type="button" class="btn btn-sm btn-minor text-white" style="width: 80px;"
+                                data-dismiss="modal" id="btnUpload">
+                            確定上傳
+                        </button>
+                    </div>-->
+                <!--</div>-->
+
+            <!--</div>-->
+        <!--</div>-->
+        <!-- #endregion -->
+
+        <script src="../CommonJs/importJS-1.0.0.js" type="text/javascript"></script>
+        <script src="../CommonJs/jquery-3.5.1.min.js" type="text/javascript"></script>
+        <script src="../CommonJs/bootstrap/bootstrap.min.js"></script><!-- 最後編譯與最小化JavaScript -->
+        <script type="text/javascript">
+            var pagename = "CartStep1"; //必要輸入項目
+
+            var ckSpace = ckSpace || {}; //未載入ckSpace為主體的JS檔，所以需要事先宣告變數。
+            var scriptlist = scriptlist || [];
+            scriptlist[pagename] = [["../UseCaseJs/app.url.js", "Lib"], ["../UseCaseJs/app.js", "app"], ["../UseCaseJs/app.settings.js", "app.settings"],
+            ["../UseCaseJs/app.model.js", "Const"], ["../CommonJs/ckSpace-1.0.4.js", "ckSpace.library"], ["../CommonJs/ckSpace-ckNet-jsSender-1.0.0.js", "ckSpace.ckNet"],
+            ["../UseCaseJs/cc_cart_step1.js", "CartStep1"], ["../UseCaseJs/cc_fileProgress.js", "FileProgress"], ["../CommonJs/Uploader.js", "myFile"]];
+
+            jQuery.get("../WebApi/getVersionTimestamp.ashx", function (r1) {
+                var index = 0;
+                importJS(scriptlist[pagename][index][0] + "?t=" + r1, scriptlist[pagename][index][1], loadbox);
+                function loadbox() {
+                    index++;
+                    if (scriptlist[pagename].length > index) {
+                        importJS(scriptlist[pagename][index][0] + "?t=" + r1, scriptlist[pagename][index][1], loadbox);
+                    } else {
+                        CartStep1.init();
+                    }
+                }
+            });
+        </script>
+    </div>
+</body>
+
+</html>

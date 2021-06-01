@@ -451,6 +451,9 @@ nav .content .right .right_item span img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.432);
 }
@@ -462,7 +465,7 @@ nav .content .right .right_item span img {
   border-right: 1px solid gainsboro;
 }
 
-.allpart3 .part3 .types .type:nth-child(7n) {
+.allpart3 .part3 .types .type:nth-last-child(1) {
   border-right: none;
   padding-right: 0px;
 }
