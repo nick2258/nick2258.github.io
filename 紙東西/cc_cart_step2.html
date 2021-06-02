@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>填寫訂購資料 | 紙東西文創品商城</title>
+    <link rel="stylesheet" href="./css/cc_cart_step2.css">
+</head>
+<body>
+    <main>
+        <!-- 內容 -->
+        <section class="my-5">
+           <div class="container">
+               <div class="cart_steps">
+                   <div class="step">
+                       <div class="step_text">STEP1</div>
+                       <div class="step_text">確認訂購商品</div>
+                   </div>
+
+                   <i class="fas fa-angle-right"></i>
+
+                   <div class="step">
+                       <div class="step_text">STEP2</div>
+                       <div class="step_text">填寫訂購資料</div>
+                   </div>        
+                   
+                   <i class="fas fa-angle-right"></i>
+
+                   <div class="step">
+                       <div class="step_text">STEP3</div>
+                       <div class="step_text">付款</div>
+                   </div> 
+                   
+                   <i class="fas fa-angle-right"></i>
+
+                   <div class="step">
+                       <div class="step_text">STEP4</div>
+                       <div class="step_text">完成訂購</div>
+                   </div> 
+
+               </div>
+
+
+               <div class="check_products">
+     
+                   <div class="title">購物明細</div>
+               </div>
+
+
+               <div class="check_products_cntent">
+                   <ul>
+                       <li>商品</li>
+                       <li>數量</li>
+                       <li>單價</li>
+                       <li>小計</li>
+                   </ul>
+   
+                
+                   <ul>
+                       <li>
+                           <div class="product_name">
+                               <div class="pic">
+                                   <img src="https://i.picsum.photos/id/72/150/150.jpg?hmac=88NNYoUrPKBRE7CbkRKkXumt03IOma2wCZii6DX7jec" alt="">
+                               </div>
+                               <div class="name text">3D便條紙 - 艾菲爾鐵塔
+                               </div>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="allnumber b">
+           
+                               <div class=" a remove">-</div>
+       
+                               <!-- <div class="numbers">1</div> -->
+                               <input  id="Str" class="numbers" type="text" min="1"  value="1"  oninput="if(value>99)value=99"   / onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"  
+                               onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}"  onchange="ShowStr(this.id)" >
+                               <div class=" a add">+</div>
+
+                           </div>
+                           <div class="show " id="show">已達最高購買數量</div>
+
+                       </li>
+                       <li class="texts">
+                           <div class="text">NT$600
+                           </div>
+                       </li>
+
+                       <li class="texts">
+                           <span class="cost_text">NT$600 </span>
+                           <i class="fas fas fa-trash-alt
+                           "></i>
+                       </li>
+                   </ul>
+               </div>
+
+               <div class="checkout">
+                   <div class="low_shipping top">運費 (郵寄)    0元
+                    </div>
+                   
+                    <div class="checkout_text top">
+                        <span class="text">
+                            應付金額NT$
+                        </span>
+                        <span class="number">660</span>
+
+                    </div>
+
+       
+                </div>
+
+                   
+            </div>
+       </section>
+
+       <section class="order_information">
+           <div class="title">
+               <span class="text">訂購人資料</span>
+               <span class="small_title">(發票依訂購人資料開立)</span>
+           </div>
+           <div class="order_information_content">
+               <div class="contents">
+                   <div class="informations">
+                       <div class="informations_title">名稱</div>
+                       <input type="text" placeholder="請輸入姓名">
+                   </div>
+                   <div class="information_small_text">
+                    (請填中文全名2~4字，欲使用信用卡付費繳款者，購買者需等同於持卡人)
+                   </div>
+               </div>
+
+               <div class="contents">
+                    <div class="informations">
+                        <div class="informations_title">電話</div>
+                        <input type="text" placeholder="ex：0423135288">
+                    </div>
+                </div>
+
+                <div class="contents">
+                    <div class="informations">
+                        <div class="informations_title">Email</div>
+                        <input type="text" >
+                    </div>
+                    <div class="information_small_text">
+                        (訂單完成通知)
+
+                    </div>
+                </div>
+
+                <div class="contents">
+                    <div class="informations">
+                        <div class="informations_title">地址</div>
+                        <select name="" id="">
+                            <option value="">請選擇</option>
+                        </select>
+
+                        <select name="" id="">
+                            <option value="">請選擇</option>
+                        </select>
+                        <span class="information_text">
+                            (台灣外島恕不寄送)
+                        </span>
+
+                        <input type="text" >
+                    </div>
+                    <div class="information_small_text">
+                        (請勿填郵政信箱)
+                    </div>
+                </div>
+            
+            </div>
+        
+           
+
+       </section>
+
+       <section class="invoice_information">
+            <div class="title">
+                <span class="text">發票資訊</span>
+                <span class="small_title">為響應發票無紙化，建議使用電子發票。 (請確實填寫mail，以利電子發票順利寄送)</span>
+            </div>
+            <div class="invoice_content">
+                <div class="small_title">電子發票</div>
+                <div class="all_content">
+                    <div class="contents">
+                        <div class="content">
+                            <div class="name">
+                                <input class="invoice_check_input" type="radio" name="receipt" id="receipt1" value="option1" title="二聯式電子發票(鯨躍發票卡)" checked>
+                                <label class="invoice" for="receipt1">
+                                    
+                                    二聯式電子發票
+                                    <div class="small_text">(鯨躍發票卡)</duv>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="invoice_information_text">
+                            <div class="color">您將使用鯨躍發票卡載具，詳見說明。</div>
+                            <div class="small_text">(依據「消費通路開立電子發票試辦作業要點」開立)</div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="contents">
+                        <div class="content">
+                            <div class="name">
+                                
+                                <input class="invoice_check_input" type="radio" name="receipt" id="receipt2" value="option1" title="二聯式電子發票(自然人憑證)">
+                                <label class="invoice" for="receipt2">
+                                    二聯式電子發票
+                                    <div class="small_text">(手機載具)</div>
+                                </label>
+
+                            </div>
+                            <div class="invoice_information_text">
+                                <div class="input">
+                                    <div class="input_text">請輸入手機載具條碼： 
+                                    </div>
+                                    <input type="text">
+                                </div>
+                                <div class="small_text bt">(須以"/"起始，限大寫英數字、+ - .)</div>
+                                <div class="input">
+                                    <div class="input_text">請再次確認手機載具條碼：  
+                                    </div>
+                                    <input type="text">
+                                </div>
+                                <div class="color top">您將使用鯨躍發票卡載具，詳見說明。</div>
+                                <div class="small_text">(依據「消費通路開立電子發票試辦作業要點」開立)</div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="contents">
+                        <div class="content">
+                            <div class="name">
+                                
+                                <input class="invoice_check_input" type="radio" name="receipt" id="receipt3" value="option3" title="二聯式電子發票(自然人憑證)">
+                                <label class="invoice" for="receipt3">
+                                    二聯式電子發票
+                                    <div class="small_text">(自然人憑證)
+                                    </div>
+                                </label>
+
+                            </div>
+                            <div class="invoice_information_text">
+                                <div class="input">
+                                    <div class="input_text">請輸入自然人憑證條碼： 
+                                    </div>
+                                    <input type="text">
+                                </div>
+                                <div class="small_text bt">(限大寫英數字)</div>
+                                <div class="input">
+                                    <div class="input_text">請再次確認手機載具條碼：  
+                                    </div>
+                                    <input type="text">
+                                </div>
+                                <div class="color top">您需持有手機載具，詳見說明。</div>
+                                <div class="small_text">(依據「消費通路開立電子發票試辦作業要點」開立)</div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+
+                  
+                </div>
+              
+            </div>
+
+           
+            <div class="invoice_content">
+                <div class="small_title">紙本發票</div>
+                <div class="all_content">
+                
+
+                    <div class="contents">
+                        <div class="content">
+                            <div class="name">
+                                
+                                <input class="invoice_check_input" type="radio" name="receipt" id="receipt4" value="option1" title="二聯式電子發票(自然人憑證)">
+                                <label class="invoice" for="receipt4">
+                                    二聯式紙本發票
+                                </label>
+
+                            </div>
+                            <div class="invoice_information_text">
+                                <div class="input">
+                                    <div class="input_text">
+                                        發票寄送地址：  
+                                    </div>
+                                    <select name="" id="">
+                                        <option value="">同訂購人</option>
+                                        <option value="">同收件人</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="contents">
+                        <div class="content">
+                            <div class="name">
+                                
+                                <input class="invoice_check_input" type="radio" name="receipt" id="receipt5" value="option5" title="二聯式電子發票(自然人憑證)">
+                                <label class="invoice" for="receipt5">
+                                    三聯式紙本發票
+                                </label>
+
+                            </div>
+                            <div class="invoice_information_text">
+                                <div class="input ">
+                                    <div class="input_text">統一編號： 
+                                    </div>
+                                    <input type="text">
+                                </div>
+                                <div class="input top">
+                                    <div class="input_text">
+                                        發票寄送地址：  
+                                    </div>
+                                    <select name="" id="">
+                                        <option value="">同訂購人</option>
+                                        <option value="">同收件人</option>
+                                    </select>
+                                </div>
+                                <div class="input top">
+                                    <div class="input_text ">發票抬頭：  
+                                    </div>
+                                    <input type="text">
+                                </div>
+                                <div class="color top">您需持有手機載具，詳見說明。</div>
+                                <div class="small_text">(限22個全形文字，若抬頭字數超過，請電洽客服人員處理)</div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+
+                  
+                </div>
+              
+            </div>
+
+            <div class="invoice_content">
+                <div class="small_title">捐贈發票</div>
+                <div class="all_content">
+                
+                    <div class="contents">
+                        <div class="content">
+                            <div class="name">
+                                
+                                <input class="invoice_check_input" type="radio" name="receipt" id="receipt3" value="option3" title="二聯式電子發票(自然人憑證)">
+                                <label class="invoice" for="receipt3">
+                                    二聯式捐贈發票
+                                </label>
+
+                            </div>
+                            <div class="invoice_information_text">
+                               
+                                <div class="input top">
+                                    <div class="input_text">
+                                        捐贈單位愛心碼：  
+                                    </div>
+                                    <select class="big" name="" id="">
+                                        <option value="">社團法人世界和平會</option>
+                                    </select>
+                                </div>
+                               
+                                <div class="color top ">(捐贈發票說明)</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                  
+                </div>
+              
+            </div>
+            <div class="remind_text">
+                依統一發票使用辦法規定：個人戶(二聯式)發票一經開立，不得任意更改或改開公司戶(三聯式)發票。
+            </div>
+
+       </section>
+
+
+        <section class="order_information">
+           <div class="title">
+            <div class="text">收件人資料 </div>
+            <div class="form_check ">
+             <input class="form-check-input" type="checkbox" value="" id="chkSubscriber">
+             <label class="form-check-label" for="subscriber">
+                 同訂購人資料
+             </label>
+             </div>
+           </div>
+           <div class="order_information_content">
+               <div class="contents">
+                   <div class="informations">
+                       <div class="informations_title">名稱</div>
+                       <input type="text" placeholder="請輸入姓名">
+                   </div>
+                   <div class="information_small_text">
+                    (請填中文全名2~4字，欲使用信用卡付費繳款者，購買者需等同於持卡人)
+                   </div>
+               </div>
+
+               <div class="contents">
+                    <div class="informations">
+                        <div class="informations_title">電話</div>
+                        <input type="text" placeholder="ex：0423135288">
+                    </div>
+                </div>
+
+                <div class="contents">
+                    <div class="informations">
+                        <div class="informations_title">Email</div>
+                        <input type="text" >
+                    </div>
+                    <div class="information_small_text">
+                        (訂單完成通知)
+
+                    </div>
+                </div>
+
+                <div class="contents">
+                    <div class="informations">
+                        <div class="informations_title">地址</div>
+                        <select name="" id="">
+                            <option value="">請選擇</option>
+                        </select>
+
+                        <select name="" id="">
+                            <option value="">請選擇</option>
+                        </select>
+                        <span class="information_text">
+                            (台灣外島恕不寄送)
+                        </span>
+
+                        <input type="text" >
+                    </div>
+                    <div class="information_small_text">
+                        (請勿填郵政信箱)
+
+                    </div>
+                </div>
+
+                <div class="contents">
+                    <div class="informations">
+                        <div class="informations_title">取貨門市</div>
+                        <select name="" id="">
+                            <option value="">請選擇</option>
+                        </select>
+
+                    </div>
+                 
+                </div>
+            </div>
+       </section>
+
+       <section class="pay_information">
+           <div class="title">選擇付款方式</div>
+           <div class="information_content">
+               <div class="pays">
+                <input class="form_check_input" type="radio" name="payment" id="payment1"
+                value="option1" title="ATM">
+                <label class="form_check_label" for="payment1" >
+                    ATM
+                </label>
+                <span class="red text">660元</span>
+                <span class="gray text">(ATM轉帳)</span>
+               </div>
+
+               <div class="pays">
+                <input class="form_check_input" type="radio" name="payment" id="payment2"
+                value="option1" title="ATM">
+                <label class="form_check_label" for="payment2" >
+                    線上刷卡
+                </label>
+                <span class="red text">660元</span>
+                <span class="gray text">(信用卡一次付清)</span>
+               </div>
+
+               <div class="pays">
+                <input class="form_check_input" type="radio" name="payment" id="payment3"
+                value="option1" title="ATM">
+                <label class="form_check_label" for="payment3" >
+                    超商繳款
+                </label>
+                <span class="red text">660元</span>
+                <span class="gray text">(超商繳款不取貨)</span>
+               </div>
+
+               <div class="pays">
+                <input class="form_check_input" type="radio" name="payment" id="payment4"
+                value="option1" title="ATM">
+                <label class="form_check_label" for="payment4" >
+                    預繳扣抵
+                </label>
+                <span class="red text">660元</span>
+               </div>
+
+               <div class="btns">
+                   <div class="btn ">上一步</div>
+                   <div class="btn active">下一步</div>
+               </div>
+               <div class="btn_text">
+                   <div class="text">
+                    親愛的顧客您好：在進行刷卡交易前，請先詳閱【紙東西刷卡-退款流程】，完成後請點選【同意】按鈕，繼續進行交易。</div>
+
+               </div>
+           </div>
+          
+       </section>
+
+       <section class="credit_card_back">
+           <div class="title">紙東西線上刷卡-退款流程</div>
+           <div class="content">
+                <div class="small_title">一.請提供顧客會員編號予承辦業務。</div>
+                <div class="small_title">二.承辦業務查看訂單狀態：</div>
+                <div class="text">訂單尚未請款完成：取消請款（信用卡不入帳）→結束。</div>
+                <div class="text">訂單已請款完成：進行退款程序(步驟三)。</div>
+                <div class="small_title">三.退款程序：</div>
+                <div class="texts">訂單發票的開立方式(電子發票/手開發票)</div>
+                <div class="text">[當期電子、手開發票]:</div>
+                <div class="text">紙本發票→請退回作廢。(如果無法退回發票，則將由業務開立折讓單)。</div>
+                <div class="text">非紙本發票→請提供電子發票號碼與日期，內部直接線上作廢。</div>
+                <div class="text">[非當期電子、手開發票]:</div>
+                <div class="text">由內部開立『營業人銷貨退回進貨退出或折讓證明單』。系統會自動寄出到發票人的信箱。</div>
+                <div class="texts">填寫相關文件後寄回</div>
+
+                <div class="text">總公司→承辦業務將郵寄『營業人銷貨退回進貨退出或折讓證明單』、『回郵信封』與『會員退款結算單』給您，請填寫相關文件後寄回『紙東西』。</div>
+                <div class="text">分公司→承辦業務將郵寄『回郵信封』、『會員退款結算單』給您，並請至發票人電子信箱查看折讓單信件並列印簽章，將上述文件填寫完畢後一併寄回『紙東西』。</div>
+                <div class="texts">退款完成通知</div>
+                <div class="text">上述文件寄回紙東西後，進行文件審查及退款程序，退款完成將由承辦業務回覆告知。</div>
+                <div class="text">【其它注意事項】</div>
+                <div class="text">1.『營業人銷貨退回進貨退出或折讓證明單』、『會員退款結算單』填寫方式(依訂購者)：</div>
+                <div class="text">個人→折讓單請填寫身分證字號與聯繫地址、簽名並蓋私章(第一、二聯都要蓋章並寄回，第三、四聯客戶留抵);退款單蓋私章或簽名。</div>
+                <div class="text">公司→折讓單請蓋發票章，如沒發票章，請蓋公司大、小章 (第一、二聯都要蓋章並寄回，第三、四聯客戶留抵);退款單蓋公司大、小章。</div>
+
+                <div class="btn">同意</div>
+
+
+            </div>
+
+           </div>
+        </section>
+
+
+   </main>
+    
+
+   <script>
+    // JavaScript
+    // STEP 1: 透過 querySelector 選擇到 HTML 中的「箭頭」元素
+    const upElement = document.querySelector(".add");
+    const downElement = document.querySelector(".remove");
+
+    // STEP 2: 透過 querySelector 選擇到 HTML 中的「數字」元素
+    const numberElement = document.querySelector(".numbers");
+    const currentNumber = Number(numberElement.value);
+     var show = document.getElementById('show')
+    
+
+    
+    // STEP 3: 監聽 click 事件，並執行對應的行為
+    upElement.addEventListener("click", e => {
+        // STEP 4: 取得當前網頁上的數字
+        const currentNumber = Number(numberElement.value);
+
+        // 取得數字變化
+
+        // STEP 5: 將數字增加後帶回網頁上 textContent
+        numberElement.value = currentNumber + 1;
+        if ( numberElement.value > 99 ) {
+            numberElement.value = currentNumber ;
+            show.classList.add("active"); 
+        }else{
+                show.classList.remove("active"); 
+
+        }
+    
+    });
+
+    downElement.addEventListener("click", e => {
+    const currentNumber = Number(numberElement.value);
+    numberElement.value = currentNumber - 1;
+    if ( numberElement.value < 1 ) {
+        numberElement.value = currentNumber ;
+    }if ( numberElement.value < 99) {
+         show.classList.remove("active"); 
+
+    }
+    });
+
+    function ShowStr(x){
+　var Str = document.getElementById(x).value;
+// 　alert(Str);
+        if (Str == 99 || Str > 99) {
+            Str == 99
+            show.classList.add("active"); 
+        } else{
+                show.classList.remove("active"); 
+
+        }
+}
+    </script>
+</body>
+</html>

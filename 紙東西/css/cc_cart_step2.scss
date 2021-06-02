@@ -1,0 +1,526 @@
+main{
+    width: 1000px;
+    margin: auto;
+    padding: 30px  0px;
+    // margin-bottom: 500px;
+    .container{
+        width: 1000px;
+        margin: auto;
+        .cart_steps{
+            padding: 20px 50px;
+            padding-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            .step{
+                width: 15%;
+                padding: 20px 10px;
+                border: 1px solid gainsboro;
+                border-radius: 2px;
+                text-align: center;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .fa-angle-right{
+                line-height:90px ;
+                padding: 0px 20px;
+                font-size: 22px;
+                color: rgb(139, 133, 133);
+            }
+        }
+
+        .check_products{
+            display: flex;
+            .fa-check-square{
+                color: rgb(32, 148, 32);
+                font-size: 24px;
+            }
+            .title{
+                font-size: 20px;
+                letter-spacing: 1.5px;
+                margin-left: 10px;
+                font-weight: 600;
+            }
+        }
+        .check_products_cntent{
+            ul{
+                // margin-bottom: 500px;
+                display: flex;
+                // margin-left: 0px;
+                padding-left: 0px;
+                // text-decoration: none;
+                list-style: none;
+                padding:20px  8px;
+                border-bottom: 1px solid gainsboro;
+                margin: 0px;
+                &:nth-child(1){
+                    margin-top: 20px;
+                    nav-left: 0px;
+                    background-color: gainsboro;
+                    padding: 6px 0px;
+                    border-radius: 3px;
+                }
+                &:nth-last-child(1){
+                    
+                }
+                li{
+                    margin: auto;
+                    width:40% ;
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: 600 ;
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    &:nth-last-child(1){
+                        width: 15%;
+                    }
+                    &:nth-last-child(2){
+                        width: 15%;
+                    }
+                    .product_name{
+                        display: flex;
+                        line-height: 120px;
+                        // width: max-content;
+                        .pic{
+                            margin-right: 20px;
+                            img{
+                                width: 150px;
+                                height: 120px;
+                                display: block;
+                            }
+                        }
+                    }
+                    .text{
+                        line-height: 120px;
+                        font-size: 15px;
+                        letter-spacing: 1.5px;
+                        font-weight: 500;
+                    }
+                    .fa-trash-alt{
+                        line-height: 120px;
+                        font-size: 18px;
+                        margin-left: 10px;
+                        color: gray;
+                    }
+                    .cost_text{
+                        font-weight:600;
+                        line-height: 120px;
+                        font-size: 15px;
+                        letter-spacing: 1.5px;
+                    }
+                    .allnumber{
+                        display: flex;
+                        font-size: 16px;
+                        line-height: 45px;
+                        line-height: 30px;
+                        position: relative;
+                        .mumber_text{
+                            margin-right: 15px;
+                        }
+                        input{
+                            font-size: 18px;
+                            width: 120px;
+                            margin: 0px  20px;
+                            outline: none;
+                            // height: 30px;
+                        }
+                        .numbers{
+                            text-align: center;
+                            font-size: 18px;
+                            width: 80px;
+                            height: 45px;
+                            line-height: 45px;
+                            height: 30px;
+                            line-height: 30px;
+                            margin: 0px  15px;
+                            border: 1px solid gainsboro;
+                            transition: 0.5s;
+                        }
+                       
+                        
+                        .a{
+                            text-align: center;
+                            line-height: 45px;
+                            line-height: 30px;
+                            font-size: 18px;
+                            font-weight: 600;
+                            // padding: 1px 12px;
+                            border: 1px solid gainsboro;
+                            cursor: pointer;
+                            // margin-bottom: 20px;
+                            width: 45px;
+                            height: 45px;
+                            width: 30px;
+                            height: 30px;
+                            &:active{
+                                background-color:darkgrey;
+                                color: wheat;
+                                transition: 0.1s;
+                            }
+                        }
+                    }
+                    
+                .show{
+                    display: none;
+                    font-size: 14px;
+                    color: #DF744A;
+                    letter-spacing: 1.5px;
+                    margin-bottom: 15px;
+                    font-weight: 600;
+                    position: absolute;
+                    bottom:-40px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                .show.active{
+                    display: block;
+                }
+
+                  
+                   
+                }
+            }
+        }
+        .checkout{
+            width: max-content;
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-align: end;
+            padding-bottom: 20px;
+            .top{
+                margin-top: 20px;
+            }
+            .checkout_text{
+                .number{
+                    font-size: 24px;
+                    color: #ff0000;
+                }
+            }
+        }
+    }
+
+    .order_information{
+        position: relative;
+        width: 1000px;
+        margin: auto;
+        padding: 30px  0px;
+        // padding-bottom: 45px;
+        border-top: 1px solid gainsboro;
+        border-bottom: 1px  solid gainsboro;
+      
+        .remind_text{
+            position: absolute;
+            bottom:10px  ;
+            right: 10px;
+            font-size: 14px;
+            color: #ff0000 ;
+        }
+        .title{
+            padding-left: 8px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            .text{
+                font-size: 20px;
+                margin-right: 5px;
+            }
+            .small_title{
+                font-size: 14px;
+            }
+            .form_check {
+                margin-top: 10px;
+            }
+        }
+        .order_information_content{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px  8px;
+            .contents{
+                width: calc(50% - 15px);
+                // width: max-content;
+                
+                margin-right: 30px;
+                margin-bottom: 20px;
+               
+                &:nth-child(2n){
+                    margin-right: 0px;
+                }
+                &:nth-child(3){
+                    width: 100%;
+                    .informations{
+                        input{
+                            width: 500px;
+                        }
+                    }
+                   
+                }
+                &:nth-child(4){
+                    width: 100%;
+                    .informations{
+                        input{
+                            width: 500px;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+                .informations{
+                    .informations_title{
+                        font-size: 18px;
+                        line-height: 36px;
+                        margin-bottom: 0px;
+                        margin-right: 10px;
+                    }
+                    input{
+                        width: 220px;
+                        height: 30px;
+                        font-size: 16px;
+                        outline: none;
+                        padding: 0px 5px;
+                        border: 1px  solid gainsboro;
+                        border-radius: 2px;
+                    }
+                    select{
+                        font-size: 16px;
+                        width: 200px;
+                        height: 30px;
+                        margin-right: 20px;
+                        outline: none;
+                        border: 1px solid gainsboro;
+                    }
+                    .information_text{
+                        font-size: 16px;
+                        margin-top: 5px;
+                        letter-spacing: 1px;
+                        color: gray;
+                    }
+                }
+                .information_small_text{
+                    font-size: 16px;
+                    margin-top: 5px;
+                    letter-spacing: 1px;
+                    color: gray;
+                }
+            }
+        }
+       
+    }
+    .invoice_information{
+        position: relative;
+        width: 1000px;
+        margin: auto;
+        padding: 30px  8px;
+        padding-bottom: 60px;
+        // border-top: 1px solid gainsboro;
+        border-bottom: 1px  solid gainsboro;
+        .remind_text{
+            position: absolute;
+            bottom:10px  ;
+            right: 10px;
+            font-size: 14px;
+            color: #ff0000 ;
+        }
+        .title{
+            // padding-left: 8px;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            .text{
+                font-size: 20px;
+                margin-right: 5px;
+                font-weight: 600;
+            }
+            .small_title{
+                font-size: 14px;
+                font-size: 500;
+            }
+        }
+        .invoice_content{
+            
+            .small_title{
+                font-size: 18px;
+                font-weight: 600;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+            .all_content{
+                border: 1px solid rgb(184, 182, 182);
+                .contents{
+                    letter-spacing: 1.5px;
+                    border-bottom: 1px solid rgb(184, 182, 182);
+                    &:nth-last-child(1){
+                        border-bottom: 0px;
+                    }
+                    .content{
+                        display: flex;
+                        border-bottom: 1px solid rgb(184, 182, 182);
+                        &:nth-last-child(1){
+                            border-bottom: 0px;
+                        }
+                        .name{
+                            width: 30%;
+                            background-color: gainsboro;
+                            padding: 10px  8px;
+                            .invoice{
+                                font-size: 16px;
+                                .small_text{
+                                    margin-top: 5px;
+                                    padding-left: 24px;
+                                }
+                            }
+                        }
+                       
+                    }
+                    .invoice_information_text{
+                        padding: 15px 8px;
+                        font-size: 14px;
+                        .color{
+                           color: orange;
+                        }
+                        .top{
+                            margin-top: 15px;
+                        }
+                        .small_text{
+                            margin-top: 5px;
+                           
+
+                            color: gray;
+                        }
+                        .bt{
+                            margin-bottom: 15px;
+                        }
+                        .input{
+                            display: flex;
+                            .input_text{
+                                font-size: 16px;
+                                line-height: 36px;
+                                font-weight: 600;
+                            }
+                            input{
+                                width: 250px;
+                                height: 30px;
+                                outline: none;
+                                border: 1px  solid gainsboro;
+                                font-size: 16px;
+                                border-radius: 3px;
+                            }
+                            select{
+                                width: 120px;
+                                outline: none;
+                                border: 1px  solid gainsboro;
+                                font-size: 16px;
+                                font-weight: 600;
+                            }
+                            .big{
+                                width: 500px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pay_information{
+        padding: 30px  8px;
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom:20px ;
+        }
+        .information_content{
+            .pays{
+                font-size: 16px;
+                padding: 6px 5px;
+                border: 1px  solid gainsboro;
+                border-radius: 30px;
+                margin-bottom: 10px;
+                letter-spacing: 1.5px;
+               .form_check_label{
+                   font-weight: 600;
+               }
+               .text{
+                    padding-left: 5px;
+               }
+               .red{
+                    color: #ff0000;
+                    font-size: 20px;
+                }
+                .gray{
+                    color: gray;
+                }
+            }
+            .btns{
+                display: flex;
+                padding: 15px 0px;
+                margin-left: auto;
+                width: max-content;
+                letter-spacing: 1.5px;
+                .btn{
+                    width: max-content;
+                    padding: 5px 18px;
+                    background-color: gray;
+                    border-radius: 3px;
+                    margin-left: 20px;
+                    color: white;
+                    font-weight: 600;
+                    &.active{
+                        background-color: orange;
+                    }
+                }
+                
+            }
+            .btn_text{
+                text-align: center;
+                
+                .text{
+                    font-size: 16px;
+                    font-weight: 600;
+                    letter-spacing: 1.5px;
+                    color: #ff0000;
+                }
+            }
+        }
+    }
+    .credit_card_back{
+        .title{
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content{
+            letter-spacing: 2px;
+            .small_title{
+                margin-bottom: 15px;
+                font-weight: 600;
+                font-size: 16px;
+            }
+            .texts{
+                font-size: 16px;
+                font-weight: 600;
+                padding-left: 5px;
+                margin-left: 25px;
+                border-left: 5px solid rgb(189, 187, 187);
+                margin-bottom: 15px;
+            }
+            .text{
+                font-size: 16px;
+                margin-bottom: 15px;
+                margin-left: 25px;
+            }
+            .btn{
+                width: max-content;
+                margin-top: 10px;
+                margin: auto;
+                padding: 6px 25px;
+                font-size: 16px;
+                font-weight: 600;
+                color: white;
+                background-color: orange;
+            }
+        }
+    }
+}
