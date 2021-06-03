@@ -1,0 +1,186 @@
+main {
+  width: 1000px;
+  margin: auto;
+}
+
+main .user_register_information {
+  background-color: #c1d2dd;
+  padding: 80px 0px;
+  margin-top: 60px;
+  border-radius: 5px;
+}
+
+main .user_register_information .content {
+  margin: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  width: 70%;
+  padding: 45px 45px;
+  background-color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+}
+
+main .user_register_information .content .title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+main .user_register_information .content .title .text {
+  margin-right: 10px;
+}
+
+main .user_register_information .content .title .fa-user {
+  font-size: 28px;
+  color: #192231;
+}
+
+main .user_register_information .content .register_content input {
+  outline: none;
+  border: 1px solid gainsboro;
+}
+
+main .user_register_information .content .register_content .address_input {
+  -webkit-transform: translateX(-8px);
+          transform: translateX(-8px);
+  width: 480px;
+  height: 30px;
+  font-size: 16px;
+  padding-left: 8px;
+  border-radius: 3px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+main .user_register_information .content .register_content .register_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+main .user_register_information .content .register_content .register_text .name {
+  text-align: initial;
+  width: 80px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-right: 15px;
+  line-height: 36px;
+}
+
+main .user_register_information .content .register_content .register_text .selecters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .user_register_information .content .register_content .register_text .selecters select {
+  width: 120px;
+  height: 30px;
+  font-size: 16px;
+  padding-left: 8px;
+  margin-right: 15px;
+  outline: none;
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+main .user_register_information .content .register_content .register_text .texts input {
+  font-weight: 600;
+  width: 480px;
+  height: 30px;
+  font-size: 16px;
+  padding-left: 8px;
+  outline: none;
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+}
+
+main .user_register_information .content .register_content .register_text .texts .check {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 14px;
+  padding: 8px 10px;
+  background-color: #687A8F;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  border-radius: 3px;
+  margin-left: 15px;
+}
+
+main .user_register_information .content .register_content .small_text {
+  font-size: 14px;
+  color: gray;
+  padding-top: 5px;
+  padding-left: 104px;
+  letter-spacing: 1.5px;
+  text-align: initial;
+}
+
+main .user_register_information .content .register_content .pl {
+  padding-left: 15px;
+}
+
+main .user_register_information .content .register_content .gender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 96px;
+  padding-top: 5px;
+}
+
+main .user_register_information .content .register_content .gender .check_btn {
+  margin-right: 15px;
+}
+
+main .user_register_information .content .agree {
+  margin: 20px 0;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  padding-left: 96px;
+}
+
+main .user_register_information .content .agree .agree_btn {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+main .user_register_information .content .agree a {
+  display: block;
+  color: orange;
+  text-decoration: none;
+}
+
+main .user_register_information .content .create_btn {
+  width: 100%;
+  padding: 8px 0px;
+  color: white;
+  background-color: orange;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  z-index: 10;
+}
+/*# sourceMappingURL=cc_register.css.map */
