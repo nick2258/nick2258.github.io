@@ -17,31 +17,6 @@
     <!-- Fontawesome - Kit -->
     <script src="https://kit.fontawesome.com/18089327b4.js" crossorigin="anonymous"></script>
 
-    <style type="text/CSS">
-        .trash-box {
-            background-image: url('../Images/trash.png');
-            background-repeat: no-repeat;
-            width: 15px;
-            height: 15px;
-            border: 0px;
-        }
-
-        label {
-            position: relative;
-        }
-
-        #btnFile {
-            position: absolute;
-            left: 0;
-            top: 0;
-            opacity: 0;
-        }
-
-        #btn {
-            margin-right: 5px;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -50,30 +25,26 @@
          <section class="my-5">
             <div class="container">
                 <div class="cart_steps">
-                    <div class="step">
-                        <div class="step_text">STEP1</div>
-                        <div class="step_text">確認訂購商品</div>
+                    <div class="step active">
+                        <div class="step_text">STEP1 <br>確認訂購商品</div>
                     </div>
 
                     <i class="fas fa-angle-right"></i>
 
                     <div class="step">
-                        <div class="step_text">STEP2</div>
-                        <div class="step_text">填寫訂購資料</div>
+                        <div class="step_text">STEP2 <br>填寫訂購資料</div>
                     </div>        
                     
                     <i class="fas fa-angle-right"></i>
 
                     <div class="step">
-                        <div class="step_text">STEP3</div>
-                        <div class="step_text">付款</div>
+                        <div class="step_text">STEP3 <br>付款</div>
                     </div> 
                     
                     <i class="fas fa-angle-right"></i>
 
                     <div class="step">
-                        <div class="step_text">STEP4</div>
-                        <div class="step_text">完成訂購</div>
+                        <div class="step_text">STEP4 <br>完成訂購</div>
                     </div> 
 
                 </div>
@@ -248,7 +219,7 @@
                 </div>
 
                 <div class="checkout">
-                    <div class="low_shipping top">(免運費最低下單金額：600)</div>
+                    <div class="low_shipping top color">(免運費最低下單金額：600)</div>
                     <div class="shipping_information top">
                         <div class="transport">
                             <div class="title">運送方式</div>
@@ -261,7 +232,9 @@
 
                     
                 <div class="checkout_text top">
-                    購物車內合計有  項商品，消費總金額NT$
+                    購物車內合計有  項商品，消費總金額
+                    <span class="color">NT$
+                    </span>
                 </div>
 
                 <div class="checkout_btn">
@@ -303,6 +276,7 @@
     // JavaScript
     // STEP 1: 透過 querySelector 選擇到 HTML 中的「箭頭」元素
     const upElement = document.querySelector(".add");
+    
     const downElement = document.querySelector(".remove");
 
     // STEP 2: 透過 querySelector 選擇到 HTML 中的「數字」元素

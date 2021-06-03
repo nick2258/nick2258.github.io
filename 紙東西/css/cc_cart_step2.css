@@ -22,12 +22,20 @@ main .container .cart_steps {
 
 main .container .cart_steps .step {
   width: 15%;
-  padding: 20px 10px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  padding: 15px 10px;
   border: 1px solid gainsboro;
+  color: #646464;
   border-radius: 2px;
   text-align: center;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 32px;
+}
+
+main .container .cart_steps .step.active {
+  border: 2px solid #b3abab;
+  color: #DF744A;
 }
 
 main .container .cart_steps .fa-angle-right {
@@ -69,7 +77,7 @@ main .container .check_products_cntent ul {
 main .container .check_products_cntent ul:nth-child(1) {
   margin-top: 20px;
   nav-left: 0px;
-  background-color: gainsboro;
+  background-color: #c1d2dd;
   padding: 6px 0px;
   border-radius: 3px;
 }
@@ -101,7 +109,7 @@ main .container .check_products_cntent ul li .product_name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  line-height: 120px;
+  line-height: 100px;
 }
 
 main .container .check_products_cntent ul li .product_name .pic {
@@ -110,19 +118,19 @@ main .container .check_products_cntent ul li .product_name .pic {
 
 main .container .check_products_cntent ul li .product_name .pic img {
   width: 150px;
-  height: 120px;
+  height: 100px;
   display: block;
 }
 
 main .container .check_products_cntent ul li .text {
-  line-height: 120px;
-  font-size: 15px;
+  line-height: 100px;
+  font-size: 16px;
   letter-spacing: 1.5px;
   font-weight: 500;
 }
 
 main .container .check_products_cntent ul li .fa-trash-alt {
-  line-height: 120px;
+  line-height: 100px;
   font-size: 18px;
   margin-left: 10px;
   color: gray;
@@ -130,7 +138,7 @@ main .container .check_products_cntent ul li .fa-trash-alt {
 
 main .container .check_products_cntent ul li .cost_text {
   font-weight: 600;
-  line-height: 120px;
+  line-height: 100px;
   font-size: 15px;
   letter-spacing: 1.5px;
 }
@@ -234,7 +242,7 @@ main .container .checkout .top {
 
 main .container .checkout .checkout_text .number {
   font-size: 24px;
-  color: #ff0000;
+  color: orangered;
 }
 
 main .order_information {
@@ -248,10 +256,12 @@ main .order_information {
 
 main .order_information .remind_text {
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
   right: 10px;
   font-size: 14px;
-  color: #ff0000;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: orangered;
 }
 
 main .order_information .title {
@@ -284,13 +294,17 @@ main .order_information .order_information_content {
 }
 
 main .order_information .order_information_content .contents {
-  width: calc(50% - 15px);
-  margin-right: 30px;
   margin-bottom: 20px;
 }
 
-main .order_information .order_information_content .contents:nth-child(2n) {
+main .order_information .order_information_content .contents:nth-child(1) {
   margin-right: 0px;
+  width: 60%;
+}
+
+main .order_information .order_information_content .contents:nth-child(2) {
+  margin-right: 0px;
+  width: 40%;
 }
 
 main .order_information .order_information_content .contents:nth-child(3) {
@@ -298,21 +312,36 @@ main .order_information .order_information_content .contents:nth-child(3) {
 }
 
 main .order_information .order_information_content .contents:nth-child(3) .informations input {
-  width: 500px;
+  width: 570px;
 }
 
 main .order_information .order_information_content .contents:nth-child(4) {
   width: 100%;
 }
 
-main .order_information .order_information_content .contents:nth-child(4) .informations input {
-  width: 500px;
+main .order_information .order_information_content .contents:nth-child(4) input {
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid gainsboro;
+  width: 630px;
+  height: 32px;
   margin-top: 10px;
 }
 
+main .order_information .order_information_content .contents:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+main .order_information .order_information_content .contents .informations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 main .order_information .order_information_content .contents .informations .informations_title {
-  font-size: 18px;
-  line-height: 36px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
   margin-bottom: 0px;
   margin-right: 10px;
 }
@@ -330,7 +359,7 @@ main .order_information .order_information_content .contents .informations input
 main .order_information .order_information_content .contents .informations select {
   font-size: 16px;
   width: 200px;
-  height: 30px;
+  height: 32px;
   margin-right: 20px;
   outline: none;
   border: 1px solid gainsboro;
@@ -344,7 +373,7 @@ main .order_information .order_information_content .contents .informations .info
 }
 
 main .order_information .order_information_content .contents .information_small_text {
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 5px;
   letter-spacing: 1px;
   color: gray;
@@ -356,12 +385,13 @@ main .invoice_information {
   margin: auto;
   padding: 30px  8px;
   padding-bottom: 60px;
-  border-bottom: 1px  solid gainsboro;
 }
 
 main .invoice_information .remind_text {
   position: absolute;
-  bottom: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  bottom: 15px;
   right: 10px;
   font-size: 14px;
   color: #ff0000;
@@ -379,8 +409,13 @@ main .invoice_information .title .text {
 }
 
 main .invoice_information .title .small_title {
+  color: gray;
   font-size: 14px;
   font-size: 500;
+}
+
+main .invoice_information .invoice_content {
+  letter-spacing: 1.5px;
 }
 
 main .invoice_information .invoice_content .small_title {
@@ -416,15 +451,17 @@ main .invoice_information .invoice_content .all_content .contents .content:nth-l
 
 main .invoice_information .invoice_content .all_content .contents .content .name {
   width: 30%;
-  background-color: gainsboro;
+  background-color: #c1d2dd;
   padding: 10px  8px;
 }
 
 main .invoice_information .invoice_content .all_content .contents .content .name .invoice {
   font-size: 16px;
+  font-weight: 600;
 }
 
 main .invoice_information .invoice_content .all_content .contents .content .name .invoice .small_text {
+  color: #5a5a5a;
   margin-top: 5px;
   padding-left: 24px;
 }
@@ -436,6 +473,7 @@ main .invoice_information .invoice_content .all_content .contents .invoice_infor
 
 main .invoice_information .invoice_content .all_content .contents .invoice_information_text .color {
   color: orange;
+  font-weight: 600;
 }
 
 main .invoice_information .invoice_content .all_content .contents .invoice_information_text .top {
@@ -464,7 +502,7 @@ main .invoice_information .invoice_content .all_content .contents .invoice_infor
 }
 
 main .invoice_information .invoice_content .all_content .contents .invoice_information_text .input input {
-  width: 250px;
+  width: 300px;
   height: 30px;
   outline: none;
   border: 1px  solid gainsboro;
@@ -473,11 +511,13 @@ main .invoice_information .invoice_content .all_content .contents .invoice_infor
 }
 
 main .invoice_information .invoice_content .all_content .contents .invoice_information_text .input select {
-  width: 120px;
+  width: 150px;
   outline: none;
   border: 1px  solid gainsboro;
   font-size: 16px;
   font-weight: 600;
+  padding: 0px 8px;
+  padding-left: 8px;
 }
 
 main .invoice_information .invoice_content .all_content .contents .invoice_information_text .input .big {
@@ -560,6 +600,12 @@ main .pay_information .information_content .btn_text .text {
   color: #ff0000;
 }
 
+main .credit_card_back {
+  background-color: #c1d2dd;
+  padding: 20px 15px;
+  border-radius: 10px;
+}
+
 main .credit_card_back .title {
   font-size: 20px;
   font-weight: 600;
@@ -582,7 +628,7 @@ main .credit_card_back .content .texts {
   font-weight: 600;
   padding-left: 5px;
   margin-left: 25px;
-  border-left: 5px solid #bdbbbb;
+  border-left: 5px solid #DF744A;
   margin-bottom: 15px;
 }
 

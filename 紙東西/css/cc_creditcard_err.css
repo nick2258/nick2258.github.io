@@ -1,0 +1,95 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  width: 1000px;
+  margin: auto;
+}
+
+main .creditcard_err_information {
+  padding: 80px;
+}
+
+main .creditcard_err_information .title {
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+main .creditcard_err_information .title .text {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+main .creditcard_err_information .title .remind_text {
+  font-size: 18px;
+  color: orangered;
+}
+
+main .creditcard_err_information .content {
+  padding: 30px 20px;
+  background-color: #c1d2dd;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+main .creditcard_err_information .content ul {
+  list-style: none;
+  letter-spacing: 1.5px;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+main .creditcard_err_information .content ul:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+main .creditcard_err_information .content ul li {
+  padding-bottom: 10px;
+}
+
+main .creditcard_err_information .content ul li:nth-child(1) {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+main .creditcard_err_information .back_home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+main .creditcard_err_information .back_home .back_home_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0px;
+  padding: 10px  20px;
+  background-color: orange;
+  margin: 30px  auto;
+  font-size: 18px;
+  color: white;
+  border-radius: 5px;
+}
+
+main .creditcard_err_information .back_home .back_home_btn .fa-home {
+  font-size: 20px;
+  color: white;
+  margin-left: 10px;
+  z-index: 10;
+  font-weight: 900;
+}
+/*# sourceMappingURL=cc_creditcard_err.css.map */

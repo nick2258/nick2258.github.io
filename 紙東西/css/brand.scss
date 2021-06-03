@@ -36,16 +36,11 @@ main{
         justify-content: center;
         padding: 20px  0px;
         .text{
-           
-
-            // width: max-content;
-            // margin: auto;
-            font-size: 24px;
+            font-size: 28px;
             font-weight: 600;
             letter-spacing: 3px;
             padding: 2px  12px;
-            // border-left: 2px  solid rgb(139, 135, 135);
-            // border-right: 2px  solid rgb(139, 135, 135);
+           
             color:rgb(94, 91, 91) ;
         }
         .fa-paper-plane{
@@ -60,11 +55,13 @@ main{
         margin-bottom: 30px;
         // border-bottom: 1px  solid gainsboro;
         p{
-            font-size: 16px;
-            letter-spacing: 1.5px;
+            font-size: 20px;
+            letter-spacing: 2px;
             padding-bottom: 15px;
             text-align: center;
             margin: 0 auto;
+            font-weight: 600;
+            color: rgb(80, 78, 78);
             &:nth-child(1){
                 padding-top: 15px;
             }

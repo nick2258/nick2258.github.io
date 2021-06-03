@@ -42,7 +42,7 @@ main .brand_title {
 }
 
 main .brand_title .text {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
   letter-spacing: 3px;
   padding: 2px  12px;
@@ -61,11 +61,13 @@ main .band_text {
 }
 
 main .band_text p {
-  font-size: 16px;
-  letter-spacing: 1.5px;
+  font-size: 20px;
+  letter-spacing: 2px;
   padding-bottom: 15px;
   text-align: center;
   margin: 0 auto;
+  font-weight: 600;
+  color: #504e4e;
 }
 
 main .band_text p:nth-child(1) {

@@ -27,12 +27,20 @@ main .cart_steps {
 
 main .cart_steps .step {
   width: 15%;
-  padding: 20px 10px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  padding: 15px 10px;
   border: 1px solid gainsboro;
+  color: #646464;
   border-radius: 2px;
   text-align: center;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 32px;
+}
+
+main .cart_steps .step.active {
+  border: 2px solid #b3abab;
+  color: #DF744A;
 }
 
 main .cart_steps .fa-angle-right {
@@ -52,8 +60,8 @@ main .complete_information .big_text {
   width: max-content;
   text-align: center;
   background-color: orange;
-  padding: 8px 25px;
-  border-radius: 3px;
+  padding: 10px 30px;
+  border-radius: 5px;
   margin: auto;
 }
 
@@ -66,11 +74,13 @@ main .complete_information .big_text .text {
 
 main .complete_information .texts {
   font-size: 16px;
-  padding: 20px 20px;
+  padding: 20px 30px;
   font-weight: 600;
   letter-spacing: 1.5px;
+  border-radius: 5px;
   background-color: #f0efef;
   margin-top: 20px;
+  line-height: 36px;
 }
 
 main .complete_information .texts .text {
@@ -79,13 +89,15 @@ main .complete_information .texts .text {
 
 main .complete_information .texts .text .color {
   font-size: 24px;
-  color: red;
+  color: orangered;
 }
 
 main .complete_information .texts .small_text {
+  font-weight: 600;
+  letter-spacing: 1.5px;
   margin-top: 10px;
   font-size: 16px;
-  color: red;
+  color: orangered;
 }
 
 main .pay_information .title {
@@ -108,7 +120,7 @@ main .pay_information .content ul {
 }
 
 main .pay_information .content ul li {
-  padding: 15px 0px;
+  padding: 16px 0px;
   letter-spacing: 1.5px;
   border-bottom: 1px  solid gainsboro;
 }
@@ -126,13 +138,14 @@ main .pay_information .content ul li .title {
 
 main .pay_information .content ul li .padding {
   color: white;
-  padding: 8px 15px;
+  padding: 6px 10px;
   background-color: orange;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 main .pay_information .content ul li .color {
   color: orange;
+  font-weight: 600;
 }
 
 main .order_information {
@@ -171,7 +184,7 @@ main .order_information .check_products_cntent ul {
 main .order_information .check_products_cntent ul:nth-child(1) {
   margin-top: 20px;
   nav-left: 0px;
-  background-color: gainsboro;
+  background-color: #c1d2dd;
   padding: 6px 0px;
   border-radius: 3px;
 }
@@ -235,12 +248,6 @@ main .order_information .check_products_cntent ul li .text {
   font-weight: 500;
 }
 
-main .order_information .check_products_cntent ul li .fa-trash-alt {
-  font-size: 18px;
-  margin-left: 10px;
-  color: gray;
-}
-
 main .order_information .check_products_cntent ul li .cost_text {
   font-weight: 600;
   font-size: 15px;
@@ -283,6 +290,7 @@ main .user_information .title {
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 1.5px;
+  margin-bottom: 10px;
 }
 
 main .user_information .content ul {
@@ -290,6 +298,7 @@ main .user_information .content ul {
   padding: 0px;
   text-decoration: none;
   list-style: none;
+  letter-spacing: 1.5px;
 }
 
 main .user_information .content ul li {
