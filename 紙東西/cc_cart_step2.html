@@ -558,13 +558,13 @@
    <script>
     // JavaScript
     // STEP 1: 透過 querySelector 選擇到 HTML 中的「箭頭」元素
-    const upElement = document.querySelector(".add");
-    const downElement = document.querySelector(".remove");
+    const upElement = document.querySelectorAll(".add");
+    const downElement = document.querySelectorAll(".remove");
 
     // STEP 2: 透過 querySelector 選擇到 HTML 中的「數字」元素
-    const numberElement = document.querySelector(".numbers");
-    const currentNumber = Number(numberElement.value);
-     var show = document.getElementById('show')
+    const numberElement = document.querySelectorAll(".numbers");
+    // const currentNumber = Number(numberElement.value);
+    //  var show = document.getElementById('show')
     
 
     
@@ -586,6 +586,16 @@
         }
     
     });
+
+       // 增加商品的按鈕
+       upElement.forEach(function(ele, i) {
+            // console.log(ele, '寫forEach的時候，帶進來的第一個參數，就是被遍歷的元素');
+            ele.addEventListener('click', function() {
+                // 商品數量顯示 +1
+                numberElement[i].value = parseInt(numberElement[i].value) + 1;
+                // updateCart();
+            });
+        });
 
     downElement.addEventListener("click", e => {
     const currentNumber = Number(numberElement.value);
