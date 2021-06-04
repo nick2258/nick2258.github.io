@@ -11,6 +11,7 @@ main{
             padding-bottom: 50px;
             display: flex;
             justify-content: center;
+            border-bottom: 1px solid gainsboro;
             .step{
                 width: 15%;
                 letter-spacing: 1.5px;
@@ -35,179 +36,124 @@ main{
             }
         }
 
-        .check_products{
-            display: flex;
-            .fa-check-square{
-                color: rgb(32, 148, 32);
-                font-size: 24px;
-            }
-            .title{
-                font-size: 20px;
-                letter-spacing: 1.5px;
-                margin-left: 10px;
-                font-weight: 600;
-            }
-        }
-        .check_products_cntent{
-            ul{
-                // margin-bottom: 500px;
+        .all_checkout_information{
+            padding-top: 30px;
+            .check_products{
                 display: flex;
-                // margin-left: 0px;
-                padding-left: 0px;
-                // text-decoration: none;
-                list-style: none;
-                padding:20px  8px;
-                border-bottom: 1px solid gainsboro;
-                margin: 0px;
-                &:nth-child(1){
-                    margin-top: 20px;
-                    nav-left: 0px;
-                    background-color: #c1d2dd;
-                    padding: 6px 0px;
-                    border-radius: 3px;
-                }
-                &:nth-last-child(1){
-                    
-                }
-                li{
-                    margin: auto;
-                    width:40% ;
-                    text-align: center;
-                    font-size: 20px;
-                    font-weight: 600 ;
-                    display: flex;
-                    justify-content: center;
-                    position: relative;
-                    &:nth-last-child(1){
-                        width: 15%;
-                    }
-                    &:nth-last-child(2){
-                        width: 15%;
-                    }
-                    .product_name{
-                        display: flex;
-                        line-height: 100px;
-                        // width: max-content;
-                        .pic{
-                            margin-right: 20px;
-                            img{
-                                width: 150px;
-                                height: 100px;
-                                display: block;
-                            }
-                        }
-                    }
-                    .text{
-                        line-height: 100px;
-                        font-size: 16px;
-                        letter-spacing: 1.5px;
-                        font-weight: 500;
-                    }
-                    .fa-trash-alt{
-                        line-height: 100px;
-                        font-size: 18px;
-                        margin-left: 10px;
-                        color: gray;
-                    }
-                    .cost_text{
-                        font-weight:600;
-                        line-height: 100px;
-                        font-size: 15px;
-                        letter-spacing: 1.5px;
-                    }
-                    .allnumber{
-                        display: flex;
-                        font-size: 16px;
-                        line-height: 45px;
-                        line-height: 30px;
-                        position: relative;
-                        .mumber_text{
-                            margin-right: 15px;
-                        }
-                        input{
-                            font-size: 18px;
-                            width: 120px;
-                            margin: 0px  20px;
-                            outline: none;
-                            // height: 30px;
-                        }
-                        .numbers{
-                            text-align: center;
-                            font-size: 18px;
-                            width: 80px;
-                            height: 45px;
-                            line-height: 45px;
-                            height: 30px;
-                            line-height: 30px;
-                            margin: 0px  15px;
-                            border: 1px solid gainsboro;
-                            transition: 0.5s;
-                        }
-                       
-                        
-                        .a{
-                            text-align: center;
-                            line-height: 45px;
-                            line-height: 30px;
-                            font-size: 18px;
-                            font-weight: 600;
-                            // padding: 1px 12px;
-                            border: 1px solid gainsboro;
-                            cursor: pointer;
-                            // margin-bottom: 20px;
-                            width: 45px;
-                            height: 45px;
-                            width: 30px;
-                            height: 30px;
-                            &:active{
-                                background-color:darkgrey;
-                                color: wheat;
-                                transition: 0.1s;
-                            }
-                        }
-                    }
-                    
-                .show{
-                    display: none;
-                    font-size: 14px;
-                    color: #DF744A;
-                    letter-spacing: 1.5px;
-                    margin-bottom: 15px;
-                    font-weight: 600;
-                    position: absolute;
-                    bottom:-40px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
-                .show.active{
-                    display: block;
-                }
-
-                  
-                   
-                }
-            }
-        }
-        .checkout{
-            width: max-content;
-            display: flex;
-            flex-direction: column;
-            margin-left: auto;
-            font-size: 16px;
-            font-weight: 600;
-            letter-spacing: 1.5px;
-            text-align: end;
-            padding-bottom: 20px;
-            .top{
-                margin-top: 20px;
-            }
-            .checkout_text{
-                .number{
+                .fa-check-square{
+                    color: rgb(32, 148, 32);
                     font-size: 24px;
-                    color: orangered;
+                }
+                .title{
+                    font-size: 20px;
+                    letter-spacing: 1.5px;
+                    margin-left: 10px;
+                    font-weight: 600;
+                }
+            }
+            .check_products_cntent{
+                ul{
+                    // margin-bottom: 500px;
+                    display: flex;
+                    // margin-left: 0px;
+                    padding-left: 0px;
+                    // text-decoration: none;
+                    list-style: none;
+                    padding:20px  8px;
+                    border-bottom: 1px solid gainsboro;
+                    margin: 0px;
+                    &:nth-child(1){
+                        margin-top: 20px;
+                        nav-left: 0px;
+                        background-color: #c1d2dd;
+                        padding: 6px 0px;
+                        border-radius: 3px;
+                    }
+                    &:nth-last-child(1){
+                        
+                    }
+                    li{
+                        margin: auto;
+                        width:40% ;
+                        text-align: center;
+                        font-size: 20px;
+                        font-weight: 600 ;
+                        display: flex;
+                        justify-content: center;
+                        position: relative;
+                        &:nth-last-child(1){
+                            width: 15%;
+                        }
+                        &:nth-last-child(2){
+                            width: 15%;
+                        }
+                        .product_name{
+                            display: flex;
+                            line-height: 65px;
+                            // width: max-content;
+                            .pic{
+                                margin-right: 20px;
+                                img{
+                                    width: 150px;
+                                    height: 100px;
+
+                                    width: 100px;
+                                    height: 65px;
+                                    display: block;
+                                }
+                            }
+                        }
+                        .text{
+                            line-height: 65px;
+                            font-size: 16px;
+                            letter-spacing: 1.5px;
+                            font-weight: 500;
+                        }
+                        .fa-trash-alt{
+                            line-height: 65px;
+                            font-size: 18px;
+                            margin-left: 10px;
+                            color: gray;
+                        }
+                        .cost_text{
+                            font-weight:600;
+                            line-height: 65px;
+                            font-size: 15px;
+                            letter-spacing: 1.5px;
+                        }
+                        .allnumber{
+                            display: flex;
+                            font-size: 16px;
+                            line-height: 45px;
+                            line-height: 30px;
+                            position: relative;
+                           
+                        }
+                    }
+                }
+            }
+            .checkout{
+                width: max-content;
+                display: flex;
+                flex-direction: column;
+                margin-left: auto;
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: 1.5px;
+                text-align: end;
+                padding-bottom: 20px;
+                .top{
+                    margin-top: 20px;
+                }
+                .checkout_text{
+                    .number{
+                        font-size: 24px;
+                        color: orangered;
+                    }
                 }
             }
         }
+      
     }
 
     .order_information{
@@ -215,7 +161,7 @@ main{
         width: 1000px;
         margin: auto;
         padding: 30px  0px;
-        // padding-bottom: 45px;
+        padding-bottom: 45px;
         border-top: 1px solid gainsboro;
         border-bottom: 1px  solid gainsboro;
       
@@ -229,44 +175,62 @@ main{
             color: orangered ;
         }
         .title{
-            padding-left: 8px;
+            // padding-left: 8px;
             font-weight: 600;
             letter-spacing: 1.5px;
+            // margin: auto;
+            text-align: center;
             margin-bottom: 20px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
             .text{
                 font-size: 20px;
+                font-size: 24px;
                 margin-right: 5px;
             }
             .small_title{
                 font-size: 14px;
+                transform: translateY(10px);
             }
-            .form_check {
-                margin-top: 10px;
+            .form_check_input{
+                transform: translateY(1px);
             }
+            // .form_check {
+            //     margin-top: 10px;
+            // }
         }
         .order_information_content{
             display: flex;
             flex-wrap: wrap;
             padding: 0px  8px;
+            padding: 30px 140px;
+            border: 2px solid gainsboro;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            // background-color: bisque;
             .contents{
                 // width: calc(50% - 15px);
                 // width: max-content;
                 
                 // margin-right: 30px;
+            
                 margin-bottom: 20px;
+
+                width: 100%;
                 &:nth-child(1){
                     margin-right: 0px;
-                    width: 60%;
+                    // width: 60%;
                 }
                 &:nth-child(2){
                     margin-right: 0px;
-                    width: 40%;
+               
                 }
                 &:nth-child(3){
                     width: 100%;
                     .informations{
                         input{
-                            width: 570px;
+                            width: 650px;
                         }
                     }
                    
@@ -278,7 +242,7 @@ main{
                         outline: none;
                         border-radius:3px ;
                         border: 1px solid gainsboro;
-                        width: 630px;
+                        width: 705px;
                         height: 32px;
                         margin-top: 10px;
                     }
@@ -294,7 +258,7 @@ main{
 
                     .informations_title{
                         font-weight: 600;
-                        font-size: 16px;
+                        font-size: 18px;
                         line-height: 32px;
                         margin-bottom: 0px;
                         margin-right: 10px;
@@ -337,10 +301,10 @@ main{
         position: relative;
         width: 1000px;
         margin: auto;
-        padding: 30px  8px;
+        padding: 45px  8px;
         padding-bottom: 60px;
         // border-top: 1px solid gainsboro;
-        // border-bottom: 1px  solid gainsboro;
+        border-bottom: 1px  solid gainsboro;
         .remind_text{
             position: absolute;
             font-weight: 600;
@@ -355,7 +319,7 @@ main{
             letter-spacing: 1.5px;
             margin-bottom: 20px;
             .text{
-                font-size: 20px;
+                font-size: 24px;
                 margin-right: 5px;
                 font-weight: 600;
             }
@@ -367,11 +331,15 @@ main{
         }
         .invoice_content{
             letter-spacing: 1.5px;
+            margin: 30px 0px;
+            // padding: 20px;
+            // background-color: bisque;
             .small_title{
                 font-size: 18px;
                 font-weight: 600;
                 margin-top: 30px;
                 margin-bottom: 10px;
+                padding-left: 12px;
             }
             .all_content{
                 border: 1px solid rgb(184, 182, 182);
@@ -487,20 +455,40 @@ main{
             }
             .btns{
                 display: flex;
-                padding: 15px 0px;
+                padding: 15px 8px;
                 margin-left: auto;
-                width: max-content;
+                margin-top: 30px;
+                // width: max-content;
+                justify-content: space-between;
                 letter-spacing: 1.5px;
                 .btn{
                     width: max-content;
-                    padding: 5px 18px;
-                    background-color: gray;
+                    padding: 6px 22px;
                     border-radius: 3px;
-                    margin-left: 20px;
+                    font-size: 18px;
+                    // margin-left: 20px;
                     color: white;
                     font-weight: 600;
                     &.active{
                         background-color: orange;
+                    }
+                }
+                .prev{
+                    background-color: gray;
+                    border: 2px solid gray;
+                    &:hover{
+                        transition: .4s;
+                        background-color: white;
+                        color: gray;
+                    }
+                }
+                .next{
+                    background-color: orange;
+                    border: 2px solid orange;
+                    &:hover{
+                        transition: .4s;
+                        background-color: white;
+                        color: orange;
                     }
                 }
                 
@@ -521,6 +509,13 @@ main{
         background-color: #c1d2dd;
         padding: 20px 15px;
         border-radius: 10px;
+        .small{
+            font-size: 16px;
+            color: orangered;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 20px;
+        }
         .title{
             font-size: 20px;
             font-weight: 600;
@@ -543,7 +538,7 @@ main{
                 margin-bottom: 15px;
             }
             .text{
-                font-size: 16px;
+                font-size: 14px;
                 margin-bottom: 15px;
                 margin-left: 25px;
             }

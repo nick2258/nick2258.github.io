@@ -9,6 +9,7 @@ main{
             padding-bottom: 50px;
             display: flex;
             justify-content: center;
+            border-bottom: 1px solid gainsboro;
             .step{
                 width: 15%;
                 letter-spacing: 1.5px;
@@ -37,6 +38,7 @@ main{
             display: flex;
             flex-direction: column;
             text-align: center;
+            padding-top: 30px;
             .back_home_text{
                 font-size: 24px;
             }
@@ -58,221 +60,231 @@ main{
                 }
             }
         }
-
-        .check_products{
-            display: flex;
-            .fa-check-square{
-                color: rgb(32, 148, 32);
-                font-size: 24px;
-                transform: translateY(2px);
-            }
-            .title{
-                font-size: 20px;
-                letter-spacing: 1.5px;
-                margin-left: 10px;
-                font-weight: 600;
-            }
-        }
-        .check_products_cntent{
-            ul{
-                // margin-bottom: 500px;
-                display: flex;
-                // margin-left: 0px;
-                padding-left: 0px;
-                // text-decoration: none;
-                list-style: none;
-                padding:20px  8px;
-                border-bottom: 1px solid gainsboro;
-                margin: 0px;
-                &:nth-child(1){
-                    margin-top: 20px;
-                    nav-left: 0px;
-                    border: 0px;
-                    background-color: gainsboro;
-                    background-color: #c1d2dd;
-                    padding: 6px 0px;
-                    border-radius: 3px;
-                }
-                &:nth-last-child(1){
-                    
-                }
-                li{
-                    margin: auto;
-                    width:40% ;
-                    text-align: center;
-                    font-size: 18px;
-                    font-weight: 600 ;
-                    display: flex;
-                    justify-content: center;
-                    position: relative;
-                    &:nth-last-child(1){
-                        width: 15%;
-                    }
-                    &:nth-last-child(2){
-                        width: 15%;
-                    }
-                    .product_name{
-                        display: flex;
-                        line-height: 100px;
-                        // width: max-content;
-                        .pic{
-                            margin-right: 20px;
-                            img{
-                                width: 150px;
-                                height: 100px;
-                                display: block;
-                            }
-                        }
-                    }
-                    .text{
-                        line-height: 100px;
-                        font-size: 16px;
-                        letter-spacing: 1.5px;
-                        font-weight: 500;
-                    }
-                    .fa-trash-alt{
-                        line-height: 100px;
-                        font-size: 18px;
-                        margin-left: 10px;
-                        color: gray;
-                    }
-                    .cost_text{
-                        font-weight:600;
-                        line-height: 100px;
-                        font-size: 15px;
-                        letter-spacing: 1.5px;
-                    }
-                    .allnumber{
-                        display: flex;
-                        // margin: auto;
-                       
-                        font-size: 16px;
-                        // height: 45px;
-                        line-height: 45px;
-                        line-height: 30px;
-                        position: relative;
-                        // margin-left: 20px;
-                        // font-size: 20px;
-                        // height: 30px;
-                        // line-height: 30px;
-                        .mumber_text{
-                            margin-right: 15px;
-                        }
-                        input{
-                            font-size: 18px;
-                            width: 120px;
-                            margin: 0px  20px;
-                            outline: none;
-                            // height: 30px;
-                        }
-                        .numbers{
-                            text-align: center;
-                            font-size: 18px;
-                            width: 80px;
-                            height: 45px;
-                            line-height: 45px;
-                            height: 30px;
-                            line-height: 30px;
-                            margin: 0px  15px;
-                            border: 1px solid gainsboro;
-                            transition: 0.5s;
-                        }
+        .all_checkout_information{
+            .check_products{
+                padding-top: 30px;
+                 display: flex;
+                 .fa-check-square{
+                     color: rgb(32, 148, 32);
+                     font-size: 24px;
+                     transform: translateY(2px);
+                 }
+                 .title{
+                     font-size: 24px;
+                     letter-spacing: 1.5px;
+                     margin-left: 10px;
+                     font-weight: 600;
+                 }
+             }
+             .check_products_cntent{
+             
+                 ul{
+                     // margin-bottom: 500px;
+                     display: flex;
+                     // margin-left: 0px;
+                     padding-left: 0px;
+                     // text-decoration: none;
+                     list-style: none;
+                     padding:20px  8px;
+                     border-bottom: 1px solid gainsboro;
+                     margin: 0px;
+                     
+                     &:nth-child(1){
+                         margin-top: 20px;
+                         nav-left: 0px;
+                         border: 0px;
+                         background-color: gainsboro;
+                         background-color: #c1d2dd;
+                         padding: 6px 0px;
+                         border-radius: 3px;
+                     }
+                     &:nth-last-child(1){
+                         
+                     }
+                     li{
+                         margin: auto;
+                         width:40% ;
+                         text-align: center;
+                         font-size: 18px;
+                         font-weight: 600 ;
+                         display: flex;
+                         justify-content: center;
+                         position: relative;
+                         &:nth-last-child(1){
+                             width: 15%;
+                         }
+                         &:nth-last-child(2){
+                             width: 15%;
+                         }
+                         .product_name{
+                             display: flex;
+                             line-height: 65px;
+                             // width: max-content;
+                             .pic{
+                                 margin-right: 20px;
+                                 img{
+                                     width: 150px;
+                                     height: 100px;
+     
+                                     width: 100px;
+                                     height: 65px;
+                                     display: block;
+                                 }
+                             }
+                         }
+                         .text{
+                             line-height: 65px;
+                             font-size: 16px;
+                             letter-spacing: 1.5px;
+                             font-weight: 500;
+                         }
+                         .fa-trash-alt{
+                             line-height: 65px;
+                             font-size: 18px;
+                             margin-left: 10px;
+                             color: gray;
+                         }
+                         .cost_text{
+                             font-weight:600;
+                             line-height: 65px;
+                             font-size: 15px;
+                             letter-spacing: 1.5px;
+                         }
+                         .allnumber{
+                             display: flex;
+                             // margin: auto;
+                            
+                             font-size: 16px;
+                             // height: 45px;
+                             line-height: 45px;
+                             line-height: 30px;
+                             position: relative;
+                             // margin-left: 20px;
+                             // font-size: 20px;
+                             // height: 30px;
+                             // line-height: 30px;
+                             .mumber_text{
+                                 margin-right: 15px;
+                             }
+                             input{
+                                 font-size: 18px;
+                                 width: 120px;
+                                 margin: 0px  20px;
+                                 outline: none;
+                                 // height: 30px;
+                             }
+                             .numbers{
+                                 text-align: center;
+                                 font-size: 18px;
+                                 width: 80px;
+                                 height: 45px;
+                                 line-height: 45px;
+                                 height: 30px;
+                                 line-height: 30px;
+                                 margin: 0px  15px;
+                                 border: 1px solid gainsboro;
+                                 transition: 0.5s;
+                             }
+                            
+                             
+                             .a{
+                                 text-align: center;
+                                 line-height: 45px;
+                                 line-height: 30px;
+                                 font-size: 18px;
+                                 font-weight: 600;
+                                 // padding: 1px 12px;
+                                 border: 1px solid gainsboro;
+                                 cursor: pointer;
+                                 // margin-bottom: 20px;
+                                 width: 45px;
+                                 height: 45px;
+                                 width: 30px;
+                                 height: 30px;
+                                 &:active{
+                                     background-color:darkgrey;
+                                     color: wheat;
+                                     transition: 0.1s;
+                                 }
+                             }
+     
+                         }
+                         
+                     .show{
+                         display: none;
+                         font-size: 14px;
+                         color: #DF744A;
+                         letter-spacing: 1.5px;
+                         margin-bottom: 15px;
+                         font-weight: 600;
+                         position: absolute;
+                         bottom:-40px;
+                         left: 50%;
+                         transform: translateX(-50%);
+                     }
+                     .show.active{
+                         display: block;
+                     }
+     
                        
                         
-                        .a{
-                            text-align: center;
-                            line-height: 45px;
-                            line-height: 30px;
-                            font-size: 18px;
-                            font-weight: 600;
-                            // padding: 1px 12px;
-                            border: 1px solid gainsboro;
-                            cursor: pointer;
-                            // margin-bottom: 20px;
-                            width: 45px;
-                            height: 45px;
-                            width: 30px;
-                            height: 30px;
-                            &:active{
-                                background-color:darkgrey;
-                                color: wheat;
-                                transition: 0.1s;
-                            }
-                        }
-
-                    }
-                    
-                .show{
-                    display: none;
-                    font-size: 14px;
-                    color: #DF744A;
-                    letter-spacing: 1.5px;
-                    margin-bottom: 15px;
-                    font-weight: 600;
-                    position: absolute;
-                    bottom:-40px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
-                .show.active{
-                    display: block;
-                }
-
-                  
-                   
-                }
-            }
+                     }
+                 }
+             }
+             .checkout{
+                 width: max-content;
+                 display: flex;
+                 flex-direction: column;
+                 margin-left: auto;
+                 font-size: 16px;
+                 font-weight: 600;
+                 letter-spacing: 1.5px;
+                 text-align: end;
+                 .top{
+                     margin-top: 20px;
+                 }
+                 .low_shipping{
+                     font-size: 14px;
+                     color: orangered;
+                 }
+                 
+                 
+                 .shipping_information{
+                     margin-left: auto;
+                     .transport{
+                         display: flex;
+                         line-height: 30px;
+                         .title{
+                         }
+                         select{
+                             width: 100px;
+                             height: 30px;
+                             padding: 0px 5px;
+                             text-align: center;
+                             font-size: 16px;
+                             font-weight: 600;
+                             margin: 0px 10px;
+                             outline: none;
+                             border: 1px solid gainsboro;
+                         }
+     
+                     }
+                 }
+     
+                 .checkout_btn{
+                     margin-left: auto;
+                     
+                     width: max-content;
+                     padding: 8px 25px;
+                     background-color: orange;
+                     border-radius: px;
+                     margin-top: 30px;
+                     color: white;
+                     border-radius: 3px;
+                 }
+             }
         }
-        .checkout{
-            width: max-content;
-            display: flex;
-            flex-direction: column;
-            margin-left: auto;
-            font-size: 16px;
-            font-weight: 600;
-            letter-spacing: 1.5px;
-            text-align: end;
-            .top{
-                margin-top: 20px;
-            }
-            .color{
-                color: orangered;
-            }
-            
-            
-            .shipping_information{
-                margin-left: auto;
-                .transport{
-                    display: flex;
-                    line-height: 30px;
-                    .title{
-                    }
-                    select{
-                        width: 100px;
-                        height: 30px;
-                        padding: 0px 5px;
-                        text-align: center;
-                        font-size: 16px;
-                        font-weight: 600;
-                        margin: 0px 10px;
-                        outline: none;
-                        border: 1px solid gainsboro;
-                    }
 
-                }
-            }
-
-            .checkout_btn{
-                margin-left: auto;
-                
-                width: max-content;
-                padding: 8px 25px;
-                background-color: orange;
-                border-radius: px;
-                margin-top: 30px;
-                color: white;
-                border-radius: 3px;
-            }
-        }
+      
     }
 }

@@ -35,7 +35,8 @@ main .creditcard_err_information .title .remind_text {
 
 main .creditcard_err_information .content {
   padding: 30px 20px;
-  background-color: #c1d2dd;
+  background-color: #e3eef5;
+  border: 2px solid #c1d2dd;
   margin-top: 30px;
   border-radius: 5px;
 }

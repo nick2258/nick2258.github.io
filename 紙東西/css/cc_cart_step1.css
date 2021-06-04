@@ -16,6 +16,7 @@ main .container .cart_steps {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-bottom: 1px solid gainsboro;
 }
 
 main .container .cart_steps .step {
@@ -52,6 +53,7 @@ main .container .back_home {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  padding-top: 30px;
 }
 
 main .container .back_home .back_home_text {
@@ -79,27 +81,28 @@ main .container .back_home .back_home_btn .fa-home {
   font-weight: 900;
 }
 
-main .container .check_products {
+main .container .all_checkout_information .check_products {
+  padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .container .check_products .fa-check-square {
+main .container .all_checkout_information .check_products .fa-check-square {
   color: #209420;
   font-size: 24px;
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
 }
 
-main .container .check_products .title {
-  font-size: 20px;
+main .container .all_checkout_information .check_products .title {
+  font-size: 24px;
   letter-spacing: 1.5px;
   margin-left: 10px;
   font-weight: 600;
 }
 
-main .container .check_products_cntent ul {
+main .container .all_checkout_information .check_products_cntent ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,7 +113,7 @@ main .container .check_products_cntent ul {
   margin: 0px;
 }
 
-main .container .check_products_cntent ul:nth-child(1) {
+main .container .all_checkout_information .check_products_cntent ul:nth-child(1) {
   margin-top: 20px;
   nav-left: 0px;
   border: 0px;
@@ -120,7 +123,7 @@ main .container .check_products_cntent ul:nth-child(1) {
   border-radius: 3px;
 }
 
-main .container .check_products_cntent ul li {
+main .container .all_checkout_information .check_products_cntent ul li {
   margin: auto;
   width: 40%;
   text-align: center;
@@ -135,53 +138,55 @@ main .container .check_products_cntent ul li {
   position: relative;
 }
 
-main .container .check_products_cntent ul li:nth-last-child(1) {
+main .container .all_checkout_information .check_products_cntent ul li:nth-last-child(1) {
   width: 15%;
 }
 
-main .container .check_products_cntent ul li:nth-last-child(2) {
+main .container .all_checkout_information .check_products_cntent ul li:nth-last-child(2) {
   width: 15%;
 }
 
-main .container .check_products_cntent ul li .product_name {
+main .container .all_checkout_information .check_products_cntent ul li .product_name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  line-height: 100px;
+  line-height: 65px;
 }
 
-main .container .check_products_cntent ul li .product_name .pic {
+main .container .all_checkout_information .check_products_cntent ul li .product_name .pic {
   margin-right: 20px;
 }
 
-main .container .check_products_cntent ul li .product_name .pic img {
+main .container .all_checkout_information .check_products_cntent ul li .product_name .pic img {
   width: 150px;
   height: 100px;
+  width: 100px;
+  height: 65px;
   display: block;
 }
 
-main .container .check_products_cntent ul li .text {
-  line-height: 100px;
+main .container .all_checkout_information .check_products_cntent ul li .text {
+  line-height: 65px;
   font-size: 16px;
   letter-spacing: 1.5px;
   font-weight: 500;
 }
 
-main .container .check_products_cntent ul li .fa-trash-alt {
-  line-height: 100px;
+main .container .all_checkout_information .check_products_cntent ul li .fa-trash-alt {
+  line-height: 65px;
   font-size: 18px;
   margin-left: 10px;
   color: gray;
 }
 
-main .container .check_products_cntent ul li .cost_text {
+main .container .all_checkout_information .check_products_cntent ul li .cost_text {
   font-weight: 600;
-  line-height: 100px;
+  line-height: 65px;
   font-size: 15px;
   letter-spacing: 1.5px;
 }
 
-main .container .check_products_cntent ul li .allnumber {
+main .container .all_checkout_information .check_products_cntent ul li .allnumber {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,18 +196,18 @@ main .container .check_products_cntent ul li .allnumber {
   position: relative;
 }
 
-main .container .check_products_cntent ul li .allnumber .mumber_text {
+main .container .all_checkout_information .check_products_cntent ul li .allnumber .mumber_text {
   margin-right: 15px;
 }
 
-main .container .check_products_cntent ul li .allnumber input {
+main .container .all_checkout_information .check_products_cntent ul li .allnumber input {
   font-size: 18px;
   width: 120px;
   margin: 0px  20px;
   outline: none;
 }
 
-main .container .check_products_cntent ul li .allnumber .numbers {
+main .container .all_checkout_information .check_products_cntent ul li .allnumber .numbers {
   text-align: center;
   font-size: 18px;
   width: 80px;
@@ -216,7 +221,7 @@ main .container .check_products_cntent ul li .allnumber .numbers {
   transition: 0.5s;
 }
 
-main .container .check_products_cntent ul li .allnumber .a {
+main .container .all_checkout_information .check_products_cntent ul li .allnumber .a {
   text-align: center;
   line-height: 45px;
   line-height: 30px;
@@ -230,14 +235,14 @@ main .container .check_products_cntent ul li .allnumber .a {
   height: 30px;
 }
 
-main .container .check_products_cntent ul li .allnumber .a:active {
+main .container .all_checkout_information .check_products_cntent ul li .allnumber .a:active {
   background-color: darkgrey;
   color: wheat;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 
-main .container .check_products_cntent ul li .show {
+main .container .all_checkout_information .check_products_cntent ul li .show {
   display: none;
   font-size: 14px;
   color: #DF744A;
@@ -251,11 +256,11 @@ main .container .check_products_cntent ul li .show {
           transform: translateX(-50%);
 }
 
-main .container .check_products_cntent ul li .show.active {
+main .container .all_checkout_information .check_products_cntent ul li .show.active {
   display: block;
 }
 
-main .container .checkout {
+main .container .all_checkout_information .checkout {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -273,26 +278,27 @@ main .container .checkout {
   text-align: end;
 }
 
-main .container .checkout .top {
+main .container .all_checkout_information .checkout .top {
   margin-top: 20px;
 }
 
-main .container .checkout .color {
+main .container .all_checkout_information .checkout .low_shipping {
+  font-size: 14px;
   color: orangered;
 }
 
-main .container .checkout .shipping_information {
+main .container .all_checkout_information .checkout .shipping_information {
   margin-left: auto;
 }
 
-main .container .checkout .shipping_information .transport {
+main .container .all_checkout_information .checkout .shipping_information .transport {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   line-height: 30px;
 }
 
-main .container .checkout .shipping_information .transport select {
+main .container .all_checkout_information .checkout .shipping_information .transport select {
   width: 100px;
   height: 30px;
   padding: 0px 5px;
@@ -304,7 +310,7 @@ main .container .checkout .shipping_information .transport select {
   border: 1px solid gainsboro;
 }
 
-main .container .checkout .checkout_btn {
+main .container .all_checkout_information .checkout .checkout_btn {
   margin-left: auto;
   width: -webkit-max-content;
   width: -moz-max-content;

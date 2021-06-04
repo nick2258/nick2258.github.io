@@ -23,6 +23,7 @@ main .cart_steps {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-bottom: 1px solid gainsboro;
 }
 
 main .cart_steps .step {
@@ -51,6 +52,7 @@ main .cart_steps .fa-angle-right {
 }
 
 main .complete_information {
+  margin-top: 30px;
   padding: 0px 50px;
 }
 
@@ -81,6 +83,7 @@ main .complete_information .texts {
   background-color: #f0efef;
   margin-top: 20px;
   line-height: 36px;
+  margin: 48px  0px;
 }
 
 main .complete_information .texts .text {
@@ -100,11 +103,16 @@ main .complete_information .texts .small_text {
   color: orangered;
 }
 
+main .pay_information {
+  padding: 30px;
+  border: 2px solid gainsboro;
+  border-radius: 8px;
+}
+
 main .pay_information .title {
   text-align: center;
   letter-spacing: 1.5px;
-  margin-top: 30px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -123,6 +131,10 @@ main .pay_information .content ul li {
   padding: 16px 0px;
   letter-spacing: 1.5px;
   border-bottom: 1px  solid gainsboro;
+}
+
+main .pay_information .content ul li:nth-last-child(1) {
+  border-bottom: 0px;
 }
 
 main .pay_information .content ul li .text {
@@ -284,13 +296,18 @@ main .order_information .checkout .checkout_text .number {
 
 main .user_information {
   padding: 0px  8px;
+  padding: 30px;
+  border: 2px solid gainsboro;
+  border-radius: 8px;
+  margin-top: 30px;
 }
 
 main .user_information .title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   letter-spacing: 1.5px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 main .user_information .content ul {
@@ -332,7 +349,7 @@ main .user_information .other_text .text .color {
   color: orange;
 }
 
-main .user_information .back_home_btn {
+main .back_home_btn {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -342,13 +359,13 @@ main .user_information .back_home_btn {
   border: 0px;
   padding: 10px  20px;
   background-color: orange;
-  margin: 20px  auto;
+  margin: 30px  auto;
   font-size: 18px;
   color: white;
   border-radius: 5px;
 }
 
-main .user_information .back_home_btn .fa-home {
+main .back_home_btn .fa-home {
   font-size: 20px;
   color: white;
   margin-left: 10px;

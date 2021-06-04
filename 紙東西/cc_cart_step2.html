@@ -43,72 +43,68 @@
                </div>
 
 
-               <div class="check_products">
+               <div class="all_checkout_information">
+                <div class="check_products">
      
-                   <div class="title">購物明細</div>
-               </div>
-
-
-               <div class="check_products_cntent">
-                   <ul>
-                       <li>商品</li>
-                       <li>數量</li>
-                       <li>單價</li>
-                       <li>小計</li>
-                   </ul>
-   
-                
-                   <ul>
-                       <li>
-                           <div class="product_name">
-                               <div class="pic">
-                                   <img src="https://i.picsum.photos/id/72/150/150.jpg?hmac=88NNYoUrPKBRE7CbkRKkXumt03IOma2wCZii6DX7jec" alt="">
-                               </div>
-                               <div class="name text">3D便條紙 - 艾菲爾鐵塔
-                               </div>
-                           </div>
-                       </li>
-                       <li>
-                           <div class="allnumber b">
-           
-                               <div class=" a remove">-</div>
-       
-                               <!-- <div class="numbers">1</div> -->
-                               <input  id="Str" class="numbers" type="text" min="1"  value="1"  oninput="if(value>99)value=99"   / onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"  
-                               onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}"  onchange="ShowStr(this.id)" >
-                               <div class=" a add">+</div>
-
-                           </div>
-                           <div class="show " id="show">已達最高購買數量</div>
-
-                       </li>
-                       <li class="texts">
-                           <div class="text">NT$600
-                           </div>
-                       </li>
-
-                       <li class="texts">
-                           <span class="cost_text">NT$600 </span>
-                           <i class="fas fas fa-trash-alt
-                           "></i>
-                       </li>
-                   </ul>
-               </div>
-
-               <div class="checkout">
-                   <div class="low_shipping top">運費 (郵寄)    0元
-                    </div>
-                   
-                    <div class="checkout_text top">
-                        <span class="text">
-                            應付金額NT$
-                        </span>
-                        <span class="number">660</span>
-
-                    </div>
-
-       
+                    <div class="title">購物明細</div>
                 </div>
+ 
+ 
+                <div class="check_products_cntent">
+                    <ul>
+                        <li>商品</li>
+                        <li>數量</li>
+                        <li>單價</li>
+                        <li>小計</li>
+                    </ul>
+    
+                 
+                    <ul>
+                        <li>
+                            <div class="product_name">
+                                <div class="pic">
+                                    <img src="https://i.picsum.photos/id/72/150/150.jpg?hmac=88NNYoUrPKBRE7CbkRKkXumt03IOma2wCZii6DX7jec" alt="">
+                                </div>
+                                <div class="name text">3D便條紙 - 艾菲爾鐵塔
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="allnumber b">
+                                <div class="numbers">1</div>
+                                <!-- <input  id="Str" class="numbers" type="text" min="1"  value="1"  oninput="if(value>99)value=99"   / onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"  
+                                onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}"  onchange="ShowStr(this.id)" > -->
+                            </div>
+                        </li>
+                        <li class="texts">
+                            <div class="text">NT$600
+                            </div>
+                        </li>
+ 
+                        <li class="texts">
+                            <span class="cost_text">NT$600 </span>
+                            <i class="fas fas fa-trash-alt
+                            "></i>
+                        </li>
+                    </ul>
+                </div>
+ 
+                <div class="checkout">
+                    <div class="low_shipping top">運費 (郵寄)    0元
+                     </div>
+                    
+                     <div class="checkout_text top">
+                         <span class="text">
+                             應付金額NT$
+                         </span>
+                         <span class="number">660</span>
+ 
+                     </div>
+ 
+        
+                 </div>
+               </div>
+          
 
                    
             </div>
@@ -173,6 +169,78 @@
                 </div>
             
             </div>
+
+            <div class="title">
+                <div class="text">收件人資料 </div>
+                <span class="small_title ">
+                 <input class="form_check_input" type="checkbox" value="" id="chkSubscriber">
+                 <span class="form-check-label" for="subscriber">
+                     同訂購人資料
+                 </span>
+                </span>
+               </div>
+               <div class="order_information_content">
+                   <div class="contents">
+                       <div class="informations">
+                           <div class="informations_title">名稱</div>
+                           <input type="text" placeholder="請輸入姓名">
+                       </div>
+                       <div class="information_small_text">
+                        (請填中文全名2~4字，欲使用信用卡付費繳款者，購買者需等同於持卡人)
+                       </div>
+                   </div>
+    
+                   <div class="contents">
+                        <div class="informations">
+                            <div class="informations_title">電話</div>
+                            <input type="text" placeholder="ex：0423135288">
+                        </div>
+                    </div>
+    
+                    <div class="contents">
+                        <div class="informations">
+                            <div class="informations_title">Email</div>
+                            <input type="text" >
+                        </div>
+                        <div class="information_small_text">
+                            (訂單完成通知)
+    
+                        </div>
+                    </div>
+    
+                    <div class="contents">
+                        <div class="informations">
+                            <div class="informations_title">地址</div>
+                            <select name="" id="">
+                                <option value="">請選擇</option>
+                            </select>
+    
+                            <select name="" id="">
+                                <option value="">請選擇</option>
+                            </select>
+                            <span class="information_text">
+                                (台灣外島恕不寄送)
+                            </span>
+    
+                        </div>
+                        <input type="text" >
+                        <div class="information_small_text">
+                            (請勿填郵政信箱)
+    
+                        </div>
+                    </div>
+    
+                    <div class="contents">
+                        <div class="informations">
+                            <div class="informations_title">取貨門市</div>
+                            <select name="" id="">
+                                <option value="">請選擇</option>
+                            </select>
+    
+                        </div>
+                     
+                    </div>
+                </div>
         
            
 
@@ -184,7 +252,7 @@
                 <span class="small_title">為響應發票無紙化，建議使用電子發票。 (請確實填寫mail，以利電子發票順利寄送)</span>
             </div>
             <div class="invoice_content">
-                <div class="small_title">電子發票</div>
+                <div class="small_title">【電子發票】</div>
                 <div class="all_content">
                     <div class="contents">
                         <div class="content">
@@ -274,7 +342,7 @@
 
            
             <div class="invoice_content">
-                <div class="small_title">紙本發票</div>
+                <div class="small_title">【紙本發票】</div>
                 <div class="all_content">
                 
 
@@ -349,7 +417,7 @@
             </div>
 
             <div class="invoice_content">
-                <div class="small_title">捐贈發票</div>
+                <div class="small_title">【捐贈發票】】</div>
                 <div class="all_content">
                 
                     <div class="contents">
@@ -390,79 +458,7 @@
        </section>
 
 
-        <section class="order_information">
-           <div class="title">
-            <div class="text">收件人資料 </div>
-            <div class="form_check ">
-             <input class="form-check-input" type="checkbox" value="" id="chkSubscriber">
-             <label class="form-check-label" for="subscriber">
-                 同訂購人資料
-             </label>
-             </div>
-           </div>
-           <div class="order_information_content">
-               <div class="contents">
-                   <div class="informations">
-                       <div class="informations_title">名稱</div>
-                       <input type="text" placeholder="請輸入姓名">
-                   </div>
-                   <div class="information_small_text">
-                    (請填中文全名2~4字，欲使用信用卡付費繳款者，購買者需等同於持卡人)
-                   </div>
-               </div>
 
-               <div class="contents">
-                    <div class="informations">
-                        <div class="informations_title">電話</div>
-                        <input type="text" placeholder="ex：0423135288">
-                    </div>
-                </div>
-
-                <div class="contents">
-                    <div class="informations">
-                        <div class="informations_title">Email</div>
-                        <input type="text" >
-                    </div>
-                    <div class="information_small_text">
-                        (訂單完成通知)
-
-                    </div>
-                </div>
-
-                <div class="contents">
-                    <div class="informations">
-                        <div class="informations_title">地址</div>
-                        <select name="" id="">
-                            <option value="">請選擇</option>
-                        </select>
-
-                        <select name="" id="">
-                            <option value="">請選擇</option>
-                        </select>
-                        <span class="information_text">
-                            (台灣外島恕不寄送)
-                        </span>
-
-                    </div>
-                    <input type="text" >
-                    <div class="information_small_text">
-                        (請勿填郵政信箱)
-
-                    </div>
-                </div>
-
-                <div class="contents">
-                    <div class="informations">
-                        <div class="informations_title">取貨門市</div>
-                        <select name="" id="">
-                            <option value="">請選擇</option>
-                        </select>
-
-                    </div>
-                 
-                </div>
-            </div>
-       </section>
 
        <section class="pay_information">
            <div class="title">選擇付款方式</div>
@@ -507,12 +503,11 @@
                </div>
 
                <div class="btns">
-                   <div class="btn ">上一步</div>
-                   <div class="btn active">下一步</div>
+                   <div class="btn prev">上一步</div>
+                   <div class="btn next">下一步</div>
                </div>
                <div class="btn_text">
-                   <div class="text">
-                    親愛的顧客您好：在進行刷卡交易前，請先詳閱【紙東西刷卡-退款流程】，完成後請點選【同意】按鈕，繼續進行交易。</div>
+                  
 
                </div>
            </div>
@@ -520,7 +515,11 @@
        </section>
 
        <section class="credit_card_back">
-           <div class="title">紙東西線上刷卡-退款流程</div>
+                  
+            <div class="title">紙東西線上刷卡-退款流程</div>
+            <div class="small">
+                親愛的顧客您好：在進行刷卡交易前，請先詳閱【紙東西刷卡-退款流程】，完成後請點選【同意】按鈕，繼續進行交易。
+            </div>   
            <div class="content">
                 <div class="small_title">一.請提供顧客會員編號予承辦業務。</div>
                 <div class="small_title">二.承辦業務查看訂單狀態：</div>
