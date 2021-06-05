@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    font-weight: 600;
+    // font-weight: 600;
 }
 
 *{
@@ -115,14 +115,22 @@ main{
             .title{
                 text-align: center;
                 font: normal normal medium 32px/45px PingFang TC;
-                font-weight: 600;
+                // font-weight: 600;
                 padding-bottom: 8px;
                 border-bottom: 1px solid #FFFFFF;
                 span{
                     font: normal normal medium 32px/45px PingFang TC;
-                    font-size: 32px;
+                    font-size: 28px;
+                }
+                .small{
+                    font-size: 24px;
                 }
                 
+            }
+            .center{
+                text-align: center;
+                border-left: 0px;
+                padding-left: 0px;
             }
             ul{
                 margin: auto;
@@ -133,9 +141,10 @@ main{
                
                 li{
                     padding-bottom: 20px;
-                
+                    font-weight: 500;
+
                     font-size: 24px;
-                    font-weight: 300;
+                    // font-weight: 300;
                     &:nth-last-child(1){
                         padding-bottom: 0px;
                     }

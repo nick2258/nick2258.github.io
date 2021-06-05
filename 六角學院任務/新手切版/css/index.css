@@ -1,7 +1,6 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-weight: 600;
 }
 
 * {
@@ -116,14 +115,23 @@ main .informations .container {
 main .informations .container .title {
   text-align: center;
   font: normal normal medium 32px/45px PingFang TC;
-  font-weight: 600;
   padding-bottom: 8px;
   border-bottom: 1px solid #FFFFFF;
 }
 
 main .informations .container .title span {
   font: normal normal medium 32px/45px PingFang TC;
-  font-size: 32px;
+  font-size: 28px;
+}
+
+main .informations .container .title .small {
+  font-size: 24px;
+}
+
+main .informations .container .center {
+  text-align: center;
+  border-left: 0px;
+  padding-left: 0px;
 }
 
 main .informations .container ul {
@@ -138,8 +146,8 @@ main .informations .container ul {
 
 main .informations .container ul li {
   padding-bottom: 20px;
+  font-weight: 500;
   font-size: 24px;
-  font-weight: 300;
 }
 
 main .informations .container ul li:nth-last-child(1) {
