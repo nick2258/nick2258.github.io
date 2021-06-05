@@ -8,30 +8,37 @@ main {
 main .tab {
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  border-radius: 5px;
+  background-color: #0f3774ab;
+  border-radius: 3px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 main .tab button {
-  background-color: inherit;
+  background-color: #96baf0fa;
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 5px 12px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 1.5px;
 }
 
 main .tab button:hover {
   background-color: #ddd;
+  background-color: #7a9fd6f3;
 }
 
 main .tab button.active {
   background-color: #ccc;
+  background-color: #7092c4;
+  -webkit-transition: .8s;
+  transition: .8s;
 }
 
 main .tabcontent {
@@ -46,12 +53,13 @@ main .tabcontent {
 
 main .tabcontent .contents .content .btn {
   width: 1000px;
-  background-color: #ccc;
+  background-color: #c3ced4;
   padding: 5px 0px;
   padding-left: 15px;
-  margin-top: 1px;
-  font-size: 18px;
+  margin-top: 5px;
+  font-size: 16px;
   text-align: left;
+  border-radius: 30px;
 }
 
 main .tabcontent .contents .content .btn .small_title {
@@ -67,6 +75,7 @@ main .tabcontent .contents .content .texts {
 
 main .tabcontent .contents .content .texts .text {
   padding-bottom: 5px;
+  font-size: 15px;
 }
 
 main .tabcontent .contents .content .texts .text:nth-last-child(1) {
@@ -76,6 +85,7 @@ main .tabcontent .contents .content .texts .text:nth-last-child(1) {
 main .tabcontent .contents .content .texts .red .title {
   font-weight: 600;
   margin-bottom: 8px;
+  font-size: 18px;
 }
 
 main .tabcontent .contents .content .texts .red .title:nth-last-child(1) {
@@ -83,11 +93,11 @@ main .tabcontent .contents .content .texts .red .title:nth-last-child(1) {
 }
 
 main .tabcontent .contents .content .texts .red .all_points .points {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 main .tabcontent .contents .content .texts .red .all_points .points .point {
-  font-size: 20px;
+  font-size: 16px;
   color: darkred;
 }
 
@@ -109,6 +119,14 @@ main .tabcontent .contents .content .texts .red table tr th, main .tabcontent .c
   padding-right: 200px;
 }
 
+main .tabcontent .contents .content .texts .red table tr th {
+  font-size: 16px;
+}
+
+main .tabcontent .contents .content .texts .red table tr td {
+  font-size: 14px;
+}
+
 main .tabcontent .contents .content .texts .likes {
   width: 100%;
   display: -webkit-box;
@@ -119,12 +137,12 @@ main .tabcontent .contents .content .texts .likes {
 }
 
 main .tabcontent .contents .content .texts .likes .likecard {
-  width: calc(20% - 16px);
+  width: calc(25% - 15px);
   margin-right: 20px;
   margin-bottom: 20px;
 }
 
-main .tabcontent .contents .content .texts .likes .likecard:nth-child(5n) {
+main .tabcontent .contents .content .texts .likes .likecard:nth-child(4n) {
   margin-right: 0px;
 }
 
@@ -141,21 +159,37 @@ main .tabcontent .contents .content .texts .likes .likecard .text {
 
 main .tabcontent .contents .content .texts .articles {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main .tabcontent .contents .content .texts .articles .likecard {
-  width: calc(20% - 16px);
+  width: calc(16.666% - 16.666px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+main .tabcontent .contents .content .texts .articles .likecard:nth-child(4n) {
+  margin-right: 20px;
+}
+
+main .tabcontent .contents .content .texts .articles .likecard:nth-child(6n) {
+  margin-right: 0px;
 }
 
 main .tabcontent .contents .content .texts .articles .likecard .pic img {
   width: 100%;
-  height: 177px;
+  height: 147px;
+  height: 147px;
   border-radius: 50%;
 }
 
 main .tabcontent .contents .content .texts .articles .likecard .article {
-  margin-top: 15px;
-  font-size: 20px;
+  margin-top: 5px;
+  font-size: 16px;
   font-weight: 600;
   text-align: center;
 }
@@ -176,6 +210,7 @@ main .tabcontent .contents .content .texts .last_view table tr th, main .tabcont
   text-align: left;
   padding: 8px;
   padding-right: 50px;
+  font-size: 16px;
 }
 
 main .tabcontent .contents .content .texts .last_view table tr td {
@@ -183,6 +218,7 @@ main .tabcontent .contents .content .texts .last_view table tr td {
   width: -moz-max-content;
   width: max-content;
   max-width: 670px;
+  font-size: 14px;
 }
 
 main .tabcontent .contents .content .texts .last_view table tr td img {
@@ -206,6 +242,7 @@ main .tabcontent .contents .content .texts .product_manage table tr th, main .ta
   text-align: left;
   padding: 8px;
   padding-right: 50px;
+  font-size: 16px;
 }
 
 main .tabcontent .contents .content .texts .product_manage table tr td {
@@ -213,11 +250,44 @@ main .tabcontent .contents .content .texts .product_manage table tr td {
   width: -moz-max-content;
   width: max-content;
   max-width: 460px;
+  font-size: 14px;
 }
 
 main .tabcontent .contents .content .texts .product_manage table tr td img {
   width: 100px;
   height: 60px;
+}
+
+main .tabcontent .contents .content .texts .feedback .allselectors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .tabcontent .contents .content .texts .feedback .allselectors .selectors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+main .tabcontent .contents .content .texts .feedback .allselectors .selectors .title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+main .tabcontent .contents .content .texts .feedback .allselectors .selectors select {
+  width: 150px;
+  font-size: 16px;
+  border-radius: 30px;
+  outline: none;
+  border: 1px solid gainsboro;
+}
+
+main .tabcontent .contents .content .texts .feedback .allselectors .selectors select option {
+  font-size: 16px;
 }
 
 main .tabcontent .contents .content .texts .feedback .months {
@@ -230,16 +300,22 @@ main .tabcontent .contents .content .texts .feedback .months input {
   outline: none;
 }
 
+main .tabcontent .contents .content .texts .feedback .months button {
+  border: none;
+}
+
 main .tabcontent .contents .content .texts .feedback .months .month {
   padding: 5px 0px;
   text-align: center;
   margin-right: 20px;
-  background-color: rgba(129, 129, 119, 0.43);
+  background-color: #dfe7f3;
   width: calc(8.33% - 18.333px);
+  font-size: 18px;
 }
 
 main .tabcontent .contents .content .texts .feedback .months .month:hover {
   background-color: rgba(129, 129, 119, 0.23);
+  background-color: rgba(223, 231, 243, 0.699);
 }
 
 main .tabcontent .contents .content .texts .feedback .months .month:nth-last-child(1) {
@@ -262,6 +338,7 @@ main .tabcontent .contents .content .texts .feedback .content table tr th, main 
   text-align: left;
   padding: 8px;
   padding-right: 50px;
+  font-size: 16px;
 }
 
 main .tabcontent .contents .content .texts .feedback .content table tr td {
@@ -269,6 +346,9 @@ main .tabcontent .contents .content .texts .feedback .content table tr td {
   width: -moz-max-content;
   width: max-content;
   max-width: 670px;
+  font-size: 14px;
+  padding: 3px  0px;
+  padding-left: 8px;
 }
 
 main .tabcontent .contents .content .texts .orders table {
@@ -287,6 +367,7 @@ main .tabcontent .contents .content .texts .orders table tr th, main .tabcontent
   text-align: left;
   padding: 8px;
   padding-right: 50px;
+  font-size: 16px;
 }
 
 main .tabcontent .contents .content .texts .orders table tr td {
@@ -294,6 +375,7 @@ main .tabcontent .contents .content .texts .orders table tr td {
   width: -moz-max-content;
   width: max-content;
   max-width: 670px;
+  font-size: 14px;
 }
 
 @-webkit-keyframes fadeEffect {

@@ -4,83 +4,347 @@
 }
 
 body {
-  margin: 0px;
   padding: 0px;
+  margin: 0px;
+  background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
+  background-image: url(/img/lightpaperfibers.png);
+  height: 1500px;
+  position: relative;
+}
+
+html {
+  position: relative;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  list-style: none;
+  border-bottom: none;
+}
+
+a:hover {
+  text-decoration: none;
+  list-style: none;
+  border-bottom: none;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  padding: 2px !important;
 }
 
 nav {
   max-width: 1920px;
+  background-color: #e7f2fa;
   width: 100%;
-  background-color: lightgray;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0px;
+  z-index: 99;
 }
 
 nav .content {
-  width: 80%;
+  max-width: 1000px;
+  width: 100vw;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 20px 0px;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-nav .content button {
-  outline: transparent;
+nav .content .navbar-brand {
+  margin: 0px;
 }
 
-nav .content .dropdown-toggle::after {
-  border-top: 0px;
+nav .content .navbar-brand img {
+  width: 120px;
+  height: auto;
+  height: 60px;
 }
 
-nav .content .btn {
-  background-color: lightgray;
-  color: black;
-  padding: 8px 15px;
-  border: 0px;
-  margin: 0px 10px;
-  font-size: 20px;
+nav .content .all_links {
+  position: absolute;
+  bottom: 3px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+nav .content .all_links .navbar-toggler {
+  width: 50px;
+  height: 50px;
+}
+
+nav .content .all_links .navbar-collapse {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+nav .content .all_links .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-size: 16px;
+  line-height: 34px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.637);
+  padding: 0px 0px 0px 20px;
+}
+
+nav .content .all_links .navbar-collapse .navbar-nav .nav-item .nav-link:nth-child(2) {
+  padding-right: 0px;
+}
+
+nav .content .all_links .navbar-collapse .navbar-nav .nav-item .dropdown-menu.show {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 99 !important;
+}
+
+nav .content .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  line-height: 30px;
+  height: 20px;
+  margin-left: auto;
+}
+
+nav .content .right .right_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .content .right .right_item span {
+  padding: 0px 3px;
+  font-size: 14px;
+}
+
+nav .content .right .right_item span .fa-heart {
+  font-size: 14px;
+  color: #c90d0d;
+}
+
+nav .content .right .right_item span .fa-shopping-cart {
+  font-size: 14px;
+}
+
+nav .content .right .right_item span img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.allpart3 {
+  padding: 5px  0px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 74px;
+  background-color: white;
+  background-color: #97b7ce;
+  background-color: #a8cce6;
+}
+
+.allpart3 .part3 .types {
+  width: 1000px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.432);
+}
+
+.allpart3 .part3 .types .type {
+  padding: 3px 50px;
+  position: relative;
+  cursor: pointer;
+  border-right: 1px solid gainsboro;
+}
+
+.allpart3 .part3 .types .type:nth-child(7n) {
+  border-right: none;
+  padding-right: 0px;
+}
+
+.allpart3 .part3 .types .type:nth-child(1) {
+  padding-left: 0px;
+}
+
+.allpart3 .part3 .types .type .title {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.432);
+  font-size: 14px;
+}
+
+.allpart3 .part3 .types .type .content {
+  position: absolute;
+  display: none;
+  padding: 0px 5px;
+  padding-top: 40px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -32px);
+          transform: translate(-50%, -32px);
+  z-index: 20;
+  margin: auto;
+}
+
+.allpart3 .part3 .types .type .content:hover {
+  display: block;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.allpart3 .part3 .types .type .content .item {
+  font-size: 14px;
+  width: 150px;
+  padding: 5px;
+  text-align: center;
+  background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
+}
+
+.allpart3 .part3 .types .type .content .item:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: rgba(11, 11, 126, 0.76);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#cfd9df), to(#e2ebf0));
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.allpart3 .part3 .types .type:active .content {
+  display: block;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.a {
+  width: 1000px;
+  padding: 0px  0px;
+  margin: auto;
+}
+
+.a img {
+  width: 1000px;
+  height: 100px;
+  margin: 20px  0px;
 }
 
 footer {
-  width: 100%;
   max-width: 1920px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 20px 0px;
-  background-color: rgba(211, 211, 211, 0.678);
+  padding-top: 15px;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.445);
+  background-color: rgba(128, 128, 128, 0.301);
+  background-color: #e7f2fa;
 }
 
 footer .content {
-  width: 85%;
   margin: auto;
+  max-width: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  letter-spacing: 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 footer .content ul {
-  width: 24%;
-  font-size: 24px;
-  font-weight: 600;
-  padding: 10px  0px;
+  font-size: 15px;
+  width: 20%;
+  list-style: none;
   text-align: center;
-  margin: 10px 0px;
+  font-weight: 600;
+  padding: 1px 0px;
+  color: rgba(0, 0, 0, 0.753);
+  margin-bottom: 5px;
+  letter-spacing: 3px;
+}
+
+footer .content ul:nth-last-child(1) {
+  border-right: 0px;
 }
 
 footer .content ul li {
-  list-style: none;
-  padding: 10px 0px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.853);
+  padding: 2px  12px;
+  letter-spacing: 2px;
 }
 
-footer .content ul li a {
-  font-size: 20px;
-  color: dimgray;
-  text-decoration: none;
+footer .content ul li:nth-child(1) {
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px solid gainsboro;
+}
+
+footer .icons {
+  margin: auto;
+  width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px  0px;
+}
+
+footer .icons .icon {
+  font-size: 34px;
+  padding: 0px  25px;
+  color: #415a7a;
+}
+
+footer .icons .icon .fa-phone-volume {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+footer .elses {
+  width: 1000px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2px  0px;
+}
+
+footer .elses .else {
+  font-size: 12px;
+  padding: 3px 10px;
+  letter-spacing: 1.5px;
+}
+
+footer .copyright {
+  margin: auto;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 5px  0px;
+  background-color: rgba(189, 208, 223, 0.76);
 }
 /*# sourceMappingURL=layout.css.map */

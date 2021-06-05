@@ -1,0 +1,223 @@
+main {
+  width: 1000px;
+  margin: auto;
+  /* Style the buttons inside the tab */
+  /* Style the tab content */
+}
+
+main .now_page {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: gray;
+  margin-bottom: 20px;
+  padding: 0px 0px 10px 8px;
+  border-bottom: 1px  solid gainsboro;
+}
+
+main .tab {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  border-radius: 10px 10px 0px 0px;
+}
+
+main .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 28px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 20px;
+  font-weight: 600;
+  -webkit-clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+}
+
+main .tab button:nth-child(2) {
+  -webkit-clip-path: polygon(0 0, 85% 0, 100% 100%, 18% 100%);
+          clip-path: polygon(0 0, 85% 0, 100% 100%, 18% 100%);
+  -webkit-clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+          clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+  -webkit-transform: translateX(-22px);
+          transform: translateX(-22px);
+}
+
+main .tab button:nth-child(3) {
+  -webkit-clip-path: polygon(0 0, 85% 0, 100% 100%, 18% 100%);
+          clip-path: polygon(0 0, 85% 0, 100% 100%, 18% 100%);
+  -webkit-clip-path: polygon(0 0, 77% 0, 100% 100%, 25% 100%);
+          clip-path: polygon(0 0, 77% 0, 100% 100%, 25% 100%);
+  -webkit-clip-path: polygon(26% 0, 100% 0, 79% 99%, 0 100%);
+          clip-path: polygon(26% 0, 100% 0, 79% 99%, 0 100%);
+  -webkit-clip-path: polygon(26% 0, 100% 0, 100% 99%, 0 100%);
+          clip-path: polygon(26% 0, 100% 0, 100% 99%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+          clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+  -webkit-transform: translateX(-44px);
+          transform: translateX(-44px);
+}
+
+main .tab button:hover {
+  background-color: #ddd;
+  background-color: #c3ced4;
+}
+
+main .tab button.active {
+  background-color: #ccc;
+  background-color: #eee1d1;
+  background-color: floralwhite;
+  background-color: #c3ced4;
+}
+
+main .tabcontent {
+  display: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transition: 1s;
+  transition: 1s;
+  padding: 20px 8px;
+  border-top: none;
+  background-color: #7dacc2;
+  background-color: #eee1d1;
+  background-color: floralwhite;
+  background-color: #c3ced4;
+  border-radius: 0px 0px 10px 10px;
+}
+
+main .tabcontent .title {
+  font-size: 18px;
+  margin: 15px 0px;
+  padding-left: 20px;
+}
+
+main .tabcontent .collapsible {
+  background-color: #838db8;
+  background-color: #666d8d;
+  background-color: #818181;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  padding: 8px 12px;
+  padding: 8px 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  border-radius: 30px;
+}
+
+main .tabcontent .active, main .tabcontent .collapsible:hover {
+  background-color: #555;
+}
+
+main .tabcontent .collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+main .tabcontent .active:after {
+  content: "\2212";
+}
+
+main .tabcontent .content {
+  padding: 0 12px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  margin: 10px 0px;
+}
+
+main .tabcontent .content .allprocess .process {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 15px;
+  padding: 15px 0px;
+  border-bottom: 1px  solid #989898;
+}
+
+main .tabcontent .content .allprocess .process:nth-last-child(1) {
+  margin-right: 0px;
+  padding-bottom: 0px;
+  border-bottom: 0px  solid #989898;
+}
+
+main .tabcontent .content .allprocess .process .pic img {
+  width: 80px;
+  height: 80px;
+}
+
+main .tabcontent .content .allprocess .process .texts {
+  padding: 0px 8px;
+  padding-top: 10px;
+}
+
+main .tabcontent .content .allprocess .process .texts .small_title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+main .tabcontent .content .allprocess .process .texts .text {
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+
+main .tabcontent .content .os .o {
+  margin-bottom: 20px;
+}
+
+main .tabcontent .content .os .o .o_title {
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #989898;
+}
+
+main .tabcontent .content .os .o .o_text {
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 24px;
+  padding: 0px 8px;
+  padding-top: 10px;
+}
+
+main .tabcontent .content .os .o .o_text ul {
+  margin: 0px 0px;
+}
+
+main .tabcontent .content .os .o .o_text ul li {
+  padding-top: 5px;
+}
+
+main .tabcontent .content .os .o .o_text ul li:nth-child(1) {
+  padding-top: 0px;
+}
+
+ul {
+  margin: 0px;
+}
+
+li {
+  padding-top: 5px;
+  font-size: 14px;
+}
+
+li:nth-child(1) {
+  padding-top: 0px;
+}
+
+.o_text {
+  line-height: 24px;
+  padding-top: 10px;
+}
+/*# sourceMappingURL=order.css.map */

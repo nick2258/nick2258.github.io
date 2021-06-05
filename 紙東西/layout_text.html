@@ -4,31 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>首頁</title>
     <link rel="stylesheet" href="./css/layout_text.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  
+
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light " style="position: sticky; top: 0px;" >
+   
+    <!-- 刪除navbar class -->
+    <nav class="navbar-expand-lg navbar-light navbar" style="position: sticky; top: 0px;" >
         <div class="content">
             <a class="navbar-brand" href="#">
-                <img src="./img/logo.jpg" alt="">
+                <img src="./img/logo-removebg-preview.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+              <ul class="navbar-nav" >
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       關於我們
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="#">品牌理念</a>
-                      <a class="dropdown-item" href="#">臉書粉專</a>
-                      <a class="dropdown-item" href="#">店鋪資訊</a>
+                      <a class="dropdown-item" href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/brand.html" target="_blank">品牌理念</a>
+                      <a class="dropdown-item" href="https://www.facebook.com/papergoods.tw" target="_blank">臉書粉專</a>
+                      <a class="dropdown-item" href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/address.html" target="_blank">店鋪資訊</a>
                      
                     </div>
                   </li>
@@ -37,14 +53,15 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         商品情報                    </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="#">活動資訊</a>
-                      <a class="dropdown-item" href="#">新品報報</a>
-                      <a class="dropdown-item" href="#">嚴選商品</a>
-                      <a class="dropdown-item" href="#">會員紅利</a>
+                      <a class="dropdown-item" href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/product_event.html" target="_blank">活動資訊</a>
+                      <a class="dropdown-item" href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/product_sale.html" target="_blank">熱銷商品</a>
+                      <a class="dropdown-item" href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/product_sale.html" target="_blank">新品報報</a>
+                      <a class="dropdown-item" href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/product_sale.html" target="_blank">嚴選商品</a>
+                      <a class="dropdown-item" href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/product_sale.html" target="_blank">會員紅利</a>
                     </div>
                   </li>
 
-                  <li class="nav-item dropdown">
+                  <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         創作樂園                    </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -52,50 +69,52 @@
                       <a class="dropdown-item" href="#">投稿專區</a>
                       <a class="dropdown-item" href="#">創作紅利</a>
                     </div>
+                  </li> -->
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        品牌雜誌                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/video.html" target="_blank">影音專區</a>
+                        <a class="dropdown-item" href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/event.html" target="_blank">好文分享
+                        </a>
+                
+                    </div>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      影音專區                  
-                    </a>
+                        客製商品                    </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">商品影片</a>
-                        <a class="dropdown-item" href="#">教學設計</a>
-                        <a class="dropdown-item" href="#">活動影片</a>
-                        <a class="dropdown-item" href="#">活動Q&A</a>
-                      </div>
-                  </li>
+                        <a class="dropdown-item" href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/video.html" target="_blank">商務運用</a>
+                        <a class="dropdown-item" href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/event.html" target="_blank">節慶送禮
+                        </a>
                 
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="#">關於我們</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li> -->
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    活動櫥窗                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">好文專欄</a>
-                  </div>
-                </li>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/gift.html" target="_blank">禮品專區</a>
+                  </li>
+  
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/company.html" target="_blank">大宗採購</a>
+                    </li>
+   
               </ul>
             </div>
             <div class="right">
 
-                <div class="right_item">
+                <a href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/user_detail.html"  class="right_item" style="text-decoration: none;">
                     <span>
                     <img src="./img/找創作者.jpg" alt="">
                     </span>
                     <span>Nick</span>
-                </div>
+                </a>
 
                 <div class="right_item">
                     <span><i class="fas fa-heart"></i></span>
                     <span >( )</span>
                 </div>
 
-                
-
                 <div class="right_item">
                     <span>                <i class="fas fa-shopping-cart"></i>
                     </span>
@@ -105,455 +124,526 @@
                 <div class="right_item">
                     <span>登出</span>
                 </div>
-
-
-               
             </div>
         </div>
+        
         
        
       </nav>
 
-      
-    <!-- <section class="part2">
-        
-        <div class="all">
-            <div class="pic">
-                <img src="./img/logo.jpg" alt="">
-            </div>
-            <div class="item">關於我們</div>
-            <div class="item">商品情報</div>
-            <div class="item">紙藝作家</div>
-           
-            <div class="item">活動櫥窗</div>
-            <div class="right">
- 
-
-                <div class="right_item">
-                    <span>
-                    <img src="./img/找創作者.jpg" alt="">
-                    </span>
-                    <span>Nick</span>
-                </div>
-
-                <div class="right_item">
-                    <span><i class="fas fa-heart"></i></span>
-                    <span>( )</span>
-                </div>
-
-                
-
-                <div class="right_item">
-                    <span>                <i class="fas fa-shopping-cart"></i>
-                    </span>
-                    <span>( )</span>
-                </div>
-
-                <div class="right_item">
-                    <span>登出</span>
-                </div>
-
-
-               
-            </div>
-        </div>
-        
-        
-    </section> -->
-
-    <div class="banner">
-        <img src="./img/16-9-1.jpg" alt="">
-    </div>
-    
-
-    <section class="part3">
+    <!-- 最新分類 至頂-->
+    <div class="allpart3"  >
+        <section class="part3">
      
 
-        <div class="types">
-            <div class="type">
-                <div class="title">文創紙品</div>
+            <div class="types">
+                <div class="type">
+                    <div class="title">主題系列</div>
+
                     <div class="content">
-                        <div class="item">拼圖</div>
-                        <div class="item">無框畫</div>
+                        <div class="item">動物</div>
+                        <div class="item">昆蟲</div>
+                        <div class="item">花</div>
+                        <div class="item">水果</div>
+                        <div class="item">建築</div>
+                        <div class="item">人像</div>                      
                     </div>
                 </div>
-            <div class="type">
-            <div class="title">商業辦公</div>
-            <div class="content">
-                <div class="item">幾尾酒系列
-                    <!-- <a href="">幾尾酒系列</a>  -->
-                    <div class="details">
-                        <!-- <a href="">名片</a>、
-                        <a href="">貼紙</a>、 -->
-                        <!-- <a href="">數位印刷</a>、
-                        <a href="">數位印刷</a>、
-                        <a href="">數位印刷</a>、 -->
-                        
+
+                <!-- <div class="type">
+                    <div class="title">節慶送禮</div>
+
+                    <div class="content">
+                        <div class="item">明信片</div>
+                        <div class="item">賀年卡</div>
+                        <div class="item">生日卡</div>
+                        <div class="item">禮盒小卡</div>
+                        <a >
+                            <div class="item">喜帖</div>
+                        </a>
                     </div>
-                    
-                </div>
-                <div class="item">菜單</div>
-                <div class="item">展架</div>
-                <div class="item">名片</div>
-                <!-- <div class="item">1</div> -->
-            </div>
-                
-            </div>
-            <div class="type">
-            <div class="title">生活小物</div>
-            <div class="content">
-                <div class="item">馬克杯/杯墊</div>
-                <div class="item">胸章</div>
-                <div class="item">鑰匙圈</div>
-                <div class="item">姓名貼紙</div>
-                <div class="item">運動毛巾</div>
-            </div>
-                
-            </div>
-            <div class="type">
-            <div class="title">文具用品</div>
+                </div> -->
+
+                <div class="type">
+                <div class="title">品味擺飾</div>
                 <div class="content">
-                    <div class="item">資料夾</div>
-                    <div class="item">筆記本</div>
+                    <div class="item">造型香氛卡</div>
+                    <div class="item">日曆</div>
+                    <a href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/products.html" style="text-decoration: none;" target="_blank">
+                        <div class="item">桌燈</div>
+                    </a>
                 </div>
-            </div>
-            <div class="type">
-            <div class="title"> 寫真紀錄</div>
-               <div class="content">
-                   <div class="item">桌曆/掛曆</div>
-                   <div class="item">明信片</div>
-                   <div class="item">撲克牌</div>
-                   <div class="item">蝴蝶書</div>
-                   <div class="item">相冊</div>
-                   <div class="item">扇子</div>
-                   <div class="item">抱枕</div>
-               </div>
-            </div>
-            <div class="type">
-            <div class="title"> 旅行收納</div>
-               <div class="content">
-                   <div class="item">口罩保護夾</div>
-                   <div class="item">包包/帆布袋</div>
-               </div>
-            </div>
-            
-            <div class="type">
-            <div class="title">其他好物</div>
-                <div class="content">
-                    <div class="item">貓屋</div>
+                    
                 </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- <section class="cards">
-        <div class="big_card">
-            <img src="./img/16-9-2.jpg" alt="">
-        </div>
-        <div class="small_cards">
-            <div class="top small_card">
-                <img src="./img/16-9-2.jpg" alt="">
-            <img src="./img/16-9-2.jpg" alt="">
-            </div>
-            
-            <div class="bottom small_card">
-                <img src="./img/16-9-2.jpg" alt="">
-            <img src="./img/16-9-2.jpg" alt="">
-            </div>
-        </div>
-    </section> -->
-
-    <section class="cards1">
-        <div class="content">
-            <div class="big_card">
-                <img src="./img/16-9-2.jpg" alt="">
-            </div>
-            <div class="small_cards">
-                <div class="top small_card">
-                    <div class="pic">
-                            <img src="./img/16-9-2.jpg" alt="">
-                            <div class="mask"></div>
-                            <div class="text">活動資訊</div>
+                <div class="type">
+                <div class="title">收納小物</div>
+                    <div class="content">
+                        <div class="item">點心收納盒</div>
+                        <div class="item">茶葉咖啡收納盒</div>
+                        <div class="item">化妝保養品收納盒</div>
+                        <div class="item">香精收納盒</div>
+                        <div class="item">配件收納盒</div>
                     </div>
-                    
-                    
-                    <div class="pic">
-                        <img src="./img/16-9-2.jpg" alt="">
-                        <div class="mask"></div>
-                        <div class="text">新品報報</div>
-                    </div>
-                    
-                    
+                </div>
+                <div class="type">
+                <div class="title"> 生活好物</div>
+                   <div class="content">
+                        <div class="item">年曆卡</div>
+                        <div class="item">吊牌卡</div>
+                        <div class="item">心靈圖卡</div>
+                        <a href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/products.html" style="text-decoration: none;" target="_blank">
+                            <div class="item">便條紙</div>
+                        </a>
+                        <div class="item">筆記本</div>
+                        <div class="item">扇子</div>
+                        <div class="item">貼紙</div>
+                   </div>
+                </div>
+                <div class="type">
+                <div class="title"> 休閒娛樂</div>
+                   <div class="content">
+                       <div class="item">動漫卡</div>
+                       <div class="item">拼圖</div>
+                   </div>
                 </div>
                 
-                <div class="bottom small_card">
-                    <div class="pic">
-                        <img src="./img/16-9-2.jpg" alt="">
-                        <div class="mask"></div>
-                        <div class="text">嚴選商品</div>
-                    </div>
-                    
-                    
-                    <div class="pic">
-                        <img src="./img/16-9-2.jpg" alt="">
-                        <div class="mask"></div>
-                        <div class="text">會員紅利</div>
-                    </div>
-                    
-                    
-                </div>
+       
+    
+            </div>
+        </section>
+
+  
+    
+       
+    </div>
+
+
+    <div class="swiper-container mySwiper " >
+        <div class="swiper-wrapper " >
+            <div class="swiper-slide"> 
+                <img src="./img/bbbbbbbbbb.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide"> 
+                <img src="./img/16-9-2.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide"> 
+                <img src="./img/16-9-3.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide"> 
+                <img src="./img/16-9-1.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide"> 
+                <img src="./img/16-9-2.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide"> 
+                <img src="./img/16-9-3.jpg" alt="">
             </div>
         </div>
-        
-    </section>
+        <div class="swiper-button-next color next"></div>
+        <div class="swiper-button-prev color prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    <div class="brand">
+        <div class="clip"></div>
+
+        <div class="big_title">
+            <div class="brand_border"></div>
+            <div class="title">About</div>
+            <div class="brand_border"></div>
+        </div>
+        <div class="small_title">關於我們</div>
+        <div class="texts">    
+            <div class="text"> 紙東西品牌概念文字描述紙東西品牌概念文字描述</div>       
+            <div class="text"> 紙東西品牌概念文字描述紙東西品牌概念文字描述</div>   
+            <div class="text"> 紙東西品牌概念文字描述紙東西品牌概念文字描述</div>   
+            <div class="text"> 紙東西品牌概念文字描述紙東西品牌概念文字描述</div>       
+        </div>
+    </div>
+
+    <div class="banner" style="display: none;">
+        <!-- <img src="./img/16-9-1.jpg" alt=""> -->
+        <video class="pic b" autoplay="true" controls="true" src="http://www.papergoods.com.tw/ds/ProductDefine/001-%E6%96%87%E5%89%B5%E7%B4%99%E5%93%81/001-2D%E4%BE%BF%E6%A2%9D%E7%B4%99/001-P01ABCA/Film.mp4"></video>
+        <!-- <img class="scroll" src="https://www.dot-st.com/static/docs/jeanasis/pages/media/img/top/caption_aboutJeanasis.png?set0001" alt=""> -->
+    </div>
+
+    <div class="brand_concept" style="display: none;">
+        <div class="pic">
+            <img src="./img/台中.jpg" alt="">
+        </div>
+        <div class="texts">
+            <div class="titles">
+                <div class="border">
+                </div>
+                <div class="title">About</div>
+            </div>
+            <div class="small_title">
+                紙東西....
+            </div>
+            <div class="text">
+                紙東西品牌概念文字描述紙東西品牌概念文字描述紙東西品牌概念文字描述紙東西品牌概念文字描述紙東西品牌概念文字描述紙東西品牌概念文字描述紙東西品牌概念文字描述 紙東西品牌概念文字描述紙東西品牌概念文字描
+            </div>
+        </div>
+        <img src="./img/品牌概念.png" alt="" >
+    </div>
+
+    <div class="swiper-container  videos" >
+        <div class="swiper-wrapper " >
+            <div class="swiper-slide"> 
+                <video autoplay="true" controls="true" src="http://www.papergoods.com.tw/ds/ProductDefine/001-%E6%96%87%E5%89%B5%E7%B4%99%E5%93%81/001-2D%E4%BE%BF%E6%A2%9D%E7%B4%99/001-P01ABCA/Film.mp4"></video>            </div>
+
+            <div class="swiper-slide"> 
+                <video autoplay="true" controls="true" src="http://www.papergoods.com.tw/ds/ProductDefine/001-%E6%96%87%E5%89%B5%E7%B4%99%E5%93%81/001-2D%E4%BE%BF%E6%A2%9D%E7%B4%99/007-P01ABD1/Film.mp4"></video>            </div>
+
+            <div class="swiper-slide"> 
+                <video autoplay="true" controls="true" src="http://www.papergoods.com.tw/ds/ProductDefine/001-%E6%96%87%E5%89%B5%E7%B4%99%E5%93%81/001-2D%E4%BE%BF%E6%A2%9D%E7%B4%99/001-P01ABCA/Film.mp4"></video>            </div>
+
+            <div class="swiper-slide"> 
+                <video autoplay="true" controls="true" src="http://www.papergoods.com.tw/ds/ProductDefine/001-%E6%96%87%E5%89%B5%E7%B4%99%E5%93%81/001-2D%E4%BE%BF%E6%A2%9D%E7%B4%99/007-P01ABD1/Film.mp4"></video>            </div>
+
+            <div class="swiper-slide"> 
+                <video autoplay="true" controls="true" src="http://www.papergoods.com.tw/ds/ProductDefine/001-%E6%96%87%E5%89%B5%E7%B4%99%E5%93%81/001-2D%E4%BE%BF%E6%A2%9D%E7%B4%99/001-P01ABCA/Film.mp4"></video>            </div>
+
+            <div class="swiper-slide"> 
+                <video autoplay="true" controls="true" src="http://www.papergoods.com.tw/ds/ProductDefine/001-%E6%96%87%E5%89%B5%E7%B4%99%E5%93%81/001-2D%E4%BE%BF%E6%A2%9D%E7%B4%99/007-P01ABD1/Film.mp4"></video>            </div>
+        </div>
+        <div class="swiper-button-next color next"></div>
+        <div class="swiper-button-prev color prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    <div class="videos" style="display: none;">
+        <video autoplay="true" controls="true" src="http://www.papergoods.com.tw/ds/ProductDefine/001-%E6%96%87%E5%89%B5%E7%B4%99%E5%93%81/001-2D%E4%BE%BF%E6%A2%9D%E7%B4%99/001-P01ABCA/Film.mp4"></video>
+        <video autoplay="true" controls="true" src="http://www.papergoods.com.tw/ds/ProductDefine/001-%E6%96%87%E5%89%B5%E7%B4%99%E5%93%81/001-2D%E4%BE%BF%E6%A2%9D%E7%B4%99/007-P01ABD1/Film.mp4"></video>
+
+    </div>
+
+
+
+    <div class="index_cards">
+        <div class="big_title">
+            <div class="brand_border"></div>
+            <div class="title">Information</div>
+            <div class="brand_border"></div>
+        </div>
+        <div class="small_title">商品情報</div>
+        <div class="cards animate__fadeInUp">
+            <a  href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/product_event.html" target="_blank" class="index_card">
+                <div class="pic">
+                    <img src="./img/首頁.jpg" alt="">
+                    <div class="mask">活動資訊</div>
+                </div>
+                <div class="text">活動資訊</div>
+            </a>
+
+            <a class="index_card"  href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/product_event.html" target="_blank">
+                <div class="pic">
+                    <img src="./img/首頁2.jpg" alt="">
+                    <div class="mask">新品報報</div>
+                </div>
+                <div class="text">新品報報</div>
+            </a>
+
+            <a class="index_card"  href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/product_event.html" target="_blank">
+                <div class="pic">
+                    <img src="./img/首頁.jpg" alt="">
+                    <div class="mask">嚴選商品</div>
+                </div>
+                <div class="text">嚴選商品</div>
+            </a>
+
+            <a class="index_card"  href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/product_event.html" target="_blank">
+                <div class="pic">
+                    <img src="./img/首頁2.jpg" alt="">
+                    <div class="mask">會員紅利</div>
+                </div>
+                <div class="text">會員紅利</div>
+            </a>
+        </div>
+    </div>
 
     <section class="news">
-        <div class="title">
-            最新消息
+        <div class="big_title">
+            <div class="brand_border"></div>
+            <div class="title">News</div>
+            <div class="brand_border"></div>
         </div>
-        <div class="content">
-            <div class="new">紙東西於5/20-5/21將在勤美舉辦紙藝品市集，歡迎紙粉一同前往共襄盛舉</div>
-            <div class="new">最新商品「紫南宮」開賣啦，喜歡紫南宮的你們千萬不能錯過新品活動</div>
-            <div class="new">本月活動寫真相框開始喽~趕快上傳屬於你們的回憶照片吧</div>
-            <div class="new">會員限時購買寫真系列產品可享免運優惠</div>
+        <div class="small_title" >最新消息</div>
+        <div class="cats" style="display: none;">
+            <div class="cat">
+                <div class="pic">
+                    <div class="mask">紙東西於5/20-5/21將在勤美舉辦紙藝品市集，歡迎紙粉一同前往共襄盛舉共襄盛舉 </div>
+                    <div class="date">2020.04.01</div>
+                </div>
+            </div>
+
+            <div class="cat">
+                <div class="pic">
+                    <div class="mask">紙東西於5/20-5/21將在勤美舉辦紙藝品市集，歡迎紙粉一同前往共襄盛舉共襄盛舉 </div>
+                    <div class="date">2020.04.01</div>
+                </div>
+            </div>
+
+            <div class="cat">
+                <div class="pic">
+                    <div class="mask">紙東西於5/20-5/21將在勤美舉辦紙藝品市集，歡迎紙粉一同前往共襄盛舉共襄盛舉 </div>
+                    <div class="date">2020.04.01</div>
+                </div>
+            </div>
+
+            <div class="cat">
+                <div class="pic">
+                    <div class="mask">紙東西於5/20-5/21將在勤美舉辦紙藝品市集，歡迎紙粉一同前往共襄盛舉共襄盛舉 </div>
+                    <div class="date">2020.04.01</div>
+                </div>
+            </div>
+
+
+        </div>
+        
+        <div class="content a">
+            <div class="new "  >紙東西於5/20-5/21將在勤美舉辦紙藝品市集，歡迎紙粉一同前往共襄盛舉共襄盛舉        <span class="date">2020.04.01</span>
+            </div>
+            <div class="new " >最新商品「紫南宮」開賣啦，喜歡紫南宮的你們千萬不能錯過新品活動
+                <span class="date">2020.04.01</span>
+            </div>
+            <div class="new">本月活動寫真相框開始喽~趕快上傳屬於你們的回憶照片吧 
+                <span class="date">2020.04.01</span>
+            </div>
+            <div class="new">會員限時購買寫真系列產品可享免運優惠
+                <span class="date">2020.04.01</span>
+            </div>
         </div>
     </section>
 
-    <!-- <section class="news1">
-        <div class="title">
-            最新消息
+
+    <section class="sale1">
+        <div class="big_title">
+            <div class="brand_border"></div>
+            <div class="title">Hot</div>
+            <div class="brand_border"></div>
         </div>
+        <div class="small_title">熱銷商品</div>
         <div class="content">
-            
-            <div class="new">
-                <img src="./img/台中.jpg" alt="">
-                <div class="text">紙東西於5/20-5/21將在勤美舉辦紙藝品市集，歡迎紙粉依同前往共襄盛舉</div>
-            </div>
-
-            <div class="new">
-                <img src="./img/台中.jpg" alt="">
-                <div class="text">最新商品「紫南宮」開賣啦，喜歡紫南宮的你們千萬不能錯過新品活動</div>
-            </div>
-
-            <div class="new">
-                <img src="./img/台中.jpg" alt="">
-                <div class="text">本月活動寫真相框開始喽~趕快上傳屬於你們的回憶照片吧</div>
-            </div>
-
-            <div class="new">
-                <img src="./img/台中.jpg" alt="">
-                <div class="text">會員限時購買寫真系列產品可享免運優惠</div>
-            </div>
-        </div>
-    </section> -->
-
-<!-- 熱銷 -->
-
-    <!-- <section class="hot">
-        <div class="big_card">
-            <img src="./img/16-9-2.jpg" alt="">
-        </div>
-        <div class="small_cards">
-            <div class="top small_card">
-                <img src="./img/16-9-2.jpg" alt="">
-            <img src="./img/16-9-2.jpg" alt="">
-            </div>
-            
-            <div class="bottom small_card">
-                <img src="./img/16-9-2.jpg" alt="">
-            <img src="./img/16-9-2.jpg" alt="">
-            </div>
-        </div>
-    </section> -->
-
-    <!-- <section class="hot1">
-        <div class="top">
-            <div class="left">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-            <div class="right">
-                <img src="" alt="">
-            </div>
-        </div>
-
-        <div class="bottom">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
-    </section> -->
-
-
-    <!-- 5人氣熱銷 -->
-    <!-- <section class="cards2 cards1">
-        <div class="title">
-            人氣熱銷
-        </div>
-        <div class="content">
-            <div class="small_cards">
-                <div class="top small_card">
-                    <img src="./img/16-9-1.jpg" alt="">
-                <img src="./img/16-9-1.jpg" alt="">
-                </div>
+                    <!-- 新的卡片       -->
+            <div class="top four1">
                 
-                <div class="bottom small_card">
-                    <img src="./img/16-9-1.jpg" alt="">
-                <img src="./img/16-9-1.jpg" alt="">
-                </div>
+                <a href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/product_detail_test.html" class="product_card animate__zoomIn animate__animated " target="_blank" style="text-decoration: none;">
+                    <div class="pic">
+                        <div class="buy">
+                            購買商品    <i class="fas fa-angle-double-right" style="display: none;"></i>
+                        </div>
+                        <img src="./img/轉存/資產 -01.png" alt="">
+                          <!-- <i class="fas fa-heart heart"></i> -->
+                          <!-- <div class="heart_text">
+                              商品收藏
+                          </div> -->
+                          <!-- <div class="article">
+                            <div class="pic">
+                                <img src="./img/找創作者.jpg" alt="">
+                                
+                            </div>
+                                <div class="article_name">超強喜帖創作家
+                                    
+                                </div>
+                                
+                        </div> -->
+                    </div>
+
+                    <div class="text">
+                        <div class="name p">百年好合喜帖</div>
+                      
+                        <div class="cost p">NT $250元</div>
+                        <!-- <div class="buy">
+                            購買商品    <i class="fas fa-angle-double-right"></i>
+                        </div> -->
+                    </div>
+                </a>
+
+                <a href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/product_detail_test.html" class="product_card animate__zoomIn animate__animated " target="_blank" style="text-decoration: none;">
+                    <div class="pic">
+                        <div class="buy">
+                            購買商品    <i class="fas fa-angle-double-right" style="display: none;"></i>
+                        </div>
+                        <img src="./img/轉存/資產 -01.png" alt="">
+                          <!-- <i class="fas fa-heart heart"></i> -->
+                          <!-- <div class="heart_text">
+                              商品收藏
+                          </div> -->
+                          <!-- <div class="article">
+                            <div class="pic">
+                                <img src="./img/找創作者.jpg" alt="">
+                                
+                            </div>
+                                <div class="article_name">超強喜帖創作家
+                                    
+                                </div>
+                                
+                        </div> -->
+                    </div>
+
+                    <div class="text">
+                        <div class="name p">百年好合喜帖</div>
+                      
+                        <div class="cost p">NT $250元</div>
+                        <!-- <div class="buy">
+                            購買商品    <i class="fas fa-angle-double-right"></i>
+                        </div> -->
+                    </div>
+                </a>
+
+                <a href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/product_detail_test.html" class="product_card animate__zoomIn animate__animated " target="_blank" style="text-decoration: none;">
+                    <div class="pic">
+                        <div class="buy">
+                            購買商品    <i class="fas fa-angle-double-right" style="display: none;"></i>
+                        </div>
+                        <img src="./img/轉存/資產 -01.png" alt="">
+                          <!-- <i class="fas fa-heart heart"></i> -->
+                          <!-- <div class="heart_text">
+                              商品收藏
+                          </div> -->
+                          <!-- <div class="article">
+                            <div class="pic">
+                                <img src="./img/找創作者.jpg" alt="">
+                                
+                            </div>
+                                <div class="article_name">超強喜帖創作家
+                                    
+                                </div>
+                                
+                        </div> -->
+                    </div>
+
+                    <div class="text">
+                        <div class="name p">百年好合喜帖</div>
+                      
+                        <div class="cost p">NT $250元</div>
+                        <!-- <div class="buy">
+                            購買商品    <i class="fas fa-angle-double-right"></i>
+                        </div> -->
+                    </div>
+                </a>
+
+                <a href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/product_detail_test.html" class="product_card animate__zoomIn animate__animated " target="_blank" style="text-decoration: none;">
+                    <div class="pic">
+                        <div class="buy">
+                            購買商品    <i class="fas fa-angle-double-right" style="display: none;"></i>
+                        </div>
+                        <img src="./img/轉存/資產 -01.png" alt="">
+                          <!-- <i class="fas fa-heart heart"></i> -->
+                          <!-- <div class="heart_text">
+                              商品收藏
+                          </div> -->
+                          <!-- <div class="article">
+                            <div class="pic">
+                                <img src="./img/找創作者.jpg" alt="">
+                                
+                            </div>
+                                <div class="article_name">超強喜帖創作家
+                                    
+                                </div>
+                                
+                        </div> -->
+                    </div>
+
+                    <div class="text">
+                        <div class="name p">百年好合喜帖</div>
+                      
+                        <div class="cost p">NT $250元</div>
+                        <!-- <div class="buy">
+                            購買商品    <i class="fas fa-angle-double-right"></i>
+                        </div> -->
+                    </div>
+                </a>
+
+                <a href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/product_detail_test.html" class="product_card animate__zoomIn animate__animated " target="_blank" style="text-decoration: none;">
+                    <div class="pic">
+                        <div class="buy">
+                            購買商品    <i class="fas fa-angle-double-right" style="display: none;"></i>
+                        </div>
+                        <img src="./img/轉存/資產 -01.png" alt="">
+                          <!-- <i class="fas fa-heart heart"></i> -->
+                          <!-- <div class="heart_text">
+                              商品收藏
+                          </div> -->
+                          <!-- <div class="article">
+                            <div class="pic">
+                                <img src="./img/找創作者.jpg" alt="">
+                                
+                            </div>
+                                <div class="article_name">超強喜帖創作家
+                                    
+                                </div>
+                                
+                        </div> -->
+                    </div>
+
+                    <div class="text">
+                        <div class="name p">百年好合喜帖</div>
+                      
+                        <div class="cost p">NT $250元</div>
+                        <!-- <div class="buy">
+                            購買商品    <i class="fas fa-angle-double-right"></i>
+                        </div> -->
+                    </div>
+                </a>
+
+                <a href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/product_detail_test.html" class="product_card animate__zoomIn animate__animated " target="_blank" style="text-decoration: none;">
+                    <div class="pic">
+                        <div class="buy">
+                            購買商品    <i class="fas fa-angle-double-right" style="display: none;"></i>
+                        </div>
+                       
+                            <img src="./img/轉存/資產 -01.png" alt="">
+                    
+                          <!-- <i class="fas fa-heart heart"></i> -->
+                          <!-- <div class="heart_text">
+                              商品收藏
+                          </div> -->
+                          <!-- <div class="article">
+                            <div class="pic">
+                                <img src="./img/找創作者.jpg" alt="">
+                                
+                            </div>
+                                <div class="article_name">超強喜帖創作家
+                                    
+                                </div>
+                                
+                        </div> -->
+                    </div>
+
+                    <div class="text">
+                        <div class="name p">百年好合喜帖</div>
+                      
+                        <div class="cost p">NT $250元</div>
+                        <!-- <div class="buy">
+                            購買商品    <i class="fas fa-angle-double-right"></i>
+                        </div> -->
+                    </div>
+                </a>
+
+     
+
+                
+
+         
             </div>
-    
-            <div class="big_card">
-                <img src="./img/16-9-1.jpg" alt="">
-            </div>
 
-        </div>
-    </section> -->
-
-    <section class="sale">
-        <div class="title">
-            熱銷商品
-        </div>
-        <div class="content">
-            <div class="top four">
-                <div class="pic">
-                    <img src="./img/台中.jpg" alt="">
-                    <div class="mask"></div>
-                    <div class="text">
-                        <div class="name p">品名A</div>
-                        <div class="cost p">$250元</div>
-                        
-                    </div>
-                    <div class="article">
-                        <div class="pic">
-                            <img src="./img/找創作者.jpg" alt="">
-                            
-                        </div>
-                            <div class="name">Nick</div>
-                    </div>
-                      <i class="fas fa-heart heart"></i>
-                </div>
-
-                <div class="pic">
-                    <img src="./img/台中.jpg" alt="">
-                    <div class="mask"></div>
-                    <div class="text">
-                        <div class="name p">品名B</div>
-                        <div class="cost p">$250元</div>
-                        
-                    </div>
-                    <div class="article">
-                        <div class="pic">
-                            <img src="./img/找創作者.jpg" alt="">
-                            
-                        </div>
-                            <div class="name">Nick</div>
-                    </div>
-                      <i class="fas fa-heart heart"></i>
-                </div>
-
-                <div class="pic">
-                    <img src="./img/台中.jpg" alt="">
-                    <div class="mask"></div>
-                    <div class="text">
-                        <div class="name p">品名C</div>
-                        <div class="cost p">$250元</div>
-                        
-                    </div>
-                    <div class="article">
-                        <div class="pic">
-                            <img src="./img/找創作者.jpg" alt="">
-                            
-                        </div>
-                            <div class="name">Nick</div>
-                    </div>
-                      <i class="fas fa-heart heart"></i>
-                </div>
-
-            </div>
-
-            <!-- <div class="middle">
-                <img src="./img/16-9-2.jpg" alt="">
-                <img src="./img/16-9-2.jpg" alt="">
-            </div> -->
-            
-            <div class="top four">
-                <div class="pic">
-                    <img src="./img/台中.jpg" alt="">
-                    <div class="mask"></div>
-                    <div class="text">
-                        <div class="name p">品名A</div>
-                        <div class="cost p">$250元</div>
-                        
-                    </div>
-                    <div class="article">
-                        <div class="pic">
-                            <img src="./img/找創作者.jpg" alt="">
-                            
-                        </div>
-                            <div class="name">Nick</div>
-                    </div>
-                      <i class="fas fa-heart heart"></i>
-                </div>
-
-                <div class="pic">
-                    <img src="./img/台中.jpg" alt="">
-                    <div class="mask"></div>
-                    <div class="text">
-                        <div class="name p">品名B</div>
-                        <div class="cost p">$250元</div>
-                        
-                    </div>
-                    <div class="article">
-                        <div class="pic">
-                            <img src="./img/找創作者.jpg" alt="">
-                            
-                        </div>
-                            <div class="name">Nick</div>
-                    </div>
-                      <i class="fas fa-heart heart"></i>
-                </div>
-
-                <div class="pic">
-                    <img src="./img/台中.jpg" alt="">
-                    <div class="mask"></div>
-                    <div class="text">
-                        <div class="name p">品名C</div>
-                        <div class="cost p">$250元</div>
-                        
-                    </div>
-                    <div class="article">
-                        <div class="pic">
-                            <img src="./img/找創作者.jpg" alt="">
-                            
-                        </div>
-                            <div class="name">Nick</div>
-                    </div>
-                      <i class="fas fa-heart heart"></i>
-                </div>
-
-            </div>
+         
             
         </div>
     </section>
 
-    <section class="maps">
+
+ 
+
+    <section class="maps" style="display: none;">
+       
         <div class="title">店鋪資訊</div>
-        <!-- <div class="content">
-            <div class="pic">
-                <img src="./img/台中.jpg" alt="">
-            </div>
-            <div class="map">
-                <div class="shop_title p">台北門市</div>
-
-                <div class="adress p">地址：新北市中和區中山路二段351號4樓之4
-                </div>
-                <div class="time p">營業時間：週一～週五 AM9:00~12:00, PM1:00~6:00
-                </div>
-            </div>
-        </div> -->
-
 
         <div class="content">
             <div class="pic">
@@ -567,11 +657,43 @@
                 </div>
                 <div class="phone p">客服專線：04-2315-7411 分機106
                 </div>
-                <!-- <iframe src="" frameborder="0"></iframe> -->
+                <a href="">
+                    詳細資訊<i class="fas fa-angle-double-right"></i>
+
+                </a>
             </div>
         </div>
 
-            
+    </section>
+    
+    <section class="shop">
+        <div class="big_title">
+            <div class="brand_border"></div>
+            <div class="title">Shopping</div>
+            <div class="brand_border"></div>
+        </div>
+        <div class="small_title">選購商品</div>
+        <div class="cards">
+            <!-- 選購商品 -->
+            <div class="shop_card">
+                <img src="./img/aaaaaaaaaaaaa.jpg" alt="">
+            </div>
+
+            <!-- 企業專區 -->
+            <div class="shop_card">
+                <img src="./img/bbbbbbbbbb.jpg" alt="">
+            </div>
+
+            <!-- 客製商品 -->
+            <div class="shop_card">
+                <img src="./img/aaaaaaaaaaaaa.jpg" alt="">
+            </div>
+
+            <!-- 禮品專區 -->
+            <div class="shop_card">
+                <img src="./img/bbbbbbbbbb.jpg" alt="">
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -580,62 +702,78 @@
                 關於我們  
                 <li>品牌理念</li>
                 <li>店鋪資訊</li>
-                <li>網站導覽</li>
+                <li>
+                    <a href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/sitemap.html" style="text-decoration: none; color: black;"  target="_blank">網站地圖</a>
+                    </li>
+                <li>
+                    <a href="https://nick2258.github.io/%E7%B4%99%E6%9D%B1%E8%A5%BF/questions.html" style="text-decoration: none; color: black;"  target="_blank">常見問題</a>
+                    </li>
             </ul>
 
             <ul>
                 訂購配送
-                <li>訂購流程</li>
+                <!-- <li>訂購流程</li>
                 <li>付款方式</li>
                 <li>運費計算</li>
-                <li>退換商品</li>
+                <li>退換商品</li> -->
+                <li>訂購資訊</li>
             </ul>
 
             <ul>
                 創作樂園
-                <li>註冊流程</li>
+                <li>註冊須知</li>
                 <li>投稿專區</li>
                 <li>商品販售</li>
                 <li>紅利回饋</li>
-                <li>著作權</li>
+                <!-- <li>著作權</li> -->
             </ul>
             <ul>
                 活動櫥窗
                 <li>好文專欄</li>
-                <!-- <li>紙東西臉書粉專</li>
-                <li>Instagram</li>
-                <li>Youtube</li>
-                <li>Pinterest</li> -->
-            </ul>
+                <li>影音專區</li>
 
-            <ul>
-                聯絡我們
-                <li>客服中心</li>
-                <li>線上客服</li>
-            </ul>
-
-            <ul>
-                其他資訊
-                <li>網站安全政策</li>
-                <li>隱私權政策</li>
-                <li>版權宣告</li>
-                
-                
             </ul>
 
         </div>
         <div class="icons">
             <div class="icon">
+                <i class="fas fa-phone-volume"></i>
+            </div>
+
+            <div class="icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+          
+            <div class="icon">
+                <i class="fab fa-line"></i>
+            </div>
+
+            <div class="icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="icon">
                 <i class="fab fa-facebook-square "></i>
             </div>
+
             <div class="icon">
                 <i class="fab fa-instagram"></i>            
             </div>
+
             <div class="icon">
                 <i class="fab fa-youtube "></i>            
             </div>
+
             <div class="icon">
-                <i class="fab fa-pinterest-square"></i>            </div>
+                <i class="fab fa-pinterest-square"></i>           
+            </div>
+
+          
+
+        </div>
+        <div class="elses">
+            <div class="else">網站安全政策</div>
+            <div class="else">隱私權政策</div>
+            <div class="else">版權宣告</div>
 
         </div>
         <div class="copyright">
@@ -647,6 +785,64 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+   <!-- Swiper JS -->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+     var swiper = new Swiper(".mySwiper", {
+        slidesPerView:1,
+        spaceBetween:10,
+        loop: true,
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     type: "fraction",
+
+        // },
+        autoplay: {
+            delay: 4000, // 3秒切換一次
+            speed:2000,
+
+            disableOnInteraction: true,
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+   </script>
+    <script>
+        var swiper = new Swiper(".videos", {
+           slidesPerView:1,
+           spaceBetween:0,
+           loop: true,
+           // pagination: {
+           //     el: ".swiper-pagination",
+           //     type: "fraction",
+   
+           // },
+           pagination: {
+        //    el: ".swiper-pagination",
+           clickable: true,
+        //    type: "progressbar",
+           el: ".swiper-scrollbar",
+          hide: true,
+
+           },
+           navigation: {
+               nextEl: ".swiper-button-next",
+               prevEl: ".swiper-button-prev",
+           },
+           scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+       });
+      </script>
 
     <script>
         var hearts = document.querySelectorAll(".heart")
@@ -664,24 +860,13 @@
         }
             
         });
-
-        // function add() {
-        //     hearts.forEach(heart => {
-        //    if (heart.getElementsByClassName("active")) {
-        //        heart.classList.remove(".active")
-        //    } else {
-        //     heart.classList.add(".active")
-        //    }
-            
-        //     });
-        // }
-        
-    
-      
-
-        
         
     </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
     
     
 </body>

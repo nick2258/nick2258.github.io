@@ -1,0 +1,208 @@
+main{
+    width: 1000px;
+    margin: auto;
+    .now_page{
+        font-size: 12px;
+        letter-spacing: 2px;
+        // font-weight: 600;
+        color: gray;
+        margin-bottom: 20px;
+        padding: 0px 0px 10px 8px;
+        // border-top: 1px solid gainsboro;
+        border-bottom: 1px  solid gainsboro;
+    }
+    .tab {
+        overflow: hidden;
+        // border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        border-radius: 10px 10px 0px 0px;
+        // background-color: #838db8;
+
+      }
+      /* Style the buttons inside the tab */
+      .tab{
+        button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 5px 28px ;
+            transition: 0.3s;
+            font-size: 20px;
+            font-weight: 600;
+            clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+            &:nth-child(2){
+                clip-path: polygon(0 0, 85% 0, 100% 100%, 18% 100%);
+                clip-path: polygon(0 0, 85% 0, 100% 100%,15% 100%);
+                transform: translateX(-22px);
+            }
+            &:nth-child(3){
+                clip-path: polygon(0 0, 85% 0, 100% 100%, 18% 100%);
+                clip-path: polygon(0 0, 77% 0, 100% 100%, 25% 100%);
+                clip-path: polygon(26% 0, 100% 0, 79% 99%, 0 100%);
+                clip-path: polygon(26% 0, 100% 0, 100% 99%, 0 100%);
+                clip-path: polygon(0 0, 85% 0, 100% 100%,15% 100%);
+                transform: translateX(-44px);
+            }
+            &:hover{
+                background-color: #ddd;
+                background-color: #c3ced4;
+            }
+            &.active {
+                background-color: #ccc;
+                background-color: rgb(238, 225, 209);
+                background-color: floralwhite;
+                background-color: #c3ced4;
+              }
+          }   
+      } 
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+        transition: .3s;
+
+        transition: 1s;
+        padding: 20px 8px;
+        border-top: none;
+        background-color: rgb(125, 172, 194);
+        background-color: rgb(238, 225, 209);
+        background-color: floralwhite;
+        background-color: #c3ced4;
+
+        border-radius:0px 0px 10px 10px;
+        .title{
+            font-size: 18px;
+            margin: 15px 0px;
+            padding-left: 20px;
+        }
+        .collapsible {
+            background-color: #838db8;
+            background-color: #666d8d;
+            background-color: rgb(129, 129, 129);
+
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            padding: 8px 12px;
+            padding: 8px 20px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            border-radius: 30px;
+          }
+          .active, .collapsible:hover {
+            background-color: #555;
+          } 
+          .collapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+          } 
+          .active:after {
+            content: "\2212";
+          }
+          .content {
+            padding: 0 12px;
+    
+            max-height: 0;
+           
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            margin: 10px 0px;
+            .allprocess{
+                // display: flex;
+                .process{
+                    display: flex;
+                    // flex-direction: column;
+                    // width: 20%;
+                    margin-right:15px ;
+                    padding: 15px 0px  ;
+                    border-bottom: 1px  solid #989898;
+
+                    &:nth-last-child(1){
+                        margin-right: 0px;
+                        padding-bottom: 0px;
+                        border-bottom: 0px  solid #989898;
+                    }
+                    .pic{
+                        // margin:10px  auto;
+                        img{
+                            width: 80px;
+                            height: 80px;
+                        }
+                    }
+                    .texts{
+                        padding: 0px 8px;
+                        padding-top: 10px;
+                        .small_title{
+                            font-size: 16px;
+                            font-weight: 600;
+                            margin-bottom: 5px;
+                            // text-align: center;
+                        }
+                        .text{
+                            font-size: 14px;
+                            letter-spacing: 2px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+            .os{
+                .o{
+                    margin-bottom: 20px;
+                    .o_title{
+                        font-size: 16px;
+                        font-weight: 600;
+                        padding-left: 8px;
+                        padding-bottom: 10px;
+                        // padding-bottom: 15px;
+                        border-bottom: 1px solid #989898;
+                    }
+                    .o_text{
+                        font-size: 14px;
+                        letter-spacing: 2px;
+                        line-height: 24px;
+                        padding: 0px 8px;
+                        padding-top: 10px;
+                        ul{
+                            margin: 0px 0px;
+                            li{
+                                padding-top: 5px;
+                                &:nth-child(1){
+                                    padding-top: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+ul{
+    margin: 0px;
+}
+li{
+    padding-top: 5px;
+    font-size: 14px;
+    &:nth-child(1){
+        padding-top: 0px;
+    }
+}
+.o_text{
+    line-height: 24px;
+    padding-top: 10px;
+   
+}
+
+  
+  
+  
+  
+  

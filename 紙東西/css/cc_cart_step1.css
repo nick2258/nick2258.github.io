@@ -1,0 +1,325 @@
+main {
+  padding: 30px  0px;
+}
+
+main .container {
+  width: 1000px;
+  margin: auto;
+}
+
+main .container .cart_steps {
+  padding: 20px 50px;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid gainsboro;
+}
+
+main .container .cart_steps .step {
+  width: 15%;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  padding: 15px 10px;
+  border: 1px solid gainsboro;
+  color: #646464;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+main .container .cart_steps .step.active {
+  border: 2px solid #b3abab;
+  color: #DF744A;
+}
+
+main .container .cart_steps .fa-angle-right {
+  line-height: 90px;
+  padding: 0px 20px;
+  font-size: 22px;
+  color: #8b8585;
+}
+
+main .container .back_home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding-top: 30px;
+}
+
+main .container .back_home .back_home_text {
+  font-size: 24px;
+}
+
+main .container .back_home .back_home_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0px;
+  padding: 10px  20px;
+  background-color: orange;
+  margin: 20px  auto;
+  font-size: 18px;
+  color: white;
+  border-radius: 5px;
+}
+
+main .container .back_home .back_home_btn .fa-home {
+  font-size: 20px;
+  color: white;
+  margin-left: 10px;
+  z-index: 10;
+  font-weight: 900;
+}
+
+main .container .all_checkout_information .check_products {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .container .all_checkout_information .check_products .fa-check-square {
+  color: #209420;
+  font-size: 24px;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+main .container .all_checkout_information .check_products .title {
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+main .container .all_checkout_information .check_products_cntent ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0px;
+  list-style: none;
+  padding: 20px  8px;
+  border-bottom: 1px solid gainsboro;
+  margin: 0px;
+}
+
+main .container .all_checkout_information .check_products_cntent ul:nth-child(1) {
+  margin-top: 20px;
+  nav-left: 0px;
+  border: 0px;
+  background-color: gainsboro;
+  background-color: #c1d2dd;
+  padding: 6px 0px;
+  border-radius: 3px;
+}
+
+main .container .all_checkout_information .check_products_cntent ul li {
+  margin: auto;
+  width: 40%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+main .container .all_checkout_information .check_products_cntent ul li:nth-last-child(1) {
+  width: 15%;
+}
+
+main .container .all_checkout_information .check_products_cntent ul li:nth-last-child(2) {
+  width: 15%;
+}
+
+main .container .all_checkout_information .check_products_cntent ul li .product_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 65px;
+}
+
+main .container .all_checkout_information .check_products_cntent ul li .product_name .pic {
+  margin-right: 20px;
+}
+
+main .container .all_checkout_information .check_products_cntent ul li .product_name .pic img {
+  width: 150px;
+  height: 100px;
+  width: 100px;
+  height: 65px;
+  display: block;
+}
+
+main .container .all_checkout_information .check_products_cntent ul li .text {
+  line-height: 65px;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+
+main .container .all_checkout_information .check_products_cntent ul li .fa-trash-alt {
+  line-height: 65px;
+  font-size: 18px;
+  margin-left: 10px;
+  color: gray;
+}
+
+main .container .all_checkout_information .check_products_cntent ul li .cost_text {
+  font-weight: 600;
+  line-height: 65px;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+
+main .container .all_checkout_information .check_products_cntent ul li .allnumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  line-height: 45px;
+  line-height: 30px;
+  position: relative;
+}
+
+main .container .all_checkout_information .check_products_cntent ul li .allnumber .mumber_text {
+  margin-right: 15px;
+}
+
+main .container .all_checkout_information .check_products_cntent ul li .allnumber input {
+  font-size: 18px;
+  width: 120px;
+  margin: 0px  20px;
+  outline: none;
+}
+
+main .container .all_checkout_information .check_products_cntent ul li .allnumber .numbers {
+  text-align: center;
+  font-size: 18px;
+  width: 80px;
+  height: 45px;
+  line-height: 45px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0px  15px;
+  border: 1px solid gainsboro;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .container .all_checkout_information .check_products_cntent ul li .allnumber .a {
+  text-align: center;
+  line-height: 45px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid gainsboro;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  width: 30px;
+  height: 30px;
+}
+
+main .container .all_checkout_information .check_products_cntent ul li .allnumber .a:active {
+  background-color: darkgrey;
+  color: wheat;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+main .container .all_checkout_information .check_products_cntent ul li .show {
+  display: none;
+  font-size: 14px;
+  color: #DF744A;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+main .container .all_checkout_information .check_products_cntent ul li .show.active {
+  display: block;
+}
+
+main .container .all_checkout_information .checkout {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-align: end;
+}
+
+main .container .all_checkout_information .checkout .top {
+  margin-top: 20px;
+}
+
+main .container .all_checkout_information .checkout .low_shipping {
+  font-size: 14px;
+  color: orangered;
+}
+
+main .container .all_checkout_information .checkout .shipping_information {
+  margin-left: auto;
+}
+
+main .container .all_checkout_information .checkout .shipping_information .transport {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 30px;
+}
+
+main .container .all_checkout_information .checkout .shipping_information .transport select {
+  width: 100px;
+  height: 30px;
+  padding: 0px 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0px 10px;
+  outline: none;
+  border: 1px solid gainsboro;
+}
+
+main .container .all_checkout_information .checkout .checkout_btn {
+  margin-left: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 8px 25px;
+  background-color: orange;
+  border-radius: px;
+  margin-top: 30px;
+  color: white;
+  border-radius: 3px;
+}
+/*# sourceMappingURL=cc_cart_step1.css.map */

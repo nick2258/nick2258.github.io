@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車 - 確認訂購商品 | 紙東西文創品商城</title>
+    <meta name="description" content="紙東西文創品商城，販售文創商品，客製化的獨特設計，用創意豐富生活!">
+    <meta name="keywords" content="紙東西,PaperGoods,文創,設計,客製化,禮物">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../Images/logo/favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="../Css/all.css"> -->
+    <link rel="stylesheet" href="./css/cc_cart_step1.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- Fontawesome - Kit -->
+    <script src="https://kit.fontawesome.com/18089327b4.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <main>
+         <!-- 內容 -->
+         <section class="my-5">
+            <div class="container">
+                <div class="cart_steps">
+                    <div class="step active">
+                        <div class="step_text">STEP1 <br>確認訂購商品</div>
+                    </div>
+
+                    <i class="fas fa-angle-right"></i>
+
+                    <div class="step">
+                        <div class="step_text">STEP2 <br>填寫訂購資料</div>
+                    </div>        
+                    
+                    <i class="fas fa-angle-right"></i>
+
+                    <div class="step">
+                        <div class="step_text">STEP3 <br>付款</div>
+                    </div> 
+                    
+                    <i class="fas fa-angle-right"></i>
+
+                    <div class="step">
+                        <div class="step_text">STEP4 <br>完成訂購</div>
+                    </div> 
+
+                </div>
+
+                <div class="back_home" >
+                    <div class="back_home_text">
+                        尚未選購任何商品，請點擊按鈕
+                    </div>
+                    <a class="back_home_btn">
+                        <div class="btn_text">回首頁</div>
+                        <i class="fas fa-home"></i>                        <!-- <i class="fas fa-home-lg"></i> -->
+                    </a>
+                </div>
+
+                <div class="all_checkout_information" >
+                    <div class="check_products">
+                        <i class="fas fa-check-square"></i>
+                        <div class="title">確認訂購商品</div>
+                    </div>
+    
+    
+                    <div class="check_products_cntent">
+                        <ul>
+                            <li>商品</li>
+                            <li>數量</li>
+                            <li>單價</li>
+                            <li>小計</li>
+                        </ul>
+        
+                     
+                        <ul>
+                            <li>
+                                <div class="product_name">
+                                    <div class="pic">
+                                        <img src="https://i.picsum.photos/id/72/150/150.jpg?hmac=88NNYoUrPKBRE7CbkRKkXumt03IOma2wCZii6DX7jec" alt="">
+                                    </div>
+                                    <div class="name text">3D便條紙 - 艾菲爾鐵塔
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="allnumber b">
+                
+                                    <div class=" a remove">-</div>
+            
+                                    <!-- <div class="numbers">1</div> -->
+                                    <input  id="Str" class="numbers" type="number" min="1"  value="1"  oninput="if(value>99)value=99"   / oninput="if(value<0)value=1" / onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"  
+                                    onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}"  onchange="ShowStr(this.id)" >
+                                    <div class=" a add">+</div>
+    
+                                </div>
+                                <div class="show " id="show">已達最高購買數量</div>
+    
+                            </li>
+                            <li class="texts">
+                                <div class="text">NT$600
+                                </div>
+                            </li>
+    
+                            <li class="texts">
+                                <span class="cost_text">NT$600 </span>
+                                <i class="fas fas fa-trash-alt
+                                "></i>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div class="product_name">
+                                    <div class="pic">
+                                        <img src="https://i.picsum.photos/id/72/150/150.jpg?hmac=88NNYoUrPKBRE7CbkRKkXumt03IOma2wCZii6DX7jec" alt="">
+                                    </div>
+                                    <div class="name text">3D便條紙 - 艾菲爾鐵塔
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="allnumber b">
+                
+                                    <div class=" a remove">-</div>
+            
+                                    <!-- <div class="numbers">1</div> -->
+                                    <input  id="Str" class="numbers" type="text" min="1"  value="1"  oninput="if(value>99)value=99"   / onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"  
+                                    onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}"  onchange="ShowStr(this.id)" >
+                                    <div class=" a add">+</div>
+    
+                                </div>
+                                <div class="show " id="show">已達最高購買數量</div>
+    
+                            </li>
+                            <li class="texts">
+                                <div class="text">NT$600
+                                </div>
+                            </li>
+    
+                            <li class="texts">
+                                <span class="cost_text">NT$600 </span>
+                                <i class="fas fas fa-trash-alt
+                                "></i>
+                            </li>
+                        </ul>
+    
+                        <ul>
+                            <li>
+                                <div class="product_name">
+                                    <div class="pic">
+                                        <img src="https://i.picsum.photos/id/72/150/150.jpg?hmac=88NNYoUrPKBRE7CbkRKkXumt03IOma2wCZii6DX7jec" alt="">
+                                    </div>
+                                    <div class="name text">3D便條紙 - 艾菲爾鐵塔
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="allnumber b">
+                
+                                    <div class=" a remove">-</div>
+            
+                                    <!-- <div class="numbers">1</div> -->
+                                    <input  id="Str" class="numbers" type="text" min="1"  value="1"  oninput="if(value>99)value=99"  / onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"  
+                                    onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}"  onchange="ShowStr(this.id)" >
+                                    <div class=" a add">+</div>
+    
+                                </div>
+                                <div class="show " id="show">已達最高購買數量</div>
+    
+                            </li>
+                            <li class="texts">
+                                <div class="text">NT$600
+                                </div>
+                            </li>
+    
+                            <li class="texts">
+                                <span class="cost_text">NT$600 </span>
+                                <i class="fas fas fa-trash-alt
+                                "></i>
+                            </li>
+                        </ul>
+    
+                        <ul>
+                            <li>
+                                <div class="product_name">
+                                    <div class="pic">
+                                        <img src="https://i.picsum.photos/id/72/150/150.jpg?hmac=88NNYoUrPKBRE7CbkRKkXumt03IOma2wCZii6DX7jec" alt="">
+                                    </div>
+                                    <div class="name text">3D便條紙 - 艾菲爾鐵塔
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="allnumber b">
+                
+                                    <div class=" a remove">-</div>
+            
+                                    <!-- <div class="numbers">1</div> -->
+                                    <input  id="Str" class="numbers" type="text" min="1"  value="1"  oninput="if(value>99)value=99"   / onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"  
+                                    onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}"  onchange="ShowStr(this.id)" >
+                                    <div class=" a add">+</div>
+    
+                                </div>
+                                <div class="show " id="show">已達最高購買數量</div>
+    
+                            </li>
+                            <li class="texts">
+                                <div class="text">NT$600
+                                </div>
+                            </li>
+    
+                            <li class="texts">
+                                <span class="cost_text">NT$600 </span>
+                                <i class="fas fas fa-trash-alt
+                                "></i>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="checkout">
+                        <div class="low_shipping top color small_font">(免運費最低下單金額：600)</div>
+                        <div class="shipping_information top">
+                            <div class="transport">
+                                <div class="title">運送方式</div>
+                                <select name="" id="">
+                                    <option value="">宅配</option>
+                                </select>
+                                <div class="text">元</div>
+                            </div>
+                        </div>
+    
+                        
+                    <div class="checkout_text top">
+                        購物車內合計有  項商品，消費總金額
+                        <span class="color">NT$
+                        </span>
+                    </div>
+    
+                    <div class="checkout_btn">
+                        下一步
+                    </div>
+    
+                        
+                    </div>
+                </div>
+
+               
+        </section>
+    </main>
+
+    
+  
+
+<script>
+    // var product = document.querySelectorAll('.product');
+    // 增加按鈕
+    var add_btn = document.querySelectorAll('.add');
+
+    // 單個產品總數
+    var number_input =document.querySelectorAll('.numbers');
+
+    // 減少按鈕
+    var reduce_btn = document.querySelectorAll('.remove')
+
+    // 增加商品的按鈕
+    add_btn.forEach(function(ele, i) {
+        // console.log(ele, '寫forEach的時候，帶進來的第一個參數，就是被遍歷的元素');
+        ele.addEventListener('click', function() {
+            // 商品數量顯示 +1
+            console.log(number_input[2].value);
+
+            if (  number_input[i].value == 99 ) {
+                number_input[i].value = parseInt(number_input[i].value) ;
+            
+            }
+            else{
+                    number_input[i].value = parseInt(number_input[i].value) + 1;
+            }  
+        });
+    });
+
+    // 減少商品的按鈕
+    reduce_btn.forEach(function(ele, i) {
+        // console.log(ele, '寫forEach的時候，帶進來的第一個參數，就是被遍歷的元素');
+        ele.addEventListener('click', function() {
+            // 商品數量顯示 -1
+
+            if (  number_input[i].value == 1 || number_input[i].value < 1) {
+                number_input[i].value = 1 ;
+            }else{
+                    number_input[i].value = parseInt(number_input[i].value) - 1;
+            }
+          
+        });
+    });
+
+    
+</script>
+
+
+    </div>
+</body>
+
+</html>

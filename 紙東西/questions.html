@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常見問題</title>
+    <link rel="stylesheet" href="./css/questions.css">
+</head>
+<body>
+    <main>
+        <div class="now_page">
+            首頁  > 常見問題 
+        </div>
+
+        <div class="questions_types">
+            <div class="type_title">
+                <div class="title">類別</div>
+                <select name="" id="">
+                    <option value="">一般商品</option>
+                    <option value="">客製商品</option>
+                    <option value="">大宗採購</option>
+                    <option value="">禮品禮盒</option>
+                    <option value="">會員資訊</option>
+                    <option value="">商品配送</option>
+                    <option value="">退款換貨</option>
+                    <option value="">創作者</option>
+                </select>
+            </div>
+
+            <div class="type_title">
+                <div class="title">日期</div>
+                <select name="" id="">
+                    <option value="">由新至舊</option>
+                    <option value="">由舊至新</option>
+                </select>
+            </div>
+
+            <div class="type_title">
+                <div class="title">常見度</div>
+                <select name="" id="">
+                    <option value="">由高至低</option>
+                    <option value="">由低至高</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="contents">
+            <div class="small_title">購買流程</div>
+            <button class="collapsible active">購買流程問題A</button>
+            <div class="content" style="max-height: max-content;">
+            購買流程解答A購買流程解答A購買流程解答A購買流程解答A購買流程解答A購買流程解答A購買流程解答A購買流程解答A購買流程解答A購買流程解答A購買流程解答A購買流程解答A
+            </div>
+            <button class="collapsible">購買流程問題B</button>
+            <div class="content">
+                購買流程解答B購買流程解答B購買流程解答B購買流程解答B購買流程解答B購買流程解答B購買流程解答B購買流程解答B購買流程解答B購買流程解答B購買流程解答B
+
+            </div>
+            <button class="collapsible">購買流程問題C</button>
+            <div class="content">
+                購買流程解答C購買流程解答C購買流程解答C購買流程解答C購買流程解答C購買流程解答C購買流程解答C購買流程解答C購買流程解答C購買流程解答C購買流程解答C購買流程解答C購買流程解答C購買流程解答C購買流程解答C購買流程解答C
+            </div>
+
+            
+        </div>
+
+        <div class="contents">
+            <div class="small_title">購買金額</div>
+            <button class="collapsible active">購買金額問題A</button>
+            <div class="content" style="max-height: max-content;">
+            購買金額解答A購買金額解答A購買金額解答A購買金額解答A購買金額解答A購買金額解答A購買金額解答A購買金額解答A購買金額解答A購買金額解答A購買金額解答A購買金額解答A
+            </div>
+            <button class="collapsible">購買金額問題B</button>
+            <div class="content">
+                購買金額解答B購買金額解答B購買金額解答B購買金額解答B購買金額解答B購買金額解答B購買金額解答B購買金額解答B購買金額解答B購買金額解答B購買金額解答B
+
+            </div>
+            <button class="collapsible">購買金額問題C</button>
+            <div class="content">
+                購買金額解答C購買金額解答C購買金額解答C購買金額解答C購買金額解答C購買金額解答C購買金額解答C購買金額解答C購買金額解答C購買金額解答C購買金額解答C購買金額解答C購買金額解答C購買金額解答C購買金額解答C購買金額解答C
+            </div>
+        </div>
+    </main>
+    
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        // var firstcontent = document.getElementsByClassName("firstcontent");
+        // firstcontent.style.height === max_content;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[0].addEventListener("", function() {
+            coll[0].classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+</body>
+</html>

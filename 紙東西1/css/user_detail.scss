@@ -1,0 +1,349 @@
+main{
+    width: 1000px;
+    margin: auto;
+    padding: 30px  0px;
+    .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            transition: 0.3s;
+            font-size: 20px;
+            font-weight:500;
+            letter-spacing: 1.5px;
+            &:hover {
+                background-color: #ddd;
+            }
+            &.active {
+                background-color: #ccc;
+            }
+        }
+    
+      }
+    
+    /* Style the tab content */
+    .tabcontent {
+        margin-top: 20px;
+        display: none;
+        // padding: 6px 12px;
+        font-size: 20px;
+        -webkit-animation: fadeEffect 1s;
+        animation: fadeEffect 1s;
+        letter-spacing: 2px;
+        .contents{
+            .content{
+
+
+                .btn{
+                    width: 1000px;
+                    background-color: #ccc;
+                    // background-color: blue;
+                    padding: 5px 0px;
+                    padding-left: 15px;
+                    margin-top: 1px;
+                    font-size: 18px;
+                    text-align: left;
+                    .small_title{
+                        font-size: 15px;
+                        color:rgb(53, 51, 51) ;
+                    }
+
+                }
+                .texts{
+                    display: none;
+                    padding-left: 15px;
+                    padding-top: 15px;
+
+                    // background-color: #bbb;
+                    // padding: 2em 1em;
+                    // 個人資料 -- 帳戶資訊
+                    .text{
+                        padding-bottom: 5px;
+                        // border-bottom: 1px solid gainsboro;
+                        &:nth-last-child(1){
+                            margin-bottom: 15px;
+                        }
+                    }
+                    // 個人資料 -- 紅利管理
+                    .red{
+                        .title{
+                            font-weight: 600;
+                            margin-bottom: 8px;
+                            &:nth-last-child(1){
+                                margin-top: 15px;
+                            }
+                        }
+                        .all_points{
+                            .points{
+                                font-size: 16px;
+                                .point{
+                                    font-size: 20px;
+                                    color: darkred;
+                                }
+                            }
+                        }                       
+                        table{
+                            // border-collapse: collapse;
+                            width: 1000px;
+                            width: unset;
+                            box-sizing: unset;
+                            tr{
+                                &:nth-child(2n){
+                                    background-color: rgba(128, 128, 128, 0.253);
+                                }
+                                
+                                th,td{
+                                    padding: 12px 0px;
+                                    // border-top: 1px solid #dddddd;
+                                    text-align: left;
+                                    padding: 8px;
+                                    padding-right:200px ;
+                                    }
+                                
+                                // td{
+                                //     padding: 5px 0px;
+                                    
+                                //     margin-right: 100px;
+
+                                // }
+                                
+                            }
+                        }
+                    }
+                    // 我的收藏 -- 商品收藏
+                    .likes{
+                        // margin-left:-15px;
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                       
+                        .likecard{
+                            width: calc(20% - 16px);
+                            margin-right: 20px;
+                            margin-bottom: 20px;
+                            
+                            &:nth-child(5n){
+                                margin-right: 0px;
+                            }
+                            .pic{
+                                img{
+                                    width: 100%;
+                                    height: 120px;
+                                   
+                                    border-radius: 8px;
+                                }
+                            }
+                            .text{
+                                padding:3px 5px;
+                                font-size: 16px;
+                            }
+                        }
+                          
+                    }
+                    // 作者收藏
+                    .articles{
+                        width: 100%;
+                        .likecard{
+                            width: calc(20% - 16px);
+                            .pic{
+
+                                img{
+                                    width:100% ;
+                                    height: 177px;
+                                    border-radius: 50%;
+                                }
+                            }
+                            .article{
+                                margin-top: 15px;
+                                font-size: 20px;
+                                font-weight: 600;
+                                text-align: center;
+                               
+                            }
+                        }
+                        
+                    } 
+                    //活動紀錄 -- 近期瀏覽
+                    .last_view{
+                        table{
+                            // border-collapse: collapse;
+                            width: 1000px;
+                            width: unset;
+                            box-sizing: unset;
+                            tr{
+                                &:nth-child(2n){
+                                    background-color: rgba(128, 128, 128, 0.253);
+                                }
+                                
+                                th,td{
+                                    padding: 12px 0px;
+                                    // border-top: 1px solid #dddddd;
+                                    text-align: left;
+                                    padding: 8px;
+                                    padding-right:50px ;
+                                }
+                                td{
+                                    width: max-content;
+                                    max-width: 670px;
+                                    img{
+                                        width: 100px;
+                                        height: 60px;
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                    // 我的商品 -- 商品管理
+                    .product_manage{
+                        table{
+                            // border-collapse: collapse;
+                            width: 1000px;
+                            width: unset;
+                            box-sizing: unset;
+                            tr{
+                                &:nth-child(2n){
+                                    background-color: rgba(128, 128, 128, 0.253);
+                                }
+                                
+                                th,td{
+                                    padding: 12px 0px;
+                                    // border-top: 1px solid #dddddd;
+                                    text-align: left;
+                                    padding: 8px;
+                                    padding-right:50px ;
+                                }
+                                td{
+                                    width: max-content;
+                                    max-width: 460px;
+                                    img{
+                                        width: 100px;
+                                        height: 60px;
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                    // 我的商品 -- 商品紅利
+                    .feedback{
+                        .months{
+                            display: flex;
+                            input{
+                                outline: none;
+                            }
+                            .month{
+                                padding: 5px 0px;
+                                text-align: center;
+                                margin-right: 20px;
+                                background-color: rgba(129, 129, 119, 0.43);
+                                width: calc(8.33% - 18.333px);
+                                &:hover{
+                                    background-color: rgba(129, 129, 119, 0.23);
+                                }
+                                &:nth-last-child(1){
+                                    margin-right: 0px;
+                                }
+                            }   
+                        }
+                        // 我的商品 -- 商品紅利
+                        .content{
+                            table{
+                                // border-collapse: collapse;
+                                width: 1000px;
+                                width: unset;
+                                box-sizing: unset;
+                                tr{
+                                    &:nth-child(2n){
+                                        background-color: rgba(128, 128, 128, 0.253);
+                                    }
+                                    
+                                    th,td{
+                                        padding: 12px 0px;
+                                        // border-top: 1px solid #dddddd;
+                                        text-align: left;
+                                        padding: 8px;
+                                        padding-right:50px ;
+                                    }
+                                    td{
+                                        width: max-content;
+                                        max-width: 670px;
+                                    }
+                                }
+                            }
+                        } 
+                    }
+                    // 訂單管理 -- 訂單紀錄
+                    .orders{
+                        table{
+                            // border-collapse: collapse;
+                            width: 1000px;
+                            width: unset;
+                            box-sizing: unset;
+                            tr{
+                                &:nth-child(2n){
+                                    background-color: rgba(128, 128, 128, 0.253);
+                                }
+                                
+                                th,td{
+                                    padding: 12px 0px;
+                                    // border-top: 1px solid #dddddd;
+                                    text-align: left;
+                                    padding: 8px;
+                                    padding-right:50px ;
+                                }
+                                td{
+                                    width: max-content;
+                                    max-width: 670px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+   
+        
+        /* Fade in tabs */
+        @-webkit-keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+        }
+        
+        @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+        }
+    }    
+}
+
+
+
+// .js-b-accitem {
+// 	background-color: #ccc;
+// 	padding: 1em;
+// 	margin-top: 1px;
+// }
+
+// .js-b-acclist {
+// 	display: none;
+// 	background-color: #bbb;
+// 	padding: 2em 1em;
+// }
+
+// .second {
+// 	margin-top: 2em;
+// 	.js-b-accitem {
+// 		background-color: #b98;
+// 	}
+// 	.js-b-acclist {
+// 		background-color: #b72;
+// 	}
+// }
