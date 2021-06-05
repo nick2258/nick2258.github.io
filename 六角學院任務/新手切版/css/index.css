@@ -112,6 +112,11 @@ main .informations {
   margin-bottom: 72px;
 }
 
+main .informations .smallcontainer {
+  width: 996px;
+  margin: auto;
+}
+
 main .informations .container {
   padding-top: 24px;
   padding-bottom: 36px;
