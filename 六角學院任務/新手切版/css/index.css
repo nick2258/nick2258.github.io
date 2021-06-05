@@ -71,6 +71,11 @@ main .profile_information .all_information .content {
 
 main .profile_information .all_information .content .texts {
   font: normal normal normal 24px/36px Noto Sans;
+  font-size: 20px;
+}
+
+main .profile_information .all_information .content .width {
+  width: 642px;
 }
 
 main .profile_information .all_information .content .pics {
