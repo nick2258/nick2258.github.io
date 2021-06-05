@@ -1,0 +1,163 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-weight: 600;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+main{
+    max-width: 1920px;
+    width: 100%;
+   
+        
+    .header{
+
+        font: normal normal normal 80px/94px Roboto;
+        padding: 47px 0px 17px 0px;
+        border-bottom: 2px solid #000000;
+
+
+    }
+    .profile_information{
+        .pic{
+            img{
+                width: 324px;
+                height: 324px;
+                margin: 48px 0px;
+            }
+        }
+        .all_information{
+            .title{
+                // padding-bottom: 8px;
+                border-bottom: 1px solid #000000;
+                position: relative;
+                
+                
+                .text{
+                    width: max-content;
+                    font: normal normal normal 32px/43px Noto Sans;
+                    margin-right: 16px;
+                }
+                .small_title{
+                    font: normal normal medium 24px/28px Roboto;
+                    color: #A00404;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                                            
+                }
+            }
+            .right{
+                margin-top: 16px;
+                padding-left: 24px;
+                margin-left: 24px;
+                border-left: 1px solid #96A9C4;
+            }
+            .content{
+                margin-bottom: 72px;
+                // padding-bottom: 42px;
+                .texts{
+                    font: normal normal normal 24px/36px Noto Sans;
+                }
+                .pics{
+                    margin: 8px 0px;
+                    img{
+                        width: 90px;
+                        height: 90px;
+                        display: block;
+                    }
+                }
+                ul{
+                    margin: 0px;
+                    padding-top: 16px;
+                    list-style: none;
+                    margin-top: 8px;
+                    li{
+                        font: normal normal normal 24px/36px Noto Sans;
+                        padding-bottom: 24px;
+
+                        
+                    }
+                    .no{
+                        padding-bottom: 0px;
+                    }
+                    .pic{
+
+                    }
+                }
+            }
+        }
+       
+    }
+    .informations{
+        width: 100%;
+        max-width: 1920px;
+        background-color: #415165;
+        color: #FFFFFF;
+        margin-bottom: 72px;
+        .container{
+            padding-top: 24px;
+            padding-bottom: 36px;
+            .title{
+                text-align: center;
+                font: normal normal medium 32px/45px PingFang TC;
+                font-weight: 600;
+                padding-bottom: 8px;
+                border-bottom: 1px solid #FFFFFF;
+                span{
+                    font: normal normal medium 32px/45px PingFang TC;
+                    font-size: 32px;
+                }
+                
+            }
+            ul{
+                margin: auto;
+                margin-top: 40px;
+                width: max-content;
+                padding-left: 24px;
+                border-left: 1px solid #96A9C4;
+               
+                li{
+                    padding-bottom: 20px;
+                
+                    font-size: 24px;
+                    font-weight: 300;
+                    &:nth-last-child(1){
+                        padding-bottom: 0px;
+                    }
+                }
+            }
+            .icons{
+                width: max-content;
+                margin: auto;
+                margin-top: 16px;
+                .icon{
+                    &:nth-child(2){
+                        margin: 0px 24px;
+                    }
+                    img{
+                        width: 48px;
+                        height: 48px;
+                    }
+
+                }
+            }
+        }
+       
+    }
+    
+}

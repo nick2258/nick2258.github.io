@@ -1,0 +1,165 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 600;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+main {
+  max-width: 1920px;
+  width: 100%;
+}
+
+main .header {
+  font: normal normal normal 80px/94px Roboto;
+  padding: 47px 0px 17px 0px;
+  border-bottom: 2px solid #000000;
+}
+
+main .profile_information .pic img {
+  width: 324px;
+  height: 324px;
+  margin: 48px 0px;
+}
+
+main .profile_information .all_information .title {
+  border-bottom: 1px solid #000000;
+  position: relative;
+}
+
+main .profile_information .all_information .title .text {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font: normal normal normal 32px/43px Noto Sans;
+  margin-right: 16px;
+}
+
+main .profile_information .all_information .title .small_title {
+  font: normal normal medium 24px/28px Roboto;
+  color: #A00404;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+main .profile_information .all_information .right {
+  margin-top: 16px;
+  padding-left: 24px;
+  margin-left: 24px;
+  border-left: 1px solid #96A9C4;
+}
+
+main .profile_information .all_information .content {
+  margin-bottom: 72px;
+}
+
+main .profile_information .all_information .content .texts {
+  font: normal normal normal 24px/36px Noto Sans;
+}
+
+main .profile_information .all_information .content .pics {
+  margin: 8px 0px;
+}
+
+main .profile_information .all_information .content .pics img {
+  width: 90px;
+  height: 90px;
+  display: block;
+}
+
+main .profile_information .all_information .content ul {
+  margin: 0px;
+  padding-top: 16px;
+  list-style: none;
+  margin-top: 8px;
+}
+
+main .profile_information .all_information .content ul li {
+  font: normal normal normal 24px/36px Noto Sans;
+  padding-bottom: 24px;
+}
+
+main .profile_information .all_information .content ul .no {
+  padding-bottom: 0px;
+}
+
+main .informations {
+  width: 100%;
+  max-width: 1920px;
+  background-color: #415165;
+  color: #FFFFFF;
+  margin-bottom: 72px;
+}
+
+main .informations .container {
+  padding-top: 24px;
+  padding-bottom: 36px;
+}
+
+main .informations .container .title {
+  text-align: center;
+  font: normal normal medium 32px/45px PingFang TC;
+  font-weight: 600;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+main .informations .container .title span {
+  font: normal normal medium 32px/45px PingFang TC;
+  font-size: 32px;
+}
+
+main .informations .container ul {
+  margin: auto;
+  margin-top: 40px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-left: 24px;
+  border-left: 1px solid #96A9C4;
+}
+
+main .informations .container ul li {
+  padding-bottom: 20px;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+main .informations .container ul li:nth-last-child(1) {
+  padding-bottom: 0px;
+}
+
+main .informations .container .icons {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  margin-top: 16px;
+}
+
+main .informations .container .icons .icon:nth-child(2) {
+  margin: 0px 24px;
+}
+
+main .informations .container .icons .icon img {
+  width: 48px;
+  height: 48px;
+}
+/*# sourceMappingURL=index.css.map */
