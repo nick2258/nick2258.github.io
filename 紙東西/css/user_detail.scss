@@ -1,7 +1,30 @@
+body{
+    position: relative;
+    // height: max-content;
+   #mask{
+    position: absolute;
+    top: 0px;
+    height: 0px;
+    width: 100%;
+    max-width: 100%;
+    // min-width: 1920px;
+    min-height: 100vh;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.705);
+    display: none;
+    z-index: 1;
+    &.active{
+        display: block;
+    }
+   }
+}
+
 main{
     width: 1000px;
     margin: auto;
     padding: 30px  0px;
+   
     .tab {
         overflow: hidden;
         border: 1px solid #ccc;
@@ -348,6 +371,8 @@ main{
                     }
                     // 訂單管理 -- 訂單紀錄
                     .orders{
+                        
+                        z-index: 99;
                         table{
                             // border-collapse: collapse;
                             width: 1000px;
@@ -370,6 +395,43 @@ main{
                                     width: max-content;
                                     max-width: 670px;
                                     font-size: 14px;
+                                }
+                            }
+                        }
+                        .order_information_details{
+                            // max-width: 1920px;
+                            // width: 100vw;
+                            // height: 100vh;
+                            // background-color: rgba(0, 0, 0, 0.562);
+                            position: relative;
+                            z-index: 20;
+                            .close_btn{
+                                position: absolute;
+                                right: 20px;
+                                top: 20px;
+                                font-size: 24px;
+                                font-weight: 600;
+                                padding:5px  10px;
+                                background-color: burlywood;
+                                color: white;
+                            }
+                            .order_detail{
+                                // position: absolute;
+                                width: 800px;
+                                position: fixed;
+                                top: 10px;
+                                top: 50px;
+                                left: 50%;
+                                transform: translateX(-50%);
+
+                                // width: max-content;
+                                margin: auto;
+                                display: none;
+                                background-color: rgb(133, 40, 40);
+                                background-color: white;
+                                padding: 50px;
+                                &.active{
+                                    display: block;
                                 }
                             }
                         }

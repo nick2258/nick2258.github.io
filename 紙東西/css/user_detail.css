@@ -1,3 +1,25 @@
+body {
+  position: relative;
+}
+
+body #mask {
+  position: absolute;
+  top: 0px;
+  height: 0px;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.705);
+  display: none;
+  z-index: 1;
+}
+
+body #mask.active {
+  display: block;
+}
+
 main {
   width: 1000px;
   margin: auto;
@@ -351,6 +373,10 @@ main .tabcontent .contents .content .texts .feedback .content table tr td {
   padding-left: 8px;
 }
 
+main .tabcontent .contents .content .texts .orders {
+  z-index: 99;
+}
+
 main .tabcontent .contents .content .texts .orders table {
   width: 1000px;
   width: unset;
@@ -376,6 +402,41 @@ main .tabcontent .contents .content .texts .orders table tr td {
   width: max-content;
   max-width: 670px;
   font-size: 14px;
+}
+
+main .tabcontent .contents .content .texts .orders .order_information_details {
+  position: relative;
+  z-index: 20;
+}
+
+main .tabcontent .contents .content .texts .orders .order_information_details .close_btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 5px  10px;
+  background-color: burlywood;
+  color: white;
+}
+
+main .tabcontent .contents .content .texts .orders .order_information_details .order_detail {
+  width: 800px;
+  position: fixed;
+  top: 10px;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: auto;
+  display: none;
+  background-color: #852828;
+  background-color: white;
+  padding: 50px;
+}
+
+main .tabcontent .contents .content .texts .orders .order_information_details .order_detail.active {
+  display: block;
 }
 
 @-webkit-keyframes fadeEffect {
