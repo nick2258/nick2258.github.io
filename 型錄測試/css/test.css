@@ -101,4 +101,18 @@ main .mycontainer .box iframe {
   width: 1500px;
   height: 500px;
 }
+
+main .mycontainer .box1 {
+  padding-left: 400px;
+  -webkit-transform: translateY(-350px);
+          transform: translateY(-350px);
+  margin-bottom: 30px;
+}
+
+main .mycontainer .box1 a button {
+  width: 300px;
+  height: 45px;
+  outline: none;
+  border: 1px solid gainsboro;
+}
 /*# sourceMappingURL=test.css.map */
