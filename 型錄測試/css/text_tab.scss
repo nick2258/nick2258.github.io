@@ -1,0 +1,19 @@
+main{
+    display: flex;
+    justify-content: center;
+    width: 1920px;
+    .mycontainer{
+        .box{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            iframe{
+                width: 1600px;
+                height: 800px;
+                margin: auto;
+            }
+        }
+    }
+   
+   
+}
