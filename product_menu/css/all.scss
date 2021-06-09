@@ -101,4 +101,43 @@ main{
             
         }
     }
+
+    .last_type{
+      
+     
+        .type {
+            position: relative;
+            width: calc(16.6666% - 16.666px);
+            height: 120px;
+            text-align:center;
+            line-height: 90px;
+            // line-height: 50px;
+            background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+           
+            -webkit-box-shadow: 5px 5px 8px  #595b5e60;
+            border-radius: 5px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            position: relative;
+            overflow: hidden;
+           
+            .text{
+                width: max-content;
+                position: absolute;
+                top: 0px;
+                left: 50%;
+                transform: translate(-50%,30%);
+                font: 600;
+                font-size: 16px;
+                color: rgb(75, 75, 75);
+            }
+            
+        }
+    }
 }
