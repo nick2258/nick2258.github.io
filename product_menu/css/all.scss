@@ -19,7 +19,19 @@ nav{
     z-index: 99;
     background-color: white;
     a{
-        color: #1D2731;   
+        display: block;
+        .btn{
+            color: #1D2731;
+
+            background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);    
+            &:hover{
+                background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+                color: orange;  
+                color: white;
+                transition: .6s;
+            }
+        }
+       
     }
     .back_btn{
         // margin-top: 20px;
@@ -337,20 +349,11 @@ main{
 
             &:hover{
                 background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
-                // background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-                // border: 2px solid #c1d2dd;   
-                background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
                 color: orange;  
                 color: white;
-                
-
-
+                transition: .6s;
             }
-        }
-
-
-       
-       
+        } 
     }
     
 }

@@ -25,7 +25,21 @@ nav {
 }
 
 nav a {
+  display: block;
+}
+
+nav a .btn {
   color: #1D2731;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#accbee), to(#e7f0fd));
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
+
+nav a .btn:hover {
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  color: orange;
+  color: white;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 nav .back_btn {
@@ -319,8 +333,9 @@ main .product .download_btn {
 
 main .product .download_btn:hover {
   background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
-  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
   color: orange;
   color: white;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 /*# sourceMappingURL=all.css.map */
