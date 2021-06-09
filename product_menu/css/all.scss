@@ -38,6 +38,7 @@ nav{
 main{
     max-width: 1920px;
     width: 100%;
+    // 階層樣式
     .types{
         width: 1600px;
         display: flex;
@@ -56,6 +57,7 @@ main{
             height: 120px;
             text-align:center;
             line-height: 120px;
+            // line-height: 50px;
             background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
            
             -webkit-box-shadow: 5px 5px 8px  #595b5e60;
@@ -96,6 +98,7 @@ main{
                 left: 0;
                 right: 0;
             }
-          }
+            
+        }
     }
 }
