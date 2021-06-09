@@ -433,6 +433,147 @@ main{
                                 &.active{
                                     display: block;
                                 }
+                                .title{
+                                    font-size: 24px;
+                                    font-weight: 600;
+                                    letter-spacing: 2px;
+                                }
+                                .order_content{
+                                    .small_titles{
+                                        .small_title{
+                                            font-size: 20px;
+                                        }
+                                        .small_text{
+                                            font-size: 16px;
+                                            padding-top: 5px;
+                                        }
+                                    }
+                                    .all_checkout_information{
+                                        padding-top: 30px;
+                                        .check_products{
+                                            display: flex;
+                                            .fa-check-square{
+                                                color: rgb(32, 148, 32);
+                                                font-size: 24px;
+                                            }
+                                            .title{
+                                                font-size: 20px;
+                                                letter-spacing: 1.5px;
+                                                // margin-left: 10px;
+                                                padding-left: 8px;
+                                                border-left: 5px solid gainsboro;
+                                                
+                                                font-weight: 600;
+                                            }
+                                        }
+                                        .check_products_cntent{
+                                            ul{
+                                                // margin-bottom: 500px;
+                                                display: flex;
+                                                // margin-left: 0px;
+                                                padding-left: 0px;
+                                                // text-decoration: none;
+                                                list-style: none;
+                                                padding:20px  8px;
+                                                border-bottom: 1px solid gainsboro;
+                                                margin: 0px;
+                                                
+                                                &:nth-last-child(1){
+                                                    
+                                                }
+                                                li{
+                                                    margin: auto;
+                                                    width:60% ;
+                                                    text-align: center;
+                                                    font-size: 20px;
+                                                    font-weight: 600 ;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    position: relative;
+                                                    &:nth-last-child(1){
+                                                        width: 15%;
+                                                    }
+                                                    &:nth-last-child(2){
+                                                        width: 15%;
+                                                    }
+                                                    &:nth-last-child(3){
+                                                        width: 10%;
+                                                    }
+                                                    &:nth-last-child(4){
+                                                        justify-content: left;
+                                                    }
+                                                    .product_name{
+                                                        display: flex;
+                                                        line-height: 65px;
+                                                        // width: max-content;
+                                                        .pic{
+                                                            margin-right: 20px;
+                                                            img{
+                                                                width: 150px;
+                                                                height: 100px;
+                            
+                                                                width: 100px;
+                                                                height: 65px;
+                                                                display: block;
+                                                            }
+                                                        }
+                                                    }
+                                                    .text{
+                                                        line-height: 65px;
+                                                        font-size: 16px;
+                                                        letter-spacing: 1.5px;
+                                                        font-weight: 500;
+                                                    }
+                                                  
+                                                    // .cost_text{
+                                                    //     font-weight:600;
+                                                    //     line-height: 65px;
+                                                    //     font-size: 15px;
+                                                    //     letter-spacing: 1.5px;
+                                                    //     padding-top: 0px;
+                                                    // }
+                                                    .allnumber{
+                                                        display: flex;
+                                                        font-size: 16px;
+                                                        line-height: 45px;
+                                                        line-height: 30px;
+                                                        position: relative;
+                                                       
+                                                    }
+                                                }
+                                                &:nth-child(1){
+                                                    margin-top: 20px;
+                                                    nav-left: 0px;
+                                                    background-color: #c1d2dd;
+                                                    padding: 6px 0px;
+                                                    border-radius: 3px;
+                                                    li{
+                                                        display: flex;
+                                                        justify-content: center;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .checkout{
+                                            width: max-content;
+                                            display: flex;
+                                            flex-direction: column;
+                                            margin-left: auto;
+                                            font-size: 16px;
+                                            font-weight: 600;
+                                            letter-spacing: 1.5px;
+                                            text-align: end;
+                                            padding-bottom: 20px;
+                                            .top{
+                                                margin-top: 5px;
+                                            }
+                                            .checkout_text{
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+
                             }
                         }
                     }
