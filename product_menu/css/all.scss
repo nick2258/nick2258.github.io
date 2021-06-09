@@ -22,7 +22,7 @@ nav{
         display: block;
         .btn{
             color: #1D2731;
-
+            -webkit-box-shadow: 5px 5px 10px  #595b5e60;
             background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);    
             &:hover{
                 background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);

@@ -30,6 +30,7 @@ nav a {
 
 nav a .btn {
   color: #1D2731;
+  -webkit-box-shadow: 5px 5px 10px  #595b5e60;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#accbee), to(#e7f0fd));
   background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
 }
