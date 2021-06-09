@@ -1,0 +1,101 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    // height: 2000px;
+    position: relative;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+// 反回上一頁按鈕
+nav{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    position: sticky;
+    top: 00px;
+    z-index: 99;
+    background-color: white;
+    a{
+        color: #1D2731;   
+    }
+    .back_btn{
+        // margin-top: 20px;
+        padding: 10px 0px;
+        .btn{
+            outline: none;
+            background-color: gainsboro;
+            padding: 8px 25px;
+            border-radius: 3px;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+        }
+    }
+}
+main{
+    max-width: 1920px;
+    width: 100%;
+    .types{
+        width: 1600px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 15px;
+        margin: auto;
+        border-radius: 5px;
+        a{
+            color: #1D2731;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+        }
+        .type {
+            width: calc(16.6666% - 16.666px);
+            height: 120px;
+            text-align:center;
+            line-height: 120px;
+            background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+           
+            -webkit-box-shadow: 5px 5px 8px  #595b5e60;
+            border-radius: 5px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            position: relative;
+            overflow: hidden;
+            &:nth-child(6n){
+                margin-right: 0px;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                opacity: 0;
+                z-index: -1;
+                left: 50%;
+                right: 50%;
+                bottom: 0;
+                background: #2980b9;
+                background-color: #3a5072ce;
+                height: 10px;
+                -webkit-transition-property: left right;
+                transition-property: left right;
+                -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+                -webkit-transition-timing-function: ease-out;
+                transition-timing-function: ease-out;
+            }
+            &:hover:before {
+                opacity: 1;
+                left: 0;
+                right: 0;
+            }
+          }
+    }
+}

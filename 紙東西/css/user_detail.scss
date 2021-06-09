@@ -411,16 +411,15 @@ main{
                                 top: 20px;
                                 font-size: 24px;
                                 font-weight: 600;
-                                padding:5px  10px;
+                                padding:0px  10px;
                                 background-color: burlywood;
                                 color: white;
                             }
                             .order_detail{
-                                // position: absolute;
                                 width: 800px;
                                 position: fixed;
                                 top: 10px;
-                                top: 50px;
+                                top: 5vh;
                                 left: 50%;
                                 transform: translateX(-50%);
 
@@ -429,7 +428,8 @@ main{
                                 display: none;
                                 background-color: rgb(133, 40, 40);
                                 background-color: white;
-                                padding: 50px;
+                                padding: 30px 50px;
+                                border-radius: 8px;
                                 &.active{
                                     display: block;
                                 }
@@ -437,15 +437,21 @@ main{
                                     font-size: 24px;
                                     font-weight: 600;
                                     letter-spacing: 2px;
+                                    margin-bottom: 20px;
                                 }
                                 .order_content{
                                     .small_titles{
                                         .small_title{
                                             font-size: 20px;
+                                            padding-left: 8px;
+                                            border-left: 5px solid gainsboro;
+                                            
+                                            font-weight: 600;
+                                            margin-bottom: 20px;
                                         }
                                         .small_text{
                                             font-size: 16px;
-                                            padding-top: 5px;
+                                            padding-bottom: 8px;
                                         }
                                     }
                                     .all_checkout_information{
@@ -462,19 +468,16 @@ main{
                                                 // margin-left: 10px;
                                                 padding-left: 8px;
                                                 border-left: 5px solid gainsboro;
-                                                
+                                                margin-bottom: 0px;
                                                 font-weight: 600;
                                             }
                                         }
                                         .check_products_cntent{
                                             ul{
-                                                // margin-bottom: 500px;
                                                 display: flex;
-                                                // margin-left: 0px;
                                                 padding-left: 0px;
-                                                // text-decoration: none;
                                                 list-style: none;
-                                                padding:20px  8px;
+                                                padding:0px  8px;
                                                 border-bottom: 1px solid gainsboro;
                                                 margin: 0px;
                                                 
