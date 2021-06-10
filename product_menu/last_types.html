@@ -7,6 +7,8 @@
     <title>第三階產品分類</title>
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
     <nav>
@@ -30,22 +32,114 @@
     <main>
        
         <div class="toast" id="home">所有類別 > 文創商品 >   創意便條紙  >   2D便條紙</div>
+        <div class="content">
+            <div class="last_types">
+                <div class="type_mask"></div>
+    
+                <!-- 型錄分類 -->
+                <div class="all_types">
+    
+                    <div class="all_type">
+    
+                        <a class="type" href="#product_01">黑貓</a>
+    
+                        <a class="type" href="#product_02">白貓</a>
+    
+                        <a class="type" href="#product_03">茄子</a>
 
-        <section class="types last_type">
-            <a href="./product.html" class="type" style="text-decoration: none;">
-                <span class="typebtn">黑貓</span>
-            </a>
+                        <a class="type" href="#product_01">黑貓</a>
+    
+                        <a class="type" href="#product_02">白貓</a>
+    
+    
+                    </div>
+                </div>
 
-            <a href="" class="type" style="text-decoration: none;">     
-                <span class="typebtn">白貓</span>
-            </a>
+                         <!-- 產品說明範例 -->
+ <div class="product" >
+    <div class="swiper-container mySwiper pic" >
+        <div class="swiper-wrapper " >
+            <!-- 產品圖片1 -->
+            <!-- <div class="swiper-slide"> 
+                <img src="" alt="">
+            </div> -->
 
-            <a href="" class="type" style="text-decoration: none;">
-                <span class="typebtn">茄子</span>
-            </a>
-             
-        </section>
+            <!-- 產品圖片2 -->
+            <!-- <div class="swiper-slide"> 
+                <img src="" alt="">
+            </div> -->
+
+            <!-- 其他照片以此類推 -->
+
+            <div class="swiper-slide"> 
+                <img src="http://www.papergoods.com.tw/ds/ProductDefine/001-%E6%96%87%E5%89%B5%E7%B4%99%E5%93%81/001-2D%E4%BE%BF%E6%A2%9D%E7%B4%99/001-P01ABCA/M.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide"> 
+                <img src="http://www.papergoods.com.tw/ds/ProductDefine/001-%E6%96%87%E5%89%B5%E7%B4%99%E5%93%81/001-2D%E4%BE%BF%E6%A2%9D%E7%B4%99/001-P01ABCA/1.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide"> 
+                <img src="http://www.papergoods.com.tw/ds/ProductDefine/001-%E6%96%87%E5%89%B5%E7%B4%99%E5%93%81/001-2D%E4%BE%BF%E6%A2%9D%E7%B4%99/001-P01ABCA/2.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide"> 
+                <img src="http://www.papergoods.com.tw/ds/ProductDefine/001-%E6%96%87%E5%89%B5%E7%B4%99%E5%93%81/001-2D%E4%BE%BF%E6%A2%9D%E7%B4%99/001-P01ABCA/3.jpg" alt="">
+            </div>      
+               
+        </div>
+      
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="product_content">
+        <div class="texts">
+            <!-- 產品名稱欄位 -->
+            <div class="name text">2D便條紙 - 黑貓系列2D便條紙 - 黑貓系列</div> 
+            <!-- 產品編號欄位 -->
+            <div class="numbering text">編號：123456789</div>
+         </div>
+
+        <ul>
+            <li>規格：</li>
+            <li>品名：2D便條紙 - 黑貓系列</li>
+            <li>材質：美術紙</li>
+            <li>尺寸：8 x 7 cm</li>
+            <li>張數：40張</li>
+            <li>包裝：底板+OPP袋 </li>
+        </ul>
+        <!-- <div class="download_btn">樣本檔下載<i class="fas fa-file-download"></i></div> -->
+      </div>
+
+   
+</div>
+
+       
+        
+
+       
     </main>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+           slidesPerView:1,
+           spaceBetween:10,
+           loop: true,
+           pagination: {
+           el: ".swiper-pagination",
+           clickable: true,
+           },
+           navigation: {
+               nextEl: ".swiper-button-next",
+               prevEl: ".swiper-button-prev",
+           },
+       });
+    </script>
+
+
+ 
     
 </body>
 </html>
