@@ -1,9 +1,6 @@
 body {
   margin: 0px;
   padding: 0px;
-  width: 1920px;
-  height: 2000px;
-  position: relative;
 }
 
 * {
@@ -27,6 +24,7 @@ nav {
   background-color: transparent;
   padding: 20px 0px;
   background-color: rgba(255, 255, 255, 0.795);
+  overflow-x: hidden;
 }
 
 nav .nav {
@@ -114,14 +112,8 @@ nav .nav .home_btn {
   margin-left: auto;
 }
 
-.mask {
-  width: 1600px;
-  margin: auto;
-  -webkit-transform: translateY(73px);
-          transform: translateY(73px);
-}
-
 .toast {
+  max-width: 1920px;
   width: 1600px;
   margin: auto;
   font-size: 14px;
@@ -138,9 +130,21 @@ main {
   max-width: 1920px;
   width: 100%;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .types {
+  max-width: 1600px;
   width: 1600px;
   display: -webkit-box;
   display: -ms-flexbox;

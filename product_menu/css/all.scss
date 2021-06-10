@@ -1,9 +1,6 @@
 body{
-    margin: 0px;
+    margin: 0px ;
     padding: 0px;
-    width: 1920px;
-    height: 2000px;
-    position: relative;
 }
 
 *{
@@ -12,6 +9,7 @@ body{
 
 // 反回上一頁按鈕
 nav{
+
     width: 100%;
     display: flex;
     margin: auto;
@@ -23,6 +21,7 @@ nav{
 
     padding: 20px 0px;
     background-color: rgba(255, 255, 255, 0.795);
+    overflow-x: hidden;
     .nav{
         display: flex;
         width: 1600px;
@@ -89,15 +88,12 @@ nav{
    
   
 }
-.mask{
-    width: 1600px;
-    // height: 73px;
-    margin: auto;
-    transform: translateY(73px);
-}
+
 
 // 麵包屑
 .toast{
+    max-width: 1920px;
+
     width: 1600px;
     margin: auto;
     font-size: 14px;
@@ -108,14 +104,25 @@ nav{
     padding-left: 8px;
     border-bottom: 1px solid gainsboro;
     color: gray;
+    // background-color: blue;
+
 }
 main{
+  
     max-width: 1920px;
     width: 100%;
     position: relative;
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    
+   
 
     // 階層樣式
     .types{
+        max-width: 1600px;
         width: 1600px;
         display: flex;
         flex-wrap: wrap;
