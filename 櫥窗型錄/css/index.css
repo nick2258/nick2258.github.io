@@ -28,22 +28,22 @@ main .container {
   height: 3000px;
 }
 
-main .container .types {
+main .container .last_types {
   width: 300px;
 }
 
-main .container .types .all_types {
+main .container .last_types .all_types {
   width: 300px;
   position: -webkit-sticky;
   position: sticky;
   top: 30px;
 }
 
-main .container .types .all_types .search {
+main .container .last_types .all_types .search {
   position: relative;
 }
 
-main .container .types .all_types .search input {
+main .container .last_types .all_types .search input {
   width: 300px;
   height: 40px;
   outline: none;
@@ -57,7 +57,7 @@ main .container .types .all_types .search input {
   margin-bottom: 15px;
 }
 
-main .container .types .all_types .search .fa-search {
+main .container .last_types .all_types .search .fa-search {
   font-size: 18px;
   position: absolute;
   top: 50%;
@@ -66,19 +66,19 @@ main .container .types .all_types .search .fa-search {
   right: 15px;
 }
 
-main .container .types .all_types .all_type {
+main .container .last_types .all_types .all_type {
   width: 100%;
   height: 400px;
 }
 
-main .container .types .all_types .all_type a {
+main .container .last_types .all_types .all_type a {
   display: block;
   text-decoration: none;
   color: #2e2d2d;
   color: #1D2731;
 }
 
-main .container .types .all_types .all_type .type {
+main .container .last_types .all_types .all_type .type {
   font-size: 16px;
   padding: 8px 16px;
   padding-right: 8px;
