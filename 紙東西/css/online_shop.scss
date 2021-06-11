@@ -1,3 +1,7 @@
+body{
+    background-image: url(/img/背景.png);
+}
+
 nav{
     // background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
     background-color: rgb(231, 242, 250);
@@ -112,8 +116,9 @@ nav{
 }
 
 main{
+    // banner長寬993/436
     .swiper-container {
-        width: 1000px;
+        width: 993px;
         margin:30px auto;
         // margin-bottom: 100px;
         height: 100%;
@@ -122,7 +127,7 @@ main{
     
             .swiper-slide{
                 width:100% ;
-                height: 480px;
+                height: 436px;
                 img{
                     width: 100%;
                     height: 100%;
@@ -164,6 +169,125 @@ main{
         }
         .swiper-pagination{
             color: brown;
+        }
+    }
+    .product_information{
+        width: 1000px;
+        margin: auto;
+        padding: 0px 8px;
+        .selects{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            select{
+                width: 220px;
+                height: 40px;
+                border-radius: 30px;
+                padding-left: 16px;
+                font-size: 16px;
+                font-weight: 600;
+                color: gray;
+                outline: none;
+                border: 1px solid rgb(199, 198, 198);
+                background-image: url(/img/背景.png);
+            }
+        }
+        
+        .products{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            height: max-content;
+            a{
+                color: black;
+            }
+            .product_card{
+               width: calc(33.33% - 13.333px);
+            //    height: 200px;
+               margin-right: 20px;
+               padding-bottom: 30px;
+            //    background-color: blanchedalmond;
+            &:nth-child(3n){
+                margin-right: 0px;
+            }
+               .product_pic{
+                   width: 100%;
+                   position: relative;
+                   border-radius: 5px;
+                //    background-color: gold;
+                //    border: px solid gainsboro;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+                   &:hover{
+                       .product_btn{
+                           display: block;
+                           opacity: 1;
+                           transition: .6s  ;
+                       }
+                   }
+                   img{
+                       display: block;
+                       width: 100%;
+                    //    width: 314.5px;
+                       height: 236px;
+                       border-radius: 5px;
+
+                       z-index: 1;
+                   }
+                   .product_btn{
+                        display: none;
+                        opacity: 0;
+                        font-size: 16px;
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                        width: 100%;
+                    //    background-color: brown;
+                        text-align: center;
+                        padding: 3px 8px;
+                        position: absolute;
+                        bottom: 0px;
+                        // transform: translateY(-100%);
+
+                        color: white;
+                        // border: 2px solid orange;
+                    //    background-color: rgba(255, 255, 255, 0.63);
+                        background-color: rgba(0, 0, 0, 0.486);
+                        border-radius: 5px;
+                        &:hover{
+                            transition: .4s;
+                            background-color: rgba(255, 166, 0, 0.8);
+                            // background-color: rgba(255, 255, 255, 0.699);
+
+                        }
+                }
+                //    .mask{
+                //        width: 100%;
+                //        height: 100%;
+                //        background-color: rgba(0, 0, 0, 0.322);
+                //        position: absolute;
+                //        top: 0px;
+                //    }
+               }
+               .product_content{
+                //    position: relative;
+                   padding-top: 10px;
+                   .product_text{
+                        font-size: 16px;
+                        font-weight: 600;
+                        text-align: center;
+                        padding-top: 3px;
+                        letter-spacing: 1.5px;
+                   }
+                   .product_name{
+                        color: #7e8083;
+                   }
+                   .product_price{
+                       color: #DF744A;
+                   }
+                  
+               }
+
+
+            }
         }
     }
 }
