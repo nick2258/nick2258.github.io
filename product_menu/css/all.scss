@@ -173,21 +173,21 @@ nav{
     @media all and (max-width: 1500px) {
         padding: 15px 30px;  
     }
-    @media all and (max-width: 860px) {
-        padding: 15px 6vw;  
+    @media all and (max-width: 800px) {
+        padding: 15px 8px;  
     }
-    @media all and (max-width: 768px) {
-        padding: 15px 10vw;  
-    }
-    @media all and (max-width: 500px) {
-        padding: 10px 3vw;  
-    }
-    @media all and (max-width: 420px) {
-        padding: 10px 2vw;  
-    }
-    @media all and (max-width: 380px) {
-        padding: 10px 10vw;  
-    }
+    // @media all and (max-width: 768px) {
+    //     padding: 15px 3vw;  
+    // }
+    // @media all and (max-width: 500px) {
+    //     padding: 10px 3vw;  
+    // }
+    // @media all and (max-width: 420px) {
+    //     padding: 10px 2vw;  
+    // }
+    // @media all and (max-width: 380px) {
+    //     padding: 10px 10vw;  
+    // }
     
 
 }
@@ -210,22 +210,25 @@ main{
     @media all and (max-width: 1500px) {
         padding: 0px 30px;  
     }
-    @media all and (max-width: 860px) {
-        padding: 0px 6vw;  
+    @media all and (max-width: 800px) {
+        padding: 15px 8px;  
     }
-    @media all and (max-width: 768px) {
-        padding: 0px 8vw;  
-    }
+    // @media all and (max-width: 860px) {
+    //     padding: 0px 6vw;  
+    // }
+    // @media all and (max-width: 768px) {
+    //     padding: 0px 8vw;  
+    // }
    
-    @media all and (max-width: 500px) {
-        padding: 0px 3vw;  
-    }
-    @media all and (max-width: 420px) {
-        padding: 0px 2vw;  
-    }
-    @media all and (max-width: 380px) {
-        padding: 0px 10vw;  
-    }
+    // @media all and (max-width: 500px) {
+    //     padding: 0px 3vw;  
+    // }
+    // @media all and (max-width: 420px) {
+    //     padding: 0px 2vw;  
+    // }
+    // @media all and (max-width: 380px) {
+    //     padding: 0px 10vw;  
+    // }
   
     
    
@@ -410,17 +413,44 @@ main{
         padding: 0px 16px;
         padding-top: 20px;
         margin: auto;
-        // position: relative;
-        // position: absolute;
-        // top: 50px;
-        // left: 50%;
-        // transform: translateX(-50%);
-        // position: sticky;
+        display: flex;
+        @media all and (max-width: 1700px) {
+            max-width: 100%;
+            width: 100%;
+            padding: 15px 8px;  
+        }
+        @media all and (max-width: 860px) {
+            width: 100vw;
+            padding: 15px 0px;
+            justify-content: space-between; 
+        }
+        @media all and (max-width: 800px) {
+            padding: 15px 16px;  
+        }
+        @media all and (max-width: 767px) {
+           flex-direction: column;
+        }
+        // @media all and (max-width: 860px) {
+        //     padding: 15px 6vw;  
+        // }
+        // @media all and (max-width: 768px) {
+        //     padding: 15px 10vw;  
+        // }
+        // @media all and (max-width: 500px) {
+        //     padding: 10px 3vw;  
+        // }
+        // @media all and (max-width: 420px) {
+        //     padding: 10px 2vw;  
+        // }
+        // @media all and (max-width: 380px) {
+        //     padding: 10px 10vw;  
+        // }
+        
 
         .last_types{
             width: max-content;
-            display: flex;
-            position: relative;
+            // display: flex;
+            // position: relative;
             // width: 1600px;
             // margin: auto;
             // margin-top: 30px;
@@ -435,8 +465,19 @@ main{
                 // max-height: 300px;
                 // background-color: burlywood;
                 position: relative;
-                // overflow-y: scroll;
-                // top: 30px;
+                @media all and (max-width: 1280px) {
+                    width: 250px;
+                }
+                @media all and (max-width: 1000px) {
+                    width: 200px;
+                }
+                @media all and (max-width: 767px) {
+                    width: 150px;
+                }
+                @media all and (max-width: 767px) {
+                    width: 100vw;
+                }
+                
                 // .search{
                 //     position: relative;
                 //     input{
@@ -469,6 +510,9 @@ main{
                     max-height: 200px;
                     max-height: 60vh;
                     overflow-y: scroll;
+                    @media all and (max-width: 767px) {
+                        max-height: 80px;
+                    }
                     a{
                         display: block;
                         text-decoration: none;
@@ -478,7 +522,7 @@ main{
                         
                     }
                     .type{
-                        font-size: 16px;
+                        font-size: 18px;
                         padding: 8px 16px;
                         padding-right: 8px;
                         text-align: left;
@@ -488,6 +532,9 @@ main{
                         border: 1px solid ghostwhite;
                         border-radius: 5px;
                         margin-bottom: 5px;
+                        @media all and (max-width: 767px) {
+                            font-size: 16px;
+                        }
                     }
                 }
                 /* width */
@@ -520,20 +567,52 @@ main{
         position: relative;
         // margin: auto;
         // padding-top: 15px;
-        padding-bottom: 60px;
+        // padding-bottom: 60px;
         display: flex;
 
         // width: 60vw;
-
-        &:nth-child(3n){
-            margin-right: 0px;
+        @media all and (max-width: 1600px) {
+             width: 100%;
         }
+        @media all and (max-width: 1250px) {
+            // padding: 15px 30px;  
+            display: flex;
+            flex-direction: column;
+        }
+        @media all and (max-width: 860px) {
+            // padding: 15px 30px;  
+            padding-left: 30px;
+        }
+
+       
         .swiper-container {
             width: 100%; 
             width: 500px; 
-            height: max-content;   
+            height: max-content;
+            margin: 0px 45px;
+            margin-left: 60px;
+  
+            @media all and (max-width: 1400px) {
+                width: 500px;  
+                // margin: 0px 30px;
+            }
+            @media all and (max-width: 1250px) {
+                // padding: 15px 30px; 
+                width: 50vw; 
+                margin: auto;
+            }
+            @media all and (max-width: 1000px) {
+                // padding: 15px 30px; 
+                width: 55vw; 
+                margin: auto;
+            }
+            
+        
             .swiper-wrapper{
                 width: 90%;
+                @media all and (max-width: 1400px) {
+                    width: 100%;  
+                }
                 // height: max-content;
                 .swiper-slide{
                     width:100% ;
@@ -564,40 +643,64 @@ main{
             } 
         }
         // 產品文字
-        .texts{
-            // width: calc(100% - 500px);
+        .product_content{
             width: 700px;
-            padding: 0px 8px;
-            padding-top: 15px;
-            .text{
-                font-size: 20px;
-                font-weight: 600;
-                letter-spacing: 1.5px;
-                padding-bottom: 5px;
-            }  
-        }
-        // 產品規格
-        ul{
-            margin: 0px;
-            padding: 0px;
-            // list-style: none;
-            padding-left: 8px;
-            li{
-                font-size: 16px;
-                padding-bottom: 10px;
-                // padding-left: 16px;
-                transform: translateX(20px);
-                &:nth-child(1){
-                    transform: translateX(0px);
-                    padding-left:0px ;
-                    list-style: none;
+            @media all and (max-width: 1250px) {
+                // padding: 15px 30px; 
+                width: 50vw; 
+                margin: auto;
+                padding: 0px 8px;
+            }
+            @media all and (max-width: 1000px) {
+                // padding: 15px 30px; 
+                width: 55vw; 
+                margin: auto;
+            }
+            .texts{
+                // width: calc(100% - 500px);
+                // width: 700px;
+                // padding: 0px 8px;
+                padding-top: 15px;
+            
+                .text{
                     font-size: 20px;
                     font-weight: 600;
                     letter-spacing: 1.5px;
-                    padding-bottom: 10px;                    
+                    padding-bottom: 5px;
+                    @media all and (max-width: 860px) {
+                        font-size: 18px;
+                    }
+                }  
+            }
+            // 產品規格
+            ul{
+                margin: 0px;
+                padding: 0px;
+                // list-style: none;
+                // padding-left: 8px;
+              
+                li{
+                    font-size: 16px;
+                    padding-bottom: 10px;
+                    // padding-left: 16px;
+                    transform: translateX(20px);
+                
+                    &:nth-child(1){
+                        transform: translateX(0px);
+                        padding-left:0px ;
+                        list-style: none;
+                        font-size: 20px;
+                        font-weight: 600;
+                        letter-spacing: 1.5px;
+                        padding-bottom: 10px;      
+                        @media all and (max-width: 860px) {
+                            font-size: 18px;
+                        }              
+                    }
                 }
             }
         }
+     
         // 下載按鈕
         .download_btn{
             position: absolute;
