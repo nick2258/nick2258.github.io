@@ -1,0 +1,738 @@
+body{
+    margin: 0px ;
+    padding: 0px;
+    height: 3000px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+// 反回上一頁按鈕
+nav{
+
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    background-color: transparent;
+
+    padding: 20px 0px;
+    background-color: rgba(255, 255, 255, 0.795);
+    overflow-x: hidden;
+    @media all and (max-width: 800px) {
+        width: 100%;
+        // padding: 0px 50px;
+        // padding-bottom: 40px;
+        padding-top: 60px;
+    }
+    .nav{
+        display: flex;
+        width: 1600px;
+        height: max-content;
+        @media all and (max-width: 1700px) {
+            width: 100%;
+            padding: 0px 50px;
+        }
+        @media all and (max-width: 800px) {
+            width: 100%;
+            padding: 0px 20px;
+        }
+       
+        
+        .title{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 64px;
+            font-weight: 600;
+            letter-spacing: 5px;
+            font-family:-apple-system;
+            color: rgb(64, 85, 110);
+            @media all and (max-width: 1700px) {
+                font-size:52px;
+            }
+            @media all and (max-width: 800px) {
+               top: 25%;
+               font-size: 48px;
+            }
+            @media all and (max-width: 600px) {
+                top: 25%;
+                font-size: 42px;
+             }
+        }
+        a{
+            width: max-content;
+            display: block;
+            .btn{
+                color: #1D2731;
+                -webkit-box-shadow: 5px 5px 10px  #595b5e60;
+                background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);  
+                outline: none;
+                background-color: gainsboro;
+                padding: 8px 25px;
+                border-radius: 3px;
+                font-size: 20px;
+                font-weight: 600;
+                letter-spacing: 1.5px;
+                @media all and (max-width: 1700px) {
+                    -webkit-box-shadow: 3px 3px 8px  #595b5e60;
+                    padding: 6px 20px;
+                    font-size: 18px;
+                }
+                @media all and (max-width: 100px) {
+                    -webkit-box-shadow: 3px 3px 8px  #595b5e60;
+                    padding: 6px 20px;
+                    font-size: 16px;
+                }
+                @media all and (max-width: 800px) {
+                    font-size: 16px; 
+                    padding: 5px 15px;
+   
+                }
+                @media all and (max-width: 400px) {
+                    font-size: 14px; 
+                    padding: 5px 12px;
+   
+                }
+                &:hover{
+                    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+                    color: orange;  
+                    color: white;
+                    transition: .6s;
+                    .fa-angle-double-left{
+                        transform: translateX(-8px);
+                        transition: .2s;
+                        @media all and (max-width: 1700px) {
+                            transform: translateX(-6px);
+                        }
+                    }
+                    .fa-angle-double-up{
+                        transform: translatey(-2px);
+                        font-size: 20px;
+                        transition: .2s;
+                    }
+                }
+                .fa-angle-double-left{
+                    font-size: 22px;
+                    margin-right: 5px;
+                    @media all and (max-width: 1700px) {
+                        font-size: 18px;    
+                    }
+                   
+                }
+                .fa-angle-double-up{
+                    font-size: 22px;
+                    margin-left: 5px;
+                    @media all and (max-width: 1700px) {
+                        font-size: 18px;    
+                    }
+                }
+            }
+        }
+        .back_btn{
+            margin-right: auto;
+            // @media all and (max-width: 800px) {
+            //     padding-left: 5vw;
+            // }
+        }
+        .home_btn{
+            margin-left: auto;
+        }
+    }
+   
+   
+  
+}
+
+
+// 麵包屑
+.toast{
+    max-width: 1920px;
+
+    width: 1600px;
+    margin: auto;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    border-bottom: 1px solid gainsboro;
+    color: gray;
+    // background-color: blue;
+    @media all and (max-width: 1700px) {
+        max-width: 100%;
+        width: calc(100% - 32px);
+        padding: 15px 16px;  
+    }
+    @media all and (max-width: 1500px) {
+        padding: 15px 30px;  
+    }
+    @media all and (max-width: 800px) {
+        padding: 15px 8px;  
+    }
+    // @media all and (max-width: 768px) {
+    //     padding: 15px 3vw;  
+    // }
+    // @media all and (max-width: 500px) {
+    //     padding: 10px 3vw;  
+    // }
+    // @media all and (max-width: 420px) {
+    //     padding: 10px 2vw;  
+    // }
+    // @media all and (max-width: 380px) {
+    //     padding: 10px 10vw;  
+    // }
+    
+
+}
+main{
+  
+    max-width: 1920px;
+    width: 100%;
+    position: relative;
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    @media all and (max-width: 1700px) {
+        max-width: 100%;
+        // width: calc(100% - 32px);
+        width: 100%;
+        padding: 0px 16px;  
+    }
+    @media all and (max-width: 1500px) {
+        padding: 0px 30px;  
+    }
+    @media all and (max-width: 800px) {
+        padding: 15px 8px;  
+    }
+    // @media all and (max-width: 860px) {
+    //     padding: 0px 6vw;  
+    // }
+    // @media all and (max-width: 768px) {
+    //     padding: 0px 8vw;  
+    // }
+   
+    // @media all and (max-width: 500px) {
+    //     padding: 0px 3vw;  
+    // }
+    // @media all and (max-width: 420px) {
+    //     padding: 0px 2vw;  
+    // }
+    // @media all and (max-width: 380px) {
+    //     padding: 0px 10vw;  
+    // }
+  
+    
+   
+
+    // 階層樣式
+    .types{
+        max-width: 1600px;
+        width: 1600px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 15px;
+        margin: auto;
+        a{
+            color: #1D2731;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+           
+            display: block;
+        
+          
+        }
+        .type {
+            width: calc(16.6666% - 16.666px);
+            height: 120px;
+            line-height: 30px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+           
+            -webkit-box-shadow: 5px 5px 8px  #595b5e60;
+            border-radius: 30px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            position: relative;
+            overflow: hidden;
+            padding: 0px 20px;
+            &:hover{
+                background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+                color: rgb(64, 85, 110);
+                transition: .3s;
+                font-size: 22px;
+                padding: 0px 18px;
+            }
+            &:nth-child(6n){
+                margin-right: 0px;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                opacity: 0;
+                z-index: -1;
+                left: 50%;
+                right: 50%;
+                bottom: 0;
+                background: #2980b9;
+                background-color: #3a5072ce;
+                height: 10px;
+                -webkit-transition-property: left right;
+                transition-property: left right;
+                -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+                -webkit-transition-timing-function: ease-out;
+                transition-timing-function: ease-out;
+            }
+            &:hover:before {
+                // background-color: white;
+                background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+                background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+                
+                opacity: 1;
+                left: 0;
+                right: 0;
+            }
+            @media all and (max-width: 1500px) {
+                padding: 0px 15px;
+                width: calc(20% - 16px);  
+                &:nth-child(6n){
+                    margin-right: 20px;
+                }
+                &:nth-child(5n){
+                    margin-right: 0px;
+                }
+            }
+            @media all and (max-width: 1280px) {
+                // padding: 0px 15px;
+                width: calc(25% - 20px);  
+                &:nth-child(5n){
+                    margin-right: 20px;
+                }
+                &:nth-child(4n){
+                    margin-right: 0px;
+                }
+            }
+            @media all and (max-width: 1080px) {
+                padding: 0px 30px;
+                font-size: 20px;
+                width: calc(33.33% - 13.333px);  
+                // font-size: 18px;
+                &:nth-child(4n){
+                    margin-right: 20px;
+                }
+                &:nth-child(3n){
+                    margin-right: 0px;
+                }
+            }
+            @media all and (max-width: 860px) {
+                // padding: 0px 15px;
+                width: calc(50% - 15px);  
+                &:nth-child(3n){
+                    margin-right: 20px;
+                }
+                &:nth-child(2n){
+                    margin-right: 0px;
+                }
+            }
+            @media all and (max-width: 860px) {
+                // padding: 0px 15px;
+                font-size: 18px; 
+               
+            }
+            @media all and (max-width: 650px) {
+                padding: 0px 15px;
+                width: calc(50% - 10px);  
+            }
+            @media all and (max-width: 540px) {
+                // padding: 0px 15px;
+                width: calc(50% - 10px);  
+                font-size: 16px;
+                height: 100px;
+            }
+            // @media all and (max-width: 420px) {
+            //     // padding: 0px 15px;
+            //     width: calc(50% - 10px);  
+            //     // width: 90%;
+            //     margin: auto;
+            //     margin-bottom: 20px;
+            //     font-size: 15px;
+            //     margin-right: 20px;
+            //     &:nth-child(3n){
+            //         margin-right: 0px;
+            //     }
+               
+            // }
+            @media all and (max-width: 380px) {
+                // padding: 0px 15px;
+                width: calc(50% - 10px);  
+                width: 100%;
+                margin:0px  auto;
+                margin-bottom: 20px;
+                font-size: 15px;
+                height: 80px;
+                // margin-right: 20px;
+                &:nth-child(3n){
+                    margin-right: 0px ;
+                }
+                &:nth-child(2n){
+                    margin-right: 0px ;
+                }
+                &:nth-child(5n){
+                    margin-right: 0px ;
+                }
+               
+            }
+            
+            .typebtn{
+               
+                align-items: center;
+            } 
+        }
+    }
+    .content{
+        width: 1600px;
+        padding: 0px 16px;
+        padding-top: 20px;
+        margin: auto;
+        display: flex;
+        @media all and (max-width: 1700px) {
+            max-width: 100%;
+            width: 100%;
+            padding: 15px 8px;  
+        }
+        @media all and (max-width: 860px) {
+            width: 100vw;
+            padding: 15px 0px;
+            justify-content: space-between; 
+        }
+        @media all and (max-width: 800px) {
+            padding: 15px 16px;  
+        }
+        @media all and (max-width: 767px) {
+           flex-direction: column;
+        }
+        // @media all and (max-width: 860px) {
+        //     padding: 15px 6vw;  
+        // }
+        // @media all and (max-width: 768px) {
+        //     padding: 15px 10vw;  
+        // }
+        // @media all and (max-width: 500px) {
+        //     padding: 10px 3vw;  
+        // }
+        // @media all and (max-width: 420px) {
+        //     padding: 10px 2vw;  
+        // }
+        // @media all and (max-width: 380px) {
+        //     padding: 10px 10vw;  
+        // }
+        
+
+        .last_types{
+            width: max-content;
+            // display: flex;
+            // position: relative;
+            // width: 1600px;
+            // margin: auto;
+            // margin-top: 30px;
+            // .type_mask{
+            //     width: 100%;
+            //     height: 200px;
+            //     background-color: brown;
+            // }
+            .all_types{
+                width: 300px;
+                // height: max-content;
+                // max-height: 300px;
+                // background-color: burlywood;
+                position: relative;
+                @media all and (max-width: 1280px) {
+                    width: 250px;
+                }
+                @media all and (max-width: 1000px) {
+                    width: 200px;
+                }
+                @media all and (max-width: 767px) {
+                    width: 150px;
+                }
+                @media all and (max-width: 767px) {
+                    width: 100vw;
+                }
+                
+                // .search{
+                //     position: relative;
+                //     input{
+                //         width: 300px;
+                //         height: 40px;
+                //         outline: none;
+                //         border: 1px solid gainsboro;
+                //         border-radius: 30px;
+                //         font-size: 16px;
+                //         font-weight: 600;
+                //         letter-spacing: 1.5px;
+                //         padding-left:16px;
+                //         color: gray;
+                //         margin-bottom: 15px;
+                //     }
+                //     .fa-search{
+                //         font-size: 18px;
+                //         position: absolute;
+                //         top: 50%;
+                //         transform: translateY(-100%);
+                //         right: 15px;
+                //     }
+                // }
+                .all_type{
+                    width: 100%;
+                    // position: sticky;
+                    // height: 400px;
+                    // background-color: blue;
+                    height: max-content;
+                    max-height: 200px;
+                    max-height: 60vh;
+                    overflow-y: scroll;
+                    @media all and (max-width: 767px) {
+                        max-height: 80px;
+                    }
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        color: rgb(46, 45, 45);
+                        color: #1D2731;
+                        // color: #806920;
+                        
+                    }
+                    .type{
+                        font-size: 18px;
+                        padding: 8px 16px;
+                        padding-right: 8px;
+                        text-align: left;
+                        letter-spacing: 1.5px;
+                        font-weight: 600;
+                        background-color: #b2cee0;
+                        border: 1px solid ghostwhite;
+                        border-radius: 5px;
+                        margin-bottom: 5px;
+                        @media all and (max-width: 767px) {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                /* width */
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 10px;
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #D5D5D5; 
+            border-radius: 10px;
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #A9B7C0; 
+        }
+            
+            }
+        }
+    // 產品詳細頁  
+    .product{
+        width: 1300px;
+        position: relative;
+        // margin: auto;
+        // padding-top: 15px;
+        // padding-bottom: 60px;
+        display: flex;
+
+        // width: 60vw;
+        @media all and (max-width: 1600px) {
+             width: 100%;
+        }
+        @media all and (max-width: 1250px) {
+            // padding: 15px 30px;  
+            display: flex;
+            flex-direction: column;
+        }
+        @media all and (max-width: 860px) {
+            // padding: 15px 30px;  
+            padding-left: 30px;
+        }
+
+       
+        .swiper-container {
+            width: 100%; 
+            width: 500px; 
+            height: max-content;
+            margin: 0px 45px;
+            margin-left: 60px;
+  
+            @media all and (max-width: 1400px) {
+                width: 500px;  
+                // margin: 0px 30px;
+            }
+            @media all and (max-width: 1250px) {
+                // padding: 15px 30px; 
+                width: 50vw; 
+                margin: auto;
+            }
+            @media all and (max-width: 1000px) {
+                // padding: 15px 30px; 
+                width: 55vw; 
+                margin: auto;
+            }
+            
+        
+            .swiper-wrapper{
+                width: 90%;
+                @media all and (max-width: 1400px) {
+                    width: 100%;  
+                }
+                // height: max-content;
+                .swiper-slide{
+                    width:100% ;
+                    // height: max-content;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        height: auto;
+                        display: block;
+                        border-radius: 5px;
+                        // height: 30vw;
+                    }
+                }
+            }
+            .swiper-pagination{
+                font-size: 15px;
+                font-weight: 600;
+            }
+            .swiper-pagination-bullet{
+                background-color: rgb(36, 49, 71);
+            }
+            .swiper-pagination-bullet-active{
+                background-color: white;
+            }
+            .color{
+                color: rgb(255, 255, 255);
+                background-color: white;
+            } 
+        }
+        // 產品文字
+        .product_content{
+            width: 700px;
+            @media all and (max-width: 1250px) {
+                // padding: 15px 30px; 
+                width: 50vw; 
+                margin: auto;
+                padding: 0px 8px;
+            }
+            @media all and (max-width: 1000px) {
+                // padding: 15px 30px; 
+                width: 55vw; 
+                margin: auto;
+            }
+            .texts{
+                // width: calc(100% - 500px);
+                // width: 700px;
+                // padding: 0px 8px;
+                padding-top: 15px;
+            
+                .text{
+                    font-size: 20px;
+                    font-weight: 600;
+                    letter-spacing: 1.5px;
+                    padding-bottom: 5px;
+                    @media all and (max-width: 860px) {
+                        font-size: 18px;
+                    }
+                }  
+            }
+            // 產品規格
+            ul{
+                margin: 0px;
+                padding: 0px;
+                // list-style: none;
+                // padding-left: 8px;
+              
+                li{
+                    font-size: 16px;
+                    padding-bottom: 10px;
+                    // padding-left: 16px;
+                    transform: translateX(20px);
+                
+                    &:nth-child(1){
+                        transform: translateX(0px);
+                        padding-left:0px ;
+                        list-style: none;
+                        font-size: 20px;
+                        font-weight: 600;
+                        letter-spacing: 1.5px;
+                        padding-bottom: 10px;      
+                        @media all and (max-width: 860px) {
+                            font-size: 18px;
+                        }              
+                    }
+                }
+            }
+        }
+     
+        // 下載按鈕
+        .download_btn{
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            padding: 10px 30px;
+            border-radius: 5px;
+            background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); 
+            -webkit-box-shadow: 5px 5px 10px  #595b5e60;
+            &:hover{
+                background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+                color: orange;  
+                color: white;
+                transition: .6s;
+                .fa-file-download{
+                    font-size: 22px;
+                }
+            }
+            .fa-file-download{
+                font-size: 20px;
+                margin-left: 12px;
+            }
+        } 
+    }
+   
+    }
+  
+   
+
+   
+}

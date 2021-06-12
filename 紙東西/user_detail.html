@@ -12,6 +12,7 @@
 </head>
 <body>
     <!-- <h3>Fade in Tabs</h3> -->
+    <div class="mask" id="mask"></div>
     <main>
         <div class="tab">
             <button class="tablinks" onclick="openCity(event, 'Userinformation')" id="defaultOpen">個人資料</button>
@@ -569,8 +570,10 @@
                                     <th>日期</th>
                                     <th>付款方式</th>
                                     <th>訂單狀態</th>
-                                    <!-- <th>退貨</th> -->
+                                    <th>詳細資訊</th>
                                 </tr>
+
+
                                 <tr>
                                     <td>1</td>
                                     <td>12345678910</td>
@@ -578,7 +581,7 @@
                                     <td>109/3/22</td>
                                     <td>未付款</td>
                                     <td>出貨中</td>
-                                    <!-- <td>無</td> -->
+                                    <td class="check_order_information">查看明細</td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -587,7 +590,7 @@
                                     <td>109/3/10</td>
                                     <td>已付款</td>
                                     <td>已送達</td>
-                                    <!-- <td>無</td> -->
+                                    <td class="check_order_information">查看明細</td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
@@ -596,9 +599,281 @@
                                     <td>109/2/10</td>
                                     <td>未付款</td>
                                     <td>已送捯</td>
-                                    <!-- <td>已退貨</td> -->
+                                    <td class="check_order_information">查看明細</td>
                                 </tr>
+                                
                             </table>
+
+                            <div class="order_information_details">
+                                <!-- 訂單資訊 -->
+                                <div class="order_detail">
+                                    <div class="close_btn">x</div>
+
+                                    <div class="title">詳細訂單資訊</div>
+                                    <div class="order_content">
+
+                                        <div class="small_titles">
+                                            <div class="small_title">訂單資訊
+                                            </div>
+                                            <div class="small_txts">
+                                                <div class="small_text">訂單編號： 12345678910
+                                                </div>
+                                                <div class="small_text">訂單日期： 2020-06-08
+                                                </div>
+                                                <div class="small_text">訂單狀態： 訂單成立
+                                                </div>
+                                            </div>  
+                                        </div>
+
+                                        <div class="all_checkout_information">
+                                            <div class="check_products">
+                                 
+                                                <div class="title">購物明細</div>
+                                            </div>
+                             
+                             
+                                            <div class="check_products_cntent">
+                                                <ul>
+                                                    <li>商品</li>
+                                                    <li>數量</li>
+                                                    <li>單價</li>
+                                                    <li>小計</li>
+                                                </ul>
+                                
+                                             
+                                                <ul>
+                                                    <li>
+                                                        <div class="product_name texts">
+                                                            <div class="pic">
+                                                                <img src="https://i.picsum.photos/id/72/150/150.jpg?hmac=88NNYoUrPKBRE7CbkRKkXumt03IOma2wCZii6DX7jec" alt="">
+                                                            </div>
+                                                            <div class="name text">3D便條紙 - 艾菲爾鐵塔
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="texts">
+                                                        <div class="text">1
+                                                        </div>
+                                                    </li>
+                                                    <li class="texts">
+                                                        <div class="text">NT$600
+                                                        </div>
+                                                    </li>
+                             
+                                                    <li class="texts">
+                                                        <div class="cost_text text">NT$600 </div>
+                                                        
+                                                    </li>
+                                                </ul>
+                                            </div>
+                             
+                                            <div class="checkout">
+                                                <div class="low_shipping top">運費 (郵寄)    0元
+                                                 </div>
+                                                
+                                                 <div class="checkout_text top">
+                                                    <span class="text">
+                                                        付款方式：
+                                                    </span>
+                                                    <span class="text">貨到付款</span>
+                            
+                                                </div>
+                                                 <div class="checkout_text top">
+                                                     <span class="text">
+                                                         應付金額NT$
+                                                     </span>
+                                                     <span class="number">660</span>
+                             
+                                                 </div>
+                             
+                                    
+                                             </div>
+                                        </div>
+
+                                      
+                                    </div>
+                                </div>
+
+                                <!-- 訂單資訊2 -->
+                                <div class="order_detail">
+                                    <div class="close_btn">x</div>
+
+                                    <div class="title">詳細訂單資訊</div>
+                                    <div class="order_content">
+
+                                        <div class="small_titles">
+                                            <div class="small_title">訂單資訊
+                                            </div>
+                                            <div class="small_txts">
+                                                <div class="small_text">訂單編號： 12345678910
+                                                </div>
+                                                <div class="small_text">訂單日期： 2020-06-08
+                                                </div>
+                                                <div class="small_text">訂單狀態： 訂單成立
+                                                </div>
+                                            </div>  
+                                        </div>
+
+                                        <div class="all_checkout_information">
+                                            <div class="check_products">
+                                 
+                                                <div class="title">購物明細</div>
+                                            </div>
+                             
+                             
+                                            <div class="check_products_cntent">
+                                                <ul>
+                                                    <li>商品</li>
+                                                    <li>數量</li>
+                                                    <li>單價</li>
+                                                    <li>小計</li>
+                                                </ul>
+                                
+                                             
+                                                <ul>
+                                                    <li>
+                                                        <div class="product_name texts">
+                                                            <div class="pic">
+                                                                <img src="https://i.picsum.photos/id/72/150/150.jpg?hmac=88NNYoUrPKBRE7CbkRKkXumt03IOma2wCZii6DX7jec" alt="">
+                                                            </div>
+                                                            <div class="name text">3D便條紙 - 艾菲爾鐵塔
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="texts">
+                                                        <div class="text">1
+                                                        </div>
+                                                    </li>
+                                                    <li class="texts">
+                                                        <div class="text">NT$600
+                                                        </div>
+                                                    </li>
+                             
+                                                    <li class="texts">
+                                                        <div class="cost_text text">NT$600 </div>
+                                                        
+                                                    </li>
+                                                </ul>
+                                            </div>
+                             
+                                            <div class="checkout">
+                                                <div class="low_shipping top">運費 (郵寄)    0元
+                                                 </div>
+                                                
+                                                 <div class="checkout_text top">
+                                                    <span class="text">
+                                                        付款方式：
+                                                    </span>
+                                                    <span class="text">貨到付款</span>
+                            
+                                                </div>
+                                                 <div class="checkout_text top">
+                                                     <span class="text">
+                                                         應付金額NT$
+                                                     </span>
+                                                     <span class="number">660</span>
+                             
+                                                 </div>
+                             
+                                    
+                                             </div>
+                                        </div>
+
+                                      
+                                    </div>
+                                </div>
+                               
+                                <!-- 訂單資訊3 -->
+                                <div class="order_detail">
+                                    <div class="close_btn">x</div>
+
+                                    <div class="title">詳細訂單資訊</div>
+                                    <div class="order_content">
+
+                                        <div class="small_titles">
+                                            <div class="small_title">訂單資訊
+                                            </div>
+                                            <div class="small_txts">
+                                                <div class="small_text">訂單編號： 12345678910
+                                                </div>
+                                                <div class="small_text">訂單日期： 2020-06-08
+                                                </div>
+                                                <div class="small_text">訂單狀態： 訂單成立
+                                                </div>
+                                            </div>  
+                                        </div>
+
+                                        <div class="all_checkout_information">
+                                            <div class="check_products">
+                                 
+                                                <div class="title">購物明細</div>
+                                            </div>
+                             
+                             
+                                            <div class="check_products_cntent">
+                                                <ul>
+                                                    <li>商品</li>
+                                                    <li>數量</li>
+                                                    <li>單價</li>
+                                                    <li>小計</li>
+                                                </ul>
+                                
+                                             
+                                                <ul>
+                                                    <li>
+                                                        <div class="product_name texts">
+                                                            <div class="pic">
+                                                                <img src="https://i.picsum.photos/id/72/150/150.jpg?hmac=88NNYoUrPKBRE7CbkRKkXumt03IOma2wCZii6DX7jec" alt="">
+                                                            </div>
+                                                            <div class="name text">3D便條紙 - 艾菲爾鐵塔
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="texts">
+                                                        <div class="text">1
+                                                        </div>
+                                                    </li>
+                                                    <li class="texts">
+                                                        <div class="text">NT$600
+                                                        </div>
+                                                    </li>
+                             
+                                                    <li class="texts">
+                                                        <div class="cost_text text">NT$600 </div>
+                                                        
+                                                    </li>
+                                                </ul>
+                                            </div>
+                             
+                                            <div class="checkout">
+                                                <div class="low_shipping top">運費 (郵寄)    0元
+                                                 </div>
+                                                
+                                                 <div class="checkout_text top">
+                                                    <span class="text">
+                                                        付款方式：
+                                                    </span>
+                                                    <span class="text">貨到付款</span>
+                            
+                                                </div>
+                                                 <div class="checkout_text top">
+                                                     <span class="text">
+                                                         應付金額NT$
+                                                     </span>
+                                                     <span class="number">660</span>
+                             
+                                                 </div>
+                             
+                                    
+                                             </div>
+                                        </div>
+
+                                      
+                                    </div>
+                                </div>
+                              
+                            </div>
+                         
                         </div>
                     </div>
                 </div>
@@ -687,6 +962,46 @@
 
        
     </script>
+
+
+<!-- 訂單詳細資訊 -->
+<script>
+    
+    // 選取確認按鈕
+    var check_btn = document.querySelectorAll('.check_order_information');
+    console.log(check_btn);
+
+    // 選取詳細資訊
+    var order_detail =document.querySelectorAll('.order_detail');
+
+    // 關閉按鈕
+    var close_btn = document.querySelectorAll('.close_btn')
+
+    var mask = document.getElementById('mask')
+
+    console.log(mask);
+
+    // 增加商品的按鈕
+    check_btn.forEach(function(ele, i) {
+        // console.log(ele, '寫forEach的時候，帶進來的第一個參數，就是被遍歷的元素');
+        ele.addEventListener('click', function() {
+            order_detail[i].classList.add("active");
+            mask.classList.add("active");
+        });
+    });
+
+    close_btn.forEach(function(ele, i) {
+        // console.log(ele, '寫forEach的時候，帶進來的第一個參數，就是被遍歷的元素');
+        ele.addEventListener('click', function() {
+            order_detail[i].classList.remove("active");
+            mask.classList.remove("active");
+        });
+    });
+
+   
+
+    
+</script>
   
 </body>
 </html>

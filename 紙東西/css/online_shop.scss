@@ -1,0 +1,293 @@
+body{
+    background-image: url(/img/背景.png);
+}
+
+nav{
+    // background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
+    background-color: rgb(231, 242, 250);
+    z-index: 60;
+    padding:5px 0px;
+    // padding-bottom: 0px;
+    .content{
+        position: sticky;
+        top: 0px;
+        width: 1140px;
+        width: 1000px;
+        margin: auto;
+        display: flex;
+        z-index: 99;
+        position: relative;
+        // background-color: black;
+        .navbar-brand{
+            padding: 0px;
+            margin-right: 0px;
+            padding-right: 130px;
+            position: relative;
+            // margin: auto;
+            img{
+                width: 120px;
+                height: auto;
+                height: 60px;
+                margin-right: 30px;
+            }
+            .brand_title{
+                position: absolute;
+                font-size: 32px;
+                right: 0px;
+                bottom: 0px;
+                transform: translateY(8px);
+                letter-spacing: 3px;
+                font-weight: 600;
+               
+            }
+         
+        }
+
+        .collapse{
+            display: flex;
+            margin-left:auto ;
+            position: absolute;
+            right: 0px;
+            top: 28px;
+            .navbar-nav{
+                .nav-item{
+                    // position: relative;
+                    transform: translateY(5px);
+                    .nav-link{
+                        font-size: 16px;
+                        font-size: 18px;
+                        // padding: 0px 15px;
+                        line-height: 34px;
+                        font-weight: 600;
+                        color: rgba(0, 0, 0, 0.637);
+                        // padding-left: 15px;
+                        padding: 0px 0px 0px 20px;
+                        &:nth-child(2){
+                            padding-right: 0px;
+                        }
+                    }
+                    .dropdown-menu.show{
+
+                        width: max-content;
+                        // top: -11px;
+                        position: absolute;
+                        // transform: translateY(-11px);
+                        z-index: 99;
+                        background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
+                    }
+                }
+            }
+        }
+        .right{
+            display: flex;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            line-height: 30px;
+            height: 20px;
+            margin-left: auto;
+            .right_item{
+                display: flex;
+                // margin-left: 5px;
+                span{
+                    padding: 0px 3px;
+                    // line-height: 50px;
+                    font-size: 14px;
+                    .fa-heart{
+                        font-size: 14px;
+                        color: rgb(201, 13, 13);
+                        // line-height: 50px;
+                    }
+                    .fa-shopping-cart{
+                        font-size: 14px;
+                        // line-height: 50px;
+                    }
+                    img{
+                        width: 20px;
+                        height:20px;
+                        // line-height: 50px;
+                        border-radius: 50%;
+                        transform: translateY(-2px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+main{
+    // banner長寬993/436
+    .swiper-container {
+        width: 993px;
+        margin:30px auto;
+        // margin-bottom: 100px;
+        height: 100%;
+        
+        .swiper-wrapper{
+    
+            .swiper-slide{
+                width:100% ;
+                height: 436px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .swiper-button-prev::after{
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .swiper-button-next::after{
+            font-size: 24px;
+            font-weight: 600;
+            // width: 30px;
+            // height: 30px;
+        }
+        .swiper-pagination{
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .swiper-pagination-bullet{
+            background-color: rgb(36, 49, 71);
+        }
+        .swiper-pagination-bullet-active{
+            background-color: white;
+        }
+        .color{
+            color: rgb(255, 255, 255);
+            padding: 0px 3px ;
+            background-color: white;
+        }
+        .next{
+            clip-path: polygon(80% 50%, 0 15%, 0 85%);
+        }
+        .prev{
+            clip-path: polygon(20% 50%, 100% 15%, 100% 85%);
+        }
+        .swiper-pagination{
+            color: brown;
+        }
+    }
+    .product_information{
+        width: 1000px;
+        margin: auto;
+        padding: 0px 8px;
+        .selects{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            select{
+                width: 220px;
+                height: 40px;
+                border-radius: 30px;
+                padding-left: 16px;
+                font-size: 16px;
+                font-weight: 600;
+                color: gray;
+                outline: none;
+                border: 1px solid rgb(199, 198, 198);
+                background-image: url(/img/背景.png);
+            }
+        }
+        
+        .products{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            height: max-content;
+            a{
+                color: black;
+            }
+            .product_card{
+               width: calc(33.33% - 13.333px);
+            //    height: 200px;
+               margin-right: 20px;
+               padding-bottom: 30px;
+            //    background-color: blanchedalmond;
+            &:nth-child(3n){
+                margin-right: 0px;
+            }
+               .product_pic{
+                   width: 100%;
+                   position: relative;
+                   border-radius: 5px;
+                //    background-color: gold;
+                //    border: px solid gainsboro;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+                   &:hover{
+                       .product_btn{
+                           display: block;
+                           opacity: 1;
+                           transition: .6s  ;
+                       }
+                   }
+                   img{
+                       display: block;
+                       width: 100%;
+                    //    width: 314.5px;
+                       height: 236px;
+                       border-radius: 5px;
+
+                       z-index: 1;
+                   }
+                   .product_btn{
+                        display: none;
+                        opacity: 0;
+                        font-size: 16px;
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                        width: 100%;
+                    //    background-color: brown;
+                        text-align: center;
+                        padding: 3px 8px;
+                        position: absolute;
+                        bottom: 0px;
+                        // transform: translateY(-100%);
+
+                        color: white;
+                        // border: 2px solid orange;
+                    //    background-color: rgba(255, 255, 255, 0.63);
+                        background-color: rgba(0, 0, 0, 0.486);
+                        border-radius: 5px;
+                        &:hover{
+                            transition: .4s;
+                            background-color: rgba(255, 166, 0, 0.8);
+                            // background-color: rgba(255, 255, 255, 0.699);
+
+                        }
+                }
+                //    .mask{
+                //        width: 100%;
+                //        height: 100%;
+                //        background-color: rgba(0, 0, 0, 0.322);
+                //        position: absolute;
+                //        top: 0px;
+                //    }
+               }
+               .product_content{
+                //    position: relative;
+                   padding-top: 10px;
+                   .product_text{
+                        font-size: 16px;
+                        font-weight: 600;
+                        text-align: center;
+                        padding-top: 3px;
+                        letter-spacing: 1.5px;
+                   }
+                   .product_name{
+                        color: #7e8083;
+                   }
+                   .product_price{
+                       color: #DF744A;
+                   }
+                  
+               }
+
+
+            }
+        }
+    }
+}

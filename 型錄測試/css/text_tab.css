@@ -1,0 +1,26 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1920px;
+}
+
+main .mycontainer .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+main .mycontainer .box iframe {
+  width: 1600px;
+  height: 800px;
+  margin: auto;
+}
+/*# sourceMappingURL=text_tab.css.map */

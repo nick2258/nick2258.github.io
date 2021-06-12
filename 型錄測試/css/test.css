@@ -1,0 +1,118 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mycontainer {
+  width: 1920px;
+  margin: auto;
+  height: 3000px;
+}
+
+main {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  position: relative;
+}
+
+main .mycontainer nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+main .mycontainer .types {
+  width: 300px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  left: 30px;
+}
+
+main .mycontainer .types .all_types {
+  width: 300px;
+}
+
+main .mycontainer .types .all_types .search {
+  position: relative;
+}
+
+main .mycontainer .types .all_types .search input {
+  width: 300px;
+  height: 40px;
+  outline: none;
+  border: 1px solid gainsboro;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  padding-left: 16px;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+main .mycontainer .types .all_types .search .fa-search {
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  right: 15px;
+}
+
+main .mycontainer .types .all_types .all_type {
+  width: 100%;
+  height: 400px;
+}
+
+main .mycontainer .types .all_types .all_type a {
+  display: block;
+  text-decoration: none;
+  color: #2e2d2d;
+  color: #1D2731;
+}
+
+main .mycontainer .types .all_types .all_type .type {
+  font-size: 16px;
+  padding: 8px 16px;
+  padding-right: 8px;
+  text-align: left;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  background-color: #b2cee0;
+  border: 1px solid ghostwhite;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+main .mycontainer .box {
+  padding-left: 400px;
+  -webkit-transform: translateY(-400px);
+          transform: translateY(-400px);
+}
+
+main .mycontainer .box iframe {
+  width: 1500px;
+  height: 500px;
+}
+
+main .mycontainer .box1 {
+  padding-left: 400px;
+  -webkit-transform: translateY(-350px);
+          transform: translateY(-350px);
+  margin-bottom: 30px;
+}
+
+main .mycontainer .box1 a button {
+  width: 300px;
+  height: 45px;
+  outline: none;
+  border: 1px solid gainsboro;
+}
+/*# sourceMappingURL=test.css.map */
