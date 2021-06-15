@@ -7,6 +7,7 @@ body{
     margin: 0px;
     background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
     background-image: url(/img/lightpaperfibers.png);
+    background-image: url(/img/背景.png);
 }
 
 html{
@@ -249,97 +250,72 @@ nav{
         }
     }
     .contents{
-        padding: 0px  8px;
-        padding-top: 30px;
+        margin-top: 30px;
+        width: 100%;
+        padding: 0px 16px;
+
         .content{
+            // background-color: brown;
+            background-color: #f7f4e2;
+            background-color: #F8EEE7;
+            width: 70%;
+            height: 180px;
+           
+            // margin: 0px auto;
+            position: relative;
+            border-radius: 120px;
+            margin-bottom: 60px;
             display: flex;
-            justify-content: space-between;
-            justify-content: center;
-            margin-bottom:15px;
-            
+            // align-items: center;
+            &:nth-child(2n){
+                margin-left:auto ;
+            }
+         
             .big_pic{
-                // width: calc(50% - 15px);
-                // margin-right:15px ;
-                padding: 15px;
-                margin-right: 15px;
-                position: relative;
-               
+                width: max-content;
+
+                width: 280px;
+                height: 0px;
+                height: 180px;
+                position: absolute;
+                left: 0px;
                 img{
                     width: 100%;
-                    height: 250px;
-                    width: 320px;
-                    height: 320px;
-                    border-radius: 50%;
-                    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.226);
+                    height: 100%;
+                    border-radius: 120px;
                 }
             }
             .texts{
-                width: calc(50% - 15px);
-                width: 50%;
-                padding-top: 50px;
-                // padding-top: 120px;
+                // width: max-content;
+                padding: 8px 0px;
+                padding-left: 280px;
+                margin-left: 30px;
+                padding-top: 16px;
+                padding-right: 30px;
                 .small_title{
                     width: max-content;
-                    // margin: auto;
-                    margin-left: 20px;
-                    padding: 5px  10px;
-                    padding-left:10px;
+                    .small_text{
+                        // padding: 1px 0px;
+                        padding-left: 8px;
+                        color: #687A8F;
 
-                    border-left: 8px solid rgb(230, 168, 168);
-                    // border-bottom:4px solid rgb(221, 178, 178);
-                    font-size: 28px;
-                    font-weight: 600;
-                    // border-radius: 50%;
-                    // padding: 4.5px 9px;
-                    // border: 2px  solid rgb(143, 60, 60);
-                    margin-bottom: 15px;
-                    // text-align: center;
-                   
-                    .pic{
-                        position: relative;
-                        img{
-                            width: 280px;
-                            height: 120px;
-                            display: block;
-                        }
-                        .pic_text{
-                            // position: absolute;
-                            color: rgb(138, 135, 128);
-                            top: 50%;
-                            left: 50%;
-                            // transform: translate(-50%,-50%);
-                            font-size: 34px;
-                            letter-spacing: 5px;
-                        }
+                        border-left: 8px solid #c1d2dd;
+                        font-size: 36px;
+                        font-weight: 600; 
                     }
                 }
                 .text{
-                    padding: 20px  25px;
-                    background-color:rgb(229, 245, 252);
-                    border-radius: 15px;
-                    // padding-top: 0px;
-                    // border-top: 1px  solid gainsboro;
-                    font-size: 16px;
-                    letter-spacing: 1px;
-                    line-height: 26px;
-                    padding-top: 10px;
-                }
-            }
-            &:nth-child(2n){
-                flex-direction: row-reverse;
-                .big_pic{
-                    margin-right: 0px;
-                    // padding-right: 0px;
-                    img{
-                        box-shadow: -5px 3px 10px rgba(0, 0, 0, 0.226);
+                    font-size: 20px;
+                    font-weight: 600;
+                    letter-spacing: 1.5px;
+                    // color: white;
+                    text-align: left;
+                    line-height: 32px;
+                    color:  #7089a8;
 
-                    }
-                  
-                }
-                .texts{
-                    margin-right: 15px;
                 }
             }
+           
         }
     }
 }
@@ -903,30 +879,50 @@ nav{
     }
     .content{
         color: rgba(0, 0, 0, 0.767);
+        width: 100%;
+        padding:0px 36px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         .new{
             position: relative;
-            border-radius: 30px;
+            // border-radius: 30px;
             font-size: 18px;
             font-weight: 600;
             letter-spacing: 2.5px;
-            padding: 8px 15px;
+            padding: 24px 24px;
+            padding-top: 60px;
             // border-bottom: 1px solid rgba(0, 0, 0, 0.384);
-            &:nth-child(2n){
-                background-color: rgba(128, 128, 128, 0.445);
-                background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-            }
-            &:nth-child(1){
-                padding-top: 0px;
-            }
+            width: calc(50% - 15px);
+            // height: 150px;
+            background-image: linear-gradient(to top, #d9e3e9 0%, #eff4f7 100%);
+            margin-bottom: 30px;
+            border-radius: 30px;
+            
+            // &:nth-child(2n){
+            //     background-color: rgba(128, 128, 128, 0.445);
+            //     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+            // }
+            // &:nth-child(1){
+            //     padding-top: 0px;
+            // }
             .date{
                 position: absolute;
                 font-size: 14px;
+                font-size: 16px;
                 letter-spacing: 1.5px;
                 color: #003354;
                 // padding-left: 10px;
                 top: 50%;
-                transform: translateY(-50%);
-                right: 15px;
+                top: 12px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: rgba(255, 255, 255, 0.884);
+                // background-color: #c1d2dd;
+                padding: 5px 20px;
+                border-radius: 15px;
+                // transform: translateY(-50%);
+                // right: 15px;
             }
         }
     }
