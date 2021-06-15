@@ -311,10 +311,23 @@ nav .content .right .right_item span img {
   left: 0px;
 }
 
-.brand .contents .content .big_pic img {
+.brand .contents .content .big_pic .img {
   width: 100%;
   height: 100%;
+  width: 280px;
+  height: 180px;
   border-radius: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.brand .contents .content .big_pic .img2 {
+  background-image: url(/img/品質.png);
+}
+
+.brand .contents .content .big_pic .img3 {
+  background-image: url(/img/技術.png);
 }
 
 .brand .contents .content .texts {

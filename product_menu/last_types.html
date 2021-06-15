@@ -11,34 +11,67 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
-    <nav>
-        <section class="nav"> 
+    <nav >    
+        <section class="nav">
             <!-- 回上一頁按鈕 -->
-            <a href="./third_types.html" class="back_btn" style="text-decoration: none;">
+            <a href="./first_types.html" class="back_btn" style="text-decoration: none;">
                 <div class="btn"><i class="fad fa-angle-double-left"></i>回上一頁</div>
             </a>
 
-            <!-- 首頁 -->
+            <!-- 標題 -->
             <div class="title">CATALOG</div>
 
-            <!-- 回到頂端按鈕 -->
+            <!-- 回到頂端 -->
             <a href="#home" class="home_btn" style="text-decoration: none;">
                 <div class="btn">回到頂端<i class="fad fa-angle-double-up"></i></div>
+    
             </a>
         </section>
-       
+      
     </nav>
     
-    <div class="toast" id="home">所有類別 > 文創商品 >   創意便條紙  >   2D便條紙</div>
+    <section class="breadcrumb container" id="home">
+        <ul >
+            <li><a href="#">所有產品</a></li>
+            <li><a href="#">文創商品</a></li>
+            <!-- <li><a href="#">Summer 15</a></li>
+            <li>Italy</li> -->
+          </ul>
+    
+    </section>
 
     <main>
-        <div class="content">
+        <div class="content container">
             <div class="last_types">
                  <!-- 型錄分類 -->
                  <div class="all_types">
+                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
     
-                    <div class="all_type">
+                    <div class="dropdown-content" id="myDropdown">
     
+                        <a class="type" href="#product_01">
+                        <span class="type_text">黑貓</span>    
+                        </a>
+
+                        <a class="type" href="">
+                            <span class="type_text">黑貓黑貓黑貓黑貓黑貓</span>    
+                            </a>
+    
+                        <a class="type" href="#product_02">白貓</a>
+    
+                        <a class="type" href="#product_03">茄子</a>
+
+                        <a class="type" href="#product_01">黑貓</a>
+    
+                        <a class="type" href="#product_02">白貓</a>
+
+                        <a class="type" href="#product_01">黑貓</a>
+    
+                        <a class="type" href="#product_02">白貓</a>
+    
+                        <a class="type" href="#product_03">茄子</a>
+
+                        <a class="type" href="#product_01">黑貓</a>
                         <a class="type" href="#product_01">黑貓</a>
     
                         <a class="type" href="#product_02">白貓</a>
@@ -56,28 +89,6 @@
                         <a class="type" href="#product_03">茄子</a>
 
                         <a class="type" href="#product_01">黑貓</a>
-    
-                        <a class="type" href="#product_02">白貓</a>
-
-                        <a class="type" href="#product_02">白貓</a>
-    
-                        <a class="type" href="#product_03">茄子</a>
-
-                        <a class="type" href="#product_01">黑貓</a>
-    
-                        <a class="type" href="#product_02">白貓</a>
-
-                        <a class="type" href="#product_01">黑貓</a>
-    
-                        <a class="type" href="#product_02">白貓</a>
-    
-                        <a class="type" href="#product_03">茄子</a>
-
-                        <a class="type" href="#product_01">黑貓</a>
-    
-                        <a class="type" href="#product_02">白貓</a>
-
-                        
     
     
                     </div>
@@ -167,6 +178,27 @@
            },
        });
     </script>
+    <script>
+        /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+   </script>
 
 
  
