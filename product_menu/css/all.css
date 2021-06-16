@@ -294,12 +294,43 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 20px;
 }
 
-@media all and (max-width: 380px) {
-  main {
-    padding: 0px 24px;
-  }
+main .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 700px;
+  width: calc(100% - 20px);
+}
+
+main .search input {
+  width: 100%;
+  height: 45px;
+  outline: none;
+  border: 1px solid gainsboro;
+  border-radius: 30px;
+  padding-left: 16px;
+  font-size: 16px;
+}
+
+main .search .fa-search {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 20px;
+  color: gray;
 }
 
 main .description {
@@ -401,6 +432,13 @@ main .types {
       flex-wrap: wrap;
   padding-top: 30px;
   margin: auto;
+}
+
+@media all and (max-width: 380px) {
+  main .types {
+    padding: 0px 24px;
+    padding-top: 20px;
+  }
 }
 
 main .types a {
@@ -606,6 +644,14 @@ main .content .last_types {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: flex;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 @media all and (max-width: 700px) {
@@ -620,6 +666,48 @@ main .content .last_types {
             flex-direction: column;
     justify-self: center;
   }
+}
+
+main .content .last_types .search {
+  margin-bottom: 20px;
+  position: relative;
+  max-width: 300px;
+  width: 300px;
+  margin-top: 0px;
+}
+
+@media all and (max-width: 861px) {
+  main .content .last_types .search {
+    width: 250px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  main .content .last_types .search {
+    margin: 0px auto;
+    margin-bottom: 20px;
+    width: 300px;
+  }
+}
+
+main .content .last_types .search input {
+  width: 100%;
+  height: 45px;
+  outline: none;
+  border: 1px solid gainsboro;
+  border-radius: 30px;
+  padding-left: 16px;
+  font-size: 16px;
+}
+
+main .content .last_types .search .fa-search {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 20px;
+  color: gray;
 }
 
 main .content .last_types .all_types {
@@ -748,12 +836,15 @@ main .content .last_types .all_types ::-webkit-scrollbar-thumb:hover {
 }
 
 main .content .dropbtn {
-  background-color: #3498DB;
+  background-color: #457392;
+  font-weight: 600;
+  border-radius: 3px;
   color: white;
-  padding: 16px;
+  padding: 10px 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
+  letter-spacing: 2px;
   display: none;
 }
 
@@ -842,6 +933,15 @@ main .content .product .swiper-container {
 @media all and (max-width: 700px) {
   main .content .product .swiper-container {
     width: 80%;
+    min-width: 300px;
+    padding-left: 0px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  main .content .product .swiper-container {
+    width: 80%;
+    min-width: 300px;
     padding-left: 0px;
   }
 }
@@ -898,6 +998,13 @@ main .content .product .product_content {
   }
 }
 
+@media all and (max-width: 360px) {
+  main .content .product .product_content {
+    width: 100%;
+    padding: 0px 8px;
+  }
+}
+
 main .content .product .product_content .texts {
   padding-top: 15px;
 }
@@ -912,6 +1019,12 @@ main .content .product .product_content .texts .text {
 @media all and (max-width: 860px) {
   main .content .product .product_content .texts .text {
     font-size: 18px;
+  }
+}
+
+@media all and (max-width: 580px) {
+  main .content .product .product_content .texts .text {
+    font-size: 16px;
   }
 }
 
@@ -942,6 +1055,37 @@ main .content .product .product_content ul li:nth-child(1) {
   main .content .product .product_content ul li:nth-child(1) {
     font-size: 18px;
   }
+}
+
+@media all and (max-width: 580px) {
+  main .content .product .product_content ul li:nth-child(1) {
+    font-size: 16px;
+  }
+}
+
+main .content .product .product_content .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+}
+
+@media all and (max-width: 700px) {
+  main .content .product .product_content .btns {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+main .content .product .product_content .btns .btn {
+  font-size: 16px;
+  padding: 8px 18px;
+  background-color: #2980B9;
+  margin-left: 15px;
+  color: white;
+  font-weight: 600;
+  border-radius: 3px;
 }
 
 main .content .product .download_btn {
@@ -975,5 +1119,210 @@ main .content .product .download_btn:hover .fa-file-download {
 main .content .product .download_btn .fa-file-download {
   font-size: 20px;
   margin-left: 12px;
+}
+
+main .check_list {
+  background-color: #a2bec9;
+  padding: 60px 120px;
+}
+
+@media all and (max-width: 1700px) {
+  main .check_list {
+    width: 94%;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  main .check_list {
+    padding: 60px 60px;
+    width: 96%;
+  }
+}
+
+@media all and (max-width: 867px) {
+  main .check_list {
+    padding: 45px 45px;
+    width: 96%;
+  }
+}
+
+@media all and (max-width: 750px) {
+  main .check_list {
+    padding: 20px 20px;
+  }
+}
+
+@media all and (max-width: 520px) {
+  main .check_list {
+    padding: 0px 0px;
+    background-color: initial;
+  }
+}
+
+main .check_list .check_list_information {
+  padding: 45px 30px;
+  background-color: white;
+}
+
+@media all and (max-width: 867px) {
+  main .check_list .check_list_information {
+    padding: 40px 20px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  main .check_list .check_list_information {
+    padding: 20px 15px;
+  }
+}
+
+@media all and (max-width: 520px) {
+  main .check_list .check_list_information {
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+  }
+}
+
+@media all and (max-width: 380px) {
+  main .check_list .check_list_information {
+    padding: 20px 8px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  main .check_list .check_list_information {
+    padding: 20px 4px;
+  }
+}
+
+main .check_list .check_list_information ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 15px  0px;
+  width: 100%;
+  margin: auto;
+  border-bottom: 1px solid gainsboro;
+}
+
+main .check_list .check_list_information ul:nth-child(1) {
+  padding: 5px 0px;
+  background-color: tan;
+  border-radius: 3px;
+  border-bottom: 0px;
+}
+
+main .check_list .check_list_information ul:nth-child(1) li {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+@media all and (max-width: 750px) {
+  main .check_list .check_list_information ul:nth-child(1) li {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 520px) {
+  main .check_list .check_list_information ul:nth-child(1) li {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  main .check_list .check_list_information ul:nth-child(1) li {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 370px) {
+  main .check_list .check_list_information ul:nth-child(1) li {
+    font-size: 12px;
+  }
+}
+
+main .check_list .check_list_information ul li {
+  width: 33.333%;
+  width: 15%;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+@media all and (max-width: 750px) {
+  main .check_list .check_list_information ul li {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  main .check_list .check_list_information ul li {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 380px) {
+  main .check_list .check_list_information ul li {
+    font-size: 10px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  main .check_list .check_list_information ul li {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+}
+
+main .check_list .check_list_information ul li:nth-child(1) {
+  width: 20%;
+}
+
+main .check_list .check_list_information ul li:nth-child(2) {
+  width: 45%;
+}
+
+main .check_list .check_list_information ul li:nth-child(3) {
+  width: 20%;
+}
+
+main .check_list .check_list_information ul li:nth-child(4) {
+  width: 15%;
+}
+
+main .check_list .check_list_information .check_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 45px;
+}
+
+@media all and (max-width: 500px) {
+  main .check_list .check_list_information .check_btn {
+    margin-top: 30px;
+  }
+}
+
+main .check_list .check_list_information .check_btn .btn {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  padding: 8px 25px;
+  background-color: gray;
+  border-radius: 5px;
+}
+
+@media all and (max-width: 500px) {
+  main .check_list .check_list_information .check_btn .btn {
+    padding: 6px 20px;
+  }
 }
 /*# sourceMappingURL=all.css.map */
