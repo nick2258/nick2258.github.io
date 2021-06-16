@@ -8,6 +8,7 @@ body{
     background-image: url(https://www.budounotane.com/assets/img/common/c-wrap_bg.jpg);
     background-image: url(/img/lightpaperfibers.png);
     background-image: url(/img/背景.png);
+    font-family: 'Noto Sans TC', 'Noto Sans JP','Lato',sans-serif;
 }
 
 html{
@@ -146,6 +147,11 @@ nav{
                 height: 100%;
                 display: block;
                 border-radius: 10px;
+                &:hover{
+                    opacity: .9;
+                    border-radius: 40px;
+                    transition: .6s;
+                }
             }
         }
     }
@@ -173,12 +179,15 @@ nav{
         color: rgb(255, 255, 255);
         padding: 0px 3px ;
         background-color: white;
+       
     }
     .next{
         clip-path: polygon(80% 50%, 0 15%, 0 85%);
+        
     }
     .prev{
         clip-path: polygon(20% 50%, 100% 15%, 100% 85%);
+        
     }
     .swiper-pagination{
         color: brown;
@@ -256,10 +265,15 @@ nav{
 
         .content{
             // background-color: brown;
+            
             background-color: #f7f4e2;
             background-color: #F8EEE7;
+           
+                
             width: 70%;
             height: 180px;
+            // padding-top: 60px;
+            margin-top: 100px;
            
             // margin: 0px auto;
             position: relative;
@@ -267,6 +281,17 @@ nav{
             margin-bottom: 60px;
             display: flex;
             // align-items: center;
+            // transform: translateY(10px);
+            &:hover{
+                background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+                background-image: linear-gradient(to right, #ffecd2 0%, rgb(248, 221, 211) 100%);
+                   
+            }
+            &:hover .big_pic .brand_pic{
+                transform: scale(1.1);
+                transition: .6s;
+                left: -20px;
+            }
             &:nth-child(2n){
                 margin-left:auto ;
             }
@@ -279,28 +304,52 @@ nav{
                 height: 180px;
                 position: absolute;
                 left: 0px;
-                .img{
+                img{
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
                     width: 100%;
                     height: 100%;
-                    width: 280px;
+                    width: 300px;
                     height: 180px;
                     border-radius: 120px;
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: contain;
+                    z-index: 2;
+                   
+                    // box-shadow:30px 0px 10px transparent;
                 }
-                .img2{
-                    background-image: url(/img/品質.png);
+                .brand_pic{
+                    // top: 50%;
+                    transform: translateY(-30%);
+                    box-shadow:8px 8px 15px rgba(185, 185, 185, 0.6);
+                    &:hover{
+                        transform: scale(1.15);
+                        transition: .6s;
+                    }
                 }
-                .img3{
-                    background-image: url(/img/技術.png);
+                .mask{
+                    position: absolute;
+                    top: 10px;
+                    left: 0px;
+                    // transform: translateX(40px);
+                    width: 200px;
+                    height: 176px;
+                    
                 }
+                // .img2{
+                //     background-image: url(/img/品質.png);
+                // }
+                // .img3{
+                //     background-image: url(/img/技術.png);
+                // }
                 
             }
             .texts{
                 // width: max-content;
                 padding: 8px 0px;
-                padding-left: 280px;
+                padding-left:300px;
                 margin-left: 30px;
                 padding-top: 16px;
                 padding-right: 30px;
@@ -903,13 +952,30 @@ nav{
             font-weight: 600;
             letter-spacing: 2.5px;
             padding: 24px 24px;
-            padding-top: 60px;
+            // padding-top: 60px;
+            padding-bottom: 80px;
             // border-bottom: 1px solid rgba(0, 0, 0, 0.384);
             width: calc(50% - 15px);
             // height: 150px;
             background-image: linear-gradient(to top, #d9e3e9 0%, #eff4f7 100%);
             margin-bottom: 30px;
-            border-radius: 30px;
+            border-radius: 8px;
+            clip-path: polygon(0 0, 100% 0%, 100% 90%, 16% 90%, 8% 100%, 8% 90%, 0 90%);
+            clip-path: polygon(0 0, 100% 0%, 100% 84%, 16% 84%, 6% 100%, 8% 84%, 0 84%);
+
+            &:hover{
+                transform:scale(1.1);
+                transition: .46;
+                // background-color: ;
+                color: #a76834;
+                background-image: none;
+                background-color: #c1d2dd;
+                .date{
+                    color: #c0814d;
+                }
+            }
+            // clip-path: none;
+
             
             // &:nth-child(2n){
             //     background-color: rgba(128, 128, 128, 0.445);
@@ -925,10 +991,14 @@ nav{
                 letter-spacing: 1.5px;
                 color: #003354;
                 // padding-left: 10px;
-                top: 50%;
-                top: 12px;
-                left: 50%;
-                transform: translateX(-50%);
+                // top: 50%;
+                // top: 12px;
+                bottom: 35px;
+                height: max-content;
+                width: max-content;
+                // left: 50%;
+                right: 10px;
+                // transform: translateX(-100%);
                 background-color: rgba(255, 255, 255, 0.884);
                 // background-color: #c1d2dd;
                 padding: 5px 20px;

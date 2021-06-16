@@ -1,0 +1,13 @@
+@import"./00-style-guide.scss";
+body{
+    background-color: black;
+}
+.box{
+    background-color:$dark-blue-02;
+    // width: 150px;
+    // height: 150px;
+    width: auto;
+    height: auto;
+    background-image: $light-blue-bg;
+    font-size: $font-20px*10;
+}
