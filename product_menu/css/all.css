@@ -2,12 +2,35 @@
 body {
   margin: 0px;
   padding: 0px;
+  height: 3000px;
   background-image: url(/img/背景.png);
 }
 
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #D5D5D5;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #A9B7C0;
 }
 
 .container {
@@ -46,7 +69,6 @@ nav {
   z-index: 99;
   background-color: transparent;
   padding: 20px 0px;
-  background-color: rgba(255, 255, 255, 0.795);
   overflow-x: hidden;
 }
 
@@ -167,7 +189,6 @@ nav .nav a .btn {
 
 nav .nav a .btn:hover {
   background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
-  color: orange;
   color: white;
   -webkit-transition: .6s;
   transition: .6s;
@@ -321,6 +342,12 @@ main .search input {
   border-radius: 30px;
   padding-left: 16px;
   font-size: 16px;
+}
+
+@media all and (max-width: 700px) {
+  main .search input {
+    height: 40px;
+  }
 }
 
 main .search .fa-search {
@@ -700,6 +727,12 @@ main .content .last_types .search input {
   font-size: 16px;
 }
 
+@media all and (max-width: 700px) {
+  main .content .last_types .search input {
+    height: 40px;
+  }
+}
+
 main .content .last_types .search .fa-search {
   position: absolute;
   right: 20px;
@@ -715,9 +748,6 @@ main .content .last_types .all_types {
   margin-right: auto;
   position: relative;
   /* width */
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
 }
 
 @media all and (max-width: 861px) {
@@ -814,25 +844,6 @@ main .content .last_types .all_types .dropdown-content .type {
             align-items: center;
     text-align: initial;
   }
-}
-
-main .content .last_types .all_types ::-webkit-scrollbar {
-  width: 15px;
-}
-
-main .content .last_types .all_types ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 5px grey;
-          box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-}
-
-main .content .last_types .all_types ::-webkit-scrollbar-thumb {
-  background: #D5D5D5;
-  border-radius: 10px;
-}
-
-main .content .last_types .all_types ::-webkit-scrollbar-thumb:hover {
-  background: #A9B7C0;
 }
 
 main .content .dropbtn {
@@ -1124,6 +1135,7 @@ main .content .product .download_btn .fa-file-download {
 main .check_list {
   background-color: #a2bec9;
   padding: 60px 120px;
+  margin-top: 30px;
 }
 
 @media all and (max-width: 1700px) {
@@ -1205,11 +1217,13 @@ main .check_list .check_list_information ul {
   width: 100%;
   margin: auto;
   border-bottom: 1px solid gainsboro;
+  color: #575757;
 }
 
 main .check_list .check_list_information ul:nth-child(1) {
-  padding: 5px 0px;
+  padding: 8px 0px;
   background-color: tan;
+  background-color: #F8EEE7;
   border-radius: 3px;
   border-bottom: 0px;
 }
@@ -1317,6 +1331,7 @@ main .check_list .check_list_information .check_btn .btn {
   color: white;
   padding: 8px 25px;
   background-color: gray;
+  background-color: orange;
   border-radius: 5px;
 }
 

@@ -1,14 +1,35 @@
 body{
     margin: 0px ;
     padding: 0px;
-    // height: 3000px;
+    height: 3000px;
     background-image: url(/img/背景.png);
-
 }
 
 *{
     box-sizing: border-box;
 }
+
+// 滾軸樣式
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #D5D5D5; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #A9B7C0; 
+} 
 
 .container{
     width: 1600px;
@@ -21,7 +42,6 @@ body{
     @media all and (max-width: 500px) {
         padding: 0px 16px;
     }
-
 }
 
 // 反回上一頁按鈕
@@ -39,12 +59,9 @@ nav{
     background-color: transparent;
 
     padding: 20px 0px;
-    background-color: rgba(255, 255, 255, 0.795);
     overflow-x: hidden;
     @media all and (max-width: 800px) {
         width: 100%;
-        // padding: 0px 50px;
-        // padding-bottom: 40px;
         padding-top: 60px;
     }
     .nav{
@@ -59,8 +76,6 @@ nav{
             width: 100%;
             padding: 0px 20px;
         }
-       
-        
         .title{
             position: absolute;
             top: 50%;
@@ -119,7 +134,6 @@ nav{
                 }
                 &:hover{
                     background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
-                    color: orange;  
                     color: white;
                     transition: .6s;
                     .fa-angle-double-left{
@@ -154,28 +168,18 @@ nav{
         }
         .back_btn{
             margin-right: auto;
-            // @media all and (max-width: 800px) {
-            //     padding-left: 5vw;
-            // }
         }
         .home_btn{
             margin-left: auto;
         }
     }
-   
-   
-  
 }
+
 // 麵包屑
-
-
 .breadcrumb  {
    max-width: 100%;
    margin: auto;
-   
-
    ul{
-    //    width: max-content;
         margin: 0px;
         padding: 0px;
         list-style: none;
@@ -185,7 +189,6 @@ nav{
         border-bottom: 1px solid gainsboro;
         display: flex;
         flex-wrap: wrap;
-        
         li{
             color: gray;
             font-size: 14px;
@@ -201,7 +204,6 @@ nav{
                 a{
                     color: #1D2731;
                 }
-              
             }
             &:nth-child(1){
                 color: gray !important;
@@ -220,7 +222,6 @@ main{
     max-width: 1920px;
     width: 100%;
     position: relative;
-    // width: 100%;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -242,7 +243,9 @@ main{
             border-radius: 30px;
             padding-left: 16px;
             font-size: 16px;
-
+            @media all and (max-width: 700px) {
+                height: 40px;
+            }
        }
        .fa-search{
            position: absolute;
@@ -254,6 +257,7 @@ main{
        }
    }
   
+//    類別簡介
     .description{
         margin-top: 30px;
         @media all and (max-width: 1600px) {
@@ -266,10 +270,8 @@ main{
             display: flex;
             flex-direction: column;
             align-items: center;
-            // padding: 0px 80px;
             width: 80%;
             margin: auto;
-            
             .title{
                 width: max-content;
                 font-size:28px ;
@@ -281,7 +283,6 @@ main{
                 @media all and (max-width: 480px) {
                     font-size: 20px;
                 }
-
             }
             .text{
                 margin: auto;
@@ -289,28 +290,22 @@ main{
                     width: 100%;
                     margin: 0px auto;
                     padding: 0px;
-                    // list-style: none;
                     justify-content: center;
                     li{
                         margin: 0px;
                         padding-top: 16px;
                         line-height: 32px;
                         font-size: 18px;
-                        // font-weight: 600;
                         letter-spacing: 1.5px;
-                        // list-style-type: space-counter;
                         @media all and (max-width: 861px) {
                             font-size: 16px;
                             line-height: 28px;
                             padding-top: 12px;
-
                         }
                         @media all and (max-width: 480px) {
                             font-size: 14px;
                             line-height: 24px;
                         }
-                      
-                       
                     }
                 }
             }
@@ -324,7 +319,6 @@ main{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        // padding-top: 15px;
         padding-top: 30px;
         margin: auto;
         @media all and (max-width: 380px) {
@@ -338,8 +332,6 @@ main{
             letter-spacing: 1.5px;
            
             display: block;
-        
-          
         }
         .type {
             width: calc(20% - 24px);
@@ -361,7 +353,6 @@ main{
                 &:nth-child(4n){
                     margin-right: 0px;
                 }
-
             }
             @media all and (max-width: 1000px) {
                 width: calc(33.33% - 20px);
@@ -372,7 +363,6 @@ main{
                 &:nth-child(3n){
                     margin-right: 0px;
                 }
-
             }
             @media all and (max-width: 769px) {
                 width: calc(50% - 15px);
@@ -383,7 +373,6 @@ main{
                 &:nth-child(2n){
                     margin-right: 0px;
                 }
-
             }
             @media all and (max-width: 580px) {
                 width: calc(50% - 10px);
@@ -399,7 +388,6 @@ main{
                 &:nth-child(2n){
                     margin-right: 0px;
                 }
-
             }
             @media all and (max-width: 380px) {
                 width: calc(50% - 10px);
@@ -415,7 +403,6 @@ main{
                 &:nth-child(2n){
                     margin-right: 0px;
                 }
-
             }
             
             .typebtn{
@@ -427,15 +414,12 @@ main{
                     margin: auto;
                     @media all and (max-width: 1600px) {
                         height: 10.65vw;
-        
                     }
                     @media all and (max-width: 1000px) {
                         height: 14vw;
-        
                     }
                     @media all and (max-width: 769px) {
                         height: 18vw;
-        
                     }
                     @media all and (max-width: 380px) {
                         height: 28vw;
@@ -466,7 +450,6 @@ main{
                             font-size: 16px;
                         }
                     }
-
                 }
             } 
         }
@@ -477,10 +460,8 @@ main{
         display: flex;
     
         @media all and (max-width: 700px) {
-           flex-direction: column;
-       
+           flex-direction: column;   
         }
-      
 
         .last_types{
             width: max-content;
@@ -497,11 +478,8 @@ main{
                 justify-self: center;
             }
             .search{
-                // display: flex;
-                // justify-content: center;
                 margin-bottom: 20px;
                 position: relative;
-                // width: max-content;
                 max-width:300px;
                 width:300px;
                 margin-top: 0px;
@@ -509,9 +487,7 @@ main{
                     width: 250px;
                 }
                 @media all and (max-width: 700px) {
-                    // width: 100vw;
                     margin: 0px auto;
-                    // width: max-content;
                     margin-bottom: 20px;
                     width: 300px;
                 }
@@ -523,6 +499,9 @@ main{
                     border-radius: 30px;
                     padding-left: 16px;
                     font-size: 16px;
+                    @media all and (max-width: 700px) {
+                        height: 40px;
+                    }
          
                 }
                 .fa-search{
@@ -552,29 +531,7 @@ main{
                     justify-self: center;
                 }
                 
-                // .search{
-                //     position: relative;
-                //     input{
-                //         width: 300px;
-                //         height: 40px;
-                //         outline: none;
-                //         border: 1px solid gainsboro;
-                //         border-radius: 30px;
-                //         font-size: 16px;
-                //         font-weight: 600;
-                //         letter-spacing: 1.5px;
-                //         padding-left:16px;
-                //         color: gray;
-                //         margin-bottom: 15px;
-                //     }
-                //     .fa-search{
-                //         font-size: 18px;
-                //         position: absolute;
-                //         top: 50%;
-                //         transform: translateY(-100%);
-                //         right: 15px;
-                //     }
-                // }
+               
                 .dropdown-content{
                     width: 100%;
                     height: max-content;
@@ -593,14 +550,11 @@ main{
              
                         z-index: 1;
                         padding-top: 10px;
-                        // width: max-content;
                         overflow-x: hidden;
                         max-height: 40vh;
 
-                        
                     }
                     &.show{
-                        // width: 300px;
                         display: block;
                         z-index: 80;
                         background-color: none ;
@@ -637,39 +591,10 @@ main{
                             justify-content: center;
                             align-items: center;
                             text-align: initial;
-
-                            
-                            // width: calc(50% - 4px);
-                            // padding: 0px;
-                            .type_text{
-
-                            }
-                            
                         }
                     }
                 }
                 /* width */
-        ::-webkit-scrollbar {
-            width: 15px;
-        }
-        
-        /* Track */
-        ::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 5px grey; 
-            border-radius: 10px;
-        }
-        
-        /* Handle */
-        ::-webkit-scrollbar-thumb {
-            background: #D5D5D5; 
-            border-radius: 10px;
-        }
-        
-        /* Handle on hover */
-        ::-webkit-scrollbar-thumb:hover {
-            background: #A9B7C0; 
-        }
-            
             }
         }
 
@@ -938,6 +863,7 @@ main{
     .check_list{
         background-color: rgb(162, 190, 201);
         padding: 60px 120px;
+        margin-top: 30px;
         @media all and (max-width: 1700px) {
             width: 94%;
         }
@@ -985,12 +911,15 @@ main{
                 margin: auto;
                 // justify-content: space-between;
                 border-bottom: 1px solid gainsboro;
+                color: rgb(87, 87, 87);
                 // &:nth-last-child(1){
                 //     border-bottom: 0px solid transparent;
                 // }
                 &:nth-child(1){
-                    padding: 5px 0px;
+                    padding: 8px 0px;
                     background-color: tan;
+                    background-color: #F8EEE7;
+                    // background-color: #F7F5E6;
                     // margin-bottom: 15px;
                     border-radius: 3px;
                     border-bottom: 0px;
@@ -1072,6 +1001,7 @@ main{
                     color: white;
                     padding: 8px 25px;
                     background-color: gray;
+                    background-color: orange;
                     border-radius: 5px;
                     @media all and (max-width: 500px) {
                         padding: 6px 20px;
