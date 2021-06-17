@@ -13,6 +13,7 @@ body {
 main {
   max-width: 1920px;
   width: 100%;
+  padding: 32px 0px;
   margin: auto;
 }
 
@@ -55,7 +56,7 @@ a {
 }
 
 .index-title .big-title .title-text {
-  font-size: 36px;
+  font-size: 48px;
   letter-spacing: 4px;
   font-weight: 600;
   color: #7089a8;
@@ -78,13 +79,8 @@ a {
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 2px;
-  margin-bottom: 15px;
   color: #7089a8;
   text-align: center;
-}
-
-main .banner {
-  margin: 32px auto;
 }
 
 main .banner .swiper-container {
@@ -162,7 +158,7 @@ main .brand .brand-concept-informations .brand-concept {
   background-image: -webkit-gradient(linear, left top, right top, from(#ffecd2), to(#f8ddd3));
   background-image: linear-gradient(to right, #ffecd2 0%, #f8ddd3 100%);
   border-radius: 120px;
-  margin-bottom: 60px;
+  margin-bottom: 72px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,6 +174,8 @@ main .brand .brand-concept-informations .brand-concept .brand-pic {
   height: 180px;
   position: absolute;
   left: 0px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 main .brand .brand-concept-informations .brand-concept .brand-pic img {
@@ -190,7 +188,7 @@ main .brand .brand-concept-informations .brand-concept .brand-pic img {
 }
 
 main .brand .brand-concept-informations .brand-concept .brand-concept-content {
-  padding: 24px 30px 8px 330px;
+  padding: 24px 30px 8px 340px;
 }
 
 main .brand .brand-concept-informations .brand-concept .brand-concept-content .brand-small-title {
@@ -261,5 +259,68 @@ main .news-information .news-content .new .date {
   right: 10px;
   padding: 5px 20px;
   border-radius: 15px;
+}
+
+main .address-information .address-information-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 16px;
+}
+
+main .address-information .address-information-content .address-pic {
+  margin-right: 48px;
+}
+
+main .address-information .address-information-content .address-pic img {
+  width: 450px;
+  height: 450px;
+  border-radius: 16px;
+  -webkit-box-shadow: 8px 8px 15px rgba(36, 36, 36, 0.3);
+          box-shadow: 8px 8px 15px rgba(36, 36, 36, 0.3);
+}
+
+main .address-information .address-information-content .address-content {
+  max-width: calc(100% - 482px);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #243147;
+}
+
+main .address-information .address-information-content .address-content .address-small-title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+main .address-information .address-information-content .address-content .address-texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .address-information .address-information-content .address-content .address-texts .address-text {
+  font-weight: 600;
+  font-size: 14px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding-top: 8px;
+}
+
+main .address-information .address-information-content .address-content .address-texts .map {
+  margin-top: 10px;
+  width: 100%;
+  width: 380px;
+  height: 280px;
+  -webkit-box-shadow: 5px 5px 10px rgba(32, 32, 32, 0.3);
+          box-shadow: 5px 5px 10px rgba(32, 32, 32, 0.3);
 }
 /*# sourceMappingURL=02-index.css.map */

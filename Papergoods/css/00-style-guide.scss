@@ -106,6 +106,7 @@ body{
 main{
     max-width: 1920px;
     width: 100%;
+    padding: $px-08*4 0px;
     margin: auto;
 }
 
@@ -144,7 +145,7 @@ a{
         justify-content: center;
         position: relative;
         .title-text{
-            font-size: $font-18px*2;
+            font-size: $font-12px*4;
             letter-spacing: $px-02*2;
             font-weight: $font-600;
             color:$gray-blue;
@@ -165,7 +166,6 @@ a{
         font-size: $font-20px;
         font-weight: $font-600;
         letter-spacing:  $px-02;
-        margin-bottom: $px-05*3;
         color:$gray-blue;
         text-align: center;
     }
