@@ -15,12 +15,19 @@ $dark-blue-01:#687A8F;
 // 最新消息hover背景
 $dark-blue-02:#c1d2dd;
 
+// .swiper-pagination-bullet
+$dark-blue-03: rgb(36, 49, 71);
+
+
+
 
 // 品牌形象大標文字
 $dark-brown-01:#7a4921;
 
 // 最新消息文字
 $dark-brown-02:#a76834;
+
+$border-gray:gainsboro;
 
 // --------------------------------------------------------------------------------------------------------
 
@@ -29,7 +36,7 @@ $dark-brown-02:#a76834;
 // 最新消息背景
 $light-blue-bg:linear-gradient(to top, #d9e3e9 0%, #eff4f7 100%);
 // 品牌背景
-$light-pink-bg: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+$light-pink-bg:linear-gradient(to right, #ffecd2 0%, rgb(248, 221, 211) 100%);
 
 // --------------------------------------------------------------------------------------------------------
 
@@ -47,6 +54,8 @@ $font-14px:14px;
 $font-16px:16px;
 $font-18px:18px;
 $font-20px:20px;
+$font-22px:22px;
+$font-24px:24px;
 
 // weight
 $font-500:500;
@@ -61,6 +70,7 @@ $px-02:2px;
 $px-03:3px;
 $px-05:5px;
 $px-08:8px;
+$px-10:10px;
 $px-12:12px;
 
 // --------------------------------------------------------------------------------------------------------
@@ -79,6 +89,88 @@ $opacity-7:.7;
 $opacity-6:.6;
 $opacity-5:.5;
 $opacity-4:.4;
+
+// --------------------------------------------------------------------------------------------------------
+
+// initial body
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../image/background/背景.png);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+main{
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
+}
+
+.mycontainer{
+    width: 1000px;
+    margin: auto;
+}
+
+// initial img
+img{
+    display: block;
+}
+
+
+// initial a
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.border-top{
+    border-top: 1px solid $border-gray;
+}
+
+.border-bottom{
+    border-bottom: 1px solid $border-gray;
+}
+
+// 首頁標題
+.index-title{
+    padding: $px-08*4 0px;
+    .big-title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        .title-text{
+            font-size: $font-18px*2;
+            letter-spacing: $px-02*2;
+            font-weight: $font-600;
+            color:$gray-blue;
+            background-image: url(../image/background/背景.png);
+            padding: 0px $px-10*3;
+            z-index: 3;
+        }
+        .title-border{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width:100%  ;
+            height: $px-02;
+            background-color:$gray-blue;         
+        }
+    }
+    .brand-small-title{
+        font-size: $font-20px;
+        font-weight: $font-600;
+        letter-spacing:  $px-02;
+        margin-bottom: $px-05*3;
+        color:$gray-blue;
+        text-align: center;
+    }
+}
+
 
 
 

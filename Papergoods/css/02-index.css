@@ -1,13 +1,265 @@
+@charset "UTF-8";
 body {
-  background-color: black;
+  margin: 0px;
+  padding: 0px;
+  background-image: url(../image/background/背景.png);
 }
 
-.box {
-  background-color: #c1d2dd;
-  width: auto;
-  height: auto;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+}
+
+.mycontainer {
+  width: 1000px;
+  margin: auto;
+}
+
+img {
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.border-top {
+  border-top: 1px solid gainsboro;
+}
+
+.border-bottom {
+  border-bottom: 1px solid gainsboro;
+}
+
+.index-title {
+  padding: 32px 0px;
+}
+
+.index-title .big-title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.index-title .big-title .title-text {
+  font-size: 36px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  color: #7089a8;
+  background-image: url(../image/background/背景.png);
+  padding: 0px 30px;
+  z-index: 3;
+}
+
+.index-title .big-title .title-border {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: #7089a8;
+}
+
+.index-title .brand-small-title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  color: #7089a8;
+  text-align: center;
+}
+
+main .banner {
+  margin: 32px auto;
+}
+
+main .banner .swiper-container {
+  height: 439px;
+}
+
+main .banner .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+main .banner .swiper-container .swiper-wrapper .swiper-slide img:hover {
+  opacity: 0.9;
+}
+
+main .banner .swiper-container .color::after {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+main .banner .swiper-container .swiper-pagination {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+main .banner .swiper-container .swiper-pagination-bullet {
+  background-color: #243147;
+}
+
+main .banner .swiper-container .swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+main .banner .swiper-container .color {
+  padding: 0px 3px;
+  color: white;
+  background-color: white;
+}
+
+main .banner .swiper-container .next {
+  -webkit-clip-path: polygon(80% 50%, 0 15%, 0 85%);
+          clip-path: polygon(80% 50%, 0 15%, 0 85%);
+}
+
+main .banner .swiper-container .prev {
+  -webkit-clip-path: polygon(20% 50%, 100% 15%, 100% 85%);
+          clip-path: polygon(20% 50%, 100% 15%, 100% 85%);
+}
+
+main .brand {
+  margin: auto;
+  text-align: center;
+}
+
+main .brand .brand-concept-text {
+  color: #7a4921;
+  font-weight: 600;
+}
+
+main .brand .brand-concept-text .text {
+  font-size: 22px;
+  padding-bottom: 8px;
+  letter-spacing: 5px;
+}
+
+main .brand .brand-concept-informations {
+  padding: 0px 16px;
+  padding-top: 45px;
+}
+
+main .brand .brand-concept-informations .brand-concept {
+  width: 70%;
+  height: 180px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffecd2), to(#f8ddd3));
+  background-image: linear-gradient(to right, #ffecd2 0%, #f8ddd3 100%);
+  border-radius: 120px;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+main .brand .brand-concept-informations .brand-concept:nth-child(2n) {
+  margin-left: auto;
+}
+
+main .brand .brand-concept-informations .brand-concept .brand-pic {
+  width: 300px;
+  height: 180px;
+  position: absolute;
+  left: 0px;
+}
+
+main .brand .brand-concept-informations .brand-concept .brand-pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 120px;
+  z-index: 2;
+  -webkit-box-shadow: 8px 8px 15px rgba(185, 185, 185, 0.6);
+          box-shadow: 8px 8px 15px rgba(185, 185, 185, 0.6);
+}
+
+main .brand .brand-concept-informations .brand-concept .brand-concept-content {
+  padding: 24px 30px 8px 330px;
+}
+
+main .brand .brand-concept-informations .brand-concept .brand-concept-content .brand-small-title {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-left: 8px;
+  color: #687A8F;
+  border-left: 8px solid #c1d2dd;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+main .brand .brand-concept-informations .brand-concept .brand-concept-content .brand-small-text {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-align: left;
+  line-height: 32px;
+  color: #687A8F;
+  padding-top: 8px;
+}
+
+main .news-information .news-content {
+  width: 100%;
+  padding: 0px 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .news-information .news-content .new {
+  width: calc(50% - 15px);
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  padding: 24px 24px;
+  padding-bottom: 80px;
+  margin-bottom: 30px;
+  border-radius: 8px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#d9e3e9), to(#eff4f7));
   background-image: linear-gradient(to top, #d9e3e9 0%, #eff4f7 100%);
-  font-size: 200px;
+  color: #243147;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 84%, 16% 84%, 6% 100%, 8% 84%, 0 84%);
+          clip-path: polygon(0 0, 100% 0%, 100% 84%, 16% 84%, 6% 100%, 8% 84%, 0 84%);
+}
+
+main .news-information .news-content .new .date {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 14px;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  background-color: rgba(255, 255, 255, 0.884);
+  color: #687A8F;
+  position: absolute;
+  bottom: 35px;
+  right: 10px;
+  padding: 5px 20px;
+  border-radius: 15px;
 }
 /*# sourceMappingURL=02-index.css.map */
