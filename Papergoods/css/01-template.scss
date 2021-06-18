@@ -1,48 +1,30 @@
 @import"./00-style-guide.scss";
 
+// 釘選在最上方
 .navbar{
     position: sticky;
     top: 0px;
     padding: 0px !important;
     width: 100%;
-  
 }
 
-
 nav{
-    
-    // margin: auto;
-    // max-width: 1920px;
-    background-color: #e7f2fa;
     background-image: url(../image/background/nav1.png);
-   
     position: sticky !important;
     top: 0px;
-    // padding:5px 0px;
     z-index: 99;
   
     box-shadow:8px  0px 15px #A6A088;
-
-   
-
-    width: 100vw;
-    // display: flex;
     margin: auto;
-    // justify-content: center;
     .navbar-content{
         display: flex;
-        // flex-direction: column;
-        justify-content: center;
         justify-content: space-between;
-        padding: 8px 0px;
-        // background-color: blue;
-        
+        padding: $px-08 0px;
         position: relative;
         a{
             width: max-content;
-            // margin: auto;
             .logo{
-                width:240px;
+                width:260px;
             }
         }
      
@@ -53,30 +35,19 @@ nav{
         .navbar-collapse{
             width: max-content;
             width: max-content;
-           position: absolute;
-           right: 0px;
-           bottom: 10px;
-            // align-self: flex-start;
-
+            position: absolute;
+            right: 0px;
+            bottom: 10px;
             .navbar-nav{
                 .nav-item{
-                    
                     .nav-link{
-                        font-size: 20px;
-            
-                        // line-height: 34px;
-                        font-weight: 600;
-                        // color: rgba(0, 0, 0, 0.637);
+                        font-size:$font-20px ;
+                        font-weight: $font-600;
                         color:$gray-blue ;
-                        // color: $dark-blue-03;
-                
-                       padding: 0px 3px;
-                       margin-left: 16px;
-
-                       
+                        padding: 0px 3px;
+                        margin-left: $px-08*2;
                     }
                     .dropdown-menu.show{
-
                         text-align: center;
                         width: max-content;
                     
@@ -84,8 +55,6 @@ nav{
                         top: 36px;
                         
                         z-index: 99 !important;
-                       
-                      
                     }
                     .dropdown-menu{
                         a{
@@ -96,10 +65,125 @@ nav{
                             padding: 0px;
                             margin: 0px auto;
                         }
-                      
                     }
                 }
             }
         }
+    }
+}
+
+footer{
+    max-width: 1920px;
+    // padding: 15px 0px;
+    padding-top: 15px;
+    width: 100%;
+    // margin-top: 60px;
+    
+    background-color: rgba(128, 128, 128, 0.445);
+    background-color: rgba(128, 128, 128, 0.301);;
+    background-color: rgb(231, 242, 250);
+    background-image: url(../image/background/nav1.png);
+
+
+    .content{
+        margin: auto;
+        // width: max-content;
+        max-width: 800px;
+        // width: 800px;
+        display: flex;
+        letter-spacing: 2px;
+        justify-content: center;
+        justify-content: space-between;
+        ul{
+            font-size: 15px;
+            width: 20%;
+            // width: 100%;
+            list-style: none;
+            // border-bottom: 1px solid gainsboro;
+            // line-height: 34px;
+            // padding: 0px  10px;
+            // margin-bottom: 20px;
+            // padding-bottom: 15px;
+            text-align: center;
+            font-weight: 600;
+            padding: 1px 0px;
+            color: rgba(0, 0, 0, 0.753);
+            // display: flex;
+            // line-height: 41px;
+            // border-right: 1px solid gray;
+            margin-bottom: 5px;
+            letter-spacing: 3px;
+            &:nth-last-child(1){
+                border-right: 0px;
+            }
+            li{
+                font-size: 14px;
+                // padding: 5px 0px;
+                font-weight: 500;
+                color: rgba(0, 0, 0, 0.853);
+                padding: 2px  12px;
+                letter-spacing: 2px;
+                
+
+
+
+                &:nth-child(1){
+                    // padding-top: 15px;
+                    margin-top: 5px;
+                    padding-top: 5px;
+                    // margin-top: 0px;
+                    // margin-left: 15px;
+                    border-top: 1px solid gainsboro;
+                    // padding-left: 15px;
+
+                    // border-top: 1px solid gray;
+                }
+            }
+        }
+    }
+    .icons{
+        margin: auto;
+        width: 1140px;
+        display: flex;
+        justify-content: center;
+        padding: 10px  0px;
+
+        .icon{
+            font-size:34px;
+            padding: 0px  25px;
+            color: rgb(65, 90, 122);
+            .fa-facebook-square{
+                // color: blue;
+            }
+            .fa-instagram-square{
+                // color: blueviolet;
+            }
+            .fa-phone-volume{
+                transform: rotate(-10deg);
+            }
+        }
+    }
+    .elses{
+        width: 1000px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        padding: 2px  0px;
+        .else{
+            font-size: 12px;
+            padding: 3px 10px;
+            letter-spacing: 1.5px;
+        }
+    }
+    .copyright{
+        margin: auto;
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+        // padding: 5px 0px;
+        letter-spacing: 2px;
+        padding: 5px  0px;
+        // background-color: rgba(189, 208, 223, 0.76);
+
     }
 }

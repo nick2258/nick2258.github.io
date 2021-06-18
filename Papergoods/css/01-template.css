@@ -95,7 +95,6 @@ a {
 }
 
 nav {
-  background-color: #e7f2fa;
   background-image: url(../image/background/nav1.png);
   position: -webkit-sticky !important;
   position: sticky !important;
@@ -103,7 +102,6 @@ nav {
   z-index: 99;
   -webkit-box-shadow: 8px  0px 15px #A6A088;
           box-shadow: 8px  0px 15px #A6A088;
-  width: 100vw;
   margin: auto;
 }
 
@@ -111,9 +109,6 @@ nav .navbar-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -128,7 +123,7 @@ nav .navbar-content a {
 }
 
 nav .navbar-content a .logo {
-  width: 240px;
+  width: 260px;
 }
 
 nav .navbar-content .navbar-toggler {
@@ -172,5 +167,110 @@ nav .navbar-content .navbar-collapse .navbar-nav .nav-item .dropdown-menu .dropd
   width: 100%;
   padding: 0px;
   margin: 0px auto;
+}
+
+footer {
+  max-width: 1920px;
+  padding-top: 15px;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.445);
+  background-color: rgba(128, 128, 128, 0.301);
+  background-color: #e7f2fa;
+  background-image: url(../image/background/nav1.png);
+}
+
+footer .content {
+  margin: auto;
+  max-width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  letter-spacing: 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .content ul {
+  font-size: 15px;
+  width: 20%;
+  list-style: none;
+  text-align: center;
+  font-weight: 600;
+  padding: 1px 0px;
+  color: rgba(0, 0, 0, 0.753);
+  margin-bottom: 5px;
+  letter-spacing: 3px;
+}
+
+footer .content ul:nth-last-child(1) {
+  border-right: 0px;
+}
+
+footer .content ul li {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.853);
+  padding: 2px  12px;
+  letter-spacing: 2px;
+}
+
+footer .content ul li:nth-child(1) {
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px solid gainsboro;
+}
+
+footer .icons {
+  margin: auto;
+  width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px  0px;
+}
+
+footer .icons .icon {
+  font-size: 34px;
+  padding: 0px  25px;
+  color: #415a7a;
+}
+
+footer .icons .icon .fa-phone-volume {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+footer .elses {
+  width: 1000px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2px  0px;
+}
+
+footer .elses .else {
+  font-size: 12px;
+  padding: 3px 10px;
+  letter-spacing: 1.5px;
+}
+
+footer .copyright {
+  margin: auto;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 5px  0px;
 }
 /*# sourceMappingURL=01-template.css.map */
