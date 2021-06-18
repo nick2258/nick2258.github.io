@@ -1,0 +1,105 @@
+@import"./00-style-guide.scss";
+
+.navbar{
+    position: sticky;
+    top: 0px;
+    padding: 0px !important;
+    width: 100%;
+  
+}
+
+
+nav{
+    
+    // margin: auto;
+    // max-width: 1920px;
+    background-color: #e7f2fa;
+    background-image: url(../image/background/nav1.png);
+   
+    position: sticky !important;
+    top: 0px;
+    // padding:5px 0px;
+    z-index: 99;
+  
+    box-shadow:8px  0px 15px #A6A088;
+
+   
+
+    width: 100vw;
+    // display: flex;
+    margin: auto;
+    // justify-content: center;
+    .navbar-content{
+        display: flex;
+        // flex-direction: column;
+        justify-content: center;
+        justify-content: space-between;
+        padding: 8px 0px;
+        // background-color: blue;
+        
+        position: relative;
+        a{
+            width: max-content;
+            // margin: auto;
+            .logo{
+                width:240px;
+            }
+        }
+     
+        .navbar-toggler{
+            width: 50px;
+            height: 50px;
+        }
+        .navbar-collapse{
+            width: max-content;
+            width: max-content;
+           position: absolute;
+           right: 0px;
+           bottom: 10px;
+            // align-self: flex-start;
+
+            .navbar-nav{
+                .nav-item{
+                    
+                    .nav-link{
+                        font-size: 20px;
+            
+                        // line-height: 34px;
+                        font-weight: 600;
+                        // color: rgba(0, 0, 0, 0.637);
+                        color:$gray-blue ;
+                        // color: $dark-blue-03;
+                
+                       padding: 0px 3px;
+                       margin-left: 16px;
+
+                       
+                    }
+                    .dropdown-menu.show{
+
+                        text-align: center;
+                        width: max-content;
+                    
+                        background-image: url(../image/background/nav1.png);
+                        top: 36px;
+                        
+                        z-index: 99 !important;
+                       
+                      
+                    }
+                    .dropdown-menu{
+                        a{
+                            display: block;
+                        }
+                        .dropdown-item{
+                            width: 100%;
+                            padding: 0px;
+                            margin: 0px auto;
+                        }
+                      
+                    }
+                }
+            }
+        }
+    }
+}
