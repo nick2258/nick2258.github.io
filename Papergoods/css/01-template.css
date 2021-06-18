@@ -109,21 +109,23 @@ nav .navbar-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 8px 0px;
   position: relative;
 }
 
 nav .navbar-content a {
+  margin: auto;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
 
 nav .navbar-content a .logo {
-  width: 260px;
+  width: 240px;
 }
 
 nav .navbar-content .navbar-toggler {
@@ -136,16 +138,18 @@ nav .navbar-content .navbar-collapse {
   width: -moz-max-content;
   width: max-content;
   width: max-content;
-  position: absolute;
+  margin: auto;
   right: 0px;
   bottom: 10px;
+  padding-top: 8px;
 }
 
 nav .navbar-content .navbar-collapse .navbar-nav .nav-item .nav-link {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   color: #7089a8;
-  padding: 0px 3px;
+  color: #868786;
+  padding: 0px 16px;
   margin-left: 16px;
 }
 

@@ -152,14 +152,12 @@ main .brand .brand-concept-text .text {
 
 main .brand .brand-concept-informations {
   padding: 0px 16px;
-  padding-top: 45px;
+  padding-top: 72px;
 }
 
 main .brand .brand-concept-informations .brand-concept {
   width: 70%;
   height: 180px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffecd2), to(#f8ddd3));
-  background-image: linear-gradient(to right, #ffecd2 0%, #f8ddd3 100%);
   border-radius: 120px;
   margin-bottom: 72px;
   display: -webkit-box;
@@ -173,7 +171,7 @@ main .brand .brand-concept-informations .brand-concept:nth-child(2n) {
 }
 
 main .brand .brand-concept-informations .brand-concept .brand-pic {
-  width: 300px;
+  width: 320px;
   height: 180px;
   position: absolute;
   left: 0px;
@@ -185,23 +183,23 @@ main .brand .brand-concept-informations .brand-concept .brand-pic img {
   width: 100%;
   height: 100%;
   border-radius: 120px;
+  border-radius: 80px;
   z-index: 2;
   -webkit-box-shadow: 8px 8px 15px rgba(185, 185, 185, 0.6);
           box-shadow: 8px 8px 15px rgba(185, 185, 185, 0.6);
 }
 
 main .brand .brand-concept-informations .brand-concept .brand-concept-content {
-  padding: 24px 30px 8px 340px;
+  padding: 24px 30px 8px 360px;
 }
 
 main .brand .brand-concept-informations .brand-concept .brand-concept-content .brand-small-title {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-left: 8px;
   color: #687A8F;
-  border-left: 8px solid #c1d2dd;
-  font-size: 32px;
+  color: #7D7056;
+  font-size: 36px;
   font-weight: 600;
 }
 
@@ -213,6 +211,7 @@ main .brand .brand-concept-informations .brand-concept .brand-concept-content .b
   line-height: 32px;
   color: #687A8F;
   padding-top: 8px;
+  color: #56667D;
 }
 
 main .news-information .news-content {
@@ -238,11 +237,13 @@ main .news-information .news-content .new {
   padding-bottom: 80px;
   margin-bottom: 30px;
   border-radius: 8px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#d9e3e9), to(#eff4f7));
-  background-image: linear-gradient(to top, #d9e3e9 0%, #eff4f7 100%);
   color: #243147;
+  background-color: #F8EEE7;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 84%, 16% 84%, 6% 100%, 8% 84%, 0 84%);
           clip-path: polygon(0 0, 100% 0%, 100% 84%, 16% 84%, 6% 100%, 8% 84%, 0 84%);
+  color: #868786;
+  color: #56667D;
+  color: #7D7056;
 }
 
 main .news-information .news-content .new .date {
@@ -262,6 +263,7 @@ main .news-information .news-content .new .date {
   right: 10px;
   padding: 5px 20px;
   border-radius: 15px;
+  color: #868786;
 }
 
 main .address-information .address-information-content {
@@ -293,6 +295,8 @@ main .address-information .address-information-content .address-contents .addres
   height: -moz-max-content;
   height: max-content;
   padding-bottom: 12px;
+  color: #868786;
+  color: #7D7056;
 }
 
 main .address-information .address-information-content .address-contents .address-content .address-small-title {

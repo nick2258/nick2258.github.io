@@ -18,13 +18,15 @@ nav{
     margin: auto;
     .navbar-content{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        // justify-content: space-between;
         padding: $px-08 0px;
         position: relative;
         a{
+            margin: auto;
             width: max-content;
             .logo{
-                width:260px;
+                width:240px;
             }
         }
      
@@ -35,16 +37,19 @@ nav{
         .navbar-collapse{
             width: max-content;
             width: max-content;
-            position: absolute;
+            // position: absolute;
+            margin: auto;
             right: 0px;
             bottom: 10px;
+            padding-top: 8px;
             .navbar-nav{
                 .nav-item{
                     .nav-link{
-                        font-size:$font-20px ;
+                        font-size:$font-16px ;
                         font-weight: $font-600;
                         color:$gray-blue ;
-                        padding: 0px 3px;
+                        color:$light-gray;
+                        padding: 0px 16px;
                         margin-left: $px-08*2;
                     }
                     .dropdown-menu.show{
