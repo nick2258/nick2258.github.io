@@ -182,55 +182,63 @@ main{
 
     // 店鋪資訊
     .address-information{
+      
         .address-information-content{
             display: flex;
-            justify-content: center;
-            padding: 0px $px-08*2;
+            padding: 0px $px-08;
             .address-pic{
-                margin-right: $px-08*6;
+                margin-right:$px-10*3;
                 img{
-                    width: 450px;
-                    height: 450px;
+                    width:550px;
                     border-radius: 16px;
                     box-shadow: 8px 8px 15px rgba(36, 36, 36, 0.3);
                 }
             }
-            .address-content{
-                max-width: calc(100% - 482px);
-                width: max-content;
-                color: $dark-blue-03;
-               .address-small-title{
-                    font-size:$font-24px;
-                    font-weight: $font-600;
-                    letter-spacing: 1px;
-                   
-                }
-        
-                .address-texts{
-                    display: flex;
-                    flex-direction: column;
-                    .address-text{
-                        font-weight: 600;
-                        font-size: $font-14px;
-                        font-size: 15px;
-                        letter-spacing: 1px;
-                        padding-top: $px-08;
-                    }
-                    .map{
-                        // padding: 0px  15px;
-                        margin-top: 10px;
-                        width: 100%;
-                        // height: 240px;
-                        // height: auto;
-                        width: 380px;
-                        height: 280px;
-                        box-shadow: 5px 5px 10px rgba(32, 32, 32, 0.3);
-                    }
+            .address-contents{
+                width: calc(100% - 550px);
+
+                .address-content{
+                    color: $dark-blue-03;
+                    border-radius: 5px;
+                    height: max-content;
+                    padding-bottom: $px-12;
                     
-            
+
+                   .address-small-title{
+                        font-size:$font-24px;
+                        font-weight: $font-600;
+                        letter-spacing: 1px;
+                    }
+                    .address-texts{
+                        
+                        .address-text{
+                            font-weight: $font-600;
+                            font-size: $font-14px;
+                            font-size: $font-16px;
+                            letter-spacing: 1px;
+                            padding-top: $px-08;
+                            line-height: 24px;
+                        }                
+                    }
+                }
+                .map{
+                    width: 100%;
+                    height: 320px;
+                    border-radius: 5px;
+                    box-shadow: 5px 5px 10px rgba(32, 32, 32, 0.3);
                 }
             }
+          
+
+
+
+            
+           
+         
+            
         }
+       
+     
        
     }
 }
