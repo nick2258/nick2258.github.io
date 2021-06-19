@@ -9,12 +9,13 @@
 }
 
 nav{
-    background-image: url(../image/background/nav1.png);
+    // background-image: url(../image/background/nav1.png);
+    background-color: #f5f1de;
     position: sticky !important;
     top: 0px;
     z-index: 99;
   
-    box-shadow:8px  0px 15px #A6A088;
+    box-shadow:8px  0px 15px #cfccbf;
     margin: auto;
     .navbar-content{
         display: flex;

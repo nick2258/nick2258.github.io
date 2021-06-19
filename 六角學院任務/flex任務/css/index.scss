@@ -7,6 +7,12 @@ body{
     box-sizing: border-box;
 }
 
+a{
+    display: block;
+    text-decoration: none;
+    color: unset;
+}
+
 ul{
     margin: 0px;
     padding: 0px;
@@ -50,11 +56,17 @@ main{
     max-width: 1920px;
     width: 1024px;
     padding: 30px 42px;
+    padding-top: 0px;
     margin: auto;
     .banner{
         img{
             width: 100%;
             height: 496px;
+            &:hover{
+                opacity: 0.7;
+                border-radius: 8px;
+                transition: .6s;
+            }
         }
     }
     .product_information{
@@ -77,16 +89,22 @@ main{
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    
+                    &:hover{
+                        background-color: #EAF0ED;
+                        transition: .6s;
+                        
+                    }
                     span{
                     }
                     &:nth-child(1){
                         background-color: #3F5D45;
                         color: #EAF0ED;
                     }
-                    &:nth-child(1){
-                        background-color: #3F5D45;
-                        color: #EAF0ED;
-                    }
+                    // &:nth-child(1){
+                    //     background-color: #3F5D45;
+                    //     color: #EAF0ED;
+                    // }
                 }
             }
         }
@@ -107,6 +125,11 @@ main{
                         width: 100%;
                         height: 315px;
                         display: block;
+                        &:hover{
+                            opacity: 0.7;
+                            border-radius: 8px;
+                            transition: .6s;
+                        }
                     }
                     .text{
                         -webkit-writing-mode: vertical-lr;
@@ -157,6 +180,11 @@ main{
                     color: #3F5D45;
                     font-size: 24px;
                     font-weight: 600;
+                    &:hover{
+                        background-color: #3F5D45;
+                        color: #EAF0ED;
+                        transition: .6s;
+                    }
                 }
              
             }

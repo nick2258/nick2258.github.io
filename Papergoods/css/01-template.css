@@ -95,13 +95,13 @@ a {
 }
 
 nav {
-  background-image: url(../image/background/nav1.png);
+  background-color: #f5f1de;
   position: -webkit-sticky !important;
   position: sticky !important;
   top: 0px;
   z-index: 99;
-  -webkit-box-shadow: 8px  0px 15px #A6A088;
-          box-shadow: 8px  0px 15px #A6A088;
+  -webkit-box-shadow: 8px  0px 15px #cfccbf;
+          box-shadow: 8px  0px 15px #cfccbf;
   margin: auto;
 }
 
