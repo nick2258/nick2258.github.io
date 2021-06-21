@@ -201,9 +201,9 @@ nav{
                 text-decoration: none;
             }
             &:nth-last-child(1){
-                color: #1D2731;
+                color: #457392;
                 a{
-                    color: #1D2731;
+                    color: #457392;
                 }
             }
             &:nth-child(1){
@@ -227,7 +227,7 @@ main{
     flex-direction: column;
     margin: auto;
     justify-content: center;
-   padding-bottom: 20px;
+   padding-bottom: 30px;
    .search{
        display: flex;
        justify-content: center;
@@ -266,29 +266,34 @@ main{
         @media all and (max-width: 1600px) {
             padding: 0px 10vw;
         }
-        @media all and (max-width: 1291px) {
+        @media all and (max-width: 1400px) {
             padding: 0px 8vw;
+        }
+        @media all and (max-width: 861px) {
+            padding: 0px 16px;
         }
         .description_content{
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 80%;
+            width: 90%;
             padding: 30px 45px;
-            background-color: rgb(207, 205, 201);
-            background-color: rgba(255, 235, 205, 0.3);
-            // border: 1px solid rgba(255, 235, 205, 0.4);
-            box-shadow: 0px 3px 15px rgba(255, 235, 205, 0.5);
-            border-radius: 15px;
+            background-color:  #9dd8ff42;
+            box-shadow: 0px 3px 15px #81b6da7e;
+              
+            border: radius 8px;;
             margin: auto;
             color: rgb(75, 75, 75);
+            @media all and (max-width: 1200px) {
+                padding: 20px 30px;
+            }
             .title{
                 width: max-content;
                 font-size:28px ;
                 font-weight: 600;
                 letter-spacing: 2.5px;
                 color: rgb(75, 75, 75);
-                @media all and (max-width: 861px) {
+                @media all and (max-width: 1400px) {
                     font-size: 24px;
                 }
                 @media all and (max-width: 480px) {
@@ -305,7 +310,7 @@ main{
                     margin-top: 8px;
                     li{
                         margin: 0px;
-                        padding-top: 16px;
+                        padding-top: 8px;
                         line-height: 32px;
                         font-size: 18px;
                         letter-spacing: 1.5px;
@@ -316,9 +321,12 @@ main{
                             list-style: none;
                             padding-left: 0px;
                             margin-left: 0px;
-                           
+                            @media all and (max-width: 1400px) {
+                                font-size: 20px;
+                              
+                            } 
                         }
-                        @media all and (max-width: 861px) {
+                        @media all and (max-width: 1400px) {
                             font-size: 16px;
                             line-height: 28px;
                             padding-top: 12px;
@@ -331,6 +339,215 @@ main{
                 }
             }
         }
+    }
+
+    .description1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgba(220, 220, 220, 0.37);
+        border-radius: 5px;
+        box-shadow: -3px 3px  8px  12px rgba(220, 220, 220, 0.712);
+        box-shadow: 5px 5px 10px gainsboro;
+        padding: 30px 45px;
+        // width: 80%;
+        margin: auto;
+        @media all and (max-width: 1700px) {
+            width: calc(100% - 4vw);
+        }
+        @media all and (max-width: 765px) {
+            width: calc(100% - 16px);
+            padding: 15px 20px ;
+        }
+        .title{
+            width: 100%;
+            font-size:28px ;
+            font-weight: 600;
+            letter-spacing: 2.5px;
+            color: rgb(75, 75, 75);
+            text-align: center;
+            margin-bottom: 20px;
+            @media all and (max-width: 1400px) {
+                font-size: 24px;
+            }
+            @media all and (max-width: 480px) {
+                font-size: 20px;
+            }
+        }
+        .description-btns{
+            width: 100%;
+            // width: 80VW;
+            // width: max-content;
+            // justify-self: center;            
+            display: flex;
+            // flex-direction: column;
+            max-height: max-content;
+            // overflow-Y: auto;
+            overflow-y: auto;
+            flex-wrap: wrap;
+            // align-items: center;
+            // justify-content: center;
+            // background-color: tan;
+            margin: 0px;
+            padding: 0px 8px;
+            padding-bottom: 5px;
+            // border-bottom: 1px solid gainsboro;
+            @media all and (max-width: 1200px) {
+                height: 130px;
+            }
+            @media all and (max-width: 1000px) {
+                height: 124px;
+            }
+            @media all and (max-width: 600px) {
+                width: 70%;
+                width: 300px;
+            }
+
+            .product-description-btn {
+                    
+                width:calc(16.66% - 8.33px) ;
+                // width: 300px;
+                max-width: auto;
+                justify-self: center;
+        
+                background-color: #b2cee0;
+                color: white;
+                color: rgb(7, 23, 94);
+                cursor: pointer;
+                padding: 14px 5px;
+                margin-right: 10px;
+                border-radius: 3px;
+                // width: 100%;
+                border: none;
+                outline: none;
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                text-align: center;
+                &:nth-last-child(1){
+                    margin-right: 0px;
+                }
+                &:nth-child(6n){
+                    margin-right: 0px;
+                }
+                &.active{
+                    background-color: #67a0c2;
+                    color: white;
+                    transition: .6s;
+                    
+                }
+                @media all and (max-width: 1400px) {
+                    width:calc(20% - 8px) ;
+                    &:nth-child(6n){
+                        margin-right: 10px;
+                    }
+                    &:nth-child(5n){
+                        margin-right: 0px;
+                    }
+                }
+                @media all and (max-width: 1200px) {
+                    width:calc(25% - 7.5px) ;           
+                    &:nth-child(5n){
+                        margin-right: 10px;
+                    }
+                    &:nth-child(4n){
+                        margin-right: 0px;
+                    }
+                }
+                @media all and (max-width: 1000px) {
+                    width:calc(33.33% - 6.66px) ;
+                    &:nth-child(4n){
+                        margin-right: 10px;
+                    }
+                    &:nth-child(3n){
+                        margin-right: 0px;
+                    }
+                }
+                @media all and (max-width: 765px) {
+                    width:calc(50% - 5px) ;
+                    &:nth-child(3n){
+                        margin-right: 10px;
+                    }
+                    &:nth-child(2n){
+                        margin-right: 0px;
+                    }
+                }
+                @media all and (max-width: 600px) {
+                    width: 100%;
+                    margin-right: 0px;
+                    font-size: 16px;
+                    padding: 8px 0px;
+
+                    &:nth-child(3n){
+                        margin-right: 0px;
+                    }
+                    &:nth-child(2n){
+                        margin-right: 0px;
+                    }
+                }
+                
+            }
+              
+            .active, .product-description-btn:hover {
+                background-color: #67a0c2;
+                color: white;
+                transition: .6s;
+            }
+              
+          
+        }
+        .description-information{
+            width: 100%;
+            margin: auto;
+            padding: 30px;
+            padding-top: 10px;
+            margin-top: 10px;
+            border-top: 1px solid gainsboro;
+
+            // background-color: tan;
+            // transform: translateY(-20px);
+            // background-color: #9ebccf;
+            // background-color: #67a0c2;
+            // color: white;
+            @media all and (max-width: 600px) {
+                padding: 15px;
+            }
+
+
+            
+              
+              .description-content {
+                    // padding: 0 12px;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.2s ease-out;
+                    // background-color: #f1f1f1;
+                    // background-color: #f0f9ff;
+                    font-size: 16px;
+                    // margin-bottom: 10px;
+                 
+               
+                    &.active{
+                        max-height: max-content;
+                        transition: .6s;
+                    }
+
+                    ul{
+                        margin: 0px;
+                        margin: 0px 8px;
+                        padding: 12px 10px;
+                        li{
+                            font-size: 18px;
+                            @media all and (max-width: 600px) {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+    
+              }
+        }
+        
     }
 
     // 階層樣式
@@ -436,14 +653,17 @@ main{
                     @media all and (max-width: 1600px) {
                         height: 10.65vw;
                     }
-                    @media all and (max-width: 1000px) {
+                    @media all and (max-width: 1400px) {
                         height: 14vw;
                     }
-                    @media all and (max-width: 769px) {
+                    @media all and (max-width: 1000px) {
                         height: 18vw;
                     }
+                    @media all and (max-width: 769px) {
+                        height: 26vw;
+                    }
                     @media all and (max-width: 380px) {
-                        height: 28vw;
+                        height: 50vw;
                     }
                     img{
                         width: 100%;
@@ -496,9 +716,6 @@ main{
             padding-top: 15px;
             // justify-content: center;
         }
-
-
-       
 
         .last_types{
             width: max-content;

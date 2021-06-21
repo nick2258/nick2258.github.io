@@ -45,7 +45,7 @@
             <input type="text" placeholder="請輸入關鍵字查詢">
             <i class="fas fa-search" ></i>
         </section>
-        <section class="description container"> 
+        <section class="description container" style="display: none;"> 
             
             <span class="description_content"> 
                 <div class="title">【   名片類  】</div>
@@ -66,11 +66,96 @@
                         <li>造型卡片，適用於集點卡、產品說明卡、保證卡、小廣告牌等。</li>
                     </ul>
 
+                    <ul>
+                        <li>雞尾酒名片</li>
+                        <li>不侷限只在雞尾酒工藝大全工法裡的製作條件，設計者可任意自行搭配雞尾酒名片的紙張、印刷以及加工方式</li>
+                    </ul>
+
                     
                 </div>
             </span>
            
             
+
+        </section>
+
+        <section class="description1 container">
+            <div class="title">【   名片簡介  】</div>
+            <div class="description-btns">
+                <button class="collapsible product-description-btn ">彩色名片</button>
+                <button class="collapsible product-description-btn">雙摺名片</button>
+                <button class="collapsible product-description-btn">雞尾酒名片片片片片片</button>
+                <button class="collapsible product-description-btn">造型卡片</button>
+
+                <button class="collapsible product-description-btn ">彩色名片</button>
+                <button class="collapsible product-description-btn">雙摺名片</button>
+                <button class="collapsible product-description-btn">雞尾酒名片</button>
+                <button class="collapsible product-description-btn">造型卡片</button>
+
+                
+
+          
+
+
+
+
+
+            </div>
+            <div class="description-information">
+
+                <div class="description-content" >
+                    <ul>
+                        <li>
+                            彩色名片，適用於名片、會員卡、集點卡、個性化名片、店卡、產品說明卡、保證卡、吊牌、小廣告牌或打圓孔後可做產品說明卡…..等等。
+                        </li>
+                    </ul>
+                </div>
+                <div class="description-content">
+                <ul>
+                    <li>雙摺名片可任選橫式雙摺或直式雙摺，尺寸規格2M大，更大尺寸請改用「雙摺卡片」下單。</li>
+                </ul>
+                </div>
+
+                <div class="description-content">
+                <ul>
+                    <li>造型卡片，適用於集點卡、產品說明卡、保證卡、小廣告牌等。</li>
+                </ul>
+                </div>
+
+                <div class="description-content">
+                <ul>
+                    <li>不侷限只在雞尾酒工藝大全工法裡的製作條件，設計者可任意自行搭配雞尾酒名片的紙張、印刷以及加工方式</li>
+                </ul>
+                </div>
+
+                <div class="description-content" >
+                    <ul>
+                        <li>
+                            彩色名片，適用於名片、會員卡、集點卡、個性化名片、店卡、產品說明卡、保證卡、吊牌、小廣告牌或打圓孔後可做產品說明卡…..等等。
+                        </li>
+                    </ul>
+                </div>
+                <div class="description-content">
+                <ul>
+                    <li>雙摺名片可任選橫式雙摺或直式雙摺，尺寸規格2M大，更大尺寸請改用「雙摺卡片」下單。</li>
+                </ul>
+                </div>
+
+                <div class="description-content">
+                <ul>
+                    <li>造型卡片，適用於集點卡、產品說明卡、保證卡、小廣告牌等。</li>
+                </ul>
+                </div>
+
+                <div class="description-content">
+                <ul>
+                    <li>不侷限只在雞尾酒工藝大全工法裡的製作條件，設計者可任意自行搭配雞尾酒名片的紙張、印刷以及加工方式</li>
+                </ul>
+                </div>
+
+
+                
+           
 
         </section>
 
@@ -118,6 +203,69 @@
 
         </section>
     </main>
+
+    <!-- <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+    </script> -->
+
+    <script>
+         const type_btn = document.querySelectorAll(".collapsible")
+         type_btn[0].classList.add("active");
+         const content = document.querySelectorAll(".description-content")
+         content[0].classList.add("active");
+
+        console.log(type_btn);
+        console.log(content);
+
+        
+
+            // 增加商品的按鈕
+             type_btn.forEach(function(ele, i) {
+            // console.log(ele, '寫forEach的時候，帶進來的第一個參數，就是被遍歷的元素');
+                ele.addEventListener('click', function() {
+                    clearallbtn()
+                    clearallcontent()
+                    type_btn[i].classList.add("active");
+                    content[i].classList.add("active");
+                });
+            });
+
+            function clearallbtn() {
+                // 增加商品的按鈕
+              type_btn.forEach(function(ele, i) {
+            // console.log(ele, '寫forEach的時候，帶進來的第一個參數，就是被遍歷的元素');
+            
+                ele.classList.remove("active");
+               
+                });
+            }
+
+            function clearallcontent() {
+                content.forEach(function(ele, i) {
+            // console.log(ele, '寫forEach的時候，帶進來的第一個參數，就是被遍歷的元素');
+            
+                ele.classList.remove("active");
+               
+                });
+            }
+              
+
+    
+    </script>
+        
     
 </body>
 </html>
