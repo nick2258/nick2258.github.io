@@ -49,50 +49,51 @@
                     <i class="fas fa-search"></i>
                 </div>
                  <div class="all_types">
-                    <button onclick="myFunction()" class="dropbtn">所有類別</button>
+                    <button onclick="myFunction()" class="dropbtn">選擇類別</button>
+                    <div class="all-types-title">類別</div>
     
                     <div class="dropdown-content" id="myDropdown">
     
-                        <a class="type" href="#product_01">
+                        <a class="small-type" href="#product_01">
                         <span class="type_text">黑貓</span>    
                         </a>
 
-                        <a class="type" href="">
+                        <a class="small-type" href="#product_01">
                             <span class="type_text">黑貓黑貓黑貓黑貓黑貓</span>    
                             </a>
     
-                        <a class="type" href="#product_02">白貓</a>
+                        <a class="small-type" href="#product_02">白貓</a>
     
-                        <a class="type" href="#product_03">茄子</a>
+                        <a class="small-type" href="#product_03">茄子</a>
 
-                        <a class="type" href="#product_01">黑貓</a>
+                        <a class="small-type" href="#product_01">黑貓</a>
     
-                        <a class="type" href="#product_02">白貓</a>
+                        <a class="small-type" href="#product_02">白貓</a>
 
-                        <a class="type" href="#product_01">黑貓</a>
+                        <!-- <a class="small-type" href="#product_01">黑貓</a>
     
-                        <a class="type" href="#product_02">白貓</a>
+                        <a class="small-type" href="#product_02">白貓</a>
     
-                        <a class="type" href="#product_03">茄子</a>
+                        <a class="small-type" href="#product_03">茄子</a>
 
-                        <a class="type" href="#product_01">黑貓</a>
-                        <a class="type" href="#product_01">黑貓</a>
+                        <a class="small-type" href="#product_01">黑貓</a>
+                        <a class="small-type" href="#product_01">黑貓</a>
     
-                        <a class="type" href="#product_02">白貓</a>
+                        <a class="small-type" href="#product_02">白貓</a>
     
-                        <a class="type" href="#product_03">茄子</a>
+                        <a class="small-type" href="#product_03">茄子</a>
 
-                        <a class="type" href="#product_01">黑貓</a>
+                        <a class="small-type" href="#product_01">黑貓</a>
     
-                        <a class="type" href="#product_02">白貓</a>
+                        <a class="small-type" href="#product_02">白貓</a>
 
-                        <a class="type" href="#product_01">黑貓</a>
+                        <a class="small-type" href="#product_01">黑貓</a>
     
-                        <a class="type" href="#product_02">白貓</a>
+                        <a class="small-type" href="#product_02">白貓</a>
     
-                        <a class="type" href="#product_03">茄子</a>
+                        <a class="small-type" href="#product_03">茄子</a>
 
-                        <a class="type" href="#product_01">黑貓</a>
+                        <a class="small-type" href="#product_01">黑貓</a> -->
     
     
                     </div>
@@ -207,6 +208,33 @@ window.onclick = function(event) {
     }
   }
 }
+   </script>
+
+   <script>
+        const small_type_btn = document.querySelectorAll(".small-type")
+        console.log(small_type_btn);
+
+        small_type_btn.forEach(function(btn, i) {
+            // console.log(ele, '寫forEach的時候，帶進來的第一個參數，就是被遍歷的元素');
+            console.log(btn);
+            btn.addEventListener('click', function() {
+                // 商品數量顯示 +1
+                clarall()
+                btn.classList.add("active");
+
+                // updateCart();
+            });
+        });
+
+        function clarall() {
+            small_type_btn.forEach(function(btn, i) {
+            // console.log(ele, '寫forEach的時候，帶進來的第一個參數，就是被遍歷的元素');
+            btn.classList.remove("active");
+        });
+        }
+
+       
+
    </script>
 
 
