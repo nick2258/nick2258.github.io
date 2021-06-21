@@ -96,6 +96,8 @@ a {
 
 nav {
   background-color: #f5f1de;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f5f1de), to(#F2F0CE));
+  background-image: linear-gradient(to right, #f5f1de 0%, #F2F0CE 100%);
   position: -webkit-sticky !important;
   position: sticky !important;
   top: 0px;
