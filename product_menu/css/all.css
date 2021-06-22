@@ -1139,6 +1139,7 @@ main .second-types .second-type .information .type-description .type-texts.activ
   max-height: max-content;
   -webkit-transition: .6s;
   transition: .6s;
+  margin-top: 8px;
 }
 
 main .second-types .second-type .information .type-description ul {
