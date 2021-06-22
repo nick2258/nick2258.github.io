@@ -390,19 +390,10 @@ main .description .description_content {
       -ms-flex-align: center;
           align-items: center;
   width: 90%;
-  padding: 30px 45px;
-  background-color: #9dd8ff42;
-  -webkit-box-shadow: 0px 3px 15px #81b6da7e;
-          box-shadow: 0px 3px 15px #81b6da7e;
   border: radius 8px;
   margin: auto;
   color: #4b4b4b;
-}
-
-@media all and (max-width: 1200px) {
-  main .description .description_content {
-    padding: 20px 30px;
-  }
+  margin-bottom: 30px;
 }
 
 main .description .description_content .title {
@@ -757,7 +748,7 @@ main .types .type {
   width: calc(20% - 24px);
   -webkit-box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.178);
           box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.178);
-  padding: 16px 24px;
+  padding: 16px 0px;
   border-radius: 20px;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -847,36 +838,23 @@ main .types .type .typebtn {
 main .types .type .typebtn .pic {
   width: 100%;
   height: 180px;
+  width: 180px;
+  height: 150px;
   margin: auto;
-}
-
-@media all and (max-width: 1600px) {
-  main .types .type .typebtn .pic {
-    height: 10.65vw;
-  }
-}
-
-@media all and (max-width: 1400px) {
-  main .types .type .typebtn .pic {
-    height: 14vw;
-  }
-}
-
-@media all and (max-width: 1000px) {
-  main .types .type .typebtn .pic {
-    height: 18vw;
-  }
 }
 
 @media all and (max-width: 769px) {
   main .types .type .typebtn .pic {
     height: 26vw;
+    width: 35vw;
+    height: 31.5vw;
   }
 }
 
 @media all and (max-width: 380px) {
   main .types .type .typebtn .pic {
-    height: 50vw;
+    height: 58.5vw;
+    width: 65vw;
   }
 }
 
@@ -920,6 +898,199 @@ main .types .type .typebtn .name .text {
 @media all and (max-width: 500px) {
   main .types .type .typebtn .name .text {
     font-size: 16px;
+  }
+}
+
+main .second-types {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .second-types .second-type {
+  width: calc(50% - 10px);
+  width: calc(33.33% - 6.66px);
+  width: calc(25% - 15px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 24px 16px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.178);
+          box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.178);
+}
+
+main .second-types .second-type:nth-child(4n) {
+  margin-right: 0px;
+}
+
+@media all and (max-width: 1550px) {
+  main .second-types .second-type {
+    width: calc(33.33% - 13.33px);
+  }
+  main .second-types .second-type:nth-child(4n) {
+    margin-right: 20px;
+  }
+  main .second-types .second-type:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  main .second-types .second-type {
+    width: calc(50% - 10px);
+  }
+  main .second-types .second-type:nth-child(4n) {
+    margin-right: 0px;
+  }
+  main .second-types .second-type:nth-child(3n) {
+    margin-right: 20px;
+  }
+  main .second-types .second-type:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  main .second-types .second-type {
+    width: calc(50% - 10px);
+    width: 100%;
+    margin-right: 0px;
+  }
+  main .second-types .second-type:nth-child(4n) {
+    margin-right: 0px;
+  }
+  main .second-types .second-type:nth-child(3n) {
+    margin-right: 20px;
+  }
+  main .second-types .second-type:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+
+main .second-types .second-type .information {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .second-types .second-type .information a {
+  display: block;
+}
+
+main .second-types .second-type .information .pic {
+  width: 200px;
+  height: 180px;
+  width: 250px;
+  height: 225px;
+}
+
+@media all and (max-width: 680px) {
+  main .second-types .second-type .information .pic {
+    width: 200px;
+    height: 180px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  main .second-types .second-type .information .pic {
+    width: 350px;
+    height: 315px;
+  }
+}
+
+@media all and (max-width: 420px) {
+  main .second-types .second-type .information .pic {
+    max-width: 72vw;
+    max-height: 65vw;
+  }
+}
+
+main .second-types .second-type .information .pic img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+main .second-types .second-type .information .type-description {
+  padding: 0px 24px;
+  position: relative;
+}
+
+main .second-types .second-type .information .type-description .more-btn {
+  width: 100%;
+  text-align: center;
+  right: 0px;
+  bottom: 0px;
+  font-size: 16px;
+  padding: 8px 0px;
+  border-radius: 2px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  background-color: gainsboro;
+}
+
+@media all and (max-width: 550px) {
+  main .second-types .second-type .information .type-description .more-btn {
+    font-size: 14px;
+  }
+}
+
+main .second-types .second-type .information .type-description .type-name {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 600;
+  margin: 12px 0px;
+}
+
+@media all and (max-width: 680px) {
+  main .second-types .second-type .information .type-description .type-name {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  main .second-types .second-type .information .type-description .type-name {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 420px) {
+  main .second-types .second-type .information .type-description .type-name {
+    font-size: 16px;
+  }
+}
+
+main .second-types .second-type .information .type-description ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+main .second-types .second-type .information .type-description ul li {
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  list-style: none;
+}
+
+@media all and (max-width: 420px) {
+  main .second-types .second-type .information .type-description ul li {
+    font-size: 14px;
+    letter-spacing: 1.5;
   }
 }
 
