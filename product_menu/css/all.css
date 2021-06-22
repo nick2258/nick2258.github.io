@@ -1452,6 +1452,7 @@ main .content .last_types .all_types .dropdown-content .small-type.active {
   main .content .last_types .all_types .dropdown-content .small-type {
     font-size: 16px;
     width: 300px;
+    max-width: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1635,13 +1636,8 @@ main .content .product .product_content {
 @media all and (max-width: 700px) {
   main .content .product .product_content {
     width: 300px;
-  }
-}
-
-@media all and (max-width: 360px) {
-  main .content .product .product_content {
-    width: 100%;
-    padding: 0px 8px;
+    max-width: 300px;
+    margin-top: 8px;
   }
 }
 
