@@ -11,6 +11,12 @@ body {
           box-sizing: border-box;
 }
 
+a {
+  display: block;
+  color: unset;
+  text-decoration: none;
+}
+
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -265,6 +271,9 @@ nav .nav .home_btn {
 }
 
 .breadcrumb ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: gray;
   font-size: 14px;
   letter-spacing: 1.5px;
@@ -277,6 +286,7 @@ nav .nav .home_btn {
 }
 
 .breadcrumb ul li a {
+  display: initial;
   color: gray;
   text-decoration: none;
 }
@@ -294,9 +304,10 @@ nav .nav .home_btn {
 }
 
 .breadcrumb ul li + li:before {
-  padding: 8px;
+  padding-left: 5px;
   color: black;
   content: "/\00a0";
+  font-size: 20px;
 }
 
 main {
@@ -901,6 +912,31 @@ main .types .type .typebtn .name .text {
   }
 }
 
+main .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .btns .type-btn {
+  padding: 15px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  background-color: khaki;
+  margin-right: 10px;
+}
+
+main .btns .type-btn.active {
+  background-color: lavenderblush;
+}
+
+main .tab-content {
+  max-height: 0px;
+  height: 0px;
+  padding: 0px;
+}
+
 main .second-types {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1032,6 +1068,7 @@ main .second-types .second-type .information .type-description {
 
 main .second-types .second-type .information .type-description .more-btn {
   width: 100%;
+  z-index: 20;
   text-align: center;
   right: 0px;
   bottom: 0px;
@@ -1041,6 +1078,21 @@ main .second-types .second-type .information .type-description .more-btn {
   letter-spacing: 1.5px;
   font-weight: 600;
   background-color: gainsboro;
+  background-color: #a3c8df;
+  color: #3f3e3e;
+  border-radius: 3px;
+}
+
+main .second-types .second-type .information .type-description .more-btn:hover {
+  background-color: orange;
+  color: white;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+main .second-types .second-type .information .type-description .more-btn.active {
+  background-color: orange;
+  color: white;
 }
 
 @media all and (max-width: 550px) {
@@ -1072,6 +1124,21 @@ main .second-types .second-type .information .type-description .type-name {
   main .second-types .second-type .information .type-description .type-name {
     font-size: 16px;
   }
+}
+
+main .second-types .second-type .information .type-description .type-texts {
+  display: none;
+  max-height: 0px;
+  z-index: 20;
+}
+
+main .second-types .second-type .information .type-description .type-texts.active {
+  display: block;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 main .second-types .second-type .information .type-description ul {
@@ -1228,8 +1295,13 @@ main .content .last_types .all_types {
   width: 300px;
   margin-right: auto;
   position: relative;
+  margin-bottom: 20px;
   /* Dropdown Button */
   /* width */
+}
+
+main .content .last_types .all_types:nth-last-child(1) {
+  margin-bottom: 0px;
 }
 
 @media all and (max-width: 861px) {
@@ -1250,6 +1322,10 @@ main .content .last_types .all_types {
         -ms-flex-direction: column;
             flex-direction: column;
     justify-self: center;
+    margin-bottom: 10px;
+  }
+  main .content .last_types .all_types:nth-last-child(1) {
+    margin-bottom: 10px;
   }
 }
 
@@ -1312,7 +1388,7 @@ main .content .last_types .all_types .dropdown-content {
   height: max-content;
   height: auto;
   max-height: 200px;
-  max-height: 70vh;
+  max-height: 60vh;
   overflow-y: auto;
 }
 
@@ -1449,6 +1525,9 @@ main .content .product {
 
 main .content .product .swiper-container {
   width: 560px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 @media all and (max-width: 1400px) {
@@ -1478,6 +1557,9 @@ main .content .product .swiper-container {
 
 main .content .product .swiper-container .swiper-wrapper .swiper-slide {
   width: 560px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 main .content .product .swiper-container .swiper-wrapper .swiper-slide img {
@@ -1551,7 +1633,7 @@ main .content .product .product_content {
 
 @media all and (max-width: 700px) {
   main .content .product .product_content {
-    width: 80%;
+    width: 300px;
   }
 }
 
@@ -1560,10 +1642,6 @@ main .content .product .product_content {
     width: 100%;
     padding: 0px 8px;
   }
-}
-
-main .content .product .product_content .texts {
-  padding-top: 15px;
 }
 
 main .content .product .product_content .texts .text {
@@ -1582,6 +1660,143 @@ main .content .product .product_content .texts .text {
 @media all and (max-width: 580px) {
   main .content .product .product_content .texts .text {
     font-size: 16px;
+  }
+}
+
+main .content .product .product_content .texts .all_types {
+  width: 300px;
+  margin-right: auto;
+  position: relative;
+  margin-bottom: 20px;
+  /* Dropdown Button */
+  /* width */
+}
+
+main .content .product .product_content .texts .all_types:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+@media all and (max-width: 861px) {
+  main .content .product .product_content .texts .all_types {
+    width: 250px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  main .content .product .product_content .texts .all_types {
+    width: 100%;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-self: center;
+    margin-bottom: 10px;
+  }
+  main .content .product .product_content .texts .all_types:nth-last-child(1) {
+    margin-bottom: 10px;
+  }
+}
+
+@media all and (max-width: 319px) {
+  main .content .product .product_content .texts .all_types {
+    width: 260;
+  }
+}
+
+main .content .product .product_content .texts .all_types .dropbtn {
+  background-color: #457392;
+  font-weight: 600;
+  border-radius: 3px;
+  color: white;
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  display: none;
+}
+
+@media all and (max-width: 700px) {
+  main .content .product .product_content .texts .all_types .dropbtn {
+    display: block;
+    width: 300px;
+    margin: auto;
+  }
+}
+
+main .content .product .product_content .texts .all_types .all-types-title {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  height: auto;
+  max-height: 200px;
+  text-align: center;
+  background-color: #457392;
+  color: white;
+  font-weight: 600;
+  border-radius: 3px;
+  color: white;
+  padding: 10px 16px;
+  font-size: 16px;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+main .content .product .product_content .texts .all_types .paper-content {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  height: auto;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+main .content .product .product_content .texts .all_types .paper-content .small-type {
+  font-size: 18px;
+  padding: 8px 16px;
+  padding-right: 8px;
+  text-align: left;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  background-color: #b2cee0;
+  border: 1px solid ghostwhite;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+main .content .product .product_content .texts .all_types .paper-content .small-type.active {
+  background-color: #67a0c2;
+  color: white;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+@media all and (max-width: 861px) {
+  main .content .product .product_content .texts .all_types .paper-content .small-type {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  main .content .product .product_content .texts .all_types .paper-content .small-type {
+    font-size: 16px;
+    width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: initial;
   }
 }
 

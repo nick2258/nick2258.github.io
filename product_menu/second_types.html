@@ -436,15 +436,9 @@
          type_btn[0].classList.add("active");
          const content = document.querySelectorAll(".description-content")
          content[0].classList.add("active");
-
-        console.log(type_btn);
-        console.log(content);
-
         
-
-            // 增加商品的按鈕
              type_btn.forEach(function(ele, i) {
-            // console.log(ele, '寫forEach的時候，帶進來的第一個參數，就是被遍歷的元素');
+            
                 ele.addEventListener('click', function() {
                     clearallbtn()
                     clearallcontent()
@@ -454,9 +448,9 @@
             });
 
             function clearallbtn() {
-                // 增加商品的按鈕
+                
               type_btn.forEach(function(ele, i) {
-            // console.log(ele, '寫forEach的時候，帶進來的第一個參數，就是被遍歷的元素');
+          
             
                 ele.classList.remove("active");
                
@@ -465,9 +459,7 @@
 
             function clearallcontent() {
                 content.forEach(function(ele, i) {
-            // console.log(ele, '寫forEach的時候，帶進來的第一個參數，就是被遍歷的元素');
-            
-                ele.classList.remove("active");
+                    ele.classList.remove("active");
                
                 });
             }
