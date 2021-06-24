@@ -176,17 +176,17 @@
                             <span class="type_text ">200g合成卡</span>    
                         </a>
 
-                        <a class="small-type paper-type active" href="">
+                        <div class="small-type paper-type " href="">
                             <span class="type_text ">220g一級卡</span>    
-                        </a>
+                        </div>
 
                         <a class="small-type paper-type" href="">
                             <span class="type_text ">一級卡雙亮</span>    
                         </a>
 
-                        <a class="small-type paper-type" href="">
+                        <div class="small-type paper-type" href="">
                             <span class="type_text ">一級卡雙霧</span>    
-                        </a>
+                        </div>
 
                         <a class="small-type paper-type" href="">
                             <span class="type_text ">一級卡局部上光</span>    
@@ -404,17 +404,17 @@ window.onclick = function(event) {
 <!-- 確認框 -->
 <script>
     const processing_type_check_btn = document.querySelectorAll(".processing-type-check-btn")
-    console.log(processing_type_check_btn);
+    // console.log(processing_type_check_btn);
 
-    processing_type_check_btn.forEach(function(btn, i) {
+    processing_type_check_btn.forEach(function(e) {
         
-        btn.addEventListener('click', function() {
+        e.addEventListener('click', function() {
         //    console.log(btn);
-            if (btn.classList.contains("active")) {
-                btn.classList.remove("active")
-            }else{
-                btn.classList.add("active")
-            }
+            // if (btn.classList.contains("active")) {
+                e.classList.toggle("active")
+            // }else{
+                // btn.classList.add("active")
+            // }
         });
     });
 
@@ -428,14 +428,31 @@ window.onclick = function(event) {
     // console.log(papers);
 
 
-    papers.forEach(function(paper, i) {
-        console.log(papers);
-        
-        paper.addEventListener('click', function() {
-           console.log(paper);
-           paper.classList.add("active");
-        });
+    papers.forEach(i => {
+        // console.log(papers);    
+        i.onclick = function(){
+            console.log('paper');
+            clearpaper();
+           this.classList.add("active");
+        }
+        // addEventListener('click', function() {
+           
+        // });
     });
+
+    function clearpaper() {
+        papers.forEach(i => {
+        // console.log(papers);    
+        
+            console.log('paper');
+           i.classList.remove("active");
+        
+        // addEventListener('click', function() {
+           
+        // });
+    });
+        
+    }
 
   
 </script>
