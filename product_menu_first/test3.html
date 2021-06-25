@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第四層產品分類</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body style="background-image: url(./img/背景.png);">
+   
+
+    <nav style="background-image: url(./img/背景.png);">    
+        <section class="nav">
+            <!-- 回上一頁按鈕 -->
+            <a href="./first_types.html" class="back_btn" style="text-decoration: none;">
+                <div class="btn"><i class="fad fa-angle-double-left"></i>回上一頁</div>
+            </a>
+
+            <!-- 標題 -->
+            <div class="title">電子型錄(同行)</div>
+
+            <!-- 回到頂端 -->
+            <a href="#home" class="home_btn" style="text-decoration: none;">
+                <div class="btn">回到頂端<i class="fad fa-angle-double-up"></i></div>
+    
+            </a>
+        </section>
+      
+    </nav>
+
+    <section class="breadcrumb container" id="home">
+        <ul >
+            <li><a href="#">所有產品</a></li>
+            <li><a href="#">各類名片、卡片</a></li>
+            <li><a href="#">彩色名片</a></li>    
+            <li><a href="#">造型名片合版</a></li>           
+       
+
+         
+          </ul>
+    
+    </section>
+
+    <main>
+        <section class="search container">
+            <input type="text" placeholder="請輸入關鍵字查詢">
+            <i class="fas fa-search" ></i>
+        </section>  
+        
+        <!-- <section class="btns container">
+            <div class="type-btn">單面</div>
+            <div class="type-btn">雙面</div>
+        </section> -->
+
+        
+
+        <section class="types container ">
+
+            <a href="./test4.html" class="type" style="text-decoration: none;"  target="_blank">
+                <span class="typebtn">
+                    <div class="pic">
+                        <img src="./img/第四層.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <span class="text">單面彩色
+                        </span>
+                    </div>
+                </span> 
+            </a>
+
+            <a href="./test1.html" class="type" style="text-decoration: none;"  target="_blank">
+                <span class="typebtn">
+                    <div class="pic">
+                        <img src="./img/第四層.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <span class="text">雙面彩色
+                        </span>
+                    </div>
+                </span> 
+            </a>
+
+
+            
+       
+        </section>
+
+      
+    </main>
+
+   
+
+    <!-- <script>
+       
+         const type_btn = document.querySelectorAll(".type-btn")
+         type_btn[0].classList.add("active");
+         const content = document.querySelectorAll(".tab-content")
+         clearallcontent();
+         content[0].classList.add("active");
+    
+             type_btn.forEach(function(ele, i) {
+                ele.addEventListener('click', function() {
+                    clearallbtn()
+                    clearallcontent()
+                    type_btn[i].classList.add("active");
+                    content[i].classList.add("active");
+                });
+            });
+
+            function clearallbtn() {
+              type_btn.forEach(function(ele, i) {
+                ele.classList.remove("active");
+               
+                });
+            }
+
+            function clearallcontent() {
+                content.forEach(function(ele, i) {
+                ele.classList.remove("active");
+               
+                });
+            }
+              
+
+    
+    </script> -->
+<!-- 
+    <script>
+        const len = 40;
+const ellipsis = document.querySelectorAll('.type-text');
+ellipsis.forEach((item) => {
+  if(item.innerHTML.length > len) {
+    let txt = item.innerHTML.substring(0, len) + '...';
+    item.innerHTML = txt;
+  }
+})
+    </script> -->
+        
+    
+</body>
+</html>
