@@ -208,6 +208,7 @@ nav .nav a .btn {
 
 nav .nav a .btn:hover {
   background-color: orange;
+  background-color: darkred;
   color: white;
   -webkit-transition: .6s;
   transition: .6s;
@@ -779,6 +780,17 @@ main .types .type {
   margin-right: 30px;
   margin-bottom: 30px;
   background-color: #fffefe;
+  border: 2px solid transparent;
+}
+
+main .types .type:hover {
+  border: 2px solid rgba(255, 166, 0, 0.616);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+main .types .type:hover img {
+  opacity: .9;
 }
 
 main .types .type:nth-child(5n) {
@@ -980,24 +992,30 @@ main .second-types {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0px 280px;
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1000px) {
   main .second-types {
-    padding: 0px 12vw;
+    padding: 24px 120px;
+    border-radius: 15px;
   }
 }
 
-@media all and (max-width: 1100px) {
+@media all and (max-width: 859px) {
   main .second-types {
-    padding: 0px 3vw;
+    padding: 24px 72px;
   }
 }
 
 @media all and (max-width: 760px) {
   main .second-types {
-    padding: 0px 16vw;
+    padding: 24px 18vw;
+  }
+}
+
+@media all and (max-width: 640px) {
+  main .second-types {
+    padding: 24px 12vw;
   }
 }
 
@@ -1009,6 +1027,12 @@ main .second-types {
 
 @media all and (max-width: 400px) {
   main .second-types {
+    padding: 0px 30px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  main .second-types {
     padding: 0px 10px;
   }
 }
@@ -1017,18 +1041,35 @@ main .second-types .second-type {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc(50% - 10px);
-  width: calc(33.33% - 6.66px);
-  width: calc(25% - 15px);
-  width: 100%;
-  margin: auto;
+  width: calc(50% - 15px);
   margin-bottom: 45px;
   padding: 24px 120px;
   padding: 24px 36px;
   background-color: white;
   border-radius: 20px;
+  margin-right: 30px;
   -webkit-box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.178);
           box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.178);
+}
+
+main .second-types .second-type:nth-child(2n) {
+  margin-right: 0px;
+}
+
+@media all and (max-width: 1400px) {
+  main .second-types .second-type {
+    padding: 24px 20px;
+    border-radius: 15px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  main .second-types .second-type {
+    width: 100%;
+    padding: 24px 32px;
+    border-radius: 15px;
+    margin-right: 0px;
+  }
 }
 
 @media all and (max-width: 760px) {
@@ -1038,11 +1079,26 @@ main .second-types .second-type {
   }
 }
 
+main .second-types .second-type:hover .information {
+  color: #235470;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+main .second-types .second-type:hover .information .type-name {
+  color: #235470;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
 main .second-types .second-type .information {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 70px;
+  position: relative;
+  color: #525252;
 }
 
 @media all and (max-width: 760px) {
@@ -1058,11 +1114,34 @@ main .second-types .second-type .information a {
   display: block;
 }
 
+main .second-types .second-type .information .type-name {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 10;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: gray;
+  padding-bottom: 8px;
+  border-bottom: 1px solid gainsboro;
+}
+
 main .second-types .second-type .information .pic {
   width: 200px;
   height: 180px;
   width: 250px;
   height: 225px;
+}
+
+main .second-types .second-type .information .pic:hover {
+  opacity: .8;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 @media all and (max-width: 900px) {
@@ -1117,9 +1196,15 @@ main .second-types .second-type .information .pic img {
 }
 
 main .second-types .second-type .information .type-description {
-  padding-left: 32px;
+  padding-left: 20px;
   position: relative;
-  width: calc(100% - 280px);
+  width: calc(100% - 250px);
+}
+
+@media all and (max-width: 1400px) {
+  main .second-types .second-type .information .type-description {
+    width: calc(100% - 220px);
+  }
 }
 
 @media all and (max-width: 900px) {
@@ -1197,6 +1282,19 @@ main .second-types .second-type .information .type-description .type-name {
   text-align: center;
   font-weight: 600;
   margin-bottom: 15px;
+  color: #525252;
+}
+
+@media all and (max-width: 1400px) {
+  main .second-types .second-type .information .type-description .type-name {
+    font-size: 24px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  main .second-types .second-type .information .type-description .type-name {
+    font-size: 22px;
+  }
 }
 
 @media all and (max-width: 680px) {
@@ -1230,6 +1328,13 @@ main .second-types .second-type .information .type-description ul li {
   padding-bottom: 15px;
   letter-spacing: 2px;
   list-style: none;
+}
+
+@media all and (max-width: 1200px) {
+  main .second-types .second-type .information .type-description ul li {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @media all and (max-width: 760px) {
@@ -1274,7 +1379,22 @@ main .content .all-selects .selects {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 45px;
+  margin-right: 30px;
+}
+
+main .content .all-selects .selects .update-text {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 10px;
+  color: darkred;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.5px;
 }
 
 main .content .all-selects .selects .select-title {
@@ -1292,10 +1412,36 @@ main .content .all-selects .selects .select-title {
   text-align: center;
 }
 
+main .content .all-selects .selects .select-title-btn {
+  background-color: darkred;
+}
+
+main .content .all-selects .selects .select-title-btn:hover {
+  background-color: white;
+  border: 2px solid darkred;
+  color: darkred;
+  -webkit-box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.5);
+          box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.5);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
 main .content .all-selects .selects .select-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .content .all-selects .selects .select-content .text {
+  font-size: 18px;
+  margin-right: 20px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
 }
 
 main .content .all-selects .selects .select-content .texts {
@@ -1307,10 +1453,28 @@ main .content .all-selects .selects .select-content .texts {
 }
 
 main .content .all-selects .selects .select-content .texts .link {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin-right: 10px;
+  width: 95px;
+  margin-right: 25px;
+  border: 2px solid gainsboro;
+  border-radius: 5px;
+  padding: 8px;
+  -webkit-box-shadow: 3px 3px 8px rgba(220, 220, 220, 0.815);
+          box-shadow: 3px 3px 8px rgba(220, 220, 220, 0.815);
+  background-color: rgba(220, 220, 220, 0.199);
+}
+
+main .content .all-selects .selects .select-content .texts .link:nth-child(2) {
+  margin-right: 0px;
+}
+
+main .content .all-selects .selects .select-content .texts .link:hover {
+  border: 2px solid darkred;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+main .content .all-selects .selects .select-content .texts .link:hover img {
+  opacity: .9;
 }
 
 main .content .all-selects .selects .select-content .texts .link img {
@@ -1324,6 +1488,7 @@ main .content .all-selects .selects .select-content .texts .link .link-text {
   font-size: 14px;
   text-align: center;
   padding-top: 5px;
+  color: #525252;
 }
 
 main .content .all-selects .selects .select-content .texts .dino-input-field {
@@ -1408,6 +1573,11 @@ main .content .all-selects .selects .select-content .checks {
   margin-right: 15px;
 }
 
+main .content .all-selects .selects .select-content .checks input {
+  outline: none;
+  border: 1px solid gainsboro;
+}
+
 main .content .all-selects .selects .select-content .checks .check-btn {
   width: 20px;
   height: 20px;
@@ -1415,11 +1585,32 @@ main .content .all-selects .selects .select-content .checks .check-btn {
   border-radius: 50%;
   border: 1px solid gainsboro;
   margin-right: 8px;
+  background-color: gray;
+}
+
+main .content .all-selects .selects .select-content .checks .print_btn.active {
+  background-color: gray;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 main .content .all-selects .selects .select-content .checks .check-title {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   font-size: 20px;
   font-weight: 600;
+  color: #525252;
+}
+
+main .content .all-selects .selects .btn {
+  font-size: 16px;
+  padding: 5px 12px;
+  border-radius: 3px;
+  background-color: #457392;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1.5px;
 }
 
 main .content .last_types {
@@ -1448,13 +1639,21 @@ main .content .last_types .all_types {
   width: 300px;
   margin-right: auto;
   position: relative;
+  background-color: #d4e8f75b;
+  border-radius: 8px;
   margin-right: 30px;
+  -webkit-box-shadow: 5px 5px 10px rgba(156, 156, 156, 0.342);
+          box-shadow: 5px 5px 10px rgba(156, 156, 156, 0.342);
   /* Dropdown Button */
   /* width */
 }
 
 main .content .last_types .all_types:nth-last-child(1) {
   margin-bottom: 0px;
+}
+
+main .content .last_types .all_types:nth-last-child(1) .dropdown-content {
+  max-height: 250px;
 }
 
 @media all and (max-width: 900px) {
@@ -1605,6 +1804,13 @@ main .content .last_types .all_types .dropdown-content .small-type {
   margin-bottom: 5px;
 }
 
+main .content .last_types .all_types .dropdown-content .small-type:hover {
+  background-color: #235470;
+  color: white;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
 @media all and (max-width: 1000px) {
   main .content .last_types .all_types .dropdown-content .small-type {
     font-size: 16px;
@@ -1635,6 +1841,10 @@ main .content .last_types .all_types .dropdown-content .small-type.active {
   transition: .6s;
 }
 
+main .content .last_types .all_types .dropdown-contentlast {
+  max-height: 240px;
+}
+
 main .content .last_types .type-content {
   width: calc(100% - 330px);
   display: -webkit-box;
@@ -1650,6 +1860,9 @@ main .content .last_types .type-content .type-pic {
   width: max-content;
   width: 450px;
   height: 320px;
+  -webkit-box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.5);
+          box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.5);
+  border-radius: 5px;
 }
 
 main .content .last_types .type-content .type-pic .swiper-slide {

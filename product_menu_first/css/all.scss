@@ -156,6 +156,7 @@ nav{
                 }
                 &:hover{
                     background-color: orange;
+                    background-color: darkred;
                     color: white;
                     transition: .6s;
                     .fa-angle-double-left{
@@ -607,6 +608,14 @@ main{
             margin-right: 30px;
             margin-bottom: 30px;
             background-color: #fffefe;
+            border: 2px solid transparent;
+            &:hover{
+                border: 2px solid rgba(255, 166, 0, 0.616);
+                transition: .6s;
+                img{
+                    opacity: .9;
+                }
+            }
             &:nth-child(5n){
                 margin-right: 0px;
             }
@@ -780,34 +789,56 @@ main{
     .second-types{
         display: flex;
         flex-wrap: wrap;
-        padding: 0px 280px;
-        @media all and (max-width: 1400px) {
-            padding: 0px 12vw;
-        }  
-        @media all and (max-width: 1100px) {
-            padding: 0px 3vw;
-        }  
+        @media all and (max-width: 1000px) {
+           
+            padding:24px 120px;
+            border-radius: 15px;
+        }
+        @media all and (max-width: 859px) {
+           
+            padding:24px 72px;
+           
+        }
         @media all and (max-width: 760px) {
-            padding: 0px 16vw;
-        } 
+            padding:24px 18vw;
+           
+        }
+        @media all and (max-width: 640px) {
+            padding:24px 12vw;
+            
+        }
+        
+        // padding: 0px 280px;
+        // @media all and (max-width: 1400px) {
+        //     padding: 0px 12vw;
+        // }  
+        // @media all and (max-width: 1100px) {
+        //     padding: 0px 3vw;
+        // }  
+        // @media all and (max-width: 760px) {
+        //     padding: 0px 16vw;
+        // } 
         @media all and (max-width: 600px) {
             padding: 0px 8vw;
         } 
         @media all and (max-width: 400px) {
+            padding: 0px 30px;
+        } 
+        @media all and (max-width: 350px) {
             padding: 0px 10px;
         } 
         
 
         .second-type{
             display: flex;
-            width: calc(50% - 10px);
-            width: calc(33.33% - 6.66px);
-            width: calc(25% - 15px);
+            width: calc(50% - 15px);
+            // width: calc(33.33% - 6.66px);
+            // width: calc(25% - 15px);
             // width: 80%;
-            width: 100%;
+            // width: 100%;
             // max-width: 1120px;
 
-            margin: auto;
+            // margin: auto;
             // margin-right: 20px;
             margin-bottom: 45px;
             
@@ -815,12 +846,34 @@ main{
             padding: 24px 36px;
             background-color: white;
             border-radius: 20px;
+
+            margin-right: 30px;
             // border: 1px solid gainsboro;
             box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.178);
             // @media all and (max-width: 1000px) {
             //     padding: 24px 80px;
 
             // }  
+            &:nth-child(2n){
+                margin-right: 0px;
+            }
+         
+            @media all and (max-width: 1400px) {
+                // height: auto;
+                // padding: 80px 45px;
+                // margin-bottom: 0px;
+                padding:24px 20px;
+                border-radius: 15px;
+
+            } 
+            @media all and (max-width: 1000px) {
+                // width: 90%;
+                width: 100%;
+                padding:24px 32px;
+                border-radius: 15px;
+                margin-right: 0px;
+ 
+            }
             @media all and (max-width: 760px) {
                 // height: auto;
                 // padding: 80px 45px;
@@ -829,6 +882,18 @@ main{
                 border-radius: 15px;
 
             } 
+            &:hover{
+                .information{
+                    color: #235470;
+                    transition: .4s;
+                    .type-name{
+                        color: #235470;
+                        transition: .4s;
+                    }
+                    
+                
+                }
+            }
             
             
             .information{
@@ -840,6 +905,10 @@ main{
                 // justify-content: center;
                 // margin: 0px;
                 // background-color: white;
+                padding-top: 70px;
+                position: relative;
+                color: rgb(82, 82, 82);
+
 
                 @media all and (max-width: 760px) {
                     flex-direction: column;
@@ -847,6 +916,21 @@ main{
                 } 
                 a{
                     display: block;
+                }
+                .type-name{
+                    text-align: center;
+                    width: 100%;
+                    position: absolute;
+                    top: 0px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 10;
+                    font-size: 32px;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    color: gray;
+                    padding-bottom: 8px;
+                    border-bottom: 1px solid gainsboro;
                 }
                 .pic{
                     width: 200px;
@@ -856,6 +940,14 @@ main{
 
                     // width: 280px;
                     // height: 252px;
+                    // @media all and (max-width: 1400px) {
+                    //     width: 200px;
+                    //     height: 185px;
+                    // }  
+                    &:hover{
+                        opacity: .8;
+                        transition: .6s;
+                    }
                     @media all and (max-width: 900px) {
                         width: 250px;
                         height: 225px;
@@ -922,9 +1014,14 @@ main{
                 .type-description{
                 
                     // padding:0px 32px;
-                    padding-left: 32px;
+                    // padding-left: 32px;
+                    padding-left: 20px;
                     position: relative;
-                    width: calc(100% - 280px);
+                    width: calc(100% - 250px);
+
+                    @media all and (max-width: 1400px) {
+                        width: calc(100% - 220px);
+                    } 
                     @media all and (max-width: 900px) {
                         width: calc(100% - 250px);
                     } 
@@ -989,6 +1086,16 @@ main{
                         font-weight: 600;
                         // margin: 12px 0px;
                         margin-bottom: 15px;
+                        color: rgb(82, 82, 82);
+
+                       
+
+                        @media all and (max-width: 1400px) {
+                            font-size: 24px;
+                         }
+                         @media all and (max-width: 1200px) {
+                            font-size: 22px;
+                         }
                         @media all and (max-width: 680px) {
                            font-size: 20px;
                         }
@@ -1024,6 +1131,11 @@ main{
                             padding-bottom:15px;
                             letter-spacing: 2px;
                             list-style: none;
+                          
+                             @media all and (max-width: 1200px) {
+                                font-size: 16px;
+                                line-height: 24px;
+                             }
                             @media all and (max-width: 760px) {
                                 font-size: 16px;
                                 line-height: 24px;
@@ -1049,9 +1161,11 @@ main{
                             // }
                         }
                     }
+                  
                 }
            
             }
+           
           
         }
     }
@@ -1074,7 +1188,20 @@ main{
             .selects{
                 display: flex;
                 align-items: center;
-                margin-right: 45px;
+                margin-right: 30px;
+                .update-text{
+                    height: 100%;
+                    display: flex;
+                    align-items: flex-end;
+                    margin-left: 10px;
+                    // background-color: darkred;
+                    // color: white;
+                    color: darkred;
+
+                    font-weight: 600;
+                    font-size: 18px;
+                    letter-spacing: 1.5px;
+                }
 
                 .select-title{
                     width: 300px;
@@ -1091,15 +1218,58 @@ main{
                     margin-right: 30px;
                     text-align: center;
                 }
+                .select-title-btn{
+                    background-color: darkred;
+                }
+                .select-title-btn:hover{
+                    // background-color: orange;
+                    // background-color: wheat;
+                    background-color: white;
+                    border: 2px solid darkred;
+                    color: darkred;
+                    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.5);
+                    transition: .6s;
+                    
+                }
                 .select-content{
                     display: flex;
+                    align-content: center;
+                    align-items: center;
+                    .text{
+                        font-size: 18px;
+                        margin-right: 20px;
+                        letter-spacing: 1.5px;
+                        font-weight: 600;
+                        .select-content-text{
+                            
+                        }
+                    }
                     .texts{
                         font-size: 20px;
                         font-weight: 600;
                         display: flex;
                         .link{
-                            width: max-content;
-                            margin-right: 10px;
+                            // width: max-content;
+                            width: 95px;
+                            margin-right: 25px;
+                            border: 2px solid gainsboro;
+                            border-radius: 5px;
+                            // border-radius: 3px;
+                            padding: 8px;
+                            box-shadow: 3px 3px 8px rgba(220, 220, 220, 0.815);
+                            background-color: rgba(220, 220, 220, 0.199);
+                            &:nth-child(2){
+                                margin-right: 0px;
+                            }
+                            &:hover{
+                                // background-color: rgb(200, 236, 236);
+                               
+                                border: 2px solid darkred;
+                                transition: .6s;
+                                img{
+                                    opacity: .9;
+                                }
+                            }
 
                             img{
                                 // width: 100%;
@@ -1113,6 +1283,7 @@ main{
                                 font-size: 14px;
                                 text-align: center;
                                 padding-top: 5px;
+                                color: rgb(82, 82, 82);
                             }
                         }
 
@@ -1182,6 +1353,10 @@ main{
                         display: flex;
                         align-items: center;
                         margin-right: 15px;
+                        input{
+                            outline: none;
+                            border: 1px solid gainsboro;
+                        }
                         .check-btn{
                             width: 20px;
                             height: 20px;
@@ -1189,12 +1364,28 @@ main{
                             border-radius: 50%;
                             border: 1px solid gainsboro;
                             margin-right: 8px;
+                            background-color: gray;
+                        }
+                        .print_btn.active{
+                            background-color: gray;
+                            transition: .6s;
                         }
                         .check-title{
+                            width: max-content;
                             font-size: 20px;
                             font-weight: 600;
+                            color: rgb(82, 82, 82);
                         }
                     }
+                }
+                .btn{
+                    font-size: 16px;
+                    padding: 5px 12px;
+                    border-radius: 3px;
+                    background-color: #457392;
+                    color: white;
+                    font-weight: 600;
+                    letter-spacing: 1.5px;
                 }
             }
         }
@@ -1217,17 +1408,24 @@ main{
             // 左側選單列
             .all_types{
                 width: 300px;
+                // height: 320px;
+                // padding: 15px;
+                // border: 1px solid gainsboro;
+                // border-radius: 5px;
                 margin-right: auto;
                 position: relative;
+                background-color: #d4e8f75b;
                 // margin-bottom: 20px;
+                border-radius: 8px;
                 margin-right: 30px;
+                box-shadow: 5px 5px 10px rgba(156, 156, 156, 0.342);
                 &:nth-last-child(1){
                     margin-bottom: 0px;
-                   
-
+                    .dropdown-content{
+                        max-height: 250px;
+                    }
                 }
-              
-               
+                    
                 @media all and (max-width: 900px) {
                     // width: 100vw;
                     width: 100%;
@@ -1354,11 +1552,11 @@ main{
                         border: 1px solid ghostwhite;
                         border-radius: 5px;
                         margin-bottom: 5px;
-                        // &.active{
-                        //     background-color: #67a0c2;
-                        //     color: white;
-                        //     transition: .6s;
-                        // }
+                        &:hover{
+                            background-color: #235470;
+                            color: white;
+                            transition: .6s;
+                        }
 
                         @media all and (max-width: 1000px) {
                             font-size: 16px;
@@ -1396,6 +1594,9 @@ main{
                        
                     // }
                 }
+                .dropdown-contentlast{
+                    max-height: 240px;
+                }
                 /* width */
 
 
@@ -1413,9 +1614,14 @@ main{
                     width: max-content;
                     width: 450px;
                     height: 320px;
+                    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.5);
+                    border-radius: 5px;
+
+
                     .swiper-slide{
                         width: 100%;
                         height: 100%;
+                        
                         img{
                             width: 450px;
                             height: 320px;
@@ -1672,8 +1878,10 @@ main{
             text-align: center;
             border-radius: 5px;
             padding: 5px 0px;
+            // line-height: 28px;
         }
         .all-select-content{
+          
             ul{
                 justify-content: space-between;
                 margin: 0px;

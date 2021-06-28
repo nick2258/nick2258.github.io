@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第五層產品分類</title>
+    <title>造型名片合版</title>
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
@@ -14,12 +14,12 @@
     <nav style="background-image: url(./img/背景.png);">    
         <section class="nav">
             <!-- 回上一頁按鈕 -->
-            <a href="./first_types.html" class="back_btn" style="text-decoration: none;">
+            <a href="./test2.html" class="back_btn" style="text-decoration: none;">
                 <div class="btn"><i class="fad fa-angle-double-left"></i>回上一頁</div>
             </a>
 
             <!-- 標題 -->
-            <div class="title">電子型錄(同行)</div>
+            <a href="./first_types.html" class="title">電子型錄(同行)</a>
 
             <!-- 回到頂端 -->
             <a href="#home" class="home_btn" style="text-decoration: none;">
@@ -32,12 +32,11 @@
     
     <section class="breadcrumb container" id="home">
         <ul >
-            <li><a href="#">A頁面</a></li>
-            <li><a href="#">B頁面</a></li>
-            <li>點選的內容(依內容作切換)</li>
-            <!-- <li><a href="#">Summer 15</a></li>
-            <li>Italy</li> -->
-          </ul>
+            <li><a href="#">所有類別</a></li>
+            <li><a href="#">名片、卡片類</a></li>
+            <li><a href="#">彩色名片</a></li>
+            <li><a href="#">造型名片合版</a></li>
+        </ul>
     
     </section>
 
@@ -111,8 +110,8 @@
                  <!-- 產品樣式圖片 -->
                 <div class="swiper-container mySwiper type-pic">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide"> <img src="http://www.papergoods.com.tw/ds/ProductDefine/001-%E6%96%87%E5%89%B5%E7%B4%99%E5%93%81/001-2D%E4%BE%BF%E6%A2%9D%E7%B4%99/001-P01ABCA/3.jpg" alt=""></div>
-                      <div class="swiper-slide"> <img src="http://www.papergoods.com.tw/ds/ProductDefine/001-%E6%96%87%E5%89%B5%E7%B4%99%E5%93%81/001-2D%E4%BE%BF%E6%A2%9D%E7%B4%99/001-P01ABCA/3.jpg" alt=""></div>
+                      <div class="swiper-slide"> <img src="./img/造型名片1.jpg" alt=""></div>
+                      <div class="swiper-slide"> <img src="./img/造型名片2.jpg" alt=""></div>
                      
                     </div>
                     <div class="swiper-pagination"></div>
@@ -126,16 +125,20 @@
                         </div> 
 
                         <div class="text">
-                             工作天數：約5-7個工作天
+                             工作天數：約2-3個工作天
                         </div> 
 
                         <div class="text">
-                            尺寸規格：2mm x 2mm
+                            完稿尺寸：4mm x 2mm
+                        </div>
+
+                        <div class="text">
+                            成品尺寸：4mm x 2mm
                         </div>
                         
                         <div class="text">
-                            可額外增加之加工方式： 局部上光、燙金
-                        </div>  
+                            此產品可額外增加之加工方式： <br> 局部上光、燙金
+                        </div>   
                     </div>
 
                 </div>
@@ -236,55 +239,103 @@
 
                     <div class="select-content">
                         <div class="checks">
-                            <div class="check-btn"></div>
+                            <input class="check-btn " type="radio" name="sex" value="male" required checked>
+                            <div class="check-title"> 雙面</div>
+                            
+                        </div>
+
+                        <div class="checks">
+                            <input class="check-btn " type="radio" name="sex" value="male">
+                            <div class="check-title"> 單面</div>
+                            
+                        </div>
+                       
+                        <!-- <div class="checks">
+                            <div class="check-btn print_btn" ></div>
                             <div class="check-title">雙面</div>
                         </div>
 
                         <div class="checks">
-                            <div class="check-btn"></div>
+                            <div class="check-btn print_btn"></div>
                             <div class="check-title">單面</div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
                 <!-- 印刷數量 -->
-                <div class="selects">
-                    <div class="select-title">下載樣本檔</div>
+                <!-- <div class="selects">
+                    <div class="select-title">所選樣式樣本檔下載</div>
 
                     <div class="select-content">
                         <div class="texts">
                             <a class="link" href="" download="">
-                                <img src="./img/aipng.png" alt="">
+                                <img src="./img/ai_icon.png" alt="">
                                 <div class="link-text">Illustrator</div>
                             </a>
 
                             <a class="link" href="" download="">
-                                <img src="./img/coredraw" alt="">
-                                <div class="link-text">coreldraw</div>
+                                <img src="./img/cdr_icon.png" alt="">
+                                <div class="link-text">CorelDRAW</div>
                             </a>
-                            <!-- <div class="dino-input-field select custom-select">
-                                <label></label>
-                                <ul class="select-options">
-                                  <li>Opción 1</li>
-                                  <li>Opción 2</li>
-                                  <li>Opción 3</li>
-                                </ul>
-                                <span class="option-selected">選擇數量</span>
-                            </div> -->
-
-                            <!-- <span class="number">
-                                <select name="" id="">
-                                    <option value="">100</option>
-                                    <option value="">200</option>
-                                    <option value="">300</option>
-                                    <option value="">400</option>
-                                    <option value="">500</option>
-                                </select>
-                                </span> 個 -->
+                           
                         </div>
                     </div>
-                </div>
+                </div> -->
                 
+            </div>
+
+            <div class="all-selects">
+                <div class="selects">
+                    <div class="select-title">所選條件描述</div>
+    
+                    <div class="select-content">
+                        <span class="text">  造型名片合版 \   台灣造型    \   200g合成卡  \   雙面</span>
+                        <!-- <div class="texts">
+                            <a class="link" href="" download="">
+                                <img src="./img/ai_icon.png" alt="">
+                                <div class="link-text">Illustrator</div>
+                            </a>
+    
+                            <a class="link" href="" download="">
+                                <img src="./img/cdr_icon.png" alt="">
+                                <div class="link-text">CorelDRAW</div>
+                            </a>
+                           
+                        </div> -->
+                        
+                    </div>
+                    <!-- <div class="btn">按此鍵確認所選條件</div> -->
+                    <!-- <div class="btn">所選樣式樣本檔下載</div> -->
+
+                    
+                </div>
+            </div>
+
+            <div class="all-selects">
+                <div class="selects">
+                    <div class="select-title select-title-btn">按此"確認鍵"產出樣本檔
+                    </div>
+    
+                    <div class="select-content">
+                        <!-- <span class="text">數位寫真名片\橫式\雙面</span> -->
+                        <div class="texts">
+                            <a class="link" href="" download="">
+                                <img src="./img/ai_icon.png" alt="">
+                                <div class="link-text">Illustrator</div>
+                            </a>
+    
+                            <a class="link" href="" download="">
+                                <img src="./img/cdr_icon.png" alt="">
+                                <div class="link-text">CorelDRAW</div>
+                            </a>
+                           
+                        </div>
+                        
+                    </div>
+                    <div class="update-text">
+                        <span>所選條件   <br> 樣本檔已可下載  </span>
+                    </div>
+                </div>
             </div>
 
 
@@ -324,27 +375,7 @@
                             <span class="type_text ">燙金</span>    
                         </button>
 
-                        <button class="small-type processing-type"   >
-                            <span class="type_text ">局部上光</span>    
-                        </button>
-
-                        <button class="small-type processing-type" >
-                            <span class="type_text ">燙金</span>    
-                        </button>
-                        <button class="small-type processing-type"   >
-                            <span class="type_text ">局部上光</span>    
-                        </button>
-
-                        <button class="small-type processing-type" >
-                            <span class="type_text ">燙金</span>    
-                        </button>
-                        <button class="small-type processing-type"   >
-                            <span class="type_text ">局部上光</span>    
-                        </button>
-
-                        <button class="small-type processing-type" >
-                            <span class="type_text ">燙金</span>    
-                        </button>
+                      
 
                     </div>
                 </div>
@@ -354,7 +385,7 @@
                    
                     <!-- 加工方式圖片 -->
                     <div class="type-pic">
-                        <img src="./img/紙張樣式2.jpg" alt="">
+                        <img src="./img/局光.jpg" alt="">
                     </div>
 
                     <!-- 加工方式文字 -->
@@ -502,12 +533,12 @@
         </section>
 
         <!-- 確認按鈕 -->
-        <div class="btns">
+        <!-- <div class="btns">
         <div class="btn">樣本檔下載 <i class="fas fa-file-download"></i></div>
 
         <div class="btn" style="display: none;">加入清單</div>
         <div class="btn" style="display: none;">查看所有清單</div>
-        </div>
+        </div> -->
 
 
     </main>
@@ -518,7 +549,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
-
+    <!-- swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
            slidesPerView:1,
@@ -536,7 +567,7 @@
     </script>
 
     <!-- 手機板選擇列下拉式選單 -->
-    <script>
+    <!-- <script>
 function myFunction() {
   document.getElementsByClassName("myDropdown").classList.toggle("show");
 }
@@ -554,7 +585,7 @@ window.onclick = function(event) {
     }
   }
 }
-   </script>
+   </script> -->
 <!-- 
    <script>
         const small_type_btn = document.querySelectorAll(".paper-type")
@@ -581,14 +612,11 @@ window.onclick = function(event) {
 
    </script> -->
 
-<script>
-       
+<!-- 手機版下拉式選單 -->
+<script>      
     const type_btn = document.querySelectorAll(".dropbtn")
-    // type_btn[0].classList.add("active");
     const content = document.querySelectorAll(".dropdown-content")
     clearallcontent();
-    // content[0].classList.add("active");
-
         type_btn.forEach(function(ele, i) {
            ele.addEventListener('click', function() {
                clearallbtn()
@@ -611,34 +639,42 @@ window.onclick = function(event) {
           
            });
        }
-         
-
-
 </script>
 
 
 
-<!-- 確認框 -->
+<!-- 加工確認框 -->
 <script>
-    const processing_type_check_btn = document.querySelectorAll(".processing-type-check-btn")
-    // console.log(processing_type_check_btn);
-
-    processing_type_check_btn.forEach(function(e) {
+    const processing_type_check_btns = document.querySelectorAll(".processing-type-check-btn")
+    processing_type_check_btns.forEach(function(e) {
         
         e.addEventListener('click', function() {
-        //    console.log(btn);
-            // if (btn.classList.contains("active")) {
                 e.classList.toggle("active")
-            // }else{
-                // btn.classList.add("active")
-            // }
+        });
+    });
+</script>
+
+<!-- 單雙面確認框 -->
+<script>
+    const print_btns = document.querySelectorAll(".print_btn")
+    print_btns[0].classList.toggle("active");
+    print_btns.forEach(function(e) {
+        
+        e.addEventListener('click', function() {
+            clearprint_btns()
+            e.classList.toggle("active");
         });
     });
 
-  
+    function clearprint_btns() {
+        print_btns.forEach(i => {
+           i.classList.remove("active");
+    });
+        
+    }
 </script>
 
-<!-- 確認框 -->
+<!-- 紙張樣式選擇欄 -->
 <script>
     const papers = document.querySelectorAll(".paper-type")
     papers[0].classList.add("active");
@@ -662,12 +698,12 @@ window.onclick = function(event) {
 
 </script>
 
+<!-- 產品樣式選單 -->
 <script>
     const products = document.querySelectorAll(".product-type")
     products[0].classList.add("active");
 
     products.forEach(i => {
-        // console.log(papers); 
         i.onclick = function(){
             console.log('paper');
             clearproduct();
@@ -685,12 +721,12 @@ window.onclick = function(event) {
 
 </script>
 
+<!-- 加工方式選單 -->
 <script>
     const processings = document.querySelectorAll(".processing-type")
     processings[0].classList.add("active");
 
     processings.forEach(i => {
-        // console.log(papers);    
         i.onclick = function(){
             console.log('paper');
             clearprocessing();
@@ -708,6 +744,8 @@ window.onclick = function(event) {
 
 </script>
 
+
+<!-- 下拉式數量選單 -->
 <script>
     $(document).ready(function(e){
   $('.custom-select').click(function(e){
