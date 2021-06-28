@@ -1104,8 +1104,9 @@ main{
                               display: flex;
                               align-items: center;
                               height: 52px;
-                              padding: 0 20px 0 0;
+                            //   padding: 0 20px 0 0;
                               border-radius: 5px;
+                              text-align: center;
                           }
                           
                           .dino-input-field label {
@@ -1126,14 +1127,18 @@ main{
                           .dino-input-field .select-options {
                             display: none;
                             position: absolute;
-                            background-color: white;
-                            border: solid 1px lightgrey;
+                            // background-color: white;
+                            background-color: wheat;
+                            box-shadow: 5px 5px 15px rgb(167, 164, 164);
+                            // border: solid 1px lightgrey;
                             width: 100%;
                             top: 100%;
                             margin: 0;
                             padding: 0;
                             box-shadow: black 0 5px 20px -15px;
                             box-sizing: border-box;
+                            z-index: 50;
+                            text-align: center;
                           }
                           .dino-input-field .select-options li {
                             list-style: none;
