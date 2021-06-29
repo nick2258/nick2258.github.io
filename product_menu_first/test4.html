@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&family=Noto+Serif+TC:wght@600&display=swap" rel="stylesheet">
 </head>
 <body style="background-image: url(./img/背景.png);">
     <nav style="background-image: url(./img/背景.png);">    
@@ -31,25 +34,102 @@
     </nav>
     
     <section class="breadcrumb container" id="home">
-        <ul >
-            <li><a href="#">所有類別</a></li>
-            <li><a href="#">名片、卡片類</a></li>
-            <li><a href="#">彩色名片</a></li>
-            <li><a href="#">造型名片合版</a></li>
-        </ul>
+        <div class="container">
+            <ul >
+                <li><a href="./first_types.html">所有類別</a></li>
+                <li><a href="./test1.html">名片、卡片類</a></li>
+                <li><a href="./test2.html">彩色名片</a></li>
+                <li>造型名片合版</li>
+            </ul>
+        </div>
+        
     
     </section>
 
     <main style="background-image: url(./img/背景.png);">
         <div class="content container">
 
+              <!-- 種類選單 -->
+              <div class="last_types">
+                <!-- 種類選單 -->
+                <div class="all_types">
+                    <!-- 產品選單手機板 -->
+                    <button onclick="myFunction()" class="dropbtn">選擇彩色名片種類</button>
+                    <div class="all-types-title" >選擇彩色名片種類</div>
+                    
+                    <!-- 選單內容 -->
+                    <div class="dropdown-content" id="myDropdown">
+
+                        <button class="small-type big-type" >
+                            <span class="type_text" >雞尾酒彩色名片</span>    
+                        </button>
+
+                        <button class="small-type big-type" >
+                            <span class="type_text">數位寫真名片</span>    
+                        </button>
+
+                        <button class="small-type big-type" >
+                            <span class="type_text">彩色名片合版</span>    
+                        </button>
+
+                        <button class="small-type big-type" >
+                            <span class="type_text">造型名片合板</span>    
+                        </button>
+
+                      
+
+                        <button class="small-type big-type" >
+                            <span class="type_text">雙摺名片合版</span>    
+                        </button>
+
+                        
+
+                      
+                    </div>
+                </div>
+               
+            <!-- 種類內容 -->
+             <div class="type-content">
+                 <!-- 種類圖片 -->
+                <div class="swiper-container mySwiper type-pic">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"> <img src="./img/第三層.jpg" alt=""></div>
+                      <div class="swiper-slide"> <img src="./img/第三層.jpg" alt=""></div>
+                     
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+
+                  <!-- 產品樣式文字 -->
+                  <div class=" type-texts">
+                    <div class="texts">
+                        <!-- <div class="type-texts-title">
+                            選擇種類：造型名片合板
+                        </div> -->
+
+                          
+                        <div class="text">
+                            選擇種類：造型名片合板
+                        </div>   
+                       
+                        
+                        <div class="text">
+                            種類介紹：雙摺名片可任選橫式雙摺或直式雙摺，尺寸規格2M大，更大尺寸請改用「雙摺卡片」下單。
+                        </div>   
+                    </div>
+
+                </div>
+             </div>
+
+            </div>
+
             <!-- 產品樣式 -->
             <div class="last_types">
                 <!-- 產品選單 -->
                 <div class="all_types">
                     <!-- 產品選單手機板 -->
-                    <button onclick="myFunction()" class="dropbtn">選擇樣式</button>
-                    <div class="all-types-title">選擇樣式</div>
+                    <button onclick="myFunction()" class="dropbtn">選擇造型名片合版樣式</button>
+                    <div class="all-types-title">選擇造型名片合版樣式</div>
                     
                     <!-- 選單內容 -->
                     <div class="dropdown-content" id="myDropdown">
@@ -289,20 +369,12 @@
                     <div class="select-title">所選條件描述</div>
     
                     <div class="select-content">
-                        <span class="text">  造型名片合版 \   台灣造型    \   200g合成卡  \   雙面</span>
-                        <!-- <div class="texts">
-                            <a class="link" href="" download="">
-                                <img src="./img/ai_icon.png" alt="">
-                                <div class="link-text">Illustrator</div>
-                            </a>
-    
-                            <a class="link" href="" download="">
-                                <img src="./img/cdr_icon.png" alt="">
-                                <div class="link-text">CorelDRAW</div>
-                            </a>
-                           
-                        </div> -->
-                        
+                        <ul class="select-description">
+                            <li>造型名片合版</li>
+                            <li>台灣造型</li>
+                            <li>200g合成卡</li>
+                            <li>雙面</li>
+                        </ul>             
                     </div>
                     <!-- <div class="btn">按此鍵確認所選條件</div> -->
                     <!-- <div class="btn">所選樣式樣本檔下載</div> -->
@@ -333,7 +405,8 @@
                         
                     </div>
                     <div class="update-text">
-                        <span>所選條件   <br> 樣本檔已可下載  </span>
+                        <div>所選條件</div>
+                        <div>樣本檔已可下載 </div>
                     </div>
                 </div>
             </div>
@@ -673,6 +746,31 @@ window.onclick = function(event) {
         
     }
 </script>
+
+<!-- 種類選擇選擇欄 -->
+<script>
+    const bigtypes = document.querySelectorAll(".big-type")
+    bigtypes[3].classList.add("active");
+
+    bigtypes.forEach(i => {
+        // console.log(papers);    
+        i.onclick = function(){
+         
+            clearbigtypes();
+           this.classList.add("active");
+        }
+    });
+
+    function clearbigtypes() {
+        bigtypes.forEach(i => {
+          
+           i.classList.remove("active");
+    });
+        
+    }
+
+</script>
+
 
 <!-- 紙張樣式選擇欄 -->
 <script>

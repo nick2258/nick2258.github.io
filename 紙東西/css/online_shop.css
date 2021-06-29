@@ -203,6 +203,74 @@ main .product_information .selects {
   margin-bottom: 30px;
 }
 
+main .product_information .selects .dino-input-field {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: gray;
+  border: 1px solid gainsboro;
+  background-color: #2c3e50;
+  color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  border-radius: 3px 3px 0px 0px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+main .product_information .selects .dino-input-field label {
+  top: 5px;
+  left: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+main .product_information .selects .dino-input-field .select-options {
+  display: none;
+  position: absolute;
+  background-color: wheat;
+  background-color: #6894b1;
+  background-color: #687A8F;
+  -webkit-box-shadow: 5px 5px 15px #a7a4a4;
+          box-shadow: 5px 5px 15px #a7a4a4;
+  width: 100%;
+  top: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-shadow: black 0 5px 20px -15px;
+          box-shadow: black 0 5px 20px -15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 50;
+  text-align: center;
+  border-radius: 0px 0px 5px 5px;
+}
+
+main .product_information .selects .dino-input-field .select-options li {
+  list-style: none;
+  padding: 10px 20px;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+main .product_information .selects .dino-input-field .select-options li:hover {
+  background-color: #509C87;
+  color: white;
+  cursor: pointer;
+}
+
+main .product_information .selects .dino-input-field span {
+  display: block;
+  padding: 0 20px;
+  width: 100%;
+}
+
 main .product_information .selects select {
   width: 220px;
   height: 40px;
@@ -284,7 +352,7 @@ main .product_information .products .product_card .product_pic .product_btn {
 main .product_information .products .product_card .product_pic .product_btn:hover {
   -webkit-transition: .4s;
   transition: .4s;
-  background-color: rgba(255, 166, 0, 0.8);
+  background-color: rgba(255, 166, 0, 0.795);
 }
 
 main .product_information .products .product_card .product_content {

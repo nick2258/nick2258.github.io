@@ -186,35 +186,87 @@
 
         <div class="product_information">
             <div class="selects">
-                <select name="" id="">
+
+                <div class="dino-input-field select custom-select">
+                    <label></label>
+
+                    <span class="option-selected">選擇其他系列喜帖</span>
+
+                    <ul class="select-options">
+                        <li>所有系列喜帖</li>
+                        <li>A系列喜帖</li>
+                        <li>B系列喜帖</li>
+                        <li>C系列喜帖</li>
+                    </ul>
+                    
+                </div>
+
+                <div class="dino-input-field select custom-select">
+                    <label></label>
+
+                    <span class="option-selected">選擇商品風格</span>
+
+                    <ul class="select-options">
+                        <li>全部風格</li>
+                        <li>典雅</li>
+                        <li>可愛</li>
+                        <li>文青</li>
+                    </ul>
+                   
+                </div>
+
+                <div class="dino-input-field select custom-select">
+                    <label></label>
+
+                    <span class="option-selected">選擇商品價格</span>
+
+                    <ul class="select-options">
+                        <li>500元以下</li>
+                        <li>501~1000元</li>
+                        <li>1001~1500元</li>
+                        <li>1501~2000元</li>
+                        <li>2000元以上</li>
+                    </ul>
+                 
+                </div>
+                <!-- <select name="" id="">
                     <option value="">全系列喜帖</option>
                     <option value="">喜帖A系列</option>
                     <option value="">喜帖B系列</option>
                     <option value="">喜帖C系列</option>
-                </select>
+                </select> -->
 
 
-                <select name="" id="">
+
+                <!-- <select name="" id="">
                     <option value="">全部風格</option>
                     <option value="">典雅</option>
                     <option value="">文青</option>
                     <option value="">可愛</option>
                     <option value="">商業</option>
-                </select>
+                </select> -->
 
-                <select name="" id="">
+                <!-- <select name="" id="">
                     <option value="">500元以下</option>
                     <option value="">501~1000元</option>
                     <option value="">1001~1500元</option>
                     <option value="">1501~2000元</option>
                     <option value="">2000元以上</option>
-                </select>
+                </select> -->
 
+                <div class="dino-input-field select custom-select">
+                    <label></label>
+
+                    <span class="option-selected">選擇商品上架日期</span>
+                    <ul class="select-options">
+                      <li>由新至舊</li>
+                      <li>由舊至新</li>
+                      
+                    </ul>
+                   
+                </div>
                 
-                <select name="" id="">
-                    <option value="">上架日期 新到舊 </option>
-                    <option value="">上架日期 舊到新</option>
-                </select>
+                
             </div>
 
             <div class="products">
@@ -357,6 +409,9 @@
 
  <!-- Swiper JS -->
  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+ 
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
  <script>
     var swiper = new Swiper(".mySwiper", {
        slidesPerView:1,
@@ -383,6 +438,29 @@
        },
    });
   </script>
+
+<script>
+    $(document).ready(function(e){
+  $('.custom-select').click(function(e){
+    $( document ).click(function(e){
+    $( '.select-options' ).slideUp();
+  });
+    e.stopPropagation();
+    $( '.select-options', this ).slideToggle();
+  });
+  
+  $( '.select-options li' ).click(function(e){
+    e.stopPropagation();
+    const text_inside = $(this).text();
+    $(this).parent().slideUp();
+    $(this).parent().prev().text( text_inside );
+  });
+  
+  $( document ).click(function(e){
+    $( '.select-options' ).slideUp();
+  });
+});
+</script>
 
 </body>
 </html>
