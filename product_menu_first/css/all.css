@@ -2032,6 +2032,12 @@ main .content {
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 }
 
+@media all and (max-width: 1200px) {
+  main .content {
+    width: 100%;
+  }
+}
+
 main .content .all-selects {
   margin-bottom: 20px;
   margin-bottom: 30px;
@@ -2315,11 +2321,7 @@ main .content .last_types {
   padding: 0px 50px;
 }
 
-main .content .last_types:nth-child(1) {
-  border-radius: 30px;
-}
-
-@media all and (max-width: 900px) {
+@media all and (max-width: 1200px) {
   main .content .last_types {
     width: 100%;
     display: -webkit-box;
@@ -2354,9 +2356,11 @@ main .content .last_types .all_types:nth-last-child(1) .dropdown-content {
   max-height: 250px;
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 1200px) {
   main .content .last_types .all_types {
     width: 100%;
+    width: 420px;
+    margin: auto;
     margin-bottom: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2392,7 +2396,7 @@ main .content .last_types .all_types .dropbtn {
   display: none;
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 1200px) {
   main .content .last_types .all_types .dropbtn {
     display: block;
     width: 420px;
@@ -2426,7 +2430,7 @@ main .content .last_types .all_types .all-types-title {
   letter-spacing: 2px;
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 1200px) {
   main .content .last_types .all_types .all-types-title {
     display: none;
   }
@@ -2450,7 +2454,7 @@ main .content .last_types .all_types .dropdown-content {
   }
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 1200px) {
   main .content .last_types .all_types .dropdown-content {
     width: 422px;
     display: none;
@@ -2474,7 +2478,6 @@ main .content .last_types .all_types .dropdown-content {
 main .content .last_types .all_types .dropdown-content.show {
   display: block;
   z-index: 80;
-  background-color: none;
   margin: auto;
 }
 
@@ -2517,7 +2520,7 @@ main .content .last_types .all_types .dropdown-content .small-type:hover {
   }
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 1200px) {
   main .content .last_types .all_types .dropdown-content .small-type {
     font-size: 16px;
     width: 100%;
@@ -2552,6 +2555,15 @@ main .content .last_types .type-content {
   display: flex;
   margin: 0px;
   position: relative;
+}
+
+@media all and (max-width: 1200px) {
+  main .content .last_types .type-content {
+    width: 100%;
+    padding: 0px 120px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
 }
 
 main .content .last_types .type-content .type-pic {

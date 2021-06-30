@@ -17,7 +17,7 @@
     <nav style="background-image: url(./img/背景.png);">    
         <section class="nav">
             <!-- 回上一頁按鈕 -->
-            <a href="./test2_1.html" class="back_btn" style="text-decoration: none;">
+            <a href="./test1.html" class="back_btn" style="text-decoration: none;">
                 <div class="btn"><i class="fad fa-angle-double-left"></i>回上一頁</div>
             </a>
 
@@ -37,7 +37,7 @@
         <div class="container">
             <ul >
                 <li><a href="./first_types.html">所有類別</a></li>
-                <li><a href="./test2_1.html">名片、卡片類</a></li>
+                <li><a href="./test1.html">名片、卡片類</a></li>
                 <!-- <li><a href="./test2.html">彩色名片</a></li> -->
                 <li>彩色名片    -   造型名片合版</li>
             </ul>
@@ -54,7 +54,7 @@
                 <!-- 種類選單 -->
                 <div class="all_types">
                     <!-- 產品選單手機板 -->
-                    <button onclick="myFunction()" class="dropbtn">彩色名片種類</button>
+                    <button  class="dropbtn">彩色名片種類</button>
                     <div class="all-types-title" >彩色名片種類</div>
                     
                     <!-- 選單內容 -->
@@ -123,7 +123,7 @@
                 <!-- 產品選單 -->
                 <div class="all_types">
                     <!-- 產品選單手機板 -->
-                    <button onclick="myFunction()" class="dropbtn">選擇造型名片合版樣式</button>
+                    <button  class="dropbtn">選擇造型名片合版樣式</button>
                     <div class="all-types-title">選擇造型名片合版樣式</div>
                     
                     <!-- 選單內容 -->
@@ -228,7 +228,7 @@
                 <!-- 紙張選單 -->
                 <div class="all_types" >
                     <!-- 紙張手機板選單 -->
-                    <button onclick="myFunction()" class="dropbtn">選擇紙張</button>
+                    <button  class="dropbtn">選擇紙張</button>
                     <div class="all-types-title">選擇紙張</div>
     
                     <!-- 選單內容 -->
@@ -429,7 +429,7 @@
                
                 <div class="all_types" >
                     <!-- 加工方式手機板 -->
-                    <button onclick="myFunction()" class="dropbtn">可額外增加的加工方式(可複選)</button>
+                    <button class="dropbtn">可額外增加的加工方式(可複選)</button>
                     <div class="all-types-title">可額外增加的加工方式 <br> (可複選)</div>
     
                     <!-- 加工方式選單內容 -->
@@ -610,6 +610,7 @@
 
 
     </main>
+ 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
@@ -684,6 +685,7 @@ window.onclick = function(event) {
 <script>      
     const type_btn = document.querySelectorAll(".dropbtn")
     const content = document.querySelectorAll(".dropdown-content")
+    // const body = document.querySelector("body")
     clearallcontent();
         type_btn.forEach(function(ele, i) {
            ele.addEventListener('click', function() {
@@ -693,6 +695,19 @@ window.onclick = function(event) {
                content[i].classList.add("show");
            });
        });
+
+    //    window.onload = function () {
+	//         document.onclick = function () {
+	//             content.forEach(function(ele, i) {
+           
+              
+    //            ele.classList.remove("show");   
+    //    });
+	//         }
+	       
+	//     }
+
+   
 
        function clearallbtn() {
          type_btn.forEach(function(ele, i) {
@@ -707,7 +722,24 @@ window.onclick = function(event) {
           
            });
        }
+
+    //    點擊收起
+       window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
 </script>
+
+
 
 
 
@@ -723,7 +755,7 @@ window.onclick = function(event) {
 </script>
 
 <!-- 單雙面確認框 -->
-<script>
+<!-- <script>
     const print_btns = document.querySelectorAll(".print_btn")
     print_btns[0].classList.toggle("active");
     print_btns.forEach(function(e) {
@@ -740,7 +772,7 @@ window.onclick = function(event) {
     });
         
     }
-</script>
+</script> -->
 
 <!-- 種類選擇選擇欄 -->
 <script>

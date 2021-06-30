@@ -1770,6 +1770,14 @@ main{
         margin: auto;
 
         // 印刷方式數量
+        @media all and (max-width: 1200px) {
+            width: 100%;
+           
+         
+         
+            
+            
+        }
         .all-selects{
             margin-bottom: 20px;
             margin-bottom: 30px;
@@ -2023,7 +2031,7 @@ main{
             &:nth-child(1){
                 // padding: 50px;
                 // border: 3px solid #91604C;
-                border-radius: 30px;
+                // border-radius: 30px;
                 // background-color: lightblue;
                 // background-color: #ecb9a323;
                 // box-shadow: 8px 8px 10px #91604c3a;
@@ -2057,7 +2065,7 @@ main{
                
                 
             }
-            @media all and (max-width: 900px) {
+            @media all and (max-width: 1200px) {
                 width: 100%;
              
                 display: flex;
@@ -2086,15 +2094,18 @@ main{
                     }
                 }
                     
-                @media all and (max-width: 900px) {
+                @media all and (max-width: 1200px) {
                     // width: 100vw;
                     width: 100%;
+                    width: 420px;
+                    margin: auto;
                     // width: max-content;
                     margin-bottom: 20px;
                     display: flex;
                     flex-direction: column;
                     justify-self: center;
                     margin-bottom: 10px;
+
                     &:nth-last-child(1){
                         margin-bottom: 10px;
                     }
@@ -2117,9 +2128,10 @@ main{
                     letter-spacing: 2px;
                     display: none;
 
-                    @media all and (max-width: 900px) {
+                    @media all and (max-width: 1200px) {
                         display: block;
                         width: 420px;
+                        // max-width: max-content;
                         margin: auto;
                     }
                     @media all and (max-width: 600px) {
@@ -2147,7 +2159,7 @@ main{
                     letter-spacing: 2px;
 
                   
-                    @media all and (max-width: 900px) {
+                    @media all and (max-width: 1200px) {
                         display: none;  
                     }
                 }
@@ -2165,7 +2177,7 @@ main{
                         max-height: 230px;
                     }
                    
-                    @media all and (max-width: 900px) {
+                    @media all and (max-width: 1200px) {
                         
                         width: 422px;
                         display: none;
@@ -2187,7 +2199,6 @@ main{
                     &.show{
                         display: block;
                         z-index: 80;
-                        background-color: none ;
                         margin: auto;
                        
                     }
@@ -2225,7 +2236,7 @@ main{
                             font-size: 16px;
 
                         }
-                        @media all and (max-width: 900px) {
+                        @media all and (max-width: 1200px) {
                             font-size: 16px;
                             width: 100%;
                             // max-width: 300px;
@@ -2272,6 +2283,16 @@ main{
                 display: flex;
                 margin: 0px;
                 position: relative;
+                @media all and (max-width: 1200px) {
+                    width: 100%;
+                 
+                  
+                    
+                    padding: 0px 120px;
+                    padding-top: 20px;
+                    padding-bottom: 30px;
+                }
+                
                 // 圖片
                 .type-pic{
                     width: max-content;
