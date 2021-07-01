@@ -83,7 +83,7 @@
                     </div>
 
                      <!-- 印刷方式 -->
-                    <div class="selects">
+                    <div class="selects" style="display: none;">
                         <div class="select-title">選擇印刷方式</div>
 
                         <div class="select-content">
@@ -108,10 +108,11 @@
              <div class="all-type-content ">
 
                 <div class="type-tab-btns">
-                    <div class="type-tab-btn ">種類介紹</div>
-                    <div class="type-tab-btn">樣式介紹</div>
-                    <div class="type-tab-btn">規格介紹</div>
-                    <div class="type-tab-btn">紙材介紹</div>
+                    <div class="type-tab-btn ">產品介紹</div>
+                    <div class="type-tab-btn">產品樣式</div>
+                    <div class="type-tab-btn">適用紙材</div>
+                    <div class="type-tab-btn">適用加工</div>
+                    <!-- <div class="type-tab-btn">加工資訊</div> -->
                 </div>
 
                 <div class="type-tab-contents">
@@ -161,144 +162,336 @@
                                 </div>
 
                                 <div class="style-type-content">
-                                    <div class="style-type-name">台灣造型</div>
-                                        
-                                  
-                                   
-                                </div>
+                                    <div class="style-type-text">產品樣式：台灣造型</div>
 
-                                <div class="download-files">
-                                    <span>樣本檔下載</span> 
-                                    <div class="links">
-                                        <a class="link" href="" download="">
-                                            <img src="./img/ai_icon.png" alt="">
-                                            <div class="link-text">Illustrator</div>
-                                        </a>
-                
-                                        <a class="link" href="" download="">
-                                            <img src="./img/cdr_icon.png" alt="">
-                                            <div class="link-text">CorelDRAW</div>
-                                        </a>
+                                    <div class="style-type-text">
+                                        <div class="text">完稿尺寸：4mm x 2mm</div>
+                                        <div class="text">成品尺寸：4mm x 2mm</div>
+                                    </div>
+                                   
+                                    <div class="style-type-text">工作天數：約2  ~  3天(不含額外加工天數)</div>
+
+                                    <div class="style-selects">
+                                        <div class="all_types all-select-views">
+                                           <!-- 選單按鈕 -->
+                                            <button  class=" select-view-btn">查看適用紙張
+                                                <i class="fas fa-sort-down"></i>
+                                            </button>
+
+                                            <!-- 選單內容 -->
+                                            <div class=" select-view-content">
+                        
+                                                <button class=" small-type-view" >
+                                                    <span class="type_text" >200g合成卡</span>    
+                                                </button>
+                        
+                                                <button class=" small-type-view" >
+                                                    <span class="type_text">220g一級卡</span>    
+                                                </button>
+                        
+                                                <button class=" small-type-view" >
+                                                    <span class="type_text">一級卡雙亮</span>    
+                                                </button>
+                        
+                                                <button class=" small-type-view" >
+                                                    <span class="type_text">一級卡雙霧</span>    
+                                                </button>
+                        
+                                                <button class=" small-type-view" >
+                                                    <span class="type_text">一級卡局部上光</span>    
+                                                </button>
+
+                                                <button class=" small-type-view" >
+                                                    <span class="type_text">萊妮紙</span>    
+                                                </button>
+                        
+                                                <button class=" small-type-view" >
+                                                    <span class="type_text">象牙卡250g</span>    
+                                                </button>
+                        
+                                                <button class=" small-type-view" >
+                                                    <span class="type_text">炫光紙白色</span>    
+                                                </button>
+                        
+                                            </div>
+                        
+                                            
+                                        </div>
+
+                                        <div class="all_types all-select-views">
+                                            <!-- 產品選單手機板 -->
+                                            <button  class=" select-view-btn">印刷方式
+                                                <i class="fas fa-sort-down"></i>
+                                            </button>
+
+                                            <!-- 選單內容 -->
+                                            <div class=" select-view-content" id="myDropdown">
+                        
+                                                <button class=" small-type-view" >
+                                                    <span class="type_text" >雙面</span>    
+                                                </button>
+                        
+                                                <button class=" small-type-view" >
+                                                    <span class="type_text">單面</span>    
+                                                </button>
+                        
+                        
+                                            </div>
+                        
+                                            
+                                        </div>
+
+                                        <div class="all_types all-select-views">
+                                            <!-- 產品選單手機板 -->
+                                            <button  class=" select-view-btn">可額外加工方式 <br> ( 可複選  ) 
+                                                <i class="fas fa-sort-down"></i></button>
+
+                                            <!-- 選單內容 -->
+                                            <div class=" select-view-content" id="myDropdown">
+                        
+                                                <button class=" small-type-view" >
+                                                    <span class="type_text" >燙金</span>    
+                                                </button>
+                        
+                                                <button class=" small-type-view" >
+                                                    <span class="type_text">局光</span>    
+                                                </button>
+                        
+                        
+                                            </div>
+                        
+                                            
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="download-files">
+                                        <span class="download-files-title">樣本檔下載：</span> 
+                                        <div class="links">
+                                            <a class="link" href="" download="">
+                                                <img src="./img/ai_icon.png" alt="">
+                                                <div class="link-text">Illustrator <br>(    雙面    ) </div>
+                                            </a>
+                    
+                                            <a class="link" href="" download="">
+                                                <img src="./img/cdr_icon.png" alt="">
+                                                <div class="link-text">CorelDRAW <br> (   雙面    )</div>
+                                            </a>
+
+                                            <a class="link" href="" download="">
+                                                <img src="./img/ai_icon.png" alt="">
+                                                <div class="link-text">Illustrator <br>(    單面    ) </div>
+                                            </a>
+                    
+                                            <a class="link" href="" download="">
+                                                <img src="./img/cdr_icon.png" alt="">
+                                                <div class="link-text">CorelDRAW <br> (   單面    )</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="download-files">
+                                        <span class="download-files-title">注意須知下載：</span> 
+                                        <div class="links">
+                                            <a class="link" href="" download="">
+                                                <i class="fas fa-file-download"></i>
+                                                <div class="link-text">完稿須知</div>
+                                            </a>
+                    
+                                            <a class="link" href="" download="">
+                                                <i class="fas fa-file-download"></i>
+                                                <div class="link-text">委印須知</div>
+                                            </a>
+
+                                           
+                                        </div>
                                     </div>
                                 </div>
 
+                            </div>
+
+
+                            
+
+                            <div class="style-type">
+                                <div class="style-type-pic">
+                                    <img src="./img/造型名片1.jpg" alt="">
+                                </div>
+
+                                <div class="style-type-content">
+                                    <div class="style-type-text">產品樣式：小熊造型</div>
+                                    <div class="style-type-text">
+                                        <div class="text">完稿尺寸：4mm x 2mm</div>
+                                        <div class="text">成品尺寸：4mm x 2mm</div>
+                                    </div>
+                                    <div class="style-type-text">工作天數：約2  ~  3天(不含額外加工天數)</div>
+
+                                    <div class="style-selects">
+
+                                        <div class="dino-input-field select custom-select style-select">
+                                            <label></label>
+                        
+                                            <span class="option-selected style-select-title1">選擇產品紙材
+                                                <i class="fas fa-sort-down"></i>
+                                            </span>
+                        
+                                            <ul class="select-options  style-select-option">
+                                                <li>200g合成卡</li>
+                                                <li>220g一級卡</li>
+                                                <li>一級卡雙亮</li>
+                                                <li>一級卡雙霧</li>
+                                                <li>一級卡局部上光</li>
+                                                <li>一級卡雙局部上光</li>
+                                                <li>萊妮紙</li>
+                                                <li>象牙卡250g</li>
+                                                <li>炫光紙白色</li>
+                                            </ul>
+                                            
+                                        </div>
+
+                                        <div class="dino-input-field select custom-select style-select">
+                                            <label></label>
+                        
+                                            <span class="option-selected style-select-title1">選擇印刷方式
+                                                <i class="fas fa-sort-down"></i>
+                                            </span>
+                        
+                                            <ul class="select-options style-select-option">
+                                                <li>單面</li>
+                                                <li>雙面</li>
+                                                
+                                            </ul>
+                                            
+                                        </div>
+
+                                      
+
+                                      
+                                        
+                                    </div> 
+                                    <div class="style-type-text">選擇加工方式：</div>
+                                    <form class="process-selects">
+                                        
+                                        <div class="process-select">
+                                            <input type="checkbox" value="" name="">
+                                            <div class="process-selectname">燙金</div>
+                                        </div>
+
+                                        <div class="process-select">
+                                            <input type="checkbox" value="" name="">
+                                            <div class="process-selectname">局光</div>
+                                        </div>
+                                        <div class="process-select">
+                                            <input type="checkbox" value="" name="">
+                                            <div class="process-selectname">燙金</div>
+                                        </div>
+                                        <div class="process-select">
+                                            <input type="checkbox" value="" name="">
+                                            <div class="process-selectname">燙金</div>
+                                        </div>
+                                        <div class="process-select">
+                                            <input type="checkbox" value="" name="">
+                                            <div class="process-selectname">燙金</div>
+                                        </div>
+                                        <div class="process-select">
+                                            <input type="checkbox" value="" name="">
+                                            <div class="process-selectname">燙金</div>
+                                        </div>
+                                        <div class="process-select">
+                                            <input type="checkbox" value="" name="">
+                                            <div class="process-selectname">燙金</div>
+                                        </div>
+                                        <div class="process-select">
+                                            <input type="checkbox" value="" name="">
+                                            <div class="process-selectname">燙金</div>
+                                        </div>
+                                        <div class="process-select">
+                                            <input type="checkbox" value="" name="">
+                                            <div class="process-selectname">燙金</div>
+                                        </div>
+                                        <div class="process-select">
+                                            <input type="checkbox" value="" name="">
+                                            <div class="process-selectname">燙金</div>
+                                        </div>
+                                    
+                                    </form>
+                                    <!-- <div class="style-type-text marb">產品選擇資訊：</div> -->
+
+                                
+                                    <ul class="select-information"> 
+                                        <li>產品選擇資訊：</li>
+                                        <li>小熊造型</li>
+                                        <li>200g合成卡</li>
+                                        <li>雙面</li>
+                                    </ul>
+
+                                    <!-- <div class="style-type-text marb">額外加工資訊：</div> -->
+
+                                
+                                    <ul class="select-information else"> 
+                                        <li>額外加工資訊：</li>
+                                        <li>燙金</li>
+                                        <li>局部上光</li>
+                                        <li>燙金</li>
+                                    
+                                    </ul>
                                
+
+                                    <div class="download-files">
+                                        <span class="download-files-title">樣本檔下載：</span> 
+                                        <div class="links">
+                                            <a class="link" href="" download="">
+                                                <img src="./img/ai_icon.png" alt="">
+                                                <div class="link-text">Illustrator <br>(    雙面    ) </div>
+                                            </a>
+                    
+                                            <a class="link" href="" download="">
+                                                <img src="./img/cdr_icon.png" alt="">
+                                                <div class="link-text">CorelDRAW <br> (   雙面    )</div>
+                                            </a>
+
+                                            <a class="link" href="" download="">
+                                                <img src="./img/ai_icon.png" alt="">
+                                                <div class="link-text">Illustrator <br>(    單面    ) </div>
+                                            </a>
+                    
+                                            <a class="link" href="" download="">
+                                                <img src="./img/cdr_icon.png" alt="">
+                                                <div class="link-text">CorelDRAW <br> (   單面    )</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="download-files">
+                                        <span class="download-files-title">注意須知下載：</span> 
+                                        <div class="links">
+                                            <a class="link" href="" download="">
+                                                <i class="fas fa-file-download"></i>
+                                                <div class="link-text">完稿須知</div>
+                                            </a>
+                    
+                                            <a class="link" href="" download="">
+                                                <i class="fas fa-file-download"></i>
+                                                <div class="link-text">委印須知</div>
+                                            </a>
+
+                                           
+                                        </div>
+                                    </div>
+                                   
+                                        
+                                   
+                                </div>
+                             
+
+                              
+
+                             
                             </div>
 
-                            <div class="style-type">
-                                <div class="style-type-pic">
-                                    <img src="./img/造型名片1.jpg" alt="">
-                                </div>
 
-                                <div class="style-type-content">
-                                    <div class="style-type-name">小熊造型</div>
-                                </div>
 
-                                <div class="download-files">樣本檔下載</div>
-                                <div class="links">
-                                    <a class="link" href="" download="">
-                                        <img src="./img/ai_icon.png" alt="">
-                                        <div class="link-text">Illustrator</div>
-                                    </a>
-            
-                                    <a class="link" href="" download="">
-                                        <img src="./img/cdr_icon.png" alt="">
-                                        <div class="link-text">CorelDRAW</div>
-                                    </a>
-                                </div>
-                            </div>
 
-                            <div class="style-type">
-                                <div class="style-type-pic">
-                                    <img src="./img/造型名片1.jpg" alt="">
-                                </div>
+                         
 
-                                <div class="style-type-content">
-                                    <div class="style-type-name">小貓造型</div>
-                                </div>
-
-                                <div class="download-files">樣本檔下載</div>
-                                <div class="links">
-                                    <a class="link" href="" download="">
-                                        <img src="./img/ai_icon.png" alt="">
-                                        <div class="link-text">Illustrator</div>
-                                    </a>
-            
-                                    <a class="link" href="" download="">
-                                        <img src="./img/cdr_icon.png" alt="">
-                                        <div class="link-text">CorelDRAW</div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="style-type">
-                                <div class="style-type-pic">
-                                    <img src="./img/造型名片1.jpg" alt="">
-                                </div>
-
-                                <div class="style-type-content">
-                                    <div class="style-type-name">狗骨頭造型</div>
-                                </div>
-
-                                <div class="download-files">樣本檔下載</div>
-                                <div class="links">
-                                    <a class="link" href="" download="">
-                                        <img src="./img/ai_icon.png" alt="">
-                                        <div class="link-text">Illustrator</div>
-                                    </a>
-            
-                                    <a class="link" href="" download="">
-                                        <img src="./img/cdr_icon.png" alt="">
-                                        <div class="link-text">CorelDRAW</div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="style-type">
-                                <div class="style-type-pic">
-                                    <img src="./img/造型名片1.jpg" alt="">
-                                </div>
-
-                                <div class="style-type-content">
-                                    <div class="style-type-name">漢堡造型</div>
-                                </div>
-
-                                <div class="download-files">樣本檔下載</div>
-                                <div class="links">
-                                    <a class="link" href="" download="">
-                                        <img src="./img/ai_icon.png" alt="">
-                                        <div class="link-text">Illustrator</div>
-                                    </a>
-            
-                                    <a class="link" href="" download="">
-                                        <img src="./img/cdr_icon.png" alt="">
-                                        <div class="link-text">CorelDRAW</div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="style-type">
-                                <div class="style-type-pic">
-                                    <img src="./img/造型名片1.jpg" alt="">
-                                </div>
-
-                                <div class="style-type-content">
-                                    <div class="style-type-name">豌豆造型</div>
-                                </div>
-
-                                <div class="download-files">樣本檔下載</div>
-                                <div class="links">
-                                    <a class="link" href="" download="">
-                                        <img src="./img/ai_icon.png" alt="">
-                                        <div class="link-text">Illustrator</div>
-                                    </a>
-            
-                                    <a class="link" href="" download="">
-                                        <img src="./img/cdr_icon.png" alt="">
-                                        <div class="link-text">CorelDRAW</div>
-                                    </a>
-                                </div>
-                            </div>
 
                             <!-- <div class="style-type">
                                 <div class="style-type-pic">
@@ -417,84 +610,63 @@
 
                     <!-- 紙材介紹 -->
                     <div class="type-tab-content">
-                        
-                    </div>
-
-                    <div class="type-tab-content">
-                        <div class="style-types">
-                            <div class="style-type">
-                                <div class="style-type-pic">
+                        <div class="paper-process-types">
+                            <div class="paper-process-type">
+                                <div class="paper-process-type-pic">
                                     <img src="./img/紙張樣式1.jpg" alt="">
                                 </div>
 
-                                <div class="style-type-content">
-                                    <div class="style-type-name">200g合成卡</div>
+                                <div class="paper-process-type-content">
+                                    <div class="paper-process-type-text">紙張種類：200g合成卡</div>
+                                    <div class="paper-process-type-text">紙章介紹：霧面質感，沒有珠光紙的光澤，但它防水性很強且耐用</div>
+
+                                    <div class="paper-process-type-text warn-text">注意事項：該紙材須注意.........</div>
                                 </div>
 
                                
                                
                             </div>
 
-                            <div class="style-type">
-                                <div class="style-type-pic">
+                            <div class="paper-process-type">
+                                <div class="paper-process-type-pic">
                                     <img src="./img/紙張樣式1.jpg" alt="">
                                 </div>
 
-                                <div class="style-type-content">
-                                    <div class="style-type-name">220g一級卡</div>
+                                <div class="paper-process-type-content">
+                                    <div class="paper-process-type-text">紙張種類：200g合成卡</div>
+                                    <div class="paper-process-type-text">紙章介紹：霧面質感，沒有珠光紙的光澤，但它防水性很強且耐用</div>
+
+                                    <div class="paper-process-type-text warn-text">注意事項：該紙材須注意.........</div>
                                 </div>
 
+                               
+                               
                             </div>
 
-                            <div class="style-type">
-                                <div class="style-type-pic">
+                            <div class="paper-process-type">
+                                <div class="paper-process-type-pic">
                                     <img src="./img/紙張樣式1.jpg" alt="">
                                 </div>
 
-                                <div class="style-type-content">
-                                    <div class="style-type-name">一級卡雙亮</div>
+                                <div class="paper-process-type-content">
+                                    <div class="paper-process-type-text">紙張種類：200g合成卡</div>
+                                    <div class="paper-process-type-text">紙章介紹：霧面質感，沒有珠光紙的光澤，但它防水性很強且耐用</div>
+
+                                    <div class="paper-process-type-text warn-text">注意事項：該紙材須注意.........</div>
                                 </div>
 
-                              
+                               
+                               
                             </div>
-
-                            <div class="style-type">
-                                <div class="style-type-pic">
-                                    <img src="./img/紙張樣式1.jpg" alt="">
-                                </div>
-
-                                <div class="style-type-content">
-                                    <div class="style-type-name">一級卡雙霧</div>
-                                </div>
 
                             
-                            </div>
 
-                            <div class="style-type">
-                                <div class="style-type-pic">
-                                    <img src="./img/紙張樣式1.jpg" alt="">
-                                </div>
-
-                                <div class="style-type-content">
-                                    <div class="style-type-name">一級卡局部上光</div>
-                                </div>
-
-                              
-                            </div>
-
-                            <div class="style-type">
-                                <div class="style-type-pic">
-                                    <img src="./img/紙張樣式1.jpg" alt="">
-                                </div>
-
-                                <div class="style-type-content">
-                                    <div class="style-type-name">一級卡雙局部上光</div>
-                                </div>
-
-                               
-                            </div>
+                        
 
                         </div>
+
+
+
 
                         <div class="pagenation">
                             <ul>
@@ -547,6 +719,111 @@
                         </div>
                         
                     </div>
+
+                     <!-- 加工介紹 -->
+                     <div class="type-tab-content">
+                        <div class="paper-process-types">
+                            <div class="paper-process-type">
+                                <div class="paper-process-type-pic">
+                                    <img src="./img/燙金.jpg" alt="">
+                                </div>
+
+                                <div class="paper-process-type-content">
+                                    <div class="paper-process-type-text">加工方式：燙金</div>
+                                    <div class="paper-process-type-text">工法介紹：燙金可以使印品表面同時具有多種顏色的金屬質感的圖案、文字。</div>
+
+                                    <div class="paper-process-type-text warn-text">注意事項：該工法須注意.........</div>
+                                </div>
+
+                            </div>
+
+                            <div class="paper-process-type">
+                                <div class="paper-process-type-pic">
+                                    <img src="./img/局光.jpg" alt="">
+                                </div>
+
+                                <div class="paper-process-type-content">
+                                    <div class="paper-process-type-text">加工方式：局部上光</div>
+                                    <div class="paper-process-type-text">工法介紹：可隨著設計者巧思做在印刷品上任意的位置。 因有厚度，視覺及觸覺上均具立體感。</div>
+
+                                    <div class="paper-process-type-text warn-text">注意事項：該工法須注意.........</div>
+                                </div>
+
+                            </div>
+
+                          
+
+                           
+                          
+
+
+                        </div>
+
+
+
+
+                        <div class="pagenation">
+                            <ul>
+                                <li class="arrow">
+                                    <a href="">
+                                        <span>
+                                            <i class="fas fa-caret-left"></i>
+                                        </span>
+                                    </a>
+                                  
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span>1</span>
+                                    </a>
+                                    
+                                </li>
+                
+                                <li>
+                                    <a href="">
+                                        <span>2</span>
+                                    </a>
+                                    
+                                </li>
+                
+                                <li>
+                                    <a href="">
+                                        <span>3</span>
+                                    </a>
+                                    
+                                </li>
+                
+                                <li>
+                                    <a href="">
+                                        <span> 4</span>
+                                    </a>
+                                    
+                                </li>
+                
+                                <li class="arrow">
+                                    <a href="">
+                                        <span>
+                                            <i class="fas fa-caret-right"></i>
+                                        </span>
+                                    </a>
+                                   
+                                </li>
+                               
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                 
+
+                     <!-- 加工資訊 -->
+                     <div class="type-tab-content">
+                        
+                    </div>
+
+                    
+
+                  
 
                 </div>
 
@@ -641,7 +918,14 @@
                         </div> 
 
                         <div class="text">
-                            完稿尺寸：4mm x 2mm
+
+                            <div class="smalltext">
+                                完稿尺寸：4mm x 2mm
+                            </div>
+
+                            <div class="smalltext">
+                                成品尺寸：4mm x 2mm
+                            </div>
                         </div>
 
                         <div class="text">
@@ -746,7 +1030,7 @@
             <div class="all-selects">
 
                 <!-- 印刷方式 -->
-                <div class="selects">
+                <div class="selects" style="display: none;">
                     <div class="select-title">選擇印刷方式</div>
 
                     <div class="select-content">
@@ -1314,7 +1598,7 @@ window.onclick = function(event) {
 <script>      
     const type_tab_btns = document.querySelectorAll(".type-tab-btn")
     const type_tab_contents = document.querySelectorAll(".type-tab-content")
-    type_tab_btns[0].classList.add("active");
+    type_tab_btns[3].classList.add("active");
     type_tab_contents[1].classList.add("show");
     clearallcontent();
     type_tab_btns.forEach(function(ele, i) {
@@ -1354,6 +1638,94 @@ window.onclick = function(event) {
   }
 }
 
+</script>
+
+<!-- 下拉是選單 -->
+
+
+
+<script>
+    $(document).ready(function(e){
+  $('.custom-select').click(function(e){
+    $( document ).click(function(e){
+    $( '.select-options' ).slideUp();
+  });
+    e.stopPropagation();
+    // $( '.select-options', this ).slideToggle();
+  });
+  
+  $( '.select-options li' ).click(function(e){
+    e.stopPropagation();
+    // const text_inside = $(this).text();
+    $(this).parent().slideUp();
+    // $(this).parent().prev().text( text_inside );
+  });
+  
+  $( document ).click(function(e){
+    $( '.select-options' ).slideUp();
+  });
+});
+</script>
+
+
+<!-- 可選擇傳送資料下拉是選單 -->
+<script>
+    $(document).ready(function(e){
+  $('.custom-select').click(function(e){
+    $( document ).click(function(e){
+    $( '.select-options' ).slideUp();
+    $( '.fa-sort-down' ).remove("npne");
+  });
+    e.stopPropagation();
+    // $( '.select-options', this ).slideToggle();
+  });
+  
+  $( '.select-options li' ).click(function(e){
+    e.stopPropagation();
+    const text_inside = $(this).text();
+    $(this).parent().slideUp();
+    $(this).parent().prev().text( text_inside );
+  });
+  
+  $( document ).click(function(e){
+    $( '.select-options-1' ).slideUp();
+  });
+});
+</script>
+
+<!-- 樣式選擇無傳送資料下拉式選單 -->
+<script>      
+    const selectviewbtns = document.querySelectorAll(".select-view-btn")
+    const selectviewcontents = document.querySelectorAll(".select-view-content")
+    // const body = document.querySelector("body")
+    clearallcontent();
+    selectviewbtns.forEach(function(ele, i) {
+           ele.addEventListener('click', function() {
+            clearallselectviewcontents()
+               selectviewcontents[i].classList.add("show");
+           });
+       });
+
+    function clearallselectviewcontents() {
+        selectviewcontents.forEach(function(ele, i) {
+           ele.classList.remove("show");
+          
+           });
+       }
+
+    //    點擊收起
+       window.onclick = function(event) {
+  if (!event.target.matches('.select-view-btn')) {
+    var dropdowns = document.getElementsByClassName("select-view-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 </script>
 
 
