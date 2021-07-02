@@ -136,6 +136,14 @@ main .content {
   top: 30px;
 }
 
+@media all and (max-width: 1700px) {
+  main .content {
+    width: 100%;
+    padding: 0px 32px;
+    padding-top: 20px;
+  }
+}
+
 main .content .last_types1 {
   width: 100%;
   display: -webkit-box;
@@ -392,18 +400,14 @@ main .content .last_types1 .all-type-content .type-tab-btns .type-tab-btn.active
 }
 
 main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content {
-  display: none;
+  opacity: 0;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 30px;
-  border: 2px solid #b2cee0;
-  border-top: 3px solid #b2cee0;
-  border-radius: 0px 15px 15px 15px;
+  height: 0px;
   max-height: 0px;
-  -webkit-box-shadow: 5px 5px 15px #23547042;
-          box-shadow: 5px 5px 15px #23547042;
+  overflow-y: hidden;
 }
 
 main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .type-contents {
@@ -477,7 +481,6 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
 
 main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type {
   width: 100%;
-  margin-right: 20px;
   margin-bottom: 40px;
   -webkit-box-shadow: 0px 5px 5px rgba(220, 220, 220, 0.575);
           box-shadow: 0px 5px 5px rgba(220, 220, 220, 0.575);
@@ -833,9 +836,14 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media all and (max-width: 1700px) {
+  main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .style-type-content .download-files .links {
+    width: 300px;
+  }
 }
 
 main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .style-type-content .download-files .links .link {
@@ -882,7 +890,18 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
   font-size: 12px;
 }
 
-main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .style-type-content .download-files .links .note-btn {
+main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .style-type-content .download-files .note-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .style-type-content .download-files .note-btns .note-btn {
   max-width: 120px;
   width: 120px;
   background-color: #E8652B;
@@ -899,7 +918,7 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
   margin-left: 18px;
 }
 
-main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .style-type-content .download-files .links .note-btn:hover {
+main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .style-type-content .download-files .note-btns .note-btn:hover {
   background-color: white;
   color: #E8652B;
   border: 2px solid #E8652B;
@@ -909,7 +928,7 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
           box-shadow: 3px 3px 5px rgba(165, 48, 5, 0.411);
 }
 
-main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .style-type-content .download-files .links .note-btn .link-text {
+main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .style-type-content .download-files .note-btns .note-btn .link-text {
   padding: 5px 15px;
 }
 
@@ -1041,13 +1060,20 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
 }
 
 main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content.show {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 30px;
+  border: 2px solid #b2cee0;
+  border-top: 3px solid #b2cee0;
+  border-radius: 0px 15px 15px 15px;
+  -webkit-box-shadow: 5px 5px 15px #23547042;
+          box-shadow: 5px 5px 15px #23547042;
   max-height: -webkit-max-content;
   max-height: -moz-max-content;
   max-height: max-content;
-  display: block;
   max-height: 76vh;
   overflow-y: auto;
-  -webkit-transition: .6s;
-  transition: .6s;
+  opacity: 1;
 }
 /*# sourceMappingURL=test4.css.map */

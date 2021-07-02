@@ -120,6 +120,11 @@ main{
         margin: auto;
         position: sticky;
         top: 30px;
+        @media all and (max-width: 1700px) {
+            width: 100%;
+            padding: 0px 32px;
+            padding-top: 20px;
+        }
           // 目前最新
           .last_types1{
             width: 100%;
@@ -328,18 +333,14 @@ main{
                 .type-tab-contents{
                     .type-tab-content{
                         // position: absolute;
-                        display: none;
+                        // display: none;
                         // z-index: -10;
                         // background-color: transparent;
-                        
+                        opacity: 0;
                         flex-direction: row;
-                        padding: 30px;
-                        border: 2px solid #b2cee0;
-                        border-top: 3px solid #b2cee0;
-                        border-radius: 0px 15px 15px 15px;
-                        // height: 0px;
+                        height: 0px;
                         max-height: 0px;
-                        box-shadow: 5px 5px 15px #23547042;
+                        overflow-y: hidden;
                    
                       
                        
@@ -413,7 +414,7 @@ main{
                            
                             .style-type{
                                 width: 100%;
-                                margin-right: 20px;
+                                // margin-right: 20px;
                                 margin-bottom: 40px;
                                 box-shadow: 0px 5px 5px rgba(220, 220, 220, 0.575);
                                 border-radius: 8px;
@@ -756,6 +757,13 @@ main{
                                         &:nth-last-child(1){
                                             margin-bottom: 0px;
                                         }
+                                        // &:nth-child(1){
+                                        //     @media all and (max-width: 1700px) {
+                                        //         align-items: flex-end;
+                                             
+                                               
+                                        //      } 
+                                        // }
                                         .download-files-title{
                                             text-align: center;
                                             // width: 100%;
@@ -766,9 +774,14 @@ main{
                                         .links{
                                             // width: 100%;
                                             display: flex;
+                                            flex-wrap: wrap;
                                             // padding: 0px 32px;
                                            
-                                            justify-content: center;
+                                            // justify-content: center;
+                                            @media all and (max-width: 1700px) {
+                                                width: 300px;
+                                              
+                                             } 
                                             .link{
                                                 display: flex;
                                                 // flex-direction: column;
@@ -805,6 +818,11 @@ main{
                                                     font-size: 12px;
                                                 }
                                             }
+                                        }
+                                        .note-btns{
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            width: max-content;
                                             .note-btn{
                                                 max-width: 120px;
                                                 width: 120px;
@@ -831,8 +849,8 @@ main{
                                                     padding: 5px 15px ;
                                                 }
                                             }
-
                                         }
+
                                     }
                                 }
 
@@ -949,11 +967,19 @@ main{
                             }
                         }
                         &.show{
+                            height: max-content;
+                            padding: 30px;
+                            border: 2px solid #b2cee0;
+                            border-top: 3px solid #b2cee0;
+                            border-radius: 0px 15px 15px 15px;
+                            box-shadow: 5px 5px 15px #23547042;
                             max-height: max-content;
-                            display: block;
+                            // display: block;
                             max-height: 76vh;
                             overflow-y: auto;
-                            transition: .6s;
+                           
+                            opacity: 1;
+
                       
                         }
                     }
