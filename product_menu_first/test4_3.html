@@ -323,7 +323,6 @@
 
     <main style="background-image: url(./img/背景.png);">
         <div class="content container">
-          
 
             <!-- 新的 -->
             <div class="last_types1">
@@ -1035,7 +1034,55 @@
 
     </div>
 
-       
+        <!-- 整體選擇資訊 -->
+        <section class="all-select-information" style="display: none;">
+            <div class="all-select-title">選擇資訊(第二階端)</div>
+            <div class="all-select-content">
+                <ul>
+                 
+                   <li>樣式</li>
+                   <li>紙材</li>
+                   <li>印刷方式</li>
+                   <li>數量</li>
+                   <li>加工方式</li>
+                   <li>編號</li>
+
+                </ul>
+
+                <ul>
+                  
+                    <li>
+                        <span>台灣造型</span>
+                    </li>
+
+                    <li>
+                        <span>200g合成卡</span>
+                    </li>
+
+                    <li>
+                        <span>單面</span>
+                    </li>
+
+                    <li>
+                        <span>300份</span>
+                    </li>
+
+                    <li> 
+                       <span class="all-type">
+                            <span class="type">燙金</span>
+                            <span class="type">局部上光</span>
+                            <span class="type">燙金</span>
+                            <span class="type">局部上光</span>
+                       </span>
+                    </li>
+
+                    <li>
+                        <span>12345678910</span>
+                    </li>
+                    
+                 </ul>
+            </div>
+        </section>
 
 
     </main>
@@ -1048,10 +1095,13 @@
 
 
     <!-- swiper -->
-    <script>
-         var swiper = new Swiper(".mySwiper", {
+   
+
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
-        // spaceBetween: 30,
+        spaceBetween: 30,
         loop: true,
         pagination: {
           el: ".swiper-pagination",
@@ -1061,14 +1111,60 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-   
       });
-    </script>
+</script>
+
+    <!-- 手機板選擇列下拉式選單 -->
+    <script>
+// function myFunction() {
+//   document.getElementsByClassName("myDropdown").classList.toggle("show");
+// }
+
+// // Close the dropdown menu if the user clicks outside of it
+// window.onclick = function(event) {
+//   if (!event.target.matches('.dropbtn')) {
+//     var dropdowns = document.getElementsByClassName("dropdown-content");
+//     var i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+//   }
+// }
+   </script>
+<!-- 
+   <script>
+        const small_type_btn = document.querySelectorAll(".paper-type")
+        // console.log(small_type_btn);
+
+        small_type_btn.forEach(function(btn, i) {
+            // console.log(ele, '寫forEach的時候，帶進來的第一個參數，就是被遍歷的元素');
+            console.log(btn);
+            btn.addEventListener('click', function() {
+                console.log(btn);
+                btn.classList.add("active");
+
+             });
+        });
+
+        function clarall() {
+            small_type_btn.forEach(function(btn, i) {
+            // console.log(ele, '寫forEach的時候，帶進來的第一個參數，就是被遍歷的元素');
+            btn.classList.remove("active");
+        });
+        }
+
+       
+
+   </script> -->
 
 <!-- 手機版下拉式選單 -->
 <script>      
     const type_btn = document.querySelectorAll(".dropbtn")
     const content = document.querySelectorAll(".dropdown-content")
+    // const body = document.querySelector("body")
     clearallcontent();
         type_btn.forEach(function(ele, i) {
            ele.addEventListener('click', function() {
@@ -1109,6 +1205,38 @@
 
 </script>
 
+
+<!-- 加工確認框 -->
+<script>
+    const processing_type_check_btns = document.querySelectorAll(".processing-type-check-btn")
+    processing_type_check_btns.forEach(function(e) {
+        
+        e.addEventListener('click', function() {
+                e.classList.toggle("active")
+        });
+    });
+</script>
+
+<!-- 單雙面確認框 -->
+<!-- <script>
+    const print_btns = document.querySelectorAll(".print_btn")
+    print_btns[0].classList.toggle("active");
+    print_btns.forEach(function(e) {
+        
+        e.addEventListener('click', function() {
+            clearprint_btns()
+            e.classList.toggle("active");
+        });
+    });
+
+    function clearprint_btns() {
+        print_btns.forEach(i => {
+           i.classList.remove("active");
+    });
+        
+    }
+</script> -->
+
 <!-- 種類選擇選擇欄 -->
 <script>
     const bigtypes = document.querySelectorAll(".big-type")
@@ -1134,6 +1262,75 @@
 </script>
 
 
+<!-- 紙張樣式選擇欄 -->
+<!-- <script>
+    const papers = document.querySelectorAll(".paper-type")
+    papers[0].classList.add("active");
+
+    papers.forEach(i => {
+        // console.log(papers);    
+        i.onclick = function(){
+            console.log('paper');
+            clearpaper();
+           this.classList.add("active");
+        }
+    });
+
+    function clearpaper() {
+        papers.forEach(i => {
+            console.log('paper');
+           i.classList.remove("active");
+    });
+        
+    }
+
+</script> -->
+
+<!-- 產品樣式選單 -->
+<!-- <script>
+    const products = document.querySelectorAll(".product-type")
+    products[0].classList.add("active");
+
+    products.forEach(i => {
+        i.onclick = function(){
+            console.log('paper');
+            clearproduct();
+           this.classList.add("active");
+        }
+    });
+
+    function clearproduct() {
+        products.forEach(i => {
+            console.log('paper');
+           i.classList.remove("active");
+    });
+        
+    }
+
+</script> -->
+
+<!-- 加工方式選單 -->
+<!-- <script>
+    const processings = document.querySelectorAll(".processing-type")
+    processings[0].classList.add("active");
+
+    processings.forEach(i => {
+        i.onclick = function(){
+            console.log('paper');
+            clearprocessing();
+           this.classList.add("active");
+        }
+    });
+
+    function clearprocessing() {
+        processings.forEach(i => {
+            console.log('paper');
+           i.classList.remove("active");
+    });
+        
+    }
+
+</script> -->
 
 
 <!-- 下拉式數量選單 -->
@@ -1202,6 +1399,57 @@
 }
 
 </script>
+
+<!-- 下拉是選單 -->
+
+<!-- <script>
+    $(document).ready(function(e){
+  $('.custom-select').click(function(e){
+    $( document ).click(function(e){
+    $( '.select-options' ).slideUp();
+  });
+    e.stopPropagation();
+    // $( '.select-options', this ).slideToggle();
+  });
+  
+  $( '.select-options li' ).click(function(e){
+    e.stopPropagation();
+    // const text_inside = $(this).text();
+    $(this).parent().slideUp();
+    // $(this).parent().prev().text( text_inside );
+  });
+  
+  $( document ).click(function(e){
+    $( '.select-options' ).slideUp();
+  });
+});
+</script> -->
+
+
+<!-- 可選擇傳送資料下拉是選單無用 -->
+<!-- <script>
+    $(document).ready(function(e){
+  $('.custom-select').click(function(e){
+    $( document ).click(function(e){
+    $( '.select-options' ).slideToggle();
+    
+  });
+    e.stopPropagation();
+    // $( '.select-options', this ).slideToggle();
+  });
+  
+  $( '.select-options li' ).click(function(e){
+    e.stopPropagation();
+    const text_inside = $(this).text();
+    $(this).parent().slideUp();
+    $(this).parent().prev().text( text_inside );
+  });
+  
+  $( document ).click(function(e){
+    $( '.select-options' ).slideUp();
+  });
+});
+</script> -->
 
 <!-- 樣式選擇無傳送資料下拉式選單 -->
 <script>      

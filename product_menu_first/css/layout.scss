@@ -1,0 +1,294 @@
+body{
+    margin: 0px ;
+    padding: 0px;
+    // height: 3000px;
+    background-image: url(/img/背景.png);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    display: block;
+    color: unset;
+    text-decoration: none;
+}
+
+img{
+    display: block;
+}
+
+// 滾軸樣式
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #D5D5D5; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #A9B7C0; 
+} 
+
+.container{
+    width: 1600px;
+    padding: 8px;
+    margin: auto;
+    @media all and (max-width: 1700px) {
+        width: 100%;
+        padding: 0px 32px;
+    }
+    @media all and (max-width: 500px) {
+        padding: 0px 16px;
+    }
+}
+
+// 反回上一頁按鈕
+nav{
+    background-image: url(/img/背景.png);
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 80;
+    background-color: transparent;
+
+    padding: 20px 0px;
+    overflow: hidden;
+    @media all and (max-width: 800px) {
+        width: 100%;
+        padding-top: 60px;
+    }
+    .nav{
+        display: flex;
+        width: 1600px;
+        height: max-content;
+        @media all and (max-width: 1700px) {
+            width: 100%;
+            padding: 0px 50px;
+        }
+        @media all and (max-width: 800px) {
+            width: 100%;
+            padding: 0px 20px;
+        }
+        .title{
+            width: max-content;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 64px;
+            font-weight: 600;
+            letter-spacing: 5px;
+            font-family:-apple-system;
+            color: rgb(64, 85, 110);
+            @media all and (max-width: 1700px) {
+                font-size:52px;
+                font-size: 48px;
+            }
+            @media all and (max-width: 1200px) {
+                // top: 25%;
+                font-size: 48px;
+                font-size: 36px;
+             }
+            @media all and (max-width: 800px) {
+               top: 25%;
+               font-size: 48px;
+               font-size: 32px;
+            }
+            @media all and (max-width: 600px) {
+              
+                top: 25%;
+                font-size: 28px;
+             }
+        }
+        a{
+            width: max-content;
+            display: block;
+            .btn{
+                color: #1D2731;
+                -webkit-box-shadow: 5px 5px 10px  #595b5e60;
+                // background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);  
+                outline: none;
+                background-color: #a3c8df;
+                padding: 8px 25px;
+                border-radius: 3px;
+                font-size: 20px;
+                font-weight: 600;
+                letter-spacing: 1.5px;
+                @media all and (max-width: 1700px) {
+                    -webkit-box-shadow: 3px 3px 8px  #595b5e60;
+                    padding: 6px 20px;
+                    font-size: 18px;
+                }
+                @media all and (max-width: 100px) {
+                    -webkit-box-shadow: 3px 3px 8px  #595b5e60;
+                    padding: 6px 20px;
+                    font-size: 16px;
+                }
+                @media all and (max-width: 800px) {
+                    font-size: 16px; 
+                    padding: 5px 15px;
+   
+                }
+                @media all and (max-width: 400px) {
+                    font-size: 14px; 
+                    padding: 5px 12px;
+   
+                }
+                &:hover{
+                    background-color: orange;
+                    background-color: darkred;
+                    color: white;
+                    transition: .6s;
+                    .fa-angle-double-left{
+                        transform: translateX(-8px);
+                        transition: .2s;
+                        @media all and (max-width: 1700px) {
+                            transform: translateX(-6px);
+                        }
+                    }
+                    .fa-angle-double-up{
+                        transform: translatey(-2px);
+                        font-size: 20px;
+                        transition: .2s;
+                    }
+                }
+                .fa-angle-double-left{
+                    font-size: 22px;
+                    margin-right: 5px;
+                    @media all and (max-width: 1700px) {
+                        font-size: 18px;    
+                    }
+                   
+                }
+                .fa-angle-double-up{
+                    font-size: 22px;
+                    margin-left: 5px;
+                    @media all and (max-width: 1700px) {
+                        font-size: 18px;    
+                    }
+                }
+            }
+        }
+        .back_btn{
+            margin-right: auto;
+        }
+        .home_btn{
+            margin-left: auto;
+        }
+    }
+}
+
+// 麵包屑
+.breadcrumb  {
+   max-width: 100%;
+   position: sticky;
+   top: 83px;
+   z-index: 80;
+   padding-bottom: 10px;
+   
+   .container{
+        padding: 0px 8px;
+        padding-top: 20px;
+
+       position: relative;
+        .search{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin: 24px auto;
+            // margin-left: auto;
+            position: absolute;
+            width: max-content;
+            // max-width:700px;
+            width: 200px;
+            // width: calc(100% - 20px);
+            position: absolute;
+            right: 16px;
+            top: 0px;
+            transform: translate(0px,-50%);
+            input{
+                width: 100%;
+                height: 36px;
+                outline: none;
+                border: 1px solid gainsboro;
+                border-radius: 30px;
+                padding-left: 16px;
+                font-size: 14px;
+                @media all and (max-width: 700px) {
+                    height: 40px;
+                }
+            }
+            .fa-search{
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 20px;
+                color: gray;
+            }
+        }
+        ul{
+            margin: 0px;
+            padding: 0px;
+            margin: auto;
+            list-style: none;
+            display: flex;
+            padding-left: 8px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid gainsboro;
+            display: flex;
+            flex-wrap: wrap;
+            padding-right: 250px;
+            li{
+                display: flex;
+                color: gray;
+                font-size: 16px;
+                letter-spacing: 1.5px;
+                font-weight: 600;
+                @media all and (max-width: 500px) {
+                    font-size: 14px;
+                }
+                a{
+                    display: initial;
+                    color: gray;
+                    text-decoration: none;
+                }
+                &:nth-last-child(1){
+                    color: #457392;
+                    color: #235470;
+                    a{
+                        color: #457392;
+                        color: #235470;
+    
+                    }
+                }
+                &:nth-child(1){
+                    color: gray !important;
+                }
+            }
+            li+li:before {
+                // padding: 6px 8px;
+                padding-left: 5px;
+                color: black;
+                content: "/\00a0";
+                font-size: 20px;
+            }
+        }
+   }
+   
+}
