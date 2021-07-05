@@ -8,7 +8,7 @@
     <!-- <link rel="stylesheet" href="./css/all.css"> -->
     <!-- <link rel="stylesheet" href="./css/all.css"> -->
     <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/test4.css">
+    <link rel="stylesheet" href="./css/test4.css?t=20210705013200">
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
@@ -18,6 +18,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&family=Noto+Serif+TC:wght@600&display=swap" rel="stylesheet">
 </head>
 <body style="background-image: url(./img/背景.png);" id="home">
+
+    <div class="top-btn">
+         <!-- 回到頂端 -->
+         <a href="#home" class="home_btn" style="text-decoration: none;">
+            <div class="btn">
+                <i class="fad fa-angle-double-up"></i>
+                <span>TOP</span>
+            </div>
+
+        </a>
+    </div>
+
     <nav style="background-image: url(./img/背景.png);">    
         <section class="nav">
             <!-- 回上一頁按鈕 -->
@@ -28,11 +40,7 @@
             <!-- 標題 -->
             <a href="./first_types.html" class="title">電子型錄(同行)</a>
 
-            <!-- 回到頂端 -->
-            <a href="#home" class="home_btn" style="text-decoration: none;">
-                <div class="btn">回到頂端<i class="fad fa-angle-double-up"></i></div>
-    
-            </a>
+           
         </section>
       
     </nav>
@@ -65,17 +73,17 @@
                     <ol>
                         <li>頁面尺寸完稿設定時，請直接設定出血尺寸，以外框框線設定出血尺寸，顏色設K100即可，不用在稿件四周繪製裁切線。如:正常尺寸名片頁面尺寸為92x56mm。</li>
                         <div class="pic">
-                            <img src="http://www.draw123.com.tw/Images/Statement/c-01.jpg" alt="">
+                            <img src="./img/c-01.jpg" alt="">
                         </div>
 
                         <li>印件內容請設在同一頁面上，如為雙面印刷檔案請將正面放左邊，背面放右邊，請勿上下放置，避免因紙張紋路不同導致印件問題。(如下圖)</li>
                         <div class="pic">
-                            <img src="http://www.draw123.com.tw/Images/Statement/c-02.jpg" alt="">
+                            <img src="./img/c-02.jpg" alt="">
                         </div>
 
                         <li>若有局部上光、燙金、打凸等加工時，黑稿則放在頁面中最左邊。(如下圖)</li>
                         <div class="pic">
-                            <img src="http://www.draw123.com.tw/Images/Statement/name-04.jpg" alt="">
+                            <img src="./img/name-04.jpg" alt="">
                         </div>
 
                     
@@ -93,17 +101,17 @@
                     <ol>
                         <li>頁面尺寸完稿設定時，請直接設定出血尺寸，以外框框線設定出血尺寸，顏色設K100即可，不用在稿件四周繪製裁切線。如:正常尺寸名片頁面尺寸為92x56mm。</li>
                         <div class="pic">
-                            <img src="http://www.draw123.com.tw/Images/Statement/c-01.jpg" alt="">
+                            <img src="./img/c-01.jpg" alt="">
                         </div>
 
                         <li>印件內容請設在同一頁面上，如為雙面印刷檔案請將正面放左邊，背面放右邊，請勿上下放置，避免因紙張紋路不同導致印件問題。(如下圖)</li>
                         <div class="pic">
-                            <img src="http://www.draw123.com.tw/Images/Statement/c-02.jpg" alt="">
+                            <img src="./img/c-02.jpg" alt="">
                         </div>
 
                         <li>若有局部上光、燙金、打凸等加工時，黑稿則放在頁面中最左邊。(如下圖)</li>
                         <div class="pic">
-                            <img src="http://www.draw123.com.tw/Images/Statement/name-04.jpg" alt="">
+                            <img src="./img/name-04.jpg" alt="">
                         </div>
 
                     
@@ -161,7 +169,7 @@
 
                         <li>名片裝盒：環保盒裝，如下圖所示</li>
                         <div class="pic">
-                            <img src="http://www.draw123.com.tw/Images/Product/Combined/CR/crd05.gif" alt="">
+                            <img src="./img/crd05.gif" alt="">
                         </div>
 
 
@@ -216,7 +224,7 @@
 
                         <li>名片裝盒：環保盒裝，如下圖所示</li>
                         <div class="pic">
-                            <img src="http://www.draw123.com.tw/Images/Product/Combined/CR/crd05.gif" alt="">
+                            <img src="./img/crd05.gif" alt="">
                         </div>
 
 
@@ -236,40 +244,45 @@
                 <i class="fas fa-window-close process-note-close-btn note-close-btn"></i>
                 <div class="content">
                     <div class="title">彩色造型名片『台灣造型』加工須知</div>
-                    <ol>
-                        <li>燙金的黑稿請設K100的填色。
+                    <ul>
+                        <li class="process-title">
+                           <span>燙金</span> 
                         </li>
-                        <li>在已完成的印刷紙張上有LOGO/文字/圖案的部分，再針對它去疊燙上金箔時，會因紙張伸縮、上膜、裁切誤差等因素，一定會導致燙金套印有不準且誤差值在正負3mm範圍內的情形，皆為正常現象◦不可以此為退貨或拒付款的理由。</li>
-                        <li>燙金勿用太細或較複雜的圖文線條，可能無法加工製作或加工後效果不佳。</li>
-                        <li>燙金時另一面不能有局部上光重疊，燙金與局部光面積不能重疊外，燙金與局部光至少要離3MM以上。</li>
-                        <li>燙金圖文線條寬度最少0.2mm\0.567 pt以上，打凸圖文線寬寬度最少0.3mm\0.85pt以上，文字勿小於8級，線條太細或字體過粗 ，燙金、打凸加工後會造成線條不清或文字糊掉。</li>
-                        <li>局部上光上方不能燙金、打凸，需距離3mm以上。</li>
-                        <li>燙金與打凸若同位置，多少會有誤差。</li>
-                        <li>燙金不可與燙金重疊，燙金正面與背面亦不可重疊，否則容易出現燙不上去的現象。</li>
-                        <li>燙金、打凸離紙邊距離最少5mm，須有一邊含咬口10MM；合版是借咬口，所以才可1模燙金。</li>
-                        <li>貼紙類作燙金加工，燙金面積大，金箔會易與紙張沾黏，貼紙易有變形、水波紋(如下圖)等狀況，純屬合理範圍。
-                        </li>
-                        <div class="pic">
-                            <img src="http://www.draw123.com.tw/Images/Statement/%E7%87%99%E9%87%91%20%E6%89%93%E5%87%B8-01.jpg" alt="">
-                        </div>
-                        <li>數位印刷滿版建議不可以鋅版燙金，因碳粉會影響鋅版燙金金箔；若數位印刷滿版有上膜可以鋅版燙金。</li>
-                        <div class="pic">
-                            <img src="http://www.draw123.com.tw/Images/Statement/%E7%87%99%E9%87%91%20%E6%89%93%E5%87%B8-02.jpg" alt="">
-                        </div>
+                        <ol>
+                            <li>燙金的黑稿請設K100的填色。
+                            </li>
+                            <li>在已完成的印刷紙張上有LOGO/文字/圖案的部分，再針對它去疊燙上金箔時，會因紙張伸縮、上膜、裁切誤差等因素，一定會導致燙金套印有不準且誤差值在正負3mm範圍內的情形，皆為正常現象◦不可以此為退貨或拒付款的理由。</li>
+                            <li>燙金勿用太細或較複雜的圖文線條，可能無法加工製作或加工後效果不佳。</li>
+                            <li>燙金時另一面不能有局部上光重疊，燙金與局部光面積不能重疊外，燙金與局部光至少要離3MM以上。</li>
+                            <li>燙金圖文線條寬度最少0.2mm\0.567 pt以上，打凸圖文線寬寬度最少0.3mm\0.85pt以上，文字勿小於8級，線條太細或字體過粗 ，燙金、打凸加工後會造成線條不清或文字糊掉。</li>
+                            <li>局部上光上方不能燙金、打凸，需距離3mm以上。</li>
+                            <li>燙金與打凸若同位置，多少會有誤差。</li>
+                            <li>燙金不可與燙金重疊，燙金正面與背面亦不可重疊，否則容易出現燙不上去的現象。</li>
+                            <li>燙金、打凸離紙邊距離最少5mm，須有一邊含咬口10MM；合版是借咬口，所以才可1模燙金。</li>
+                            <li>貼紙類作燙金加工，燙金面積大，金箔會易與紙張沾黏，貼紙易有變形、水波紋(如下圖)等狀況，純屬合理範圍。
+                            </li>
+                            <div class="pic">
+                                <img src="./img/燙金 打凸-01.jpg" alt="">
+                            </div>
+                            <li>數位印刷滿版建議不可以鋅版燙金，因碳粉會影響鋅版燙金金箔；若數位印刷滿版有上膜可以鋅版燙金。</li>
+                            <div class="pic">
+                                <img src="./img/燙金 打凸-02.jpg" alt="">
+                            </div>
+    
+                            <div class="pic">
+                                <img src="./img/燙金 打凸-03.jpg" alt="">
+                            </div>
+    
+                            <div class="pic">
+                                <img src="./img/燙金 打凸-04.jpg" alt="">
+                            </div>
+    
+                            <div class="pic">
+                                <img src= "./img/燙金 打凸-05.jpg" alt="">
+                            </div>
+                        </ol>
+                    </ul>
 
-                        <div class="pic">
-                            <img src="http://www.draw123.com.tw/Images/Statement/%E7%87%99%E9%87%91%20%E6%89%93%E5%87%B8-03.jpg" alt="">
-                        </div>
-
-                        <div class="pic">
-                            <img src="http://www.draw123.com.tw/Images/Statement/%E7%87%99%E9%87%91%20%E6%89%93%E5%87%B8-04.jpg" alt="">
-                        </div>
-
-                        <div class="pic">
-                            <img src= http://www.draw123.com.tw/Images/Statement/%E7%87%99%E9%87%91%20%E6%89%93%E5%87%B8-05.jpg" alt="">
-                        </div>
-                        
-                    </ol>
                 </div>
 
             </div>
@@ -280,40 +293,44 @@
                 <i class="fas fa-window-close process-note-close-btn note-close-btn"></i>
                 <div class="content">
                     <div class="title">彩色造型名片『小熊造型』加工須知</div>
-                    <ol>
-                        <li>燙金的黑稿請設K100的填色。
+                    <ul>
+                        <li class="process-title">
+                           <span>燙金</span> 
                         </li>
-                        <li>在已完成的印刷紙張上有LOGO/文字/圖案的部分，再針對它去疊燙上金箔時，會因紙張伸縮、上膜、裁切誤差等因素，一定會導致燙金套印有不準且誤差值在正負3mm範圍內的情形，皆為正常現象◦不可以此為退貨或拒付款的理由。</li>
-                        <li>燙金勿用太細或較複雜的圖文線條，可能無法加工製作或加工後效果不佳。</li>
-                        <li>燙金時另一面不能有局部上光重疊，燙金與局部光面積不能重疊外，燙金與局部光至少要離3MM以上。</li>
-                        <li>燙金圖文線條寬度最少0.2mm\0.567 pt以上，打凸圖文線寬寬度最少0.3mm\0.85pt以上，文字勿小於8級，線條太細或字體過粗 ，燙金、打凸加工後會造成線條不清或文字糊掉。</li>
-                        <li>局部上光上方不能燙金、打凸，需距離3mm以上。</li>
-                        <li>燙金與打凸若同位置，多少會有誤差。</li>
-                        <li>燙金不可與燙金重疊，燙金正面與背面亦不可重疊，否則容易出現燙不上去的現象。</li>
-                        <li>燙金、打凸離紙邊距離最少5mm，須有一邊含咬口10MM；合版是借咬口，所以才可1模燙金。</li>
-                        <li>貼紙類作燙金加工，燙金面積大，金箔會易與紙張沾黏，貼紙易有變形、水波紋(如下圖)等狀況，純屬合理範圍。
-                        </li>
-                        <div class="pic">
-                            <img src="http://www.draw123.com.tw/Images/Statement/%E7%87%99%E9%87%91%20%E6%89%93%E5%87%B8-01.jpg" alt="">
-                        </div>
-                        <li>數位印刷滿版建議不可以鋅版燙金，因碳粉會影響鋅版燙金金箔；若數位印刷滿版有上膜可以鋅版燙金。</li>
-                        <div class="pic">
-                            <img src="http://www.draw123.com.tw/Images/Statement/%E7%87%99%E9%87%91%20%E6%89%93%E5%87%B8-02.jpg" alt="">
-                        </div>
-
-                        <div class="pic">
-                            <img src="http://www.draw123.com.tw/Images/Statement/%E7%87%99%E9%87%91%20%E6%89%93%E5%87%B8-03.jpg" alt="">
-                        </div>
-
-                        <div class="pic">
-                            <img src="http://www.draw123.com.tw/Images/Statement/%E7%87%99%E9%87%91%20%E6%89%93%E5%87%B8-04.jpg" alt="">
-                        </div>
-
-                        <div class="pic">
-                            <img src= http://www.draw123.com.tw/Images/Statement/%E7%87%99%E9%87%91%20%E6%89%93%E5%87%B8-05.jpg" alt="">
-                        </div>
-                        
-                    </ol>
+                        <ol>
+                            <li>燙金的黑稿請設K100的填色。
+                            </li>
+                            <li>在已完成的印刷紙張上有LOGO/文字/圖案的部分，再針對它去疊燙上金箔時，會因紙張伸縮、上膜、裁切誤差等因素，一定會導致燙金套印有不準且誤差值在正負3mm範圍內的情形，皆為正常現象◦不可以此為退貨或拒付款的理由。</li>
+                            <li>燙金勿用太細或較複雜的圖文線條，可能無法加工製作或加工後效果不佳。</li>
+                            <li>燙金時另一面不能有局部上光重疊，燙金與局部光面積不能重疊外，燙金與局部光至少要離3MM以上。</li>
+                            <li>燙金圖文線條寬度最少0.2mm\0.567 pt以上，打凸圖文線寬寬度最少0.3mm\0.85pt以上，文字勿小於8級，線條太細或字體過粗 ，燙金、打凸加工後會造成線條不清或文字糊掉。</li>
+                            <li>局部上光上方不能燙金、打凸，需距離3mm以上。</li>
+                            <li>燙金與打凸若同位置，多少會有誤差。</li>
+                            <li>燙金不可與燙金重疊，燙金正面與背面亦不可重疊，否則容易出現燙不上去的現象。</li>
+                            <li>燙金、打凸離紙邊距離最少5mm，須有一邊含咬口10MM；合版是借咬口，所以才可1模燙金。</li>
+                            <li>貼紙類作燙金加工，燙金面積大，金箔會易與紙張沾黏，貼紙易有變形、水波紋(如下圖)等狀況，純屬合理範圍。
+                            </li>
+                            <div class="pic">
+                                <img src="./img/燙金 打凸-01.jpg" alt="">
+                            </div>
+                            <li>數位印刷滿版建議不可以鋅版燙金，因碳粉會影響鋅版燙金金箔；若數位印刷滿版有上膜可以鋅版燙金。</li>
+                            <div class="pic">
+                                <img src="./img/燙金 打凸-02.jpg" alt="">
+                            </div>
+    
+                            <div class="pic">
+                                <img src="./img/燙金 打凸-03.jpg" alt="">
+                            </div>
+    
+                            <div class="pic">
+                                <img src="./img/燙金 打凸-04.jpg" alt="">
+                            </div>
+    
+                            <div class="pic">
+                                <img src= "./img/燙金 打凸-05.jpg" alt="">
+                            </div>
+                        </ol>
+                    </ul>
                 </div>
 
             </div>
@@ -328,16 +345,16 @@
             <!-- 新的 -->
             <div class="last_types1">
             <!-- 種類選單 -->
-            <div class="all_types">
+            <div class="all-types-bar">
                 <!-- 產品選單手機板 -->
-                <button  class="dropbtn"  >彩色名片種類</button>
+                <!-- <button  class="dropbtn"  >選擇彩色名片種類</button> -->
                 <div class="all-types-title" >彩色名片種類</div>
                 
                 <!-- 選單內容 -->
                 <div class="dropdown-content" id="myDropdown">
 
                     <button class="small-type big-type" >
-                        <span class="type_text" >雞尾酒彩色名片</span>    
+                        <span class="type_text" value>雞尾酒彩色名片</span>    
                     </button>
 
                     <button class="small-type big-type" >
@@ -357,8 +374,25 @@
                     </button>
 
                 </div>
+            </div>
 
-          
+               <!-- 手機板下拉式選單 -->
+               <div class="dino-input-field  custom-select  phone-select" >
+                <label></label>
+
+                <span class=" drop-phone-btn">選擇彩色名片種類
+                    <i class="fas fa-sort-down"></i>
+                </span>
+
+                <ul class="select-options  phone-small-type-contents" >
+                    <li class="phone-small-type" >雞尾酒彩色名片</li>
+                    <li class="phone-small-type">數位寫真名片</li>
+                    <li class="phone-small-type">彩色名片合版</li>
+                    <li class="phone-small-type">造型名片合板</li>
+                    <li class="phone-small-type">雙摺名片合版</li>
+               
+                </ul>
+                
             </div>
             
         <!-- 種類內容 -->
@@ -376,7 +410,7 @@
 
                 <!-- 種類介紹 -->
                 <div class="type-tab-content ">
-                    <div class="type-contents">
+                    <div class="type-contents style-types">
                         <!-- 種類圖片 -->
                         <div class="type-pic">
                             <div class="swiper-container mySwiper  " >
@@ -412,9 +446,6 @@
                         </div>
                     
 
-                   
-                
-
                         <!-- 產品樣式文字 -->
                         <div class=" type-texts">
                             <div class="texts">
@@ -442,176 +473,23 @@
                 <div class="type-tab-content">
                     <div class="style-types">
 
+                      
+
                         <!-- 樣式1 -->
                         <div class="style-type">
+                            <div class="add-list-btn">加入查價清單</div>
                             <div class="style-type-pic">
                                 <img src="./img/造型名片1.jpg" alt="">
                             </div>
 
                             <div class="style-type-content">
                                 <div class="style-type-text">產品樣式：台灣造型</div>
-
                                 <div class="style-type-text">
                                     <div class="text">完稿尺寸：4mm x 2mm</div>
                                     <div class="text">成品尺寸：4mm x 2mm</div>
                                 </div>
+                                <div class="style-type-text">工作天數：約2  ~  3天(不含額外加工天數)</div>
                                 
-                                <div class="style-type-text">工作天數：約2  ~  3天(不含額外加工天數)</div>
-
-                                <div class="style-selects">
-                                    <div class="all_types all-select-views">
-                                        <!-- 選單按鈕 -->
-                                        <button  class=" select-view-btn">適用紙張
-                                            <i class="fas fa-sort-down"></i>
-                                        </button>
-
-                                        <!-- 選單內容 -->
-                                        <div class=" select-view-content">
-                    
-                                            <button class=" small-type-view" >
-                                                <span class="type_text" >200g合成卡</span>    
-                                            </button>
-                    
-                                            <button class=" small-type-view" >
-                                                <span class="type_text">220g一級卡</span>    
-                                            </button>
-                    
-                                            <button class=" small-type-view" >
-                                                <span class="type_text">一級卡雙亮</span>    
-                                            </button>
-                    
-                                            <button class=" small-type-view" >
-                                                <span class="type_text">一級卡雙霧</span>    
-                                            </button>
-                    
-                                            <button class=" small-type-view" >
-                                                <span class="type_text">一級卡局部上光</span>    
-                                            </button>
-
-                                            <button class=" small-type-view" >
-                                                <span class="type_text">萊妮紙</span>    
-                                            </button>
-                    
-                                            <button class=" small-type-view" >
-                                                <span class="type_text">象牙卡250g</span>    
-                                            </button>
-                    
-                                            <button class=" small-type-view" >
-                                                <span class="type_text">炫光紙白色</span>    
-                                            </button>
-                    
-                                        </div>
-                    
-                                        
-                                    </div>
-
-                                    <div class="all_types all-select-views">
-                                        <!-- 產品選單手機板 -->
-                                        <button  class=" select-view-btn">印刷方式
-                                            <i class="fas fa-sort-down"></i>
-                                        </button>
-
-                                        <!-- 選單內容 -->
-                                        <div class=" select-view-content" id="myDropdown">
-                    
-                                            <button class=" small-type-view" >
-                                                <span class="type_text" >雙面</span>    
-                                            </button>
-                    
-                                            <button class=" small-type-view" >
-                                                <span class="type_text">單面</span>    
-                                            </button>
-                    
-                    
-                                        </div>
-                    
-                                        
-                                    </div>
-
-                                    <div class="all_types all-select-views">
-                                        <!-- 產品選單手機板 -->
-                                        <button  class=" select-view-btn">可額外加工方式 <br> ( 可複選  ) 
-                                            <i class="fas fa-sort-down"></i></button>
-
-                                        <!-- 選單內容 -->
-                                        <div class=" select-view-content" id="myDropdown">
-                    
-                                            <button class=" small-type-view" >
-                                                <span class="type_text" >燙金</span>    
-                                            </button>
-                    
-                                            <button class=" small-type-view" >
-                                                <span class="type_text">局部上光</span>    
-                                            </button>
-                    
-                    
-                                        </div>
-                    
-                                        
-                                    </div>
-                                    
-                                </div>
-
-                                <div class="download-files">
-                                    <span class="download-files-title">樣本檔下載：</span> 
-                                    <div class="links">
-                                        <a class="link" href="" download="">
-                                            <img src="./img/ai_icon.png" alt="">
-                                            <div class="link-text">Illustrator <br>(    雙面    ) </div>
-                                        </a>
-                
-                                        <a class="link" href="" download="">
-                                            <img src="./img/cdr_icon.png" alt="">
-                                            <div class="link-text">CorelDRAW <br> (   雙面    )</div>
-                                        </a>
-
-                                        <a class="link" href="" download="">
-                                            <img src="./img/ai_icon.png" alt="">
-                                            <div class="link-text">Illustrator <br>(    單面    ) </div>
-                                        </a>
-                
-                                        <a class="link" href="" download="">
-                                            <img src="./img/cdr_icon.png" alt="">
-                                            <div class="link-text">CorelDRAW <br> (   單面    )</div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="download-files">
-                                    <span class="download-files-title">注意事項：</span> 
-                                    <div class=" note-btns">
-                                        <button class=" note-btn paper-note-btn"  >
-                                            <div class="link-text note-text ">完稿須知</div>
-                                        </button>
-                
-                                        <button class=" note-btn print-note-btn"  >
-                                            <div class="link-text note-text">委印須知</div>
-                                        </button>
-
-                                        <button class=" note-btn process-note-btn"  >
-                                            <div class="link-text note-text">加工須知</div>
-                                        </button>
-
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- 樣式2 -->
-                        <div class="style-type">
-                            <div class="add-list-btn">將選擇資訊加入我的清單</div>
-                            <div class="style-type-pic">
-                                <img src="./img/造型名片1.jpg" alt="">
-                            </div>
-
-                            <div class="style-type-content">
-                                <div class="style-type-text">產品樣式：小熊造型</div>
-                                <div class="style-type-text">
-                                    <div class="text">完稿尺寸：4mm x 2mm</div>
-                                    <div class="text">成品尺寸：4mm x 2mm</div>
-                                </div>
-                                <div class="style-type-text">工作天數：約2  ~  3天(不含額外加工天數)</div>
 
                                 <div class="style-selects">
 
@@ -652,6 +530,15 @@
                                     </div>
 
                                 </div> 
+
+                                <ul class="select-information"> 
+                                    <li>產品資訊：</li>
+                                    <li>小熊造型</li>
+                                    <li>200g合成卡</li>
+                                    <li>雙面</li>
+                               
+                                </ul>
+
                                 <div class="style-type-text">選擇加工方式   ( 可複選 )：</div>
                                 <form class="process-selects">
                                     
@@ -667,21 +554,13 @@
                                    
                                 </form>
                             
-                                <ul class="select-information"> 
-                                    <li>產品資訊：</li>
-                                    <li>小熊造型</li>
-                                    <li>200g合成卡</li>
-                                    <li>雙面</li>
-                               
-                                </ul>
-
+                              
+<!-- 
                                 <ul class="select-information else"> 
                                     <li>額外加工資訊：</li>
                                     <li>燙金</li>
-                                    <li>局部上光</li>
-                                   
-                                
-                                </ul>
+                                    <li>局部上光</li>                         
+                                </ul> -->
 
                                 
                             
@@ -1029,6 +908,9 @@
 <script>      
     const type_btn = document.querySelectorAll(".dropbtn")
     const content = document.querySelectorAll(".dropdown-content")
+
+
+    console.log(small_types);
     clearallcontent();
         type_btn.forEach(function(ele, i) {
            ele.addEventListener('click', function() {
@@ -1036,6 +918,17 @@
                clearallcontent()
                type_btn[i].classList.add("show");
                content[i].classList.add("show");
+           });
+       });
+
+       small_types.forEach(function(ele, i) {
+           ele.addEventListener('click', function() {
+            // clear_type_tab_btns()
+            // clear_type_tab_contents()
+            var type_text_value = type_texts[i].value;
+            console.log(type_texts[i].value);
+            // type_tab_btns[i].classList.add("active");
+            // type_tab_contents[i].classList.add("show");
            });
        });
 
@@ -1067,6 +960,30 @@
   }
 }
 
+</script>
+
+<!-- 新手機板下拉式選單 -->
+<script>
+    const phonesmalltypes = document.querySelectorAll(".phone-small-type")
+
+    phonesmalltypes[0].classList.add("active");
+
+    phonesmalltypes.forEach(i => {
+    // console.log(papers);    
+    i.onclick = function(){
+     
+        clearphonesmalltypes();
+       this.classList.toggle("active");
+    }
+});
+
+function clearphonesmalltypes() {
+    phonesmalltypes.forEach(i => {
+      
+       i.classList.remove("active");
+});
+    
+}
 </script>
 
 <!-- 種類選擇選擇欄 -->
@@ -1122,7 +1039,7 @@
     const type_tab_btns = document.querySelectorAll(".type-tab-btn")
     const type_tab_contents = document.querySelectorAll(".type-tab-content")
     type_tab_btns[0].classList.add("active");
-    type_tab_contents[0].classList.add("show");
+    type_tab_contents[1].classList.add("show");
     clearallcontent();
     type_tab_btns.forEach(function(ele, i) {
            ele.addEventListener('click', function() {

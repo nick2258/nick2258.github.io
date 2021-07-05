@@ -64,6 +64,43 @@
                     margin-bottom: 30px;
                     letter-spacing: 3px;
                 }
+                ul{
+                    margin-bottom: 30px;
+                    &:nth-last-child(1){
+                        margin-bottom: 0px;
+                    }
+                    .process-title{
+                        width: 100%;
+                        font-size: 24px;
+                        font-weight: 600;
+                        margin: 0px auto;
+                        text-align: left;
+                        margin-bottom: 15px;
+                        padding-bottom: 15px;
+                        border-bottom: 1px solid gainsboro;
+                   
+                        span{
+                            padding-left: 11px;
+                            border-left: 5px solid salmon;
+                        }
+                        
+                    }
+                    ol{
+                        width: 94%;
+                        margin: 0px auto;
+                        .pic{
+                            width: 100%;
+                            padding-bottom: 30px;
+                            img{
+                                width: 70%;
+                                height: auto;
+                                max-width: 70%;
+                                margin: auto;
+        
+                            }
+                        }
+                    }
+                }
                 ol{
                     padding: 0px;
                     li{
@@ -125,16 +162,21 @@ main{
             padding: 0px 32px;
             padding-top: 20px;
         }
+     
           // 目前最新
           .last_types1{
             width: 100%;
             display: flex;
             margin-bottom: 30px;
             padding: 0px 16px;
+            @media all and (max-width: 1400px) {
+                display: flex;
+                flex-direction: column;
+            }
 
 
             // 左側長條式大類選單列
-            .all_types{
+            .all-types-bar{
                 width: 300px;
  
                 margin-right: auto;
@@ -146,55 +188,58 @@ main{
                 box-shadow: 5px 5px 10px rgba(156, 156, 156, 0.342);
                 height: max-content;
            
-                &:nth-last-child(1){
-                    margin-bottom: 0px;
-                    .dropdown-content{
-                        max-height: 250px;
-                    }
-                }
+                // &:nth-last-child(1){
+                //     margin-bottom: 0px;
+                //     .dropdown-content{
+                //         max-height: 250px;
+                //     }
+                // }
                     
-                @media all and (max-width: 1200px) {
+                @media all and (max-width: 1400px) {
                     width: 500px;
                     margin: auto;
-                    margin-bottom: 20px;
+                    // margin-bottom: 20px;
                     display: flex;
                     flex-direction: column;
                     justify-self: center;
                     margin-bottom: 10px;
+                    height: max-content;
+                    background-color: transparent;
+                    box-shadow: 0px 0px 0px rgba(156, 156, 156, 0.342);
                     &:nth-last-child(1){
                         margin-bottom: 10px;
                     }
                 }
-                @media all and (max-width: 319px) {
-                    width: 260px;    
-                }
+                // @media all and (max-width: 319px) {
+                //     width: 260px;    
+                // }
                 
                 // 手機板大類按鈕
-                .dropbtn {
-                    background-color: #457392;
+                // .dropbtn {
+                //     background-color: #457392;
                     
-                    font-weight: 600;
-                    border-radius: 3px;
-                    color: white;
-                    padding: 10px 16px;
-                    font-size: 16px;
-                    border: none;
-                    cursor: pointer;
-                    letter-spacing: 2px;
-                    display: none;
+                //     font-weight: 600;
+                //     border-radius: 3px;
+                //     color: white;
+                //     padding: 10px 16px;
+                //     font-size: 16px;
+                //     border: none;
+                //     cursor: pointer;
+                //     letter-spacing: 2px;
+                //     display: none;
 
-                    @media all and (max-width: 1200px) {
-                        display: block;
-                        width: 420px;
-                        width: 500px;
-                        margin: auto;
-                        font-size: 20px;
-                        padding: 10px 16px;
-                    }
-                    @media all and (max-width: 600px) {
-                        width: 350px;
-                    }
-                }
+                //     @media all and (max-width: 1200px) {
+                //         display: block;
+                //         width: 420px;
+                //         width: 500px;
+                //         margin: auto;
+                //         font-size: 20px;
+                //         padding: 10px 16px;
+                //     }
+                //     @media all and (max-width: 600px) {
+                //         width: 350px;
+                //     }
+                // }
                 
                 // 長條式標題
                 .all-types-title{
@@ -208,11 +253,14 @@ main{
                     color: white;
                     padding: 10px 16px;
                     font-size: 20px;
-                    margin-bottom: 8px;
+                    // margin-bottom: 8px;
                     letter-spacing: 2px;
-                    @media all and (max-width: 1200px) {
-                        display: none;  
+                    @media all and (max-width: 1400px) {
+                        width: 350px;
+                        display: none;
+                     
                     }
+                   
                 }
                
                 // 長條式下拉式選單按鈕
@@ -223,7 +271,11 @@ main{
                     max-height: 270px;
                     overflow-x: hidden;
                     overflow-y: auto; 
-                   
+                    @media all and (max-width: 1400px) {
+                        width: 350px;
+                        display: none;
+                     
+                    }
                     @media all and (max-width: 1200px) { 
                         width: 422px;
                         width: 500px;
@@ -238,12 +290,7 @@ main{
                     @media all and (max-width: 600px) {
                         width: 350px;
                     }
-                    &.show{
-                        display: block;
-                        z-index: 80;
-                        margin: auto;
-                       
-                    }
+                 
                     a{
                         display: block;
                         text-decoration: none;
@@ -293,7 +340,191 @@ main{
                             transition: .6s;
                     }
                 }
+
+             
             }
+               // 手機選單
+            //    .phone-select{
+            //     display: none;
+                
+            //     // margin-bottom:80px;
+            //         @media all and (max-width: 1400px) {
+            //             display: block;
+            //             height: max-content !important;
+            //             margin-bottom: 30px;
+            //             // width: 100%;
+            //             .drop-phone-btn{
+                            
+            //                 // width: 1000px;
+            //                 background-color: brown;
+                            
+            //                 // width: 300px;
+            //                 max-height: 200px;
+            //                 // text-align: center;
+            //                 // background-color: #457392;
+            //                 // font-weight: 600;
+            //                 // border-radius: 3px;
+            //                 // color: white;
+            //                 padding: 10px 20px;
+            //                 font-size: 20px;
+            //                 // // margin-bottom: 8px;
+            //                 letter-spacing: 2px;
+                            
+            //             }
+            //             .phone-small-type-contents{
+            //                 display: none;
+            //             }
+            //         }
+               
+            // }
+            .phone-select{
+                                       
+                // width: 300px;
+                width: 500px;
+                font-weight: 600;
+                color: gray;
+                border: 1px solid gainsboro;
+                background-color: #2c3e50;
+
+                color: white;
+
+                position: relative;
+                display: flex;
+                align-items: center;
+                // align-content: center;
+                border-radius: 3px 3px 0px 0px;
+                text-align: center;
+                letter-spacing: 1.5px;
+                margin-right: 10px;
+
+                margin:0px auto;
+                display: none;
+                margin-bottom: 30px;
+                @media all and (max-width: 1400px) {
+                    display: block;
+
+                }
+               
+                
+                label{
+                    top: 5px;
+                    left: 20px;
+                    font-size: 12px;
+                    font-weight: 700;
+                }
+                // 整個選單內容
+                .phone-small-type-contents{
+            
+                    // display: none;
+                    position: absolute;
+       
+                    background-color: #768da7;
+                    // background-color: #557392;
+
+
+
+                    width: 100%;
+                    top: 100%;
+                    margin: 0;
+                    padding: 0;
+               
+                    // box-shadow: black 0 5px 20px -15px;
+                    box-sizing: border-box;
+                    z-index: 50;
+                    text-align: center;
+                    border-radius: 0px 0px 10px 10px;
+                    height: max-content;
+                    max-height: 30vh;
+                    overflow-y: auto;
+                    box-shadow: 5px  5px 10px  rgba(56, 56, 56, 0.384);
+
+                    // 選單選項
+                    li {
+                        list-style: none;
+                        padding: 10px 2px;
+                        font-size: 16px;
+                        transition: all .25s;
+                        font-weight: 600;
+                        // border: 2px solid transparent;
+                        cursor: pointer;
+
+                       
+                        
+                        &:hover{
+                            // border: 2px solid #335577;
+                            background-color: #18365c;
+                            background-color: rgb(250, 144, 101);
+
+                            // background-color: white;
+                            // color:#335577 ;
+                            color: white;
+                            cursor: pointer;
+                            transition: .6s;
+                        }
+                        &.active{
+                            // border: 2px solid #335577;
+                            background-color: rgb(250, 144, 101);
+                            // background-color: white;
+                            color:#335577 ;
+                            color: white;
+                            transition: .6s;
+                        }
+                      }
+    
+                  }
+                .style-select-option-view{
+                    display: none;
+                    &.show{
+                        display: block;
+                    }
+                }
+                // 選單預設標題
+                .drop-phone-btn{
+                    display: block;
+                    padding: 10px 8px;
+                    // max-height: 48px;
+                    // height: 48px;
+                    font-size: 20px;
+                    background-color: #335577;
+
+                   
+                    // margin-top: 7px;
+                    width: 100%;
+
+
+               
+                         
+                            
+                            // width: 300px;
+                            max-height: 200px;
+                            text-align: center;
+                
+                            padding: 10px 20px;
+                            font-size: 20px;
+                            // // margin-bottom: 8px;
+                            letter-spacing: 2px;
+               
+                    .fa-sort-down{
+                       
+                        color: white;
+                        position: absolute;
+                        right: 5px;
+                        top: 50%;
+                        transform: translateY(-70%);
+                        font-size: 28px;
+                        &.none{
+                            display: none;
+                        }
+                    }
+                    .small-title{
+                        font-size: 12px;
+                    }
+                    
+                    
+                  }
+                 
+            }
+            
 
         //    選擇內容
             .all-type-content{
@@ -351,6 +582,8 @@ main{
                             .type-pic{
                                 width: 450px;
                                 height: 320px;
+                                width: 380px;
+                                height: 280px;
                                 // border: 5px solid tan;
                                 .swiper-container {
                                     // margin: auto;
@@ -360,11 +593,16 @@ main{
                                         // 每張輪播圖
                                         width: 450px;
                                         height: 320px;
+                                        width: 380px;
+                                        height: 280px;
                                         .swiper-slide{
                                   
                                             img{
                                                 width: 450px;
                                                 height: 320px;
+                                                width: 380px;
+                                                height: 280px;
+                                                border-radius: 5px;
                                                
                             
                                             }
@@ -416,7 +654,9 @@ main{
                                 width: 100%;
                                 // margin-right: 20px;
                                 margin-bottom: 40px;
-                                box-shadow: 0px 5px 5px rgba(220, 220, 220, 0.575);
+                                // box-shadow: 0px 5px 5px rgba(220, 220, 220, 0.575);
+                                box-shadow: 5px 5px 15px gainsboro;
+
                                 border-radius: 8px;
                                 padding-bottom: 20px;
                                 display: flex;
@@ -549,9 +789,7 @@ main{
                                         display: flex;
                                         margin: 10px 0px;
                                         font-size: 14px;
-                                        .custom-select{
-                                           
-                                        }
+                                      
                                        
                                         // 選單
                                         .all_types{
@@ -667,9 +905,11 @@ main{
                                                 left: 20px;
                                                 font-size: 12px;
                                                 font-weight: 700;
+                                                
                                             }
                                             // 整個選單內容
                                             .style-select-option {
+                                                
                                         
                                                 display: none;
                                                 position: absolute;
@@ -695,6 +935,7 @@ main{
                                                     padding: 10px 2px;
                                                     font-size: 14px;
                                                     transition: all .25s;
+                                                    cursor: pointer;
                                                     // &:hover{
                                                     //     background-color: #509C87;
                                                     //     color: white;
@@ -718,6 +959,8 @@ main{
                                                
                                                 // margin-top: 7px;
                                                 width: 100%;
+                                                cursor: pointer;
+
                                            
                                                 .fa-sort-down{
                                                    
@@ -736,15 +979,16 @@ main{
                                                 }
                                                 
                                                 
-                                              }
-                                              .style-select-title1 {
-                                               
-                                                padding: 10px 8px;
-                                                font-size: 18px;
-                                              
-                                                width: 100%;
-                                                
-                                              }
+                                            }
+                                            .style-select-title1 {
+                                            
+                                            padding: 10px 8px;
+                                            font-size: 18px;
+                                            
+                                            width: 100%;
+                                            cursor: pointer;
+                                            
+                                            }
                                         }
                                     }
                                     .download-files{
@@ -873,7 +1117,8 @@ main{
                             flex-wrap: wrap;
                             .paper-process-type{
                                 width: calc(50% - 10px);
-                                margin-right: 20px;
+                                width: 100%;
+                                // margin-right: 20px;
                                 
                                 display: flex;
                                 padding: 15px;
@@ -888,6 +1133,8 @@ main{
                                 .paper-process-type-pic{
                                    width: 280px;
                                    height: 206px;
+                                   width: 380px;
+                                   height: 280px;
                                     img{
                                         width: 100%;
                                         height: 100%;

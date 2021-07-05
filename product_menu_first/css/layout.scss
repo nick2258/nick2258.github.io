@@ -40,6 +40,51 @@ img{
 ::-webkit-scrollbar-thumb:hover {
     background: #A9B7C0; 
 } 
+ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    li{
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+.top-btn{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    .home_btn{
+        width: 80px;
+        height: 80px;
+        box-shadow: 5px 5px 15px gainsboro;
+        background-color: rgb(62, 136, 165);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border:3px solid rgb(62, 136, 165);
+        transform: .6s;
+        &:hover{
+            background-color: white;
+            color:rgb(62, 136, 165) ;
+            transition: .6s;
+            .fa-angle-double-up{
+                transform: translateY(-5px);
+            }
+        }
+        .fa-angle-double-up{
+            font-size: 24px;
+        }
+        .btn{
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 3px;
+        }
+    }
+}
 
 .container{
     width: 1600px;
