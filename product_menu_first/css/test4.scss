@@ -162,6 +162,16 @@ main{
             padding: 0px 32px;
             padding-top: 20px;
         }
+        @media all and (max-width: 1250px) {
+            padding: 0px 16px;
+            
+        }
+        @media all and (max-width: 800px) {
+            padding: 0px 8px;
+        }
+      
+
+      
      
           // 目前最新
           .last_types1{
@@ -169,7 +179,8 @@ main{
             display: flex;
             margin-bottom: 30px;
             padding: 0px 16px;
-            @media all and (max-width: 1400px) {
+            @media all and (max-width: 1250px) {
+                padding: 0px 8px;
                 display: flex;
                 flex-direction: column;
             }
@@ -187,6 +198,13 @@ main{
                 margin-right: 30px;
                 box-shadow: 5px 5px 10px rgba(156, 156, 156, 0.342);
                 height: max-content;
+                @media all and (max-width: 1400px) {
+                    width: 250px;
+
+                }
+                @media all and (max-width: 1250px) {
+                    display: none;
+                }
            
                 // &:nth-last-child(1){
                 //     margin-bottom: 0px;
@@ -195,21 +213,21 @@ main{
                 //     }
                 // }
                     
-                @media all and (max-width: 1400px) {
-                    width: 500px;
-                    margin: auto;
-                    // margin-bottom: 20px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-self: center;
-                    margin-bottom: 10px;
-                    height: max-content;
-                    background-color: transparent;
-                    box-shadow: 0px 0px 0px rgba(156, 156, 156, 0.342);
-                    &:nth-last-child(1){
-                        margin-bottom: 10px;
-                    }
-                }
+                // @media all and (max-width: 1400px) {
+                //     width: 500px;
+                //     margin: auto;
+                //     // margin-bottom: 20px;
+                //     display: flex;
+                //     flex-direction: column;
+                //     justify-self: center;
+                //     margin-bottom: 10px;
+                //     height: max-content;
+                //     background-color: transparent;
+                //     box-shadow: 0px 0px 0px rgba(156, 156, 156, 0.342);
+                //     &:nth-last-child(1){
+                //         margin-bottom: 10px;
+                //     }
+                // }
                 // @media all and (max-width: 319px) {
                 //     width: 260px;    
                 // }
@@ -256,8 +274,8 @@ main{
                     // margin-bottom: 8px;
                     letter-spacing: 2px;
                     @media all and (max-width: 1400px) {
-                        width: 350px;
-                        display: none;
+                        // width: 350px;
+                        // display: none;
                      
                     }
                    
@@ -271,22 +289,18 @@ main{
                     max-height: 270px;
                     overflow-x: hidden;
                     overflow-y: auto; 
-                    @media all and (max-width: 1400px) {
-                        width: 350px;
-                        display: none;
-                     
-                    }
-                    @media all and (max-width: 1200px) { 
-                        width: 422px;
-                        width: 500px;
-                        max-height: 30vh;
-                        display: none;
-                        background-image: url(/img/背景.png);         
-                        justify-content: center;
-                        z-index: 1;
-                        padding-top: 10px;
-                        overflow-x: hidden;
-                    }
+                  
+                    // @media all and (max-width: 1200px) { 
+                    //     width: 422px;
+                    //     width: 500px;
+                    //     max-height: 30vh;
+                    //     display: none;
+                    //     background-image: url(/img/背景.png);         
+                    //     justify-content: center;
+                    //     z-index: 1;
+                    //     padding-top: 10px;
+                    //     overflow-x: hidden;
+                    // }
                     @media all and (max-width: 600px) {
                         width: 350px;
                     }
@@ -400,8 +414,13 @@ main{
                 margin:0px auto;
                 display: none;
                 margin-bottom: 30px;
-                @media all and (max-width: 1400px) {
+                @media all and (max-width: 1250px) {
                     display: block;
+                }
+                @media all and (max-width: 700px) {
+                    width: 94%;
+                    margin: 0px auto;
+                    margin-bottom: 20px;
 
                 }
                
@@ -415,7 +434,7 @@ main{
                 // 整個選單內容
                 .phone-small-type-contents{
             
-                    // display: none;
+                    display: none;
                     position: absolute;
        
                     background-color: #768da7;
@@ -530,11 +549,11 @@ main{
             .all-type-content{
                 width: calc(100% - 330px);
                 position: relative;
-                @media all and (max-width: 1200px) {
+                @media all and (max-width: 1400px) {
+                    width: calc(100% - 250px);
+                }
+                @media all and (max-width: 1250px) {
                     width: 100%;
-                    padding: 0px 120px;
-                    padding-top: 20px;
-                    padding-bottom: 30px;
                 }
                 // 分頁按鈕
                 .type-tab-btns{
@@ -649,6 +668,7 @@ main{
                             width: 100%;
                             display: flex;
                             flex-wrap: wrap;
+                            
                            
                             .style-type{
                                 width: 100%;
@@ -659,383 +679,719 @@ main{
 
                                 border-radius: 8px;
                                 padding-bottom: 20px;
-                                display: flex;
-                                padding: 15px;
+                                // display: flex;
+                                padding: 30px;
+                                padding-bottom: 70px;
                                 position: relative;
                                 // &:nth-child(2){
                                 //     padding-bottom: 80px;
                                 // }
+                                @media all and (max-width: 1400px) {
+                                    padding-bottom: 30px;
+                                }
+                                @media all and (max-width: 1400px) {
+                                    padding: 15px;
+                                }
+                                @media all and (max-width: 1000px) {
+                                    // padding: 30px;
+                                    padding-bottom: 70px;
+                                }
+                               
+                               
+                                @media all and (max-width: 700px) {
+                                    font-size:14px;
+                                }
+                                @media all and (max-width: 500px) {
+                                    padding-bottom: 65px;
+                                }
+                               
                                 .add-list-btn{
                                     width: max-content;
-                                    font-size: 14px;
+                                    font-size: 18px;
                                     background-color: darkred;
                                     color: white;
                                     font-weight: 600;
                                     position: absolute;
-                                    right:20px;
-                                    top: 10px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    
+                                   bottom: 10px;
                                     border-radius: 3px;
                                     letter-spacing: 1.5px;
                                     // transform: translateX(-50%);
-                                    // bottom: 20px;
-                                    padding: 6px 15px;
+                                    bottom: 15px;
+                                    padding: 6px 20px;
                                     box-shadow: 5px 5px 10px rgba(128, 37, 37, 0.24);
+                                    border: 2px solid darkred;
+                                    &:hover{
+                                        background-color: white;
+                                        color: darkred;
+                                        transition: .6s;
+                                    }
+                                    @media all and (max-width: 1400px) {
+                                        left: inherit;
+                                        right: 16px;
+                                        bottom: 15px;
+                                        transform: translateX(0px);
+                                        padding: 6px 15px;             
+                                    }
+                                    @media all and (max-width: 1000px) {
+                                        left: 50%;
+                                        right: initial;
+                                        bottom: 15px;
+                                        transform: translateX(-50%);
+                                        padding: 6px 15px;             
+                                    }
+                                    @media all and (max-width: 800px) {
+                                        font-size: 16px;     
+                                        padding: 4px 15px;    
+                                    }
+                                    @media all and (max-width: 500px) {
+                                        font-size: 14px;     
+                                        padding: 2px 8px;    
+                                    }
 
                                 }
-                            
-                                .style-type-pic{
-                                    width: 100%;
-                                    width: 300px;
-                                    width: 380px;
-                                    height: 280px;
-                                    img{
+                                .style-contents{
+                                    display: flex;
+                                    @media all and (max-width: 1000px) {
+                                        flex-direction: column;
+                                    }
+                                    .style-type-pic{
                                         width: 100%;
-                                        height: 100%;
-                                        border-radius: 5px  ;
-
-                                    }
-                                }
-                                // 樣式內容
-                                .style-type-content{
-                                    width: calc(100% - 410px);
-                                    margin-left: 20px;
-                             
-                                    .style-type-text{
-                                        font-size: 18px;
-                                        font-weight: 600;
-                                        margin-bottom: 10px;
-                                        display: flex;
-                                        .text{
-                                            margin-right: 40px;
+                                        width: 300px;
+                                        width: 380px;
+                                        height: 280px;
+                                        @media all and (max-width: 1000px) {
+                                            margin: 0px auto;
                                         }
-                                        
-                                    }
-                                    .marb{
-                                        margin-bottom: 5px;
-                                    }
-                                    // 選擇加工方式
-                                    .process-selects{
-                                        display: flex;
-                                        flex-wrap: wrap;
-                                        margin-bottom: 10px;
-                                        .process-select{
-                                            display: flex;
-                                            align-items: center;
-                                            margin-bottom: 5px;
-                                            margin-right: 8px;
-                                            input{
-                                                width: 18px;
-                                                height: 18px;
-                                                
-                                                
-                                               
-                                            }
-                                            .process-selectname{
-                                                font-size: 16px;
-                                                font-weight: 600;
-                                                letter-spacing: 1.5px;
-                                                margin-left: 5px;
-                                            }
+                                        @media all and (max-width: 740px) {
+                                            width: 300px;
+                                            height: 221px;
                                         }
-                                       
-                                    }
-                                    // 產品選擇資訊
-                                    .select-information{
-                                        display: flex;
-                                        flex-wrap: wrap;
-                                        list-style: none;
-                                        margin: 0px;
-                                        padding: 0px;
-                                        width: 100%;
-                                        margin-bottom: 10px;
-                                   
-                                       
-                                        li{
-                                            display: flex;
-                                            flex-wrap: wrap;
-                                            font-size: 16px;
-                                            line-height: 28px;
-                                           &:nth-child(1){
-                                               font-weight: 600;
-                                           }
-                                        }
-                                        li+li+li:before {
-                                            // padding: 6px 8px;
-                                            padding-left: 8px;
-                                            padding-right: 3px;
-                                            color: black;
-                                            content: "/\00a0";
-                                            font-size: 20px;
-                                        }
-                                      
-                                    }
-                                    .else{
-
-                                        li+li+li:before {
-                                            // padding: 6px 8px;
-                                            padding-left: 8px;
-                                            padding-right: 3px;
-                                            color: black;
-                                            content: "、";
-                                            font-size: 16px;
-                                            
-                                        }
-                                    }
-
-                               
-
-                                    // 下拉式選單們
-                                    .style-selects{
-                                        display: flex;
-                                        margin: 10px 0px;
-                                        font-size: 14px;
-                                      
-                                       
-                                        // 選單
-                                        .all_types{
-                                            width: 190px;
-                                            width: 200px;
-                                            font-size: 14px;
-                                            font-weight: 600;
-                                            color: gray;
-                                            border: 1px solid gainsboro;
-                                            color: white;
-                            
-                                            position: relative;
-                                         
-                                            border-radius: 3px 3px 0px 0px;
-                                            text-align: center;
-                                            letter-spacing: 1.5px;
-                                            margin-right: 10px;
-                                           
-                                            /* Dropdown Button */
-                                            .select-view-btn {
-                                                background-color: #2c3e50;
-                                                height: 48px;                                  
-                                                font-weight: 600;
-                                                border-radius: 3px;
-                                                color: white;
-                                                padding: 1px 5px;
-                                                font-size: 16px;
-                                                border: none;
-                                                cursor: pointer;
-                                                letter-spacing: 2px;
-                                                // display: none;
-                                                display: block;
-                                                width: 100%;
-                                               
-                                                .fa-sort-down{
-                                                   
-                                                    color: white;
-                                                    position: absolute;
-                                                    right: 5px;
-                                                    top: 50%;
-                                                    transform: translateY(-70%);
-                                                    font-size: 28px;
-                                                    &.none{
-                                                        display: none;
-                                                    }
-                                                }
-                                               
-                                            }
-                                            .select-view-content{
-                                                position: absolute;
-                                                z-index: 50;
-                                                width: 100%;
-                                                height: max-content;
-                                                height: auto;
-                                                max-height: 0px;
-                                                // height: 350px;
-                                                overflow-x: hidden;
-                                                overflow-y: auto;
-                                                display: none;
-                                                background-color: #687A8F;
-                                                border-radius: 0px 0px 10px 10px;
-                                                &.show{
-                                                    display: block;
-                                                    max-height: 16vh;
-                                                    transition: 1s;
-                                                }
-                                                .small-type-view{
-                                                    // width: calc(100% + 1px);
-                                                    width: 100%;
-                                                    border: 0px;
-                                                    font-size: 14px;
-                                                   
-                                                    padding: 10px 2px;
-                                                    padding-right: 8px;
-                                                    
-                                                    letter-spacing: 1.5px;
-                                                    font-weight: 600;
-                                           
-                                                    background-color: #687A8F;
-                                                 
-                                                    color: white;
-                                                    border-radius: 5px;
-                                                    .type-text{
-                                                        text-align: center;
-                                                    }
-                                                }
-                                            }
-
-                                        }
-                                        // 有數據的
-                                        .style-select{
-                                       
-                                            width: 190px;
-                                            font-size: 14px;
-                                            font-weight: 600;
-                                            color: gray;
-                                            border: 1px solid gainsboro;
-                                            background-color: #2c3e50;
-                            
-                                            color: white;
-                            
-                                            position: relative;
-                                            display: flex;
-                                            align-items: center;
-                                            border-radius: 3px 3px 0px 0px;
-                                            text-align: center;
-                                            letter-spacing: 1.5px;
-                                            margin-right: 10px;
-                                           
-                                            
-                                            label{
-                                                top: 5px;
-                                                left: 20px;
-                                                font-size: 12px;
-                                                font-weight: 700;
-                                                
-                                            }
-                                            // 整個選單內容
-                                            .style-select-option {
-                                                
-                                        
-                                                display: none;
-                                                position: absolute;
-                                   
-                                                background-color: #687A8F;
-                            
-                
-                                                width: 100%;
-                                                top: 100%;
-                                                margin: 0;
-                                                padding: 0;
-                                           
-                                                box-shadow: black 0 5px 20px -15px;
-                                                box-sizing: border-box;
-                                                z-index: 50;
-                                                text-align: center;
-                                                border-radius: 0px 0px 10px 10px;
-                                                max-height: 16vh;
-                                                overflow-y: auto;
-                                                // 選單選項
-                                                li {
-                                                    list-style: none;
-                                                    padding: 10px 2px;
-                                                    font-size: 14px;
-                                                    transition: all .25s;
-                                                    cursor: pointer;
-                                                    // &:hover{
-                                                    //     background-color: #509C87;
-                                                    //     color: white;
-                                                    //     cursor: pointer;
-                                                    // }
-                                                  }
-                                
-                                              }
-                                            .style-select-option-view{
-                                                display: none;
-                                                &.show{
-                                                    display: block;
-                                                }
-                                            }
-                                            // 選單預設標題
-                                            .style-select-title {
-                                                display: block;
-                                                padding: 3px 8px;
-                                                max-height: 48px;
-                                                height: 48px;
-                                               
-                                                // margin-top: 7px;
-                                                width: 100%;
-                                                cursor: pointer;
-
-                                           
-                                                .fa-sort-down{
-                                                   
-                                                    color: white;
-                                                    position: absolute;
-                                                    right: 5px;
-                                                    top: 50%;
-                                                    transform: translateY(-70%);
-                                                    font-size: 28px;
-                                                    &.none{
-                                                        display: none;
-                                                    }
-                                                }
-                                                .small-title{
-                                                    font-size: 12px;
-                                                }
-                                                
-                                                
-                                            }
-                                            .style-select-title1 {
-                                            
-                                            padding: 10px 8px;
-                                            font-size: 18px;
-                                            
+                                        @media all and (max-width: 520px) {
                                             width: 100%;
-                                            cursor: pointer;
-                                            
-                                            }
+                                            height: 44.7vw;
+                                           
+                                        }
+                                       
+                                       
+                                        img{
+                                            width: 100%;
+                                            height: 100%;
+                                            border-radius: 5px;
+    
                                         }
                                     }
+                                    // 樣式內容
+                                    .style-type-content{
+                                        width: calc(100% - 410px);
+                                        margin-left: 30px;
+                                        @media all and (max-width: 1000px) {
+                                            margin-left: 0px;
+                                            width: 100%;
+                                            // padding: 0px 1vw;
+                                            
+                                           
+
+                                        }
+                                        .type-content-texts{
+                                            @media all and (max-width: 1000px) {
+                                                padding-top: 20px;
+                                                margin-left: 0px;
+                                               
+                                                display: flex;
+                                                justify-content: space-between;
+    
+                                            }
+                                            @media all and (max-width: 740px) {
+                                                flex-direction: column;
+                                            }
+                                            .type-content{
+                                               padding-right: 20px;
+                                                &:nth-child(2){
+                                                    @media all and (max-width: 1000px) {
+                                                        padding-right: 0px;
+                                                       
+                                                    }                                             
+                                                }
+                                                @media all and (max-width: 740px) {
+                                                    padding-right: 0px;
+                                                   
+                                                }
+                                                .style-type-text{
+                                                    font-size: 18px;
+                                                    font-weight: 600;
+                                                    margin-bottom: 10px;
+                                                    display: flex;
+                                                    .text{
+                                                        margin-right: 40px;
+                                                        &:nth-last-child(1){
+                                                            margin-right: 0px;
+                                                        }
+                                                    }
+                                                    @media all and (max-width: 1400px) {
+                                                        font-size: 16px;
+                                                        .text{
+                                                            margin-right: 20px;
+                                                        
+                                                        }
+                                                    }
+                                                    @media all and (max-width: 1000px) {
+                                                        flex-direction: column;
+                                                        .text{
+                                                            margin-right: 20px;
+                                                            padding-bottom: 10px;
+                                                            &:nth-last-child(1){
+                                                                padding-bottom: 0px;
+                                                            }
+                                                        }
+                                                        .pd5{
+                                                            padding-bottom: 5px;
+                                                        }
+                                                    }
+                                                    @media all and (max-width: 740px) {
+                                                        flex-direction: row;
+                                                        font-size: 16px;
+                                                    
+                                                        .text{
+                                                            width: calc(50% - 15px);
+                                                         
+                                                            padding-bottom: 0px;
+                                                            &:nth-last-child(1){
+                                                                padding-bottom: 0px;
+                                                            }
+                                                        }
+                                                      
+                                                    }
+                                                    @media all and (max-width: 700px) {
+                                                        font-size:14px;
+                                                    }
+                                                    @media all and (max-width: 650px) {
+                                                        flex-direction: column;
+                                                        .text{
+                                                            width: max-content;
+                                                            padding-bottom: 10px;
+                                                            &:nth-last-child(1){
+                                                                padding-bottom: 0px;
+                                                            }
+                                                        }
+                                                       
+                                                    }
+                                                    @media all and (max-width: 500px) {
+                                                       margin-bottom: 8px;
+                                                       .text{
+                                                            padding-bottom: 8px;
+                                                      
+                                                        }
+                                                    }      
+                                                }
+                                                .date{
+                                                    @media all and (max-width: 650px) {
+                                                        flex-direction: row;
+                                                        .text{
+                                                            width: max-content;
+                                                            padding-bottom: 10px;
+                                                            &:nth-last-child(1){
+                                                                padding-bottom: 0px;
+                                                            }
+                                                        }
+                                                        .pd5{
+                                                            margin-right: 5px;
+                                                            padding-bottom: 0px;
+                                                        }
+                                                       
+                                                    }
+                                                    @media all and (max-width: 650px) {
+                                                        flex-direction: column;
+                                                        .text{
+                                                            width: max-content;
+                                                            padding-bottom: 10px;
+                                                            &:nth-last-child(1){
+                                                                padding-bottom: 0px;
+                                                            }
+                                                        }
+                                                        .pd5{
+                                                          
+                                                            padding-bottom: 5px;
+                                                        }
+                                                       
+                                                    }
+                                                }
+                                              
+            
+                                                // 下拉式選單們
+                                                .style-selects{
+                                                    display: flex;
+                                                    margin: 10px 0px;
+                                                    font-size: 14px;
+                                                    
+                                                    @media screen and (max-width: 1000px){
+                                                        margin-top: 0px;
+                                                        width: max-content;
+                                                        flex-direction: column;
+                                                    }
+                                                    @media screen and (max-width: 740px){
+                                                        flex-direction: column;
+                                                    
+                                                        width: 100%;
+                                                    }
+                                                    @media all and (max-width: 500px) {
+                                                        margin-bottom: 8px;   
+                                                    }
+                                                    
+                                                   
+                                                    
+                                                    // 選單
+                                                    .all_types{
+                                                        width: 190px;
+                                                        width: 200px;
+                                                        font-size: 14px;
+                                                        font-weight: 600;
+                                                        color: gray;
+                                                        border: 1px solid gainsboro;
+                                                        color: white;
+                                        
+                                                        position: relative;
+                                                    
+                                                        border-radius: 3px 3px 0px 0px;
+                                                        text-align: center;
+                                                        letter-spacing: 1.5px;
+                                                        margin-right: 10px;
+                                                    
+                                                        /* Dropdown Button */
+                                                        .select-view-btn {
+                                                            background-color: #2c3e50;
+                                                            height: 48px;                                  
+                                                            font-weight: 600;
+                                                            border-radius: 3px;
+                                                            color: white;
+                                                            padding: 1px 5px;
+                                                            font-size: 16px;
+                                                            border: none;
+                                                            cursor: pointer;
+                                                            letter-spacing: 2px;
+                                                            // display: none;
+                                                            display: block;
+                                                            width: 100%;
+                                                        
+                                                            .fa-sort-down{
+                                                            
+                                                                color: white;
+                                                                position: absolute;
+                                                                right: 5px;
+                                                                top: 50%;
+                                                                transform: translateY(-70%);
+                                                                font-size: 28px;
+                                                                &.none{
+                                                                    display: none;
+                                                                }
+                                                            }
+                                                        
+                                                        }
+                                                        .select-view-content{
+                                                            position: absolute;
+                                                            z-index: 50;
+                                                            width: 100%;
+                                                            height: max-content;
+                                                            height: auto;
+                                                            max-height: 0px;
+                                                            // height: 350px;
+                                                            overflow-x: hidden;
+                                                            overflow-y: auto;
+                                                            display: none;
+                                                            background-color: #687A8F;
+                                                            border-radius: 0px 0px 10px 10px;
+                                                            &.show{
+                                                                display: block;
+                                                                max-height: 16vh;
+                                                                transition: 1s;
+                                                            }
+                                                            .small-type-view{
+                                                                // width: calc(100% + 1px);
+                                                                width: 100%;
+                                                                border: 0px;
+                                                                font-size: 14px;
+                                                            
+                                                                padding: 10px 2px;
+                                                                padding-right: 8px;
+                                                                
+                                                                letter-spacing: 1.5px;
+                                                                font-weight: 600;
+                                                    
+                                                                background-color: #687A8F;
+                                                            
+                                                                color: white;
+                                                                border-radius: 5px;
+                                                                .type-text{
+                                                                    text-align: center;
+                                                                }
+                                                            }
+                                                        }
+            
+                                                    }
+                                                    // 有數據的
+                                                    .style-select{
+                                                
+                                                        width: 190px;
+                                                        font-size: 14px;
+                                                        font-weight: 600;
+                                                        color: gray;
+                                                        border: 1px solid gainsboro;
+                                                        background-color: #2c3e50;
+                                        
+                                                        color: white;
+                                        
+                                                        position: relative;
+                                                        display: flex;
+                                                        align-items: center;
+                                                        border-radius: 3px 3px 0px 0px;
+                                                        text-align: center;
+                                                        letter-spacing: 1.5px;
+                                                        margin-right: 10px;
+                                                        .fa-sort-down{
+                                                            
+                                                            color: white;
+                                                            position: absolute;
+                                                            right: 5px;
+                                                            top: 0%;
+                                                            // transform: translateY(-0%);
+                                                            // text-align: right;
+                                                            font-size: 28px;
+                                                            &.none{
+                                                                display: none;
+                                                            }
+                                                        }
+                                                        @media all and (max-width: 1000px) {
+                                                            margin-bottom: 10px;
+                                                            &:nth-last-child(1){
+                                                                margin-bottom: 0px;
+                                                            }
+                                                        }
+                                                        @media all and (max-width: 740px) {
+                                                            margin-bottom: 10px;
+                                                            width: 100%;      
+                                                        }
+                                                        @media all and (max-width: 500px) {
+                                                            margin-bottom: 8px;   
+                                                        }
+                                                    
+                                                        
+                                                        label{
+                                                            top: 5px;
+                                                            left: 20px;
+                                                            font-size: 12px;
+                                                            font-weight: 700;
+                                                            
+                                                        }
+                                                        // 整個選單內容
+                                                        .style-select-option {
+                                                            
+                                                    
+                                                            display: none;
+                                                            position: absolute;
+                                            
+                                                            background-color: #687A8F;
+                                        
+                            
+                                                            width: 100%;
+                                                            top: 100%;
+                                                            margin: 0;
+                                                            padding: 0;
+                                                    
+                                                            box-shadow: black 0 5px 20px -15px;
+                                                            box-sizing: border-box;
+                                                            z-index: 50;
+                                                            text-align: center;
+                                                            border-radius: 0px 0px 10px 10px;
+                                                            max-height: 16vh;
+                                                            overflow-y: auto;
+                                                            // 選單選項
+                                                            li {
+                                                                list-style: none;
+                                                                padding: 10px 2px;
+                                                                font-size: 14px;
+                                                                transition: all .25s;
+                                                                cursor: pointer;
+                                                                // &:hover{
+                                                                //     background-color: #509C87;
+                                                                //     color: white;
+                                                                //     cursor: pointer;
+                                                                // }
+                                                            }
+                                            
+                                                        }
+                                                        .style-select-option-view{
+                                                            display: none;
+                                                            &.show{
+                                                                display: block;
+                                                            }
+                                                        }
+                                                        // 選單預設標題
+                                                        .style-select-title {
+                                                            display: block;
+                                                            padding: 3px 8px;
+                                                            // max-height: 48px;
+                                                            // height: 48px;
+                                                        
+                                                            // margin-top: 7px;
+                                                            width: 100%;
+                                                            cursor: pointer;
+                                                            border-radius: 8px;
+                                                            
+                                                            .small-title{
+                                                                font-size: 12px;
+                                                            }
+                                                            
+                                                            
+                                                        }
+                                                        .style-select-title1 {
+                                                        
+                                                            padding: 8px 8px;
+                                                            font-size: 18px;
+                                                            
+                                                            width: 100%;
+                                                            cursor: pointer;
+    
+                                                            @media all and (max-width: 1400px) {
+                                                                font-size: 16px;
+                                                            }
+                                                            @media all and (max-width: 1000px) {
+                                                                padding: 6.5px 8px;
+                                                            }
+                                                            @media screen and (max-width: 700px){
+                                                                font-size: 14px;
+                                                            }
+                                                            
+                                                            
+                                                        
+                                                        }
+                                                    }
+                                                }
+                                                 // 產品選擇資訊
+                                                 .select-information{
+                                                    display: flex;
+                                                    flex-wrap: wrap;
+                                                    list-style: none;
+                                                    margin: 0px;
+                                                    padding: 0px;
+                                                    width: 100%;
+                                                    margin-bottom: 10px;
+                                                    @media all and (max-width: 500px) {
+                                                        margin-bottom: 8px;   
+                                                    }
+                                            
+                                                
+                                                    li{
+                                                        display: flex;
+                                                        flex-wrap: wrap;
+                                                        font-size: 18px;
+                                                        line-height: 28px;
+                                                        font-weight: 600;
+                                                        &:nth-child(1){
+                                                            font-weight: 600;
+                                                        }
+                                                        @media screen and (max-width: 1400px){
+                                                            font-size: 16px;
+                                                        }
+                                                        @media screen and (max-width: 700px){
+                                                            font-size: 14px;
+                                                            &:nth-child(1){
+                                                                width: 100%;
+
+                                                            }
+                                                        }
+                                                    }
+                                                    li+li+li:before {
+                                                        // padding: 6px 8px;
+                                                        padding-left: 8px;
+                                                        padding-right: 3px;
+                                                        color: black;
+                                                        content: "/\00a0";
+                                                        font-size: 20px;
+                                                        @media screen and (max-width: 1400px){
+                                                            font-size: 16px;
+                                                        }
+                                                        @media screen and (max-width: 700px){
+                                                            font-size: 14px;
+                                                            
+                                                        }
+                                                    }
+                                                
+                                                }
+                                            }
+                                          
+                                        }
+                                        .process-select-content{
+                                            width: 100%;
+                                            // display: flex;
+                                            @media all and (max-width: 1000px) {
+                                                display: flex;
+                                            }
+                                            @media all and (max-width: 800px) {
+                                                flex-direction: column;
+                                            }
+                                            
+                                            .style-type-text{
+                                                font-size: 18px;
+                                                font-weight: 600;
+                                                margin-bottom: 5px;
+                                                display: flex;
+                                                .text{
+                                                    margin-right: 40px;
+                                                    &:nth-last-child(1){
+                                                        margin-right: 0px;
+                                                    }
+                                                }
+                                                @media all and (max-width: 1400px) {
+                                                    font-size: 16px;
+                                                    .text{
+                                                        margin-right: 20px;
+                                                    
+                                                    }
+                                                }
+                                                @media all and (max-width: 1000px) {
+                                                    flex-direction: column;
+                                                    .text{
+                                                        margin-right: 20px;
+                                                        &:nth-child(1){
+                                                            padding-bottom: 10px;
+                                                        }
+                                                    }
+                                                }
+                                                @media all and (max-width: 700px) {
+                                                    font-size:14px;
+                                                }
+                                            
+                                            
+                                                
+                                            }
+                                            .process-selects{
+                                                width: 100%;
+                                                // width: max-content;
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                @media all and (max-width: 1000px) {
+                                                    // margin-right: 0px
+                                                    width: calc(100% - 200px);
+                                                }
+                                                @media all and (max-width: 1000px) {
+                                                    width: 100%;
+                                                }
+                                              
+                                               
+                                                .process-select{
+                                                    display: flex;
+                                                    margin-right: 15px;
+                                                    font-size: 16px;
+                                                    font-weight: 600;
+                                                    margin-bottom: 5px;
+                                                    align-items: center;
+                                                     input{
+                                                         width: max-content;
+                                                         margin-left: 0px;
+                                                         margin-right: 5px;
+                                                     }
+                                                     .process-selectname{
+                                                         width: max-content;
+                                                     }
+                                                     @media screen and (max-width: 700px){
+                                                        font-size: 14px;
+                                                       
+                                                    }
+                                                }
+                                            }
+                                         }
+                                     
+                                 
+                                     
+                                    }
+                                }
+                                .all-download-files{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    padding-top: 10px;
+                                    @media all and (max-width: 1640px) {
+                                        flex-direction: column;      
+                                    } 
+                                        
                                     .download-files{
                                         // margin-left: auto;
                                         // width: 150px;
                                         display: flex;
                                         align-items: center;
-                                        margin-bottom: 15px;
-                                        // margin-bottom: 10px;
-                                        &:nth-last-child(1){
-                                            margin-bottom: 0px;
+                                 
+                                        @media all and (max-width: 1640px) {
+                                            margin-bottom: 10px;
+                                            &:nth-last-child(1){
+                                                margin-bottom: 0px;
+                                            }    
+                                        } 
+                                        @media all and (max-width: 800px) {
+                                            flex-direction: column;
                                         }
-                                        // &:nth-child(1){
-                                        //     @media all and (max-width: 1700px) {
-                                        //         align-items: flex-end;
-                                             
-                                               
-                                        //      } 
-                                        // }
+                                        @media all and (max-width: 500px) {
+                                            margin-bottom: 8px;   
+                                        }
+                                        &:nth-last-child(1){
+                                            margin-right: 0px;
+                                        }
+                                   
                                         .download-files-title{
                                             text-align: center;
                                             // width: 100%;
                                             width: max-content;
                                             font-size: 18px;
                                             font-weight: 600;
+                                            @media all and (max-width: 800px) {
+                                                text-align: left;
+                                                width: 100%;
+                                            }
+                                            @media screen and (max-width: 700px){
+                                                font-size: 14px;
+                                            }
                                         }
                                         .links{
                                             // width: 100%;
                                             display: flex;
                                             flex-wrap: wrap;
                                             // padding: 0px 32px;
-                                           
+                                        
                                             // justify-content: center;
-                                            @media all and (max-width: 1700px) {
-                                                width: 300px;
-                                              
-                                             } 
+                                            @media all and (max-width: 1000px) {
+                                                width: calc(100% - 108px);
+                                            } 
+                                            @media all and (max-width: 800px) {
+                                                display: flex;
+                                                width: 100%;
+                                                
+                                                justify-content: space-between;
+                                            }
+                                           
+                                          
                                             .link{
                                                 display: flex;
                                                 // flex-direction: column;
-                                                width: 120px;
+                                                width: 110px;
                                                 padding: 5px;
                                                 border: 1px solid gainsboro;
                                                 border-radius: 5px;
-                                                margin-right: 30px;
+                                                margin-right: 15px;
                                                 box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.349);
                                                 border: 2px solid transparent;
+                                                @media all and (max-width: 800px) {
+                                                  
+                                                    margin-top: 10px;
+                                                }
+                                                @media all and (max-width: 700px) {
+                                                    width: 46%;
+                                                    margin-right: 0px;
+                                                }
+                                                @media all and (max-width: 500px) {
+                                                    width: 48.5%;
+                                                    margin-top: 8px;   
+                                                }
+                                              
                                                 &:hover{
                                                     border: 2px solid rgba(128, 128, 128, 0.733);
                                                     
@@ -1060,27 +1416,62 @@ main{
                                                     text-align: center;
                                                     margin: auto;
                                                     font-size: 12px;
+                                                  
                                                 }
+                                               
                                             }
                                         }
                                         .note-btns{
                                             display: flex;
                                             flex-wrap: wrap;
                                             width: max-content;
+                                            margin-left: 20px;
+                                            @media all and (max-width: 800px) {
+                                                display: flex;
+                                                flex-wrap: nowrap;
+                                                width: 100%;
+                                                margin-left: 0px;
+                                                // justify-content: space-between;
+                                                // flex-wrap: nowrap;
+                                                
+                                            }
+                                            @media all and (max-width: 500px) {
+                                                justify-content: space-between;
+                                                
+                                            }
                                             .note-btn{
                                                 max-width: 120px;
-                                                width: 120px;
+                                                width: 110px;
                                                 background-color: #E8652B;
                                                 color: white;
                                                 text-align: center;
                                                 font-size: 14px;
                                                 font-weight: 600;
                                                 letter-spacing: 1.5px;
-                                                margin-right: 12px;
+                                                margin-right: 15px;
                                                 border-radius: 5px;
                                                 box-shadow: 3px 3px 10px rgba(165, 48, 5, 0.411);
                                                 border: 2px solid transparent;
-                                                margin-left: 18px;
+                                                // margin-left: 18px;
+                                                @media all and (max-width: 800px) {
+                                                    margin-top: 10px;
+                                                    width: 110px;
+                                                    margin-right: 20px;
+                                                }
+                                                @media all and (max-width: 700px) {
+                                                    margin-top: 10px;
+                                                    width:30% ;
+                                                   
+                                                }
+                                                @media all and (max-width: 500px) {
+                                                    margin-right: 0px;
+                                                    margin-top: 8px;   
+                                                    width: 31%;
+                                                    
+                                                }
+                                                &:nth-last-child(1){
+                                                    margin-right: 0px;
+                                                }
                                                 &:hover{
                                                     background-color: white;
                                                     color: #E8652B;
@@ -1091,14 +1482,23 @@ main{
                                                 }
                                                 .link-text{
                                                     padding: 5px 15px ;
+                                                    @media all and (max-width: 800px) {
+                                                        padding: 5px 1px ;
+                                                        font-size: 12px;
+                                                    }
+                                                    @media all and (max-width: 500px) {
+                                                        padding: 5px 0px ;
+                                                        letter-spacing: initial;
+                                                        
+                                                    }
+                                                    
+                                                 
                                                 }
                                             }
                                         }
 
                                     }
-                                }
-
-                               
+                                }  
                             
                             }
                         }
@@ -1226,6 +1626,9 @@ main{
                             overflow-y: auto;
                            
                             opacity: 1;
+                            @media all and (max-width: 1250px) {
+                                padding: 15px;
+                            }
 
                       
                         }
