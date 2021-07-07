@@ -1,50 +1,14 @@
-.top-btn{
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    .home_btn{
-        width: 80px;
-        height: 80px;
-        box-shadow: 5px 5px 15px gainsboro;
-        background-color: rgb(62, 136, 165);
-        color: white;
-        border-radius: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border:3px solid rgb(62, 136, 165);
-        transform: .6s;
-        &:hover{
-            background-color: white;
-            color:rgb(62, 136, 165) ;
-            transition: .6s;
-            .fa-angle-double-up{
-                transform: translateY(-5px);
-            }
-        }
-        .fa-angle-double-up{
-            font-size: 24px;
-        }
-        .btn{
-            font-size: 20px;
-            font-weight: 600;
-            margin-top: 3px;
-        }
-    }
-} 
-
 main{
     max-width: 1920px;
     width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin:0px auto;
     justify-content: center;
     padding-bottom: 30px;
     
-    // 圖示階層樣式
+    // 種類卡片容器
     .types{
         max-width: 1600px;
         width: 1600px;
@@ -52,19 +16,20 @@ main{
         display: flex;
         flex-wrap: wrap;
         padding-top: 30px;
-        margin: auto;
+        margin:0px auto;
         @media all and (max-width: 380px) {
             padding: 0px 24px;
             padding-top: 20px;
         }
+        // 卡片連結初始化
         a{
             color: #1D2731;
             font-size: 20px;
             font-weight: 600;
             letter-spacing: 1.5px;
-           
             display: block;
         }
+        // 每一個類別卡片， 連結包在這
         .type {
             width: calc(20% - 24px);
             box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.178);
@@ -84,9 +49,9 @@ main{
             &:nth-child(5n){
                 margin-right: 0px;
             }
+            // 類別卡片RWD調整
             @media all and (max-width: 1400px) {
                 width: calc(25% - 22.5px);
-              
                 &:nth-child(5n){
                     margin-right: 30px;
                 }
@@ -94,7 +59,6 @@ main{
                     margin-right: 0px;
                 }
             }
-            
             @media all and (max-width: 1000px) {
                 width: calc(33.33% - 20px);
                 
@@ -107,7 +71,6 @@ main{
             }
             @media all and (max-width: 769px) {
                 width: calc(50% - 15px);
-                
                 &:nth-child(3n){
                     margin-right: 30px;
                 }
@@ -116,10 +79,8 @@ main{
                 }
             }
             @media all and (max-width: 580px) {
-                width: calc(50% - 10px);
                 margin-right: 20px;
-                margin-bottom: 20px;
-                
+                margin-bottom: 20px; 
                 &:nth-child(3n){
                     margin-right: 20px;
                 }
@@ -131,10 +92,8 @@ main{
                 }
             }
             @media all and (max-width: 380px) {
-                width: calc(50% - 10px);
                 width: 100%;
-                margin-right: 0px;
-                
+                margin-right: 0px;  
                 &:nth-child(3n){
                     margin-right: 0px;
                 }
@@ -145,25 +104,21 @@ main{
                     margin-right: 0px;
                 }
             }
-            
+            // 種類卡片
             .typebtn{
                 align-items: center;
-
+                // 種類圖片
                 .pic{
-                    width: 100%;
-                    height: 180px;
                     width: 180px;
                     height: 150px;
-                    margin: auto;
-                  
+                    margin:0px auto;
                     @media all and (max-width: 769px) {
-                        height: 26vw;
                         width: 35vw;
                         height: 31.5vw;
                     }
                     @media all and (max-width: 380px) {
-                        height: 58.5vw;
                         width: 65vw;
+                        height: 58.5vw;  
                     }
                     img{
                         width: 100%;
@@ -171,6 +126,7 @@ main{
                         border-radius: 5px;
                     }
                 }
+                // 種類名稱
                 .name{
                     padding-top: 10px;
                     display: flex;
@@ -190,11 +146,9 @@ main{
                         }
                         @media all and (max-width: 1200px) {
                             font-size: 16px;
-                            font-weight: 600;
                         }
                         @media all and (max-width: 769px) {
                             font-size: 18px;
-                            font-weight: 600;
                         }
                         @media all and (max-width: 580px) {
                             font-size: 16px;
