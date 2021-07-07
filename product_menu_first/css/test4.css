@@ -85,7 +85,7 @@
 
 @media all and (max-width: 500px) {
   .all-note-content .note-contents .note-content .note-close-btn {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 10px;
   }
 }
@@ -94,6 +94,55 @@
   width: 80%;
   height: 80px;
   margin: auto;
+}
+
+.all-note-content .note-contents .note-content .content .close-btn {
+  width: 100%;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.all-note-content .note-contents .note-content .content .close-btn .close-text {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: darkred;
+  color: white;
+  border: 2px solid darkred;
+  padding: 5px 25px;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+}
+
+@media all and (max-width: 861px) {
+  .all-note-content .note-contents .note-content .content .close-btn .close-text {
+    font-size: 18px;
+    padding: 5px 15px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .all-note-content .note-contents .note-content .content .close-btn .close-text {
+    font-size: 16px;
+    padding: 5px 15px;
+  }
+}
+
+.all-note-content .note-contents .note-content .content .close-btn .close-text:hover {
+  background-color: white;
+  color: darkred;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 .all-note-content .note-contents .note-content .content .title {
@@ -737,6 +786,13 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
   height: 280px;
 }
 
+@media all and (max-width: 861px) {
+  main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .type-contents .type-pic {
+    width: 300px;
+    height: 221px;
+  }
+}
+
 main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .type-contents .type-pic .swiper-container {
   width: 100%;
   height: 100%;
@@ -757,6 +813,13 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
   border-radius: 5px;
 }
 
+@media all and (max-width: 861px) {
+  main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .type-contents .type-pic .swiper-container .swiper-wrapper .swiper-slide img {
+    width: 300px;
+    height: 221px;
+  }
+}
+
 main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .type-contents .type-pic .swiper-container .swiper-pagination-bullets {
   z-index: 99;
 }
@@ -775,8 +838,14 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
 }
 
 main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .type-contents .type-texts {
-  width: calc(100% - 480px);
+  width: calc(100% - 410px);
   margin-left: 30px;
+}
+
+@media all and (max-width: 861px) {
+  main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .type-contents .type-texts {
+    width: calc(100% - 330px);
+  }
 }
 
 main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .type-contents .type-texts .text {
@@ -817,55 +886,12 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
   }
 }
 
-@media all and (max-width: 1000px) {
-  main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type {
-    padding-bottom: 70px;
-  }
-}
-
-@media all and (max-width: 700px) {
-  main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type {
-    font-size: 14px;
-  }
-}
-
-@media all and (max-width: 500px) {
-  main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type {
-    padding-bottom: 65px;
-  }
-}
-
 main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .add-list-btn {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  font-size: 18px;
-  background-color: darkred;
-  color: white;
-  font-weight: 600;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  border-radius: 3px;
-  letter-spacing: 1.5px;
   bottom: 15px;
-  padding: 6px 20px;
-  -webkit-box-shadow: 5px 5px 10px rgba(128, 37, 37, 0.24);
-          box-shadow: 5px 5px 10px rgba(128, 37, 37, 0.24);
-  border: 2px solid darkred;
-}
-
-main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .add-list-btn:hover {
-  background-color: white;
-  color: darkred;
-  -webkit-transition: .6s;
-  transition: .6s;
 }
 
 @media all and (max-width: 1400px) {
@@ -881,26 +907,71 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
 
 @media all and (max-width: 1000px) {
   main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .add-list-btn {
-    left: 50%;
+    left: initial;
     right: initial;
-    bottom: 15px;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    bottom: 0px;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    position: relative;
+    margin-top: 20px;
+  }
+}
+
+main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .add-list-btn .add-list-btn-text {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-size: 18px;
+  background-color: darkred;
+  color: white;
+  font-weight: 600;
+  border-radius: 3px;
+  letter-spacing: 1.5px;
+  padding: 6px 20px;
+  -webkit-box-shadow: 5px 5px 10px rgba(128, 37, 37, 0.24);
+          box-shadow: 5px 5px 10px rgba(128, 37, 37, 0.24);
+  border: 2px solid darkred;
+}
+
+main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .add-list-btn .add-list-btn-text:hover {
+  background-color: white;
+  color: darkred;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+@media all and (max-width: 1400px) {
+  main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .add-list-btn .add-list-btn-text {
+    padding: 6px 15px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .add-list-btn .add-list-btn-text {
     padding: 6px 15px;
   }
 }
 
 @media all and (max-width: 800px) {
-  main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .add-list-btn {
+  main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .add-list-btn .add-list-btn-text {
     font-size: 16px;
     padding: 4px 15px;
   }
 }
 
 @media all and (max-width: 500px) {
-  main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .add-list-btn {
+  main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .add-list-btn .add-list-btn-text {
+    margin: 0px auto;
     font-size: 14px;
-    padding: 2px 8px;
+    padding: 2px 5px;
   }
 }
 
@@ -1443,6 +1514,12 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
   letter-spacing: 1px;
 }
 
+@media all and (max-width: 700px) {
+  main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .style-contents .style-type-content .type-content-texts .type-content .style-select-mumber .warn-text {
+    font-size: 14px;
+  }
+}
+
 main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .style-contents .style-type-content .select-information {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1517,6 +1594,10 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media all and (max-width: 740px) {
@@ -1576,7 +1657,12 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: calc(100% - 190px);
+}
+
+@media screen and (max-width: 700px) {
+  main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .style-contents .style-type-content .process-select-content .process-selects {
+    width: 100%;
+  }
 }
 
 main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .style-contents .style-type-content .process-select-content .process-selects .process-select {
@@ -1598,6 +1684,8 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
   width: max-content;
   margin-left: 0px;
   margin-right: 5px;
+  width: 15px;
+  height: 15px;
 }
 
 main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .style-contents .style-type-content .process-select-content .process-selects .process-select .process-selectname {
@@ -1721,6 +1809,9 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
   display: -ms-flexbox;
   display: flex;
   width: 110px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   padding: 5px;
   border: 1px solid gainsboro;
   border-radius: 5px;
@@ -1733,6 +1824,7 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
 @media all and (max-width: 800px) {
   main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .all-download-files .download-files .links .link {
     margin-top: 10px;
+    max-height: 46px;
   }
 }
 

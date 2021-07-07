@@ -93,6 +93,9 @@
 
                     
                     </ol>
+                    <div class="close-btn paper-close-btn">
+                        <span class="close-text">關閉</span>
+                    </div>
                 </div>
 
             </div>
@@ -121,6 +124,9 @@
 
                     
                     </ol>
+                    <div class="close-btn paper-close-btn">
+                        <span class="close-text">關閉</span>
+                    </div>
                 </div>
 
             </div>
@@ -180,6 +186,9 @@
 
                     
                     </ol>
+                    <div class="close-btn print-close-btn">
+                        <span class="close-text">關閉</span>
+                    </div>
                 </div>
 
             </div>
@@ -235,6 +244,9 @@
 
                     
                     </ol>
+                    <div class="close-btn print-close-btn">
+                        <span class="close-text">關閉</span>
+                    </div>
                 </div>
 
             </div>
@@ -287,6 +299,9 @@
                             </div>
                         </ol>
                     </ul>
+                    <div class="close-btn process-close-btn">
+                        <span class="close-text">關閉</span>
+                    </div>
 
                 </div>
 
@@ -338,6 +353,9 @@
                     </ul>
                 </div>
 
+            </div>
+            <div class="close-btn process-close-btn">
+                <span class="close-text">關閉</span>
             </div>
         </div>
     </section>
@@ -480,7 +498,7 @@
 
                         <!-- 樣式1 -->
                         <div class="style-type">
-                            <div class="add-list-btn">加入查價清單</div>
+                          
 
                             <div class="style-contents">
                                 <div class="style-type-pic">
@@ -667,6 +685,12 @@
                                         
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="add-list-btn">
+                                <span class="add-list-btn-text"> 
+                                    加入查價清單
+                                </span>
                             </div>
                             
                            
@@ -1180,18 +1204,22 @@ function clearphonesmalltypes() {
     const papernotecontents = document.querySelectorAll(".paper-note-content")
     const papernoteclosebtns = document.querySelectorAll(".paper-note-close-btn")
     const papernotebtns = document.querySelectorAll(".paper-note-btn")
+    const paperclosebtns = document.querySelectorAll(".paper-close-btn")
+
     papernotebtns.forEach(function(ele, i) {
            ele.addEventListener('click', function() {
-            //    clearallbtn()
-            //    clearallcontent()
             papernotecontents[i].classList.add("show");
               
            });
        });
        papernoteclosebtns.forEach(function(ele, i) {
            ele.addEventListener('click', function() {
-            //    clearallbtn()
-            //    clearallcontent()
+            papernotecontents[i].classList.remove("show");
+              
+           });
+       });
+       paperclosebtns.forEach(function(ele, i) {
+           ele.addEventListener('click', function() {
             papernotecontents[i].classList.remove("show");
               
            });
@@ -1203,18 +1231,23 @@ function clearphonesmalltypes() {
     const printnotecontents = document.querySelectorAll(".print-note-content")
     const printnoteclosebtns = document.querySelectorAll(".print-note-close-btn")
     const printnotebtns = document.querySelectorAll(".print-note-btn")
+    const printclosebtns = document.querySelectorAll(".print-close-btn")
+
     printnotebtns.forEach(function(ele, i) {
            ele.addEventListener('click', function() {
-            //    clearallbtn()
-            //    clearallcontent()
             printnotecontents[i].classList.add("show");
               
            });
        });
        printnoteclosebtns.forEach(function(ele, i) {
            ele.addEventListener('click', function() {
-            //    clearallbtn()
-            //    clearallcontent()
+            printnotecontents[i].classList.remove("show");
+              
+           });
+       });
+
+       printclosebtns.forEach(function(ele, i) {
+           ele.addEventListener('click', function() {
             printnotecontents[i].classList.remove("show");
               
            });
@@ -1226,18 +1259,23 @@ function clearphonesmalltypes() {
     const processnotecontents = document.querySelectorAll(".process-note-content")
     const processnoteclosebtns = document.querySelectorAll(".process-note-close-btn")
     const processnotebtns = document.querySelectorAll(".process-note-btn")
+    const processclosebtns = document.querySelectorAll(".process-close-btn")
+
     processnotebtns.forEach(function(ele, i) {
            ele.addEventListener('click', function() {
-            //    clearallbtn()
-            //    clearallcontent()
             processnotecontents[i].classList.add("show");
               
            });
        });
        processnoteclosebtns.forEach(function(ele, i) {
            ele.addEventListener('click', function() {
-            //    clearallbtn()
-            //    clearallcontent()
+            processnotecontents[i].classList.remove("show");
+              
+           });
+       });
+
+       processclosebtns.forEach(function(ele, i) {
+           ele.addEventListener('click', function() {
             processnotecontents[i].classList.remove("show");
               
            });
