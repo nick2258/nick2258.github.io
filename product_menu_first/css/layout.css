@@ -3,6 +3,7 @@ body {
   margin: 0px;
   padding: 0px;
   background-image: url(/img/背景.png);
+  height: 2000px;
 }
 
 * {
@@ -105,15 +106,8 @@ nav {
   top: 0px;
   z-index: 80;
   background-color: transparent;
-  padding: 20px 0px;
+  padding-top: 10px;
   overflow: hidden;
-}
-
-@media all and (max-width: 800px) {
-  nav {
-    width: 100%;
-    padding-top: 60px;
-  }
 }
 
 nav .nav {
@@ -124,19 +118,22 @@ nav .nav {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media all and (max-width: 1700px) {
   nav .nav {
     width: 100%;
-    padding: 0px 50px;
+    padding: 0px 30px;
   }
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 861px) {
   nav .nav {
     width: 100%;
-    padding: 0px 20px;
+    padding: 0px 8px;
   }
 }
 
@@ -144,12 +141,8 @@ nav .nav .title {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 64px;
+  margin: auto;
+  font-size: 48px;
   font-weight: 600;
   letter-spacing: 5px;
   font-family: -apple-system;
@@ -158,30 +151,42 @@ nav .nav .title {
 
 @media all and (max-width: 1700px) {
   nav .nav .title {
-    font-size: 52px;
-    font-size: 48px;
+    font-size: 42px;
   }
 }
 
 @media all and (max-width: 1200px) {
   nav .nav .title {
-    font-size: 48px;
     font-size: 36px;
+    letter-spacing: 4px;
   }
 }
 
 @media all and (max-width: 800px) {
   nav .nav .title {
-    top: 25%;
-    font-size: 48px;
     font-size: 32px;
+    letter-spacing: 3px;
   }
 }
 
 @media all and (max-width: 600px) {
   nav .nav .title {
-    top: 25%;
     font-size: 28px;
+    letter-spacing: 2px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  nav .nav .title {
+    font-size: 24px;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  nav .nav .title {
+    font-size: 22px;
+    letter-spacing: 1px;
   }
 }
 
@@ -212,25 +217,26 @@ nav .nav a .btn {
   }
 }
 
-@media all and (max-width: 100px) {
+@media all and (max-width: 1000px) {
   nav .nav a .btn {
     -webkit-box-shadow: 3px 3px 8px  #595b5e60;
-    padding: 6px 20px;
+    padding: 6px 25px;
     font-size: 16px;
   }
 }
 
 @media all and (max-width: 800px) {
   nav .nav a .btn {
-    font-size: 16px;
-    padding: 5px 15px;
+    font-size: 14px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
   }
 }
 
 @media all and (max-width: 400px) {
   nav .nav a .btn {
-    font-size: 14px;
-    padding: 5px 12px;
+    font-size: 12px;
+    padding: 5px 8px;
   }
 }
 
