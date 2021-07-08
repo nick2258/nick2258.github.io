@@ -107,7 +107,6 @@ nav {
   z-index: 80;
   background-color: transparent;
   padding-top: 10px;
-  padding-bottom: 10px;
   overflow: hidden;
 }
 
@@ -216,26 +215,20 @@ nav .nav a .btn {
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 1.5px;
-  max-width: 150px;
-  width: 150px;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
 }
 
 @media all and (max-width: 1700px) {
   nav .nav a .btn {
     -webkit-box-shadow: 3px 3px 8px  #595b5e60;
+    padding: 6px 20px;
     font-size: 18px;
   }
 }
 
 @media all and (max-width: 1000px) {
   nav .nav a .btn {
+    -webkit-box-shadow: 3px 3px 8px  #595b5e60;
+    padding: 6px 25px;
     font-size: 16px;
   }
 }
@@ -248,29 +241,35 @@ nav .nav a .btn {
   }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 400px) {
   nav .nav a .btn {
     font-size: 12px;
     padding: 5px 8px;
-    max-width: 70px;
-    width: 70px;
   }
 }
 
-nav .nav a .btn span {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-}
-
 nav .nav a .btn:hover {
-  background-color: #235470;
+  background-color: orange;
   color: white;
   -webkit-transition: .6s;
   transition: .6s;
+}
+
+nav .nav a .btn:hover .fa-angle-double-left {
+  -webkit-transform: translateX(-8px);
+          transform: translateX(-8px);
+  -webkit-transition: .4s;
+  transition: .4s;
+  display: block;
+}
+
+nav .nav a .btn:hover .fa-angle-double-up {
+  -webkit-transform: translatey(-2px);
+          transform: translatey(-2px);
+  font-size: 20px;
+  display: block;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 nav .nav a .btn .fa-angle-double-left {
@@ -282,7 +281,6 @@ nav .nav a .btn .fa-angle-double-left {
 nav .nav a .btn .fa-angle-double-up {
   font-size: 18px;
   margin-left: 5px;
-  display: none;
 }
 
 nav .nav .back_btn {
@@ -297,71 +295,20 @@ nav .nav .home_btn {
   max-width: 100%;
   position: -webkit-sticky;
   position: sticky;
-  top: 74px;
+  top: 83px;
   z-index: 80;
-  padding-bottom: 15px;
-}
-
-@media all and (max-width: 1700px) {
-  .breadcrumb {
-    top: 76px;
-  }
-}
-
-@media all and (max-width: 1200px) {
-  .breadcrumb {
-    top: 68px;
-  }
-}
-
-@media all and (max-width: 800px) {
-  .breadcrumb {
-    top: 62px;
-  }
-}
-
-@media all and (max-width: 600px) {
-  .breadcrumb {
-    top: 57px;
-  }
-}
-
-@media all and (max-width: 500px) {
-  .breadcrumb {
-    top: 47px;
-  }
-}
-
-@media all and (max-width: 400px) {
-  .breadcrumb {
-    top: 42px;
-  }
+  padding-bottom: 10px;
 }
 
 .breadcrumb .container {
   padding: 0px 8px;
-  padding-top: 48px;
+  padding-top: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   border-bottom: 1px solid gainsboro;
-}
-
-@media all and (max-width: 700px) {
-  .breadcrumb .container {
-    padding-bottom: 8px;
-  }
-}
-
-@media all and (max-width: 500px) {
-  .breadcrumb .container {
-    padding-bottom: 5px;
-  }
 }
 
 .breadcrumb .container .search {
@@ -376,27 +323,9 @@ nav .nav .home_btn {
   width: 500px;
   position: absolute;
   left: 50%;
-  top: 0px;
+  top: 8px;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
-}
-
-@media all and (max-width: 700px) {
-  .breadcrumb .container .search {
-    top: 10px;
-    left: 0px;
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
-    width: calc(50% - 30px);
-    font-size: 14px;
-  }
-}
-
-@media all and (max-width: 500px) {
-  .breadcrumb .container .search {
-    width: calc(50% - 5px);
-    font-size: 12px;
-  }
 }
 
 .breadcrumb .container .search input {
@@ -411,7 +340,7 @@ nav .nav .home_btn {
 
 @media all and (max-width: 700px) {
   .breadcrumb .container .search input {
-    height: 31px;
+    height: 40px;
   }
 }
 
@@ -423,19 +352,6 @@ nav .nav .home_btn {
           transform: translateY(-50%);
   font-size: 20px;
   color: gray;
-}
-
-@media all and (max-width: 700px) {
-  .breadcrumb .container .search .fa-search {
-    font-size: 18px;
-  }
-}
-
-@media all and (max-width: 500px) {
-  .breadcrumb .container .search .fa-search {
-    font-size: 14px;
-    display: none;
-  }
 }
 
 .breadcrumb .container .check-price {
@@ -457,28 +373,6 @@ nav .nav .home_btn {
   color: darkred;
   -webkit-transition: .6s;
   transition: .6s;
-}
-
-@media all and (max-width: 700px) {
-  .breadcrumb .container .check-price {
-    position: absolute;
-    top: 10px;
-    right: 0px;
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
-    width: calc(50% - 30px);
-    font-size: 14px;
-    text-align: center;
-    border-radius: 8px;
-  }
-}
-
-@media all and (max-width: 500px) {
-  .breadcrumb .container .check-price {
-    width: calc(50% - 5px);
-    border-radius: 5px;
-    font-size: 12px;
-  }
 }
 
 .breadcrumb .container ul {
@@ -505,21 +399,9 @@ nav .nav .home_btn {
   font-weight: 600;
 }
 
-@media all and (max-width: 700px) {
-  .breadcrumb .container ul li {
-    font-size: 14px;
-  }
-}
-
 @media all and (max-width: 500px) {
   .breadcrumb .container ul li {
-    font-size: 12px;
-  }
-}
-
-@media all and (max-width: 400px) {
-  .breadcrumb .container ul li {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
@@ -527,25 +409,6 @@ nav .nav .home_btn {
   display: initial;
   color: gray;
   text-decoration: none;
-  font-size: 16px;
-}
-
-@media all and (max-width: 700px) {
-  .breadcrumb .container ul li a {
-    font-size: 14px;
-  }
-}
-
-@media all and (max-width: 500px) {
-  .breadcrumb .container ul li a {
-    font-size: 12px;
-  }
-}
-
-@media all and (max-width: 400px) {
-  .breadcrumb .container ul li a {
-    font-size: 10px;
-  }
 }
 
 .breadcrumb .container ul li:nth-last-child(1) {
@@ -568,4 +431,4 @@ nav .nav .home_btn {
   content: "/\00a0";
   font-size: 20px;
 }
-/*# sourceMappingURL=layout.css.map */
+/*# sourceMappingURL=newlayout.css.map */
