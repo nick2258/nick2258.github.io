@@ -3,7 +3,9 @@ body{
     padding: 0px;
     // height: 3000px;
     background-image: url(/img/背景.png);
-    height: 2000px;
+    // height: 2000px;
+    height: max-content;
+    min-height: 100vh;
 }
 
 *{
@@ -104,6 +106,7 @@ nav{
         width: 1600px;
         height: max-content;
         align-items: center;
+        position: relative;
         @media all and (max-width: 1700px) {
             width: 100%;
             padding: 0px 30px;
@@ -160,6 +163,17 @@ nav{
                 font-size: 18px;
                 letter-spacing: 1px;
             }
+        }
+        .nav-btn{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .back-btn{
+            left: 8px;
+        }
+        .home-btn{
+            right: 8px;
         }
         a{
             width: max-content;
@@ -260,7 +274,7 @@ nav{
 .breadcrumb  {
    max-width: 100%;
    position: sticky;
-   top: 74px;
+   top: 84px;
    z-index: 80;
    
    padding-bottom: 15px;
@@ -282,7 +296,7 @@ nav{
         top: 47px;
     }
     @media all and (max-width: 400px) {
-        top: 42px;
+        top: 45px;
     }
 
    

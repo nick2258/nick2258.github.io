@@ -3,7 +3,10 @@ body {
   margin: 0px;
   padding: 0px;
   background-image: url(/img/背景.png);
-  height: 2000px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 100vh;
 }
 
 * {
@@ -122,6 +125,7 @@ nav .nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 @media all and (max-width: 1700px) {
@@ -196,6 +200,21 @@ nav .nav .title {
     font-size: 18px;
     letter-spacing: 1px;
   }
+}
+
+nav .nav .nav-btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+nav .nav .back-btn {
+  left: 8px;
+}
+
+nav .nav .home-btn {
+  right: 8px;
 }
 
 nav .nav a {
@@ -297,7 +316,7 @@ nav .nav .home_btn {
   max-width: 100%;
   position: -webkit-sticky;
   position: sticky;
-  top: 74px;
+  top: 84px;
   z-index: 80;
   padding-bottom: 15px;
 }
@@ -334,7 +353,7 @@ nav .nav .home_btn {
 
 @media all and (max-width: 400px) {
   .breadcrumb {
-    top: 42px;
+    top: 45px;
   }
 }
 

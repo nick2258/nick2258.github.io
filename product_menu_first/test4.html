@@ -7,9 +7,9 @@
     <title>造型名片合版</title>
     <!-- <link rel="stylesheet" href="./css/all.css"> -->
     <!-- <link rel="stylesheet" href="./css/all.css"> -->
-    <link rel="stylesheet" href="./css/layout.css?t=20210708031600">
+    <link rel="stylesheet" href="./css/layout.css?t=20210708031600?t=202107091652">
 
-    <link rel="stylesheet" href="./css/test4.css?t=20210705013200">
+    <link rel="stylesheet" href="./css/test4.css?t=20210705013200?t=202107091652">
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
@@ -28,7 +28,7 @@
     <nav style="background-image: url(./img/背景.png);">    
         <section class="nav" >
             <!-- 回上一頁按鈕 -->
-            <a href="./test1.html" class="back_btn" style="text-decoration: none;">
+            <a href="./test1.html" class="back-btn nav-btn"style="text-decoration: none;">
                 <div class="btn"><i class="fad fa-angle-double-left"></i>回上頁</div>
             </a>
 
@@ -38,8 +38,11 @@
           
 
              <!-- 回頂端按鈕 -->
-             <a href="#home" class="home_btn" style="text-decoration: none;">
-                <div class="btn">回頂端<i class="fad fa-angle-double-up"></i></div>
+             <a href="./first_types.html" class="home-btn nav-btn" style="text-decoration: none;">
+                <div class="btn">
+                    回首頁
+                    <i class="fad fa-angle-double-up"></i>
+                </div>
 
             </a>
         </section>
@@ -60,9 +63,9 @@
                 <li>彩色名片    -   造型名片合版</li>
             </ul>
 
-            <div class="check-price">
-                查看所有報價清單
-            </div>
+            <a href="./check_list.html" class="check-price">
+                查價清單
+            </a>
         </div>
         
     
@@ -72,8 +75,10 @@
     <section class="all-note-content">
         <!-- 1 -->
         <div class="note-contents paper-note-content ">
+            <i class="fas fa-window-close paper-note-close-btn note-close-btn"></i>
+
             <div class="note-content">
-                <i class="fas fa-window-close paper-note-close-btn note-close-btn"></i>
+
                 <div class="content">
                     <div class="title">彩色造型名片『台灣造型樣式』完稿須知</div>
                     <ol>
@@ -103,8 +108,9 @@
         </div>
         <!-- 2 -->
         <div class="note-contents paper-note-content ">
+            <i class="fas fa-window-close paper-note-close-btn note-close-btn"></i>
+
             <div class="note-content">
-                <i class="fas fa-window-close paper-note-close-btn note-close-btn"></i>
                 <div class="content">
                     <div class="title">彩色造型名片『小熊造型』完稿須知</div>
                     <ol>
@@ -138,8 +144,8 @@
     <section class="all-note-content">
         <!-- 1 -->
         <div class="note-contents print-note-content ">
+            <i class="fas fa-window-close print-note-close-btn note-close-btn"></i>
             <div class="note-content">
-                <i class="fas fa-window-close print-note-close-btn note-close-btn"></i>
                 <div class="content">
                     <div class="title">彩色造型名片『台灣造型』委印須知</div>
                     <ol>
@@ -196,8 +202,9 @@
         </div>
         <!-- 2 -->
         <div class="note-contents print-note-content ">
+            <i class="fas fa-window-close print-note-close-btn note-close-btn"></i>
+
             <div class="note-content">
-                <i class="fas fa-window-close print-note-close-btn note-close-btn"></i>
                 <div class="content">
                     <div class="title">彩色造型名片『小熊造型』委印須知</div>
                     <ol>
@@ -258,8 +265,9 @@
     <section class="all-note-content">
     <!-- 1 -->
     <div class="note-contents process-note-content ">
+        <i class="fas fa-window-close process-note-close-btn note-close-btn"></i>
+
         <div class="note-content">
-            <i class="fas fa-window-close process-note-close-btn note-close-btn"></i>
             <div class="content">
                 <div class="title">彩色造型名片『台灣造型』加工須知</div>
                 <div class="process-title">
@@ -328,8 +336,9 @@
     </div>
     <!-- 2 -->
     <div class="note-contents process-note-content ">
+        <i class="fas fa-window-close process-note-close-btn note-close-btn"></i>
+
         <div class="note-content">
-            <i class="fas fa-window-close process-note-close-btn note-close-btn"></i>
             <div class="content">
                 <div class="title">彩色造型名片『小熊造型』加工須知</div>
                 <ul>
@@ -383,7 +392,7 @@
         <div class="success-add-contents ">
             <div class="success-add-content">
                 <i class="fas fa-window-close success-close-btn"></i>
-                <div class="success-add-title">您已成功加入查價清單</div>
+                <div class="success-add-title">確認選擇查價資訊</div>
                 <div class="success-add-texts">
                     <ul>
                         <li>產品資訊：</li>
@@ -406,7 +415,7 @@
                 </div>
 
                 <div class="success-btns">
-                    <div class="check-success-btn success-btn">確定選擇資訊</div>
+                    <div class="check-success-btn success-btn">確認</div>
                     
                 </div>
     
@@ -501,25 +510,29 @@
                                 <div class="swiper-container mySwiper  " >
                                     <div class="swiper-wrapper " >
                         
-                                        <!-- 輪播圖 -->
-                                        <div class="swiper-slide"> 
-                                            <img src="./img/造型名片1.jpg" alt="">
-                                        </div>
+                                      
                             
                                           <!-- 輪播圖 -->
+                                        <!-- <div class="swiper-slide"> 
+                                            <img src="./img/彩色名片ICON/ICON彩色名片D造型合版.png" alt="">
+                                        </div> -->
                                         <div class="swiper-slide"> 
-                                            <img src="./img/造型名片2.jpg" alt="">
+                                            <img src="./img/彩色名片ICON/ICON彩色名片D造型合版.png" alt="">
                                         </div>
-    
-                                        <!-- 輪播圖 -->
                                         <div class="swiper-slide"> 
-                                            <img src="./img/造型名片1.jpg" alt="">
+                                            <img src="./img/彩色名片ICON/ICON彩色名片D造型合版1.png" alt="">
                                         </div>
-                            
+                                        <div class="swiper-slide"> 
+                                            <img src="./img/彩色名片ICON/ICON彩色名片D造型合版2.png" alt="">
+                                        </div>
+                                       
+
                                           <!-- 輪播圖 -->
-                                        <div class="swiper-slide"> 
-                                            <img src="./img/造型名片2.jpg" alt="">
-                                        </div>
+                                          <!-- <div class="swiper-slide"> 
+                                            <img src="./img/彩色名片ICON/ICON彩色名片04.png" alt="">
+                                        </div> -->
+
+
                             
                                       
                             

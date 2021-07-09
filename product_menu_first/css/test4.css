@@ -61,6 +61,9 @@
   font-size: 42px;
   color: darkred;
   position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
   position: sticky;
   top: 0px;
   left: 100%;
@@ -235,6 +238,16 @@
   transition: .6s;
 }
 
+.all-note-content {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .all-note-content .paper-note-content {
   display: none;
 }
@@ -267,7 +280,51 @@
   background-color: rgba(0, 0, 0, 0.651);
   position: fixed;
   top: 0px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 0px auto;
   z-index: 90;
+}
+
+.all-note-content .note-contents .note-close-btn {
+  font-size: 42px;
+  color: darkred;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  position: absolute;
+  z-index: 99;
+  top: 10vh;
+  left: calc(80%);
+  -webkit-transform: translate(-100%, -3px);
+          transform: translate(-100%, -3px);
+}
+
+@media all and (max-width: 1400px) {
+  .all-note-content .note-contents .note-close-btn {
+    top: 15vh;
+    left: 90%;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .all-note-content .note-contents .note-close-btn {
+    font-size: 32px;
+  }
+}
+
+@media all and (max-width: 861px) {
+  .all-note-content .note-contents .note-close-btn {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .all-note-content .note-contents .note-close-btn {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
 }
 
 .all-note-content .note-contents .note-content {
@@ -275,14 +332,14 @@
   width: 60%;
   height: 80vh;
   max-height: 80vh;
-  overflow-y: hidden;
+  max-height: calc(80vh- 30px);
+  overflow-y: auto;
   left: 50%;
   bottom: 50%;
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
   background-color: white;
   border-radius: 5px;
-  overflow-y: auto;
 }
 
 @media all and (max-width: 1400px) {
@@ -299,7 +356,12 @@
   font-size: 42px;
   color: darkred;
   position: -webkit-sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
   position: sticky;
+  z-index: 99;
   top: 0px;
   left: 100%;
   -webkit-transform: translateY(-3px);
@@ -327,9 +389,9 @@
 }
 
 .all-note-content .note-contents .note-content .content {
-  width: 80%;
-  height: 80px;
-  margin: auto;
+  width: 100%;
+  padding: 0px 5vw;
+  padding-top: 30px;
 }
 
 .all-note-content .note-contents .note-content .content .close-btn {
@@ -727,7 +789,9 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 30px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 main .content {

@@ -6,7 +6,8 @@ main{
     flex-direction: column;
     margin:0px auto;
     justify-content: center;
-    padding-bottom: 30px;
+    height: max-content;
+    // padding-bottom: 30px;
     
     // 種類卡片容器
     .types{
@@ -81,6 +82,7 @@ main{
             @media all and (max-width: 580px) {
                 margin-right: 20px;
                 margin-bottom: 20px; 
+                padding: 10px 0px;
                 &:nth-child(3n){
                     margin-right: 20px;
                 }
@@ -91,9 +93,10 @@ main{
                     margin-right: 0px;
                 }
             }
-            @media all and (max-width: 380px) {
+            @media all and (max-width: 340px) {
                 width: 100%;
                 margin-right: 0px;  
+                
                 &:nth-child(3n){
                     margin-right: 0px;
                 }
@@ -116,7 +119,7 @@ main{
                         width: 35vw;
                         height: 31.5vw;
                     }
-                    @media all and (max-width: 380px) {
+                    @media all and (max-width: 340px) {
                         width: 65vw;
                         height: 58.5vw;  
                     }
