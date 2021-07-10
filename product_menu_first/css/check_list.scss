@@ -7,9 +7,11 @@ main{
     margin:0px auto;
     justify-content: center;
     height: max-content;
+    // 整體選擇資訊 
     .all-select-information{
         margin-top: 20px;
      
+        
         .all-select-title{
           
             // line-height: 28px;
@@ -222,19 +224,30 @@ main{
                     .select-btn{
                         width: 20px;
                         height: 20px;
-                        padding: 3px;
+                        // padding: 3px;
                         border: 2px solid gray;
                         margin: 0px auto;
-                        border-radius: 50%;
+                        // border-radius: 50%;
                         position: relative;
+                        
+                        &.show{
+                            background-color: gray;
+                        }
                         .select-color{
                             width: 100%;
                             height: 100%;
+                            top: 60%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            // font-size: 14px;
                            
-                            border-radius: 50%;
-                            background-color: transparent;
+                            // border-radius: 50%;
+                            color: transparent;
+                            position: absolute;
+                            // background-color: blue;
                             &.show{
-                                background-color: gray;
+                                // background-color: gray;
+                                color: white;
                             }
                         }
                     }
