@@ -389,9 +389,9 @@
 }
 
 .all-note-content .note-contents .note-content .content {
-  width: 100%;
-  padding: 0px 5vw;
+  width: 80%;
   padding-top: 30px;
+  margin: 0px auto;
 }
 
 .all-note-content .note-contents .note-content .content .close-btn {
@@ -1471,8 +1471,8 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
 
 @media all and (max-width: 350px) {
   main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .type-contents .type-pic {
-    width: 250px;
-    height: 184px;
+    width: 216px;
+    height: 159px;
   }
 }
 
@@ -1528,8 +1528,8 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
 
 @media all and (max-width: 350px) {
   main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .type-contents .type-pic .swiper-container .swiper-wrapper .swiper-slide img {
-    width: 250px;
-    height: 184px;
+    width: 216px;
+    height: 159px;
   }
 }
 
@@ -1579,6 +1579,12 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
 @media all and (max-width: 400px) {
   main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .type-contents .type-texts {
     width: 280px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .type-contents .type-texts {
+    width: 216px;
   }
 }
 

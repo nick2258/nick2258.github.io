@@ -301,6 +301,13 @@ main .all-select-information .all-select-content .select-contents .select-conten
   position: relative;
 }
 
+@media screen and (max-width: 500px) {
+  main .all-select-information .all-select-content .select-contents .select-content .select-btn {
+    width: 15px;
+    height: 15px;
+  }
+}
+
 main .all-select-information .all-select-content .select-contents .select-content .select-btn.show {
   background-color: gray;
 }
@@ -308,12 +315,17 @@ main .all-select-information .all-select-content .select-contents .select-conten
 main .all-select-information .all-select-content .select-contents .select-content .select-btn .select-color {
   width: 100%;
   height: 100%;
-  top: 60%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 0px;
+  left: 0px;
   color: transparent;
   position: absolute;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 500px) {
+  main .all-select-information .all-select-content .select-contents .select-content .select-btn .select-color {
+    font-size: 14px;
+  }
 }
 
 main .all-select-information .all-select-content .select-contents .select-content .select-btn .select-color.show {
