@@ -1,0 +1,141 @@
+
+    html, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  margin-top: 50px !important;
+  width: 1000px;
+  height: 320px;
+  height: max-content;
+  display: flex;
+//   background-color: gray;
+//   padding: 0px 32px;
+  .button::after{
+    font-size: 14px;
+    font-weight: 600;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+
+    
+   
+    }
+    .swiper-button-prev{
+        transform: translateX(-10px);
+        z-index: 99;
+        position: absolute;
+    }
+    button{
+    }
+
+}
+
+.swiper-slide {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+//   background: white;
+  box-shadow: 15px 15px 10px rgba(34, 35, 58, 0.2);
+//   border-radius:  25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  a{
+      display: block;
+      height: 50%;
+      color: saddlebrown;
+      text-decoration: none;
+      .pic{
+            width: 100%;
+            img {
+                width: 100%;
+                height: 120px;
+                display: block;
+                // height: 50%;
+            
+            }
+        }
+    }
+    .text{
+        text-align: center;
+        background-color: salmon;
+    }
+  
+}
+
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 5px !important;
+  background: #fd3838 !important;
+  transition: all 0.3s !important;
+}
+
+.swiper-button-next{
+    // transform: translateX(100%);
+    z-index: 99;
+    // background-color: salmon;
+}
+
+
+
+
+
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(60deg, #f0d784 50%,#f5ebc9 50%, #FFFFFF 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+  display: none;
+}
+
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+
+
+
+

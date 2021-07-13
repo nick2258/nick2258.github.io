@@ -1,45 +1,54 @@
 main{
     max-width: 1920px;
     width: 100%;
+    height: max-content;
+
     position: relative;
+
     display: flex;
     flex-direction: column;
-    margin:0px auto;
     justify-content: center;
-    height: max-content;
-    // padding-bottom: 30px;
-    
-    // 種類卡片容器
+
+    margin:0px auto;
+
+    // 所有類別按鈕
     .types{
         max-width: 1600px;
-        width: 1600px;
         width: 100%;
+
         display: flex;
         flex-wrap: wrap;
+
         padding-top: 30px;
         margin:0px auto;
         @media all and (max-width: 380px) {
             padding: 0px 24px;
             padding-top: 20px;
         }
+
         // 卡片連結初始化
         a{
-            color: #1D2731;
+            display: block;
+
             font-size: 20px;
             font-weight: 600;
             letter-spacing: 1.5px;
-            display: block;
+
+            color: #1D2731;
         }
         // 每一個類別卡片， 連結包在這
         .type {
             width: calc(20% - 24px);
-            box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.178);
+
             padding: 16px 0px;
-            border-radius: 20px;
             margin-right: 30px;
             margin-bottom: 30px;
-            background-color: #fffefe;
+
+            border-radius: 20px;
             border: 2px solid transparent;
+
+            background-color: #fffefe;
+            box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.178);        
             &:hover{
                 border: 2px solid rgba(255, 166, 0, 0.616);
                 transition: .6s;
@@ -50,7 +59,9 @@ main{
             &:nth-child(5n){
                 margin-right: 0px;
             }
+
             // 類別卡片RWD調整
+            // 4個一排
             @media all and (max-width: 1400px) {
                 width: calc(25% - 22.5px);
                 &:nth-child(5n){
@@ -60,9 +71,9 @@ main{
                     margin-right: 0px;
                 }
             }
+            // 3個一排
             @media all and (max-width: 1000px) {
                 width: calc(33.33% - 20px);
-                
                 &:nth-child(4n){
                     margin-right: 30px;
                 }
@@ -70,6 +81,7 @@ main{
                     margin-right: 0px;
                 }
             }
+            // 2個一排
             @media all and (max-width: 769px) {
                 width: calc(50% - 15px);
                 &:nth-child(3n){
@@ -93,10 +105,10 @@ main{
                     margin-right: 0px;
                 }
             }
+            // 1個一排
             @media all and (max-width: 340px) {
                 width: 100%;
                 margin-right: 0px;  
-                
                 &:nth-child(3n){
                     margin-right: 0px;
                 }
@@ -114,6 +126,7 @@ main{
                 .pic{
                     width: 180px;
                     height: 150px;
+
                     margin:0px auto;
                     @media all and (max-width: 769px) {
                         width: 35vw;
@@ -131,12 +144,12 @@ main{
                 }
                 // 種類名稱
                 .name{
-                    padding-top: 10px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    padding: 8px;
-                    padding-bottom: 0px;
+
+                    padding:0px 8px;
+                    padding-top: 10px;
                     .text{
                         width: 100%;
                         width: max-content;

@@ -2,6 +2,10 @@
 main {
   max-width: 1920px;
   width: 100%;
+  margin: 0px auto;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,17 +14,14 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0px auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
 }
 
 main .all-select-information {
   margin-top: 20px;
+  color: #333333;
 }
 
 main .all-select-information .all-select-title .big-title {
@@ -31,9 +32,9 @@ main .all-select-information .all-select-title .big-title {
       -ms-flex-align: center;
           align-items: center;
   background-color: #457392;
-  color: white;
-  font-weight: 600;
   border-radius: 5px;
+  font-weight: 600;
+  color: white;
   padding: 5px 0px;
 }
 
@@ -79,12 +80,12 @@ main .all-select-information .all-select-title .select-btns {
 
 main .all-select-information .all-select-title .select-btns .select-btn-text {
   padding: 5px 10px;
+  margin-right: 30px;
+  border-radius: 3px;
   background-color: sandybrown;
   border: 2px solid sandybrown;
   letter-spacing: 1.5px;
   font-size: 16px;
-  margin-right: 30px;
-  border-radius: 3px;
   cursor: pointer;
 }
 
@@ -117,21 +118,20 @@ main .all-select-information .all-select-title .select-btns .select-btn-text:hov
 
 main .all-select-information .all-select-title .all-select-content-title {
   background-color: #b2cee0;
-  padding: 0px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  border-radius: 3px 3px 0px 0px;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 5px 20px;
-  border-radius: 3px 3px 0px 0px;
 }
 
 @media screen and (max-width: 500px) {
@@ -194,13 +194,13 @@ main .all-select-information .all-select-title .all-select-content-title li .pro
 
 main .all-select-information .all-select-content {
   position: relative;
+  padding: 5px 20px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   max-height: 70vh;
   overflow-y: auto;
   border: 3px solid #b2cee0;
-  padding: 5px 30px;
   border-radius: 0px 0px 3px 3px;
 }
 
@@ -244,13 +244,13 @@ main .all-select-information .all-select-content ul li .product-information li {
 }
 
 main .all-select-information .all-select-content .select-contents {
-  border: 5px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 5px;
   border-bottom: 1px solid #b2cee0;
 }
 
@@ -315,11 +315,11 @@ main .all-select-information .all-select-content .select-contents .select-conten
 main .all-select-information .all-select-content .select-contents .select-content .select-btn .select-color {
   width: 100%;
   height: 100%;
+  position: absolute;
   top: 0px;
   left: 0px;
-  color: transparent;
-  position: absolute;
   font-size: 16px;
+  color: transparent;
 }
 
 @media screen and (max-width: 500px) {
@@ -397,10 +397,10 @@ main .all-select-information .check-list-btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 30px;
   padding-bottom: 15px;
 }
 
@@ -414,10 +414,10 @@ main .all-select-information .check-list-btns .check-list-btn {
   font-size: 20px;
   letter-spacing: 5px;
   font-weight: 600;
-  padding: 4px 25px;
-  background-color: darkred;
   color: white;
+  padding: 4px 25px;
   margin-right: 45px;
+  background-color: darkred;
   border-radius: 5px;
   border: 2px solid darkred;
 }
@@ -425,16 +425,16 @@ main .all-select-information .check-list-btns .check-list-btn {
 @media screen and (max-width: 1400px) {
   main .all-select-information .check-list-btns .check-list-btn {
     font-size: 18px;
-    padding: 4px 20px;
     letter-spacing: 2px;
+    padding: 4px 20px;
   }
 }
 
 @media screen and (max-width: 500px) {
   main .all-select-information .check-list-btns .check-list-btn {
     font-size: 16px;
-    padding: 4px 15px;
     letter-spacing: 1px;
+    padding: 4px 15px;
   }
 }
 
