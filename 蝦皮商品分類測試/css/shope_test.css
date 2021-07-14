@@ -10,10 +10,18 @@ body {
   padding: 0;
 }
 
-.swiper-container {
-  margin-top: 50px !important;
+.container {
   width: 1000px;
-  height: 320px;
+  position: relative;
+  margin: 0px auto;
+  padding: 0px 60px;
+  background-color: sandybrown;
+}
+
+.container .swiper-container {
+  margin-top: 50px !important;
+  width: 100%;
+  border-bottom: 1px  solid gainsboro;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -22,24 +30,11 @@ body {
   display: flex;
 }
 
-.swiper-container .button::after {
-  font-size: 14px;
-  font-weight: 600;
-  background-color: gray;
-  color: white;
-  padding: 10px;
-  border-radius: 50%;
+.container .swiper-container .swiper-wrapper {
+  width: 100%;
 }
 
-.swiper-container .swiper-button-prev {
-  -webkit-transform: translateX(-10px);
-          transform: translateX(-10px);
-  z-index: 99;
-  position: absolute;
-}
-
-.swiper-slide {
-  width: 20%;
+.container .swiper-container .swiper-wrapper .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,11 +46,9 @@ body {
           align-items: center;
 }
 
-.item {
+.container .swiper-container .swiper-wrapper .swiper-slide .item {
   width: 100%;
-  height: 100%;
-  -webkit-box-shadow: 15px 15px 10px rgba(34, 35, 58, 0.2);
-          box-shadow: 15px 15px 10px rgba(34, 35, 58, 0.2);
+  height: 200px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,26 +65,53 @@ body {
           justify-content: center;
 }
 
-.item a {
+.container .swiper-container .swiper-wrapper .swiper-slide .item a {
+  width: 100%;
   display: block;
   height: 50%;
   color: saddlebrown;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f5ebc9;
 }
 
-.item a .pic {
-  width: 100%;
+.container .swiper-container .swiper-wrapper .swiper-slide .item a .pic {
+  width: 80px;
+  height: 80px;
+  margin: 0px auto;
 }
 
-.item a .pic img {
+.container .swiper-container .swiper-wrapper .swiper-slide .item a .pic img {
   width: 100%;
-  height: 120px;
+  height: 100%;
   display: block;
 }
 
-.item .text {
+.container .swiper-container .swiper-wrapper .swiper-slide .item .text {
   text-align: center;
   background-color: salmon;
+}
+
+.container .swiper-container .button::after {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.container .swiper-container .swiper-button-prev {
+  left: -10px;
+  z-index: 99;
+  z-index: 99;
+  position: absolute;
 }
 
 .swiper-pagination-bullet {
