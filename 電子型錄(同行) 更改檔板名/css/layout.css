@@ -1,0 +1,558 @@
+@charset "UTF-8";
+body {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  background-image: url(../img/背景.png);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  display: block;
+  color: unset;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+@media all and (max-width: 1250px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(151, 151, 151, 0.829);
+          box-shadow: inset 0 0 5px rgba(151, 151, 151, 0.829);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #D5D5D5;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #A9B7C0;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+ul li {
+  padding: 0px;
+  margin: 0px;
+}
+
+.mycontainer {
+  width: 1600px;
+  padding: 8px;
+  margin: auto;
+}
+
+@media all and (max-width: 1700px) {
+  .mycontainer {
+    width: 100%;
+    padding: 0px 32px;
+  }
+}
+
+@media all and (max-width: 1250px) {
+  .mycontainer {
+    padding: 0px 16px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .mycontainer {
+    padding: 0px 8px;
+  }
+}
+
+nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 80;
+  padding: 10px 0px;
+  background-image: url(../img/背景.png);
+  overflow: hidden;
+}
+
+nav .nav {
+  width: 1600px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+@media all and (max-width: 1700px) {
+  nav .nav {
+    width: 100%;
+    padding: 0px 30px;
+  }
+}
+
+@media all and (max-width: 861px) {
+  nav .nav {
+    width: 100%;
+    padding: 0px 8px;
+  }
+}
+
+nav .nav .title {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0px auto;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  font-family: -apple-system;
+  color: #40556e;
+}
+
+@media all and (max-width: 1700px) {
+  nav .nav .title {
+    font-size: 42px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  nav .nav .title {
+    font-size: 36px;
+    letter-spacing: 4px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  nav .nav .title {
+    font-size: 32px;
+    letter-spacing: 3px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  nav .nav .title {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  nav .nav .title {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  nav .nav .title {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  nav .nav .title {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+}
+
+nav .nav .nav-btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+nav .nav .back-btn {
+  left: 8px;
+}
+
+nav .nav .home-btn {
+  right: 8px;
+}
+
+nav .nav a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: block;
+}
+
+nav .nav a .btn {
+  max-width: 150px;
+  width: 150px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  outline: none;
+  background-color: #a3c8df;
+  color: #1D2731;
+  box-shadow: 5px 5px 10px  #595b5e60;
+  -webkit-box-shadow: 3px 3px 8px  #595b5e60;
+  padding: 8px 25px;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+@media all and (max-width: 1700px) {
+  nav .nav a .btn {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  nav .nav a .btn {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  nav .nav a .btn {
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  nav .nav a .btn {
+    max-width: 70px;
+    width: 70px;
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+}
+
+nav .nav a .btn span {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+nav .nav a .btn:hover {
+  background-color: #235470;
+  color: white;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.breadcrumb {
+  max-width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 84px;
+  z-index: 80;
+  padding-bottom: 15px;
+}
+
+@media all and (max-width: 1700px) {
+  .breadcrumb {
+    top: 76px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .breadcrumb {
+    top: 68px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .breadcrumb {
+    top: 62px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .breadcrumb {
+    top: 57px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .breadcrumb {
+    top: 47px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .breadcrumb {
+    top: 45px;
+  }
+}
+
+.breadcrumb .mycontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 8px;
+  padding-top: 48px;
+  padding-bottom: 10px;
+  position: relative;
+  border-bottom: 1px solid gainsboro;
+}
+
+@media all and (max-width: 700px) {
+  .breadcrumb .mycontainer {
+    padding-bottom: 8px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .breadcrumb .mycontainer {
+    padding-bottom: 5px;
+  }
+}
+
+.breadcrumb .mycontainer .search {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px auto;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+@media all and (max-width: 700px) {
+  .breadcrumb .mycontainer .search {
+    width: calc(50% - 30px);
+    top: 10px;
+    left: 0px;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .breadcrumb .mycontainer .search {
+    width: calc(50% - 5px);
+    font-size: 12px;
+  }
+}
+
+.breadcrumb .mycontainer .search input {
+  width: 100%;
+  height: 36px;
+  outline: none;
+  border: 1px solid gainsboro;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media all and (max-width: 700px) {
+  .breadcrumb .mycontainer .search input {
+    height: 31px;
+  }
+}
+
+.breadcrumb .mycontainer .search .fa-search {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 20px;
+  color: gray;
+}
+
+@media all and (max-width: 700px) {
+  .breadcrumb .mycontainer .search .fa-search {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .breadcrumb .mycontainer .search .fa-search {
+    display: none;
+  }
+}
+
+.breadcrumb .mycontainer .check-price {
+  margin-left: auto;
+  padding: 3px 6px;
+  background-color: darkred;
+  border: 2px solid darkred;
+  border-radius: 3px;
+  -webkit-box-shadow: 3px 3px 10px rgba(85, 4, 4, 0.356);
+          box-shadow: 3px 3px 10px rgba(85, 4, 4, 0.356);
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: white;
+}
+
+.breadcrumb .mycontainer .check-price:hover {
+  background-color: white;
+  color: darkred;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+@media all and (max-width: 700px) {
+  .breadcrumb .mycontainer .check-price {
+    width: calc(50% - 30px);
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    font-size: 14px;
+    text-align: center;
+    border-radius: 8px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .breadcrumb .mycontainer .check-price {
+    width: calc(50% - 5px);
+    border-radius: 5px;
+    font-size: 12px;
+  }
+}
+
+.breadcrumb .mycontainer ul {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 8px;
+  margin-right: auto;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.breadcrumb .mycontainer ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: gray;
+}
+
+@media all and (max-width: 700px) {
+  .breadcrumb .mycontainer ul li {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .breadcrumb .mycontainer ul li {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .breadcrumb .mycontainer ul li {
+    font-size: 10px;
+  }
+}
+
+.breadcrumb .mycontainer ul li a {
+  display: initial;
+  color: gray;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media all and (max-width: 700px) {
+  .breadcrumb .mycontainer ul li a {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .breadcrumb .mycontainer ul li a {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .breadcrumb .mycontainer ul li a {
+    font-size: 10px;
+  }
+}
+
+.breadcrumb .mycontainer ul li:nth-last-child(1) {
+  color: #235470;
+}
+
+.breadcrumb .mycontainer ul li:nth-last-child(1) a {
+  color: #235470;
+}
+
+.breadcrumb .mycontainer ul li:nth-child(1) {
+  color: gray !important;
+}
+
+.breadcrumb .mycontainer ul li + li:before {
+  padding-left: 5px;
+  font-size: 20px;
+  color: black;
+  content: "/\00a0";
+}
+/*# sourceMappingURL=layout.css.map */

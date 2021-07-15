@@ -1,0 +1,230 @@
+main {
+  max-width: 1920px;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px auto;
+}
+
+main .types {
+  max-width: 1600px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 30px;
+  margin: 0px auto;
+}
+
+@media all and (max-width: 380px) {
+  main .types {
+    padding: 0px 24px;
+    padding-top: 20px;
+  }
+}
+
+main .types a {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #1D2731;
+}
+
+main .types .type {
+  width: calc(20% - 24px);
+  padding: 16px 0px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-color: #fffefe;
+  -webkit-box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.178);
+          box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.178);
+}
+
+main .types .type:hover {
+  border: 2px solid rgba(255, 166, 0, 0.616);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+main .types .type:hover img {
+  opacity: .9;
+}
+
+main .types .type:nth-child(5n) {
+  margin-right: 0px;
+}
+
+@media all and (max-width: 1400px) {
+  main .types .type {
+    width: calc(25% - 22.5px);
+  }
+  main .types .type:nth-child(5n) {
+    margin-right: 30px;
+  }
+  main .types .type:nth-child(4n) {
+    margin-right: 0px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  main .types .type {
+    width: calc(33.33% - 20px);
+  }
+  main .types .type:nth-child(4n) {
+    margin-right: 30px;
+  }
+  main .types .type:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+@media all and (max-width: 769px) {
+  main .types .type {
+    width: calc(50% - 15px);
+  }
+  main .types .type:nth-child(3n) {
+    margin-right: 30px;
+  }
+  main .types .type:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+
+@media all and (max-width: 580px) {
+  main .types .type {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0px;
+  }
+  main .types .type:nth-child(3n) {
+    margin-right: 20px;
+  }
+  main .types .type:nth-child(5n) {
+    margin-right: 20px;
+  }
+  main .types .type:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+
+@media all and (max-width: 340px) {
+  main .types .type {
+    width: 100%;
+    margin-right: 0px;
+  }
+  main .types .type:nth-child(3n) {
+    margin-right: 0px;
+  }
+  main .types .type:nth-child(5n) {
+    margin-right: 0px;
+  }
+  main .types .type:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+
+main .types .type .typebtn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .types .type .typebtn .pic {
+  width: 180px;
+  height: 150px;
+  margin: 0px auto;
+}
+
+@media all and (max-width: 769px) {
+  main .types .type .typebtn .pic {
+    width: 35vw;
+    height: 31.5vw;
+  }
+}
+
+@media all and (max-width: 340px) {
+  main .types .type .typebtn .pic {
+    width: 65vw;
+    height: 58.5vw;
+  }
+}
+
+main .types .type .typebtn .pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+main .types .type .typebtn .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 8px;
+  padding-top: 10px;
+}
+
+main .types .type .typebtn .name .text {
+  width: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: auto;
+  font-size: 20px;
+  color: #5e5e5e;
+}
+
+@media all and (max-width: 1500px) {
+  main .types .type .typebtn .name .text {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  main .types .type .typebtn .name .text {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 769px) {
+  main .types .type .typebtn .name .text {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 580px) {
+  main .types .type .typebtn .name .text {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  main .types .type .typebtn .name .text {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}
+/*# sourceMappingURL=category.css.map */
