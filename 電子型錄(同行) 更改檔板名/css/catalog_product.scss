@@ -1483,10 +1483,9 @@ main{
                                                     margin-bottom: 10px;
                                                     &:nth-last-child(1){
                                                         margin-right: 0px;
-                                                    }
-                                                    
+                                                    }    
                                                 }
-                                                // 生產工序
+                                                   // 生產工序
                                                 // 生產工序標題
                                                 .all-processs-title{
                                                     margin: 0px;
@@ -1547,14 +1546,12 @@ main{
                                                 @media all and (max-width: 700px) {
                                                     font-size:14px;
                                                 }
+                                                
                                                 @media all and (max-width: 500px) {
                                                     .text{
                                                         margin-bottom: 8px;
                                                     }
                                                 }
-                                                // .product-name{
-                                                //     margin-bottom: 5px;
-                                                // }
                                                 .product-select{
                                                     margin-bottom: 10px;
                                                 }
