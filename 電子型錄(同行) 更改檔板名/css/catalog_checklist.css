@@ -23,7 +23,7 @@
   margin: 0px auto;
   height: 100vh;
   max-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.651);
+  background-color: rgba(70, 70, 70, 0.4);
   position: fixed;
   top: 0px;
   z-index: 90;
@@ -90,6 +90,8 @@
           transform: translate(-50%, 50%);
   background-color: white;
   border-radius: 5px;
+  -webkit-box-shadow: 15px 15px 20px rgba(107, 107, 107, 0.6);
+          box-shadow: 15px 15px 20px rgba(107, 107, 107, 0.6);
   overflow-y: auto;
   color: #333333;
 }
@@ -202,10 +204,13 @@
 }
 
 .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-btns .process-price-btn {
-  padding: 5px 15px;
+  max-width: 120px;
+  width: 120px;
+  text-align: center;
+  padding: 5px 10px;
   background-color: #b2cee0;
   border: 2px solid #b2cee0;
-  margin-right: 20px;
+  margin-right: 15px;
   font-size: 20px;
   font-weight: 600;
   color: black;
@@ -215,21 +220,27 @@
 
 @media all and (max-width: 1000px) {
   .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-btns .process-price-btn {
+    max-width: 110px;
+    width: 110px;
     font-size: 18px;
   }
 }
 
 @media all and (max-width: 861px) {
   .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-btns .process-price-btn {
+    max-width: 90px;
+    width: 90px;
     font-size: 16px;
-    padding: 5px 8px;
+    padding: 3px 8px;
   }
 }
 
 @media all and (max-width: 500px) {
   .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-btns .process-price-btn {
+    max-width: 70px;
+    width: 70px;
     font-size: 14px;
-    padding: 5px 3px;
+    padding: 2px 3px;
     margin-right: 10px;
   }
 }
@@ -337,13 +348,24 @@
 .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .process-title .process-title-text {
   padding-left: 11px;
   margin-right: 20px;
-  border-left: 5px solid salmon;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media all and (max-width: 700px) {
   .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .process-title .process-title-text {
     margin-top: 10px;
   }
+}
+
+.process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .process-title .process-title-text .fa-dice-d8 {
+  font-size: 28px;
+  margin-right: 8px;
+  color: #235470;
 }
 
 .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .process-title .process-style-select {
@@ -575,17 +597,47 @@ main .all-select-information {
 }
 
 main .all-select-information .all-process-btns {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: auto;
   margin-bottom: 10px;
 }
 
-main .all-select-information .all-process-btns .all-process-btn {
+main .all-select-information .all-process-btns .ckeck-price-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  color: orangered;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1400px) {
+  main .all-select-information .all-process-btns .ckeck-price-list {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .all-select-information .all-process-btns .ckeck-price-list {
+    font-size: 14px;
+  }
+}
+
+main .all-select-information .all-process-btns .ckeck-price-list .btn-text {
+  margin-right: 10px;
+}
+
+main .all-select-information .all-process-btns .ckeck-price-list .all-process-btn {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -603,7 +655,7 @@ main .all-select-information .all-process-btns .all-process-btn {
 }
 
 @media screen and (max-width: 1400px) {
-  main .all-select-information .all-process-btns .all-process-btn {
+  main .all-select-information .all-process-btns .ckeck-price-list .all-process-btn {
     font-size: 14px;
     padding: 4px 8px;
     margin-right: 20px;
@@ -611,18 +663,18 @@ main .all-select-information .all-process-btns .all-process-btn {
 }
 
 @media screen and (max-width: 500px) {
-  main .all-select-information .all-process-btns .all-process-btn {
+  main .all-select-information .all-process-btns .ckeck-price-list .all-process-btn {
     font-size: 12px;
     padding: 2px 5px;
     margin-right: 10px;
   }
 }
 
-main .all-select-information .all-process-btns .all-process-btn:nth-last-child(1) {
+main .all-select-information .all-process-btns .ckeck-price-list .all-process-btn:nth-last-child(1) {
   margin-right: 0px;
 }
 
-main .all-select-information .all-process-btns .all-process-btn:hover {
+main .all-select-information .all-process-btns .ckeck-price-list .all-process-btn:hover {
   background-color: white;
   color: #f16859;
   -webkit-transition: .6s;
