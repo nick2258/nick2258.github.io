@@ -1230,14 +1230,35 @@ main{
                                 // 輪播按鈕
                                 .swiper-pagination-bullets{
                                     z-index: 99;
+                                    bottom: 18px;
+                                    @media all and (max-width: 600px) {
+                                        bottom: 15px;
+                                    }
                                 }
                                 // 輪播按鈕顏色
                                 .swiper-pagination-bullet{
+                                    width: 18px;
+                                    height: 18px;
+
                                     background-color: rgb(36, 49, 71);
+                                    opacity: .5;
+                                    
+                                    margin-right: 10px;
+                                    &:nth-last-child(1){
+                                        margin-right: 0px;
+                                    }
+                                    @media all and (max-width: 600px) {
+                                        width: 15px;
+                                        height: 15px;
+
+                                        margin-right: 8px;
+                                    }
                                 }
                                 // 輪播到該張按鈕顏色
                                 .swiper-pagination-bullet-active{
-                                    background-color: white;
+                                    background-color: sandybrown;
+
+                                    opacity: 1;
                                 }
                             }   
                         }
@@ -1477,6 +1498,8 @@ main{
                                                 display: flex;
                                                 .warn-text{
                                                     color: #e7450a;
+                                                    font-size: 14px;
+                                                    align-self: flex-end;
                                                 }
                                                 .text{
                                                     margin-right: 40px;

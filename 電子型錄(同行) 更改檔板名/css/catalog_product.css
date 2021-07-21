@@ -1459,14 +1459,38 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
 
 main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .type-contents .type-pic .swiper-container .swiper-pagination-bullets {
   z-index: 99;
+  bottom: 18px;
+}
+
+@media all and (max-width: 600px) {
+  main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .type-contents .type-pic .swiper-container .swiper-pagination-bullets {
+    bottom: 15px;
+  }
 }
 
 main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .type-contents .type-pic .swiper-container .swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
   background-color: #243147;
+  opacity: .5;
+  margin-right: 10px;
+}
+
+main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .type-contents .type-pic .swiper-container .swiper-pagination-bullet:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+@media all and (max-width: 600px) {
+  main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .type-contents .type-pic .swiper-container .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+  }
 }
 
 main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .type-contents .type-pic .swiper-container .swiper-pagination-bullet-active {
-  background-color: white;
+  background-color: sandybrown;
+  opacity: 1;
 }
 
 main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .type-contents .type-texts {
@@ -1789,6 +1813,9 @@ main .content .last_types1 .all-type-content .type-tab-contents .type-tab-conten
 
 main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .style-contents .style-type-content .type-content-texts .type-content .style-type-text .warn-text {
   color: #e7450a;
+  font-size: 14px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 main .content .last_types1 .all-type-content .type-tab-contents .type-tab-content .style-types .style-type .style-contents .style-type-content .type-content-texts .type-content .style-type-text .text {
