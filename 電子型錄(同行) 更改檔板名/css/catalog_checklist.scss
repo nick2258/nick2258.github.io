@@ -403,14 +403,20 @@
                         .all-content{
                             width: 100%;
                             height: max-content;
-                            max-height: 54vh;
+                            // max-height: 54vh;
+                            max-height: calc(80vh - 250px);
                             overflow-y: auto;
 
                             padding: 0px 30px;
                             @media all and (max-width: 1000px) {
+                                max-height: calc(80vh - 230px);
                                 padding: 0px 15px;
                             }
+                            @media all and (max-width: 861px) {
+                                max-height: calc(80vh - 210px);
+                            }
                             @media all and (max-width: 500px) {
+                                max-height: calc(80vh - 180px);
                                 padding: 0px 10px;
                             }
                             .title-warn-texts{
