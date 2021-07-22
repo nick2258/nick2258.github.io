@@ -43,7 +43,7 @@
            
             cursor: pointer;
             @media all and (max-width: 1400px) {
-                top: 15vh;
+                top: 10vh;
                 left: 90%;
             }
             @media all and (max-width: 1000px) {
@@ -66,7 +66,7 @@
         .process-price-content{
             width: 60%;
             height: 80vh;
-            max-height:calc(80vh- 30px) ;
+            
 
             position: absolute;
             left: 50%;
@@ -77,14 +77,14 @@
             border-radius: 5px;
             box-shadow: 15px 15px 20px rgba(107, 107, 107, 0.6);
 
-            overflow-y: auto;
+            // overflow-y: auto;
             color: #333333;
 
             // 調整內容大小
             @media all and (max-width: 1400px) {
                 width: 80vw;
-                height:70vh;
-                max-height: 70vh;
+                // height:80vh;
+                
 
                 transform: translate(-50%,50%);
             }
@@ -241,11 +241,11 @@
                         display: none;
                         &.show{
                             display: block;
-                            padding: 30px;
+                            // padding: 30px;
 
                             transition: .6s;
                             @media all and (max-width: 700px) {
-                                padding: 15px;
+                                // padding: 15px;
                             }
                         }
 
@@ -253,6 +253,11 @@
                         .process-title{
                             width: 100%;
                             margin: 0px auto;
+
+                            padding: 15px 0px;
+
+                            background-color: white;
+                            border-radius: 0px 15px 0px 0px;
 
                             display: flex;
                             align-items: center;
@@ -269,6 +274,7 @@
                             @media all and (max-width: 700px) {
                                 flex-direction: column-reverse;
                                 align-items: flex-start;
+                                padding: 15px 20px;
                             }
                             @media all and (max-width: 500px) {
                                 font-size: 16px;
@@ -308,7 +314,7 @@
                                     width: 100%;
                                 }
                                 @media all and (max-width: 500px) {
-                                width: 100%;
+                                    width: 100%;
                                 
                                 }
                                 // 下拉式選單icon
@@ -393,31 +399,78 @@
                                 }
                             }
                         }
+                        // 選單所選下方內容，超過出現滾軸
+                        .all-content{
+                            width: 100%;
+                            height: max-content;
+                            max-height: 54vh;
+                            overflow-y: auto;
 
-                        .all-price-imformation{
-                            .pic{
-                                width: 100%; 
-                                margin-top:10px;
-                                @media all and (max-width: 500px) {
-                                    margin-top: 5px;
-                                }
-                                &:nth-child(1){
-                                    margin-top: 30px;
+                            padding: 0px 30px;
+                            @media all and (max-width: 1000px) {
+                                padding: 0px 15px;
+                            }
+                            @media all and (max-width: 500px) {
+                                padding: 0px 10px;
+                            }
+                            .title-warn-texts{
+                                margin: 0px;
+                                padding-left: 30px;
+                                .title-warn-text{
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                    letter-spacing: 1.5px;
+                                    line-height: 28px;
+                                    padding-bottom: 10px;
+                                    color: orangered;
+                                    @media all and (max-width: 1000px) {
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                    }
                                     @media all and (max-width: 861px) {
-                                        margin-top: 20px;
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                        letter-spacing: 1px;
+                                        padding-bottom: 8px;
                                     }
                                     @media all and (max-width: 500px) {
-                                        margin-top: 10px;
+                                        font-size: 12px;
+                                        line-height: 22px;
+                                        padding-bottom: 5px;
+                                    }
+                                    &:nth-last-child(1){
+                                        padding-bottom: 0px;
                                     }
                                 }
-                              
-                                img{
-                                    width: 100%;
-                                    border-radius: 5px;
-                                    height: auto;
+                            }
+    
+                            .all-price-imformation{
+
+                                .pic{
+                                    width: 100%; 
+                                    margin-top:10px;
+                                    @media all and (max-width: 500px) {
+                                        margin-top: 5px;
+                                    }
+                                    &:nth-child(1){
+                                        margin-top: 30px;
+                                        @media all and (max-width: 861px) {
+                                            margin-top: 20px;
+                                        }
+                                        @media all and (max-width: 500px) {
+                                            margin-top: 10px;
+                                        }
+                                    }
+                                  
+                                    img{
+                                        width: 100%;
+                                        border-radius: 5px;
+                                        height: auto;
+                                    }
                                 }
                             }
                         }
+                        
                     }
                 }
             }
@@ -441,12 +494,14 @@ main{
         margin-top: 20px;
         
         color: #333333;
+        // 價格表按鈕
         .all-process-btns{
             width: 100%;
+
             display: flex;
             flex-wrap: wrap;
+
             margin-right: auto;
-            // width: max-content;
             margin-bottom: 10px;
             .ckeck-price-list{
                 display: flex;
@@ -467,6 +522,9 @@ main{
                 }
                 @media screen and(max-width:500px){
                     font-size: 14px;
+                }
+                @media screen and(max-width:400px){
+                    font-size: 12px;
                 }
                 .btn-text{
                     margin-right: 10px;

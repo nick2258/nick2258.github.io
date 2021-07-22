@@ -48,7 +48,7 @@
 
 @media all and (max-width: 1400px) {
   .process-price-list-information .process-price-contents .process-price-close-btn {
-    top: 15vh;
+    top: 10vh;
     left: 90%;
   }
 }
@@ -82,7 +82,6 @@
 .process-price-list-information .process-price-contents .process-price-content {
   width: 60%;
   height: 80vh;
-  max-height: calc(80vh- 30px);
   position: absolute;
   left: 50%;
   bottom: 50%;
@@ -92,15 +91,12 @@
   border-radius: 5px;
   -webkit-box-shadow: 15px 15px 20px rgba(107, 107, 107, 0.6);
           box-shadow: 15px 15px 20px rgba(107, 107, 107, 0.6);
-  overflow-y: auto;
   color: #333333;
 }
 
 @media all and (max-width: 1400px) {
   .process-price-list-information .process-price-contents .process-price-content {
     width: 80vw;
-    height: 70vh;
-    max-height: 70vh;
     -webkit-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
   }
@@ -285,20 +281,16 @@
 
 .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content.show {
   display: block;
-  padding: 30px;
   -webkit-transition: .6s;
   transition: .6s;
-}
-
-@media all and (max-width: 700px) {
-  .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content.show {
-    padding: 15px;
-  }
 }
 
 .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .process-title {
   width: 100%;
   margin: 0px auto;
+  padding: 15px 0px;
+  background-color: white;
+  border-radius: 0px 15px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,6 +323,7 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    padding: 15px 20px;
   }
 }
 
@@ -472,34 +465,98 @@
   cursor: pointer;
 }
 
-.process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-price-imformation .pic {
+.process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-content {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  max-height: 54vh;
+  overflow-y: auto;
+  padding: 0px 30px;
+}
+
+@media all and (max-width: 1000px) {
+  .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-content {
+    padding: 0px 15px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-content {
+    padding: 0px 10px;
+  }
+}
+
+.process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-content .title-warn-texts {
+  margin: 0px;
+  padding-left: 30px;
+}
+
+.process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-content .title-warn-texts .title-warn-text {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 28px;
+  padding-bottom: 10px;
+  color: orangered;
+}
+
+@media all and (max-width: 1000px) {
+  .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-content .title-warn-texts .title-warn-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media all and (max-width: 861px) {
+  .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-content .title-warn-texts .title-warn-text {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    padding-bottom: 8px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-content .title-warn-texts .title-warn-text {
+    font-size: 12px;
+    line-height: 22px;
+    padding-bottom: 5px;
+  }
+}
+
+.process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-content .title-warn-texts .title-warn-text:nth-last-child(1) {
+  padding-bottom: 0px;
+}
+
+.process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-content .all-price-imformation .pic {
   width: 100%;
   margin-top: 10px;
 }
 
 @media all and (max-width: 500px) {
-  .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-price-imformation .pic {
+  .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-content .all-price-imformation .pic {
     margin-top: 5px;
   }
 }
 
-.process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-price-imformation .pic:nth-child(1) {
+.process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-content .all-price-imformation .pic:nth-child(1) {
   margin-top: 30px;
 }
 
 @media all and (max-width: 861px) {
-  .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-price-imformation .pic:nth-child(1) {
+  .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-content .all-price-imformation .pic:nth-child(1) {
     margin-top: 20px;
   }
 }
 
 @media all and (max-width: 500px) {
-  .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-price-imformation .pic:nth-child(1) {
+  .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-content .all-price-imformation .pic:nth-child(1) {
     margin-top: 10px;
   }
 }
 
-.process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-price-imformation .pic img {
+.process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .all-content .all-price-imformation .pic img {
   width: 100%;
   border-radius: 5px;
   height: auto;
@@ -570,6 +627,12 @@ main .all-select-information .all-process-btns .ckeck-price-list:nth-last-child(
 @media screen and (max-width: 500px) {
   main .all-select-information .all-process-btns .ckeck-price-list {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main .all-select-information .all-process-btns .ckeck-price-list {
+    font-size: 12px;
   }
 }
 
