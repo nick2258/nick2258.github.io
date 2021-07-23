@@ -1292,6 +1292,7 @@ main{
                             // 單行文字
                             .texts{
                                 width: 100%;
+                               
                                 .text{
                                     font-size: 18px;
                                     font-weight: 600;
@@ -1299,6 +1300,7 @@ main{
 
                                     padding-bottom: 8px;
                                     display: flex;
+                                   
                                     @media all and (max-width: 1400px) {
                                         font-size: 16px;
                                         line-height: 24px;
@@ -1306,6 +1308,7 @@ main{
                                     @media all and (max-width: 700px) {
                                         font-size: 14px;
                                         line-height: 20px;
+                                        // flex-direction: column;
                                     }
                                     .small-text-color{
                                         width: calc(100% - 54px);
@@ -1313,7 +1316,18 @@ main{
                                         display: flex;
                                         flex-wrap: wrap;
                                     }
+                                    // span{
+                                    //     width: calc(100% - 90px);
+                                    //     @media all and (max-width: 1000px) {
+                                    //         width: calc(100% - 80px);
+                                    //     }
+                                    //     @media all and (max-width: 700px) {
+                                    //         width: 100%;
+                                    //         padding-top: 5px;
+                                    //     }
+                                    // }
                                 }
+                                
                                 // 注意事項文字
                                 .warn-text{
                                     color:#e7450a ;

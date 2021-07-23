@@ -137,8 +137,8 @@
   color: white;
   background-color: darkred;
   border: 2px solid darkred;
-  padding: 5px 25px;
   border-radius: 5px;
+  padding: 5px 25px;
   margin-top: 10px;
 }
 
@@ -334,14 +334,14 @@
 }
 
 .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .process-title .process-title-text {
-  padding-left: 11px;
-  margin-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 11px;
+  margin-right: 20px;
 }
 
 .process-price-list-information .process-price-contents .process-price-content .process-price-list .process-price-list-content .price-list-content .process-title .process-style-select {
@@ -505,8 +505,8 @@
   font-weight: 600;
   letter-spacing: 1.5px;
   line-height: 28px;
-  padding-bottom: 10px;
   color: orangered;
+  padding-bottom: 10px;
 }
 
 @media all and (max-width: 1000px) {
