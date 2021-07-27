@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- nav跟麵包屑的css -->
+     <link rel="stylesheet" href="../css/layout.css?t=202107091652">
+
+     <link rel="stylesheet" href="../css/process_price_list.css">
+
+     <!-- fontawesome的cdn -->
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body  style="background-image: url(../img/背景.png);">
+    <nav style="background-image: url(../img/背景.png);">
+        <section class="nav">
+            <!-- 回上一頁按鈕 -->
+            <!-- <a id="btnBack" class="back-btn nav-btn" style="text-decoration: none;">
+                <div class="btn">
+                    <span>回上頁</span>
+                </div>
+            </a> -->
+
+            <!-- 標題 -->
+            <a href="../UseCaseHtml/catalog.html" class="title">後加工價格表</a>
+
+            <!-- 回首頁按鈕 -->
+            <!-- <a href="../UseCaseHtml/catalog.html" class="home-btn nav-btn" style="text-decoration: none;">
+                <div class="btn">
+                    <span>回首頁</span>
+                </div>
+            </a> -->
+        </section>
+    </nav>
+
+    <main>
+        <section class="process-price-information">
+            <div class="process-price-content " >
+                  <!-- 加工須知下拉式選擇清單 -->
+                  <div class="dino-input-field select custom-select process-style-select">
+                    <label></label>
+                    <span class="option-selected process-select-title">
+                        <span id="lblMachiningNotice">所有後加工工法</span>
+                    </span>
+
+                    <!-- 選擇內容 -->
+                    <ul id="cboMachiningNotice" class="select-options process-select-option">
+                        <li>所有後加工</li>
+                        <li>燙金</li>
+                        <li>局光</li>
+                        <li>所有後加工</li>
+                        <li>燙金</li>
+                        <li>局光</li>
+                        <li>所有後加工</li>
+                        <li>燙金</li>
+                        <li>局光</li>
+                        <li>所有後加工</li>
+                        <li>燙金</li>
+                        <li>局光</li>
+                        <li>所有後加工</li>
+                        <li>燙金</li>
+                        <li>局光</li>
+                        <li>所有後加工</li>
+                        <li>燙金</li>
+                        <li>局光</li>
+                        <li>所有後加工</li>
+                        <li>燙金</li>
+                        <li>局光</li>
+                    </ul>
+
+                    <!-- 下拉式箭頭icon -->
+                    <i class="fas fa-sort-down"></i>
+                </div>
+                <div class="content ">
+                    <div class="pic">
+                        <img src="./img/加工價格表大_工作區域 1 複本 5.jpg" alt="">
+                    </div>
+
+                    <div class="pic">
+                        <img src="./img/加工價格表小_工作區域 1 複本 6.jpg" alt="">
+                    </div>
+
+                    <div class="pic">
+                        <img src="./img/加工價格表大_工作區域 1 複本 5.jpg" alt="">
+                    </div>
+
+                    <div class="pic">
+                        <img src="./img/加工價格表小_工作區域 1 複本 6.jpg" alt="">
+                    </div>
+
+                    <div class="pic">
+                        <img src="./img/加工價格表大_工作區域 1 複本 5.jpg" alt="">
+                    </div>
+
+                    <div class="pic">
+                        <img src="./img/加工價格表小_工作區域 1 複本 6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./jquery-2.1.3.min.js"></script>
+    <script>
+        $(document).ready(function (e) {
+            $('.custom-select').click(function (e) {
+                e.stopPropagation();
+                $('.select-options', this).slideToggle();
+            });
+
+            $('.select-options li').click(function (e) {
+                e.stopPropagation();
+                const text_inside = $(this).text();
+                $(this).parent().slideUp();
+                $(this).parent().prev().text(text_inside);
+            });
+
+            $(document).click(function (e) {
+                $('.select-options').slideUp();
+            });
+        });
+    </script>
+</body>
+</html>

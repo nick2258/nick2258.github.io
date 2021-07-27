@@ -345,6 +345,12 @@ nav .nav a .btn:hover {
   border-bottom: 1px solid gainsboro;
 }
 
+@media all and (max-width: 1620px) {
+  .breadcrumb .mycontainer {
+    width: 98%;
+  }
+}
+
 @media all and (max-width: 700px) {
   .breadcrumb .mycontainer {
     padding-bottom: 8px;
@@ -459,14 +465,13 @@ nav .nav a .btn:hover {
             transform: translate(0%, 0%);
     font-size: 14px;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 15px;
   }
 }
 
 @media all and (max-width: 500px) {
   .breadcrumb .mycontainer .check-price {
     width: calc(50% - 5px);
-    border-radius: 5px;
     font-size: 12px;
   }
 }

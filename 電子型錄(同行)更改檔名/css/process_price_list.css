@@ -1,0 +1,151 @@
+main .process-price-information {
+  width: 1400px;
+  margin: 0px auto;
+}
+
+@media all and (max-width: 1350px) {
+  main .process-price-information {
+    padding: 0px 60px;
+    width: 100%;
+  }
+}
+
+main .process-price-information .process-price-content .process-style-select {
+  width: 600px;
+  padding: 8px 0px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: white;
+  background-color: #2c3e50;
+  border-radius: 3px 3px 0px 0px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px auto;
+  margin-bottom: 30px;
+}
+
+@media all and (max-width: 861px) {
+  main .process-price-information .process-price-content .process-style-select {
+    width: 200px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  main .process-price-information .process-price-content .process-style-select {
+    width: 100%;
+  }
+}
+
+main .process-price-information .process-price-content .process-style-select .fa-sort-down {
+  font-size: 36px;
+  color: white;
+  position: absolute;
+  right: 5px;
+  top: 10%;
+}
+
+main .process-price-information .process-price-content .process-style-select .fa-sort-down.none {
+  display: none;
+}
+
+@media all and (max-width: 1000px) {
+  main .process-price-information .process-price-content .process-style-select {
+    margin-bottom: 10px;
+  }
+  main .process-price-information .process-price-content .process-style-select:nth-last-child(1) {
+    margin-bottom: 0px;
+  }
+}
+
+main .process-price-information .process-price-content .process-style-select label {
+  top: 5px;
+  left: 20px;
+}
+
+main .process-price-information .process-price-content .process-style-select .process-select-title {
+  width: 100%;
+  font-size: 20px;
+  letter-spacing: 3px;
+  padding: 8px 8px;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1400px) {
+  main .process-price-information .process-price-content .process-style-select .process-select-title {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  main .process-price-information .process-price-content .process-style-select .process-select-title {
+    padding: 6.5px 8px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main .process-price-information .process-price-content .process-style-select .process-select-title {
+    font-size: 14px;
+  }
+}
+
+main .process-price-information .process-price-content .process-style-select .process-select-option {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  z-index: 51;
+  margin: 0;
+  padding: 0;
+  border-radius: 0px 0px 10px 10px;
+  -webkit-box-shadow: black 0 5px 20px -15px;
+          box-shadow: black 0 5px 20px -15px;
+  background-color: #687A8F;
+  text-align: center;
+  max-height: 42vh;
+  overflow-y: auto;
+}
+
+main .process-price-information .process-price-content .process-style-select .process-select-option li {
+  list-style: none;
+  padding: 10px 2px;
+  font-size: 16px;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+  cursor: pointer;
+}
+
+main .process-price-information .process-price-content .process-style-select .process-select-option li:hover {
+  background-color: sandybrown;
+  color: white;
+  cursor: pointer;
+}
+
+main .process-price-information .process-price-content .content {
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  border: 5px solid #b2cee0;
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 15px #6b808d52;
+          box-shadow: 10px 10px 15px #6b808d52;
+  padding: 30px 60px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+main .process-price-information .process-price-content .content .pic img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=process_price_list.css.map */

@@ -270,6 +270,7 @@
             }
             @media all and (max-width: 500px) {
                 font-size: 24px;
+                left: 95%;
                 margin-bottom: 10px;
             }
         }
@@ -295,8 +296,9 @@
             // 調整內容大小
             @media all and (max-width: 1400px) {
                 width: 80%;
-             
-                transform: translate(-50%,50%);
+            }
+            @media all and (max-width: 500px) {
+                width: 90%;
             }
           
             // 委印 完稿 加工文字內容
@@ -305,6 +307,9 @@
                 margin: 0px auto;
 
                 padding-top: 30px;
+                @media all and (max-width: 500px) {
+                    width: 94%;
+                }
                 // 下方關閉按鈕
                 .close-btn{
                     width: 100%;
@@ -345,7 +350,6 @@
                         }
                     }
                 }
-
                 // 內容標題
                 .title{
                     width: 100%;
@@ -379,9 +383,7 @@
                     font-weight: 600;
                     text-align: left;
 
-                    margin-bottom: 20px;
-
-                    // border-bottom: 1px solid gainsboro; 
+                    margin-bottom: 10px;
                     @media all and (max-width: 1000px) {
                         font-size: 20px;
                     }
@@ -398,8 +400,6 @@
 
                         font-size: 16px;
                     }
-               
-                  
                     // 單個下拉式選單
                     .process-style-select{
                         width: 300px;
@@ -590,16 +590,27 @@
                             @media all and (max-width: 861px) {
                                 max-height: calc(80vh - 220px);
                             }
-                            // @media all and (max-width: 861px) {
-                            //     max-height: calc(80vh - 210px);
-                            // }
-                            // @media all and (max-width: 500px) {
-                            //     max-height: calc(80vh - 180px);
-                            // }
                             &.show{
                                 display: block;
 
                                 transition: .6s;
+                            }
+                            &:nth-child(2){
+                                padding: 15px 10px;
+                            }
+                            .process-note-title{
+                                font-size: 24px;
+                                font-weight: 600;
+                                letter-spacing: 1.5px;
+                                padding-bottom: 15px;
+                                text-align: center;
+                                @media all and (max-width: 861px) {
+                                    padding-bottom: 10px;
+                                    font-size: 20px;
+                                }
+                                @media all and (max-width: 500px) {
+                                    font-size: 18px;
+                                }
                             }
                             // 加工須知內容
                             .process-note-text{
@@ -628,6 +639,39 @@
                                     }
                                 }
                             }
+                            // 分頁上方紅色說明文字
+                            .title-warn-texts{
+                                margin: 0px;
+                                // padding-left: 30px;
+                                list-style: none;
+                                .title-warn-text{
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                    letter-spacing: 1.5px;
+                                    line-height: 28px;
+                                    color: orangered;
+
+                                    padding-bottom: 10px;
+                                    @media all and (max-width: 1000px) {
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                    }
+                                    @media all and (max-width: 861px) {
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                        letter-spacing: 1px;
+                                        padding-bottom: 8px;
+                                    }
+                                    @media all and (max-width: 500px) {
+                                        font-size: 12px;
+                                        line-height: 22px;
+                                        padding-bottom: 5px;
+                                    }
+                                    &:nth-last-child(1){
+                                        padding-bottom: 0px;
+                                    }
+                                }
+                            }
                             // 加工價格表圖片
                             .all-price-imformation{
                                 .pic{
@@ -646,7 +690,7 @@
                                         }
                                     }
                                     img{
-                                        width: 100%;
+                                        max-width:100%;
                                         border-radius: 5px;
                                         height: auto;
                                     }
@@ -675,6 +719,7 @@
                     }
                     // 每個數字文字
                     .texts{
+                        padding: 0px 20px;
                         padding-bottom: 30px;
                         @media all and (max-width: 861px) {
                             padding-bottom: 20px;
@@ -683,13 +728,19 @@
                             padding-bottom: 15px;
                         }
                         // 段落文字
-                        p{
+                        li{
                             margin: 0px;
                             padding-bottom: 10px;
 
                             font-size: 16px;
                             letter-spacing: 1.5px;
                             line-height: 24px;
+
+                            list-style:initial;
+                            &::marker{
+                                font-size: 24px;
+                                color:#2c3e50 ;
+                            }
                             @media all and (max-width: 500px) {
                                 font-size: 14px;
                             }
@@ -1418,16 +1469,6 @@ main{
                                         display: flex;
                                         flex-wrap: wrap;
                                     }
-                                    // span{
-                                    //     width: calc(100% - 90px);
-                                    //     @media all and (max-width: 1000px) {
-                                    //         width: calc(100% - 80px);
-                                    //     }
-                                    //     @media all and (max-width: 700px) {
-                                    //         width: 100%;
-                                    //         padding-top: 5px;
-                                    //     }
-                                    // }
                                 }
                                 
                                 // 注意事項文字
@@ -1721,6 +1762,7 @@ main{
                                             // 下拉式選單們
                                             .style-selects{
                                                 display: flex;
+                                                flex-direction: column;
 
                                                 margin-bottom: 10px;
 
@@ -1731,7 +1773,6 @@ main{
 
                                                     margin-top: 0px;
                                                    
-                                                    flex-direction: column;
                                                 }
                                                 @media all and (max-width: 500px) {
                                                     margin-bottom: 8px;   
@@ -1739,6 +1780,7 @@ main{
                                                 // 單個下拉式選單
                                                 .style-select{
                                                     width: 190px;
+                                                    width: 392px;
 
                                                     font-size: 14px;
                                                     font-weight: 600;
@@ -1755,9 +1797,16 @@ main{
                                                     border-radius: 3px 3px 0px 0px;
                                                     background-color: #2c3e50;
 
-                                                    margin-right: 10px;
+                                                    // margin-right: 10px;
+                                                    margin-bottom: 10px;
+                                                    &:nth-last-child(1){
+                                                        margin: 0px;
+                                                    }
                                                     @media screen and (max-width: 1000px){ 
                                                         width: 100%;
+                                                    }
+                                                    @media all and (max-width: 500px) {
+                                                        margin-bottom: 8px;   
                                                     }
                                                     // 下拉式選單icon
                                                     .fa-sort-down{
@@ -1845,174 +1894,6 @@ main{
                                                                 cursor: pointer;
                                                             }
                                                         }
-                                                    }
-                                                }
-                                            }
-
-                                            // 選擇數量
-                                            .style-select-mumber{
-                                                width: 392px;
-
-                                                margin-bottom: 10px;
-                                                @media screen and (max-width: 1000px){ 
-                                                    width: 100%;
-                                                }
-                                                @media screen and (max-width: 500px){ 
-                                                    margin-bottom: 8px;
-                                                }
-                                                // 下拉式數量選擇(長)
-                                                .style-select{  
-                                                    width: 100%;
-
-                                                    font-size: 14px;
-                                                    font-weight: 600;
-                                                    letter-spacing: 1.5px;
-                                                    text-align: center;
-                                                    color: white;
-
-                                                    background-color: #2c3e50;
-                                                    border-radius: 3px 3px 0px 0px;
-
-                                                    position: relative;
-
-                                                    display: flex;
-                                                    align-items: center;
-
-                                                    margin-right: 10px;
-                                                    // 下拉式icon
-                                                    .fa-sort-down{
-                                                        font-size: 28px;
-                                                        color: white;
-
-                                                        position: absolute;
-                                                        right: 5px;
-                                                        top: 0%;
-                                                        &.none{
-                                                            display: none;
-                                                        }
-                                                    }
-                                                    label{
-                                                        top: 5px;
-                                                        left: 20px;
-
-                                                        font-size: 12px;
-                                                        font-weight: 700;
-                                                    }
-                                                    // 選單標題
-                                                    .style-select-title1 {
-                                                        width: 100%;
-
-                                                        padding: 8px 8px;
-
-                                                        font-size: 18px;
-
-                                                        cursor: pointer;
-                                                        @media all and (max-width: 1400px) {
-                                                            font-size: 16px;
-                                                        }
-                                                        @media all and (max-width: 1000px) {
-                                                            padding: 6.5px 8px;
-                                                        }
-                                                        @media screen and (max-width: 700px){
-                                                            font-size: 14px;
-                                                        }
-                                                    }
-                                                    // 整個選單內容
-                                                    .style-select-option {
-                                                        display: none;
-
-                                                        position: absolute;
-                                                        width: 100%;
-                                                        top: 100%; 
-                                                        z-index: 50;
-
-                                                        text-align: center;
-
-                                                        margin: 0;
-                                                        padding: 0;
-
-                                                        box-shadow: black 0 5px 20px -15px;
-                                                        background-color: #687A8F;
-                                                        border-radius: 0px 0px 10px 10px;
-
-                                                        max-height: 16vh;
-                                                        overflow-y: auto;
-                                                        // 選單選項
-                                                        li {
-                                                            list-style: none;
-
-                                                            padding: 10px 2px;
-
-                                                            font-size: 14px;
-
-                                                            transition: all .25s;
-
-                                                            cursor: pointer;
-                                                            &:hover{
-                                                                background-color: sandybrown;
-                                                                color: white;
-
-                                                                cursor: pointer;
-                                                            }
-                                                        }
-                                                    }
-                                                }
-
-                                                // 輸入式商品數量
-                                                .number-input{
-                                                    width: 100%;
-                                                    input{
-                                                        width: 100%;
-                                                        max-height: 40px;
-
-                                                        font-size: 18px;
-                                                        font-weight: 600;
-                                                        text-align: center;
-                                                        color: white;
-
-                                                        padding: 8px 8px;
-                                                      
-                                                        background-color: #2c3e50;
-                                                        border: 0px solid transparent;
-                                                        outline: none;
-
-                                                        cursor: pointer;
-                                                        @media all and (max-width: 1400px) {
-                                                            font-size: 16px;
-                                                        }
-                                                        @media all and (max-width: 1000px) {
-                                                            padding: 6.5px 8px;
-                                                        }
-                                                        @media screen and (max-width: 700px){
-                                                            font-size: 14px;
-                                                        }
-                                                    }
-
-                                                    // input預設文字顏色
-                                                    ::placeholder { /* CSS 3 標準 */
-                                                        color: white; 
-                                                    }
-                                                    ::-webkit-input-placeholder { /* Chrome, Safari */                    
-                                                        color: white;                         
-                                                    }
-                                                    :-ms-input-placeholder { /* IE 10+ */
-                                                        color: white;
-                                                    }
-                                                    ::-moz-placeholder { /* Firefox 19+ */
-                                                        color: white;
-                                                        opacity: 1;
-                                                    }
-                                                }
-                                                .warn-text{
-                                                    padding-top: 5px;
-                                                    padding-bottom: 10px;
-                                                    
-                                                    font-size: 16px;
-                                                    font-weight: 600;
-                                                    color: rgb(231, 69, 10);
-                                                    letter-spacing: 1px;
-                                                    @media all and (max-width: 700px) {
-                                                        font-size:14px;
                                                     }
                                                 }
                                             }
@@ -2149,8 +2030,11 @@ main{
                                                     content: " 、";
                                                     padding: 0px 5px;
                                                 }
-                                                &:nth-last-child(1){
-                                                    content: " 、";
+                                                &:nth-last-child(1)::after{
+                                                    content: "  ";
+                                                }
+                                                &:nth-child(1)::after{
+                                                    content: " 、 ";
                                                 }
                                                 .process-selectname{
                                                     width: max-content;
@@ -2274,7 +2158,7 @@ main{
                                             }  
                                         }
                                     }
-
+                                    // 兩個樣本檔
                                     .two-links{
                                         display: flex;
                                         flex-wrap: wrap;
@@ -2306,14 +2190,10 @@ main{
                                                 margin-top: 10px;
                                                 max-height: 46px;
                                             }
-                                            // @media all and (max-width: 700px) {
-                                            //     width: 46%;
-                                            //     margin-right: 0px;
-                                            // }
-                                            // @media all and (max-width: 500px) {
-                                            //     width: 48.5%;
-                                            //     margin-top: 8px;   
-                                            // }
+                                            @media all and (max-width: 500px) {
+                                                width: calc(50% - 5px);
+                                                margin-right: 10px; 
+                                            }
                                             &:hover{
                                                 border: 2px solid rgba(128, 128, 128, 0.733);
                                             }

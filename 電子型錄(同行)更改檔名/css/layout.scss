@@ -275,6 +275,9 @@ nav{
         position: relative;
 
         border-bottom: 1px solid gainsboro;
+        @media all and (max-width: 1620px) {
+            width: 98%;
+        }
         @media all and (max-width: 700px) {
             padding-bottom: 8px;
         }
@@ -371,12 +374,12 @@ nav{
                 font-size: 14px;
                 text-align: center;
 
-                border-radius: 8px;
+                border-radius: 15px;
             }
             @media all and (max-width: 500px) {
                 width: calc(50% - 5px);
 
-                border-radius: 5px;
+                // border-radius: 5px;
 
                 font-size: 12px;
             }
