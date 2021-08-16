@@ -1,0 +1,106 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.title{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+
+    padding: 15px 0px;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    
+}
+
+main{
+    padding:0px 5vw;
+    max-width: 1920px;
+    width: 100%;
+    .allchoice{
+        width: 100%;
+        height: 500px;
+        background-color: antiquewhite;
+        border: 2px solid black;
+        .choice{
+            display: flex;
+            // border: 1px solid black;
+
+            .choice-title{
+                border-right: 1px solid black;
+                li{
+                    border-bottom: 1px solid black;
+                    text-align: center;
+                    // padding: 3px 8px;
+                    display: flex;
+                    align-items: center;
+                    &:nth-last-child(1){
+                        border-bottom: 0px solid transparent;
+                    }
+                    &:nth-child(1){
+                        height: 80px;
+                    }
+                }
+
+            }
+            .choice-content{
+                border-right: 1px solid black;
+                li{
+                    border-bottom: 1px solid black;
+                    text-align: center;
+                    // padding: 3px 8px;
+                    &:nth-last-child(1){
+                        border-bottom: 0px solid transparent;
+                    }
+                    &:nth-child(1){
+                        padding: 0px;
+                        height: 80px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                    }
+                    .number{
+                        display: flex;
+                        width: 200px;
+                        // width: max-content;
+                        // padding: 3px 8px;
+                        border-bottom: 1px solid black;
+                        // text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                        height: 50%;
+                        &:nth-last-child(1){
+                            border-bottom: 0px solid transparent;
+                            padding: 0px;
+                        }
+                        .small-number{
+                            width: 50%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            // text-align: center;
+                            align-items: center;
+                            border-right: 1px solid black;
+                            // padding: 3px 8px;
+                            &:nth-last-child(1){
+                                border-right: 0px solid transparent;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
