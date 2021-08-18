@@ -863,6 +863,7 @@
         $(document).ready(function (e) {
             $('.custom-select').click(function (e) {
                 e.stopPropagation();
+                $('.select-options').slideUp();
                 $('.select-options', this).slideToggle();
             });
 
@@ -879,24 +880,30 @@
         });
     </script>
 
-<script>
+<!-- <script>
 
     const selects = document.querySelectorAll(".select")
     
     selects.forEach(function (ele, i) {
-        // clearall()
         ele.addEventListener('click', function () {
+            clearall();
             selects[i].classList.add("active");
         });
     });
 
-    // function clearall() {
-    //    document.querySelectorAll(".select").remove(".active")
-    // }
+    function clearall() {
+        selects.forEach(function (ele, i) {
+        ele.addEventListener('click', function () {
+            // clearall();
+            // selects[i].classList.add("active");
+            document.getElementsByClassName("select").classList.remove("active");
+        });
+    });
+    }
 
    
 
-</script>
+</script> -->
     
 </body>
 </html>

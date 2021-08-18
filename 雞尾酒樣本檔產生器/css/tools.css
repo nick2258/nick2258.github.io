@@ -466,6 +466,11 @@ main .allchoice .choice .choice-content li .select:hover .fa-sort-down {
   transition: .6s;
 }
 
+main .allchoice .choice .choice-content li .select.active {
+  background-color: #11264b;
+  color: white;
+}
+
 main .allchoice .choice .choice-content li .select .fa-sort-down {
   font-size: 28px;
   color: #11264b;
