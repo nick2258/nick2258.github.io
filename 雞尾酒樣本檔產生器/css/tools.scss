@@ -229,6 +229,10 @@ main{
             }
              // 第二張
              &:nth-child(2){
+                // display: none;
+                // &.active{
+                //     display: block;
+                // }
                 .choice-content{
                     li{
                         .number{
@@ -239,6 +243,10 @@ main{
             }
               // 第三張
               &:nth-child(3){
+                //   display: none;
+                // &.active{
+                //     display: block;
+                // }
                 .choice-content{
                     li{
                         .number{
