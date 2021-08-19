@@ -23,7 +23,7 @@ ul {
 }
 
 .title h1 {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 600;
   text-align: center;
   letter-spacing: 2px;
@@ -56,7 +56,7 @@ ul {
 
 .big-selects .big-select {
   width: 98%;
-  max-width: 550px;
+  max-width: 280px;
   font-weight: 600;
   color: #11264b;
   text-align: center;
@@ -75,7 +75,7 @@ ul {
   font-size: 28px;
   color: #11264b;
   position: absolute;
-  right: 5px;
+  right: 20px;
   top: 50%;
   -webkit-transform: translateY(-70%);
           transform: translateY(-70%);
@@ -97,12 +97,9 @@ ul {
           box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.384);
   position: absolute;
   top: 100%;
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
   z-index: 50;
   margin: 0;
   padding: 0;
-  padding-bottom: 4px;
   text-align: center;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -116,47 +113,26 @@ ul {
   height: -moz-max-content;
   height: max-content;
   list-style: none;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   padding: 5px 2px;
-  border: 2px solid #768da7;
-  border-left: 4px  solid #768da7;
-  border-right: 4px  solid #768da7;
   color: white;
   -webkit-transition: all .25s;
   transition: all .25s;
   cursor: pointer;
 }
 
-@media screen and (max-width: 1400px) {
-  .big-selects .big-select .select-options .select-option {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .big-selects .big-select .select-options .select-option {
-    font-size: 16px;
-  }
-}
-
 .big-selects .big-select .select-options .select-option:hover {
-  background-color: gainsboro;
+  background-color: antiquewhite;
   color: #11264b;
-  border: 2px solid #768da7;
-  border-left: 4px  solid #768da7;
-  border-right: 4px  solid #768da7;
   cursor: pointer;
   -webkit-transition: .6s;
   transition: .6s;
 }
 
 .big-selects .big-select .select-options .select-option.active {
-  background-color: gainsboro;
+  background-color: antiquewhite;
   color: #11264b;
-  border: 2px solid #768da7;
-  border-left: 4px  solid #768da7;
-  border-right: 4px  solid #768da7;
   cursor: pointer;
   -webkit-transition: .6s;
   transition: .6s;
@@ -165,13 +141,11 @@ ul {
 .big-selects .big-select .select-text {
   width: 100%;
   padding: 8px 0px;
-  font-size: 24px;
+  font-size: 18px;
   letter-spacing: 2px;
   text-align: center;
   display: block;
-  background-color: #11264b;
-  border: 2px solid gray;
-  background-color: gainsboro;
+  border: 2px solid #11264b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,18 +153,6 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
-}
-
-@media screen and (max-width: 1400px) {
-  .big-selects .big-select .select-text {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .big-selects .big-select .select-text {
-    font-size: 18px;
-  }
 }
 
 .big-selects .big-select .select-text .select-name {
@@ -201,18 +163,14 @@ main {
   max-width: 1920px;
   width: 100%;
   padding: 0px 8vw;
+  padding: 0px 2vw;
   position: relative;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1600px) {
   main {
     padding: 0px 3vw;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  main {
-    padding: 0px 8vw;
+    padding: 0px 0.5vw;
   }
 }
 
@@ -227,10 +185,6 @@ main .allchoice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   border: 2px solid #11264b;
   -webkit-box-shadow: 8px 8px 15px rgba(56, 56, 56, 0.199);
           box-shadow: 8px 8px 15px rgba(56, 56, 56, 0.199);
@@ -242,7 +196,6 @@ main .allchoice .choice {
   display: -ms-flexbox;
   display: flex;
   letter-spacing: 1px;
-  border-top: 2px solid #11264b;
 }
 
 @media screen and (max-width: 1200px) {
@@ -252,15 +205,48 @@ main .allchoice .choice {
 }
 
 main .allchoice .choice:nth-child(1) {
-  border-top: 0px solid transparent;
+  width: 40%;
+}
+
+main .allchoice .choice:nth-child(1) .choice-title {
+  width: 25%;
+}
+
+main .allchoice .choice:nth-child(1) .choice-content {
+  width: 75%;
 }
 
 main .allchoice .choice:nth-child(1) .choice-content li .number {
   background-color: lightblue;
 }
 
+main .allchoice .choice:nth-child(2) {
+  width: 30%;
+}
+
+main .allchoice .choice:nth-child(2) .choice-title {
+  display: none;
+}
+
+main .allchoice .choice:nth-child(2) .choice-content {
+  width: 100%;
+}
+
 main .allchoice .choice:nth-child(2) .choice-content li .number {
   background-color: burlywood;
+}
+
+main .allchoice .choice:nth-child(3) {
+  width: 30%;
+}
+
+main .allchoice .choice:nth-child(3) .choice-title {
+  display: none;
+}
+
+main .allchoice .choice:nth-child(3) .choice-content {
+  width: 100%;
+  border-right: 0px solid transparent;
 }
 
 main .allchoice .choice:nth-child(3) .choice-content li .number {
@@ -268,7 +254,7 @@ main .allchoice .choice:nth-child(3) .choice-content li .number {
 }
 
 main .allchoice .choice .choice-title {
-  border-right: 1px solid #11264b;
+  border-right: 2px solid #11264b;
   width: 25%;
 }
 
@@ -300,24 +286,19 @@ main .allchoice .choice .choice-title li {
   text-align: center;
   height: 40px;
   font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   background-color: ghostwhite;
   border-bottom: 1px solid #11264b;
 }
 
-@media screen and (max-width: 1000px) {
-  main .allchoice .choice .choice-title li {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1400px) {
   main .allchoice .choice .choice-title li {
     font-size: 14px;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1200px) {
   main .allchoice .choice .choice-title li {
     font-size: 12px;
   }
@@ -334,26 +315,17 @@ main .allchoice .choice .choice-title li:nth-last-child(1) {
 }
 
 main .allchoice .choice .choice-title li:nth-child(1) {
-  height: 80px;
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
+  font-size: 18px;
   background-color: gainsboro;
 }
 
-@media screen and (max-width: 1000px) {
-  main .allchoice .choice .choice-title li:nth-child(1) {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1400px) {
   main .allchoice .choice .choice-title li:nth-child(1) {
     font-size: 16px;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1200px) {
   main .allchoice .choice .choice-title li:nth-child(1) {
     font-size: 14px;
   }
@@ -361,18 +333,7 @@ main .allchoice .choice .choice-title li:nth-child(1) {
 
 main .allchoice .choice .choice-content {
   width: 75%;
-}
-
-@media screen and (max-width: 1200px) {
-  main .allchoice .choice .choice-content {
-    width: 85%;
-  }
-}
-
-@media screen and (max-width: 440px) {
-  main .allchoice .choice .choice-content {
-    width: calc(100% - 30px);
-  }
+  border-right: 2px solid #11264b;
 }
 
 main .allchoice .choice .choice-content li {
@@ -389,21 +350,16 @@ main .allchoice .choice .choice-content li {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 18px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 1400px) {
-  main .allchoice .choice .choice-content li {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 500px) {
   main .allchoice .choice .choice-content li {
     font-size: 14px;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1200px) {
   main .allchoice .choice .choice-content li {
     font-size: 12px;
   }
@@ -421,6 +377,7 @@ main .allchoice .choice .choice-content li:nth-last-child(1) {
 
 main .allchoice .choice .choice-content li:nth-child(1) {
   height: 80px;
+  height: 40px;
   padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,8 +392,29 @@ main .allchoice .choice .choice-content li:nth-child(1) {
   text-align: center;
 }
 
+main .allchoice .choice .choice-content li:nth-child(2) .select .fa-sort-down {
+  right: 8vw;
+}
+
+@media screen and (max-width: 1600px) {
+  main .allchoice .choice .choice-content li:nth-child(2) .select .fa-sort-down {
+    right: 5vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .allchoice .choice .choice-content li:nth-child(2) .select .fa-sort-down {
+    right: 2vw;
+  }
+}
+
+main .allchoice .choice .choice-content li:nth-child(2) .select .select-text {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 main .allchoice .choice .choice-content li .select {
-  width: 98%;
   width: 100%;
   height: 100%;
   font-weight: 600;
@@ -481,9 +459,27 @@ main .allchoice .choice .choice-content li .select .fa-sort-down {
           transform: translateY(-70%);
 }
 
-@media screen and (max-width: 500px) {
+main .allchoice .choice .choice-content li .select .fa-sort-down.active {
+  color: white;
+  z-index: 80;
+}
+
+@media screen and (max-width: 1400px) {
+  main .allchoice .choice .choice-content li .select .fa-sort-down {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   main .allchoice .choice .choice-content li .select .fa-sort-down {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .allchoice .choice .choice-content li .select .fa-sort-down {
+    font-size: 18px;
+    right: 0px;
   }
 }
 
@@ -498,7 +494,7 @@ main .allchoice .choice .choice-content li .select .select-options {
   width: 100%;
   display: none;
   background-color: #768da7;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 3px 3px;
   -webkit-box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.384);
           box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.384);
   position: absolute;
@@ -506,7 +502,6 @@ main .allchoice .choice .choice-content li .select .select-options {
   z-index: 50;
   margin: 0;
   padding: 0;
-  padding-bottom: 4px;
   text-align: center;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -522,51 +517,37 @@ main .allchoice .choice .choice-content li .select .select-options .select-optio
   list-style: none;
   font-size: 16px;
   font-weight: 600;
-  padding: 5px 2px;
-  border: 2px solid #768da7;
-  border-left: 4px  solid #768da7;
-  border-right: 4px  solid #768da7;
+  padding: 6px 2px;
+  border: 0px solid transparent;
   color: white;
   -webkit-transition: all .25s;
   transition: all .25s;
   cursor: pointer;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1400px) {
   main .allchoice .choice .choice-content li .select .select-options .select-option {
     font-size: 14px;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1200px) {
   main .allchoice .choice .choice-content li .select .select-options .select-option {
     font-size: 12px;
   }
 }
 
-@media screen and (max-width: 380px) {
-  main .allchoice .choice .choice-content li .select .select-options .select-option {
-    font-size: 10px;
-  }
-}
-
 main .allchoice .choice .choice-content li .select .select-options .select-option:hover {
-  background-color: gainsboro;
+  background-color: antiquewhite;
   color: #11264b;
-  border: 2px solid #768da7;
-  border-left: 4px  solid #768da7;
-  border-right: 4px  solid #768da7;
   cursor: pointer;
   -webkit-transition: .6s;
   transition: .6s;
 }
 
 main .allchoice .choice .choice-content li .select .select-options .select-option.active {
-  background-color: gainsboro;
+  background-color: antiquewhite;
   color: #11264b;
-  border: 2px solid #768da7;
-  border-left: 4px  solid #768da7;
-  border-right: 4px  solid #768da7;
   cursor: pointer;
   -webkit-transition: .6s;
   transition: .6s;
@@ -576,6 +557,7 @@ main .allchoice .choice .choice-content li .select .select-text {
   width: 100%;
   height: auto;
   font-size: 20px;
+  font-size: 16px;
   letter-spacing: 2px;
   text-align: center;
   display: block;
@@ -590,26 +572,17 @@ main .allchoice .choice .choice-content li .select .select-text {
 
 @media screen and (max-width: 1400px) {
   main .allchoice .choice .choice-content li .select .select-text {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  main .allchoice .choice .choice-content li .select .select-text {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  main .allchoice .choice .choice-content li .select .select-text {
     font-size: 14px;
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 1100px) {
   main .allchoice .choice .choice-content li .select .select-text {
     font-size: 12px;
-    padding-right: 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 2px;
   }
 }
 
@@ -619,7 +592,7 @@ main .allchoice .choice .choice-content li .select .select-text .select-name {
 
 main .allchoice .choice .choice-content li .number {
   width: 100%;
-  height: 50%;
+  height: 100%;
   border-bottom: 1px solid #11264b;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -631,18 +604,19 @@ main .allchoice .choice .choice-content li .number {
       -ms-flex-align: center;
           align-items: center;
   font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1400px) {
   main .allchoice .choice .choice-content li .number {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1200px) {
   main .allchoice .choice .choice-content li .number {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -677,44 +651,12 @@ main .allchoice .choice .choice-content li .number .small-number:nth-child(1) {
   background-color: #ce9cce;
 }
 
-main .allchoice .choice .choice-content li .number .small-number .choice-btn {
-  cursor: pointer;
-}
-
 main .allchoice .choice .choice-content li .number .small-number:nth-last-child(1) {
   border-right: 0px solid transparent;
 }
 
 main .allchoice .choice .choice-content li .text {
   margin-right: 15px;
-}
-
-main .allchoice .choice .choice-content li .choice-btn {
-  cursor: pointer;
-  background-color: gray;
-  border: 2px solid gray;
-  color: white;
-  padding: 0px 3px;
-  border-radius: 3px;
-  font-weight: 600;
-  font-size: 16px;
-  -webkit-box-shadow: 3px 3px 5px rgba(80, 79, 79, 0.274);
-          box-shadow: 3px 3px 5px rgba(80, 79, 79, 0.274);
-}
-
-main .allchoice .choice .choice-content li .choice-btn:hover {
-  color: gray;
-  border: 1px solid gray;
-  background-color: white;
-  border: 2px solid gray;
-  -webkit-transition: .6S;
-  transition: .6S;
-}
-
-@media screen and (max-width: 500px) {
-  main .allchoice .choice .choice-content li .choice-btn {
-    font-size: 12px;
-  }
 }
 
 main .allchoice .choice .choice-content li .small-choices {
@@ -748,10 +690,6 @@ main .allchoice .choice .choice-content li .small-choices .small-choice {
 
 main .allchoice .choice .choice-content li .small-choices .small-choice:nth-last-child(1) {
   border-right: 0px solid transparent;
-}
-
-main .allchoice .choice .choice-content li .small-choices .small-choice .choice-btn {
-  cursor: pointer;
 }
 
 main .btns {
@@ -831,6 +769,10 @@ main .results .result {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 30px;
+}
+
+main .results .result:nth-last-child(1) .title {
+  margin-bottom: 0px;
 }
 
 main .results .result .title {
