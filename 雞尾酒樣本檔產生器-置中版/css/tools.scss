@@ -94,7 +94,7 @@ main{
     width: 100%;
 
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
     margin-bottom: 15px;
@@ -245,13 +245,14 @@ main{
     .allchoice{
         width: 100%;
         display: flex;
-        border: 2px solid rgb(17, 38, 75);
-        box-shadow: 8px 8px 15px rgba(56, 56, 56, 0.199);
+        justify-content: center;
+        // border: 2px solid rgb(17, 38, 75);
+        // box-shadow: 8px 8px 15px rgba(56, 56, 56, 0.199);
         // 單張表格
         .choice{
             width: 100%;
-
-            display: flex;
+           
+            // display: flex;
             letter-spacing: 1px;
             
             @media screen and (max-width:1200px) {
@@ -276,389 +277,406 @@ main{
             // 第二張，電腦板隱藏
             &:nth-child(2){
                 width: 30%;
-                .choice-title{
-                    display: none;
-                }
-                .choice-content{
-                    width: 100%;
-                    
-                    li{
-                        .number{
-                            background-color: burlywood;
+                .all-choice-content{
+                    .choice-title{
+                        display: none;
+                    }
+                    .choice-content{
+                        width: 100%;
+                        border-right: 2px solid rgb(17, 38, 75);
+                        
+                        li{
+                            .number{
+                                background-color: burlywood;
+                            }
                         }
                     }
                 }
+             
             }
             // 第三張，電腦板隱藏
             &:nth-child(3){
                 width: 30%;
-                
-                .choice-title{
-                    display: none;
-                }
-                .choice-content{
-                    width: 100%;
-                    border-right: 0px solid transparent;
-                    li{
-                        .number{
-                            background-color: salmon;
-                        }
+                .all-choice-content{
+                    .choice-title{
+                        display: none;
                     }
-                }
-            }
-            // 左側標題
-            .choice-title{
-                border-right: 2px solid rgb(17, 38, 75);
-                width: 25%;
-                @media screen and (max-width:1200px) {
-                    width: 15%;
-                }
-                @media screen and (max-width:440px) {
-                    width: 30px;
-                }
-                li{
-                    width: 100%;
-          
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    align-content: center;
-                    text-align: center;
-
-                    height: 40px;
-                    height: 50px;
-                    font-size: 18px;
-                    font-size: 16px;
-                    font-weight: 600;
-
-                    background-color: ghostwhite;
-                    border-bottom: 1px solid rgb(17, 38, 75);
-                    @media screen and (max-width:1400px) {
-                        font-size: 14px;
-                    }
-                    &:nth-last-child(1){
-                        border-bottom: 0px solid transparent;
-                        @media screen and (max-width:1200px) {
-                            border-bottom: 1px solid rgb(17, 38, 75);
-                        }
-                    }
-                    // 用紙張數
-                    &:nth-child(1){
-                        background-color: gainsboro;
-                        @media screen and (max-width:1400px) {
-                            font-size: 16px;
-                        }
-                        @media screen and (max-width:1200px) {
-                            font-size: 14px;
-                        }
-                    }
-                    span{
-                        .small-text{
-                            padding-top: 2px;
-                            font-size: 14px;
-                            font-weight: 600;
-                            color: darkorange;
-                            @media screen and (max-width:1400px) {
-                                font-size: 12px;
+                    .choice-content{
+                        width: 100%;
+                        border-right: 2px solid rgb(17, 38, 75);
+                        li{
+                            .number{
+                                background-color: salmon;
                             }
                         }
                     }
                 }
+                
+              
             }
-            // 表格右方內容
-            .choice-content{
-                width: 75%;
-                border-right: 2px solid rgb(17, 38, 75);
-                li{
-                    width: 100%;
-                    height: 40px;
-                    height: 50px;
-
-                    border-bottom: 1px solid rgb(17, 38, 75);
-
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    font-size: 18px;
-                    font-size: 16px;
-                    @media screen and (max-width:1400px) {
-                        font-size: 14px;
-                    }
+            .all-choice-content{
+                width: 100%;
+                display: flex;
+                border-top: 2px solid rgb(17, 38, 75);
+                border-bottom: 2px solid rgb(17, 38, 75);
+                // border-right: 2px solid rgb(17, 38, 75);
+                box-shadow: 3px 3px 15px rgba(56, 56, 56, 0.199);
+                 // 左側標題
+                .choice-title{
+                    border-right: 2px solid rgb(17, 38, 75);
+                    border-left: 2px solid rgb(17, 38, 75);
+                    width: 25%;
                     @media screen and (max-width:1200px) {
-                        font-size: 12px;
+                        width: 15%;
                     }
-                    &:nth-last-child(1){
-                        border-bottom: 0px solid transparent;
-                        @media screen and (max-width:1200px) {
-                            border-bottom: 1px solid rgb(17, 38, 75);
-                        }
+                    @media screen and (max-width:440px) {
+                        width: 30px;
                     }
-                    // 張數正反面
-                    &:nth-child(1){
-                        height: 80px;
+                    li{
+                        width: 100%;
+            
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        align-content: center;
+                        text-align: center;
+
                         height: 40px;
                         height: 50px;
-                        padding: 0px;
-
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        text-align: center;
-                    }
-                    &:nth-child(2){
-                        .select{
-                            .fa-sort-down{
-                                right: 8vw;
-                                @media screen and (max-width:1600px) {
-                                    right:5vw;
-                                }
-                                @media screen and (max-width:1000px) {
-                                    right: 2vw;
-                                }
-                            }
-                            .select-text{
-                                justify-content: center;
-                            }
-                        }
-                        
-                    }
-                    // 選單內容
-                    .select{
-                        width: 100%;
-                        height: 100%;
-
-                        font-weight: 600;
-                        color:rgb(17, 38, 75);
-                        text-align: center;
-                        letter-spacing: 1.5px;
-
-                        position: relative;
-
-                        display: flex;
-                        align-items: center;
-                    
-                        padding: 3px 0px;
-                        &:hover{
-                            background-color: rgb(17, 38, 75);
-                            color: white;
-
-                            transition: .6s;
-                            .fa-sort-down{
-                               color: white;
-
-                               transition: .6s;
-                            }
-                        }
-                        &.active{
-                            background-color: rgb(17, 38, 75);
-                            color: white;
-                        }
-                       
-                        // 下拉選單 icon
-                        .fa-sort-down{
-                            font-size: 28px;
-                            color:rgb(17, 38, 75);
-
-                            position: absolute;
-                            right: 5px;
-                            // right: 2vw;
-
-                            top: 50%;
-                            transform: translateY(-70%);
-                            &.active{
-                                color: white;
-                                z-index:80;
-                            }
-                            @media screen and (max-width:1400px) {
-                                font-size: 24px;
-                            }
-                            @media screen and (max-width:1200px) {
-                                font-size: 20px;
-                            }
-                            @media screen and (max-width:1100px) {
-                                font-size: 18px;
-                                right: 0px;
-
-                            }
-                        }
-                        label{
-                            top: 5px;
-                            left: 20px;
-
-                            font-size: 12px;
-                            font-weight: 700;
-                        }
-                        // 下拉式選單內容
-                        .select-options{
-                            width: 100%;
-
-                            display: none;
-                
-                            background-color: #768da7;
-                            border-radius: 0px 0px 3px 3px;
-                            box-shadow: 5px  5px 10px  rgba(56, 56, 56, 0.384);
-
-                            position: absolute;
-                            top: 100%;
-                            z-index: 50;
-
-                            margin: 0;
-                            padding: 0;
-                        
-                            text-align: center;
-                            height: max-content;
-                            max-height: 40vh;
-                            overflow-y: auto;
-                            // 單個選單選項
-                            .select-option{
-                                height: max-content;
-                                list-style: none;
-
-                                font-size: 16px;
-                                font-weight: 600;
-
-                                padding: 6px 2px;
-                                border: 0px solid transparent;
-
-                                color: white;
-                            
-                                transition: all .25s;
-                                cursor: pointer;
-                                @media screen and (max-width:1400px) {
-                                    font-size: 14px;
-                                }
-                                @media screen and (max-width:1200px) {
-                                    font-size: 12px;
-                                }
-                              
-                                &:hover{
-                                    background-color: antiquewhite;
-                                    color: rgb(17, 38, 75);
-
-                                    cursor: pointer;
-
-                                    transition: .6s;
-                                }
-                                &.active{
-                                    background-color: antiquewhite;
-                                    color: rgb(17, 38, 75);
-                                   
-                                    cursor: pointer;
-
-                                    transition: .6s;
-                                }
-                            }
-                        }
-                    
-                        // 選單預設標題
-                        .select-text{
-                            width: 100%;   
-                            height: auto;
-
-                            font-size: 20px;
-                            font-size: 16px;
-                            letter-spacing: 2px;
-                            text-align: center;
-
-                            display: block;
-                            display: flex;
-                            justify-content: center;
-                            cursor: pointer;
-                            @media screen and (max-width:1400px) {
-                                font-size: 14px;
-                            }
-                            @media screen and (max-width:1000px) {
-                                font-size: 12px;
-                                justify-content: flex-start;
-                                padding-left: 8px;
-                            }
-                            @media screen and (max-width:840px) {
-                                padding-left: 2px;
-                            }
-                            .select-name{
-                                text-align: center;
-                            }      
-                        }
-                    }
-                    .number{
-                        width: 100%;
-                        height: 100%;
-                        // height: 50%;
-
-                        border-bottom: 1px solid rgb(17, 38, 75);
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        font-size: 20px;
                         font-size: 18px;
+                        font-size: 16px;
                         font-weight: 600;
+
+                        background-color: ghostwhite;
+                        border-bottom: 1px solid rgb(17, 38, 75);
                         @media screen and (max-width:1400px) {
-                            font-size: 16px;
-                        }
-                        @media screen and (max-width:1200px) {
                             font-size: 14px;
                         }
                         &:nth-last-child(1){
                             border-bottom: 0px solid transparent;
-                            padding: 0px;
                             @media screen and (max-width:1200px) {
-                                width: 100%;
+                                border-bottom: 1px solid rgb(17, 38, 75);
                             }
                         }
-                        .small-number{
-                            width: 50%;
-                            height: 100%;
-
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-
-                            border-right: 1px solid rgb(17, 38, 75);
-                            background-color: orange;
-                            &:nth-child(1){
-                                background-color: rgb(206, 156, 206);
+                        // 用紙張數
+                        &:nth-child(1){
+                            background-color: gainsboro;
+                            @media screen and (max-width:1400px) {
+                                font-size: 16px;
                             }
-                            &:nth-last-child(1){
-                                border-right: 0px solid transparent;
+                            @media screen and (max-width:1200px) {
+                                font-size: 14px;
+                            }
+                        }
+                        span{
+                            .small-text{
+                                padding-top: 2px;
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: darkorange;
+                                @media screen and (max-width:1400px) {
+                                    font-size: 12px;
+                                }
                             }
                         }
                     }
-                    .text{
-                        margin-right: 15px;
-                    }
-                 
-                    // 正背面
-                    .small-choices{
+                }
+                // 表格右方內容
+                .choice-content{
+                    width: 75%;
+                    border-right: 2px solid rgb(17, 38, 75);
+                    li{
                         width: 100%;
-                        height: 100%;
+                        height: 40px;
+                        height: 50px;
+
+                        border-bottom: 1px solid rgb(17, 38, 75);
 
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        .small-choice{
-                            width: 50%;
+
+                        font-size: 18px;
+                        font-size: 16px;
+                        @media screen and (max-width:1400px) {
+                            font-size: 14px;
+                        }
+                        @media screen and (max-width:1200px) {
+                            font-size: 12px;
+                        }
+                        &:nth-last-child(1){
+                            border-bottom: 0px solid transparent;
+                            @media screen and (max-width:1200px) {
+                                border-bottom: 1px solid rgb(17, 38, 75);
+                            }
+                        }
+                        // 張數正反面
+                        &:nth-child(1){
+                            height: 80px;
+                            height: 40px;
+                            height: 50px;
+                            padding: 0px;
+
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            text-align: center;
+                        }
+                        &:nth-child(2){
+                            .select{
+                                .fa-sort-down{
+                                    right: 8vw;
+                                    @media screen and (max-width:1600px) {
+                                        right:5vw;
+                                    }
+                                    @media screen and (max-width:1000px) {
+                                        right: 2vw;
+                                    }
+                                }
+                                .select-text{
+                                    justify-content: center;
+                                }
+                            }
+                            
+                        }
+                        // 選單內容
+                        .select{
+                            width: 100%;
+                            height: 100%;
+
+                            font-weight: 600;
+                            color:rgb(17, 38, 75);
+                            text-align: center;
+                            letter-spacing: 1.5px;
+
+                            position: relative;
+
+                            display: flex;
+                            align-items: center;
+                        
+                            padding: 3px 0px;
+                            &:hover{
+                                background-color: rgb(17, 38, 75);
+                                color: white;
+
+                                transition: .6s;
+                                .fa-sort-down{
+                                color: white;
+
+                                transition: .6s;
+                                }
+                            }
+                            &.active{
+                                background-color: rgb(17, 38, 75);
+                                color: white;
+                            }
+                        
+                            // 下拉選單 icon
+                            .fa-sort-down{
+                                font-size: 28px;
+                                color:rgb(17, 38, 75);
+
+                                position: absolute;
+                                right: 5px;
+                                // right: 2vw;
+
+                                top: 50%;
+                                transform: translateY(-70%);
+                                &.active{
+                                    color: white;
+                                    z-index:80;
+                                }
+                                @media screen and (max-width:1400px) {
+                                    font-size: 24px;
+                                }
+                                @media screen and (max-width:1200px) {
+                                    font-size: 20px;
+                                }
+                                @media screen and (max-width:1100px) {
+                                    font-size: 18px;
+                                    right: 0px;
+
+                                }
+                            }
+                            label{
+                                top: 5px;
+                                left: 20px;
+
+                                font-size: 12px;
+                                font-weight: 700;
+                            }
+                            // 下拉式選單內容
+                            .select-options{
+                                width: 100%;
+
+                                display: none;
+                    
+                                background-color: #768da7;
+                                border-radius: 0px 0px 3px 3px;
+                                box-shadow: 5px  5px 10px  rgba(56, 56, 56, 0.384);
+
+                                position: absolute;
+                                top: 100%;
+                                z-index: 50;
+
+                                margin: 0;
+                                padding: 0;
+                            
+                                text-align: center;
+                                height: max-content;
+                                max-height: 40vh;
+                                overflow-y: auto;
+                                // 單個選單選項
+                                .select-option{
+                                    height: max-content;
+                                    list-style: none;
+
+                                    font-size: 16px;
+                                    font-weight: 600;
+
+                                    padding: 6px 2px;
+                                    border: 0px solid transparent;
+
+                                    color: white;
+                                
+                                    transition: all .25s;
+                                    cursor: pointer;
+                                    @media screen and (max-width:1400px) {
+                                        font-size: 14px;
+                                    }
+                                    @media screen and (max-width:1200px) {
+                                        font-size: 12px;
+                                    }
+                                
+                                    &:hover{
+                                        background-color: antiquewhite;
+                                        color: rgb(17, 38, 75);
+
+                                        cursor: pointer;
+
+                                        transition: .6s;
+                                    }
+                                    &.active{
+                                        background-color: antiquewhite;
+                                        color: rgb(17, 38, 75);
+                                    
+                                        cursor: pointer;
+
+                                        transition: .6s;
+                                    }
+                                }
+                            }
+                        
+                            // 選單預設標題
+                            .select-text{
+                                width: 100%;   
+                                height: auto;
+
+                                font-size: 20px;
+                                font-size: 16px;
+                                letter-spacing: 2px;
+                                text-align: center;
+
+                                display: block;
+                                display: flex;
+                                justify-content: center;
+                                cursor: pointer;
+                                @media screen and (max-width:1400px) {
+                                    font-size: 14px;
+                                }
+                                @media screen and (max-width:1000px) {
+                                    font-size: 12px;
+                                    justify-content: flex-start;
+                                    padding-left: 8px;
+                                }
+                                @media screen and (max-width:840px) {
+                                    padding-left: 2px;
+                                }
+                                .select-name{
+                                    text-align: center;
+                                }      
+                            }
+                        }
+                        .number{
+                            width: 100%;
+                            height: 100%;
+                            // height: 50%;
+
+                            border-bottom: 1px solid rgb(17, 38, 75);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            font-size: 20px;
+                            font-size: 18px;
+                            font-weight: 600;
+                            @media screen and (max-width:1400px) {
+                                font-size: 16px;
+                            }
+                            @media screen and (max-width:1200px) {
+                                font-size: 14px;
+                            }
+                            &:nth-last-child(1){
+                                border-bottom: 0px solid transparent;
+                                padding: 0px;
+                                @media screen and (max-width:1200px) {
+                                    width: 100%;
+                                }
+                            }
+                            .small-number{
+                                width: 50%;
+                                height: 100%;
+
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                border-right: 1px solid rgb(17, 38, 75);
+                                background-color: orange;
+                                &:nth-child(1){
+                                    background-color: rgb(206, 156, 206);
+                                }
+                                &:nth-last-child(1){
+                                    border-right: 0px solid transparent;
+                                }
+                            }
+                        }
+                        .text{
+                            margin-right: 15px;
+                        }
+                    
+                        // 正背面
+                        .small-choices{
+                            width: 100%;
                             height: 100%;
 
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                            .small-choice{
+                                width: 50%;
+                                height: 100%;
 
-                            border-right: 1px solid black;
-                            &:nth-last-child(1){
-                                border-right: 0px solid transparent;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                border-right: 1px solid black;
+                                &:nth-last-child(1){
+                                    border-right: 0px solid transparent;
+                                }
+                            
                             }
-                          
                         }
                     }
                 }
             }
+           
         }
     }
     .price-select-information{
         margin-top: 20px;
-        display: flex;
+        // display: flex;
         align-items: center;
         @media screen and (max-width:1200px) {
             flex-direction: column;
@@ -669,8 +687,9 @@ main{
             display: flex;
             align-items: center;
             margin-right: 20px;
+            margin-bottom: 16px;
+
             @media screen and (max-width:1200px) {
-                margin-bottom: 16px;
             }
             .print-name-title{
                 font-size: 18px;
@@ -955,6 +974,7 @@ main{
     .results{
         margin-top: 15px;
         display: flex;
+        justify-content: center;
         @media screen and (max-width:700px) {
             flex-direction: column;
         }
