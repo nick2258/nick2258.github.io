@@ -3,6 +3,7 @@ body {
   padding: 0px;
   position: relative;
   padding-bottom: 45px;
+  height: 200vh;
 }
 
 @media screen and (max-width: 700px) {
@@ -24,21 +25,25 @@ ul {
 
 nav {
   padding-top: 16px;
+  padding-bottom: 8px;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white;
+  z-index: 99;
+  top: 0px;
+  max-width: 1920px;
+  width: 100%;
 }
 
 nav .nav-items {
-  max-width: 1920px;
-  width: 100%;
-  padding: 0px 2vw;
+  position: absolute;
+  right: 2vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 @media screen and (max-width: 1600px) {
@@ -69,25 +74,214 @@ nav .nav-items .log:hover {
   transition: .6s;
 }
 
-.title h1 {
+nav .title h1 {
   font-size: 28px;
   font-weight: 600;
   text-align: center;
   letter-spacing: 2px;
-  padding: 15px 0px;
+  padding-bottom: 15px;
   margin: 0px;
 }
 
 @media screen and (max-width: 1200px) {
-  .title h1 {
+  nav .title h1 {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .title h1 {
+  nav .title h1 {
     font-size: 20px;
   }
+}
+
+nav .big-selects {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+nav .big-selects .big-select-title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 1200px) {
+  nav .big-selects .big-select-title {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  nav .big-selects .big-select-title {
+    font-size: 16px;
+  }
+}
+
+nav .big-selects .big-select {
+  width: 98%;
+  max-width: 240px;
+  font-weight: 600;
+  color: #11264b;
+  text-align: center;
+  letter-spacing: 1.5px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3px 3px 0px 0px;
+}
+
+nav .big-selects .big-select .fa-sort-down {
+  font-size: 28px;
+  color: #11264b;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
+}
+
+nav .big-selects .big-select label {
+  top: 5px;
+  left: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+nav .big-selects .big-select .select-options {
+  width: 100%;
+  display: none;
+  background-color: #768da7;
+  border-radius: 0px 0px 10px 10px;
+  -webkit-box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.384);
+          box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.384);
+  position: absolute;
+  top: 100%;
+  z-index: 50;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
+nav .big-selects .big-select .select-options .select-option {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 2px;
+  color: white;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  nav .big-selects .big-select .select-options .select-option {
+    font-size: 16px;
+    padding: 4px 2px;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  nav .big-selects .big-select .select-options .select-option {
+    font-size: 14px;
+  }
+}
+
+nav .big-selects .big-select .select-options .select-option:hover {
+  background-color: antiquewhite;
+  color: #11264b;
+  cursor: pointer;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+nav .big-selects .big-select .select-options .select-option.active {
+  background-color: antiquewhite;
+  color: #11264b;
+  cursor: pointer;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+nav .big-selects .big-select .select-text {
+  width: 100%;
+  padding: 6px 0px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+  display: block;
+  border: 2px solid #11264b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  nav .big-selects .big-select .select-text {
+    font-size: 16px;
+    padding: 4px 0px;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  nav .big-selects .big-select .select-text {
+    font-size: 14px;
+  }
+}
+
+nav .big-selects .big-select .select-text .select-name {
+  text-align: center;
+}
+
+nav .paper-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 12px;
+}
+
+nav .paper-btns .paper-btn {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-weight: 600;
+  background-color: seashell;
+  margin-right: 10px;
+}
+
+nav .paper-btns .paper-btn:nth-last-child(1) {
+  margin-right: 0px;
 }
 
 main {
@@ -111,172 +305,6 @@ main {
   }
 }
 
-main .big-selects {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 15px;
-}
-
-main .big-selects .big-select-title {
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-}
-
-@media screen and (max-width: 1200px) {
-  main .big-selects .big-select-title {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  main .big-selects .big-select-title {
-    font-size: 16px;
-  }
-}
-
-main .big-selects .big-select {
-  width: 98%;
-  max-width: 240px;
-  font-weight: 600;
-  color: #11264b;
-  text-align: center;
-  letter-spacing: 1.5px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 3px 3px 0px 0px;
-}
-
-main .big-selects .big-select .fa-sort-down {
-  font-size: 28px;
-  color: #11264b;
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  -webkit-transform: translateY(-70%);
-          transform: translateY(-70%);
-}
-
-main .big-selects .big-select label {
-  top: 5px;
-  left: 20px;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-main .big-selects .big-select .select-options {
-  width: 100%;
-  display: none;
-  background-color: #768da7;
-  border-radius: 0px 0px 10px 10px;
-  -webkit-box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.384);
-          box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.384);
-  position: absolute;
-  top: 100%;
-  z-index: 50;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  max-height: 40vh;
-  overflow-y: auto;
-}
-
-main .big-selects .big-select .select-options .select-option {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  list-style: none;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 5px 2px;
-  color: white;
-  -webkit-transition: all .25s;
-  transition: all .25s;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 1200px) {
-  main .big-selects .big-select .select-options .select-option {
-    font-size: 16px;
-    padding: 4px 2px;
-    letter-spacing: 1px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  main .big-selects .big-select .select-options .select-option {
-    font-size: 14px;
-  }
-}
-
-main .big-selects .big-select .select-options .select-option:hover {
-  background-color: antiquewhite;
-  color: #11264b;
-  cursor: pointer;
-  -webkit-transition: .6s;
-  transition: .6s;
-}
-
-main .big-selects .big-select .select-options .select-option.active {
-  background-color: antiquewhite;
-  color: #11264b;
-  cursor: pointer;
-  -webkit-transition: .6s;
-  transition: .6s;
-}
-
-main .big-selects .big-select .select-text {
-  width: 100%;
-  padding: 6px 0px;
-  font-size: 18px;
-  letter-spacing: 2px;
-  text-align: center;
-  display: block;
-  border: 2px solid #11264b;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  cursor: pointer;
-  padding-right: 20px;
-}
-
-@media screen and (max-width: 1200px) {
-  main .big-selects .big-select .select-text {
-    font-size: 16px;
-    padding: 4px 0px;
-    letter-spacing: 1px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  main .big-selects .big-select .select-text {
-    font-size: 14px;
-  }
-}
-
-main .big-selects .big-select .select-text .select-name {
-  text-align: center;
-}
-
 main .allchoice {
   width: 100%;
   display: -webkit-box;
@@ -287,9 +315,19 @@ main .allchoice {
           justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  main .allchoice {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 main .allchoice .choice {
   width: 100%;
   letter-spacing: 1px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -300,6 +338,12 @@ main .allchoice .choice {
 
 main .allchoice .choice:nth-child(1) {
   width: 40%;
+}
+
+@media screen and (max-width: 767px) {
+  main .allchoice .choice:nth-child(1) {
+    width: 100%;
+  }
 }
 
 main .allchoice .choice:nth-child(1) .choice-title {
@@ -331,8 +375,27 @@ main .allchoice .choice:nth-child(2) .all-choice-content .choice-content li .num
   background-color: burlywood;
 }
 
+@media screen and (max-width: 767px) {
+  main .allchoice .choice:nth-child(2) {
+    width: 100%;
+  }
+  main .allchoice .choice:nth-child(2) .all-choice-content .choice-title {
+    display: block;
+    width: 25%;
+  }
+  main .allchoice .choice:nth-child(2) .all-choice-content .choice-content {
+    width: 75%;
+  }
+}
+
 main .allchoice .choice:nth-child(3) {
   width: 30%;
+}
+
+@media screen and (max-width: 767px) {
+  main .allchoice .choice:nth-child(3) {
+    width: 100%;
+  }
 }
 
 main .allchoice .choice:nth-child(3) .all-choice-content .choice-title {
@@ -346,6 +409,19 @@ main .allchoice .choice:nth-child(3) .all-choice-content .choice-content {
 
 main .allchoice .choice:nth-child(3) .all-choice-content .choice-content li .number {
   background-color: salmon;
+}
+
+@media screen and (max-width: 767px) {
+  main .allchoice .choice:nth-child(3) {
+    width: 100%;
+  }
+  main .allchoice .choice:nth-child(3) .all-choice-content .choice-title {
+    display: block;
+    width: 25%;
+  }
+  main .allchoice .choice:nth-child(3) .all-choice-content .choice-content {
+    width: 75%;
+  }
 }
 
 main .allchoice .choice .all-choice-content {
@@ -363,12 +439,6 @@ main .allchoice .choice .all-choice-content .choice-title {
   border-right: 2px solid #11264b;
   border-left: 2px solid #11264b;
   width: 25%;
-}
-
-@media screen and (max-width: 1200px) {
-  main .allchoice .choice .all-choice-content .choice-title {
-    width: 15%;
-  }
 }
 
 @media screen and (max-width: 440px) {
@@ -814,7 +884,10 @@ main .allchoice .choice .all-choice-content .choice-content li .small-choices .s
   border-right: 0px solid transparent;
 }
 
-main .price-select-information {
+main .allchoice .choice .price-select-information {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   margin-top: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -822,7 +895,7 @@ main .price-select-information {
 }
 
 @media screen and (max-width: 1200px) {
-  main .price-select-information {
+  main .allchoice .choice .price-select-information {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -836,7 +909,13 @@ main .price-select-information {
   }
 }
 
-main .price-select-information .print-name {
+@media screen and (max-width: 767px) {
+  main .allchoice .choice .price-select-information {
+    display: none;
+  }
+}
+
+main .allchoice .choice .price-select-information .print-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -847,19 +926,19 @@ main .price-select-information .print-name {
   margin-bottom: 16px;
 }
 
-main .price-select-information .print-name .print-name-title {
+main .allchoice .choice .price-select-information .print-name .print-name-title {
   font-size: 18px;
   font-weight: 600;
   margin-right: 8px;
 }
 
 @media screen and (max-width: 1200px) {
-  main .price-select-information .print-name .print-name-title {
+  main .allchoice .choice .price-select-information .print-name .print-name-title {
     font-size: 16px;
   }
 }
 
-main .price-select-information .print-name input {
+main .allchoice .choice .price-select-information .print-name input {
   height: 32px;
   width: 400px;
   border: radius 3px;
@@ -871,12 +950,15 @@ main .price-select-information .print-name input {
 }
 
 @media screen and (max-width: 1200px) {
-  main .price-select-information .print-name input {
+  main .allchoice .choice .price-select-information .print-name input {
     height: 28px;
   }
 }
 
-main .price-select-information .price-selects {
+main .allchoice .choice .price-select-information .price-selects {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -889,24 +971,24 @@ main .price-select-information .price-selects {
 }
 
 @media screen and (max-width: 1200px) {
-  main .price-select-information .price-selects {
+  main .allchoice .choice .price-select-information .price-selects {
     font-size: 16px;
   }
 }
 
-main .price-select-information .price-selects .price-select-name {
+main .allchoice .choice .price-select-information .price-selects .price-select-name {
   font-size: 18px;
   font-weight: 600;
   margin-right: 8px;
 }
 
 @media screen and (max-width: 1200px) {
-  main .price-select-information .price-selects .price-select-name {
+  main .allchoice .choice .price-select-information .price-selects .price-select-name {
     font-size: 16px;
   }
 }
 
-main .price-select-information .price-selects .number-select {
+main .allchoice .choice .price-select-information .price-selects .number-select {
   width: 180px;
   height: 32px;
   background-color: ghostwhite;
@@ -927,12 +1009,12 @@ main .price-select-information .price-selects .number-select {
 }
 
 @media screen and (max-width: 1200px) {
-  main .price-select-information .price-selects .number-select {
+  main .allchoice .choice .price-select-information .price-selects .number-select {
     height: 28px;
   }
 }
 
-main .price-select-information .price-selects .number-select:hover {
+main .allchoice .choice .price-select-information .price-selects .number-select:hover {
   background-color: #11264b;
   color: white;
   border: 0px solid transparent;
@@ -940,19 +1022,19 @@ main .price-select-information .price-selects .number-select:hover {
   transition: .6s;
 }
 
-main .price-select-information .price-selects .number-select:hover .fa-sort-down {
+main .allchoice .choice .price-select-information .price-selects .number-select:hover .fa-sort-down {
   color: white;
   border: 0px solid transparent;
   -webkit-transition: .6s;
   transition: .6s;
 }
 
-main .price-select-information .price-selects .number-select.active {
+main .allchoice .choice .price-select-information .price-selects .number-select.active {
   background-color: #11264b;
   color: white;
 }
 
-main .price-select-information .price-selects .number-select .fa-sort-down {
+main .allchoice .choice .price-select-information .price-selects .number-select .fa-sort-down {
   font-size: 24px;
   color: #11264b;
   position: absolute;
@@ -962,37 +1044,37 @@ main .price-select-information .price-selects .number-select .fa-sort-down {
           transform: translateY(-70%);
 }
 
-main .price-select-information .price-selects .number-select .fa-sort-down.active {
+main .allchoice .choice .price-select-information .price-selects .number-select .fa-sort-down.active {
   color: white;
   z-index: 80;
 }
 
 @media screen and (max-width: 1400px) {
-  main .price-select-information .price-selects .number-select .fa-sort-down {
+  main .allchoice .choice .price-select-information .price-selects .number-select .fa-sort-down {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  main .price-select-information .price-selects .number-select .fa-sort-down {
+  main .allchoice .choice .price-select-information .price-selects .number-select .fa-sort-down {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  main .price-select-information .price-selects .number-select .fa-sort-down {
+  main .allchoice .choice .price-select-information .price-selects .number-select .fa-sort-down {
     font-size: 18px;
   }
 }
 
-main .price-select-information .price-selects .number-select label {
+main .allchoice .choice .price-select-information .price-selects .number-select label {
   top: 5px;
   left: 20px;
   font-size: 12px;
   font-weight: 700;
 }
 
-main .price-select-information .price-selects .number-select .select-options {
+main .allchoice .choice .price-select-information .price-selects .number-select .select-options {
   width: 100%;
   display: none;
   background-color: #768da7;
@@ -1013,7 +1095,7 @@ main .price-select-information .price-selects .number-select .select-options {
   overflow-y: auto;
 }
 
-main .price-select-information .price-selects .number-select .select-options .select-option {
+main .allchoice .choice .price-select-information .price-selects .number-select .select-options .select-option {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -1029,18 +1111,18 @@ main .price-select-information .price-selects .number-select .select-options .se
 }
 
 @media screen and (max-width: 1400px) {
-  main .price-select-information .price-selects .number-select .select-options .select-option {
+  main .allchoice .choice .price-select-information .price-selects .number-select .select-options .select-option {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  main .price-select-information .price-selects .number-select .select-options .select-option {
+  main .allchoice .choice .price-select-information .price-selects .number-select .select-options .select-option {
     font-size: 12px;
   }
 }
 
-main .price-select-information .price-selects .number-select .select-options .select-option:hover {
+main .allchoice .choice .price-select-information .price-selects .number-select .select-options .select-option:hover {
   background-color: antiquewhite;
   color: #11264b;
   cursor: pointer;
@@ -1048,7 +1130,7 @@ main .price-select-information .price-selects .number-select .select-options .se
   transition: .6s;
 }
 
-main .price-select-information .price-selects .number-select .select-options .select-option.active {
+main .allchoice .choice .price-select-information .price-selects .number-select .select-options .select-option.active {
   background-color: antiquewhite;
   color: #11264b;
   cursor: pointer;
@@ -1056,7 +1138,7 @@ main .price-select-information .price-selects .number-select .select-options .se
   transition: .6s;
 }
 
-main .price-select-information .price-selects .number-select .select-text {
+main .allchoice .choice .price-select-information .price-selects .number-select .select-text {
   width: 100%;
   height: auto;
   font-size: 20px;
@@ -1073,24 +1155,318 @@ main .price-select-information .price-selects .number-select .select-text {
   cursor: pointer;
 }
 
-main .price-select-information .price-selects .number-select .select-text .select-name {
+main .allchoice .choice .price-select-information .price-selects .number-select .select-text .select-name {
   text-align: center;
 }
 
-main .price-select-information .price-selects1 .number-text {
+main .allchoice .choice .price-select-information .price-selects1 .number-text {
   margin-right: 8px;
 }
 
-main .price-select-information .price-selects1 .number-select {
+main .allchoice .choice .price-select-information .price-selects1 .number-select {
   width: 80px;
 }
 
-main .price-select-information .price-selects1 .number-select .select-text {
+main .allchoice .choice .price-select-information .price-selects1 .number-select .select-text {
   padding-right: 20px;
 }
 
 @media screen and (max-width: 1200px) {
-  main .price-select-information .price-selects1 .number-select .fa-sort-down {
+  main .allchoice .choice .price-select-information .price-selects1 .number-select .fa-sort-down {
+    right: 5px;
+  }
+}
+
+main .price-select-informations {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  main .price-select-informations {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  main .price-select-informations {
+    display: block;
+  }
+}
+
+main .price-select-informations .print-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+main .price-select-informations .print-name .print-name-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+  main .price-select-informations .print-name .print-name-title {
+    font-size: 16px;
+  }
+}
+
+main .price-select-informations .print-name input {
+  height: 32px;
+  width: 400px;
+  border: radius 3px;
+  border: 1px solid gray;
+  background-color: ghostwhite;
+  color: #11264b;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  main .price-select-informations .print-name input {
+    height: 28px;
+  }
+}
+
+main .price-select-informations .price-selects {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+  main .price-select-informations .price-selects {
+    font-size: 16px;
+  }
+}
+
+main .price-select-informations .price-selects .price-select-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+  main .price-select-informations .price-selects .price-select-name {
+    font-size: 16px;
+  }
+}
+
+main .price-select-informations .price-selects .number-select {
+  width: 180px;
+  height: 32px;
+  background-color: ghostwhite;
+  border: 1px solid gray;
+  font-weight: 600;
+  color: #11264b;
+  text-align: center;
+  letter-spacing: 1.5px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px 0px;
+  margin-right: 3px;
+}
+
+@media screen and (max-width: 1200px) {
+  main .price-select-informations .price-selects .number-select {
+    height: 28px;
+  }
+}
+
+main .price-select-informations .price-selects .number-select:hover {
+  background-color: #11264b;
+  color: white;
+  border: 0px solid transparent;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+main .price-select-informations .price-selects .number-select:hover .fa-sort-down {
+  color: white;
+  border: 0px solid transparent;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+main .price-select-informations .price-selects .number-select.active {
+  background-color: #11264b;
+  color: white;
+}
+
+main .price-select-informations .price-selects .number-select .fa-sort-down {
+  font-size: 24px;
+  color: #11264b;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
+}
+
+main .price-select-informations .price-selects .number-select .fa-sort-down.active {
+  color: white;
+  z-index: 80;
+}
+
+@media screen and (max-width: 1400px) {
+  main .price-select-informations .price-selects .number-select .fa-sort-down {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main .price-select-informations .price-selects .number-select .fa-sort-down {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main .price-select-informations .price-selects .number-select .fa-sort-down {
+    font-size: 18px;
+  }
+}
+
+main .price-select-informations .price-selects .number-select label {
+  top: 5px;
+  left: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+main .price-select-informations .price-selects .number-select .select-options {
+  width: 100%;
+  display: none;
+  background-color: #768da7;
+  border-radius: 0px 0px 3px 3px;
+  -webkit-box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.384);
+          box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.384);
+  position: absolute;
+  top: 100%;
+  z-index: 50;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+  text-align: center;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+main .price-select-informations .price-selects .number-select .select-options .select-option {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px 2px;
+  border: 0px solid transparent;
+  color: white;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1400px) {
+  main .price-select-informations .price-selects .number-select .select-options .select-option {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main .price-select-informations .price-selects .number-select .select-options .select-option {
+    font-size: 12px;
+  }
+}
+
+main .price-select-informations .price-selects .number-select .select-options .select-option:hover {
+  background-color: antiquewhite;
+  color: #11264b;
+  cursor: pointer;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+main .price-select-informations .price-selects .number-select .select-options .select-option.active {
+  background-color: antiquewhite;
+  color: #11264b;
+  cursor: pointer;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+main .price-select-informations .price-selects .number-select .select-text {
+  width: 100%;
+  height: auto;
+  font-size: 20px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+main .price-select-informations .price-selects .number-select .select-text .select-name {
+  text-align: center;
+}
+
+main .price-select-informations .price-selects1 .number-text {
+  margin-right: 8px;
+}
+
+main .price-select-informations .price-selects1 .number-select {
+  width: 80px;
+}
+
+main .price-select-informations .price-selects1 .number-select .select-text {
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  main .price-select-informations .price-selects1 .number-select .fa-sort-down {
     right: 5px;
   }
 }
