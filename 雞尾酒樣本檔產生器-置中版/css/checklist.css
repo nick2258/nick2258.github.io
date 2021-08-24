@@ -1,0 +1,139 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul, ol {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+main ul {
+  width: 1200px;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main ul .love-item {
+  letter-spacing: 1px;
+  max-width: 100%;
+  width: 100%;
+  padding: 20px 45px;
+  border: 1px solid gray;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main ul .love-item .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0px 8px;
+  border-right: 2px solid gray;
+}
+
+main ul .love-item .title .title-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+
+main ul .love-item .title .title-item:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+main ul .love-item .title .title-item a {
+  display: block;
+  margin-right: 10px;
+}
+
+main ul .love-item .title .title-item a:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+main ul .love-item .title .title-item a img {
+  width: 40px;
+  height: 40px;
+}
+
+main ul ol {
+  padding-left: 8px;
+}
+
+main ul ol li {
+  width: 100%;
+  padding: 0px 8px;
+  padding-top: 8px;
+  border-top: 1px solid gray;
+}
+
+main ul ol li:nth-child(1) {
+  padding-top: 0px;
+  border-top: 0px solid transparent;
+}
+
+main ul ol li .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+}
+
+main ul ol li .items:nth-child(1) {
+  font-size: 18px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+main ul ol li .items:nth-child(1) .item {
+  margin-right: 20px;
+}
+
+main ul ol li .items .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+main ul ol li .items .item:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+main ul ol li .items .item .process::after {
+  content: ' + ';
+  margin: 0px 5px;
+}
+
+main ul ol li .items .item .process:nth-last-child(1)::after {
+  content: ' ';
+}
+/*# sourceMappingURL=checklist.css.map */
