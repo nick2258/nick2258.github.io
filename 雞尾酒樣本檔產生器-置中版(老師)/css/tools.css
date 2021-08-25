@@ -262,206 +262,6 @@ nav .nav-content .title h1 {
   }
 }
 
-nav .nav-content .big-selects {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 15px;
-}
-
-@media screen and (max-width: 740px) {
-  nav .nav-content .big-selects {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    padding: 0px 0.5vw;
-  }
-}
-
-nav .nav-content .big-selects .big-select-title {
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-}
-
-@media screen and (max-width: 1200px) {
-  nav .nav-content .big-selects .big-select-title {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  nav .nav-content .big-selects .big-select-title {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  nav .nav-content .big-selects .big-select-title {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  nav .nav-content .big-selects .big-select-title {
-    font-size: 14px;
-  }
-}
-
-nav .nav-content .big-selects .big-select {
-  width: 98%;
-  max-width: 240px;
-  font-weight: 600;
-  color: #11264b;
-  text-align: center;
-  letter-spacing: 1.5px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 3px 3px 0px 0px;
-}
-
-@media screen and (max-width: 400px) {
-  nav .nav-content .big-selects .big-select {
-    max-width: calc(100% - 140px);
-  }
-}
-
-nav .nav-content .big-selects .big-select .fa-sort-down {
-  font-size: 28px;
-  color: #11264b;
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  -webkit-transform: translateY(-70%);
-          transform: translateY(-70%);
-}
-
-@media screen and (max-width: 400px) {
-  nav .nav-content .big-selects .big-select .fa-sort-down {
-    right: 5px;
-    font-size: 24px;
-  }
-}
-
-nav .nav-content .big-selects .big-select label {
-  top: 5px;
-  left: 20px;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-nav .nav-content .big-selects .big-select .select-options {
-  width: 100%;
-  display: none;
-  background-color: #768da7;
-  border-radius: 0px 0px 10px 10px;
-  -webkit-box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.384);
-          box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.384);
-  position: absolute;
-  top: 100%;
-  z-index: 50;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  max-height: 40vh;
-  overflow-y: auto;
-}
-
-nav .nav-content .big-selects .big-select .select-options .select-option {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  list-style: none;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 5px 2px;
-  color: white;
-  -webkit-transition: all .25s;
-  transition: all .25s;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 1200px) {
-  nav .nav-content .big-selects .big-select .select-options .select-option {
-    font-size: 16px;
-    padding: 4px 2px;
-    letter-spacing: 1px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  nav .nav-content .big-selects .big-select .select-options .select-option {
-    font-size: 14px;
-  }
-}
-
-nav .nav-content .big-selects .big-select .select-options .select-option:hover {
-  background-color: antiquewhite;
-  color: #11264b;
-  cursor: pointer;
-  -webkit-transition: .6s;
-  transition: .6s;
-}
-
-nav .nav-content .big-selects .big-select .select-options .select-option.active {
-  background-color: antiquewhite;
-  color: #11264b;
-  cursor: pointer;
-  -webkit-transition: .6s;
-  transition: .6s;
-}
-
-nav .nav-content .big-selects .big-select .select-text {
-  width: 100%;
-  padding: 6px 0px;
-  padding-right: 20px;
-  font-size: 18px;
-  letter-spacing: 2px;
-  text-align: center;
-  display: block;
-  border: 2px solid #11264b;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 1200px) {
-  nav .nav-content .big-selects .big-select .select-text {
-    font-size: 16px;
-    padding: 4px 0px;
-    letter-spacing: 1px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  nav .nav-content .big-selects .big-select .select-text {
-    font-size: 14px;
-  }
-}
-
-nav .nav-content .big-selects .big-select .select-text .select-name {
-  text-align: center;
-}
-
 nav .nav-content .paper-btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -543,9 +343,6 @@ main .allchoice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media screen and (max-width: 860px) {
@@ -656,6 +453,220 @@ main .allchoice .choice:nth-child(3) .all-choice-content .choice-content li .num
   main .allchoice .choice:nth-child(3) .all-choice-content .choice-content {
     width: 75%;
   }
+}
+
+main .allchoice .choice .big-selects {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 740px) {
+  main .allchoice .choice .big-selects {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding: 0px 0.5vw;
+  }
+}
+
+main .allchoice .choice .big-selects .big-select-title {
+  width: 25%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  border: 2px solid #080842;
+  background-color: #fff2cd;
+}
+
+@media screen and (max-width: 1200px) {
+  main .allchoice .choice .big-selects .big-select-title {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .allchoice .choice .big-selects .big-select-title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .allchoice .choice .big-selects .big-select-title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main .allchoice .choice .big-selects .big-select-title {
+    font-size: 14px;
+  }
+}
+
+main .allchoice .choice .big-selects .big-select {
+  width: 75%;
+  max-width: 240px;
+  font-weight: 600;
+  color: #11264b;
+  text-align: center;
+  letter-spacing: 1.5px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3px 3px 0px 0px;
+}
+
+@media screen and (max-width: 400px) {
+  main .allchoice .choice .big-selects .big-select {
+    max-width: calc(100% - 140px);
+  }
+}
+
+main .allchoice .choice .big-selects .big-select .fa-sort-down {
+  font-size: 28px;
+  color: #11264b;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
+}
+
+@media screen and (max-width: 400px) {
+  main .allchoice .choice .big-selects .big-select .fa-sort-down {
+    right: 5px;
+    font-size: 24px;
+  }
+}
+
+main .allchoice .choice .big-selects .big-select label {
+  top: 5px;
+  left: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+main .allchoice .choice .big-selects .big-select .select-options {
+  width: 100%;
+  display: none;
+  background-color: #768da7;
+  border-radius: 0px 0px 10px 10px;
+  -webkit-box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.384);
+          box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.384);
+  position: absolute;
+  top: 100%;
+  z-index: 50;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
+main .allchoice .choice .big-selects .big-select .select-options .select-option {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 2px;
+  color: white;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  main .allchoice .choice .big-selects .big-select .select-options .select-option {
+    font-size: 16px;
+    padding: 4px 2px;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .allchoice .choice .big-selects .big-select .select-options .select-option {
+    font-size: 14px;
+  }
+}
+
+main .allchoice .choice .big-selects .big-select .select-options .select-option:hover {
+  background-color: antiquewhite;
+  color: #11264b;
+  cursor: pointer;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+main .allchoice .choice .big-selects .big-select .select-options .select-option.active {
+  background-color: antiquewhite;
+  color: #11264b;
+  cursor: pointer;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+main .allchoice .choice .big-selects .big-select .select-text {
+  width: 100%;
+  height: 50px;
+  padding: 6px 0px;
+  padding-right: 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+  display: block;
+  border: 2px solid #11264b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  main .allchoice .choice .big-selects .big-select .select-text {
+    font-size: 16px;
+    padding: 4px 0px;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main .allchoice .choice .big-selects .big-select .select-text {
+    font-size: 14px;
+  }
+}
+
+main .allchoice .choice .big-selects .big-select .select-text .select-name {
+  text-align: center;
 }
 
 main .allchoice .choice .all-choice-content {
