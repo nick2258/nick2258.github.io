@@ -268,14 +268,6 @@ main ul .love-item .title .title-item {
   position: relative;
 }
 
-@media screen and (max-width: 1250px) {
-  main ul .love-item .title .title-item:nth-last-child(1) {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-  }
-}
-
 main ul .love-item .title .title-item label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -349,46 +341,53 @@ main ul ol li:nth-child(1) {
   }
 }
 
-main ul ol li .items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 14px;
-}
-
-main ul ol li .items:nth-child(1) {
+main ul ol li .items-title {
   font-size: 18px;
   font-size: 16px;
   font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-main ul ol li .items:nth-child(1) .item {
+main ul ol li .items-title .item {
   margin-right: 20px;
 }
 
-main ul ol li .items .item {
+main ul ol li .all-items .items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 14px;
+}
+
+main ul ol li .all-items .items .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 8px;
 }
 
-main ul ol li .items .item:nth-last-child(1) {
+main ul ol li .all-items .items .item:nth-last-child(1) {
   margin-right: 0px;
 }
 
-main ul ol li .items .item .process {
+main ul ol li .all-items .items .item .process {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main ul ol li .items .item .process::after {
+main ul ol li .all-items .items .item .process::after {
   content: ' + ';
   margin: 0px 5px;
 }
 
-main ul ol li .items .item .process:nth-last-child(1)::after {
+main ul ol li .all-items .items .item .process:nth-last-child(1)::after {
   content: ' ';
 }
 /*# sourceMappingURL=checklist.css.map */

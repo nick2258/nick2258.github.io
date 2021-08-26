@@ -224,11 +224,11 @@ main{
                     position: relative;
                    
                     @media screen and (max-width:1250px){
-                        &:nth-last-child(1){
-                            position: absolute;
-                            top: 0px;
-                            right: 0px;
-                        }
+                        // &:nth-last-child(1){
+                        //     position: absolute;
+                        //     top: 0px;
+                        //     right: 0px;
+                        // }
     
                     }
                   
@@ -296,39 +296,46 @@ main{
                     padding:0px;
                     padding-top: 8px;
                 }
-                .items{
+                .items-title{
+                    font-size: 18px;
+                    font-size: 16px;
+                    font-weight: 600;
                     display: flex;
-                   font-size: 14px;
-                    &:nth-child(1){
-                        font-size: 18px;
-                        font-size: 16px;
-                        font-weight: 600;
-                        .item{
-                            margin-right: 20px;
-                        }
-                    }
                     .item{
-                        display: flex;
-                        
-                        margin-bottom: 8px;
-                        &:nth-last-child(1){
-                            margin-right: 0px;
-                        }
-                        
-                        .process{
-                            display: flex;
-                            &::after{
-                                content: ' + ';
-                                margin: 0px 5px;
-                            }
-                            &:nth-last-child(1)::after{
-                                content: ' ';
-                            }
-                        }
-                        
-                        
+                        margin-right: 20px;
                     }
                 }
+                .all-items{
+                    .items{
+                        display: flex;
+                        flex-wrap: wrap;
+                        font-size: 14px;
+                      
+                        .item{
+                            display: flex;
+                            flex-wrap: wrap;
+                            
+                            margin-bottom: 8px;
+                            &:nth-last-child(1){
+                                margin-right: 0px;
+                            }
+                            
+                            .process{
+                                display: flex;
+                                &::after{
+                                    content: ' + ';
+                                    margin: 0px 5px;
+                                }
+                                &:nth-last-child(1)::after{
+                                    content: ' ';
+                                }
+                            }
+                            
+                            
+                        }
+                    }
+                }
+               
             }
         }
     }
