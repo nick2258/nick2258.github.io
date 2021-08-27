@@ -11,37 +11,45 @@
 
 </head>
 <body>
-    <div class="user-login-contents " >
-      
+    <!-- 我的清單 側邊滑動顯示 滿版-->
+    <div class="love-lists " >
+        <!-- 會員編號 -->
         <div class="user-login-content">會員編號:123456789</div>
+        <!-- 我的清單內容(多個) -->
         <ul>
+            <!-- 我的清單內容(單個) -->
             <li class="love-item">
+                <!-- 上方選取刪除按鈕 -->
                 <div class="btn">
                     <label><input type="checkbox" name="" value="" />
                         <span class=" select-btn">選取為預設內容</span>
                     </label> 
                     
                     <div class="delete-btn">
-                        <span>刪除項目</span>
+                        <span>刪除</span>
                     </div> 
                 </div>
+
+                <!-- 單個清單標題 -->
                 <div class="title">
                     
-                    <div class="title-item">印刷品名稱： <span>這是印刷品名稱</span></div>
-                    <div class="title-item">數量： <span>10000個</span></div>
+                    <div class="title-item">客戶名簡稱： <span>這是客戶名簡稱</span></div>
+                    <div class="title-item">印刷資訊： <span> <span> Illustrator</span>/ <span>雞尾酒名片/3張紙</span> </span></div>
+                    <div class="title-item">數量： <span>10000<span>個</span></span></div>
                     <div class="title-item">建立時間： <span>2021年08月25日16點00分</span></div>
-                   
-
-
+            
                 </div>
 
+                <!-- 紙張(多個) -->
                 <ol>
+                    <!-- 單張紙 -->
                     <li class="">
+                        <!-- 紙材 -->
                         <div class="items items-title">
                             <div class="item">第一張紙 </div>
                             <div class="item">紙材:一級卡 </div>
                         </div>
-
+                        <!-- 正反面 -->
                         <div class="all-items">
                             <div class="items">
                                 <div class="item">正面: </div>
@@ -142,124 +150,169 @@
                             </div>
                         </div>
                        
-                    </li>
-
-                       
+                    </li> 
                 </ol>
-
-            
             </li>
 
         </ul>
-        <!-- <a href="./checklist.html" class="user-login-content" style="cursor: pointer;" target="blank">我的最愛</a>
-        <a class="user-login-content log-out" style="cursor: pointer;">登出</a> -->
+        <!-- 刪除 -->
         <i class="fas fa-window-close" style="cursor: pointer;"></i>
 
     </div>
+
+    <div class="price-file">
+         <!-- 橫式上方選擇欄 -->
+         <div class="top-choices" >
+            <div class="all-big-selects-title all-big-result-title">
+                <span>價格與樣本檔</span>
+            </div>
+            <div class="all-big-selects all-big-result">
+                <!-- 橫式版型 報價 樣本檔 -->
+            <div class="results">
+                <!-- 橫式版型 報價 -->
+                <div class="price result">
+                    <div class="title">報價：</div>
+                    <div class="price-text">
+                        <span>$1000000</span>
+                    </div>
+                    <span>未稅</span>
+                </div>
+
+                <!-- 橫式版型 樣本檔 依選擇出現相對應類型樣本檔 -->
+                <div class="files result">
+                    <div class="title">樣本檔下載：</div>
+                    
+                    <a href="" download="ai樣本檔">
+                        <img src="./image/aipng.png" alt="">
+                        <div class="text">樣本檔下載</div>
+                    </a>
+    
+                    <a href="" download="cdr樣本檔" style="display: none;">
+                        <img src="./image/cdr_icon.png" alt="">
+                    </a>
+                </div>
+    
+            </div>
+
+            <!-- 橫式版型加入我的清單按鈕 -->
+            <div class="love-btns">
+                <button class="btn" title="加入我的清單後可以選為快速讀取清單">
+                    <span>將選取結果</span><span>加入我的清單</span>
+                </button>
+
+                <button class="btn close-price-file-btn" title="">
+                    <span>關閉</span>
+                </button>
+            </div>
+            </div>
+
+           
+        </div>
+    </div>
     <nav>
-        <div class="nav-content">
+        <section class="nav-content">
+
+            <!-- 未登入時畫面 -->
             <div class="nav-items" style="display: none;">
                 <div class="user">訪客，您好</div>
                 <div class="log login">登入</div>
-             </div>
+            </div>
      
-             <div class="nav-items"  >
+             <!-- 登入時畫面 -->
+            <div class="nav-items"  >
                  <div class="log user-login" style="cursor: pointer;">我的清單</div>
                  <div class="log logout">登出</div>
-                
-                 
-              </div>
+            </div>
      
                <!-- 標題 -->
-             <section class="title">
+            <div class="title">
                  <h1>樣本檔產生器</h1>
-             </section>
+            </div>
      
-     
-             <section class="paper-btns">
+            <!-- 直式版型選擇紙張張數 -->
+             <div class="paper-btns">
                      <div class="all-paper paper-btn">所有張數</div>
                      <div class="paper-btn paper">第一張</div>
                      <div class="paper-btn paper">第二張</div>
                      <div class="paper-btn paper">第三張</div>
-             </section>
-        </div>
+            </div>
+        </section>
      
     </nav>
    
-
-    
-   
-    <!-- 下方內容 -->
+    <!-- 下方表單內容 -->
     <main>
+        <!-- 直式版型出現上方選擇欄 -->
         <div class="top-choices-phone" >
+            <!-- 多個選擇欄 -->
             <div class="all-big-selects">
+                <!-- 客戶名簡稱輸入欄 -->
                 <div class="big-selects" >
                     <div class="big-select-title">
                         <span>客戶名</span><span>簡稱</span>
                     </div>
                     <input type="text" placeholder="請輸入客戶名簡稱">
                 </div>
-                <div class="big-selects" >
-            <div class="big-select-title">
-                <span>選擇</span><span>軟體</span>
-            </div>
-            <div class="dino-input-field  custom-select  big-select">
-               <label></label>
-       
-               <span class=" select-text">
-               <span id="" class="select-name">請選擇軟體</span>
-       
-               </span>
-       
-               <!-- 下拉式選單內容 預設第一張-->
-               <ul id="" class="select-options  ">
-                   <li class="select-option select-option1" >一張紙</li>
-                   <li class="select-option select-option2">兩張紙</li>
-                   <li class="select-option select-option3" >三張紙</li>
-                   
-               </ul>
-       
-               <!-- 下拉式選單箭頭icon -->
-               <i class="fas fa-sort-down"></i>
-       
-    
-    
-            </div>
 
-           
+                <!-- 選擇軟體選擇欄 -->
+                <div class="big-selects" >
+                    <div class="big-select-title">
+                        <span>選擇</span><span>軟體</span>
+                    </div>
+                    <!-- 選擇軟體選單 -->
+                    <div class="dino-input-field  custom-select  big-select">
+                        <label></label>
+                
+                        <span class=" select-text">
+                        <span id="" class="select-name">請選擇軟體</span>
+                
+                        </span>
+                
+                        <!-- 下拉式選單內容 預設第一張-->
+                        <ul id="" class="select-options  ">
+                            <li class="select-option select-option1" >Illustrator
+                            </li>
+                            <li class="select-option select-option2">CorelDRAW</li>                            
+                        </ul>
+                
+                        <!-- 下拉式選單箭頭icon -->
+                        <i class="fas fa-sort-down"></i>
+            
+                    </div>
                 </div>
+
+                <!-- 印刷品項選擇欄 -->
                 <div class="big-selects" >
                     <div class="big-select-title">
                         <span>印刷</span><span>品項</span>
                     </div>
                     <div class="dino-input-field  custom-select  big-select">
-                    <label></label>
-            
-                    <span class=" select-text">
-                    <span id="" class="select-name">請選擇印刷品項</span>
-            
-                    </span>
-            
-                    <!-- 下拉式選單內容 預設第一張-->
-                    <ul id="" class="select-options  ">
-                        <li class="select-option select-option1" >一張紙</li>
-                        <li class="select-option select-option2">兩張紙</li>
-                        <li class="select-option select-option3" >三張紙</li>
-                        
-                    </ul>
-            
-                    <!-- 下拉式選單箭頭icon -->
-                    <i class="fas fa-sort-down"></i>
-            
-            
-            
-                    </div>
+                        <label></label>
+                
+                        <span class=" select-text">
+                        <span id="" class="select-name">請選擇印刷品項</span>
+                
+                        </span>
+                
+                        <!-- 下拉式選單內容 預設第一張-->
+                        <ul id="" class="select-options  ">
+                            <li class="select-option select-option1" >雞尾酒單張</li>
+                            <li class="select-option select-option2">雞尾酒名片</li>
+                            <li class="select-option select-option3" >雞尾酒貼紙</li>
+                            
+                        </ul>
+                
+                        <!-- 下拉式選單箭頭icon -->
+                        <i class="fas fa-sort-down"></i>
         
+                    </div>
                 
                 </div>
+
+                <!-- 印刷用紙張數選擇欄 -->
                 <div class="big-selects" >
                     <div class="big-select-title">
-                        <span>印刷用紙</span><span>張數</span>
+                        <span>印刷用紙張數</span><span></span>
                     </div>
                     <div class="dino-input-field  custom-select  big-select">
                        <label></label>
@@ -279,70 +332,41 @@
                
                        <!-- 下拉式選單箭頭icon -->
                        <i class="fas fa-sort-down"></i>
-               
-            
-            
                     </div>
-                </div>
-              
-              
+                </div> 
             </div>
         
-        </div>
-
-       
-      
-       
+        </div>       
+         
         <!-- 所有張數 -->
-        <section class="allchoice">
+        <section class="allchoice" >
             <!-- 一張 -->
             <div class="choice choice1">
+                <!-- 橫式上方選擇欄 -->
                 <div class="top-choices">
+                    <div class="all-big-selects-title">
+                        <span>印刷資訊</span>
+                    </div>
+
+                    <!-- 所有輸入選擇欄 -->
                     <div class="all-big-selects">
+                        <!-- 客戶名簡稱輸入欄 -->
                         <div class="big-selects" >
                             <div class="big-select-title">
                                 <span>客戶名</span><span>簡稱</span>
                             </div>
                             <input type="text" placeholder="請輸入客戶名簡稱">
                         </div>
-                        <div class="big-selects" >
-                    <div class="big-select-title">
-                        <span>選擇</span><span>軟體</span>
-                    </div>
-                    <div class="dino-input-field  custom-select  big-select">
-                       <label></label>
-               
-                       <span class=" select-text">
-                       <span id="" class="select-name">請選擇軟體</span>
-               
-                       </span>
-               
-                       <!-- 下拉式選單內容 預設第一張-->
-                       <ul id="" class="select-options  ">
-                           <li class="select-option select-option1" >一張紙</li>
-                           <li class="select-option select-option2">兩張紙</li>
-                           <li class="select-option select-option3" >三張紙</li>
-                           
-                       </ul>
-               
-                       <!-- 下拉式選單箭頭icon -->
-                       <i class="fas fa-sort-down"></i>
-               
-            
-            
-                    </div>
-        
-                   
-                        </div>
+                        <!-- 軟體選擇欄 -->
                         <div class="big-selects" >
                             <div class="big-select-title">
-                                <span>印刷</span><span>品項</span>
+                                <span>選擇</span><span>軟體</span>
                             </div>
                             <div class="dino-input-field  custom-select  big-select">
                             <label></label>
                     
                             <span class=" select-text">
-                            <span id="" class="select-name">請選擇印刷品項</span>
+                            <span id="" class="select-name">請選擇軟體</span>
                     
                             </span>
                     
@@ -360,12 +384,39 @@
                     
                     
                             </div>
-                
-                        
                         </div>
+
+                        <!-- 印刷品項選擇欄 -->
                         <div class="big-selects" >
                             <div class="big-select-title">
-                                <span>印刷用紙</span><span>張數</span>
+                                <span>印刷</span><span>品項</span>
+                            </div>
+                            <div class="dino-input-field  custom-select  big-select">
+                                <label></label>
+                        
+                                <span class=" select-text">
+                                <span id="" class="select-name">請選擇印刷品項</span>
+                        
+                                </span>
+                        
+                                <!-- 下拉式選單內容 預設第一張-->
+                                <ul id="" class="select-options  ">
+                                    <li class="select-option select-option1" >一張紙</li>
+                                    <li class="select-option select-option2">兩張紙</li>
+                                    <li class="select-option select-option3" >三張紙</li>
+                                    
+                                </ul>
+                        
+                                <!-- 下拉式選單箭頭icon -->
+                                <i class="fas fa-sort-down"></i>
+
+                            </div>
+                        </div>
+
+                        <!-- 印刷用紙張數選擇欄 -->
+                        <div class="big-selects" >
+                            <div class="big-select-title">
+                                <span>印刷用紙張數</span><span></span>
                             </div>
                             <div class="dino-input-field  custom-select  big-select">
                                <label></label>
@@ -385,118 +436,97 @@
                        
                                <!-- 下拉式選單箭頭icon -->
                                <i class="fas fa-sort-down"></i>
-                       
-                    
-                    
                             </div>
                         </div>
-                      
-                      
                     </div>
-                
                 </div>
+
                 <div class="all-choice-content">
-                       <!-- 左標 -->
-                <ul class="choice-title">
-                    <li>
-                        <span>
-                            <!-- <div>用紙</div> -->
-                            <div>張數別</div>
-                        </span> 
-                    </li>
-                    <li>
-                        <span>
-                            <div>紙張種類</div>
-                            <div>磅數</div>
-                        </span>
-                    </li>
-
-                    <li>
-                        <span>正反面</span>
-                    </li>
-
-                    <li>
-                        <span>
-                            <div>印刷</div>
-                            <div>方式</div>
-                            
-                        </span>
-                    </li>
-
-                    <li>
-                        <span>後加工
-                             <!-- <div class="small-text" >(第一道)</div>  -->
-                        </span>
-                    </li>
-
-                    <li>
-                        <span>後加工
-                            <!-- <div class="small-text" >(第二道)</div>  -->
-                        </span>
-                    </li>
-
-                    <li>
-                        <span>後加工
-                            <!-- <div class="small-text" >(第三道)</div>  -->
-                        </span>
-                    </li>
-
-                    <li>
-                        <span>後加工
-                            <!-- <div class="small-text" >(第四道)</div>  -->
-
-                        </span>
-                    </li>
-
-                    <li>
-                        <span>後加工
-                            <!-- <div class="small-text" >(第五道)</div>  -->
-                        </span>
-                    </li>
-
-                    <li>
-                        <span>後加工
-                            <!-- <div class="small-text" >(第六道)</div>  -->
-
-                        </span>
-                    </li>
-                </ul>
-
-                <!-- 右側內容 -->
-                <ul class="choice-content">
-                    <!-- 張數、正反面 -->
-                    <li >
-                        <!-- 張數 -->
-                        <div class="number">
-                            <span>第一張名片紙</span>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="dino-input-field  custom-select  select ">
-                            <label></label>
-    
-                            <span class=" select-text">
-                                <div id="" class="select-name">
-                                    <div class="">請選擇</div>
-                                    <div class="">印刷用紙</div>
-                                    
-                                </div>
-    
+                    <!-- 第一張左欄 橫式顯示 -->
+                    <ul class="choice-title">
+                        <li>
+                            <span>
+                                <div>張數別</div>
+                            </span> 
+                        </li>
+                        <li>
+                            <span>
+                                <div>紙張種類磅數</div>
+                                <div></div>
                             </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                                <li class="select-option" >測試1測試1測試1測試1</li>
-                                <li class="select-option">測試2</li>
-                                
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down "></i>
-    
-                        </div>
-                    </li>
+                        </li>
+
+                        <li>
+                            <span>正反面</span>
+                        </li>
+
+                        <li>
+                            <span>
+                                <div>印刷</div>
+                                <div>方式</div>
+                            </span>
+                        </li>
+
+                        <li>
+                            <span>後加工</span>
+                        </li>
+
+                        <li>
+                            <span>後加工</span>
+                        </li>
+
+                        <li>
+                            <span>後加工</span>
+                        </li>
+
+                        <li>
+                            <span>後加工</span>
+                        </li>
+
+                        <li>
+                            <span>後加工</span>
+                        </li>
+
+                        <li>
+                            <span>後加工</span>
+                        </li>
+                    </ul>
+
+                    <!-- 第一張右側內容 -->
+                    <ul class="choice-content">
+                        <!-- 張數 -->
+                        <li >
+                            <div class="number">
+                                <span>第一張名片紙</span>
+                            </div>
+                        </li>
+
+                        <!-- 印刷用紙 -->
+                        <li>
+                            <div class="dino-input-field  custom-select  select ">
+                                <label></label>
+        
+                                <span class=" select-text">
+                                    <div id="" class="select-name">
+                                        <div class="">請選擇</div>
+                                        <div class="">印刷用紙</div>
+                                        
+                                    </div>
+                                </span>
+        
+                                <!-- 下拉式選單內容 -->
+                                <ul id="" class="select-options  ">
+                                    <li class="select-option" >測試1測試1測試1測試1</li>
+                                    <li class="select-option">測試2</li>
+                                    
+                                </ul>
+        
+                                <!-- 下拉式選單箭頭icon -->
+                                <i class="fas fa-sort-down "></i>
+        
+                            </div>
+                        </li>
+
                         <!-- 正反面 -->
                         <li>
                             <div class="number">
@@ -508,366 +538,388 @@
                                 </div>
                             </div>
                         </li>
-                        
                     
-                   
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                                    <label></label>
-            
-                                    <span class=" select-text">
-                                        <span id="" class="select-name">
+                        <li>
+                            <!-- 小選擇欄 -->
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                            <span id="" class="select-name">
+                                                <div>請選擇</div> <div>印刷方式</div>
+                                                </span>
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >彩色印刷</li>
+                                            <li class="select-option">白墨</li>
+
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+                
+                                    </div>
+                                </div>
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
                                             <div>請選擇</div> <div>印刷方式</div>
-                                            </span>
-            
-                                    </span>
-            
-                                    <!-- 下拉式選單內容 -->
-                                    <ul id="" class="select-options  ">
-                                       <li class="select-option" >彩色印刷</li>
-                                       <li class="select-option">白墨</li>
-                                       
-                                    </ul>
-            
-                                    <!-- 下拉式選單箭頭icon -->
-                                    <i class="fas fa-sort-down"></i>
-            
-                                </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                                    <label></label>
-            
-                                    <span class=" select-text">
-                                        <div>請選擇</div> <div>印刷方式</div>
+                                        </span>
 
-                                    </span>
-            
-                                    <!-- 下拉式選單內容 -->
-                                    <ul id="" class="select-options  ">
-                                       <li class="select-option" >雙白</li>
-                                       <li class="select-option">彩白</li>
-                                       
-                                    </ul>
-            
-                                    <!-- 下拉式選單箭頭icon -->
-                                    <i class="fas fa-sort-down"></i>
-            
-                                </div>
-                            </div>
-                          
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                   <div class="dino-input-field  custom-select  select">
-                            <label></label>
-    
-                            <span class=" select-text">
-                                <!-- <span id="" class="select-name">請選擇後加工</span> -->
-                                <div>請選擇</div> <div>後加工</div>
-
-    
-                            </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                                <li class="select-option" >3D局部燙金</li>
-                                <li class="select-option">3D局部上光</li>
-                               
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down"></i>
-    
-                        </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                         <label></label>
- 
-                         <span class=" select-text">
-                           <div>請選擇</div> <div>後加工</div>
- 
-                         </span>
- 
-                         <!-- 下拉式選單內容 -->
-                         <ul id="" class="select-options  ">
-                            <li class="select-option" >3D局部燙金</li>
-                                       <li class="select-option">3D局部上光</li>
-                            
-                         </ul>
- 
-                         <!-- 下拉式選單箭頭icon -->
-                         <i class="fas fa-sort-down"></i>
- 
-                     </div>
-                         </div>
-                          
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                   <div class="dino-input-field  custom-select  select">
-                            <label></label>
-    
-                            <span class=" select-text">
-                              <div>請選擇</div> <div>後加工</div>
-    
-                            </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                               <li class="select-option" >測試1</li>
-                               <li class="select-option">測試2</li>
-                               
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down"></i>
-    
-                        </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                         <label></label>
- 
-                         <span class=" select-text">
-                           <div>請選擇</div> <div>後加工</div>
- 
-                         </span>
- 
-                         <!-- 下拉式選單內容 -->
-                         <ul id="" class="select-options  ">
-                            <li class="select-option" >測試1</li>
-                            <li class="select-option">測試2</li>
-                            
-                         </ul>
- 
-                         <!-- 下拉式選單箭頭icon -->
-                         <i class="fas fa-sort-down"></i>
- 
-                     </div>
-                         </div>
-                          
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                   <div class="dino-input-field  custom-select  select">
-                            <label></label>
-    
-                            <span class=" select-text">
-                              <div>請選擇</div> <div>後加工</div>
-    
-                            </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                               <li class="select-option" >測試1</li>
-                               <li class="select-option">測試2</li>
-                               
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down"></i>
-    
-                        </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                         <label></label>
- 
-                         <span class=" select-text">
-                           <div>請選擇</div> <div>後加工</div>
- 
-                         </span>
- 
-                         <!-- 下拉式選單內容 -->
-                         <ul id="" class="select-options  ">
-                            <li class="select-option" >測試1</li>
-                            <li class="select-option">測試2</li>
-                            
-                         </ul>
- 
-                         <!-- 下拉式選單箭頭icon -->
-                         <i class="fas fa-sort-down"></i>
- 
-                     </div>
-                         </div>
-                          
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                   <div class="dino-input-field  custom-select  select">
-                            <label></label>
-    
-                            <span class=" select-text">
-                              <div>請選擇</div> <div>後加工</div>
-    
-                            </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                               <li class="select-option" >測試1</li>
-                               <li class="select-option">測試2</li>
-                               
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down"></i>
-    
-                        </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                         <label></label>
- 
-                         <span class=" select-text">
-                           <div>請選擇</div> <div>後加工</div>
- 
-                         </span>
- 
-                         <!-- 下拉式選單內容 -->
-                         <ul id="" class="select-options  ">
-                            <li class="select-option" >測試1</li>
-                            <li class="select-option">測試2</li>
-                            
-                         </ul>
- 
-                         <!-- 下拉式選單箭頭icon -->
-                         <i class="fas fa-sort-down"></i>
- 
-                     </div>
-                         </div>
-                          
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                   <div class="dino-input-field  custom-select  select">
-                            <label></label>
-    
-                            <span class=" select-text">
-                              <div>請選擇</div> <div>後加工</div>
-    
-                            </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                               <li class="select-option" >測試1</li>
-                               <li class="select-option">測試2</li>
-                               
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down"></i>
-    
-                        </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                         <label></label>
- 
-                         <span class=" select-text">
-                           <div>請選擇</div> <div>後加工</div>
- 
-                         </span>
- 
-                         <!-- 下拉式選單內容 -->
-                         <ul id="" class="select-options  ">
-                            <li class="select-option" >測試1</li>
-                            <li class="select-option">測試2</li>
-                            
-                         </ul>
- 
-                         <!-- 下拉式選單箭頭icon -->
-                         <i class="fas fa-sort-down"></i>
- 
-                     </div>
-                         </div>
-                          
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                   <div class="dino-input-field  custom-select  select">
-                            <label></label>
-    
-                            <span class=" select-text">
-                              <div>請選擇</div> <div>後加工</div>
-    
-                            </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                               <li class="select-option" >測試1</li>
-                               <li class="select-option">測試2</li>
-                               
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down"></i>
-    
-                        </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                         <label></label>
- 
-                         <span class=" select-text">
-                           <div>請選擇</div> <div>後加工</div>
- 
-                         </span>
- 
-                         <!-- 下拉式選單內容 -->
-                         <ul id="" class="select-options  ">
-                            <li class="select-option" >測試1</li>
-                            <li class="select-option">測試2</li>
-                            
-                         </ul>
- 
-                         <!-- 下拉式選單箭頭icon -->
-                         <i class="fas fa-sort-down"></i>
- 
-                     </div>
-                         </div>
-                          
-                        </div>
-                    </li>
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >雙白</li>
+                                            <li class="select-option">彩白</li>                                       
+                                        </ul>
                 
-                </ul>
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+                
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                <label></label>
+        
+                                <span class=" select-text">
+                                    <div>請選擇</div> <div>後加工</div>
+                                </span>
+        
+                                <!-- 下拉式選單內容 -->
+                                <ul id="" class="select-options  ">
+                                    <li class="select-option" >3D局部燙金</li>
+                                    <li class="select-option">3D局部上光</li>
+                                </ul>
+        
+                                <!-- 下拉式選單箭頭icon -->
+                                <i class="fas fa-sort-down"></i>
+        
+                            </div>
+                                </div>
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >3D局部燙金</li>
+                                            <li class="select-option">3D局部上光</li>
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+    
+                                     </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>   
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+            
+                                    </div>
+                                </div>
+
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>
+                                            
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+        
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>   
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+            
+                                    </div>
+                                </div>
+
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>
+                                            
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+        
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>   
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+            
+                                    </div>
+                                </div>
+
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>
+                                            
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+        
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>   
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+            
+                                    </div>
+                                </div>
+
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>
+                                            
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+        
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>   
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+            
+                                    </div>
+                                </div>
+
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>
+                                            
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+        
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+                    
+                    </ul>
                 </div>
-                
-                <div class="btns">
 
+                  <!-- 橫式上方選擇欄 -->
+                  <div class="top-choices">
+                    <div class="all-big-selects-title">
+                        <span>查詢價格與樣本檔</span>
+                    </div>
+
+                    <!-- 所有輸入選擇欄 -->
+                    <div class="all-big-selects">
+                        <!-- 客戶名簡稱輸入欄 -->
+                        <div class="big-selects" >
+                            <div class="big-select-title">
+                                <span>印刷</span><span>數量</span>
+                            </div>
+                            <input type="text" placeholder="請輸入印刷數量">
+                        </div>
+
+                          <!-- 橫式版型確認 清除表單按鈕 -->
+                        <div class="all-btns">
+                            <div class="btn check-btn">確認</div>
+                            <div class="btn">清除表單</div>
+                        </div>
+                    </div>
+                </div>
+
+                 
+                
+                <!-- 橫式版型數量 輸入 按鈕 -->
+                <div class="btns" style="display: none;"> 
+
+                    <!-- 橫式版型印刷數量 -->
                     <div class="customer-name-information" >
                         <div class="customer-name">
                             <span>印刷</span><span>數量</span>
                         </div>
                         <input type="text" placeholder="請輸入印刷數量">
                     </div>
+
+                    <!-- 橫式版型確認 清除表單按鈕 -->
                     <div class="all-btns">
-                        <div class="btn">確認</div>
+                        <div class="btn check-btn">確認</div>
                         <div class="btn">清除表單</div>
                     </div>
 
+                    <!-- 橫式版型 報價 樣本檔 -->
                     <div class="results">
+                        <!-- 橫式版型 報價 -->
                         <div class="price result">
                             <div class="title">報價：</div>
                             <div class="price-text">
@@ -875,6 +927,8 @@
                             </div>
                             <span>未稅</span>
                         </div>
+
+                        <!-- 橫式版型 樣本檔 依選擇出現相對應類型樣本檔 -->
                         <div class="files result">
                             <div class="title">樣本檔下載：</div>
                             
@@ -890,14 +944,10 @@
             
                     </div>
 
+                    <!-- 橫式版型加入我的清單按鈕 -->
                     <div class="love-btns">
                         <div class="btn">加入我的清單</div>
                     </div>
-
-
-                    
-            
-
                 </div>
                
             </div>
@@ -905,107 +955,91 @@
             <!-- 二張 -->
             <div class="choice choice1" >
                 <div class="all-choice-content">
-                       <!-- 左標 -->
-                <ul class="choice-title">
+                    <!-- 第二張左標 -->
+                    <ul class="choice-title">
                     <li>
                         <span>
-                            <div>用紙</div>
-                            <div>張數</div>
+                            <div>張數別</div>
                         </span> 
                     </li>
                     <li>
                         <span>
-                            <div>印刷</div>
-                            <div>用紙</div>
+                            <div>紙張種類磅數</div>
+                            <div></div>
                         </span>
                     </li>
 
                     <li>
-                        <!-- <span>正背面</span> -->
+                        <span>正反面</span>
                     </li>
 
                     <li>
                         <span>
                             <div>印刷</div>
                             <div>方式</div>
-                            
                         </span>
                     </li>
 
                     <li>
-                        <span>後加工
-                             <!-- <div class="small-text" >(第一道)</div>  -->
-                        </span>
+                        <span>後加工</span>
                     </li>
 
                     <li>
-                        <span>後加工
-                            <!-- <div class="small-text" >(第二道)</div>  -->
-                        </span>
+                        <span>後加工</span>
                     </li>
 
                     <li>
-                        <span>後加工
-                            <!-- <div class="small-text" >(第三道)</div>  -->
-                        </span>
+                        <span>後加工</span>
                     </li>
 
                     <li>
-                        <span>後加工
-                            <!-- <div class="small-text" >(第四道)</div>  -->
-
-                        </span>
+                        <span>後加工</span>
                     </li>
 
                     <li>
-                        <span>後加工
-                            <!-- <div class="small-text" >(第五道)</div>  -->
-                        </span>
+                        <span>後加工</span>
                     </li>
 
                     <li>
-                        <span>後加工
-                            <!-- <div class="small-text" >(第六道)</div>  -->
-
-                        </span>
+                        <span>後加工</span>
                     </li>
-                </ul>
+                    </ul>
 
-                <!-- 右側內容 -->
-                <ul class="choice-content">
-                    <!-- 張數、正反面 -->
-                    <li >
+                    <!-- 第二張右側內容 -->
+                    <ul class="choice-content">
                         <!-- 張數 -->
-                        <div class="number">
-                            <span>第二張名片紙</span>
-                        </div>
-                    </li>
+                        <li >
+                            <div class="number">
+                                <span>第二張名片紙</span>
+                            </div>
+                        </li>
 
-                    <li>
-                        <div class="dino-input-field  custom-select  select ">
-                            <label></label>
-    
-                            <span class=" select-text">
-                                <div id="" class="select-name">
-                                    <div class="">請選擇</div>
-                                    <div class="">印刷用紙</div>
+                        <!-- 印刷用紙 -->
+                        <li>
+                            <div class="dino-input-field  custom-select  select ">
+                                <label></label>
+        
+                                <span class=" select-text">
+                                    <div id="" class="select-name">
+                                        <div class="">請選擇</div>
+                                        <div class="">印刷用紙</div>
+                                        
+                                    </div>
+                                </span>
+        
+                                <!-- 下拉式選單內容 -->
+                                <ul id="" class="select-options  ">
+                                    <li class="select-option" >測試1測試1測試1測試1</li>
+                                    <li class="select-option">測試2</li>
                                     
-                                </div>
-    
-                            </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                                <li class="select-option" >測試1測試1測試1測試1</li>
-                                <li class="select-option">測試2</li>
-                                
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down "></i>
-    
-                        </div>
-                    </li>
+                                </ul>
+        
+                                <!-- 下拉式選單箭頭icon -->
+                                <i class="fas fa-sort-down "></i>
+        
+                            </div>
+                        </li>
+
                         <!-- 正反面 -->
                         <li>
                             <div class="number">
@@ -1017,350 +1051,340 @@
                                 </div>
                             </div>
                         </li>
-                        
                     
-                   
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                                    <label></label>
-            
-                                    <span class=" select-text">
-                                        <span id="" class="select-name">
-                                            <div>請選擇</div> <div>印刷方式</div>
-                                            </span>
-            
-                                    </span>
-            
-                                    <!-- 下拉式選單內容 -->
-                                    <ul id="" class="select-options  ">
-                                       <li class="select-option" >彩色印刷</li>
-                                       <li class="select-option">白墨</li>
-                                       
-                                    </ul>
-            
-                                    <!-- 下拉式選單箭頭icon -->
-                                    <i class="fas fa-sort-down"></i>
-            
-                                </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                                    <label></label>
-            
-                                    <span class=" select-text">
-                                        <div>請選擇</div> <div>印刷方式</div>
-
-                                    </span>
-            
-                                    <!-- 下拉式選單內容 -->
-                                    <ul id="" class="select-options  ">
-                                       <li class="select-option" >雙白</li>
-                                       <li class="select-option">彩白</li>
-                                       
-                                    </ul>
-            
-                                    <!-- 下拉式選單箭頭icon -->
-                                    <i class="fas fa-sort-down"></i>
-            
-                                </div>
-                            </div>
-                          
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                   <div class="dino-input-field  custom-select  select">
-                            <label></label>
-    
-                            <span class=" select-text">
-                                <!-- <span id="" class="select-name">請選擇後加工</span> -->
-                                <div>請選擇</div> <div>後加工</div>
-
-    
-                            </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                                <li class="select-option" >3D局部燙金</li>
-                                <li class="select-option">3D局部上光</li>
-                               
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down"></i>
-    
-                        </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                         <label></label>
- 
-                         <span class=" select-text">
-                           <div>請選擇</div> <div>後加工</div>
- 
-                         </span>
- 
-                         <!-- 下拉式選單內容 -->
-                         <ul id="" class="select-options  ">
-                            <li class="select-option" >3D局部燙金</li>
-                                       <li class="select-option">3D局部上光</li>
-                            
-                         </ul>
- 
-                         <!-- 下拉式選單箭頭icon -->
-                         <i class="fas fa-sort-down"></i>
- 
-                     </div>
-                         </div>
-                          
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                   <div class="dino-input-field  custom-select  select">
-                            <label></label>
-    
-                            <span class=" select-text">
-                              <div>請選擇</div> <div>後加工</div>
-    
-                            </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                               <li class="select-option" >測試1</li>
-                               <li class="select-option">測試2</li>
-                               
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down"></i>
-    
-                        </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                         <label></label>
- 
-                         <span class=" select-text">
-                           <div>請選擇</div> <div>後加工</div>
- 
-                         </span>
- 
-                         <!-- 下拉式選單內容 -->
-                         <ul id="" class="select-options  ">
-                            <li class="select-option" >測試1</li>
-                            <li class="select-option">測試2</li>
-                            
-                         </ul>
- 
-                         <!-- 下拉式選單箭頭icon -->
-                         <i class="fas fa-sort-down"></i>
- 
-                     </div>
-                         </div>
-                          
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                   <div class="dino-input-field  custom-select  select">
-                            <label></label>
-    
-                            <span class=" select-text">
-                              <div>請選擇</div> <div>後加工</div>
-    
-                            </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                               <li class="select-option" >測試1</li>
-                               <li class="select-option">測試2</li>
-                               
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down"></i>
-    
-                        </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                         <label></label>
- 
-                         <span class=" select-text">
-                           <div>請選擇</div> <div>後加工</div>
- 
-                         </span>
- 
-                         <!-- 下拉式選單內容 -->
-                         <ul id="" class="select-options  ">
-                            <li class="select-option" >測試1</li>
-                            <li class="select-option">測試2</li>
-                            
-                         </ul>
- 
-                         <!-- 下拉式選單箭頭icon -->
-                         <i class="fas fa-sort-down"></i>
- 
-                     </div>
-                         </div>
-                          
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                   <div class="dino-input-field  custom-select  select">
-                            <label></label>
-    
-                            <span class=" select-text">
-                              <div>請選擇</div> <div>後加工</div>
-    
-                            </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                               <li class="select-option" >測試1</li>
-                               <li class="select-option">測試2</li>
-                               
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down"></i>
-    
-                        </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                         <label></label>
- 
-                         <span class=" select-text">
-                           <div>請選擇</div> <div>後加工</div>
- 
-                         </span>
- 
-                         <!-- 下拉式選單內容 -->
-                         <ul id="" class="select-options  ">
-                            <li class="select-option" >測試1</li>
-                            <li class="select-option">測試2</li>
-                            
-                         </ul>
- 
-                         <!-- 下拉式選單箭頭icon -->
-                         <i class="fas fa-sort-down"></i>
- 
-                     </div>
-                         </div>
-                          
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                   <div class="dino-input-field  custom-select  select">
-                            <label></label>
-    
-                            <span class=" select-text">
-                              <div>請選擇</div> <div>後加工</div>
-    
-                            </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                               <li class="select-option" >測試1</li>
-                               <li class="select-option">測試2</li>
-                               
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down"></i>
-    
-                        </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                         <label></label>
- 
-                         <span class=" select-text">
-                           <div>請選擇</div> <div>後加工</div>
- 
-                         </span>
- 
-                         <!-- 下拉式選單內容 -->
-                         <ul id="" class="select-options  ">
-                            <li class="select-option" >測試1</li>
-                            <li class="select-option">測試2</li>
-                            
-                         </ul>
- 
-                         <!-- 下拉式選單箭頭icon -->
-                         <i class="fas fa-sort-down"></i>
- 
-                     </div>
-                         </div>
-                          
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                   <div class="dino-input-field  custom-select  select">
-                            <label></label>
-    
-                            <span class=" select-text">
-                              <div>請選擇</div> <div>後加工</div>
-    
-                            </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                               <li class="select-option" >測試1</li>
-                               <li class="select-option">測試2</li>
-                               
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down"></i>
-    
-                        </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                         <label></label>
- 
-                         <span class=" select-text">
-                           <div>請選擇</div> <div>後加工</div>
- 
-                         </span>
- 
-                         <!-- 下拉式選單內容 -->
-                         <ul id="" class="select-options  ">
-                            <li class="select-option" >測試1</li>
-                            <li class="select-option">測試2</li>
-                            
-                         </ul>
- 
-                         <!-- 下拉式選單箭頭icon -->
-                         <i class="fas fa-sort-down"></i>
- 
-                     </div>
-                         </div>
-                          
-                        </div>
-                    </li>
+                        <li>
+                            <!-- 小選擇欄 -->
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
                 
-                </ul>
+                                        <span class=" select-text">
+                                            <span id="" class="select-name">
+                                                <div>請選擇</div> <div>印刷方式</div>
+                                                </span>
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >彩色印刷</li>
+                                            <li class="select-option">白墨</li>
+
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+                
+                                    </div>
+                                </div>
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                            <div>請選擇</div> <div>印刷方式</div>
+                                        </span>
+
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >雙白</li>
+                                            <li class="select-option">彩白</li>                                       
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+                
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                <label></label>
+        
+                                <span class=" select-text">
+                                    <div>請選擇</div> <div>後加工</div>
+                                </span>
+        
+                                <!-- 下拉式選單內容 -->
+                                <ul id="" class="select-options  ">
+                                    <li class="select-option" >3D局部燙金</li>
+                                    <li class="select-option">3D局部上光</li>
+                                </ul>
+        
+                                <!-- 下拉式選單箭頭icon -->
+                                <i class="fas fa-sort-down"></i>
+        
+                            </div>
+                                </div>
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >3D局部燙金</li>
+                                            <li class="select-option">3D局部上光</li>
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>   
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+            
+                                    </div>
+                                </div>
+
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>
+                                            
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+        
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>   
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+            
+                                    </div>
+                                </div>
+
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>
+                                            
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+        
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>   
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+            
+                                    </div>
+                                </div>
+
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>
+                                            
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+        
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>   
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+            
+                                    </div>
+                                </div>
+
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>
+                                            
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+        
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>   
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+            
+                                    </div>
+                                </div>
+
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>
+                                            
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+        
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+                    
+                    </ul>
                 </div>
                 
              
@@ -1369,107 +1393,91 @@
             <!-- 三張 -->
             <div class="choice choice1" >
                 <div class="all-choice-content">
-                       <!-- 左標 -->
-                <ul class="choice-title">
+                    <!-- 第三張左標 -->
+                    <ul class="choice-title">
                     <li>
                         <span>
-                            <div>用紙</div>
-                            <div>張數</div>
+                            <div>張數別</div>
                         </span> 
                     </li>
                     <li>
                         <span>
-                            <div>印刷</div>
-                            <div>用紙</div>
+                            <div>紙張種類磅數</div>
+                            <div></div>
                         </span>
                     </li>
 
                     <li>
-                        <!-- <span>正背面</span> -->
+                        <span>正反面</span>
                     </li>
 
                     <li>
                         <span>
                             <div>印刷</div>
                             <div>方式</div>
-                            
                         </span>
                     </li>
 
                     <li>
-                        <span>後加工
-                             <!-- <div class="small-text" >(第一道)</div>  -->
-                        </span>
+                        <span>後加工</span>
                     </li>
 
                     <li>
-                        <span>後加工
-                            <!-- <div class="small-text" >(第二道)</div>  -->
-                        </span>
+                        <span>後加工</span>
                     </li>
 
                     <li>
-                        <span>後加工
-                            <!-- <div class="small-text" >(第三道)</div>  -->
-                        </span>
+                        <span>後加工</span>
                     </li>
 
                     <li>
-                        <span>後加工
-                            <!-- <div class="small-text" >(第四道)</div>  -->
-
-                        </span>
+                        <span>後加工</span>
                     </li>
 
                     <li>
-                        <span>後加工
-                            <!-- <div class="small-text" >(第五道)</div>  -->
-                        </span>
+                        <span>後加工</span>
                     </li>
 
                     <li>
-                        <span>後加工
-                            <!-- <div class="small-text" >(第六道)</div>  -->
-
-                        </span>
+                        <span>後加工</span>
                     </li>
-                </ul>
+                    </ul>
 
-                <!-- 右側內容 -->
-                <ul class="choice-content">
-                    <!-- 張數、正反面 -->
-                    <li >
+                    <!-- 第三張右側內容 -->
+                    <ul class="choice-content">
                         <!-- 張數 -->
-                        <div class="number">
-                            <span>第三張名片紙</span>
-                        </div>
-                    </li>
+                        <li >
+                            <div class="number">
+                                <span>第三張名片紙</span>
+                            </div>
+                        </li>
 
-                    <li>
-                        <div class="dino-input-field  custom-select  select ">
-                            <label></label>
-    
-                            <span class=" select-text">
-                                <div id="" class="select-name">
-                                    <div class="">請選擇</div>
-                                    <div class="">印刷用紙</div>
+                        <!-- 印刷用紙 -->
+                        <li>
+                            <div class="dino-input-field  custom-select  select ">
+                                <label></label>
+        
+                                <span class=" select-text">
+                                    <div id="" class="select-name">
+                                        <div class="">請選擇</div>
+                                        <div class="">印刷用紙</div>
+                                        
+                                    </div>
+                                </span>
+        
+                                <!-- 下拉式選單內容 -->
+                                <ul id="" class="select-options  ">
+                                    <li class="select-option" >測試1測試1測試1測試1</li>
+                                    <li class="select-option">測試2</li>
                                     
-                                </div>
-    
-                            </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                                <li class="select-option" >測試1測試1測試1測試1</li>
-                                <li class="select-option">測試2</li>
-                                
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down "></i>
-    
-                        </div>
-                    </li>
+                                </ul>
+        
+                                <!-- 下拉式選單箭頭icon -->
+                                <i class="fas fa-sort-down "></i>
+        
+                            </div>
+                        </li>
+
                         <!-- 正反面 -->
                         <li>
                             <div class="number">
@@ -1481,371 +1489,364 @@
                                 </div>
                             </div>
                         </li>
-                        
                     
-                   
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                                    <label></label>
-            
-                                    <span class=" select-text">
-                                        <span id="" class="select-name">
-                                            <div>請選擇</div> <div>印刷方式</div>
-                                            </span>
-            
-                                    </span>
-            
-                                    <!-- 下拉式選單內容 -->
-                                    <ul id="" class="select-options  ">
-                                       <li class="select-option" >彩色印刷</li>
-                                       <li class="select-option">白墨</li>
-                                       
-                                    </ul>
-            
-                                    <!-- 下拉式選單箭頭icon -->
-                                    <i class="fas fa-sort-down"></i>
-            
-                                </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                                    <label></label>
-            
-                                    <span class=" select-text">
-                                        <div>請選擇</div> <div>印刷方式</div>
-
-                                    </span>
-            
-                                    <!-- 下拉式選單內容 -->
-                                    <ul id="" class="select-options  ">
-                                       <li class="select-option" >雙白</li>
-                                       <li class="select-option">彩白</li>
-                                       
-                                    </ul>
-            
-                                    <!-- 下拉式選單箭頭icon -->
-                                    <i class="fas fa-sort-down"></i>
-            
-                                </div>
-                            </div>
-                          
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                   <div class="dino-input-field  custom-select  select">
-                            <label></label>
-    
-                            <span class=" select-text">
-                                <!-- <span id="" class="select-name">請選擇後加工</span> -->
-                                <div>請選擇</div> <div>後加工</div>
-
-    
-                            </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                                <li class="select-option" >3D局部燙金</li>
-                                <li class="select-option">3D局部上光</li>
-                               
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down"></i>
-    
-                        </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                         <label></label>
- 
-                         <span class=" select-text">
-                           <div>請選擇</div> <div>後加工</div>
- 
-                         </span>
- 
-                         <!-- 下拉式選單內容 -->
-                         <ul id="" class="select-options  ">
-                            <li class="select-option" >3D局部燙金</li>
-                                       <li class="select-option">3D局部上光</li>
-                            
-                         </ul>
- 
-                         <!-- 下拉式選單箭頭icon -->
-                         <i class="fas fa-sort-down"></i>
- 
-                     </div>
-                         </div>
-                          
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                   <div class="dino-input-field  custom-select  select">
-                            <label></label>
-    
-                            <span class=" select-text">
-                              <div>請選擇</div> <div>後加工</div>
-    
-                            </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                               <li class="select-option" >測試1</li>
-                               <li class="select-option">測試2</li>
-                               
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down"></i>
-    
-                        </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                         <label></label>
- 
-                         <span class=" select-text">
-                           <div>請選擇</div> <div>後加工</div>
- 
-                         </span>
- 
-                         <!-- 下拉式選單內容 -->
-                         <ul id="" class="select-options  ">
-                            <li class="select-option" >測試1</li>
-                            <li class="select-option">測試2</li>
-                            
-                         </ul>
- 
-                         <!-- 下拉式選單箭頭icon -->
-                         <i class="fas fa-sort-down"></i>
- 
-                     </div>
-                         </div>
-                          
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                   <div class="dino-input-field  custom-select  select">
-                            <label></label>
-    
-                            <span class=" select-text">
-                              <div>請選擇</div> <div>後加工</div>
-    
-                            </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                               <li class="select-option" >測試1</li>
-                               <li class="select-option">測試2</li>
-                               
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down"></i>
-    
-                        </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                         <label></label>
- 
-                         <span class=" select-text">
-                           <div>請選擇</div> <div>後加工</div>
- 
-                         </span>
- 
-                         <!-- 下拉式選單內容 -->
-                         <ul id="" class="select-options  ">
-                            <li class="select-option" >測試1</li>
-                            <li class="select-option">測試2</li>
-                            
-                         </ul>
- 
-                         <!-- 下拉式選單箭頭icon -->
-                         <i class="fas fa-sort-down"></i>
- 
-                     </div>
-                         </div>
-                          
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                   <div class="dino-input-field  custom-select  select">
-                            <label></label>
-    
-                            <span class=" select-text">
-                              <div>請選擇</div> <div>後加工</div>
-    
-                            </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                               <li class="select-option" >測試1</li>
-                               <li class="select-option">測試2</li>
-                               
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down"></i>
-    
-                        </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                         <label></label>
- 
-                         <span class=" select-text">
-                           <div>請選擇</div> <div>後加工</div>
- 
-                         </span>
- 
-                         <!-- 下拉式選單內容 -->
-                         <ul id="" class="select-options  ">
-                            <li class="select-option" >測試1</li>
-                            <li class="select-option">測試2</li>
-                            
-                         </ul>
- 
-                         <!-- 下拉式選單箭頭icon -->
-                         <i class="fas fa-sort-down"></i>
- 
-                     </div>
-                         </div>
-                          
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                   <div class="dino-input-field  custom-select  select">
-                            <label></label>
-    
-                            <span class=" select-text">
-                              <div>請選擇</div> <div>後加工</div>
-    
-                            </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                               <li class="select-option" >測試1</li>
-                               <li class="select-option">測試2</li>
-                               
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down"></i>
-    
-                        </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                         <label></label>
- 
-                         <span class=" select-text">
-                           <div>請選擇</div> <div>後加工</div>
- 
-                         </span>
- 
-                         <!-- 下拉式選單內容 -->
-                         <ul id="" class="select-options  ">
-                            <li class="select-option" >測試1</li>
-                            <li class="select-option">測試2</li>
-                            
-                         </ul>
- 
-                         <!-- 下拉式選單箭頭icon -->
-                         <i class="fas fa-sort-down"></i>
- 
-                     </div>
-                         </div>
-                          
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="small-choices">
-                            <div class="small-choice">
-                                   <div class="dino-input-field  custom-select  select">
-                            <label></label>
-    
-                            <span class=" select-text">
-                              <div>請選擇</div> <div>後加工</div>
-    
-                            </span>
-    
-                            <!-- 下拉式選單內容 -->
-                            <ul id="" class="select-options  ">
-                               <li class="select-option" >測試1</li>
-                               <li class="select-option">測試2</li>
-                               
-                            </ul>
-    
-                            <!-- 下拉式選單箭頭icon -->
-                            <i class="fas fa-sort-down"></i>
-    
-                        </div>
-                            </div>
-                            <div class="small-choice">
-                                <div class="dino-input-field  custom-select  select">
-                         <label></label>
- 
-                         <span class=" select-text">
-                           <div>請選擇</div> <div>後加工</div>
- 
-                         </span>
- 
-                         <!-- 下拉式選單內容 -->
-                         <ul id="" class="select-options  ">
-                            <li class="select-option" >測試1</li>
-                            <li class="select-option">測試2</li>
-                            
-                         </ul>
- 
-                         <!-- 下拉式選單箭頭icon -->
-                         <i class="fas fa-sort-down"></i>
- 
-                     </div>
-                         </div>
-                          
-                        </div>
-                    </li>
+                        <li>
+                            <!-- 小選擇欄 -->
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
                 
-                </ul>
-                </div>
+                                        <span class=" select-text">
+                                            <span id="" class="select-name">
+                                                <div>請選擇</div> <div>印刷方式</div>
+                                                </span>
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >彩色印刷</li>
+                                            <li class="select-option">白墨</li>
+
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+                
+                                    </div>
+                                </div>
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                            <div>請選擇</div> <div>印刷方式</div>
+                                        </span>
+
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >雙白</li>
+                                            <li class="select-option">彩白</li>                                       
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+                
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                <label></label>
+        
+                                <span class=" select-text">
+                                    <div>請選擇</div> <div>後加工</div>
+                                </span>
+        
+                                <!-- 下拉式選單內容 -->
+                                <ul id="" class="select-options  ">
+                                    <li class="select-option" >3D局部燙金</li>
+                                    <li class="select-option">3D局部上光</li>
+                                </ul>
+        
+                                <!-- 下拉式選單箭頭icon -->
+                                <i class="fas fa-sort-down"></i>
+        
+                            </div>
+                                </div>
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >3D局部燙金</li>
+                                            <li class="select-option">3D局部上光</li>
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>   
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
             
-             
+                                    </div>
+                                </div>
+
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>
+                                            
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+        
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>   
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+            
+                                    </div>
+                                </div>
+
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>
+                                            
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+        
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>   
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+            
+                                    </div>
+                                </div>
+
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>
+                                            
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+        
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>   
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+            
+                                    </div>
+                                </div>
+
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>
+                                            
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+        
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="small-choices">
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>   
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+            
+                                    </div>
+                                </div>
+
+                                <div class="small-choice">
+                                    <div class="dino-input-field  custom-select  select">
+                                        <label></label>
+                
+                                        <span class=" select-text">
+                                        <div>請選擇</div> <div>後加工</div>
+                
+                                        </span>
+                
+                                        <!-- 下拉式選單內容 -->
+                                        <ul id="" class="select-options  ">
+                                            <li class="select-option" >測試1</li>
+                                            <li class="select-option">測試2</li>
+                                            
+                                        </ul>
+                
+                                        <!-- 下拉式選單箭頭icon -->
+                                        <i class="fas fa-sort-down"></i>
+        
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </li>
+                    
+                    </ul>
+                </div>
             </div>
         </section>
 
-
+        <!-- 直式版型 數量輸入 按鈕 -->
         <div class="btns-phone">
 
+            <!-- 直式版型印刷數量 -->
             <div class="customer-name-information" >
                 <div class="customer-name">
                     <span>印刷</span><span>數量</span>
                 </div>
                 <input type="text" placeholder="請輸入印刷數量">
             </div>
+
+            <!-- 直式版型確認 清除表單按鈕 -->
             <div class="all-btns">
                 <div class="btn">確認</div>
                 <div class="btn">清除表單</div>
             </div>
 
+            <!-- 直式版型 報價 樣本檔 -->
             <div class="results">
+                <!-- 直式版型 報價 -->
                 <div class="price result">
                     <div class="title">報價：</div>
                     <div class="price-text">
@@ -1853,6 +1854,8 @@
                     </div>
                     <span>未稅</span>
                 </div>
+
+                <!-- 直式版型 樣本檔 依選擇出現相對應類型樣本檔 -->
                 <div class="files result">
                     <div class="title">樣本檔下載：</div>
                     
@@ -1868,21 +1871,12 @@
     
             </div>
 
+            <!-- 直式版型加入我的清單按鈕 -->
             <div class="love-btns">
                 <div class="btn">加入我的清單</div>
             </div>
-
-
-            
-    
-
         </div>
 
-     
-
-        <!-- <section class="btns">
-            <div class="btn">加到我的最愛</div>
-        </section> -->
     </main>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -1897,10 +1891,7 @@
                 if ($('.select-options', this).is(':hidden')) {
                     $('.select-options', this).slideDown();
                 }
-               
             });
-
-          
 
             $('.select-options li').click(function (e) {
                 e.stopPropagation();
@@ -1915,93 +1906,107 @@
         });
     </script>
 
-<script>
-
-    var selects = document.querySelectorAll(".select")
-    var fasortdowns = document.querySelectorAll(".fa-sort-down")
-    
-    selects.forEach(function (ele, i) {
-        ele.addEventListener('click', function () {
-            clearall();
-           
-            ele.classList.add("active");
-
-        });
-    });
-
-    function clearall() {
+    <!-- 所有下拉式選單點擊樣式改變 -->
+    <script>
+        var selects = document.querySelectorAll(".select")
+        var fasortdowns = document.querySelectorAll(".fa-sort-down")
+        
         selects.forEach(function (ele, i) {
-            selects[i].classList.remove("active");
+            ele.addEventListener('click', function () {
+                clearall();
+            
+                ele.classList.add("active");
+            });
         });
-    }
 
-    $(document).click(function(){ 
-        $('.select').removeClass('active'); 
+        // 清除所有樣式
+        function clearall() {
+            selects.forEach(function (ele, i) {
+                selects[i].classList.remove("active");
+            });
+        }
 
-    }); 
-
-
-</script>
+        // 點擊其他地方清除樣式
+        $(document).click(function(){ 
+            $('.select').removeClass('active'); 
+        }); 
+    </script>
     
-<script>
-    const allpaper = document.querySelector(".all-paper")
-    const paper = document.querySelectorAll(".paper")
-    const choice = document.querySelectorAll(".choice")
-    const paperbtn = document.querySelectorAll(".paper-btn")
+    <!-- 直式版型上方張數選擇欄 -->
+    <script>
+        const allpaper = document.querySelector(".all-paper")
+        const paper = document.querySelectorAll(".paper")
+        const choice = document.querySelectorAll(".choice")
+        const paperbtn = document.querySelectorAll(".paper-btn")
 
-    allpaper.classList.add("active")
+        allpaper.classList.add("active")
 
-    allpaper.addEventListener('click',function () {
-        clearallcontent();
-        clearallpaperbtn()
-        choice.forEach(function (ele, i) {
-            allpaper.classList.add("active");
-            choice[i].style.display = 'block';
-        });
-    })
-
-    paper.forEach(function (ele, i) {
-        ele.addEventListener('click', function () {
-            clearallcontent()
+        allpaper.addEventListener('click',function () {
+            clearallcontent();
             clearallpaperbtn()
-            ele.classList.add("active");
-            choice[i].style.display = 'block';
+            choice.forEach(function (ele, i) {
+                allpaper.classList.add("active");
+                choice[i].style.display = 'block';
+            });
+        })
+
+        paper.forEach(function (ele, i) {
+            ele.addEventListener('click', function () {
+                clearallcontent()
+                clearallpaperbtn()
+                ele.classList.add("active");
+                choice[i].style.display = 'block';
+            });
         });
-    });
 
-    function clearallcontent() {
-        choice.forEach(function (ele, i) {
-            choice[i].style.display = 'none'
-        });
-    }
+        // 清除所有張數出現
+        function clearallcontent() {
+            choice.forEach(function (ele, i) {
+                choice[i].style.display = 'none'
+            });
+        }
 
-    function clearallpaperbtn() {
-        paperbtn.forEach(function (ele, i) {
-            paperbtn[i].classList.remove("active")
-        });
-    }
+        // 清除所有按鈕樣式
+        function clearallpaperbtn() {
+            paperbtn.forEach(function (ele, i) {
+                paperbtn[i].classList.remove("active")
+            });
+        }
+    </script>
 
-
-
+    <!-- 我的清單 -->
+    <script>
+        const userlogin = document.querySelector(".user-login")
+        const lovelists = document.querySelector(".love-lists")
+        const fawindowclose = document.querySelector(".fa-window-close")
     
-</script>
+        userlogin.addEventListener('click',function() {
+            lovelists.classList.toggle("show");
+        })
 
-<script>
-    const userlogin = document.querySelector(".user-login")
-    const userlogincontents = document.querySelector(".user-login-contents")
-    const fawindowclose = document.querySelector(".fa-window-close")
-   
-    userlogin.addEventListener('click',function() {
-        userlogincontents.classList.toggle("show");
-    })
+        fawindowclose.addEventListener('click',function() {
+            lovelists.classList.remove("show");
+        })
+    </script>
 
-    fawindowclose.addEventListener('click',function() {
-        userlogincontents.classList.remove("show");
-    })
-
+     <!-- 我的清單 -->
+     <script>
+        const checkbtn = document.querySelectorAll(".check-btn")
+        console.log(checkbtn);
+        const pricefile = document.querySelector(".price-file")
+        const closepricefilebtn = document.querySelector(".close-price-file-btn")
+        console.log(closepricefilebtn);
     
+        checkbtn.forEach(ele => {
+            ele.addEventListener('click',function() {
+            pricefile.classList.toggle("show");
+            })
+        });
+      
 
-
-</script>
+        closepricefilebtn.addEventListener('click',function() {
+            pricefile.classList.remove("show");
+        })
+    </script>
 </body>
 </html>
