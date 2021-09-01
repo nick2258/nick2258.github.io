@@ -81,13 +81,13 @@ a {
   font-weight: 600;
   letter-spacing: 1.5px;
   color: #080842;
-  margin: 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+  margin: 0px auto;
   margin-bottom: 8px;
   padding: 5px 10px;
 }
@@ -95,12 +95,12 @@ a {
 .love-lists ul {
   max-width: 1200px;
   width: 100%;
+  margin: 0px auto;
   min-height: 88vh;
   max-height: 88vh;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  margin: 0px auto;
   overflow-y: auto;
 }
 
@@ -164,23 +164,6 @@ a {
   }
 }
 
-.love-lists ul .love-item .btn label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 16px;
-}
-
-.love-lists ul .love-item .btn label input {
-  width: 20px;
-  height: 20px;
-  margin-left: 0px;
-  margin-right: 10px;
-}
-
 .love-lists ul .love-item .btn .add-btn {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -218,10 +201,10 @@ a {
   background-color: coral;
   border: 1px solid coral;
   border-radius: 3px;
-  color: white;
   letter-spacing: 1.5px;
   font-size: 14px;
   font-weight: 500;
+  color: white;
   margin-left: 20px;
   cursor: pointer;
   -webkit-box-shadow: 3px 3px 10px rgba(99, 98, 98, 0.377);
@@ -294,23 +277,6 @@ a {
   }
 }
 
-.love-lists ul .love-item .title .title-item label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 16px;
-}
-
-.love-lists ul .love-item .title .title-item label input {
-  margin-left: 0px;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-}
-
 .love-lists ul .love-item .title .title-item .delete-btn {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -321,10 +287,10 @@ a {
   padding: 3px 8px;
   background-color: coral;
   border-radius: 3px;
-  color: white;
   letter-spacing: 1.5px;
   font-size: 14px;
   font-weight: 500;
+  color: white;
   margin-left: 20px;
   cursor: pointer;
 }
@@ -368,7 +334,6 @@ a {
 }
 
 .love-lists ul ol li .items-title {
-  font-size: 18px;
   font-size: 16px;
   font-weight: 600;
   display: -webkit-box;
@@ -483,7 +448,6 @@ a {
   height: 100vh;
   max-height: 100%;
   min-height: 100vh;
-  background-color: transparent;
   background-color: rgba(220, 220, 220, 0.726);
   position: fixed;
   top: 0px;
@@ -504,14 +468,13 @@ a {
   max-width: 1000px;
   width: 60%;
   margin: 0px auto;
+  padding-bottom: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: cornsilk;
-  background-color: cornsilk;
-  padding-bottom: 30px;
   border-radius: 15px;
   -webkit-box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.2);
           box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.2);
@@ -533,15 +496,13 @@ a {
 
 .check-information .all-check .check-item-title {
   width: 100%;
-  font-size: 24px;
-  font-weight: 600;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -559,11 +520,11 @@ a {
   height: -moz-max-content;
   height: max-content;
   max-height: calc(50vh - 150px);
-  padding: 20px 20px;
   overflow-y: auto;
   border-radius: 0px 0px 15px 15px;
   margin: 0px auto;
   margin-bottom: 20px;
+  padding: 20px 20px;
   letter-spacing: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -644,23 +605,6 @@ a {
   }
 }
 
-.check-information .all-check .check-item .title .title-item label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 16px;
-}
-
-.check-information .all-check .check-item .title .title-item label input {
-  margin-left: 0px;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-}
-
 .check-information .all-check .check-item .title .title-item .delete-btn {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -668,14 +612,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 3px 8px;
   background-color: coral;
   border-radius: 3px;
-  color: white;
   letter-spacing: 1.5px;
   font-size: 14px;
   font-weight: 500;
+  color: white;
   margin-left: 20px;
+  padding: 3px 8px;
   cursor: pointer;
 }
 
@@ -718,7 +662,6 @@ a {
 }
 
 .check-information .all-check .check-item ol li .items-title {
-  font-size: 18px;
   font-size: 16px;
   font-weight: 600;
   display: -webkit-box;
@@ -858,7 +801,6 @@ a {
   height: 100vh;
   max-height: 100%;
   min-height: 100vh;
-  background-color: transparent;
   position: fixed;
   top: 0px;
   z-index: 99;
@@ -878,6 +820,7 @@ a {
   width: 80%;
   max-width: 500px;
   margin: 0px auto;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -890,7 +833,6 @@ a {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  margin-bottom: 30px;
   border-radius: 0px 0px 15px 15px;
   border-radius: 15px;
   -webkit-box-shadow: 18px 18px 50px rgba(0, 0, 0, 0.671);
@@ -924,16 +866,15 @@ a {
 }
 
 .price-file .top-choices .all-big-result-title {
-  background-color: #DCB2A3;
   background-color: #b47e6a;
 }
 
 .price-file .top-choices .all-big-selects {
   width: 100%;
   background-color: cornsilk;
+  border-radius: 0px 0px 15px 15px;
   padding: 10px 5px;
   padding-bottom: 30px;
-  border-radius: 0px 0px 15px 15px;
 }
 
 @media screen and (max-width: 900px) {
@@ -960,7 +901,6 @@ a {
   height: max-content;
   padding: 5px 0px;
   margin: 0px auto;
-  font-size: 20px;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -1054,7 +994,6 @@ a {
 }
 
 .price-file .top-choices .all-big-selects .results .result .title {
-  font-size: 24px;
   font-size: 16px;
   font-weight: 600;
 }
@@ -1070,10 +1009,10 @@ a {
   padding: 8px 20px;
   border: 2px solid gainsboro;
   background-color: whitesmoke;
-  border-radius: 30px;
-  color: steelblue;
   -webkit-box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.301);
           box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.301);
+  border-radius: 30px;
+  color: steelblue;
 }
 
 .price-file .top-choices .all-big-selects .results .result a:nth-last-child(1) {
@@ -1115,9 +1054,8 @@ a {
 }
 
 .price-file .top-choices .all-big-selects .results .result .price-text {
-  font-size: 24px;
-  font-size: 20px;
   height: 50px;
+  font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1125,8 +1063,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 8px 12px;
-  border-radius: 3px;
   margin-right: 5px;
+  border-radius: 3px;
 }
 
 .price-file .top-choices .all-big-result {
@@ -1416,8 +1354,8 @@ main .top-choices-phone .all-big-result-title {
 main .top-choices-phone .all-big-selects {
   width: 100%;
   background-color: cornsilk;
-  padding: 10px 5px;
   border-radius: 0px 0px 15px 15px;
+  padding: 10px 5px;
 }
 
 @media screen and (max-width: 900px) {
@@ -1763,7 +1701,6 @@ main .top-choices-phone .all-big-selects .love-btns .btn {
   height: max-content;
   padding: 5px 0px;
   margin-right: 20px;
-  font-size: 20px;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -2050,10 +1987,10 @@ main .allchoice .choice .top-choices .all-big-selects .big-selects .big-select-t
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0px 5px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0px 5px;
   font-weight: 600;
   letter-spacing: 1.5px;
 }

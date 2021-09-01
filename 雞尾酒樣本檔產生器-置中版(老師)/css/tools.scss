@@ -27,9 +27,7 @@ a{
     width: 100%;
     max-width: 1920px;
     min-height: 100vh;
-    // max-height: 100vh;
     height: max-content;
-
 
     padding:10px 30px;
     padding-top: 30px;
@@ -55,8 +53,6 @@ a{
 
         box-shadow: 0px 0px 15px rgba(95, 95, 95, 0.342);
 
-        // overflow-y: hidden;
-
         transition: .6s;
     }
     // 我的清單右上關閉按鈕
@@ -72,30 +68,29 @@ a{
     .user-login-content{
         width: 1200px;
         max-width: 1200px;
+
         font-size: 18px;
         font-weight: 600;
         letter-spacing: 1.5px;
         color: #080842;
-        margin: 0px auto;
+
         display: flex;
         justify-content: left;
+
+        margin: 0px auto;
         margin-bottom: 8px;
         padding: 5px 10px;
     }
-    
     ul{
         max-width: 1200px;
         width: 100%;
+       
+        margin: 0px auto;
+
         min-height: 88vh;
         max-height: 88vh;
         height: max-content;
-        // overflow-y: auto;
-
-        margin: 0px auto;
-
         overflow-y: auto;
-        
-        
         // 單個清單
         .love-item{
             max-width: 100%;
@@ -128,8 +123,6 @@ a{
             }
             // 單個清單上方選取刪除按鈕
             .btn{
-                // width: 100%;
-
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -145,21 +138,6 @@ a{
                     top: 0px;
 
                     padding: 0px 8px;
-                }
-                // 選取為預設內容
-                label{
-                    display: flex;
-                    align-items: center;
-
-                    font-size: 16px;
-                    // 選取為預設內容框框
-                    input{
-                        width: 20px;
-                        height: 20px;
-
-                        margin-left: 0px;
-                        margin-right: 10px;
-                    }
                 }
                 // 我的清單(單個)刪除按鈕
                 .add-btn{
@@ -192,14 +170,15 @@ a{
                     display: flex;
 
                     padding: 3px 8px;
+
                     background-color: coral;
                     border:1px solid coral ;
                     border-radius: 3px;
 
-                    color: white;
                     letter-spacing: 1.5px;
                     font-size: 14px;
                     font-weight: 500;
+                    color: white;
 
                     margin-left: 20px;
 
@@ -212,7 +191,6 @@ a{
                         color: coral;
                     }
                 }
-                
                 a{
                     display: block;
                     margin-right: 20px;
@@ -225,9 +203,9 @@ a{
                     }
                 }
             }
-            
             .title{
                 width: 28%;
+
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
@@ -244,60 +222,35 @@ a{
                     border-bottom: 2px solid gray;
 
                     padding-bottom: 0px;
-                    // padding-right: 120px;
-
                 }
                 .title-item{
-                    // width: 100%;
                     display: flex;
                     flex-wrap: wrap;
                     align-items: center;
+
                     margin-bottom: 8px;
                     position: relative;
                     @media screen and (max-width:500px){
                         margin-bottom: 5px;
                     }
-                    
-                    @media screen and (max-width:1250px){
-                        // &:nth-last-child(1){
-                        //     position: absolute;
-                        //     top: 0px;
-                        //     right: 0px;
-                        // }
-    
-                    }
-                    
-                    label{
-                        display: flex;
-                        align-items: center;
-                        font-size: 16px;
-                        input{
-                            margin-left: 0px;
-                            width: 20px;
-                            height: 20px;
-                            margin-right: 10px;
-                        }
-                    }
                     .delete-btn{
                         width: max-content;
+
                         display: flex;
-                        // margin-top: 20px;
                         padding: 3px 8px;
+
                         background-color: coral;
                         border-radius: 3px;
-                        color: white;
+
                         letter-spacing: 1.5px;
                         font-size: 14px;
                         font-weight: 500;
+                        color: white;
+
                         margin-left: 20px;
-                        // position: absolute;
-                        // top: 0%;
-                        // left: 100%;
-                        // transform: translate(-100%,-75%);
+                       
                         cursor: pointer;
-                        
                     }
-                
                     a{
                         display: block;
                         margin-right: 20px;
@@ -310,18 +263,17 @@ a{
                         }
                     }
                 }
-                
             }
         }
         ol{
-            // padding-top: 8px;
             padding: 8px;
             position: relative;
-        
             li{
                 width: 100%;
+
                 padding: 0px 8px;
                 padding-top: 8px;
+
                 border-top: 1px solid gray;
                 &:nth-child(1){
                     padding-top: 0px;
@@ -332,7 +284,6 @@ a{
                     padding-top: 8px;
                 }
                 .items-title{
-                    font-size: 18px;
                     font-size: 16px;
                     font-weight: 600;
                     display: flex;
@@ -344,8 +295,8 @@ a{
                     .items{
                         display: flex;
                         flex-wrap: wrap;
+
                         font-size: 14px;
-                        
                         .item{
                             display: flex;
                             flex-wrap: wrap;
@@ -357,7 +308,6 @@ a{
                             &:nth-last-child(1){
                                 margin-right: 0px;
                             }
-                            
                             .process{
                                 display: flex;
                                 &::after{
@@ -368,12 +318,9 @@ a{
                                     content: ' ';
                                 }
                             }
-                            
-                            
                         }
                     }
                 }
-                
             }
         }
     }
@@ -417,17 +364,17 @@ a{
 
             transition: .6s;
         }
-        
     }
 }
 
+// 確認資訊
 .check-information{
     width: 100vw;
     max-width: 1920px;
     height: 100vh;
     max-height: 100%;
     min-height: 100vh;
-    background-color: transparent;
+
     background-color: rgba(220, 220, 220, 0.726);
 
     position:fixed;
@@ -438,6 +385,7 @@ a{
     display: none;
     &.show{
         display: block;
+
         background-color: rgba(220, 220, 220, 0.726);
         opacity: 1;
         
@@ -446,17 +394,16 @@ a{
     .all-check{
         max-width: 1000px;
         width: 60%;
-        // height: 50vh;
 
         margin: 0px auto;
+        padding-bottom: 30px;
+
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+
         background-color:cornsilk;
-        background-color:cornsilk;
-        // padding: 30px 0px;
-        padding-bottom: 30px;
         border-radius: 15px;
         box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.2) ;
         @media screen and (max-width:1100px){
@@ -468,37 +415,33 @@ a{
         }
         .check-item-title{
             width: 100%;
-            font-size: 24px;
-            font-weight: 600;
+            height: 50px;
+
             display: flex;
             justify-content: center;
-            height: 50px;
             align-items: center;
+
             font-size: 20px;
             font-weight: 600;
             letter-spacing: 2px;
             color: white;
+
             background-color: lightsalmon;
-    
             border-radius: 10px 10px 0px 0px;
-            
         }
         // 單個清單
         .check-item{
-            // max-width: 1000px;
             width: 100%;
+
             height:max-content;    
             max-height:  calc(50vh - 150px);
-            padding: 20px 20px;
-            // padding-top: 60px;
             overflow-y: auto;
 
-            // border: 1px solid gray;
             border-radius:0px 0px 15px 15px;
-            // background-color: whitesmoke;
            
             margin: 0px auto;
             margin-bottom: 20px;
+            padding: 20px 20px;
     
             letter-spacing: 1px;
     
@@ -507,9 +450,6 @@ a{
             // 1250px我的清單變直式版型
             @media screen and (max-width:1250px){
                 flex-direction: column;
-    
-                // padding: 20px 30px;
-                // padding-top: 20px;
             }
             @media screen and (max-width:1100px){
                 max-height:  calc(70vh - 150px);
@@ -522,6 +462,7 @@ a{
             }
             .title{
                 width: 28%;
+
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
@@ -538,60 +479,35 @@ a{
                     border-bottom: 2px solid gray;
     
                     padding-bottom: 0px;
-                    // padding-right: 120px;
-    
                 }
                 .title-item{
-                    // width: 100%;
                     display: flex;
                     flex-wrap: wrap;
                     align-items: center;
+
                     margin-bottom: 8px;
                     position: relative;
                     @media screen and (max-width:500px){
                         margin-bottom: 5px;
                     }
-                    
-                    @media screen and (max-width:1250px){
-                        // &:nth-last-child(1){
-                        //     position: absolute;
-                        //     top: 0px;
-                        //     right: 0px;
-                        // }
-    
-                    }
-                    
-                    label{
-                        display: flex;
-                        align-items: center;
-                        font-size: 16px;
-                        input{
-                            margin-left: 0px;
-                            width: 20px;
-                            height: 20px;
-                            margin-right: 10px;
-                        }
-                    }
                     .delete-btn{
                         width: max-content;
+
                         display: flex;
-                        // margin-top: 20px;
-                        padding: 3px 8px;
+
                         background-color: coral;
                         border-radius: 3px;
-                        color: white;
+
                         letter-spacing: 1.5px;
                         font-size: 14px;
                         font-weight: 500;
+                        color: white;
+
                         margin-left: 20px;
-                        // position: absolute;
-                        // top: 0%;
-                        // left: 100%;
-                        // transform: translate(-100%,-75%);
+                        padding: 3px 8px;
+
                         cursor: pointer;
-                        
                     }
-                
                     a{
                         display: block;
                         margin-right: 20px;
@@ -607,12 +523,11 @@ a{
                 
             }
             ol{
-                // padding-top: 8px;
                 padding: 8px;
                 position: relative;
-            
                 li{
                     width: 100%;
+
                     padding: 0px 8px;
                     padding-top: 8px;
                     border-top: 1px solid gray;
@@ -625,7 +540,6 @@ a{
                         padding-top: 8px;
                     }
                     .items-title{
-                        font-size: 18px;
                         font-size: 16px;
                         font-weight: 600;
                         display: flex;
@@ -638,7 +552,6 @@ a{
                             display: flex;
                             flex-wrap: wrap;
                             font-size: 14px;
-                            
                             .item{
                                 display: flex;
                                 flex-wrap: wrap;
@@ -650,7 +563,6 @@ a{
                                 &:nth-last-child(1){
                                     margin-right: 0px;
                                 }
-                                
                                 .process{
                                     display: flex;
                                     &::after{
@@ -660,77 +572,71 @@ a{
                                     &:nth-last-child(1)::after{
                                         content: ' ';
                                     }
-                                }
-                                
-                                
+                                }      
                             }
                         }
                     }
-                    
                 }
             }
         }
         .check-btns{
-                width:660px;
+            width:660px;
+
+            margin: 0px auto;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            @media screen and (max-width:1100px) {
+                width: max-content;
+                flex-direction: column;
+            }
+            .btn{
+                width: 320px;
+                height: max-content;
+                
+                padding: 5px 0px;
                 margin: 0px auto;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                @media screen and (max-width:1100px) {
-                    width: max-content;
-                    flex-direction: column;
+
+                font-size: 18px;
+                font-weight: 600;
+                letter-spacing: 1.5px;
+                color: white;
+                text-align: center;
+
+                border-radius: 5px;
+                background-color: darkorange;
+                border: 2px solid darkorange;
+
+                cursor: pointer;
+                &:hover{
+                    color: darkorange;
+                    background-color: white;
+                    transition: .6s;
                 }
-                .btn{
-                    width: 320px;
-
-                    height: max-content;
-                    
-                    padding: 5px 0px;
-                    // margin-right: 20px;
-                    margin: 0px auto;
-
-                    font-size: 18px;
-                    font-weight: 600;
-                    letter-spacing: 1.5px;
-                    color: white;
-                    text-align: center;
-
-                    border-radius: 5px;
-                    background-color: darkorange;
-                    border: 2px solid darkorange;
-
-                    cursor: pointer;
+                &:nth-last-child(1){
+                    background-color: #080842;
+                    border: 2px solid #080842;
                     &:hover{
-                        color: darkorange;
+                        color: #080842;
                         background-color: white;
                         transition: .6s;
                     }
+                }
+                @media screen and (max-width:1100px) {
+                    margin-bottom: 10px;
+                    padding: 3px 0px;
                     &:nth-last-child(1){
-                        // margin-top: 15px;
-                        background-color: #080842;
-                        border: 2px solid #080842;
-                        &:hover{
-                            color: #080842;
-                            background-color: white;
-                            transition: .6s;
-                        }
-                    }
-                    @media screen and (max-width:1100px) {
-                        margin-bottom: 10px;
-                        padding: 3px 0px;
-                        &:nth-last-child(1){
-                            margin-bottom: 0px;
-                        }
-                    }
-                    @media screen and (max-width:500px) {
-                        width: 250px;
-                        padding: 2px 0px;
+                        margin-bottom: 0px;
                     }
                 }
+                @media screen and (max-width:500px) {
+                    width: 250px;
+                    padding: 2px 0px;
+                }
+            }
         }
     }
-   
-   
 }
 
 // 價格與樣本檔彈跳視窗
@@ -740,7 +646,7 @@ a{
     height: 100vh;
     max-height: 100%;
     min-height: 100vh;
-    background-color: transparent;
+    
     position:fixed;
     top: 0px;
     z-index: 99;
@@ -756,68 +662,67 @@ a{
     .top-choices{
         width: 80%;
         max-width: 500px;
+
         margin: 0px auto;
+        margin-bottom: 30px;
+
         display: flex;
         flex-direction: column;
-        // justify-content: center;
+
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        margin-bottom: 30px;
+
         border-radius: 0px 0px 15px 15px;
         border-radius: 15px;
         box-shadow:18px 18px 50px  rgba(0, 0, 0, 0.671);
         @media screen and (max-width:500px) {
             width: 90%;
         }
-      
         .all-big-selects-title{
             width: 100%;
             height: 50px;
+
             display: flex;
             align-items: center;
             justify-content: center;
+
             font-size: 20px;
             font-weight: 600;
             letter-spacing: 2px;
             color: white;
-            background-color: lightsalmon;
 
+            background-color: lightsalmon;
             border-radius: 10px 10px 0px 0px;
         }
         .all-big-result-title{
-            background-color: #DCB2A3;
             background-color: #b47e6a;
-
         }
         .all-big-selects{
             width: 100%;
-            // max-width: 320px;
+
             background-color:cornsilk;
+            border-radius: 0px 0px 15px 15px;
+
             padding: 10px 5px;
             padding-bottom: 30px;
-            border-radius: 0px 0px 15px 15px;
             @media screen and (max-width:900px) {
                 width: 100%;
             }
-           
             // 加入我的清單 確認按鈕
             .love-btns{
                 width: 100%;
+
                 display: flex;
                 flex-direction: column;
-                // justify-self: center;
                 .btn{
                     width: 320px;
-
                     height: max-content;
                     
                     padding: 5px 0px;
-                    // margin-right: 20px;
                     margin: 0px auto;
 
-                    font-size: 20px;
                     font-size: 18px;
                     font-weight: 600;
                     letter-spacing: 1.5px;
@@ -831,19 +736,21 @@ a{
                     cursor: pointer;
                     &:hover{
                         color: darkorange;
+
                         background-color: white;
+
                         transition: .6s;
                     }
                     &:nth-last-child(1){
                         margin-top: 15px;
                     }
                     &:nth-last-child(1){
-                        // margin-top: 15px;
                         background-color: #080842;
                         border: 2px solid #080842;
                         &:hover{
                             color: #080842;
                             background-color: white;
+
                             transition: .6s;
                         }
                     }
@@ -858,10 +765,8 @@ a{
                         width: 250px;
                         padding: 2px 0px;
                     }
-                   
-                }
-                
 
+                }
             }
             // 樣本檔、價格
             .results{
@@ -869,21 +774,17 @@ a{
                 max-width: 320px;
                 margin: 0px auto;
 
-                // margin-top: 15px;
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
                 justify-content: center;
-                // justify-content: space-between;
                 @media screen and (max-width:700px) {
                     flex-direction: column;
                 }
-
                 .result{
-                    // width: 100%;
                     display: flex;
                     align-items: center;
-                    // margin-right: 20px;
+
                     margin-bottom: 15px;
                     &:nth-last-child(1){
                         .title{
@@ -891,22 +792,22 @@ a{
                         }
                     }
                     .title{
-                        font-size: 24px;
                         font-size: 16px;
                         font-weight: 600;
-                    
                     }
                     a{
                         display: block;
                         display: flex;
                         align-items: center;
-                        // margin-right: 20px;
+
                         padding: 8px 20px;
+
                         border: 2px solid gainsboro;
                         background-color: whitesmoke;
-                        border-radius: 30px;
-                        color: steelblue;
                         box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.301);
+                        border-radius: 30px;
+
+                        color: steelblue;
                         &:nth-last-child(1){
                             margin-right: 0px;
                         }
@@ -919,6 +820,7 @@ a{
                         img{
                             width: 30px;
                             height: 30px;
+
                             margin-right: 5px;
                             @media screen and (max-width:1200px) {
                                 width: 35px;
@@ -935,26 +837,24 @@ a{
                         }
                     }
                     .price-text{
-                        font-size: 24px;
-                        font-size: 20px;
                         height: 50px;
-                        // max-height: 60px;
+
+                        font-size: 20px;
+
                         display: flex;
                         align-items: center;
-                        // border: 2px solid slategrey;
+
                         padding: 8px 12px;
-                        border-radius: 3px;
                         margin-right: 5px;
-                    
+
+                        border-radius: 3px;
                     }
                 }
             }
-            
         }
         .all-big-result{
             background-color: #f9f7e8;
         }
-        
     }
 }
 
@@ -1069,7 +969,6 @@ nav{
                     font-size: 16px;
                     letter-spacing: 1px;
                 }
-                
             }
         }
         // 第幾張紙按鈕(多個)
@@ -1177,8 +1076,8 @@ main{
             font-weight: 600;
             letter-spacing: 2px;
             color: white;
-            background-color: lightsalmon;
 
+            background-color: lightsalmon;
             border-radius: 10px 10px 0px 0px;
         }
         .all-big-result-title{
@@ -1189,8 +1088,9 @@ main{
             width: 100%;
 
             background-color:cornsilk;
-            padding: 10px 5px;
             border-radius: 0px 0px 15px 15px;
+
+            padding: 10px 5px;
             @media screen and (max-width:900px) {
                 width: 100%;
             }
@@ -1346,6 +1246,7 @@ main{
                             color: gray;
                         
                             transition: all .25s;
+
                             cursor: pointer;
                             @media screen and (max-width:1200px) {
                                 font-size: 16px;
@@ -1475,7 +1376,6 @@ main{
                     padding: 5px 0px;
                     margin-right: 20px;
     
-                    font-size: 20px;
                     font-size: 18px;
                     font-weight: 600;
                     letter-spacing: 1.5px;
@@ -1507,6 +1407,7 @@ main{
                     &:hover{
                         color: darkorange;
                         background-color: white;
+
                         transition: .6s;
                     }
                     &:nth-last-child(1){
@@ -1688,9 +1589,9 @@ main{
 
                             display: flex;
                             flex-wrap: wrap;
+                            align-items: center;
 
                             padding: 0px 5px;
-                            align-items: center;
                     
                             font-weight: 600;
                             letter-spacing: 1.5px;
@@ -1823,6 +1724,7 @@ main{
                                     color: gray;
                                 
                                     transition: all .25s;
+
                                     cursor: pointer;
                                     &:hover{
                                         background-color: whitesmoke;
@@ -1915,6 +1817,7 @@ main{
                             &:hover{
                                 color: rgb(8, 8, 66);
                                 background-color: white;
+
                                 transition: .6s;
                             }
                             &:nth-last-child(1){
@@ -1971,7 +1874,6 @@ main{
                                 margin-right: 0px;
                             }
                         }
-            
                     }
                      // 樣本檔、價格
                     .results{
@@ -2129,10 +2031,8 @@ main{
             // 第三張，電腦板隱藏
             &:nth-child(3){
                 width: 30%;
-                // margin-bottom: 0px;
                 @media screen and (max-width:900px) {
                     width: 100%;
-                    
                 }
                 .all-choice-content{
                     .choice-title{
