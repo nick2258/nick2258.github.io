@@ -5,6 +5,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    position: relative;
 }
 
 img{
@@ -28,10 +29,15 @@ ul{
 nav{
     width: 100%;
     max-width: 1920px;
-    // background-color: cornsilk;
+    background-color: white;
 
     padding: 15px 0px;
     // margin-bottom: 8px;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    box-shadow: 10px 10px 10px rgba(151, 151, 151, 0.308);
+    margin-bottom: 24px;
     .title{
         font-size: 24px;
         font-weight: 600;
@@ -49,18 +55,27 @@ nav{
 
         margin: 0px auto;
         display: flex;
+
+       
         .nav-item{
             font-size: 16px;
             font-weight: 600;
 
             margin-right: 24px;
-            padding: 5px 24px;
+            padding: 3px 24px;
 
             border-radius: 5px;
-            background-color: crimson;
+            background-color: rgb(18, 18, 51);
+            border: 2px solid rgb(18, 18, 51);
             color: white;
 
             cursor: pointer;
+            &:hover{
+                background-color: white;
+                color: rgb(18, 18, 51);
+
+                transition: .6s;
+            }
             &:nth-last-child(1){
                 margin-right: 0px;
             }
@@ -71,11 +86,17 @@ nav{
 main{
     width: 100%;
     max-width: 1400px;
-    // background-color: sienna;
+    padding-bottom: 48px;
 
     margin: 0px auto;
-    .tesching-contents{
+    // 下方三個大區塊
+    .teaching-contents{
         width: 100%;
+        margin-bottom: 32px;
+        &:nth-last-child(1){
+            margin-bottom: 0px;
+        }
+        // 大區塊標題
         .big-title{
             width: max-content;
 
@@ -89,7 +110,7 @@ main{
             padding: 5px 40px;
 
             // border: 2PX salmon solid;
-            background-color: sandybrown;
+            background-color: burlywood;
             border-radius:5px 5px 0px 0px;
 
             color: white;
@@ -99,14 +120,21 @@ main{
             // padding-bottom: 3px;
             // border-bottom: 3px solid salmon;
         }
+        // 大區塊內容
         .teaching-content{
             width: 100%;
             border: 2px solid sandybrown;
+            border: 3px solid burlywood;
+
             box-shadow: 10px 10px 15px rgba(51, 51, 51, 0.178);
+
             border-radius: 0px 8px 8px 8px;
             padding: 24px 40px;
+            // 操作流程
             ul{
+                width: 100%;
                 .teaching-item{
+                    width: 100%;
                     margin-top: 24px;
                     &:nth-child(1){
                         margin-top: 0px;
@@ -133,10 +161,8 @@ main{
                                 width: 50px;
                                 height: 30px;
                                 margin: 0px 16px;
-                                background-color: gray;
+                                background-color: rgb(184, 184, 184);
                                 clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-                               
-
                             }
                             &:nth-last-child(1)::after{
                                 width: 0px;
@@ -164,6 +190,10 @@ main{
                     }
                     // 流程內容
                     .small-process-content{
+                        margin-top: 16px;
+                        &:nth-child(1){
+                            margin-top: 0px;
+                        }
                         .small-process-title{
                             font-weight: 600;
                             margin-bottom: 8px;
@@ -188,10 +218,278 @@ main{
                             }
                         }
                     }
+                    // 教學範例
+                    .videos{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        // align-items: center;
+                        video{
+                            width: 80%;
+                            max-width: 800px;
+                            margin-top: 24px;
+                            &:nth-child(1){
+                                margin-top: 0px;
+                            }
+                        }
+                        iframe{
+                            border-radius: 5px;
+                            width: 60%;
+                            height: 30vw;
+                        }
+                    }
+                    .question-title{
+                        // background-color: #777;
+                        background-color: whitesmoke;
+                        // border: 2px solid lightsalmon;
+                        // border-left: 6px solid salmon;
+                        background-color: pink;
+                        border-radius: 0px 30px 30px 0px;
+
+                        color: rgb(18, 18, 51);
+                        padding: 4px 0px;
+                        padding-left: 8px;
+                        // color: white;
+                        cursor: pointer;
+                        margin-bottom: 0px;
+                        // padding: 18px;
+                        // width: 100%;
+                        // border: none;
+                        // text-align: left;
+                        // outline: none;
+                        // font-size: 15px;
+                        // width: 300px;
+                        // &::after {
+                        //     content: '\002B';
+                        //     color: white;
+                        //     color: gray;
+                        //     font-weight: bold;
+                        //     float: right;
+                        //     margin-left: 5px;
+                        // }
+                        &:hover{
+                            background-color: sandybrown;
+
+                            transition: .6s;
+                        }
+                        &.show{
+                            margin-bottom: 8px;
+                            content: "";
+                            background-color: sandybrown;
+
+                            transition: .6s;
+                        }
+                          
+                    }
+                    .question-content{
+                        padding: 0 18px;
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: max-height 0.2s ease-out;
+                        // background-color: #f1f1f1;
+                        &.show{
+                            height: max-content;
+                            max-height: max-content;
+                            // overflow: auto;
+    
+    
+                            transition: .6s;
+                        }
+                        .text{
+                            line-height: 24px;
+                        }
+                        ol{
+                            margin-left: 18px;
+                            li{
+                                line-height: 24px;
+
+                            }
+                        }
+                    }
                    
                 }
+                .video-select-content{
+                    display: none;     
+                   
+                    &.show{
+                        display: block;
+                    }
+                }
             }
+            // 教學範例
+            .teaching-select{
+                padding: 20px 0px;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                position: sticky;
+                top: 101px;
+                .teaching-select-title{  
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-right: 16px;
+
+                }
+                // 選單內容
+                .teaching-select-content{
+                    width: 75%;
+                    max-width: 280px;
+                    // height: 80%;
+
+                    background-color: white;
+                    border: 2px solid gray;
+                    border-radius: 5px;
+                    
+                    color: gray;
+                    text-align: center;
+                    letter-spacing: 1.5px;
+            
+                    position: relative;
+            
+                    display: flex;
+                    align-items: center;
+                    &:hover{
+                        border-radius: 3px;
+                        border: 2px solid rgb(163, 163, 163);
+
+                        transition: .6s;
+                        .fa-sort-down{
+                            transition: .6s;
+                        }
+                    }
+                    &.active{
+                        border-radius: 3px;
+                        border: 1px solid rgb(163, 163, 163);
+                    }
+                
+                    // 下拉選單 icon
+                    .fa-sort-down{
+                        font-size: 28px;
+                        color: gray;
+            
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        transform: translateY(-70%);
+                        @media screen and (max-width:400px) {
+                            right: 5px;
+                            font-size: 24px;
+                        }
+                    }
+                    label{
+                        top: 5px;
+                        left: 20px;
+            
+                        font-size: 12px;
+                        font-weight: 700;
+                    }
+                    // 下拉式選單內容
+                    .select-options{
+                        width: 100%;
+            
+                        display: none;
+
+                        background-color: white;
+                        border: 1px solid gainsboro;
+                        border-radius: 0px 0px 5px 5px;
+                        box-shadow: 5px  5px 10px  rgba(56, 56, 56, 0.384);
+            
+                        position: absolute;
+                        top: 100%;
+            
+                        z-index: 50;
+            
+                        margin: 0;
+                        padding: 0;   
+                        
+                        text-align: center;
+            
+                        height: max-content;
+                        max-height: 40vh;
+                        overflow-y: auto;
+                        // 單個選單選項
+                        .select-option{
+                            height: max-content;
+                            list-style: none;
+            
+                            font-size: 16px;
+                            font-weight: 600;
+            
+                            padding: 5px 2px;
+                        
+                            color: gray;
+                        
+                            transition: all .25s;
+
+                            cursor: pointer;
+                            @media screen and (max-width:1200px) {
+                                font-size: 16px;
+                                letter-spacing: 1px;
+
+                                padding: 4px 2px;
+                            }
+                            @media screen and (max-width:1000px) {
+                                font-size: 14px;
+                            }
+                            &:hover{
+                                background-color: whitesmoke;
+            
+                                color: rgb(17, 38, 75);
+                                
+                                cursor: pointer;
+            
+                                transition: .6s;
+                            }
+                            &.active{
+                                background-color: whitesmoke;
+            
+                                color: rgb(17, 38, 75);
+            
+                                cursor: pointer;
+            
+                                transition: .6s;
+                            }
+                        }
+                    }
+                    // 選單預設標題
+                    .select-text{
+                        width: 100%;   
+                        // height: 50px;
+            
+                        padding: 3px 0px;
+                        padding-right: 20px;
+            
+                        font-size: 18px;
+                        letter-spacing: 2px;
+                        text-align: center;
+            
+                        display: block;
+                        
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        cursor: pointer;
+                        @media screen and (max-width:1200px) {
+                            font-size: 16px;
+                            padding: 4px 0px;
+                            letter-spacing: 1px;
+                        }
+                        @media screen and (max-width:1000px) {
+                            font-size: 14px;
+                        }
+                        .select-name{
+                            text-align: center;
+                        }      
+                    }
+                }
+            }
+            .questions{
+               
+            }
+
         }
+
     }
 
 }

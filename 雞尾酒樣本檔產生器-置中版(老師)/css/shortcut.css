@@ -1,0 +1,164 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+img {
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+ul, ol {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  width: 100%;
+  max-width: 1920px;
+  background-color: white;
+  padding: 15px 0px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+  -webkit-box-shadow: 10px 10px 10px rgba(151, 151, 151, 0.308);
+          box-shadow: 10px 10px 10px rgba(151, 151, 151, 0.308);
+  margin-bottom: 24px;
+}
+
+nav .title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 8px;
+}
+
+nav .nav-items {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 1400px;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .nav-items .nav-item {
+  width: 150px;
+  max-width: 150px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 24px;
+  padding: 3px 8px;
+  border-radius: 5px;
+  background-color: #121233;
+  border: 2px solid #121233;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+nav .nav-items .nav-item:hover {
+  background-color: white;
+  color: #121233;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+nav .nav-items .nav-item:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+main {
+  max-width: 1400px;
+  width: 100%;
+  height: 500px;
+  margin: 0px auto;
+  padding: 30px;
+}
+
+main .shortcut-contents {
+  width: 100%;
+  margin-bottom: 24px;
+  border-radius: 0px 20px 8px 8px;
+  -webkit-box-shadow: 10px 10px 15px rgba(175, 175, 175, 0.171);
+          box-shadow: 10px 10px 15px rgba(175, 175, 175, 0.171);
+}
+
+main .shortcut-contents:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+main .shortcut-contents .shortcut-content {
+  width: 100%;
+}
+
+main .shortcut-contents .shortcut-content .shortcut-content-title {
+  width: 100%;
+  padding: 3px 0px;
+  padding-left: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  border-left: 8px solid salmon;
+  background-color: sandybrown;
+  border-radius: 0px 30px 30px 0px;
+  color: #121233;
+}
+
+main .shortcut-contents .shortcut-content .shortcut-content-texts {
+  padding: 18px  8px;
+}
+
+main .shortcut-contents .shortcut-content .shortcut-content-texts ol {
+  margin: 0px 32px;
+}
+
+main .shortcut-contents .shortcut-content .shortcut-content-texts ol li {
+  line-height: 28px;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .shortcut-contents .shortcut-content .shortcut-content-texts ol li a {
+  padding: 0px  8px;
+  background-color: brown;
+  border-radius: 5px;
+  color: white;
+  margin: 0px 3px;
+}
+/*# sourceMappingURL=shortcut.css.map */
