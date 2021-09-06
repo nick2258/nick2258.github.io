@@ -95,6 +95,13 @@ nav .nav-items .nav-item:hover {
   transition: .6s;
 }
 
+nav .nav-items .nav-item.active {
+  background-color: white;
+  color: #121233;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
 nav .nav-items .nav-item:nth-last-child(1) {
   margin-right: 0px;
 }
@@ -105,6 +112,7 @@ main {
   height: 500px;
   margin: 0px auto;
   padding: 30px;
+  padding-top: 0px;
 }
 
 main .shortcut-contents {
@@ -129,21 +137,22 @@ main .shortcut-contents .shortcut-content .shortcut-content-title {
   padding-left: 8px;
   font-size: 20px;
   font-weight: 600;
+  color: #121233;
   border-left: 8px solid salmon;
   background-color: sandybrown;
   border-radius: 0px 30px 30px 0px;
-  color: #121233;
 }
 
 main .shortcut-contents .shortcut-content .shortcut-content-texts {
   padding: 18px  8px;
 }
 
-main .shortcut-contents .shortcut-content .shortcut-content-texts ol {
-  margin: 0px 32px;
+main .shortcut-contents .shortcut-content .shortcut-content-texts ul {
+  margin: 0px 8px;
+  list-style: decimal;
 }
 
-main .shortcut-contents .shortcut-content .shortcut-content-texts ol li {
+main .shortcut-contents .shortcut-content .shortcut-content-texts ul li {
   line-height: 28px;
   font-size: 16px;
   letter-spacing: 1.5px;
@@ -154,11 +163,142 @@ main .shortcut-contents .shortcut-content .shortcut-content-texts ol li {
       flex-wrap: wrap;
 }
 
-main .shortcut-contents .shortcut-content .shortcut-content-texts ol li a {
+main .shortcut-contents .shortcut-content .shortcut-content-texts ul li a {
   padding: 0px  8px;
   background-color: brown;
   border-radius: 5px;
   color: white;
   margin: 0px 3px;
+}
+
+main .shortcut-contents .shortcut-content .shortcut-content-pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 0px 8px;
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 1250px) {
+  main .shortcut-contents .shortcut-content .shortcut-content-pics {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+main .shortcut-contents .shortcut-content .shortcut-content-pics .pic {
+  width: calc(25% - 23px);
+  background-color: transparent;
+  margin-right: 30px;
+}
+
+main .shortcut-contents .shortcut-content .shortcut-content-pics .pic:nth-child(4n) {
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 1000px) {
+  main .shortcut-contents .shortcut-content .shortcut-content-pics .pic {
+    width: calc(50% - 15px);
+    margin-bottom: 20px;
+  }
+  main .shortcut-contents .shortcut-content .shortcut-content-pics .pic:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  main .shortcut-contents .shortcut-content .shortcut-content-pics .pic {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+  main .shortcut-contents .shortcut-content .shortcut-content-pics .pic:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+
+main .shortcut-contents .shortcut-content .shortcut-content-pics .pic .pic-title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: white;
+  border-radius: 8px 8px 0px 0px;
+  padding: 3px 24px;
+  background-color: lightcoral;
+  -webkit-box-shadow: 10px 10px 15px rgba(63, 61, 61, 0.377);
+          box-shadow: 10px 10px 15px rgba(63, 61, 61, 0.377);
+}
+
+main .shortcut-contents .shortcut-content .shortcut-content-pics .pic img {
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 15px rgba(63, 61, 61, 0.377);
+          box-shadow: 10px 10px 15px rgba(63, 61, 61, 0.377);
+  border-radius: 0px 0px 5px 5px;
+}
+
+main .shortcut-contents .shortcut-content .shortcut-content-pics .pc-pic {
+  width: calc(50% - 15px);
+  background-color: transparent;
+  margin-right: 30px;
+}
+
+main .shortcut-contents .shortcut-content .shortcut-content-pics .pc-pic:nth-child(2n) {
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 1250px) {
+  main .shortcut-contents .shortcut-content .shortcut-content-pics .pc-pic {
+    width: 100%;
+    max-width: 800px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+main .shortcut-contents .shortcut-content .shortcut-content-pics .pc-pic .pic-title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  border-radius: 8px 8px 0px 0px;
+  padding: 3px 24px;
+  background-color: lightcoral;
+  color: white;
+  -webkit-box-shadow: 10px 10px 15px rgba(63, 61, 61, 0.377);
+          box-shadow: 10px 10px 15px rgba(63, 61, 61, 0.377);
+}
+
+main .shortcut-contents .shortcut-content .shortcut-content-pics .pc-pic img {
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 15px rgba(63, 61, 61, 0.377);
+          box-shadow: 10px 10px 15px rgba(63, 61, 61, 0.377);
+  border-radius: 0px 0px 5px 5px;
 }
 /*# sourceMappingURL=shortcut.css.map */
