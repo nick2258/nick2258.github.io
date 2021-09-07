@@ -6,6 +6,8 @@ body{
     margin: 0px;
     padding: 0px;
     position: relative;
+    background-color: cornsilk;
+    // background-color: whitesmoke;
 }
 
 img{
@@ -30,6 +32,7 @@ nav{
     width: 100%;
     max-width: 1920px;
     background-color: white;
+    background-color: whitesmoke;
 
     padding: 15px 0px;
     // margin-bottom: 8px;
@@ -89,6 +92,10 @@ main{
     padding-bottom: 48px;
 
     margin: 0px auto;
+    
+    @media screen and (max-width:1450px) {
+        padding: 0px 16px;
+    }
     // 下方三個大區塊
     .teaching-contents{
         width: 100%;
@@ -111,6 +118,7 @@ main{
 
             // border: 2PX salmon solid;
             background-color: burlywood;
+            background-color: rgb(137, 164, 199);
             border-radius:5px 5px 0px 0px;
 
             color: white;
@@ -125,20 +133,24 @@ main{
             width: 100%;
             border: 2px solid sandybrown;
             border: 3px solid burlywood;
+            border: 3px solid rgb(137, 164, 199);
+            background-color: white;
+
 
             box-shadow: 10px 10px 15px rgba(51, 51, 51, 0.178);
 
             border-radius: 0px 8px 8px 8px;
             padding: 24px 40px;
+            padding-bottom: 0px;
             // 操作流程
             ul{
                 width: 100%;
                 .teaching-item{
                     width: 100%;
-                    margin-top: 24px;
-                    &:nth-child(1){
-                        margin-top: 0px;
-                    }
+                    padding-bottom: 24px;
+                    // &:nth-child(1){
+                    //     margin-top: 0px;
+                    // }
                     .small-title{
                         padding: 1px 0px;
                         padding-left: 8px;
@@ -150,43 +162,93 @@ main{
                     }
                     // 流程圖
                     .process-pics{
+                        width: 100%;
                         display: flex;
                         flex-wrap: wrap;
-                        .process-pic{
+                        .all-process-pic{
                             display: flex;
-                            align-items: center;
-                            &::after{
-                                display: flex;
-                                content: ' ';
-                                width: 50px;
-                                height: 30px;
-                                margin: 0px 16px;
-                                background-color: rgb(184, 184, 184);
-                                clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+                            @media screen and (max-width:1420px) {
+                                margin-bottom: 32px;
                             }
-                            &:nth-last-child(1)::after{
-                                width: 0px;
-                                height: 0px;
-                            }
-                            .process-pic-content{
-                                width: 250px;
-                                padding: 8px;
-                                border: 2px solid gray;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                border-radius: 5px;
-
-                                box-shadow: 10px 10px 15px rgba(51, 51, 51, 0.178);
-                                .process-pic-title{
-                                    font-size: 18px;
-                                    font-weight: 600;
-                                    letter-spacing: 1px;
-                                    margin-bottom: 8px;
+                            &:nth-child(2){
+                                @media screen and (max-width:1420px) {
+                                    margin-bottom: 0px;
+                                    transform: translateX(14vw);
+                                }
+                                @media screen and (max-width:1050px) {
+                                    transform: translateX(10vw);
+                                }
+                                @media screen and (max-width:900px) {
+                                    transform: translateX(0vw);
+                                }
+                                .process-pic{
+                                    &:nth-last-child(1)::after{
+                                        width: 0px;
+                                        height: 0px;
+                                    }
                                 }
                             }
-                           
+                            .process-pic{
+                                display: flex;
+                                align-items: center;
+                                &::after{
+                                    display: flex;
+                                    content: ' ';
+                                    width: 50px;
+                                    height: 30px;
+                                    margin: 0px 16px;
+                                    background-color: rgb(184, 184, 184);
+                                    background-color: lightsteelblue;
+                                    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+                                }
+                                // &:nth-last-child(1)::after{
+                                //     width: 0px;
+                                //     height: 0px;
+                                // }
+                                
+                                .process-pic-content{
+                                    // width: 13.49vw;
+                                    width: 251px;
+                                    max-width: 251px;
+                                    // width: 120px;
+                                    // width: 100%;
+                                    padding: 8px;
+                                    border: 2px solid lightsteelblue;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    border-radius: 5px;
+    
+                                    box-shadow: 10px 10px 15px rgba(51, 51, 51, 0.178);
+                                    @media screen and (max-width:1420px) {
+                                        width: 350px;
+                                        max-width:350px;
+                                    }
+                                    @media screen and (max-width:1050px) {
+                                        width: 300px;
+                                        max-width:300px;
+                                    }
+                                    @media screen and (max-width:900px) {
+                                        width: 280px;
+                                        max-width:280px;
+                                    }
+                                    .process-pic-title{
+                                        font-size: 18px;
+                                        font-weight: 600;
+                                        letter-spacing: 1px;
+                                        margin-bottom: 8px;
+                                    }
+                                    .process-pic-text{
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        justify-content: center;
+                                    }
+                                }
+                              
+                               
+                            }
                         }
+                       
                     }
                     // 流程內容
                     .small-process-content{
@@ -220,10 +282,8 @@ main{
                     }
                     // 教學範例
                     .videos{
-                        width: 100%;
                         display: flex;
                         flex-direction: column;
-                        // align-items: center;
                         video{
                             width: 80%;
                             max-width: 800px;
@@ -232,7 +292,9 @@ main{
                                 margin-top: 0px;
                             }
                         }
+                       
                         iframe{
+                            width: 100%;
                             border-radius: 5px;
                             width: 60%;
                             height: 30vw;
@@ -244,13 +306,14 @@ main{
                         // border: 2px solid lightsalmon;
                         // border-left: 6px solid salmon;
                         background-color: pink;
+                        background-color: oldlace;
                         border-radius: 0px 30px 30px 0px;
 
                         color: rgb(18, 18, 51);
                         padding: 4px 0px;
                         padding-left: 8px;
                         // color: white;
-                        cursor: pointer;
+                        // cursor: pointer;
                         margin-bottom: 0px;
                         // padding: 18px;
                         // width: 100%;
@@ -267,34 +330,40 @@ main{
                         //     float: right;
                         //     margin-left: 5px;
                         // }
-                        &:hover{
-                            background-color: sandybrown;
+                        // &:hover{
+                        //     background-color: sandybrown;
+                        //     background-color: orange;
+                        //     color: white;
+                            
 
-                            transition: .6s;
-                        }
-                        &.show{
-                            margin-bottom: 8px;
-                            content: "";
-                            background-color: sandybrown;
-
-                            transition: .6s;
-                        }
+                        //     transition: .6s;
+                        // }
+                        // &.show{
+                        //     margin-bottom: 8px;
+                        //     content: " ";
+                        //     background-color: sandybrown;
+                        //     background-color: rgb(255, 213, 140);
+                        //     background-color: orange;
+                        //     color: white;
+                        //     transition: .6s;
+                        // }
                           
                     }
                     .question-content{
-                        padding: 0 18px;
-                        max-height: 0;
-                        overflow: hidden;
+                        padding: 0 16px;
+                        padding-top: 16px;
+                        // max-height: 0;
+                        // overflow: hidden;
                         transition: max-height 0.2s ease-out;
                         // background-color: #f1f1f1;
-                        &.show{
-                            height: max-content;
-                            max-height: max-content;
-                            // overflow: auto;
+                        // &.show{
+                        //     height: max-content;
+                        //     max-height: max-content;
+                        //     // overflow: auto;
     
     
-                            transition: .6s;
-                        }
+                        //     transition: .6s;
+                        // }
                         .text{
                             line-height: 24px;
                         }
@@ -313,8 +382,20 @@ main{
                    
                     &.show{
                         display: block;
+                       
+                        transition: .6s;
                     }
                 }
+                .question-select-content{
+                    display: none;     
+                   
+                    &.show{
+                        display: block;
+
+                        transition: .6s;
+                    }
+                }
+               
             }
             // 教學範例
             .teaching-select{
@@ -484,10 +565,6 @@ main{
                     }
                 }
             }
-            .questions{
-               
-            }
-
         }
 
     }

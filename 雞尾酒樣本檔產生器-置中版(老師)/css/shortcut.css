@@ -54,15 +54,38 @@ nav .title {
   margin-bottom: 8px;
 }
 
+@media screen and (max-width: 740px) {
+  nav .title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  nav .title {
+    font-size: 20px;
+  }
+}
+
 nav .nav-items {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   max-width: 1400px;
-  margin: 0px auto;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 8px;
+  margin: 0px auto;
+  display: flex;
+}
+
+@media screen and (max-width: 440px) {
+  nav .nav-items {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 nav .nav-items .nav-item {
@@ -71,7 +94,7 @@ nav .nav-items .nav-item {
   font-size: 16px;
   font-weight: 600;
   margin-right: 24px;
-  padding: 3px 8px;
+  padding: 4px 8px;
   border-radius: 5px;
   background-color: #121233;
   border: 2px solid #121233;
@@ -86,6 +109,37 @@ nav .nav-items .nav-item {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
+}
+
+@media screen and (max-width: 740px) {
+  nav .nav-items .nav-item {
+    padding: 2px 5px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  nav .nav-items .nav-item {
+    padding: 1px 3px;
+    font-size: 14px;
+    width: 120px;
+    max-width: 120px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  nav .nav-items .nav-item {
+    padding: 1px 2px;
+    font-size: 14px;
+    width: 32%;
+    max-width: 32%;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  nav .nav-items .nav-item {
+    font-size: 13px;
+  }
 }
 
 nav .nav-items .nav-item:hover {
@@ -109,7 +163,6 @@ nav .nav-items .nav-item:nth-last-child(1) {
 main {
   max-width: 1400px;
   width: 100%;
-  height: 500px;
   margin: 0px auto;
   padding: 30px;
   padding-top: 0px;
@@ -118,7 +171,8 @@ main {
 main .shortcut-contents {
   width: 100%;
   margin-bottom: 24px;
-  border-radius: 0px 20px 8px 8px;
+  border-radius: 0px 20px 16px 16px;
+  border-right: 2px solid gainsboro;
   -webkit-box-shadow: 10px 10px 15px rgba(175, 175, 175, 0.171);
           box-shadow: 10px 10px 15px rgba(175, 175, 175, 0.171);
 }
@@ -137,14 +191,28 @@ main .shortcut-contents .shortcut-content .shortcut-content-title {
   padding-left: 8px;
   font-size: 20px;
   font-weight: 600;
-  color: #121233;
+  color: #575757;
   border-left: 8px solid salmon;
   background-color: sandybrown;
+  background-color: thistle;
+  background-color: oldlace;
   border-radius: 0px 30px 30px 0px;
+  -webkit-box-shadow: 0px 5px 15px rgba(128, 128, 128, 0.322);
+          box-shadow: 0px 5px 15px rgba(128, 128, 128, 0.322);
+}
+
+@media screen and (max-width: 740px) {
+  main .shortcut-contents .shortcut-content .shortcut-content-title {
+    font-size: 18px;
+  }
 }
 
 main .shortcut-contents .shortcut-content .shortcut-content-texts {
-  padding: 18px  8px;
+  padding: 24px  8px;
+  border: 2px solid gainsboro;
+  border-right: 0px solid transparent;
+  border-radius: 0px 20px 16px 16px;
+  border-top: 0px solid transparent;
 }
 
 main .shortcut-contents .shortcut-content .shortcut-content-texts ul {
@@ -154,8 +222,9 @@ main .shortcut-contents .shortcut-content .shortcut-content-texts ul {
 
 main .shortcut-contents .shortcut-content .shortcut-content-texts ul li {
   line-height: 28px;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 1.5px;
+  margin-bottom: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,9 +232,17 @@ main .shortcut-contents .shortcut-content .shortcut-content-texts ul li {
       flex-wrap: wrap;
 }
 
+@media screen and (max-width: 540px) {
+  main .shortcut-contents .shortcut-content .shortcut-content-texts ul li {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 5px;
+  }
+}
+
 main .shortcut-contents .shortcut-content .shortcut-content-texts ul li a {
   padding: 0px  8px;
-  background-color: brown;
+  background-color: orange;
   border-radius: 5px;
   color: white;
   margin: 0px 3px;
@@ -178,7 +255,7 @@ main .shortcut-contents .shortcut-content .shortcut-content-pics {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  padding: 0px 8px;
+  padding: 0px 24px;
   margin-top: 16px;
 }
 
@@ -187,6 +264,12 @@ main .shortcut-contents .shortcut-content .shortcut-content-pics {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  main .shortcut-contents .shortcut-content .shortcut-content-pics {
+    padding: 0px 8px;
   }
 }
 
@@ -233,13 +316,13 @@ main .shortcut-contents .shortcut-content .shortcut-content-pics .pic .pic-title
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 1.5px;
   color: white;
   border-radius: 8px 8px 0px 0px;
   padding: 3px 24px;
-  background-color: lightcoral;
+  background-color: tomato;
   -webkit-box-shadow: 10px 10px 15px rgba(63, 61, 61, 0.377);
           box-shadow: 10px 10px 15px rgba(63, 61, 61, 0.377);
 }
@@ -284,12 +367,12 @@ main .shortcut-contents .shortcut-content .shortcut-content-pics .pc-pic .pic-ti
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 1.5px;
   border-radius: 8px 8px 0px 0px;
   padding: 3px 24px;
-  background-color: lightcoral;
+  background-color: tomato;
   color: white;
   -webkit-box-shadow: 10px 10px 15px rgba(63, 61, 61, 0.377);
           box-shadow: 10px 10px 15px rgba(63, 61, 61, 0.377);

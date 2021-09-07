@@ -11,6 +11,37 @@
 
 </head>
 <body>
+      <!-- 登入畫面側邊滑動顯示 -->
+      <section class="login-informations ">
+        <div class="login-information">
+            <div class="login-title">
+                <span>會員登入LOGIN</span>    
+            </div>
+
+            <div class="login-contents">
+                <div class="login-items">
+                    <span class="login-item">會員編號</span>
+                    <input placeholder="請輸入會員編號" type="text">
+                </div>
+
+                <div class="login-items">
+                    <span class="login-item">會員帳號</span>
+                    <input  placeholder="請輸入會員帳號" type="text">
+                </div>
+
+                <div class="login-items">
+                    <span class="login-item">會員密碼</span>
+                    <input placeholder="請輸入會員密碼" type="password">
+                </div>
+
+                <div class="login">
+                    <div class="login-text">登入</div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
     <!-- 我的清單 側邊滑動顯示 滿版-->
     <div class="love-lists " >
         <!-- 會員編號 -->
@@ -292,13 +323,13 @@
     <nav>
         <section class="nav-content">
             <!-- 未登入時畫面 -->
-            <div class="nav-items" style="display: none;">
+            <div class="nav-items" >
                 <div class="user">訪客，您好</div>
                 <div class="log login">登入</div>
             </div>
      
              <!-- 登入時畫面 -->
-            <div class="nav-items"  >
+            <div class="nav-items" style="display: none;" >
                  <div class="log user-login" style="cursor: pointer;">我的清單</div>
                  <div class="log logout">登出</div>
             </div>
@@ -2112,5 +2143,16 @@
             pricefile.classList.remove("show");
         })
     </script>
+
+<script>
+    const login = document.querySelector(".login")
+     console.log(login);
+    const logininformations = document.querySelector(".login-informations")
+    console.log(logininformations);
+
+    login.addEventListener('click',function() {
+        logininformations.classList.add("show")
+    })
+</script>
 </body>
 </html>

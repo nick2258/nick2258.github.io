@@ -38,55 +38,59 @@
                     <li class="teaching-item">
                         <div class="small-title">操作步驟</div>
                         <div class="process-pics">
-                            
-                            <div class="process-pic">
-                                <div class="process-pic-content">
-                                    <div class="process-pic-title">
-                                        步驟一
+                            <div class="all-process-pic">
+                                <div class="process-pic">
+                                    <div class="process-pic-content">
+                                        <div class="process-pic-title">
+                                            步驟一
+                                        </div>
+                                        <div class="process-pic-text">
+                                            填寫印刷資訊
+                                        </div>
                                     </div>
-                                    <div class="process-pic-text">
-                                        填寫印刷資訊
-                                    </div>
+                                    
                                 </div>
-                                
+    
+                                <div class="process-pic">
+                                    <div class="process-pic-content">
+                                        <div class="process-pic-title">
+                                            步驟二
+                                        </div>
+                                        <div class="process-pic-text">
+                                            填寫印刷內容
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="all-process-pic">
+                                <div class="process-pic">
+                                    <div class="process-pic-content">
+                                        <div class="process-pic-title">
+                                            步驟三
+                                        </div>
+                                        <div class="process-pic-text">
+                                            <span>輸入印刷數量</span><span>並確認資訊</span>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+    
+                                <div class="process-pic">
+                                    <div class="process-pic-content">
+                                        <div class="process-pic-title">
+                                            步驟四
+                                        </div>
+                                        <div class="process-pic-text">
+                                            <span>查看價格與</span><span>下載樣本檔</span>
+    
+                                        </div>
+                                    </div>
+                                    
+                                </div>
                             </div>
 
-                            <div class="process-pic">
-                                <div class="process-pic-content">
-                                    <div class="process-pic-title">
-                                        步驟二
-                                    </div>
-                                    <div class="process-pic-text">
-                                        填寫印刷內容
-                                    </div>
-                                </div>
-                                
-                            </div>
-
-                            <div class="process-pic">
-                                <div class="process-pic-content">
-                                    <div class="process-pic-title">
-                                        步驟三
-                                    </div>
-                                    <div class="process-pic-text">
-                                        輸入印刷數量並確認資訊
-                                    </div>
-                                </div>
-                                
-                            </div>
-
-                            <div class="process-pic">
-                                <div class="process-pic-content">
-                                    <div class="process-pic-title">
-                                        步驟四
-                                    </div>
-                                    <div class="process-pic-text">
-                                        查看價格與下載樣本檔
-                                    </div>
-                                </div>
-                                
-                            </div>
-                           
                         </div>
                     </li>
                     <li class="teaching-item">
@@ -303,9 +307,36 @@
         <section class="teaching-contents" id="teaching-contents-03">
             <div class="big-title">常見問題</div>
             <div class="teaching-content">
+                <div class="teaching-select" >
+                    <div class="teaching-select-title">
+                        <span>選擇常見問題</span>
+                    </div>
+                    <div class="dino-input-field  custom-select  teaching-select-content">
+                        <label></label>
+                
+                        <span class=" select-text">
+                            <span id="" class="select-name">全部</span>
+                        </span>
+                
+                        <!-- 下拉式選單內容 預設第一張-->
+                        <ul id="" class="select-options  ">
+                            <li class="select-option select-option2 question-selectall">
+                                全部
+                            </li>
+                            <li class="select-option select-option2 question-select">問題A</li>
+                            <li class="select-option select-option3 question-select" >
+                                問題B
+                            </li>
+                           
+                        </ul>
+                
+                        <!-- 下拉式選單箭頭icon -->
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
                 <ul>
-                    <li class="teaching-item video-select-content" >
-                        <div class="small-title question-title">雞尾酒彩色名片</div>
+                    <li class="teaching-item question-select-content" >
+                        <div class="small-title question-title">常見問題標題A</div>
                         <div class="question-content">
                             <div class="text">常見問題A無標題文字描述</div>
                             <ol>
@@ -317,8 +348,8 @@
                         </div>
                     </li>
 
-                    <li class="teaching-item video-select-content" >
-                        <div class="small-title question-title">常見問題標題A</div>
+                    <li class="teaching-item question-select-content" >
+                        <div class="small-title question-title">常見問題標題B</div>
                         <div class="question-content">
                             <div class="text">常見問題A無標題文字描述</div>
                             <ol>
@@ -399,7 +430,39 @@
 
 </script>
 
-<script>
+<script >
+
+    const questionselectall = document.querySelector(".question-selectall")
+    const questionselect = document.querySelectorAll(".question-select")
+    const questionselectcontent = document.querySelectorAll(".question-select-content")
+    showallquestionselectcontent() ;   
+    questionselectall.addEventListener('click',function () {
+        clearallquestionselectcontent();
+        showallquestionselectcontent() ;   
+    })
+
+    questionselect.forEach(function (ele , i)  {
+        ele.addEventListener('click',function () {
+            clearallquestionselectcontent();
+            questionselectcontent[i].classList.toggle("show")
+        })
+    });
+
+    function clearallquestionselectcontent() {
+        questionselectcontent.forEach(function (ele , i)  {
+            questionselectcontent[i].classList.remove("show")
+        });
+    }
+
+    function showallquestionselectcontent() {
+        questionselectcontent.forEach(function (ele , i)  {
+            questionselectcontent[i].classList.add("show")
+        });
+    }
+
+</script>
+
+<!-- <script>
     const questiontitle = document.querySelectorAll(".question-title")
     const questioncontent = document.querySelectorAll(".question-content")    
     questioncontent[0].classList.add("show")
@@ -428,5 +491,5 @@
             questioncontent[i].classList.add("show")
         });
     }
-</script>
+</script> -->
 </html>
