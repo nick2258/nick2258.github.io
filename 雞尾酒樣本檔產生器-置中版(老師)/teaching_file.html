@@ -7,26 +7,26 @@
     <link rel="stylesheet" href="./css/teaching_file.css">
      <!-- fontawesome的cdn -->
      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <title>樣本檔線上教學手冊</title>
+    <title>樣本檔操作教學指南</title>
 </head>
 <body>
     <nav>
         <div class="title">
-            <span>樣本檔產生器教學手冊</span>
+            <span>樣本檔產生器操作教學指南</span>
         </div>
 
         <div class="nav-items">
 
-            <a class="nav-item" href="#teaching-contents-01">
+            <div class="nav-item" href="">
                 <span>操作流程</span>
-            </a>
-            <a class="nav-item" href="#teaching-contents-02">
+            </div>
+            <div class="nav-item" href="">
                 <span>教學範例</span>
-            </a>
+            </div>
 
-            <a class="nav-item" href="#teaching-contents-03">
+            <div class="nav-item" href="">
                 <span>常見問題</span>
-            </a>
+            </div>
         </div>
     </nav>
     
@@ -460,6 +460,36 @@
         });
     }
 
+</script>
+
+<script>
+    const navitem = document.querySelectorAll(".nav-item")
+    const teachingcontents = document.querySelectorAll(".teaching-contents")
+
+    showall();
+
+    navitem.forEach( function (ele,i) {
+        ele.addEventListener('click',function () {
+            clearall();
+            ele.classList.add("active");
+            teachingcontents[i].style.display = 'block';
+
+        })
+    });
+
+    function showall() {
+        teachingcontents.forEach(ele => {
+
+            ele.style.display = 'block';
+        }); 
+    }
+    function clearall() {
+        teachingcontents.forEach(function (ele,i){
+            ele.style.display = 'none';
+            navitem[i].classList.remove("active");
+        }); 
+    }
+    
 </script>
 
 <!-- <script>

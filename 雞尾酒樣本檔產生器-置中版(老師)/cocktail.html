@@ -2088,7 +2088,9 @@
         </main>
     </div>
 
-    <script src="../CommonJs/Jquery/jquery-2.1.3.min.js" type="text/javascript"></script>
+    <!-- <script src="../CommonJs/Jquery/jquery-2.1.3.min.js" type="text/javascript"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <!-- 所有下拉式數量選單 -->
     <script>
@@ -2102,12 +2104,12 @@
                 }
             });
 
-            //$('.select-options li').click(function (e) {
-            //    e.stopPropagation();
-            //    const text_inside = $(this).text();
-            //    $(this).parent().slideUp();
-            //    $(this).parent().prev().text(text_inside);
-            //});
+            $('.select-options li').click(function (e) {
+               e.stopPropagation();
+               const text_inside = $(this).text();
+               $(this).parent().slideUp();
+               $(this).parent().prev().text(text_inside);
+            });
 
             $(document).click(function (e) {
                 $('.select-options').slideUp();

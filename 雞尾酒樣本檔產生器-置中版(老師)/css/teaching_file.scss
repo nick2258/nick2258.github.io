@@ -6,8 +6,9 @@ body{
     margin: 0px;
     padding: 0px;
     position: relative;
-    background-color: cornsilk;
+    // background-color: cornsilk;
     // background-color: whitesmoke;
+    background-image: url(../image/ricepaper_v3_@2X.png);
 }
 
 img{
@@ -58,6 +59,10 @@ nav{
 
         margin: 0px auto;
         display: flex;
+        @media screen and (max-width:540px) {
+            width: 100%;
+            justify-content: space-around;
+        }
 
        
         .nav-item{
@@ -73,6 +78,13 @@ nav{
             color: white;
 
             cursor: pointer;
+            @media screen and (max-width:540px) {
+                font-size: 14px;
+                width: 30%;
+                padding: 3px;
+                text-align: center;
+                margin-right: 0px;
+            }
             &:hover{
                 background-color: white;
                 color: rgb(18, 18, 51);
@@ -95,6 +107,9 @@ main{
     
     @media screen and (max-width:1450px) {
         padding: 0px 16px;
+    }
+    @media screen and (max-width:540px) {
+        padding: 0px 10px;
     }
     // 下方三個大區塊
     .teaching-contents{
@@ -142,34 +157,56 @@ main{
             border-radius: 0px 8px 8px 8px;
             padding: 24px 40px;
             padding-bottom: 0px;
+            @media screen and (max-width:540px) {
+                padding: 18px 12px;
+                padding-bottom: 0px;
+            }
             // 操作流程
             ul{
                 width: 100%;
                 .teaching-item{
                     width: 100%;
                     padding-bottom: 24px;
+                    @media screen and (max-width:540px) {
+                        padding-bottom: 16px;
+                    }
                     // &:nth-child(1){
                     //     margin-top: 0px;
                     // }
                     .small-title{
-                        padding: 1px 0px;
+                        padding: 2px 0px;
                         padding-left: 8px;
                         font-size: 18px;
                         font-weight: 600;
                         margin-bottom: 16px;
 
                         border-left: 6px salmon solid; 
+                        background-color:oldlace ;
+                        border-radius: 0px 30px 30px 0px;
                     }
                     // 流程圖
                     .process-pics{
                         width: 100%;
                         display: flex;
                         flex-wrap: wrap;
+                        @media screen and (max-width:900px) {
+                            flex-direction: column;
+                        }
+                        
                         .all-process-pic{
                             display: flex;
                             @media screen and (max-width:1420px) {
                                 margin-bottom: 32px;
                             }
+                            @media screen and (max-width:900px) {
+                                flex-direction: column;
+                                width: 300px;
+                                margin: 0px auto;
+                            }
+                            @media screen and (max-width:540px) {
+                                width: 250px;
+                            }
+                          
                             &:nth-child(2){
                                 @media screen and (max-width:1420px) {
                                     margin-bottom: 0px;
@@ -191,6 +228,9 @@ main{
                             .process-pic{
                                 display: flex;
                                 align-items: center;
+                                @media screen and (max-width:900px) {
+                                    flex-direction: column;
+                                }
                                 &::after{
                                     display: flex;
                                     content: ' ';
@@ -200,6 +240,14 @@ main{
                                     background-color: rgb(184, 184, 184);
                                     background-color: lightsteelblue;
                                     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+                                    @media screen and (max-width:900px) {
+                                        width: 40px;
+                                        height: 40px;
+                                        clip-path: polygon(100% 75%, 50% 100%, 0 70%, 0 0, 50% 25%, 100% 0);
+
+                                        margin: 8px 0px;
+
+                                    }
                                 }
                                 // &:nth-last-child(1)::after{
                                 //     width: 0px;
@@ -229,23 +277,24 @@ main{
                                         max-width:300px;
                                     }
                                     @media screen and (max-width:900px) {
-                                        width: 280px;
-                                        max-width:280px;
+                                        width: 100%;
+                                        padding:8px 5px;
                                     }
+                                  
                                     .process-pic-title{
                                         font-size: 18px;
                                         font-weight: 600;
                                         letter-spacing: 1px;
                                         margin-bottom: 8px;
+                                     
                                     }
                                     .process-pic-text{
+                                        // font-size: 18px;
                                         display: flex;
                                         flex-wrap: wrap;
                                         justify-content: center;
                                     }
-                                }
-                              
-                               
+                                }                              
                             }
                         }
                        
@@ -258,7 +307,9 @@ main{
                         }
                         .small-process-title{
                             font-weight: 600;
+                            font-size: 18px;
                             margin-bottom: 8px;
+                            padding-left: 16px;
                         }
                         ol{
                             li{
@@ -275,7 +326,8 @@ main{
                                     display: block;
                                 }
                                 .small-text{
-                                    line-height: 24px;
+                                    font-size: 16px;
+                                    line-height: 32px;
                                 }
                             }
                         }
@@ -285,7 +337,7 @@ main{
                         display: flex;
                         flex-direction: column;
                         video{
-                            width: 80%;
+                            width: 100%;
                             max-width: 800px;
                             margin-top: 24px;
                             &:nth-child(1){
@@ -295,17 +347,24 @@ main{
                        
                         iframe{
                             width: 100%;
+                            // max-width: 800px;
                             border-radius: 5px;
                             width: 60%;
                             height: 30vw;
+                            // margin: 0px auto;
+                            @media screen and (max-width:900px) {
+                                width: 80%;
+                                height: 38vw;
+                                margin: 0px auto;
+                            }
+                            @media screen and (max-width:700px) {
+                                width: 96%;
+                                height: 45vw;
+                            }
+                            
                         }
                     }
                     .question-title{
-                        // background-color: #777;
-                        background-color: whitesmoke;
-                        // border: 2px solid lightsalmon;
-                        // border-left: 6px solid salmon;
-                        background-color: pink;
                         background-color: oldlace;
                         border-radius: 0px 30px 30px 0px;
 
@@ -315,13 +374,7 @@ main{
                         // color: white;
                         // cursor: pointer;
                         margin-bottom: 0px;
-                        // padding: 18px;
-                        // width: 100%;
-                        // border: none;
-                        // text-align: left;
-                        // outline: none;
-                        // font-size: 15px;
-                        // width: 300px;
+                       
                         // &::after {
                         //     content: '\002B';
                         //     color: white;
@@ -399,17 +452,23 @@ main{
             }
             // 教學範例
             .teaching-select{
-                padding: 20px 0px;
+                // padding: 20px 0px;
+                padding-bottom: 16px;
                 background-color: white;
                 display: flex;
                 align-items: center;
                 position: sticky;
                 top: 101px;
+                @media screen and (max-width:680px) {
+                    flex-direction: column;
+                }
                 .teaching-select-title{  
                     font-size: 18px;
                     font-weight: 600;
                     margin-right: 16px;
-
+                    @media screen and (max-width:680px) {
+                        margin-bottom: 8px;
+                    }
                 }
                 // 選單內容
                 .teaching-select-content{

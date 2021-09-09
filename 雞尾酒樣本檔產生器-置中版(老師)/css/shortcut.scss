@@ -6,6 +6,7 @@ body{
     margin: 0px;
     padding: 0px;
     position: relative;
+    background-image: url(../image/ricepaper_v3_@2X.png);
 }
 
 img{
@@ -30,6 +31,7 @@ nav{
     width: 100%;
     max-width: 1920px;
     background-color: white;
+    background-color: whitesmoke;
 
     padding: 15px 0px;
     // margin-bottom: 8px;
@@ -134,8 +136,10 @@ main{
         width: 100%;
         margin-bottom: 24px;
         border-radius: 0px 20px 16px 16px;
-        // background-color: blue;
+        background-color: white;
         border-right: 2px solid gainsboro;
+        border-right: 2px solid #89a4c7;
+
         box-shadow: 10px 10px 15px rgba(175, 175, 175, 0.171);
       
         &:nth-last-child(1){
@@ -148,16 +152,19 @@ main{
 
                 padding: 3px 0px;
                 padding-left: 8px;
+                padding-left: 16px;
 
                 font-size: 20px;
                 font-weight: 600;
                 color:rgb(87, 87, 87) ;
                 // color: white;
 
-                border-left: 8px solid salmon; 
+                // border-left: 8px solid salmon; 
                 background-color: sandybrown;
                 background-color: thistle;
                 background-color: oldlace;
+                background-color: #89a4c7;
+                color: white;
                 border-radius: 0px 30px 30px 0px;
                 box-shadow: 0px 5px 15px rgba(128, 128, 128, 0.322);
                 @media screen and (max-width:740px) {
@@ -167,6 +174,7 @@ main{
             .shortcut-content-texts{
                 padding:24px  8px ;
                 border: 2px solid gainsboro;
+                border: 2px solid #89a4c7;
                 border-right: 0px solid transparent;
                 border-radius: 0px 20px 16px 16px;
 
@@ -248,7 +256,7 @@ main{
 
                         border-radius: 8px 8px 0px 0px;
                         padding: 3px 24px;
-                        background-color: tomato;
+                        background-color: #ff6347d9;
                         box-shadow: 10px 10px 15px rgba(63, 61, 61, 0.377);
                     }
                     img{
@@ -285,7 +293,7 @@ main{
                          letter-spacing: 1.5px;
                          border-radius: 8px 8px 0px 0px;
                          padding: 3px 24px;
-                         background-color: tomato;
+                         background-color: #ff6347d9;
                          color: white;
                          box-shadow: 10px 10px 15px rgba(63, 61, 61, 0.377);
                      }
