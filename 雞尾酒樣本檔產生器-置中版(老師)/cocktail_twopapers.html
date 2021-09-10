@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>樣本檔產生器(一張名片紙)</title>
+    <title>樣本檔產生器(兩張名片紙)</title>
     <!-- <link rel="stylesheet" href="../css/cocktail.css"> -->
     <link rel="stylesheet" href="./css/cocktail.css">
     <!-- fontawesome的cdn -->
@@ -348,8 +348,8 @@
 
                 <!-- 直式版型選擇紙張張數 依選擇的張數決定選項-->
                 <div class="paper-btns">
-                    <div class="paper-btn paper" id="btnPaper_First" style="display: none;">第一張</div>
-                    <div class="paper-btn paper" id="btnPaper_Second" style="display: none;">第二張</div>
+                    <div class="paper-btn paper" id="btnPaper_First">第一張</div>
+                    <div class="paper-btn paper" id="btnPaper_Second">第二張</div>
                     <div class="paper-btn paper" id="btnPaper_Third" style="display: none;">第三張</div>
                 </div>
             </section>
@@ -1102,7 +1102,7 @@
                 </div>
 
                 <!-- 二張 -->
-                <div class="choice choice1" id="paper_Second" style="display: none;">
+                <div class="choice choice1" id="paper_Second" >
                     <div class="all-choice-content">
                         <!-- 第二張左標 -->
                         <ul class="choice-title">
@@ -1574,7 +1574,7 @@
                 </div>
 
                 <!-- 三張 -->
-                <div class="choice choice1" id="paper_Third" style="display: none;" >
+                <div class="choice choice1" id="paper_Third" style="display: none;">
                     <div class="all-choice-content">
                         <!-- 第三張左標 -->
                         <ul class="choice-title">
@@ -2149,9 +2149,7 @@
         const paper = document.querySelectorAll(".paper")
         const choice = document.querySelectorAll(".choice")
         const paperbtn = document.querySelectorAll(".paper-btn")
-
         paperbtn[0].classList.add("active")
-
         paper.forEach(function (ele, i) {
             ele.addEventListener('click', function () {
                 clearallcontent()
