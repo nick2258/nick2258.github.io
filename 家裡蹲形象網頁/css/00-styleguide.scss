@@ -1,0 +1,72 @@
+// font-size
+$font-8px:8px;
+$font-12px:12px;
+$font-14px:14px;
+$font-18px:18px;
+$font-20px:20px;
+$font-24px:24px;
+$font-28px:28px;
+
+.font-600{
+    font-weight: 600;
+}
+
+.mycontainer{
+    width: 1400px;
+    margin: 0px auto;
+    @media screen and(max-width:1450px){
+        width: 100%;
+        padding: 0px 3vw;
+    }
+}
+
+.big-title{
+    font-size:$font-12px*4 ;
+    font-weight: 600;
+    letter-spacing: 8px;
+}
+
+
+
+// margin/padding px
+$px-04:4px;
+$px-05:5px;
+$px-08:8px;
+$px-20:20px;
+
+body{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+img{
+    display: block;
+}
+
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+.trainsition-06s{
+    &:hover{
+        transition: .6s;
+    }
+}
+
+.trainsition-1s{
+    &:hover{
+        transition: 1s;
+    }
+}

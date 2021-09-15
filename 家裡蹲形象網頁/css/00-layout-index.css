@@ -1,0 +1,131 @@
+.font-600 {
+  font-weight: 600;
+}
+
+.mycontainer {
+  width: 1400px;
+  margin: 0px auto;
+}
+
+@media screen and (max-width: 1450px) {
+  .mycontainer {
+    width: 100%;
+    padding: 0px 3vw;
+  }
+}
+
+.big-title {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 8px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.trainsition-06s:hover {
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.trainsition-1s:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+nav {
+  width: 100%;
+  max-width: 1920px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 8px 48px;
+  background-color: white;
+}
+
+nav .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+nav .nav-items .logo {
+  width: 176px;
+  height: 72px;
+}
+
+@media screen and (max-width: 1600px) {
+  nav .nav-items .logo {
+    width: 150px;
+    height: 61.3px;
+  }
+}
+
+nav .nav-items .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+nav .nav-items .nav-links {
+  width: 47.4%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .nav-items .nav-links .nav-link {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin-right: 20px;
+}
+
+nav .nav-items .nav-links .nav-link:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 1600px) {
+  nav .nav-items .nav-links .nav-link {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=00-layout-index.css.map */

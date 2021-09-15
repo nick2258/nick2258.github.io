@@ -1,0 +1,57 @@
+.font-600 {
+  font-weight: 600;
+}
+
+.mycontainer {
+  width: 1400px;
+  margin: 0px auto;
+}
+
+@media screen and (max-width: 1450px) {
+  .mycontainer {
+    width: 100%;
+    padding: 0px 3vw;
+  }
+}
+
+.big-title {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 8px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.trainsition-06s:hover {
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.trainsition-1s:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+/*# sourceMappingURL=00-styleguide.css.map */
