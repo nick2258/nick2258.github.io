@@ -631,6 +631,7 @@
         return response.json();
     })
     .then(function(products) {
+        console.log(products);
         var all_sale_card = document.querySelector('.all_sale_card')
         // 跑所有產品迴圈
         var product_types = products.records.product
