@@ -326,6 +326,26 @@
             </div>
         </div>
 
+        <!-- 工藝大權編碼輸入燈箱 -->
+        <div class="craft-select-informations">
+            <!-- 確認選擇資訊(單個) -->
+            <div class="all-craft-content">
+                <div class="craft-title">
+                    <span>工藝大全編碼輸入</span>
+                </div>
+
+                <div class="craft-content">
+                    <input type="text" placeholder="請輸入工藝大全編碼"> 
+                </div>
+                <!-- 選擇資訊確認關閉按鈕 -->
+                <div class="craft-btns">
+                    <div class="craft-information-btn btn">確認</div>
+                    <div class="close-craft-btn btn">關閉</div>
+                </div>
+            </div>
+
+        </div>
+
         <!-- 上方導覽列 -->
         <nav>
             <section class="nav-content">
@@ -420,6 +440,13 @@
                             <i class="fas fa-sort-down"></i>
                         </div>
                     </div>
+                    
+                    <div class="big-selects">
+                        <div class="craft-btn-phone craft-btn">
+                            <span>以工藝大全選擇</span>
+                        </div>
+                    </div>
+                  
 
                     <!-- 印刷品項直橫式 -->
                     <div class="big-selects">
@@ -515,6 +542,9 @@
 
                             <!-- 印刷品項選擇欄 -->
                             <div class="big-selects">
+                                    <div class="craft-btn-web craft-btn">
+                                        <span>以工藝大全選擇</span>
+                                    </div>
                                 <div class="big-select-title">
                                     <span>印刷</span><span>品項</span>
                                 </div>
@@ -538,6 +568,8 @@
 
                                 </div>
                             </div>
+
+                            
 
                             <!-- 印刷品項直橫式 -->
                             <div class="big-selects">
@@ -2279,6 +2311,36 @@
             logmain.style.display = 'block';
             nav.style.display = 'block';
         })
+    </script>
+
+     <!-- 輸入工藝大全編碼檔燈箱 -->
+     <script>
+        // 選擇按鈕
+        const craftbtn = document.querySelectorAll(".craft-btn")
+
+        // 確認資訊
+        const craftselectinformations = document.querySelector(".craft-select-informations")
+
+        // 確認按鈕
+        const craftinformationbtn = document.querySelector(".craft-information-btn")
+        // 關閉按鈕
+        const closecraftbtn = document.querySelector(".close-craft-btn")
+
+        craftbtn.forEach(ele => {
+            ele.addEventListener('click', function () {
+                craftselectinformations.classList.toggle("show");
+            })
+        });
+
+        craftinformationbtn.addEventListener('click', function () {
+            craftselectinformations.classList.remove("show");
+        })
+
+        closecraftbtn.addEventListener('click', function () {
+            craftselectinformations.classList.remove("show");
+        })
+
+      
     </script>
 
     <script src="../CommonJs/importJS-1.0.0.js" type="text/javascript"></script>

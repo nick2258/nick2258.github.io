@@ -23,6 +23,47 @@
         <!-- <img src="./image/資產 1.png" alt=""> -->
         <i class="fas fa-bars"></i>
     </div>
+
+    <section class="hamburger-content">
+        <div class="hamburger-links">
+            <a href="" class="hamburger-link font-600">
+                <span>關於我們</span>
+            </a>
+
+            <a href="" class="hamburger-link font-600">
+                <span>設備技術</span>
+            </a>
+
+            <a href="" class="hamburger-link font-600">
+                <span>家裡蹲官網</span>
+            </a>
+
+            <a href="" class="hamburger-link font-600">
+                <span>雷雕網</span>
+            </a>
+
+            <a href="" class="hamburger-link font-600">
+                <span>樣本檔產生器</span>
+            </a>
+
+            <a href="" class="hamburger-link font-600">
+                <span>登出</span>
+            </a>
+
+            <div href="" class="hamburger-link font-600">
+                <a>登入</a>
+                <span>/</span>
+                <a>註冊</a>
+
+            </div>
+         
+        </div>
+
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+
+    </section>
     <nav data-aos="zoom-in" data-aos-duration="1500">
         <div class="nav-items">
             <div class="logo">
@@ -354,18 +395,36 @@
     </script>
     <!-- 寶包 -->
     <script>
-        let faBars = document.querySelector('.fa-bars')
+        var hamburger = document.querySelector('.hamburger')
+        var closebtn  = document.querySelector('.close-btn')
+
         let windowBottom = window.innerHeight
+        const hamburgercontent = document.querySelector('.hamburger-content')
+        console.log(hamburger);
 
         function scroll() {
             let windowTop = window.scrollY
             if (windowTop > windowBottom) {
-                faBars.style.display = 'block';
+                hamburger.classList.add("show");
             } else {
-                faBars.style.display = 'none';
+                hamburger.classList.remove("show");
             }
         }
         window.addEventListener('scroll', scroll)
+
+        
+        hamburger.addEventListener('click',function () {
+            hamburgercontent.classList.add("show");
+            if (hamburgercontent.classList.contains("show")) {
+                document.querySelector("body").classList.add("hidden")
+            } else {
+                document.querySelector("body").classList.remove("hidden")
+            }
+        })
+
+        closebtn.addEventListener('click',function () {
+            hamburgercontent.classList.remove("show");
+        })
 
 
     </script>

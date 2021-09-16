@@ -57,13 +57,159 @@ ul {
 
 body {
   background-color: white;
+  overflow-x: hidden;
+}
+
+body.hidden {
+  overflow: hidden;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 99;
+  right: 30px;
+  top: 10px;
+  display: none;
+}
+
+.hamburger.show {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  background-color: #191942;
+  border: 3px solid #191942;
+  border-radius: 5px;
+  z-index: 99;
 }
 
 .hamburger .fa-bars {
-  position: fixed;
-  font-size: 48px;
+  font-size: 36px;
   z-index: 99;
-  right: 30px;
+  color: burlywood;
+  color: white;
+}
+
+.hamburger:hover {
+  background-color: white;
+  -webkit-transition: .6s;
+  transition: .6s;
+  cursor: pointer;
+}
+
+.hamburger:hover .fa-bars {
+  color: #191942;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.hamburger-content {
+  max-width: 1920px;
+  width: 100%;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #191942;
+  position: fixed;
+  overflow-y: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0px;
+  z-index: 99;
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.hamburger-content.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all .8s ease-out;
+  transition: all .8s ease-out;
+}
+
+.hamburger-content .close-btn {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 2px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.hamburger-content .close-btn .fa-times {
+  font-size: 68px;
+  color: white;
+}
+
+.hamburger-content .close-btn .fa-times:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.hamburger-content .hamburger-links {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hamburger-content .hamburger-links a {
+  border-bottom: 2px solid transparent;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+
+.hamburger-content .hamburger-links a:hover {
+  border-bottom: 2px solid white;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.hamburger-content .hamburger-links .hamburger-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 32px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.hamburger-content .hamburger-links .hamburger-link:nth-last-child(1) {
+  margin-bottom: 0px;
 }
 
 main {
