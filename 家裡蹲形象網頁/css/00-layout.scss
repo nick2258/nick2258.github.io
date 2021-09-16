@@ -1,5 +1,5 @@
-// @import url(./00-styleguide.scss);
 @import"./00-styleguide.scss";
+
 .hamburger-btn{
     max-width: 1920px;
     width: 100%;
@@ -8,15 +8,12 @@
 
     position: fixed;
     
-    display: none;
+    display: block;
+    display: flex;
+    justify-content: flex-end;
 
     z-index: 99;
     top: 10px;
-    &.show{
-        display: block;
-        display: flex;
-         justify-content: flex-end;
-    }
     .hamburger{
         width: max-content;
         margin-right: 20px;
@@ -136,7 +133,7 @@ nav{
     height: max-content;
     padding: $px-08*1 $px-08*6;
 
-    background-color: white;
+    background-color: #E6F3FF;
     .nav-items{
         display: flex;
         justify-content: space-between;
@@ -153,26 +150,7 @@ nav{
                 height: 100%;
             }
         }
-        .nav-links{
-            width:47.4%;
-            height: max-content;
-            display: flex;
-            justify-content: space-between;
-            .nav-link {
-                width: max-content;
-                height: max-content;
-
-                font-size:$font-24px;
-                letter-spacing: 1px; 
-
-                margin-right: $px-20;
-                &:nth-last-child(1){
-                    margin-right: 0px;
-                }
-                @media screen and(max-width:1600px){
-                    font-size:$font-20px;
-                }
-            }
-        }
+      
     }
 }
+

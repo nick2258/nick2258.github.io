@@ -1,0 +1,454 @@
+main{
+    width: 100%;
+    padding-bottom: 300px;
+    .banner{
+        width: 100%;
+        height: max-content;
+        position: relative;
+
+        .bannner-bg{
+            width: 100%;
+            height: 10%;
+            background-color: white;
+            position: absolute;
+            bottom: 0px;
+            z-index: 1;
+        }
+        .banner-content{
+            width: 100%;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: flex-end;
+            background-color: #E6F3FF;
+           
+            .banner-pic{
+                width: 100%;
+                height: 400px;
+                display: flex;
+                justify-content: flex-end;
+                position: relative;
+                z-index: 3;
+                img{
+                    width: 1400px;
+                    height: 100%;
+                    border-radius: 5px 0px 0px 60px;
+                }
+                .banner-title{
+                    position: absolute;
+                    left: 0px;
+                    font-size: 60px;
+                    bottom: 55px;
+                    left: 48px;
+                    // color: rgb(255, 255, 255);
+                    color: rgba(46, 46, 138, 0.3);
+                    padding: 5px;
+                    // transform: translate(-296px,2px);
+
+                    &:nth-last-child(1){
+                        font-size: 60px;
+                        color: rgb(21, 21, 51);
+                        left: 42px;
+                        // transform: translateX(-300px);
+
+                     
+                    }
+                 
+                }
+            }
+           
+        }
+    }
+    .about-manage{ 
+        width: 100%;
+        padding: 0px 12vw;
+        margin-top: 48px;
+        .about-manage-content{
+            height: max-content;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            // background-color: violet;
+            .home-concepts{
+                .home-concept{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 24px;
+                    &:nth-last-child(1){
+                        margin-bottom: 0px;
+                    }
+                    .home-concept-pic{
+                        width: 105px;
+                        height: 105px;
+                        background-color: darkred;
+                        border:3px solid black;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        
+                        .pic-text{
+                            font-size: 60px;
+                            font-weight: 600;
+                            color: white;
+                        }
+                    }
+                    .home-concept-text{
+                        margin-left: 24px;
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        letter-spacing: 1.5px;
+                    }
+                }
+            }
+            .manage-concepts{
+                width: calc(100% - 700px);
+                // max-width: 600px;
+                height: max-content;
+                padding: 48px ;
+                background-color: #E6F3FF;
+                border-radius: 8px;
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                .manage-concepts-title{
+                    text-align: center;
+                }
+                .manage-concepts-content{
+                    margin: 0px auto;
+                    .text{
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        margin-top: 16px;
+                        letter-spacing: 1.5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .allhistory{
+        margin-top: 64px;
+        .history-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .histories{
+                width: max-content;
+                margin-top: 24px;
+                .history{
+                    
+                    .history-year{
+                        display: flex;
+                        align-items: center;
+                        .circle{
+                            width: 40px;
+                            height: 40px;
+                            background-color: #6699CC;
+                            border-radius: 50%;
+                            position: relative;
+                        }
+                        .year{
+                            font-size: 24px;
+                            font-weight: 600;
+                            margin-left: 16px;
+                        }
+                        
+                    }
+                    .history-texts{
+                        width: 100%;
+                        padding: 16px 16px 16px 38px;
+                        border-left: 5px solid #6699CC;
+                        margin-left: 15px;
+                        .text{
+                            font-size: 18px;
+                            font-weight: 600;
+                            color: rgb(77, 77, 77);
+                        }
+
+
+                    }
+                }
+            }
+        }
+    }
+
+    .future{
+        width: 100%;
+        margin-top: 64px;
+        padding-bottom: 64px;
+        .future-content{
+            display: flex;
+            .future-pic{
+                width: 800px;
+                height: 400px;
+                position: relative;
+                z-index: 2;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 0px 50px 0px 0px;
+                }
+            }
+            .future-texts{
+                // margin-top: 48px;
+                // height: 380px;
+                margin-left: -64px;
+                transform: translateY(60px);
+                width: calc(100% - 728px);
+                padding-left: 128px;
+                padding-right: 64px;
+                padding-bottom: 64px;
+                padding-top: 48px;
+                background-color: #E6F3FF;
+                border-radius: 0px 0px 0px 50px;
+                // overflow-y: hidden;
+                .show-more-btn{
+                    position: absolute;
+                    right: 72px;
+                    bottom: 24px;
+                    display: flex;
+                    align-items: center;
+
+                    cursor: pointer;
+                    &:hover{
+                        .show-more-text{
+                           transform: translateX(-3px);
+                           
+                           transition: .6s;
+                        }
+                        .show-more-icon{
+                            transform: translateX(3px);
+                            
+                            transition: .6s;
+                        }
+                    }
+                    .show-more-text{
+                        margin-left: 8px;
+                        font-size: 18px;  
+                    }
+                    .show-more-icon{
+                        margin-left: 16px;
+                    }
+                }
+                .future-title{
+                    text-align: center;
+                }
+                .future-text{
+                    font-size: 18px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    letter-spacing: 1.5px;
+                    line-height: 28px;
+                    .text{
+                        margin-top: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .exhibition{
+        margin-top: 64px;
+        .exhibition-contents{
+            width: 1600px;
+            margin: 0px auto;
+            .exhibition-titles{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 24px;
+                
+                .exhibition-title{
+                    width: 552px;
+                }
+                .select{
+                    width: 1000px;
+                    display: flex;
+                    align-items: center;
+                    .select-title{
+                        font-size: 28px;
+                        font-weight: 600;
+                        margin-right: 8px;
+                    }
+                    // 橫式選擇欄(單個)
+                    // 橫式版型選單內容
+                    .big-select{
+                        width: 500px;
+                        height: 48px;
+
+                        background-color: #7C90A0;
+                        border-radius: 5px;
+                       
+                        color: white;
+                        font-weight: 600;
+                        text-align: center;
+                        letter-spacing: 1.5px;
+                
+                        position: relative;
+                
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        // &:hover{
+                        //     border-radius: 3px;
+                        //     border: 1px solid rgb(163, 163, 163);
+    
+                        //     transition: .6s;
+                        //     .fa-sort-down{
+                        //         transition: .6s;
+                        //     }
+                        // }
+                        &.active{
+                            border-radius: 3px;
+                            border: 1px solid rgb(163, 163, 163);
+                        }
+                        @media screen and (max-width:400px) {
+                            max-width: calc(100% - 140px);
+                        }
+                        // 下拉選單 icon
+                        .fa-sort-down{
+                            font-size: 28px;
+                            color: gray;
+                            color: white;
+                
+                            position: absolute;
+                            right: 10px;
+                            top: 50%;
+                            transform: translateY(-70%);
+                            @media screen and (max-width:400px) {
+                                right: 5px;
+                                font-size: 24px;
+                            }
+                        }
+                        label{
+                            top: 5px;
+                            left: 20px;
+                
+                            font-size: 12px;
+                            font-weight: 700;
+                        }
+                        // 下拉式選單內容
+                        .select-options{
+                            width: 100%;
+                
+                            display: none;
+                
+                            background-color: #7C90A0;
+                            // border-radius: 0px 0px 5px 5px;
+                            border-radius: 0px 0px 8px 8px;
+                            box-shadow: 5px  5px 10px  rgba(56, 56, 56, 0.384);
+                            -webkit-box-shadow: 0px 7px 14px 5px rgba(0,0,0,0.47); 
+                            box-shadow: 0px 7px 14px 5px rgba(0,0,0,0.47);
+                
+                            position: absolute;
+                            top: 100%;
+                
+                            z-index: 50;
+                
+                            margin: 0px auto;
+                            padding: 0;  
+                            
+                           
+                               
+                            text-align: center;
+                
+                            height: max-content;
+                            max-height: 40vh;
+                            overflow-y: auto;
+                            // 單個選單選項
+                            .select-option{
+                                height: max-content;
+                                list-style: none;
+                
+                                font-size: 16px;
+                                font-weight: 600;
+                
+                                padding: 5px 2px;
+                            
+                                color: gray;
+                            
+                                transition: all .25s;
+
+                                cursor: pointer;
+                                &:hover{
+                                    background-color: whitesmoke;
+                
+                                    color: rgb(17, 38, 75);
+                                    
+                                    cursor: pointer;
+                
+                                    transition: .6s;
+                                }
+                                &.active{
+                                    background-color: whitesmoke;
+                
+                                    color: rgb(17, 38, 75);
+                
+                                    cursor: pointer;
+                
+                                    transition: .6s;
+                                }
+                            }
+                        }
+                        // 選單預設標題
+                        .select-text{
+                            width: 100%;   
+                            height: 50px;
+                
+                            padding: 6px 0px;
+                            padding-right: 20px;
+                
+                            font-size: 18px;
+                            letter-spacing: 2px;
+                            text-align: center;
+                
+                            display: block;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+    
+                            cursor: pointer;
+                            .select-name{
+                                text-align: center;
+                            }      
+                        }
+                    }
+                }
+            }
+            .exhibition-content{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .exhibition-content-texts{
+                    width: 552px;
+                    .exhibition-content-title{
+                        font-size: 24px;
+                        font-weight: 600;
+                        margin-bottom: 24px;
+                    }
+                    .texts{
+                        .text{
+                            font-size: 18px;
+                            line-height: 28px;
+                            letter-spacing: 1.5px;
+                            margin-bottom:12px ;
+                            &:nth-last-child(1){
+                                margin-bottom: 0px;
+                            }
+                        }
+                       
+                    }
+                }
+                .exhibitionSwiper{
+                    width: 1000px;
+                    margin-left: 48px;
+                    img{
+                        width: 100%;
+                        height: 600px;
+                    }
+                }
+            }
+        }
+    }
+}

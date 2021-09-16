@@ -35,8 +35,14 @@ $px-08:8px;
 $px-20:20px;
 
 body{
+    max-width: 1920px;
+    width: 100%;
+
+
     margin: 0px;
     padding: 0px;
+
+    margin: 0px auto;
     position: relative;
 
 }
