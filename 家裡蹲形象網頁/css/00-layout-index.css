@@ -63,19 +63,13 @@ ul {
   width: 100%;
   margin: 0px auto;
   position: fixed;
-  display: none;
-  z-index: 99;
-  top: 10px;
-}
-
-.hamburger-btn.show {
-  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  top: 10px;
 }
 
 .hamburger-btn .hamburger {
@@ -99,6 +93,14 @@ ul {
   border: 3px solid #191942;
   border-radius: 5px;
   z-index: 99;
+  display: none;
+}
+
+.hamburger-btn .hamburger.show {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .hamburger-btn .hamburger .fa-bars {

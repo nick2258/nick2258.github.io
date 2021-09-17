@@ -84,14 +84,14 @@
     <section class="show-more-contents " >
         <div class="show-more">
             <div class="show-more-content">
-                <div class="show-more-pic">
+                <div class="show-more-pic" >
                     <img src="./image/contact/資產 2-100.jpg" alt="">
                 </div>
-                <div class="show-more-title big-title">
+                <div class="show-more-title big-title" >
                     <span>未來展望</span>
                 </div>
 
-                <div class="show-more-texts">
+                <div class="show-more-texts" data-aos="fade-up" data-aos-duration="1500">
                     <div class="text">「家裡蹲」最早是從"合版印刷"找到"降低成本"的有利契機，才能夠有機會在山頭林立堅如磐石的傳統印刷行業中掙得一席之地。</div>
 
                     <div class="text">"合版印刷"雖然是屬於一種新型態的加工產業，但是在主要的生產成本方面，包括紙張、製版以及印刷工資在內，量產與非量產之間的成本差距並不會太大，關鍵還是在於"達成完全合版"的成功比率高低與否。</div>
@@ -458,15 +458,15 @@
         
         hamburger.addEventListener('click',function () {
             hamburgercontent.classList.add("show");
-            if (hamburgercontent.classList.contains("show")) {
-                document.querySelector("body").classList.add("hidden")
-            } else {
-                document.querySelector("body").classList.remove("hidden")
-            }
+           
+                document.querySelector("nav").style.display="none";
+                document.querySelector("main").style.display="none"; 
         })
 
         closebtn.addEventListener('click',function () {
             hamburgercontent.classList.remove("show");
+            document.querySelector("nav").style.display="block";
+            document.querySelector("main").style.display="block";
         })
 
 

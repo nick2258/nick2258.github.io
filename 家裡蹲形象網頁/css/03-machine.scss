@@ -1,0 +1,219 @@
+@import"./00-styleguide.scss";
+
+body{
+    background-color: white;
+    overflow-x: hidden;
+
+    &.hidden{
+        overflow-y: hidden;
+    }
+}
+
+main{
+    .banner{
+        width: 100%;
+        height: max-content;
+        position: relative;
+
+        .bannner-bg{
+            width: 100%;
+            height: 10%;
+            background-color: white;
+            position: absolute;
+            bottom: 0px;
+            z-index: 1;
+        }
+        .banner-content{
+            width: 100%;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: flex-end;
+            background-color: #E6F3FF;
+            .banner-pic{
+                width: 100%;
+                height: 400px;
+                display: flex;
+                justify-content: flex-start;
+                position: relative;
+                z-index: 3;
+                img{
+                    width: 1400px;
+                    height: 100%;
+                    border-radius: 0px 8px 60px 0px;
+                }
+                .banner-title{
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    right: 0px;
+                    font-size: 60px;
+                    bottom: 55px;
+                    right: 120px;
+                    // color: rgb(255, 255, 255);
+                    color: rgba(46, 46, 138, 0.3);
+                    padding: 5px;
+                    // transform: translate(-296px,2px);
+
+                    &:nth-last-child(1){
+                        font-size: 60px;
+                        color: rgb(21, 21, 51);
+                        right: 124px;
+                        // transform: translateX(-300px);
+                    }
+                }
+            }
+        }
+    }
+    .allmachine{
+        padding-bottom: 500px;
+      
+        .allmachine-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            .machine-btns{
+                width: 100%;
+                max-width: 1420px;
+                display: flex;
+                justify-content: center;
+                // width: max-content;
+                margin: 0px auto;
+                margin-top: 28px;
+                padding-top: 20px;
+                padding-bottom: 24px;
+
+                position: sticky;
+                top: 0px;
+
+                z-index: 98;
+                background-color: white;
+                .machine-btn{
+                    font-weight: 600;
+                    width: 180px;
+                    border: 2px solid darkred;
+                    height: 32px;
+                    border-radius: 5px;font-weight: 600;
+                    letter-spacing: 1px;
+                    background-color: darkred;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 20px;
+                    cursor: pointer;
+                    box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.76);
+                    &:nth-last-child(1){
+                        margin-right: 0px;
+                    }
+                    &:hover{
+                        background-color: white;
+                        color: darkred;
+
+                        transition: .6s;
+                    }
+                    
+                }
+            }
+          
+            .machine-contents{
+                max-width: 1400px;
+                width: 100%;
+                &.show{
+                    display: block;
+                }
+                .machine-title{
+                    margin-bottom: 24px;
+                    display: flex;
+                    justify-content: center;
+                }
+                .machines{
+                    .machine{
+                        margin-top: 24px;
+                        .machine-small-title{
+                            font-size: 24px;
+                            margin-bottom: 24px;
+                            font-weight: 600;
+                            letter-spacing: 1.5px;
+                            padding-left: 8px;
+                            border-left: 8px solid orange;
+                            color: black;
+                            z-index: 1;
+                        }
+                        .machine-content{
+                            width: 100%;
+                            height: 600px;
+                            display: flex;
+                            justify-content: space-between;
+                            .machine-pic{
+                                width: 800px;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 8px;
+                                    box-shadow: 8px 8px 15px rgba(128, 128, 128, 0.589);
+                                }
+                            }
+                            .machine-projects{
+                                width: calc(100% - 848px);
+                                .machine-projects-title{
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                    margin-bottom: 24px;
+                                }
+                                .machineSwiper{
+                                    width: 100%;
+                                    width: 100%;
+                                    height: 100%;
+                                    height:calc(100% - 47px);
+                                    padding-bottom: 32px;
+                                    .swiper-pagination{
+                                        bottom: -10px;
+                                        position: relative;
+                                        z-index: 50;
+                                        .swiper-pagination-bullet{
+                                            width: 20px;
+                                            height: 20px;
+                                            background-color: #7C90A0;
+                                            // border: 2px solid gray;
+                                        }
+                                    }
+                                
+                                      .swiper-slide {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        overflow: hidden;
+                                        font-size: 18px;
+                                        // background: gray;
+                                        height: calc((100% - 24px) / 2);
+                                
+                                        /* Center slide text vertically */
+                                        // display: -webkit-box;
+                                        // display: -ms-flexbox;
+                                        // display: -webkit-flex;
+                                        // display: flex;
+                                        // -webkit-box-pack: center;
+                                        // -ms-flex-pack: center;
+                                        // -webkit-justify-content: center;
+                                        // justify-content: center;
+                                        // -webkit-box-align: center;
+                                        // -ms-flex-align: center;
+                                        // -webkit-align-items: center;
+                                        // align-items: center;
+                                        img{
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                      }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+       
+    }
+}

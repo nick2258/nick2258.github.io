@@ -7,16 +7,13 @@
     margin: 0px auto;
 
     position: fixed;
+    display: flex;
+    justify-content: flex-end;
     
-    display: none;
 
-    z-index: 99;
+    // z-index: 99;
     top: 10px;
-    &.show{
-        display: block;
-        display: flex;
-         justify-content: flex-end;
-    }
+   
     .hamburger{
         width: max-content;
         margin-right: 20px;
@@ -30,6 +27,11 @@
         border: 3px solid rgb(25, 25, 66);
         border-radius: 5px;
         z-index: 99;
+        display: none;
+        &.show{
+            display: block;
+            display: flex;
+        }
         .fa-bars{
           
             font-size: 36px;

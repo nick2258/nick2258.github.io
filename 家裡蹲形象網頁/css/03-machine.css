@@ -1,0 +1,322 @@
+.font-600 {
+  font-weight: 600;
+}
+
+.mycontainer {
+  width: 1400px;
+  margin: 0px auto;
+}
+
+@media screen and (max-width: 1450px) {
+  .mycontainer {
+    width: 100%;
+    padding: 0px 3vw;
+  }
+}
+
+.big-title {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 8px;
+}
+
+body {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  margin: 0px auto;
+  position: relative;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.trainsition-06s:hover {
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.trainsition-1s:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+
+body.hidden {
+  overflow-y: hidden;
+}
+
+main .banner {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  position: relative;
+}
+
+main .banner .bannner-bg {
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+}
+
+main .banner .banner-content {
+  width: 100%;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #E6F3FF;
+}
+
+main .banner .banner-content .banner-pic {
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+  z-index: 3;
+}
+
+main .banner .banner-content .banner-pic img {
+  width: 1400px;
+  height: 100%;
+  border-radius: 0px 8px 60px 0px;
+}
+
+main .banner .banner-content .banner-pic .banner-title {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 0px;
+  font-size: 60px;
+  bottom: 55px;
+  right: 120px;
+  color: rgba(46, 46, 138, 0.3);
+  padding: 5px;
+}
+
+main .banner .banner-content .banner-pic .banner-title:nth-last-child(1) {
+  font-size: 60px;
+  color: #151533;
+  right: 124px;
+}
+
+main .allmachine {
+  padding-bottom: 500px;
+}
+
+main .allmachine .allmachine-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+main .allmachine .allmachine-content .machine-btns {
+  width: 100%;
+  max-width: 1420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px auto;
+  margin-top: 28px;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 98;
+  background-color: white;
+}
+
+main .allmachine .allmachine-content .machine-btns .machine-btn {
+  font-weight: 600;
+  width: 180px;
+  border: 2px solid darkred;
+  height: 32px;
+  border-radius: 5px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: darkred;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.76);
+          box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.76);
+}
+
+main .allmachine .allmachine-content .machine-btns .machine-btn:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+main .allmachine .allmachine-content .machine-btns .machine-btn:hover {
+  background-color: white;
+  color: darkred;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+main .allmachine .allmachine-content .machine-contents {
+  max-width: 1400px;
+  width: 100%;
+}
+
+main .allmachine .allmachine-content .machine-contents.show {
+  display: block;
+}
+
+main .allmachine .allmachine-content .machine-contents .machine-title {
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .allmachine .allmachine-content .machine-contents .machines .machine {
+  margin-top: 24px;
+}
+
+main .allmachine .allmachine-content .machine-contents .machines .machine .machine-small-title {
+  font-size: 24px;
+  margin-bottom: 24px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  padding-left: 8px;
+  border-left: 8px solid orange;
+  color: black;
+  z-index: 1;
+}
+
+main .allmachine .allmachine-content .machine-contents .machines .machine .machine-content {
+  width: 100%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .allmachine .allmachine-content .machine-contents .machines .machine .machine-content .machine-pic {
+  width: 800px;
+}
+
+main .allmachine .allmachine-content .machine-contents .machines .machine .machine-content .machine-pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  -webkit-box-shadow: 8px 8px 15px rgba(128, 128, 128, 0.589);
+          box-shadow: 8px 8px 15px rgba(128, 128, 128, 0.589);
+}
+
+main .allmachine .allmachine-content .machine-contents .machines .machine .machine-content .machine-projects {
+  width: calc(100% - 848px);
+}
+
+main .allmachine .allmachine-content .machine-contents .machines .machine .machine-content .machine-projects .machine-projects-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+main .allmachine .allmachine-content .machine-contents .machines .machine .machine-content .machine-projects .machineSwiper {
+  width: 100%;
+  width: 100%;
+  height: 100%;
+  height: calc(100% - 47px);
+  padding-bottom: 32px;
+}
+
+main .allmachine .allmachine-content .machine-contents .machines .machine .machine-content .machine-projects .machineSwiper .swiper-pagination {
+  bottom: -10px;
+  position: relative;
+  z-index: 50;
+}
+
+main .allmachine .allmachine-content .machine-contents .machines .machine .machine-content .machine-projects .machineSwiper .swiper-pagination .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  background-color: #7C90A0;
+}
+
+main .allmachine .allmachine-content .machine-contents .machines .machine .machine-content .machine-projects .machineSwiper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  font-size: 18px;
+  height: calc((100% - 24px) / 2);
+  /* Center slide text vertically */
+}
+
+main .allmachine .allmachine-content .machine-contents .machines .machine .machine-content .machine-projects .machineSwiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=03-machine.css.map */
