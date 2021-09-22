@@ -42,6 +42,7 @@ main{
                     border-radius: 0px 8px 60px 0px;
                 }
                 .banner-title{
+                    letter-spacing: 12px;
                     position: absolute;
                     display: flex;
                     flex-direction: column;
@@ -54,18 +55,25 @@ main{
                     padding: 5px;
                     // transform: translate(-296px,2px);
 
+                    color: transparent;
+
+                    text-shadow: 3px 3px 3px rgba(21, 21, 51, 0.4);
                     &:nth-last-child(1){
                         font-size: 60px;
                         color: rgb(21, 21, 51);
-                        right: 124px;
+                        // right: 124px;
+
+                        text-shadow: 0 0 0px transparent;
                         // transform: translateX(-300px);
+
+                      
                     }
                 }
             }
         }
     }
     .allmachine{
-        padding-bottom: 500px;
+        // padding-bottom: 500px;
       
         .allmachine-content{
             display: flex;
@@ -92,7 +100,7 @@ main{
                     font-weight: 600;
                     width: 180px;
                     border: 2px solid darkred;
-                    height: 32px;
+                    height: 40px;
                     border-radius: 5px;font-weight: 600;
                     letter-spacing: 1px;
                     background-color: darkred;
@@ -103,10 +111,25 @@ main{
                     margin-right: 20px;
                     cursor: pointer;
                     box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.76);
+
+                    // transition: all ease-in-out 1s;
                     &:nth-last-child(1){
                         margin-right: 0px;
                     }
                     &:hover{
+                        background-color: white;
+                        color: darkred;
+
+                        border: 2px dashed  darkred;
+
+
+                        transition: .6s;
+
+                        
+                    }
+
+                   
+                    &.active{
                         background-color: white;
                         color: darkred;
 
@@ -119,8 +142,12 @@ main{
             .machine-contents{
                 max-width: 1400px;
                 width: 100%;
+
+                display: none;
                 &.show{
                     display: block;
+
+                    margin-bottom: 48px;
                 }
                 .machine-title{
                     margin-bottom: 24px;
@@ -152,6 +179,7 @@ main{
                                     height: 100%;
                                     border-radius: 8px;
                                     box-shadow: 8px 8px 15px rgba(128, 128, 128, 0.589);
+
                                 }
                             }
                             .machine-projects{
@@ -187,6 +215,8 @@ main{
                                         font-size: 18px;
                                         // background: gray;
                                         height: calc((100% - 24px) / 2);
+                                        box-shadow: 0px 5px 8px rgba(128, 128, 128, 0.5);
+                                        
                                 
                                         /* Center slide text vertically */
                                         // display: -webkit-box;
@@ -201,9 +231,28 @@ main{
                                         // -ms-flex-align: center;
                                         // -webkit-align-items: center;
                                         // align-items: center;
+                                        .project-type{
+                                            position: absolute;
+                                            top: 5px;
+                                            left: 5px;
+                                            background-color: #191942;
+                                            width: 80px;
+                                            font-size: 14px;
+                                            padding: 2px 0px;
+                                            letter-spacing: 1px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            border-radius: 3px;
+                                            // border: 2px solid thistle;
+                                            color: white;
+                                        }
                                         img{
                                             width: 100%;
                                             height: 100%;
+                                            border-radius: 3px;
+
+
                                         }
                                       }
                                 }

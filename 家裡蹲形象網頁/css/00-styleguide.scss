@@ -24,6 +24,8 @@ $font-28px:28px;
     font-size:$font-12px*4 ;
     font-weight: 600;
     letter-spacing: 8px;
+    position: relative;
+    color:#383838 ;
 }
 
 
@@ -33,6 +35,17 @@ $px-04:4px;
 $px-05:5px;
 $px-08:8px;
 $px-20:20px;
+
+// color
+$darkred:darkred;
+$white:white;
+$black:black;
+$whitesmoke:whitesmoke;
+$darkblue:#191942;
+$lightblue:#E6F3FF;
+$allfont:#383838;
+$navlinks:#020227;
+
 
 body{
     max-width: 1920px;
@@ -44,6 +57,7 @@ body{
 
     margin: 0px auto;
     position: relative;
+    color:$allfont ;
 
 }
 

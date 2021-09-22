@@ -116,6 +116,7 @@ main .banner .banner-content .banner-pic img {
 }
 
 main .banner .banner-content .banner-pic .banner-title {
+  letter-spacing: 12px;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,16 +131,14 @@ main .banner .banner-content .banner-pic .banner-title {
   right: 120px;
   color: rgba(46, 46, 138, 0.3);
   padding: 5px;
+  color: transparent;
+  text-shadow: 3px 3px 3px rgba(21, 21, 51, 0.4);
 }
 
 main .banner .banner-content .banner-pic .banner-title:nth-last-child(1) {
   font-size: 60px;
   color: #151533;
-  right: 124px;
-}
-
-main .allmachine {
-  padding-bottom: 500px;
+  text-shadow: 0 0 0px transparent;
 }
 
 main .allmachine .allmachine-content {
@@ -180,7 +179,7 @@ main .allmachine .allmachine-content .machine-btns .machine-btn {
   font-weight: 600;
   width: 180px;
   border: 2px solid darkred;
-  height: 32px;
+  height: 40px;
   border-radius: 5px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -208,6 +207,14 @@ main .allmachine .allmachine-content .machine-btns .machine-btn:nth-last-child(1
 main .allmachine .allmachine-content .machine-btns .machine-btn:hover {
   background-color: white;
   color: darkred;
+  border: 2px dashed  darkred;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+main .allmachine .allmachine-content .machine-btns .machine-btn.active {
+  background-color: white;
+  color: darkred;
   -webkit-transition: .6s;
   transition: .6s;
 }
@@ -215,10 +222,12 @@ main .allmachine .allmachine-content .machine-btns .machine-btn:hover {
 main .allmachine .allmachine-content .machine-contents {
   max-width: 1400px;
   width: 100%;
+  display: none;
 }
 
 main .allmachine .allmachine-content .machine-contents.show {
   display: block;
+  margin-bottom: 48px;
 }
 
 main .allmachine .allmachine-content .machine-contents .machine-title {
@@ -312,11 +321,36 @@ main .allmachine .allmachine-content .machine-contents .machines .machine .machi
   overflow: hidden;
   font-size: 18px;
   height: calc((100% - 24px) / 2);
+  -webkit-box-shadow: 0px 5px 8px rgba(128, 128, 128, 0.5);
+          box-shadow: 0px 5px 8px rgba(128, 128, 128, 0.5);
   /* Center slide text vertically */
+}
+
+main .allmachine .allmachine-content .machine-contents .machines .machine .machine-content .machine-projects .machineSwiper .swiper-slide .project-type {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: #191942;
+  width: 80px;
+  font-size: 14px;
+  padding: 2px 0px;
+  letter-spacing: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 3px;
+  color: white;
 }
 
 main .allmachine .allmachine-content .machine-contents .machines .machine .machine-content .machine-projects .machineSwiper .swiper-slide img {
   width: 100%;
   height: 100%;
+  border-radius: 3px;
 }
 /*# sourceMappingURL=03-machine.css.map */

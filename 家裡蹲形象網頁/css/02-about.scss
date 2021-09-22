@@ -127,6 +127,7 @@ main{
                     border-radius: 5px 0px 0px 60px;
                 }
                 .banner-title{
+                    letter-spacing: 12px;
                     position: absolute;
                     left: 0px;
                     font-size: 60px;
@@ -135,12 +136,18 @@ main{
                     // color: rgb(255, 255, 255);
                     color: rgba(46, 46, 138, 0.3);
                     padding: 5px;
+
+                    color: transparent;
+
+                    text-shadow: 3px 3px 3px rgba(21, 21, 51, 0.4);
                     // transform: translate(-296px,2px);
 
                     &:nth-last-child(1){
                         font-size: 60px;
                         color: rgb(21, 21, 51);
-                        left: 42px;
+
+                        text-shadow: 0 0 0px transparent;
+                        // left: 42px;
                         // transform: translateX(-300px);
 
                      
@@ -347,10 +354,14 @@ main{
         .exhibition-contents{
             width: 1400px;
             margin: 0px auto;
+            
+            // z-index勿刪
             .exhibition-titles{
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 24px;
+                position: relative;
+                z-index: 1;
                 
                 .exhibition-title{
                     width: 552px;
@@ -359,6 +370,7 @@ main{
                     width: 800px;
                     display: flex;
                     align-items: center;
+                    float: right;
                     .select-title{
                         font-size: 28px;
                         font-weight: 600;
@@ -368,6 +380,8 @@ main{
                     // 橫式版型選單內容
                     .big-select{
                         width: 500px;
+                        width:calc(100% - 64px);
+
                         height: 48px;
 
                         background-color: #7C90A0;
@@ -379,6 +393,7 @@ main{
                         letter-spacing: 1.5px;
                 
                         position: relative;
+                       
                 
                         display: flex;
                         align-items: center;
@@ -429,7 +444,7 @@ main{
                 
                             background-color: #7C90A0;
                             // border-radius: 0px 0px 5px 5px;
-                            border-radius: 0px 0px 8px 8px;
+                            border-radius: 5px;
                             box-shadow: 5px  5px 10px  rgba(56, 56, 56, 0.384);
                             -webkit-box-shadow: 0px 7px 14px 5px rgba(0,0,0,0.47); 
                             box-shadow: 0px 7px 14px 5px rgba(0,0,0,0.47);
@@ -437,13 +452,13 @@ main{
                             position: absolute;
                             top: 100%;
                 
-                            z-index: 50;
+                            z-index: 5 ;
                 
                             margin: 0px auto;
                             padding: 0;  
                             
-                           
-                               
+                            background-color: white;
+                            
                             text-align: center;
                 
                             height: max-content;
@@ -451,37 +466,46 @@ main{
                             overflow-y: auto;
                             // 單個選單選項
                             .select-option{
-                                height: max-content;
+                                // height: max-content;
+                                height: 32px;
                                 list-style: none;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
                 
                                 font-size: 16px;
                                 font-weight: 600;
                 
-                                padding: 5px 2px;
+                                padding: 0px 2px;
                             
-                                color: gray;
+                                color: #7C90A0;
+                                color: $allfont;
+
+                               
                             
                                 transition: all .25s;
 
+                                // border: 2px solid transparent;                                
+
                                 cursor: pointer;
                                 &:hover{
-                                    background-color: whitesmoke;
+                                    // border: 2px solid #7C90A0;                                
+                                    background-color: rgb(236, 236, 236);
                 
-                                    color: rgb(17, 38, 75);
+                                    color: #7C90A0;
                                     
-                                    cursor: pointer;
                 
                                     transition: .6s;
                                 }
-                                &.active{
-                                    background-color: whitesmoke;
+                                // &.active{
+                                //     background-color: whitesmoke;
                 
-                                    color: rgb(17, 38, 75);
+                                //     color: rgb(17, 38, 75);
                 
-                                    cursor: pointer;
+                                //     cursor: pointer;
                 
-                                    transition: .6s;
-                                }
+                                //     transition: .6s;
+                                // }
                             }
                         }
                         // 選單預設標題
@@ -492,7 +516,7 @@ main{
                             padding: 6px 0px;
                             padding-right: 20px;
                 
-                            font-size: 18px;
+                            font-size: 20px;
                             letter-spacing: 2px;
                             text-align: center;
                 
@@ -511,32 +535,89 @@ main{
             }
             .exhibition-content{
                 width: 100%;
+                position: relative;
+                // height: max-content;
                 display: flex;
                 justify-content: space-between;
+                // z-index:-1;
+
+                
                 .exhibition-content-texts{
                     width: 552px;
+                    position: absolute;
+                    z-index: 6;
+                    bottom: 16px;
+                    left: 0px;
+             
+                    padding-bottom: 48px;
+                   
+                    // margin-top: 48px;
+                    // transform: translateY(-100%);
+                    
+                    
+                    // height:250px ;
+                    // overflow:hidden;
+                    /* width */
+                   
                     .exhibition-content-title{
                         font-size: 24px;
                         font-weight: 600;
                         margin-bottom: 24px;
                     }
                     .texts{
+                        // height:250px ;
+                        // overflow:hidden;
+                        // white-space: nowrap;
+                        height: max-content;
+                        max-height: 280px;
+                        overflow: auto;
+                        padding-right: 16px;
+                       
                         .text{
                             font-size: 18px;
                             line-height: 28px;
                             letter-spacing: 1.5px;
                             margin-bottom:12px ;
+                            // br{
+                            //     display: block;
+                            //     margin-top: 12px;
+                            //     content: "";
+                            // }
                             &:nth-last-child(1){
                                 margin-bottom: 0px;
                             }
                         }
                        
                     }
+                    ::-webkit-scrollbar {
+                        width: 5px;
+                        }
+                    
+                        /* Track */
+                    ::-webkit-scrollbar-track {
+                    box-shadow: inset 0 0 5px grey; 
+                    border-radius: 300px;
+                    }
+                    
+                    /* Handle */
+                    ::-webkit-scrollbar-thumb {
+                    background: grey; 
+                    border-radius: 300px;
+                    }
+                    
+                    /* Handle on hover */
+                    ::-webkit-scrollbar-thumb:hover {
+                    background: $allfont; 
+                    }
                 }
                 .exhibitionSwiper{
                     width: 800px;
-                    margin-left: 48px;
+                    
+                    // margin-left: 48px;
+                    margin-left:calc(100% - 800px);
                     padding-bottom: 32px;
+                    position: relative;
+                    z-index: -1 ;
 
                     .swiper-pagination{
                         bottom: 10px;
@@ -553,6 +634,7 @@ main{
                         width: 100%;
                         height: 480px;
                         border-radius: 8px;
+                       
                     }
                 }
             }
