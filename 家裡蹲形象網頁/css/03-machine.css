@@ -18,6 +18,8 @@
   font-size: 48px;
   font-weight: 600;
   letter-spacing: 8px;
+  position: relative;
+  color: #383838;
 }
 
 body {
@@ -27,6 +29,7 @@ body {
   padding: 0px;
   margin: 0px auto;
   position: relative;
+  color: #383838;
 }
 
 * {

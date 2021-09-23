@@ -1,140 +1,5 @@
 // @import url(./00-styleguide.scss);
 @import"./00-styleguide.scss";
-.hamburger-btn{
-    max-width: 1920px;
-    width: 100%;
-
-    margin: 0px auto;
-
-    position: fixed;
-    display: flex;
-    justify-content: flex-end;
-    
-
-    z-index: 98;
-    top: 10px;
-   
-    .hamburger{
-        width: max-content;
-        margin-right: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 60px;
-        height: 60px;
-        background-color: white;
-        background-color: rgba(25, 25, 66, 1);
-        border: 3px solid rgb(25, 25, 66);
-        box-shadow: -5px -5px 3px inset rgb(0, 0, 7);
-        border-radius: 5px; 
-   
-        display: none;
-        &.show{
-            display: block;
-            display: flex;
-        }
-        .fa-bars{
-          
-            font-size: 36px;
-            z-index: 99;
-            color: white;
-    
-            
-        }
-        &:hover{
-            background-color: white;
-            box-shadow: 2px 2px 8px  rgba(13, 13, 66, 0.548);    
-
-    
-            transition: .6s;
-            cursor: pointer;
-            .fa-bars{
-                color: rgb(25, 25, 66);  
-    
-                transition: .6s;
-            }
-        }
-    }
-}
-
-.hamburger-content{
-    max-width: 1920px;
-    width: 100%;
-    max-height: max-content;
-    min-height: 100vh;
-    height:100vh ;
-    overflow-y: auto;
-    background-color: rgb(25, 25, 66);
-    position: fixed;
-    overflow-y: auto;
-
-
-    align-items: center;
-    justify-content: center;
-    top: 0px;
-    z-index: 99;
-    opacity: 0;
-    transform: translateX(-100%);
-    &.show{
-        display: flex;
-        opacity: 1;
-        transform: translateX(0%);
-
-        transition: all .8s ease-out ;
-
-
-    }
-
-    .close-btn{
-        width:70px;
-        height: 70px;
-        position: absolute;
-        top: 2px;
-        right:0px;
-        cursor: pointer;
-        .fa-times{
-            font-size:68px;
-            color: white;
-            &:hover{
-                transform: rotate(180deg);
-
-                transition: .6s;
-            }
-        }
-    }
-
-    .hamburger-links{
-        width: max-content;
-        height: max-content;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        a{
-            border-bottom: 2px solid transparent;
-            padding: 2px 5px;
-
-            cursor: pointer;
-           
-
-        }
-        a:hover{
-            border-bottom: 2px solid white;
-            
-
-            transition: .6s;
-            
-        }
-        .hamburger-link{
-            display: flex;
-            font-size: 32px;
-            color: white;
-            margin-bottom: 20px;
-            &:nth-last-child(1){
-                margin-bottom: 0px;
-            }
-        }
-    }
-}
 
 nav{
     position: absolute;
@@ -188,9 +53,8 @@ nav{
                 letter-spacing: 1px; 
 
                 margin-right: $px-20;
-                padding: 5px 8px;
+                padding: 3px 8px;
                 border-bottom: 5px solid transparent;
-                // border-radius: 5px;
 
                 cursor: pointer;
                 position: relative;
@@ -198,31 +62,26 @@ nav{
                 .nav-link-bg{
                     position: absolute;
                     width: 0px;
-                    height: 5px;
+                    height: 3px;
+                    left: 50%;
+                    transform: translateX(-50%);
                 }
                 .nav-link-bg1{
                     top: 0px;
-                    left: 0px;
                 }
                 .nav-link-bg2{
                     bottom: 0px;
-                    right: 0px;
                 }
                 &:hover{
-                    // background-color: rgba(255, 255, 255, 0.7);
+                    color: gray;
 
-                    // border-bottom: 5px solid tomato;
-
-                    transition: .6s;
-                    // padding: 2px 5px;
+                    transition: .4s;
                     .nav-link-bg{
                         width: 100%;
                         background-color: oldlace;
+                        background-color: linen;
 
-                        // height: 5px;
-
-                        // background-color: oldlace;
-                        transition: .6s ease-out;
+                        transition: .4s ease-out;
                     }
                 }
                 &:nth-last-child(1){

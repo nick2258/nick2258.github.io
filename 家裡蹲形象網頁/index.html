@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/00-layout-index.css">
     <link rel="stylesheet" href="./css/01-index.css">
     <link rel="stylesheet" href="./css/00-styleguide.css">
+    <link rel="stylesheet" href="./css/hamburger-index.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -28,33 +29,45 @@
     <section class="hamburger-content">
         <div class="hamburger-links">
             <a href="" class="hamburger-link font-600">
+                <div class="hamburger-link-hover"></div>
                 <span>關於我們</span>
             </a>
 
             <a href="" class="hamburger-link font-600">
+                <div class="hamburger-link-hover"></div>
                 <span>設備技術</span>
             </a>
 
             <a href="" class="hamburger-link font-600">
+                <div class="hamburger-link-hover"></div>
                 <span>家裡蹲官網</span>
             </a>
 
             <a href="" class="hamburger-link font-600">
+                <div class="hamburger-link-hover"></div>
                 <span>雷雕網</span>
             </a>
 
             <a href="" class="hamburger-link font-600">
+                <div class="hamburger-link-hover"></div>
                 <span>樣本檔產生器</span>
             </a>
 
             <a href="" class="hamburger-link font-600">
+                <div class="hamburger-link-hover"></div>
                 <span>登出</span>
             </a>
 
             <div href="" class="hamburger-link font-600">
-                <a>登入</a>
+                <a class="small-hamburger-link">
+                    <div class="small-hamburger-link-hover"></div>
+                    <span>登入</span>
+                </a>
                 <span>/</span>
-                <a>註冊</a>
+                <a class="small-hamburger-link">
+                    <div class="small-hamburger-link-hover"></div>
+                    <span>註冊</span>
+                </a>
 
             </div>
          
@@ -75,14 +88,14 @@
             <div class="nav-links">
                 <a class="nav-link font-600">
                     <span>關於我們</span>
-                    <div class="nav-link-bg nav-link-bg1"></div>
+                    <div class="nav-link-bg nav-link-bg1" style="display: none;"></div>
                     <div class="nav-link-bg nav-link-bg2"></div>
                     
                 </a>
 
                 <a class="nav-link font-600">
                     <span>設備技術</span>
-                    <div class="nav-link-bg nav-link-bg1"></div>
+                    <div class="nav-link-bg nav-link-bg1" style="display: none;"></div>
                     <div class="nav-link-bg nav-link-bg2"></div>
                     
 
@@ -90,7 +103,7 @@
 
                 <a class="nav-link font-600">
                     <span>家裡蹲官網</span>
-                    <div class="nav-link-bg nav-link-bg1"></div>
+                    <div class="nav-link-bg nav-link-bg1" style="display: none;"></div>
                     <div class="nav-link-bg nav-link-bg2"></div>
                     
 
@@ -98,7 +111,7 @@
 
                 <a class="nav-link font-600">
                     <span>雷雕網</span>
-                    <div class="nav-link-bg nav-link-bg1"></div>
+                    <div class="nav-link-bg nav-link-bg1" style="display: none;"></div>
                     <div class="nav-link-bg nav-link-bg2"></div>
                     
 
@@ -106,7 +119,7 @@
 
                 <a class="nav-link font-600">
                     <span>樣本檔產生器</span>
-                    <div class="nav-link-bg nav-link-bg1"></div>
+                    <div class="nav-link-bg nav-link-bg1" style="display: none;"></div>
                     <div class="nav-link-bg nav-link-bg2"></div>
                     
                 </a>
@@ -367,6 +380,8 @@
         AOS.init();
     </script>
 
+    <script src="./js/all.js"></script>
+
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".aboutSwiper", {
@@ -439,15 +454,12 @@
         
         hamburger.addEventListener('click',function () {
             hamburgercontent.classList.add("show");
-            if (hamburgercontent.classList.contains("show")) {
-                document.querySelector("body").classList.add("hidden")
-            } else {
-                document.querySelector("body").classList.remove("hidden")
-            }
+            clearbody();
         })
 
         closebtn.addEventListener('click',function () {
             hamburgercontent.classList.remove("show");
+            showbody();
         })
 
 

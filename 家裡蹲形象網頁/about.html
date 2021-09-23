@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/00-layout.css">
     <link rel="stylesheet" href="./css/00-styleguide.css">
     <link rel="stylesheet" href="./css/02-about.css">
+    <link rel="stylesheet" href="./css/hamburger-all.css">
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -35,41 +36,48 @@
         </div>
     </div>
 
-    <section class="hamburger-content" >
+    <section class="hamburger-content">
         <div class="hamburger-links">
-
             <a href="" class="hamburger-link font-600">
-                <span>首頁</span>
-            </a>
-
-            <a href="" class="hamburger-link font-600">
+                <div class="hamburger-link-hover"></div>
                 <span>關於我們</span>
             </a>
 
             <a href="" class="hamburger-link font-600">
+                <div class="hamburger-link-hover"></div>
                 <span>設備技術</span>
             </a>
 
             <a href="" class="hamburger-link font-600">
+                <div class="hamburger-link-hover"></div>
                 <span>家裡蹲官網</span>
             </a>
 
             <a href="" class="hamburger-link font-600">
+                <div class="hamburger-link-hover"></div>
                 <span>雷雕網</span>
             </a>
 
             <a href="" class="hamburger-link font-600">
+                <div class="hamburger-link-hover"></div>
                 <span>樣本檔產生器</span>
             </a>
 
             <a href="" class="hamburger-link font-600">
+                <div class="hamburger-link-hover"></div>
                 <span>登出</span>
             </a>
 
             <div href="" class="hamburger-link font-600">
-                <a>登入</a>
+                <a class="small-hamburger-link">
+                    <div class="small-hamburger-link-hover"></div>
+                    <span>登入</span>
+                </a>
                 <span>/</span>
-                <a>註冊</a>
+                <a class="small-hamburger-link">
+                    <div class="small-hamburger-link-hover"></div>
+                    <span>註冊</span>
+                </a>
 
             </div>
          
@@ -418,6 +426,7 @@
         AOS.init();
     </script>
 
+    <script src="./js/all.js"></script>
     <!-- 所有下拉式數量選單 -->
     <script>
         $(document).ready(function (e) {
@@ -465,26 +474,19 @@
     </script>
     <!-- 寶包 -->
     <script>
-        var hamburger = document.querySelector('.hamburger-btn')
+        var hamburger = document.querySelector('.hamburger')
         var closebtn  = document.querySelector('.close-btn')
-
         const hamburgercontent = document.querySelector('.hamburger-content')
-        console.log(hamburger);
-
         
         hamburger.addEventListener('click',function () {
             hamburgercontent.classList.add("show");
-           
-                document.querySelector("nav").style.display="none";
-                document.querySelector("main").style.display="none"; 
+            clearbody();
         })
 
         closebtn.addEventListener('click',function () {
             hamburgercontent.classList.remove("show");
-            document.querySelector("nav").style.display="block";
-            document.querySelector("main").style.display="block";
+            showbody();
         })
-
 
     </script>
 
@@ -493,19 +495,13 @@
     const closeshowmorebtn  = document.querySelector('.close-show-more-btn')
 
     const showmorecontents = document.querySelector('.show-more-contents')
-    console.log(hamburger);
 
     
     showmorebtn.addEventListener('click',function () {
         showmorecontents.classList.add("show");
       
             document.querySelector("nav").style.display="none";
-            document.querySelector("main").style.display="none";
-            // document.querySelector("body").classList.add("hidden")
-     
-          
-            // document.querySelector("body").classList.remove("hidden")
-        
+            document.querySelector("main").style.display="none";             
     })
 
     closeshowmorebtn.addEventListener('click',function () {
