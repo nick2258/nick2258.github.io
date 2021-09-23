@@ -45,6 +45,9 @@ nav{
             height: max-content;
             display: flex;
             justify-content: space-between;
+            a{
+                color: $allfont;
+            }
             .nav-link {
                 width: max-content;
                 height: max-content;

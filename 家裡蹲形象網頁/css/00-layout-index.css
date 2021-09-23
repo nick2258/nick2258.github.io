@@ -127,6 +127,10 @@ nav .nav-items .nav-links {
           justify-content: space-between;
 }
 
+nav .nav-items .nav-links a {
+  color: #383838;
+}
+
 nav .nav-items .nav-links .nav-link {
   width: -webkit-max-content;
   width: -moz-max-content;
