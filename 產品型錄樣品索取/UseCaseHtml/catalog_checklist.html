@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>確認清單</title>
+
+    <!-- 下方內容 -->
+    <link rel="stylesheet" href="../css/catalog_checklist.css?t=202107091652">
+
+    <!-- nav跟麵包屑的css -->
+    <link rel="stylesheet" href="../css/layout.css?t=202107091652">
+
+    <!-- fontawesome的cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&family=Noto+Serif+TC:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<!-- 背景圖包在body -->
+<body style="background-image: url(../img/背景.png);">
+
+    <div id="domCatalog_checklist">
+        <nav style="background-image: url(../img/背景.png);">
+            <section class="nav">
+                <!-- 回上一頁按鈕 -->
+                <a id="btnBack" class="back-btn nav-btn" style="text-decoration: none;">
+                    <div class="btn">
+                        <span>回上頁</span>
+                    </div>
+                </a>
+
+                <!-- 標題 -->
+                <a href="../UseCaseHtml/catalog.html" class="title">電子型錄</a>
+
+                <!-- 回首頁按鈕 -->
+                <a href="../UseCaseHtml/catalog.html" class="home-btn nav-btn" style="text-decoration: none;">
+                    <div class="btn">
+                        <span>回首頁</span>
+                    </div>
+                </a>
+            </section>
+        </nav>
+
+
+
+        <main>
+            <!-- 整體選擇資訊 -->
+            <section class="all-select-information mycontainer">
+
+                <div class="all-select-title">
+
+                    <!-- 大標標題 -->
+                    <div class="big-title">
+                        <div class="title">查價清單資訊</div>
+                    </div>
+
+                    <!-- 大標選擇欄按鈕 -->
+                    <div class="all-top-btns">
+                        <div class="select-btns">
+                            <!-- 全部選取按鈕 -->
+                            <div id="btnSelectAll" class="select-btn-text select-all">
+                                全部選取
+                            </div>
+
+                            <!-- 全部取消按鈕 -->
+                            <div id="btnCancleAll" class="select-btn-text clear-all-select">
+                                取消全選
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- 小標欄 -->
+                    <ul class="all-select-content-title">
+                        <li>選取</li>
+                        <li>商品資訊</li>
+                        <!-- <li>數量</li>
+                        <li>額外加工資訊</li> -->
+                    </ul>
+
+                </div>
+                <!-- 所有選擇資訊 -->
+                <div id="checkListBox" class="all-select-content" style="display: none;">
+
+                    <!-- 一個選擇內容 -->
+                    <ul id="checkListItem" class="select-contents">
+                        <!-- 選取方塊 -->
+                        <li class="select-content">
+
+                            <!-- 勾勾 -->
+                            <div id="chkSelect" class="select-btn show">
+                                <i class="fas fa-check select-color show"></i>
+                            </div>
+
+                        </li>
+
+                        <!-- 商品資訊 -->
+                        <li class="select-content">
+                            <ul id="lblProductInfo" class="product-informations">
+                                <li>造型名片合板</li>
+                                <li>台灣造型</li>
+                                <li>200g合成卡</li>
+                                <li>單面</li>
+                            </ul>
+                        </li>
+
+                        <!-- 數量 -->
+                        <!-- <li class="select-content">
+                            <span></span>
+                        </li> -->
+                        <!-- 加工方式 -->
+                        <!-- <li class="select-content">
+                            <span id="lblProductMachining" class="all-type">
+                                <span class="type">燙金</span>
+                                <span class="type">局部上光</span>
+                            </span>
+                        </li> -->
+
+                    </ul>
+                </div>
+                <!-- 查價清除按鈕 -->
+                <div class="check-list-btns">
+                    <!-- 刪除按鈕 -->
+                    <div id="btnDelete" class="check-list-btn clear-information">刪除</div>
+                    <!-- 產出查價交換檔 -->
+                    <div id="btnOutputFile" class="check-list-btn check-price">產出查價交換檔</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../CommonJs/Jquery/jquery-2.1.3.min.js" type="text/javascript"></script>
+
+    <!--<script>
+        const selectbtns = document.querySelectorAll(".select-btn")
+        const selectcolors = document.querySelectorAll(".select-color")
+        const selectall = document.querySelector(".select-all")
+        const clearallselect = document.querySelector(".clear-all-select")
+
+        // 初始化全選
+        addall();
+
+        selectbtns.forEach(function (ele, i) {
+            ele.addEventListener('click', function () {
+                selectcolors[i].classList.toggle("show");
+                selectbtns[i].classList.toggle("show");
+
+            });
+        });
+
+        // 全選
+        selectall.addEventListener("click", function () {
+            addall();
+        });
+
+        // 全取消
+        clearallselect.addEventListener("click", function () {
+            clearall();
+        });
+
+        // 全加
+        function addall() {
+            selectcolors.forEach(function (ele, i) {
+                ele.classList.add("show");
+                selectbtns[i].classList.add("show")
+            });
+        }
+
+        // 全清空
+        function clearall() {
+            selectcolors.forEach(function (ele, i) {
+                ele.classList.remove("show");
+                selectbtns[i].classList.remove("show")
+            });
+        }
+
+    </script>-->
+    <!-- 所有下拉式數量選單 -->
+    <script>
+        $(document).ready(function (e) {
+            $('.custom-select').click(function (e) {
+                e.stopPropagation();
+                $('.select-options', this).slideToggle();
+            });
+
+            $('.select-options li').click(function (e) {
+                e.stopPropagation();
+                const text_inside = $(this).text();
+                $(this).parent().slideUp();
+                $(this).parent().prev().text(text_inside);
+            });
+
+            $(document).click(function (e) {
+                $('.select-options').slideUp();
+            });
+        });
+    </script>
+
+    <script src="../CommonJs/importJS-1.0.0.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var pagename = "Catalog_checklist"; //必要輸入項目
+
+        var Sys = Sys || {}; //未載入Sys為主體的JS檔，所以需要事先宣告變數。
+        var ckSpace = ckSpace || {}; //未載入ckSpace為主體的JS檔，所以需要事先宣告變數。
+        var scriptlist = scriptlist || [];
+        scriptlist[pagename] = [["../UseCaseJs/app.url.js", "Lib"], ["../UseCaseJs/app.js", "app"],
+        ["../UseCaseJs/app.model.js", "Const"], ["../UseCaseJs/app.param.js", "app.params"],
+        ["../CommonJs/ckSpace-1.0.5.js", "ckSpace.library"], ["../CommonJs/ckSpace-ckNet-jsSender-1.0.2.js", "ckSpace.ckNet"],
+        ["../UseCaseJs/catalog_checklist.js", "Catalog_checklist"]];
+
+        jQuery.get("../WebApi/getVersionTimestamp.ashx", function (r1) {
+            var index = 0;
+            importJS(scriptlist[pagename][index][0] + "?t=" + r1, scriptlist[pagename][index][1], loadbox);
+            function loadbox() {
+                index++;
+                if (scriptlist[pagename].length > index) {
+                    importJS(scriptlist[pagename][index][0] + "?t=" + r1, scriptlist[pagename][index][1], loadbox);
+                } else {
+                    Catalog_checklist.init();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
