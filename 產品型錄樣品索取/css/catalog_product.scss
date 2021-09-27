@@ -370,7 +370,7 @@ main{
                         .type-texts{
                             padding-top: 30px;
                             position: relative;
-                            .sample-btn{
+                            .tab-small-btn{
                                 position: absolute;
                                 top: 0px;
                                 right: 0px;
@@ -381,9 +381,9 @@ main{
 
                                 padding: 0px 12px;
 
-                                border: 2px solid #235470;
+                                border: 2px solid orange;
 
-                                background-color: #235470;
+                                background-color: orange;
                                 border-radius: 3px;
 
                                 color: white;
@@ -392,10 +392,20 @@ main{
 
                                 cursor: pointer;
                                 box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.322);
+                              
                                 &:hover{
                                     background-color: white;
-                                    color: #235470;
+                                    color: orange;
                                     transition: .6s;
+                                }
+                                @media all and (max-width: 700px) {
+                                    font-size: 14px;
+                                    padding: 0px 8px;
+                                }
+                                @media all and (max-width: 600px) {
+                                    position: relative;
+                                    margin-bottom: 8px;
+                                    width: 100%;
                                 }
                             }
                         }
@@ -571,6 +581,7 @@ main{
                         .type-pic{  
                             width: 380px;
                             height: 280px;
+                            position: relative;
                             @media all and (max-width: 861px) {
                                 width: 350px;
                                 height: 258px;    
@@ -597,6 +608,25 @@ main{
                                 height: 100%;
 
                                 border-radius: 5px; 
+                            }
+                            .watch-video{
+                                position: absolute;
+                                top: 5px;
+                                right: 5px;
+                                z-index: 20;
+                                background-color: darkred;
+                                color: white;
+                                padding: 1px 5px;
+                                border-radius: 3px;
+                                border: 2px solid darkred;
+                                font-size: 14px;
+                                letter-spacing: 1px;
+                                &:hover{
+                                    background-color: white;
+                                    color: darkred;
+
+                                    transition: .6s;
+                                }
                             }
                             // swiper輪播圖
                             .swiper-container {
@@ -894,12 +924,57 @@ main{
                                     width: calc(100% - 410px);
 
                                     margin-left: 30px;
+
+                                    padding-top: 30px;
+                                    position: relative;
+                                    @media all and (max-width: 1000px) {
+                                       padding-top: 0px;
+                                    }
                                     @media all and (max-width: 1000px) {
                                         width: 100%;
 
                                         margin-left: 0px;
                                     }
                                     // 樣式 尺寸 天數 單選類
+                                    .tab-small-btn{
+                                        position: absolute;
+                                        top: 0px;
+                                        right: 0px;
+        
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+        
+                                        padding: 1px 12px;
+        
+                                        border: 2px solid orange;
+        
+                                        background-color: orange;
+                                        border-radius: 3px;
+        
+                                        color: white;
+                                        font-weight: 600;
+                                        letter-spacing: 1px;
+        
+                                        cursor: pointer;
+                                        box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.322);
+                                      
+                                        &:hover{
+                                            background-color: white;
+                                            color: orange;
+                                            transition: .6s;
+                                        }
+                                        @media all and (max-width: 1000px) {
+                                            width: 180px;
+                                            font-size: 14px;
+                                            position: relative;
+                                            margin: 8px auto;
+                                            padding: 1px 20px;
+                                        }
+                                        @media all and (max-width: 600px) {
+                                            width: 300px;
+                                        }
+                                    }
                                     .type-content-texts{
                                         @media all and (max-width: 1000px) {
                                             padding-top: 20px;

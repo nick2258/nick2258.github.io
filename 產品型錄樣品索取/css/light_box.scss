@@ -920,7 +920,7 @@
    
 }
 
-// 確認資訊
+// 領取樣品資訊
 .sample-information{
     width: 100%;
     max-width: 1920px;
@@ -933,9 +933,6 @@
     position:fixed;
     top: 0px;
     z-index: 99;
-    
-    
-    
     .all-sample{
         max-width: 800px;
         width: 60%;
@@ -948,7 +945,6 @@
         left: 50%;
         transform: translate(-50%,-50%);
 
-        background-color:cornsilk;
         background-color: white;
         border-radius: 15px;
         box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.2) ;
@@ -959,6 +955,7 @@
         @media screen and (max-width:700px){
             width: 88%;
         }
+        // 領取樣品標題
         .sample-title{
             width: 100%;
             height: 50px;
@@ -975,54 +972,50 @@
             background-color: #235470;
             border-radius: 10px 10px 0px 0px;
         }
-        // 單個清單
+        // 領取樣品內容
         .sample-content{
             width: 100%;
             
-
             height:max-content;    
-            // max-height:  calc(70vh - 150px);
             overflow-y: auto;
 
             border-radius:0px 0px 15px 15px;
            
             margin: 0px auto;
-            // margin-bottom: 20px;
             padding: 20px 20px;
     
             letter-spacing: 1px;
     
             position: relative;
+
             display: flex;
             flex-direction: column;
             align-items: center;
-            // 1250px我的清單變直式版型
-            // @media screen and (max-width:1100px){
-            //     max-height:  calc(70vh - 150px);
-            // }
-            // @media screen and (max-width:700px){
-            //     max-height:  calc(90vh - 150px);
-            // }
-            // @media screen and (max-width:500px){
-            //     padding: 15px 10px;
-            // }
+            // 領取樣品圖
             .sample-pic{
                 width: 100%;
+
                 display: flex;
                 justify-content: center;
                 img{
                     width: 100%;
                     max-width:203.5px;
                     height: 150px;
-                    background-color: yellowgreen;
+
                     margin-bottom: 16px;
                 }
             }
+            // 領取樣頻文字內容
             .all-texts{
                 width: max-content;
+                @media screen and (max-width:540px){
+                    width: 100%;
+                    max-width: 320px;
+                }
                 .sample-content-title{
                     font-size: 18px;
                     font-weight: 600;
+
                     margin-bottom: 8px;
                 }
                 .sample-content-texts{
@@ -1037,8 +1030,22 @@
                     }
                 }
             }
-            
-         
+        }
+        // 不再顯示內容
+        .no-show{
+            max-width: 650px;
+
+            color: rgb(68, 68, 68);
+
+            margin: 0px auto;
+            margin-bottom: 5px;
+            @media screen and (max-width:860px){
+                padding: 0px 30px;
+            }
+            input{
+                margin: 0px;
+                margin-right: 5px;
+            }
         }
         .check-btns{
             width:660px;
@@ -1066,20 +1073,24 @@
                 text-align: center;
 
                 border-radius: 5px;
-                background-color: darkorange;
-                border: 2px solid darkorange;
+
+                background-color: #080842;
+                border: 2px solid #080842;
 
                 cursor: pointer;
                 &:hover{
-                    color: darkorange;
+                    color: #080842;
+
                     background-color: white;
                     transition: .6s;
                 }
                 &:nth-last-child(1){
-                    background-color: #080842;
-                    border: 2px solid #080842;
+                    background-color: darkorange;
+                    border: 2px solid darkorange;
                     &:hover{
                         color: #080842;
+                        color: darkorange;
+
                         background-color: white;
                         transition: .6s;
                     }
@@ -1098,12 +1109,14 @@
             }
         }
     }
+    // 預設領取樣品文字
     .get-sample-texts{
         max-width: 650px;
         display: flex;
         flex-direction: column;
         .get-sample-text{
             margin-top: 8px;
+
             line-height: 24px;
             letter-spacing: 1px;
             color: lightcoral;
@@ -1114,6 +1127,7 @@
         }
     }
 }
+// 確認領取樣品
 .check-sample{
     opacity: 0;
     display: none;
@@ -1126,6 +1140,7 @@
         transition:  1s;
     }
 }
+// 預設領取樣品
 .get-sample{
     opacity: 1;
     display: block;
@@ -1136,5 +1151,294 @@
         opacity: 0;
         
         transition:  1s;
+    }
+}
+
+// 設計下載專區
+.design-projects{
+    width: 100%;
+    max-width: 1920px;
+    height: max-content;
+    min-height: 100vh;
+    max-height: 100vh;
+
+    overflow-y: auto;
+
+    position: fixed;
+    transform: translateX(-100%);
+    border-radius: 15px;
+    background-color: white;
+
+    opacity: 1;
+    z-index: 99;
+    &.show{
+        transform: translateX(0px);
+
+        opacity: 1;
+
+        display: block;
+
+        transition: .6s;
+    }
+    // 登入上方關閉按鈕
+    .design-projects-close{
+        font-size: 36px;
+        color: #080842;
+
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    // 設計專區內容
+    .design-projects-information{
+        width: 100%;
+        max-width: 1600px;
+
+        margin: 0px auto;
+        // 設計專區標題
+        .design-projects-title{
+            font-size: 36px;
+            
+            margin: 16px auto;
+
+            font-weight: 600;
+            letter-spacing: 3px;
+
+            color: #080842;;
+            border-radius: 20px 20px 0px 0px;
+
+            display: flex;
+            justify-content: center;
+            @media screen and (max-width:740px){
+                font-size: 20px;
+            }
+            @media screen and (max-width:540px){
+                font-size: 20px;
+            }
+        }
+        // 設計專區內容
+        .design-projects-contents{
+            width: 100%;
+            height: max-content;
+            display: flex;
+            
+            flex-wrap: wrap;
+            @media screen and (max-width:1620px){
+                padding: 0px 20px;
+            }
+            @media screen and (max-width:540px){
+                justify-content: center;
+            }
+            // 長寬比380/280 單個設計專區內容
+            .design-project-card{
+                width: 377.5px;
+
+                margin-right: 30px;
+                margin-bottom: 48px;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &:nth-child(4n){
+                    margin-right: 0px;
+                }
+                @media screen and (max-width:1620px){
+                    width: calc(25% - 22.5px);
+                }
+                @media screen and (max-width:1400px){
+                    width: calc(33.333% - 20px);
+                    &:nth-child(4n){
+                        margin-right: 30px;
+                    }
+                    &:nth-child(3n){
+                        margin-right: 0px;
+                    }
+                }
+                @media screen and (max-width:900px){
+                    width: calc(50% - 15px);
+                    &:nth-child(4n){
+                        margin-right: 30px;
+                    }
+                    &:nth-child(3n){
+                        margin-right: 30px;
+                    }
+                    &:nth-child(2n){
+                        margin-right: 0px;
+                    }
+                }
+                @media screen and (max-width:540px){
+                    width: 300px;
+
+                    margin-right: 0px;
+                    margin-bottom: 32px;
+                    &:nth-child(4n){
+                        margin-right: 00px;
+                    }
+                    &:nth-child(3n){
+                        margin-right: 00px;
+                    }
+                    &:nth-child(2n){
+                        margin-right: 0px;
+                    }
+                }
+                // 設計專區圖片
+                .design-project-pic{
+                    width: 100%;
+                    height: 278px;
+                    @media screen and (max-width:1620px){
+                        height: 16.7vw;
+                    }
+                    @media screen and (max-width:1400px){
+                        height: 20vw;
+                    }
+                    @media screen and (max-width:900px){
+                        height: 33.4vw;
+                    }
+                    @media screen and (max-width:540px){
+                        height: 221.05px;
+                    }
+                    img{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5px;                        
+                    }
+                }
+                // 設計專區標題文字(單個)
+                .design-project-card-title{
+                    font-size: 18px;
+                    font-weight: 600;
+                    color:#383838;
+                    letter-spacing: 1.5px;
+
+                    margin: 8px 0px;
+                    @media screen and (max-width:740px){
+                        font-size: 16px;
+                    }
+                }
+                // 樣本檔下載
+                .design-download{
+                    width: 100%;
+
+                    display: flex;
+                    justify-content: space-between;
+                    @media screen and (max-width:740px){
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                    .download-btn{
+                        width: calc(50% - 10px);
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        padding: 4px 2px;
+                        
+                        border: 2px solid gray;
+                        background-color: whitesmoke;
+                        box-shadow: 5px 5px 15px gainsboro;
+                        border-radius: 50px;
+
+                        cursor: pointer;
+                        @media screen and (max-width:740px){
+                            width: calc(100% - 32px);
+
+                            margin: 0px auto;
+                            margin-bottom: 10px;
+                            &:nth-last-child(1){
+                                margin-bottom: 0px;
+                            }
+                        }
+                        @media screen and (max-width:540px){
+                            width: 300px;
+                        }
+                        &:hover{
+                            border:2px solid orange;
+                            
+                            opacity: .8;
+                            transition: .6s;
+                        }
+                        .download-icon{
+                            width: 32px;
+                            height: 32px;
+
+                            margin-right: 8px;
+                            @media screen and (max-width:1050px){
+                                width: 24px;
+                                height: 24px;
+                            }
+                            img{
+                                width: 100%;
+                                height: 100%;
+
+                                border-radius: 5px;
+                            }
+                        }
+                        .download-text{
+                            font-size: 14px;
+                        }
+                    }
+                }  
+            }
+
+        }
+    }
+}
+
+// 登入畫面左側滑動
+.video{
+    width: 100%;
+    max-width: 1920px;
+    height: max-content;
+    min-height: 100vh;
+
+    position: fixed;
+    transform: translateX(-120%);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.651);
+
+    opacity: 0;
+    &.show{
+        transform: translateX(0px);
+
+        opacity: 1;
+
+        z-index: 99;
+
+        display: block;
+
+        transition: .6s;
+    }
+    // 登入上方關閉按鈕
+    .video-close{
+        font-size: 36px;
+        color: #080842;
+
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    // 會員資訊內容
+    .video-information{
+        width: 640px;
+        height: 360px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-75%);
+     
+        box-shadow: 15px 15px 15px #08080e21;
+        @media screen and (max-width:700px){
+            width: 90vw;
+            height: 45vw;
+        }
+        iframe{
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
     }
 }
