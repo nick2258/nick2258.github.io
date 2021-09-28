@@ -1130,6 +1130,32 @@
 
                                                             </div>
 
+                                                            <div id="selectItem" class="dino-input-field select custom-select style-select">
+                                                                <label></label>
+
+                                                                <!--單一個選單(短的)=> 內容隨選單選擇內容變化 選擇紙材標題 -->
+                                                                <span class="option-selected style-select-title1">
+                                                                    <span id="lblSelectName">選擇產品紙材</span>
+                                                                </span>
+
+                                                                <!-- 單一個選單(短的)內容 選擇紙材內容-->
+                                                                <ul id="cboSelects" class="select-options  style-select-option">
+                                                                    <li>AAAAAAAA</li>
+                                                                    <li>BBBBBBBBB</li>
+                                                                    <li>CCCCCCCCC</li>
+                                                                    <li>DDDDDDD</li>
+                                                                    <li>EEEEEEEEE</li>
+                                                                    <li>FFFFFFFFF</li>
+                                                                    <li>GGGGGGGG</li>
+                                                                    <li>HHHHHHHHH</li>
+                                                                    <li>IIIIIIIIII</li>
+                                                                </ul>
+
+                                                                <!-- 下拉式選單 icon  -->
+                                                                <i class="fas fa-sort-down"></i>
+
+                                                            </div>
+
                                                             <!-- 單一個選單 選擇印刷方式選單 需要增加直接複製這串html -->
                                                             <!--<div class="dino-input-field select custom-select style-select">
                                                                 <label></label>-->
@@ -1280,7 +1306,7 @@
     </div>
 
     <!-- jquery -->
-    <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- swiper js -->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -1347,17 +1373,39 @@
     </script>-->
     <!-- 所有下拉式數量選單 -->
     <script>
+        // $(document).ready(function (e) {
+        //     $('.custom-select').click(function (e) {
+        //         e.stopPropagation();
+        //         $('.select-options', this).slideToggle();
+        //     });
+
+        //     $('.select-options li').click(function (e) {
+        //         e.stopPropagation();
+        //         const text_inside = $(this).text();
+        //         $(this).parent().slideUp();
+        //         $(this).parent().prev().text(text_inside);
+        //     });
+
+        //     $(document).click(function (e) {
+        //         $('.select-options').slideUp();
+        //     });
+        // });
+
         $(document).ready(function (e) {
             $('.custom-select').click(function (e) {
                 e.stopPropagation();
-                $('.select-options', this).slideToggle();
+                $('.select-options').slideUp();
+
+                if ($('.select-options', this).is(':hidden')) {
+                    $('.select-options', this).slideDown();
+                }
             });
 
             $('.select-options li').click(function (e) {
-                e.stopPropagation();
-                const text_inside = $(this).text();
-                $(this).parent().slideUp();
-                $(this).parent().prev().text(text_inside);
+               e.stopPropagation();
+               const text_inside = $(this).text();
+               $(this).parent().slideUp();
+               $(this).parent().prev().text(text_inside);
             });
 
             $(document).click(function (e) {
