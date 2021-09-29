@@ -414,8 +414,8 @@
 
         </section>
 
-        <!-- 確認領取樣品 預設進來畫面 -->
-        <section class="sample-information get-sample" >
+        <!-- 領取樣品 預設進來畫面 -->
+        <section class="sample-information get-sample" style="display: none;">
             <div class="all-sample">
                 <div class="sample-title">
                     <span>領取樣品</span>
@@ -491,13 +491,18 @@
             </div>
         </section>
 
-         <!-- 登入畫面側邊滑動顯示 -->
+         <!-- 觀看影片-->
          <section class="video" id="" >
-            <i class="fas fa-window-close video-close" style="cursor: pointer;"></i>
+           
+           
             <div class="video-information">
-                <iframe  src="https://www.youtube.com/embed/5HHKPjPejvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
+                <div class="watch-videos">
+                    <iframe  src="https://www.youtube.com/embed/5HHKPjPejvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                    <i class="far fa-times-circle video-close"></i>  
+                </div>
+            </div>
     
-            </section>
+        </section>
 
       
 
@@ -723,14 +728,14 @@
                     <!-- 側邊種類選單 pc -->
                     <div class="all-types-bar">
                         <!-- 側邊選擇大標 pc-->
-                        <div id="lblCatagory" class="all-types-title">XXX種類</div>
+                        <div id="lblCatagory" class="all-types-title">木座桌曆種類</div>
 
                         <!-- 選單內容 pc-->
                         <div id="catagoryBox" class="dropdown-content">
 
                             <!-- 單個種類 -->
                             <button id="catagoryItem" class="small-type big-type">
-                                <span id="lblProductName" class="type_text" value>雞尾酒彩色名片</span>
+                                <span id="lblProductName" class="type_text" value>木座桌曆</span>
                             </button>
 
                             <!--<button class="small-type big-type">
@@ -809,7 +814,16 @@
 
                                                     <!-- 單張輪播圖 -->
                                                     <div id="carouselItem_Product" class="swiper-slide">
-                                                        <img id="imgProduct" src="" alt="">
+                                                        <img id="imgProduct" src="../img/數位_木作桌曆.png" alt="">
+                                                    </div>
+                                                    <div id="carouselItem_Product" class="swiper-slide">
+                                                        <img id="imgProduct" src="../img/數位_木作桌曆.png" alt="">
+                                                    </div>
+                                                    <div id="carouselItem_Product" class="swiper-slide">
+                                                        <img id="imgProduct" src="../img/數位_木作桌曆.png" alt="">
+                                                    </div>
+                                                    <div id="carouselItem_Product" class="swiper-slide">
+                                                        <img id="imgProduct" src="../img/數位_木作桌曆.png" alt="">
                                                     </div>
                                                     <!--<div class="swiper-slide">
                                                         <img src="../img/彩色名片ICON/ICON彩色名片D造型合版1.png" alt="">
@@ -833,23 +847,122 @@
                                             </div>
 
                                             <div class="texts">
+                                                <div class="small-title">
+                                                    <span class="small-title-text">商品資訊</span>
+                                                </div>
+                                                <!-- 產品介紹文字種類 -->
+                                                <div id="lblProductKind" class="text ">
+                                                   <span class=" big-text">商品名稱：</span ><span class=" big-text">木座桌曆</span>
+                                                </div>
+
+                                                <!-- 商品樣式 -->
+                                                <div  class="text" style="flex-direction: column;">
+                                                    <span class="font-600">商品樣式：</span>
+                                                   <div>A版_橫式(150x100mm)</div><div>B版_直式(95x170mm)</div><div>C版_橫式(95x82mm)</div><div> C版_直式(82x95mm)</div>
+                                                </div>
+
+                                                 <!-- 商品單位 -->
+                                                 <div  class="text" style="flex-direction: column;">
+                                                    <div><span class="font-600">商品單位：</span>1個</div>
+                                                     <div>A版_8張雙面印品，內含木座尺寸：<span>105x36x16mm</span></div> 
+                                                     <div>B版_7張雙面印品，內含木座尺寸：<span>105x36x16mm</span></div> 
+                                                     <div>C版_14張單面印品，內含木座尺寸：<span>35x36x16mm</span></div> 
+                                                </div>
+
+                                            </div>
+
+                                            <div class="texts">
+                                                <div class="small-title">
+                                                    <span class="small-title-text">印刷資訊</span>
+                                                </div>
                                                 <!-- 產品介紹文字種類 -->
                                                 <div id="lblProductKind" class="text">
-                                                    種類：造型名片合板
+                                                    <span class="font-600">印刷方式：</span>
+                                                    雙面印刷
                                                 </div>
 
-                                                <!-- 產品介紹文字介紹 -->
-                                                <div id="lblProductIntro" class="text">
-                                                    介紹：彩色造型名片合板，透過不同的造型樣式，增加名片的趣味度 ，並提供以下多種公版樣式，台灣造型、小熊造型、小貓造型、狗骨頭造型等等，名片更具豐富性。
+                                                <!-- 商品樣式 -->
+                                                <div  class="text" style="flex-direction:initial;">
+                                                    <span class="font-600">適用紙材：</span>
+                                                    <span>雪面銅西卡250P</span>、
+                                                    <span>一級卡220P、一級卡260P</span>、
+                                                    <span>萊妮紙_白色220P</span>、
+                                                    <span>萊妮紙_白色270P</span>、
+                                                    <span>細紋紙_白色220P</span>、
+                                                    <span>象牙卡_白色222P</span>、
+                                                    <span>象牙卡_白色270P</span>、
+                                                    <span class="margin-right">映畫紙_白色240P</span>，共8種可供選擇
+                                                    <span class="color-red">(C版不適合260P以上材質)</span>
+                                                    
                                                 </div>
 
-                                                <!-- 產品介紹適用範圍 -->
-                                                <div id="lblRange" class="text">
-                                                    適用範圍：
+                                                  <!-- 產品介紹文字種類 -->
+                                                <div id="lblProductKind" class="text">
+                                                    <span class="font-600">內含加工</span>
+                                                    ：<span>OPP袋包裝</span>
+                                                </div>
+
+                                                <div  class="text"   style="flex-direction: column;">
+                                                    <span class="font-600">加工項目：</span>
+                                                    <div style="display: flex; flex-wrap:wrap ;">
+                                                        <span>木座加工：</span>
+                                                        <span>彩噴（CMYK）</span>、
+                                                        <span>白墨</span>、
+                                                        <span>彩白（CMYK+白墨）</span>、
+                                                        <span>平雕</span>，共4種可供選擇。
+                                                    </div> 
                                                 </div>
                                             </div>
 
+                                            <div class="texts">
+                                                <div class="small-title">
+                                                    <span class="small-title-text">加購商品</span>
+                                                </div>
+
+                                                <div  class="text" style="flex-direction: column;">
+                                                    <div class="font-600">紙盒加購：（附上紙盒，客人自行包裝）</div>
+                                                    <div>適合A版_紙盒尺寸：<span>105x36x16mm</span></div> 
+                                                    <div>適合B版_紙盒尺寸：<span>105x36x16mm</span></div> 
+                                                    <div>適合C版_紙盒尺寸：<span>35x36x16mm</span></div> 
+                                                </div>
+                                            </div>
+
+                                            <div class="texts">
+                                                <div class="small-title">
+                                                    <span class="small-title-text">下單數量</span>
+                                                </div>
+
+                                                <div  class="text">
+                                                    <span class="font-600">下單數量：</span>
+                                                    <span>100</span>,
+                                                    <span>200</span>,
+                                                    <span>300</span>,
+                                                    <span>500</span>,
+                                                    <span>1000</span>,
+                                                    <span>2000</span>,
+                                                    <span>3000</span>,
+                                                    <span>4000</span>,
+                                                    <span>5000</span>,
+                                                    <span>6000</span>,
+                                                    <span>8000</span>,
+                                                    <span>10000</span>,
+                                                    <span>12000</span>,
+                                                    <span>16000</span>,
+                                                    <span>20000</span>…
+                                                    <span class="margin-right">40000</span>
+                                                    <span>(單位：個，依數量級距下單)</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="texts" style="flex-direction: column;">
+                                                <div class="small-title">
+                                                    <span class="small-title-text">商品簡介</span>
+                                                </div>
+                                                <div class="product-text "> 木座桌曆有A版_橫式、B版_直式、C版_橫式、C版_直式，4種尺寸。可擺設居家或辦公空間做桌面展示使用。</div>
+                                                <div class="product-text "> 木座桌曆有A版_橫式、B版_直式、C版_橫式、C版_直式，4種尺寸。可擺設居家或辦公空間做桌面展示使用。</div>
+                                            </div>
                                         </div>
+                                      
                                     </div>
                                 </div>
                             </div>
@@ -1023,23 +1136,15 @@
 
                                         <!-- 選單標題 預設第一個 -->
                                         <span class="option-selected process-select-title">
-                                            <span id="lblStyle">台灣造型</span>
+                                            <span id="lblStyle">A版_橫式(150x100mm)</span>
                                         </span>
 
                                         <!-- 產品樣式 下拉式選單內容 -->
                                         <ul id="cboStyles" class="select-options process-select-option">
-                                            <li>台灣造型</li>
-                                            <li>小熊造型</li>
-                                            <li>小貓造型</li>
-                                            <li>狗骨頭造型</li>
-                                            <li>漢堡造型</li>
-                                            <li>豌豆造型</li>
-                                            <li>大碗公造型</li>
-                                            <li>茶壺造型</li>
-                                            <li>金龜車造型</li>
-                                            <li>發財車造型</li>
-                                            <li>葉子造型</li>
-                                            <li>葉片造型</li>
+                                            <li>A版_橫式(150x100mm)</li>
+                                            <li>B版_直式(95x170mm)</li>
+                                            <li>C版_橫式95x82mm</li>
+                                            <li>C版_直式(82x95mm)</li>
                                         </ul>
 
                                         <!-- 下拉式選單 icon  -->
@@ -1312,7 +1417,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- swiper -->
-    <!--<script defer>
+    <script defer>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
             loop: true,
@@ -1325,7 +1430,7 @@
                 prevEl: ".swiper-button-prev",
             },
         });
-    </script>-->
+    </script>
     <!-- 種類選擇選擇欄 -->
     <!--<script>
         const bigtypes = document.querySelectorAll(".big-type")

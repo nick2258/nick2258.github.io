@@ -28,6 +28,20 @@ body {
           align-items: center;
 }
 
+#domCatalog {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -230,10 +244,12 @@ nav .nav .nav-btn {
 
 nav .nav .back-btn {
   left: 8px;
+  cursor: pointer;
 }
 
 nav .nav .home-btn {
   right: 8px;
+  cursor: pointer;
 }
 
 nav .nav a {
@@ -468,6 +484,7 @@ nav .nav a .btn:hover {
   letter-spacing: 1.5px;
   font-weight: 600;
   color: white;
+  cursor: pointer;
 }
 
 .breadcrumb .mycontainer .check-price:hover {

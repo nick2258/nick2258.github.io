@@ -18,8 +18,13 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center; 
+}
+#domCatalog{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
 *{
@@ -186,10 +191,12 @@ nav{
         // 回上頁
         .back-btn{
             left: 8px;
+            cursor: pointer;
         }
         // 回主頁
         .home-btn{
             right: 8px;
+            cursor: pointer;
         }
         a{
             width: max-content;
@@ -374,6 +381,8 @@ nav{
             letter-spacing: 1.5px;
             font-weight: 600;
             color: white;   
+
+            cursor: pointer;
             &:hover{
                 background-color: white;
                 color: darkred;
