@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>樣本檔產生器</title>
-    <!-- <link rel="stylesheet" href="../css/cocktail.css"> -->
-    <link rel="stylesheet" href="./css/cocktail.css">
+    <link rel="stylesheet" href="../css/cocktail.css">
     <!-- fontawesome的cdn -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
@@ -48,23 +47,23 @@
 
         </section>
         <!-- 我的清單 側邊滑動顯示 滿版-->
-        <div class="love-lists ">
+        <div class="love-lists " id="myList">
             <!-- 客戶簡稱 -->
             <div class="user-login-content">
-                <span>客戶簡稱:王大明</span>
+                <span>客戶簡稱:<span id="lblCustomerName">測試</span></span>
             </div>
             <!-- 我的清單內容(多個) -->
-            <ul>
+            <ul id="listBox">
                 <!-- 我的清單內容(單個) -->
-                <li class="love-item">
+                <li class="love-item" id="listItem">
                     <!-- 上方選取刪除按鈕 -->
                     <div class="btn">
 
-                        <div class="add-btn">
+                        <div class="add-btn" id="btnDefault">
                             <span>選取為預設內容</span>
                         </div>
 
-                        <div class="delete-btn">
+                        <div class="delete-btn" id="btnDelete">
                             <span>刪除</span>
                         </div>
 
@@ -73,27 +72,34 @@
                     <!-- 單個清單標題 -->
                     <div class="title">
 
-                        <div class="title-item">檔案客戶名： <span>這是檔案客戶名</span></div>
-                        <div class="title-item">印刷資訊： <span> <span> Illustrator</span>/ <span>雞尾酒彩色名片/3張紙</span> </span></div>
-                        <div class="title-item">數量： <span>10000<span>個</span></span></div>
-                        <div class="title-item">建立時間： <span>2021年08月25日16點00分</span></div>
+                        <div class="title-item">檔案客戶名： <span id="lblFileName_List">這是檔案客戶名</span></div>
+                        <div class="title-item">
+                            印刷資訊： <span id="lblPrintInfo_List">
+                                <span> Illustrator</span>/
+                                <span>雞尾酒彩色名片</span>/
+                                <span>直式</span>/
+                                <span>三張紙</span>
+                            </span>
+                        </div>
+                        <div class="title-item">數量： <span id="lblQty_List">10000個</span></div>
+                        <div class="title-item">建立時間： <span id="lblBuiltTime">2021年08月25日16點00分</span></div>
 
                     </div>
 
                     <!-- 紙張(多個) -->
-                    <ol>
+                    <ol id="paperInfoBox_List">
                         <!-- 單張紙 -->
-                        <li class="">
+                        <li class="" id="paperInfoItem_List">
                             <!-- 紙材 -->
                             <div class="items items-title">
-                                <div class="item">第一張紙 </div>
-                                <div class="item">紙材:一級卡 </div>
+                                <div class="item" id="lblPaper_List">第一張紙 </div>
+                                <div class="item">紙材:<span id="lblPaperName_List">一級卡</span></div>
                             </div>
                             <!-- 正反面 -->
                             <div class="all-items">
                                 <div class="items">
                                     <div class="item">正面: </div>
-                                    <div class="item">
+                                    <div class="item" id="cocktailCode_List_Front">
                                         <div class="process">彩色印刷</div>
                                         <div class="process">不印刷</div>
                                         <div class="process">不印刷</div>
@@ -107,7 +113,7 @@
                                 <div class="items">
                                     <div class="item">反面: </div>
                                     <div class="item">
-                                        <div class="item">
+                                        <div class="item" id="cocktailCode_List_Back">
                                             <div class="process">彩色印刷</div>
                                             <div class="process">不印刷</div>
                                             <div class="process">不印刷</div>
@@ -121,7 +127,7 @@
                             </div>
                         </li>
 
-                        <li class="">
+                        <!--<li class="">
                             <div class="items items-title">
                                 <div class="item">第二張紙 </div>
                                 <div class="item">紙材:一級卡 </div>
@@ -191,17 +197,16 @@
                                 </div>
                             </div>
 
-                        </li>
+                        </li> -->
                     </ol>
                 </li>
-
             </ul>
             <!-- 刪除 -->
             <i class="fas fa-window-close fa-window-close-btn" style="cursor: pointer;"></i>
         </div>
 
         <!-- 確認資訊燈箱 -->
-        <div class="check-information">
+        <div class="check-information" id="checkInformationBox">
             <!-- 確認選擇資訊(單個) -->
             <div class="all-check">
                 <div class="check-item-title">
@@ -212,30 +217,30 @@
                 <div class="check-item">
                     <!-- 選擇資訊內容左側 -->
                     <div class="title">
-                        <div class="title-item">檔案客戶名： <span>這是檔案客戶名</span></div>
-                        <div class="title-item">
+                        <div class="title-item">檔案客戶名： <span id="lblFileName_Check">這是檔案客戶名</span></div>
+                        <div class="title-item" id="lblPrintInfo_Check">
                             印刷資訊：
                             <span> Illustrator</span>/
                             <span>雞尾酒彩色名片</span>/
                             <span>直式</span>/
                             <span>三張紙</span>
                         </div>
-                        <div class="title-item">數量： <span>20<span>盒</span></span></div>
+                        <div class="title-item">數量：<span id="lblQty_Check">20盒</span></div>
                     </div>
 
                     <!-- 選擇資訊內容右側 -->
-                    <ol>
-                        <li class="">
+                    <ol id="paperInfoBox_Check">
+                        <li class="" id="paperInfoItem_Check">
                             <!-- 紙材 -->
                             <div class="items items-title">
-                                <div class="item">第一張紙 </div>
-                                <div class="item">紙材:一級卡 </div>
+                                <div class="item" id="lblPaper_Check">第一張紙 </div>
+                                <div class="item">紙材:<span id="lblPaperName_Check">一級卡</span> </div>
                             </div>
                             <!-- 正反面 -->
                             <div class="all-items">
                                 <div class="items">
                                     <div class="item">正面: </div>
-                                    <div class="item">
+                                    <div class="item" id="cocktailCode_Check_Front">
                                         <div class="process">彩色印刷</div>
                                         <div class="process">不印刷</div>
                                         <div class="process">不印刷</div>
@@ -249,7 +254,7 @@
                                 <div class="items">
                                     <div class="item">反面: </div>
                                     <div class="item">
-                                        <div class="item">
+                                        <div class="item" id="cocktailCode_Check_Back">
                                             <div class="process">彩色印刷</div>
                                             <div class="process">不印刷</div>
                                             <div class="process">不印刷</div>
@@ -268,7 +273,7 @@
 
                 <!-- 選擇資訊確認關閉按鈕 -->
                 <div class="check-btns">
-                    <div class="check-information-btn btn">確認</div>
+                    <div class="check-information-btn btn" id="btnOK_Check">確認</div>
                     <div class="close-check-btn btn">關閉</div>
                 </div>
             </div>
@@ -276,7 +281,7 @@
         </div>
 
         <!-- 價格與樣本檔燈箱 -->
-        <div class="price-file">
+        <div class="price-file " id="priceAndSampleBox">
             <div class="top-choices">
                 <!-- 價格與樣本檔標題 -->
                 <div class="all-big-selects-title all-big-result-title">
@@ -290,7 +295,7 @@
                         <div class="price result">
                             <div class="title">報價：</div>
                             <div class="price-text">
-                                <span>$1000000</span>
+                                <span id="lblPrice">$1000000</span>
                             </div>
                             <span>未稅</span>
                         </div>
@@ -299,13 +304,13 @@
                         <div class="files result">
                             <div class="title">樣本檔下載：</div>
 
-                            <a href="" download="ai樣本檔">
-                                <img src="../image/aipng.png" alt="">
+                            <a href="javascript: void(0)" id="sample_Ai" style="display: none;">
+                                <img src="../images/aipng.png" alt="">
                                 <div class="text">樣本檔下載</div>
                             </a>
 
-                            <a href="" download="cdr樣本檔" style="display: none;">
-                                <img src="../image/cdr_icon.png" alt="">
+                            <a href="javascript: void(0)" id="sample_Cdr" style="display: none;">
+                                <img src="../images/cdr_icon.png" alt="">
                             </a>
                         </div>
 
@@ -313,7 +318,7 @@
 
                     <div class="love-btns">
                         <!-- 加入我的清單按鈕 -->
-                        <button class="btn add" title="加入我的清單後可以選為快速讀取清單">
+                        <button class="btn add" title="加入我的清單後可以選為快速讀取清單" id="btnAddToList">
                             <span>將選取結果</span><span>加入我的清單</span>
                         </button>
 
@@ -326,11 +331,11 @@
             </div>
         </div>
 
-        <!-- 工藝大權編碼輸入燈箱 -->
-        <div class="craft-select-informations ">
+           <!-- 工藝大權編碼輸入燈箱 -->
+           <div class="craft-select-informations ">
             <!-- 確認選擇資訊(單個) -->
             <div class="all-craft-content">
-                <!-- <iframe src="http://xorder.draw123.com.tw/UseCase/CocktailMenuFrame.html?openType=1&TempUrl=http://www.draw123.com.tw/Download/Sample/Digital/工藝大全" name="cocktailMenu" id="cocktailMenu" width="1130" marginwidth="0" height="820" marginheight="0" scrolling="auto" frameborder="0"></iframe> -->
+                <!-- <iframe class="iframe" src="http://xorder.draw123.com.tw/UseCase/CocktailMenuFrame.html?openType=1&TempUrl=http://www.draw123.com.tw/Download/Sample/Digital/工藝大全" name="cocktailMenu" id="cocktailMenu" width="1130" marginwidth="0" height="820" marginheight="0" scrolling="auto" frameborder="0"></iframe> -->
                 <div class="craft-title">
                     <span>工藝大全編碼輸入</span>
                 </div>
@@ -347,6 +352,8 @@
 
         </div>
 
+        </div>
+
         <!-- 上方導覽列 -->
         <nav>
             <section class="nav-content">
@@ -357,8 +364,8 @@
                 </div>
 
                 <!-- 登入時畫面 -->
-                <div class="nav-items" id="logout" >
-                    <div class="log user-login" style="cursor: pointer;">我的清單</div>
+                <div class="nav-items" id="logout" style="display: none;">
+                    <div class="log user-login" style="cursor: pointer;" id="btnMyList">我的清單</div>
                     <div class="log logout" id="btnLogout">登出</div>
                 </div>
 
@@ -370,8 +377,8 @@
                 <!-- 直式版型選擇紙張張數 依選擇的張數決定選項-->
                 <div class="paper-btns">
                     <div class="paper-btn paper" id="btnPaper_First">第一張</div>
-                    <div class="paper-btn paper" id="btnPaper_Second" >第二張</div>
-                    <div class="paper-btn paper" id="btnPaper_Third" >第三張</div>
+                    <div class="paper-btn paper" id="btnPaper_Second" style="display: none;">第二張</div>
+                    <div class="paper-btn paper" id="btnPaper_Third" style="display: none;">第三張</div>
                 </div>
             </section>
         </nav>
@@ -441,13 +448,13 @@
                             <i class="fas fa-sort-down"></i>
                         </div>
                     </div>
-                    
+
+                    <!-- 工藝大全選擇按鈕 -->
                     <div class="big-selects">
                         <div class="craft-btn-phone craft-btn">
                             <span>以工藝大全選擇</span>
                         </div>
                     </div>
-                  
 
                     <!-- 印刷品項直橫式 -->
                     <div class="big-selects">
@@ -502,7 +509,7 @@
             <!-- 所有張數 -->
             <section class="allchoice">
                 <!-- 一張 -->
-                <div class="choice choice1" id="paper_First">
+                <div class="choice choice1" id="paper_First" >
                     <!-- 橫式上方選擇欄 -->
                     <div class="top-choices">
                         <div class="all-big-selects-title">
@@ -541,11 +548,11 @@
                                 </div>
                             </div>
 
-                            <!-- 工藝大全選擇按鈕 -->
+                            <!-- 印刷品項選擇欄 -->
                             <div class="big-selects">
-                                    <div class="craft-btn-web craft-btn">
-                                        <span>以工藝大全選擇</span>
-                                    </div>
+                                <div class="craft-btn-web craft-btn">
+                                    <span>以工藝大全選擇</span>
+                                </div>
                                 <div class="big-select-title">
                                     <span>印刷</span><span>品項</span>
                                 </div>
@@ -570,7 +577,7 @@
                                 </div>
                             </div>
 
-                            
+                              
 
                             <!-- 印刷品項直橫式 -->
                             <div class="big-selects">
@@ -630,7 +637,7 @@
                                     <div>張數別</div>
                                 </span>
                             </li>
-                             <li >
+                            <li>
                                 <span>
                                     <div>紙張</div>
                                     <div>類別</div>
@@ -693,14 +700,14 @@
                                 <div class="dino-input-field  custom-select  select ">
                                     <label></label>
 
-                                    <span class=" select-text" id="lblPaper_First">
+                                    <span class=" select-text">
                                         <div class="select-name">
-                                            <div class="">卡紙</div>
+                                            <div class="" id="lblPaperCategory_First">卡紙</div>
                                         </div>
                                     </span>
 
                                     <!-- 下拉式選單內容 -->
-                                    <ul id="cboPaper_First" class="select-options  ">
+                                    <ul id="cboPaperCategory_First" class="select-options  ">
                                         <li class="select-option">卡紙</li>
                                         <li class="select-option">卡紙類</li>
                                         <li class="select-option">上光燙金紙</li>
@@ -721,11 +728,9 @@
                                 <div class="dino-input-field  custom-select  select ">
                                     <label></label>
 
-                                    <span class=" select-text" id="lblPaper_First">
+                                    <span class=" select-text">
                                         <div class="select-name">
-                                            <div class="">請選擇</div>
-                                            <div class="">印刷用紙</div>
-
+                                            <div class="" id="lblPaper_First">3D局部燙金</div>
                                         </div>
                                     </span>
 
@@ -761,8 +766,8 @@
                                         <div class="dino-input-field  custom-select  select">
                                             <label></label>
 
-                                            <span class=" select-text" id="lblPrintMethod_First_Front">
-                                                <span class="select-name">
+                                            <span class=" select-text">
+                                                <span class="select-name" id="lblPrintMethod_First_Front">
                                                     <div>請選擇</div> <div>印刷方式</div>
                                                 </span>
                                             </span>
@@ -1103,12 +1108,12 @@
                                     <span>印刷</span><span>數量</span>
                                 </div>
                                 <!-- 輸入 -->
-                                <input type="text" placeholder="請輸入印刷數量">
+                                <input type="text" placeholder="請輸入印刷數量" id="txtQty_PC">
                                 <!-- 下拉 -->
                                 <div class="dino-input-field  custom-select  big-select" style="display: none;">
                                     <label></label>
                                     <span class=" select-text">
-                                        <span id="txtQty_Mobil" class="select-name">請選擇印刷數量</span>
+                                        <span class="select-name">請選擇印刷數量</span>
                                     </span>
 
                                     <ul id="" class="select-options  ">
@@ -1126,7 +1131,7 @@
 
                             <!-- 橫式版型確認 清除表單按鈕 -->
                             <div class="all-btns">
-                                <div class="btn check-btn" id="btnOK">確認</div>
+                                <div class="btn check-btn" id="btnOK_PC">確認</div>
                                 <div class="btn" id="btnClear">清除表單</div>
                             </div>
                         </div>
@@ -1144,7 +1149,7 @@
                                     <div>張數別</div>
                                 </span>
                             </li>
-                             <li >
+                            <li>
                                 <span>
                                     <div>紙張</div>
                                     <div>類別</div>
@@ -1207,14 +1212,14 @@
                                 <div class="dino-input-field  custom-select  select ">
                                     <label></label>
 
-                                    <span class=" select-text" id="lblPaper_First">
+                                    <span class=" select-text">
                                         <div class="select-name">
-                                            <div class="">卡紙</div>
+                                            <div class="" id="lblPaperCategory_Second">卡紙</div>
                                         </div>
                                     </span>
 
                                     <!-- 下拉式選單內容 -->
-                                    <ul id="cboPaper_First" class="select-options  ">
+                                    <ul id="cboPaperCategory_Second" class="select-options  ">
                                         <li class="select-option">卡紙</li>
                                         <li class="select-option">卡紙類</li>
                                         <li class="select-option">上光燙金紙</li>
@@ -1236,10 +1241,8 @@
                                     <label></label>
 
                                     <span class=" select-text">
-                                        <div id="lblPaper_Second" class="select-name">
-                                            <div class="">請選擇</div>
-                                            <div class="">印刷用紙</div>
-
+                                        <div class="select-name">
+                                            <div class="" id="lblPaper_Second">3D局部燙金</div>
                                         </div>
                                     </span>
 
@@ -1616,7 +1619,7 @@
                                     <div>張數別</div>
                                 </span>
                             </li>
-                             <li >
+                            <li>
                                 <span>
                                     <div>紙張</div>
                                     <div>類別</div>
@@ -1674,19 +1677,19 @@
                                 </div>
                             </li>
 
-                              <!-- 紙張類別 -->
-                              <li class="paper-color">
+                            <!-- 紙張類別 -->
+                            <li class="paper-color">
                                 <div class="dino-input-field  custom-select  select ">
                                     <label></label>
 
-                                    <span class=" select-text" id="lblPaper_First">
+                                    <span class=" select-text">
                                         <div class="select-name">
-                                            <div class="">卡紙</div>
+                                            <div class="" id="lblPaperCategory_Third">卡紙</div>
                                         </div>
                                     </span>
 
                                     <!-- 下拉式選單內容 -->
-                                    <ul id="cboPaper_First" class="select-options  ">
+                                    <ul id="cboPaperCategory_Third" class="select-options  ">
                                         <li class="select-option">卡紙</li>
                                         <li class="select-option">卡紙類</li>
                                         <li class="select-option">上光燙金紙</li>
@@ -1708,10 +1711,8 @@
                                     <label></label>
 
                                     <span class=" select-text">
-                                        <div id="lblPaper_Third" class="select-name">
-                                            <div class="">請選擇</div>
-                                            <div class="">印刷用紙</div>
-
+                                        <div class="select-name">
+                                            <div class="" id="lblPaper_Third">3D局部燙金</div>
                                         </div>
                                     </span>
 
@@ -2090,13 +2091,13 @@
                             <span>印刷</span><span>數量</span>
                         </div>
                         <!-- 輸入 -->
-                        <input type="text" placeholder="請輸入印刷數量">
+                        <input type="text" placeholder="請輸入印刷數量" id="txtQty_Mobil">
                         <!-- 下拉 -->
                         <div class="dino-input-field  custom-select  big-select" style="display: none;">
                             <label></label>
 
                             <span class=" select-text">
-                                <span id="txtQty_PC" class="select-name">請選擇印刷數量</span>
+                                <span class="select-name">請選擇印刷數量</span>
 
                             </span>
 
@@ -2114,7 +2115,7 @@
                     </div>
 
                     <div class="all-btns">
-                        <div class="btn check-btn" id="btnOK">確認</div>
+                        <div class="btn check-btn" id="btnOK_Mobil">確認</div>
                         <div class="btn" id="btnClear">清除表單</div>
                     </div>
                 </div>
@@ -2122,10 +2123,7 @@
         </main>
     </div>
 
-    <!-- <script src="../CommonJs/Jquery/jquery-2.1.3.min.js" type="text/javascript"></script> -->
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+    <script src="../CommonJs/Jquery/jquery-2.1.3.min.js" type="text/javascript"></script>
     <!-- 所有下拉式數量選單 -->
     <script>
         $(document).ready(function (e) {
@@ -2138,12 +2136,12 @@
                 }
             });
 
-            $('.select-options li').click(function (e) {
-               e.stopPropagation();
-               const text_inside = $(this).text();
-               $(this).parent().slideUp();
-               $(this).parent().prev().text(text_inside);
-            });
+            //$('.select-options li').click(function (e) {
+            //    e.stopPropagation();
+            //    const text_inside = $(this).text();
+            //    $(this).parent().slideUp();
+            //    $(this).parent().prev().text(text_inside);
+            //});
 
             $(document).click(function (e) {
                 $('.select-options').slideUp();
@@ -2218,10 +2216,10 @@
 
         var main = document.querySelector("main")
 
-        userlogin.addEventListener('click', function () {
-            lovelists.classList.toggle("show");
-            main.style.display = 'none';
-        })
+        //userlogin.addEventListener('click', function () {
+        //    lovelists.classList.toggle("show");
+        //    main.style.display = 'none';
+        //})
 
         addbtn.forEach(ele => {
             ele.addEventListener('click', function () {
@@ -2265,23 +2263,23 @@
 
         console.log(closepricefilebtn);
 
-        checkbtn.forEach(ele => {
-            ele.addEventListener('click', function () {
-                checkinformation.classList.toggle("show");
-            })
-        });
+        //checkbtn.forEach(ele => {
+        //    ele.addEventListener('click', function () {
+        //        checkinformation.classList.toggle("show");
+        //    })
+        //});
         checkinformationbtn.addEventListener('click', function () {
             checkinformation.classList.remove("show");
-            pricefile.classList.add("show");
+            //pricefile.classList.add("show");
 
         })
         closecheckbtn.addEventListener('click', function () {
             checkinformation.classList.remove("show");
         })
 
-        add.addEventListener('click', function () {
-            pricefile.classList.remove("show");
-        })
+        //add.addEventListener('click', function () {
+        //    pricefile.classList.remove("show");
+        //})
 
         closepricefilebtn.addEventListener('click', function () {
             pricefile.classList.remove("show");
@@ -2314,8 +2312,33 @@
         })
     </script>
 
-     <!-- 輸入工藝大全編碼檔燈箱 -->
-     <script>
+    <script src="../CommonJs/importJS-1.0.0.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var pagename = "Cocktail"; //必要輸入項目
+
+        var Sys = Sys || {}; //未載入Sys為主體的JS檔，所以需要事先宣告變數。
+        var ckSpace = ckSpace || {}; //未載入ckSpace為主體的JS檔，所以需要事先宣告變數。
+        var scriptlist = scriptlist || [];
+        scriptlist[pagename] = [["../UseCaseJs/app.url.js", "Lib"], ["../UseCaseJs/app.js", "app"], ["../UseCaseJs/app.settings.js", "app.settings"],
+        ["../UseCaseJs/app.model.js", "Const"], ["../UseCaseJs/app.param.js", "app.params"], ["../CommonJs/ckSpace-1.0.5.js", "ckSpace.library"],
+        ["../CommonJs/ckSpace-ckNet-jsSender-1.0.2.js", "ckSpace.ckNet"], ["../UseCaseJs/cocktail.js", "Cocktail"]];
+
+        jQuery.get("../WebApi/getVersionTimestamp.ashx", function (r1) {
+            var index = 0;
+            importJS(scriptlist[pagename][index][0] + "?t=" + r1, scriptlist[pagename][index][1], loadbox);
+            function loadbox() {
+                index++;
+                if (scriptlist[pagename].length > index) {
+                    importJS(scriptlist[pagename][index][0] + "?t=" + r1, scriptlist[pagename][index][1], loadbox);
+                } else {
+                    Cocktail.init();
+                }
+            }
+        });
+    </script>
+
+      <!-- 輸入工藝大全編碼檔燈箱 -->
+      <script>
         // 選擇按鈕
         const craftbtn = document.querySelectorAll(".craft-btn")
 
@@ -2343,31 +2366,5 @@
 
       
     </script>
-
-    <script src="../CommonJs/importJS-1.0.0.js" type="text/javascript"></script>
-    <!--<script type="text/javascript">
-        var pagename = "Cocktail"; //必要輸入項目
-
-        var Sys = Sys || {}; //未載入Sys為主體的JS檔，所以需要事先宣告變數。
-        var ckSpace = ckSpace || {}; //未載入ckSpace為主體的JS檔，所以需要事先宣告變數。
-        var scriptlist = scriptlist || [];
-        scriptlist[pagename] = [["../UseCaseJs/app.url.js", "Lib"], ["../UseCaseJs/app.js", "app"],
-        ["../UseCaseJs/app.model.js", "Const"], ["../UseCaseJs/app.param.js", "app.params"],
-        ["../CommonJs/ckSpace-1.0.5.js", "ckSpace.library"], ["../CommonJs/ckSpace-ckNet-jsSender-1.0.2.js", "ckSpace.ckNet"],
-        ["../UseCaseJs/cocktail.js", "Cocktail"]];
-
-        jQuery.get("../WebApi/getVersionTimestamp.ashx", function (r1) {
-            var index = 0;
-            importJS(scriptlist[pagename][index][0] + "?t=" + r1, scriptlist[pagename][index][1], loadbox);
-            function loadbox() {
-                index++;
-                if (scriptlist[pagename].length > index) {
-                    importJS(scriptlist[pagename][index][0] + "?t=" + r1, scriptlist[pagename][index][1], loadbox);
-                } else {
-                    Cocktail.init();
-                }
-            }
-        });
-    </script>-->
 </body>
 </html>

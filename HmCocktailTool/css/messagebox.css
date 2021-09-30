@@ -1,0 +1,184 @@
+.messagebox-lists .messagebox-contents {
+  width: 100vw;
+  max-width: 1920px;
+  height: 100vh;
+  max-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.651);
+  position: fixed;
+  top: 0px;
+  z-index: 90;
+  display: none;
+}
+
+.messagebox-lists .messagebox-contents.show {
+  display: block;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.messagebox-lists .messagebox-contents .messagebox-content {
+  width: 40%;
+  height: 60vh;
+  max-height: 50vh;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  background-color: white;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+@media all and (max-width: 1400px) {
+  .messagebox-lists .messagebox-contents .messagebox-content {
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .messagebox-lists .messagebox-contents .messagebox-content {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 861px) {
+  .messagebox-lists .messagebox-contents .messagebox-content {
+    height: 70vh;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .messagebox-lists .messagebox-contents .messagebox-content {
+    width: 90%;
+    height: 90vh;
+  }
+}
+
+.messagebox-lists .messagebox-contents .messagebox-content .messagebox-close-btn {
+  font-size: 42px;
+  color: darkred;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  position: sticky;
+  top: 0px;
+  left: 100%;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  cursor: pointer;
+}
+
+@media all and (max-width: 1000px) {
+  .messagebox-lists .messagebox-contents .messagebox-content .messagebox-close-btn {
+    font-size: 32px;
+  }
+}
+
+@media all and (max-width: 861px) {
+  .messagebox-lists .messagebox-contents .messagebox-content .messagebox-close-btn {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .messagebox-lists .messagebox-contents .messagebox-content .messagebox-close-btn {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+
+.messagebox-lists .messagebox-contents .messagebox-content .messagebox-title {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+@media all and (max-width: 861px) {
+  .messagebox-lists .messagebox-contents .messagebox-content .messagebox-title {
+    font-size: 22px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .messagebox-lists .messagebox-contents .messagebox-content .messagebox-title {
+    font-size: 20px;
+  }
+}
+
+.messagebox-lists .messagebox-contents .messagebox-content .messagebox-texts {
+  width: 90%;
+  margin: 0px auto;
+  padding: 30px;
+  border: 3px solid sandybrown;
+  border-radius: 10px;
+}
+
+@media all and (max-width: 861px) {
+  .messagebox-lists .messagebox-contents .messagebox-content .messagebox-texts {
+    padding: 20px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .messagebox-lists .messagebox-contents .messagebox-content .messagebox-texts {
+    padding: 10px;
+  }
+}
+
+.messagebox-lists .messagebox-contents .messagebox-content .messagebox-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 0px;
+}
+
+@media all and (max-width: 861px) {
+  .messagebox-lists .messagebox-contents .messagebox-content .messagebox-btns {
+    padding: 20px 0px;
+  }
+}
+
+.messagebox-lists .messagebox-contents .messagebox-content .messagebox-btns .messagebox-btn {
+  width: 30%;
+  min-width: 200px;
+  padding: 10px 5px;
+  background-color: salmon;
+  border: 2px solid salmon;
+  border-radius: 5px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+@media all and (max-width: 861px) {
+  .messagebox-lists .messagebox-contents .messagebox-content .messagebox-btns .messagebox-btn {
+    font-size: 16px;
+    padding: 5px 5px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .messagebox-lists .messagebox-contents .messagebox-content .messagebox-btns .messagebox-btn {
+    font-size: 14px;
+    padding: 3px 5px;
+  }
+}
+
+.messagebox-lists .messagebox-contents .messagebox-content .messagebox-btns .messagebox-btn:hover {
+  background-color: white;
+  color: salmon;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+/*# sourceMappingURL=messagebox.css.map */
