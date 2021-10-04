@@ -1,0 +1,125 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  padding-bottom: 45px;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    padding-bottom: 20px;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  max-width: 1920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .login-informations {
+  width: 50%;
+  max-width: 480px;
+  margin-top: 50vh;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-box-shadow: 15px 15px 15px #08080e21;
+          box-shadow: 15px 15px 15px #08080e21;
+  border-radius: 15px;
+}
+
+main .login-informations .login-title {
+  background-color: #080842;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 8px 0px;
+  border-radius: 20px 20px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .login-informations .login-contents {
+  width: 100%;
+  padding: 24px 8px;
+  border: 2px solid #080842;
+  border-radius: 0px 0px 15px 15px;
+}
+
+main .login-informations .login-contents .login-items {
+  width: 100%;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .login-informations .login-contents .login-items:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+main .login-informations .login-contents .login-items .login-item {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 12px;
+}
+
+main .login-informations .login-contents .login-items input {
+  width: 300px;
+  height: 32px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  background-color: ghostwhite;
+}
+
+main .login-informations .login-contents .login {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 36px;
+}
+
+main .login-informations .login-contents .login .login-text {
+  padding: 4px 24px;
+  border: 2px solid #080842;
+  background-color: #080842;
+  color: white;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+main .login-informations .login-contents .login .login-text:hover {
+  background-color: white;
+  color: #080842;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+/*# sourceMappingURL=cocktail_login.css.map */

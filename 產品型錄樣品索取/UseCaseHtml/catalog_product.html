@@ -1,0 +1,1858 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- 下方內容的css -->
+    <link rel="stylesheet" href="../css/catalog_product.css?t=202109231755">
+
+    <!-- nav跟麵包屑的css -->
+    <link rel="stylesheet" href="../css/layout.css?t=202107261713">
+
+    <!-- 燈箱 -->
+    <link rel="stylesheet" href="../css/light_box.css">
+
+    <!-- fontawesome的cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&family=Noto+Serif+TC:wght@600&display=swap" rel="stylesheet">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+
+    <script src="../CommonJs/Jquery/jquery-2.1.3.min.js" type="text/javascript"></script>
+</head>
+
+<!-- 背景圖包在body -->
+<body style="background-image: url(../img/背景.png);">
+    <div id="domCatalog_product">
+        <nav style="background-image: url(../img/背景.png);">
+            <section class="nav">
+                <!-- 回上一頁按鈕 -->
+                <a id="btnBack" class="back-btn nav-btn" style="text-decoration: none;">
+                    <div class="btn">
+                        <span>回上頁</span>
+                    </div>
+                </a>
+
+                <!-- 標題 -->
+                <a href="../UseCaseHtml/catalog.html" class="title">電子型錄</a>
+
+                <!-- 回首頁按鈕 -->
+                <a href="../UseCaseHtml/catalog.html" class="home-btn nav-btn" style="text-decoration: none;">
+                    <div class="btn">
+                        <span>回首頁</span>
+                    </div>
+                </a>
+
+            </section>
+        </nav>
+
+        <!-- 麵包屑 -->
+        <section class="breadcrumb " style="background-image: url(../img/背景.png);">
+            <div class="mycontainer">
+                <!-- 搜尋欄 -->
+                <div class="search">
+                    <input id="txtSearch" type="text" placeholder="請輸入關鍵字查詢">
+                    <i id="btnSearch" class="fas fa-search"></i>
+                </div>
+
+                <!-- 麵包屑路徑 -->
+                <ul id="sort">
+                    <li><a href="../UseCaseHtml/catalog.html">所有類別</a></li>
+                    <!--<li><a href="../test1.html">名片、卡片類</a></li>
+                    <li>彩色名片    -   造型名片合版</li>-->
+                </ul>
+
+                <!-- 查價清單按鈕 -->
+                <a id="btnChecklistPage" class="check-price">
+                    查價清單
+                </a>
+            </div>
+
+        </section>
+
+        <!-- 委印須知、完稿須知、加工須知、加入查價清單按鈕為燈箱效果，須寫在最外層 -->
+        <!-- 委印須知 -->
+        <section class="all-note-content">
+            <!-- 黑色背景 -->
+            <div class="note-contents print-note-content ">
+                <!-- 上方關閉按鈕 -->
+                <i class="fas fa-window-close print-note-close-btn note-close-btn"></i>
+
+                <!-- 下方所有內容 -->
+                <div class="note-content">
+                    <div class="content">
+                        <!-- 大標 -->
+                        <div class="title"><span id="lblTitle">彩色造型名片</span><span id="lblTitle_Style">『台灣造型』</span>委印須知</div>
+
+                        <!-- 下方所有文字  為有序排列 會自動帶入數字 不需要額外填寫-->
+                        <!-- 這串依不同完稿帶入 頭-->
+                        <ol id="lblPrintNotice">
+                            <!-- 小標 -->
+                            <li>委託印製說明</li>
+
+                            <!-- 文字內容 -->
+                            <ul class="texts">
+                                <!-- 一個p為段落文字 -->
+                                <li>“彩色名片”，委託印製請參閱「完稿須知」說明，並下載本公司「樣本檔」，依樣本檔完稿，以避免檔案不完整導致檔案退件、印品瑕疵以及延遲交件時間。</li>
+                                <li>一筆訂單若內含多張名片完稿，請根據內含完稿張數勾選「完稿件數」，多張完稿，所有完稿選用的紙張種類、印刷數量以及指定後加工項目等，都必須完全一樣。例如10個人的名片稿面請點選10個完稿件數。</li>
+                                <li>合版類商品，採多筆訂單合拼一版方式製作，本公司隨時會將相同條件以及印刷數量的訂單做拼版作業。若委印檔案於本公司訂單系統下單傳檔完成後，恕無法終止訂單。</li>
+                                <li>修改稿件，本公司基於“確保客戶檔案的完整性”以及“方便釐清後續責任歸屬”，恕不接受也不提供稿面內容更改、稿面放大或縮小等修改稿面要求。</li>
+                                <li>彩色名片後加工，若指定打圓孔、沖孔、燙金….等後加工時，若短少張數少於3%以內，委印客戶不得要求補印或折抵印刷費用，正常加工損耗張數按3%計算。後加工若為二項加工以上加工損耗張數按5%計算。</li>
+                                <li>彩色名片，若印件瑕疵為本公司責任，該筆訂單將於下一個合版日排定印刷，合版類產品恕無法單獨開版製作。</li>
+                                <li>彩色名片後加工「軋型」，本公司獨家提供；大碗公、小熊、小貓、台灣、狗骨頭、金龜車、茶壺、發財車、葉子、漢堡以及豌豆等12支名片軋型公版刀模，請上網下載「名片軋型」樣本檔，根據樣本檔刀模造型製作完稿檔案。</li>
+                            </ul>
+
+
+                            <li>印刷數量</li>
+
+                            <ul class="texts">
+
+                                <li>彩色名片合版類產品，需依合版數量級距下單</li>
+                                <li>卡片合版產品，若指定後加工後加工放損需另計，請於下單時自行加印盒數做為加工放損。</li>
+
+                            </ul>
+
+
+                            <li>印刷用色</li>
+
+                            <ul class="texts">
+
+                                <li>卡片合版印刷，恕不接受要求對色稿、對色樣，且合版印刷色差在10%以內，委印客戶不能要求退貨或重印，否則請改用單獨開版下單。</li>
+                                <li>卡片合版印刷，一律為四色(CMYK)彩色印刷，四色彩色印刷完稿填色必須以CMYK色系填色。若以Pantone、RGB或其它色系的特別色填色，請自行轉換為CMYK的填色，以避免因色彩轉換產生爭議。</li>
+                                <li>彩色名片完稿使用“大面積色塊”或“深色圖片”、商標，完稿填色設定超過200%以上，於裁切時成品尺寸的四個邊緣背面容易有背印的情況發生，導致印刷品瑕疵，若完稿顏色超過200%以上，請改用單獨開版下單，於印刷完成後放置1~2天以上(需視印刷用紙以及印刷顏色)，以避免因顏色太深導致印刷品背印情況發生。</li>
+
+                            </ul>
+
+                            <li>附色樣/看色</li>
+
+                            <ul class="texts">
+
+                                <li>合版印刷產品，採多筆客戶訂單合拼一組版面方式印刷製作，恕無法提供「附色樣」或「看色」服務，因為合版印刷無法為了單筆客戶案件調整印刷顏色，而影響到其它客戶稿面顏色，若客戶需附色樣或現場看色服務請改由單獨開版方式下單。</li>
+
+                            </ul>
+
+                            <li>可做後加工 </li>
+
+                            <ul class="texts">
+                                <li>打圓孔、沖孔、燙金、壓凸、倒圓角、沖模、軋型、橫裁二模、對裁二模、對裁三模、平燙金流水號、平燙銀流水號、留咬口。</li>
+                            </ul>
+
+                            <li>名片裝盒：環保盒裝，如下圖所示</li>
+
+                            <!-- 圖片 -->
+                            <div class="pic">
+                                <img src="../img/crd05.gif" alt="">
+                            </div>
+
+                        </ol>
+                        <!-- 這串依不同完稿帶入 尾-->
+                        <!-- 下方關閉按鈕 -->
+                        <div class="close-btn print-close-btn">
+                            <span class="close-text">關閉</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 完稿須知 -->
+        <section class="all-note-content">
+            <!-- 黑色背景 -->
+            <div class="note-contents paper-note-content ">
+                <!-- 上方關閉按鈕 -->
+                <i class="fas fa-window-close paper-note-close-btn note-close-btn"></i>
+
+                <!-- 下方所有內容 -->
+                <div class="note-content">
+
+                    <div class="content">
+                        <!-- 大標 -->
+                        <div class="title"><span id="lblTitle">彩色造型名片</span><span id="lblTitle_Style">『台灣造型樣式』</span>完稿須知</div>
+
+                        <!-- 下方所有文字  為有序排列 會自動帶入數字 不需要額外填寫-->
+                        <!-- 這串依不同完稿帶入 頭-->
+                        <ol id="lblFinalizationNotice">
+                            <!-- 文字內容 -->
+                            <li>頁面尺寸完稿設定時，請直接設定出血尺寸，以外框框線設定出血尺寸，顏色設K100即可，不用在稿件四周繪製裁切線。如:正常尺寸名片頁面尺寸為92x56mm。</li>
+
+                            <!-- 圖片 -->
+                            <div class="pic">
+                                <img src="../img/c-01.jpg" alt="">
+                            </div>
+
+                            <li>印件內容請設在同一頁面上，如為雙面印刷檔案請將正面放左邊，背面放右邊，請勿上下放置，避免因紙張紋路不同導致印件問題。(如下圖)</li>
+
+                            <div class="pic">
+                                <img src="../img/c-02.jpg" alt="">
+                            </div>
+
+                            <li>若有局部上光、燙金、打凸等加工時，黑稿則放在頁面中最左邊。(如下圖)</li>
+
+                            <div class="pic">
+                                <img src="../img/name-04.jpg" alt="">
+                            </div>
+
+                        </ol>
+                        <!-- 這串依不同完稿帶入 尾-->
+                        <!-- 下方關閉按鈕 -->
+                        <div class="close-btn paper-close-btn">
+                            <span class="close-text">關閉</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 加工須知 -->
+        <section class="all-note-content">
+            <!-- 黑色背景 -->
+            <div class="note-contents process-note-content">
+                <!-- 上方關閉按鈕 -->
+                <i class="fas fa-window-close process-note-close-btn note-close-btn"></i>
+
+                <!-- 下方所有內容 -->
+                <div class="note-content">
+                    <div class="content">
+                        <!-- 大標 -->
+                        <div class="title"><span id="lblTitle">彩色造型名片</span><span id="lblTitle_Style">『台灣造型』</span>加工須知、加工價格表</div>
+
+                        <!-- 加工須知選擇欄 -->
+                        <div class="process-title">
+                            <!-- 加工須知下拉式選擇清單 -->
+                            <div class="dino-input-field select custom-select process-style-select">
+                                <label></label>
+                                <span class="option-selected process-select-title">
+                                    <span id="lblMachiningNotice">燙金</span>
+                                </span>
+
+                                <!-- 選擇內容 -->
+                                <ul id="cboMachiningNotice" class="select-options process-select-option">
+                                    <li>燙金</li>
+                                    <li>局光</li>
+                                </ul>
+
+                                <!-- 下拉式箭頭icon -->
+                                <i class="fas fa-sort-down"></i>
+                            </div>
+                        </div>
+
+                        <!-- 下方所有內容-->
+                        <ul>
+                            <div class="process-tab-btns">
+                                <div class="process-tab-btn">加工須知</div>
+                                <div class="process-tab-btn">加工價格表</div>
+                            </div>
+                            <!-- 所有分頁內容 -->
+                            <div class="process-tab-contents">
+                                <!-- 加工須知分頁 -->
+                                <div id="lblMachiningNoticeContent" class="process-tab-content">
+                                    <!-- 下方所有文字  為有序排列 會自動帶入數字 不需要額外填寫  -->
+                                    <div class="process-note-title">燙金加工須知</div>
+                                    <!-- 這串依不同加工帶入 頭-->
+                                    <ol class="process-note-text">
+                                        <!-- 單個文字 -->
+                                        <li>燙金的黑稿請設K100的填色。</li>
+
+                                        <li>在已完成的印刷紙張上有LOGO/文字/圖案的部分，再針對它去疊燙上金箔時，會因紙張伸縮、上膜、裁切誤差等因素，一定會導致燙金套印有不準且誤差值在正負3mm範圍內的情形，皆為正常現象◦不可以此為退貨或拒付款的理由。</li>
+
+                                        <li>燙金勿用太細或較複雜的圖文線條，可能無法加工製作或加工後效果不佳。</li>
+                                        <li>燙金時另一面不能有局部上光重疊，燙金與局部光面積不能重疊外，燙金與局部光至少要離3MM以上。</li>
+
+                                        <li>燙金圖文線條寬度最少0.2mm\0.567 pt以上，打凸圖文線寬寬度最少0.3mm\0.85pt以上，文字勿小於8級，線條太細或字體過粗 ，燙金、打凸加工後會造成線條不清或文字糊掉。</li>
+
+                                        <li>局部上光上方不能燙金、打凸，需距離3mm以上。</li>
+
+                                        <li>燙金與打凸若同位置，多少會有誤差。</li>
+
+                                        <li>燙金不可與燙金重疊，燙金正面與背面亦不可重疊，否則容易出現燙不上去的現象。</li>
+
+                                        <li>燙金、打凸離紙邊距離最少5mm，須有一邊含咬口10MM；合版是借咬口，所以才可1模燙金。</li>
+
+                                        <li>
+                                            貼紙類作燙金加工，燙金面積大，金箔會易與紙張沾黏，貼紙易有變形、水波紋(如下圖)等狀況，純屬合理範圍。
+                                        </li>
+
+                                        <!-- 圖片 -->
+                                        <div class="pic">
+                                            <img src="../img/燙金 打凸-01.jpg" alt="">
+                                        </div>
+
+                                        <li>數位印刷滿版建議不可以鋅版燙金，因碳粉會影響鋅版燙金金箔；若數位印刷滿版有上膜可以鋅版燙金。</li>
+
+                                        <div class="pic">
+                                            <img src="../img/燙金 打凸-02.jpg" alt="">
+                                        </div>
+
+                                        <div class="pic">
+                                            <img src="../img/燙金 打凸-03.jpg" alt="">
+                                        </div>
+
+                                        <div class="pic">
+                                            <img src="../img/燙金 打凸-04.jpg" alt="">
+                                        </div>
+
+                                        <div class="pic">
+                                            <img src="../img/燙金 打凸-05.jpg" alt="">
+                                        </div>
+                                    </ol>
+                                    <!-- 這串依不同加工帶入 尾-->
+
+                                </div>
+                                <!-- 加工價格分頁 -->
+                                <div class="process-tab-content">
+                                    <ol class="title-warn-texts">
+                                        <!-- 固定 -->
+                                        <li class="title-warn-text">
+                                            ※   加工價格表資訊內容，會依不同時間、情況有所調整，本公司對於此價格表資訊內容有最終內容修改、變更、解釋權。
+                                        </li>
+                                    </ol>
+                                    <!-- 這串依不同加工帶入 -->
+                                    <div id="imgMachiningPriceBox" class="all-price-imformation">
+                                        <div id="imgMachiningPriceItem"  class="pic">
+                                            <img id="imgMachiningPrice" src="../img/加工價格表大表格_工作區域 1 複本 5.jpg" alt="">
+                                        </div>
+
+                                        <!--<div class="pic">
+                                            <img src="../img/加工價格表小表格_工作區域 1 複本 6.jpg" alt="">
+                                        </div>-->
+                                    </div>
+                                    <!-- 這串依不同加工帶入 -->
+                                </div>
+                            </div>
+
+                        </ul>
+
+                        <!-- 下方關閉按鈕 -->
+                        <div class="close-btn process-close-btn">
+                            <!-- <span class="close-text">關閉</span> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- 確認選擇查價資訊提示框 -->
+        <section class="success-add-lists">
+            <div id="checklistContent" class="success-add-contents ">
+
+                <div class="success-add-content">
+                    <!-- 上方關閉按鈕 -->
+                    <i class="fas fa-window-close success-close-btn"></i>
+                    <!-- 確認選擇查價資訊提示框大標 -->
+                    <div class="success-add-title">確認選擇查價資訊</div>
+                    <div class="success-add-texts">
+                        <ul id="lblProductInfo">
+                            <!-- 確認選擇查價資訊提示框小標 產品資訊 -->
+                            <li class="big-text-color">產品資訊：</li>
+
+                            <!-- 產品資訊內容 -->
+                            <li class="small-text-color">台灣造型</li>
+                            <li class="small-text-color">200g合成卡</li>
+                            <li class="small-text-color">雙面</li>
+                        </ul>
+
+                    </div>
+
+                    <!-- 確認加入查價清單按鈕，按此案鈕才會把資訊傳出去 -->
+                    <div id="checklist_OK" class="success-btns">
+                        <div class="check-success-btn success-btn">確認</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 登入畫面側邊滑動顯示 -->
+        <section class="login-informations " id="loginBox" >
+        <i class="fas fa-window-close login-close" style="cursor: pointer;"></i>
+        <div class="login-information">
+            <!-- 登入標題 -->
+            <div class="login-title">
+                <span>會員登入LOGIN</span>
+            </div>
+
+            <div class="login-contents">
+                <div class="login-remind-text">
+                    <span>請先登入會員後再領取樣品</span>
+                </div>
+                <!-- 單個物件 -->
+                <div class="login-items">
+                    <span class="login-item">會員編號</span>
+                    <input placeholder="請輸入會員編號" type="text" id="txtCustomerID">
+                </div>
+
+                <div class="login-items">
+                    <span class="login-item">會員帳號</span>
+                    <input placeholder="請輸入會員帳號" type="text" id="txtCustomerAccount">
+                </div>
+
+                <div class="login-items">
+                    <span class="login-item">會員密碼</span>
+                    <input placeholder="請輸入會員密碼" type="password" id="txtPassword">
+                </div>
+
+                <div class="login">
+                    <div class="login-text" id="btnLogin">登入</div>
+                </div>
+
+            </div>
+        </div>
+
+        </section>
+
+        <!-- 領取樣品 預設進來畫面 -->
+        <section class="sample-information get-sample" style="display: none;">
+            <div class="all-sample">
+                <div class="sample-title">
+                    <span>領取樣品</span>
+                </div>
+
+                <!-- 限定高度超出出現滾軸 -->
+                <div class="sample-content">
+                   <div class="sample-pic">
+                       <img src="../img/DSC_6114.jpg" alt="">
+                   </div>
+
+                    <div class="get-sample-texts">
+                        <span class="get-sample-text">2022年月曆新品上線啦</span>
+                        <span class="get-sample-text">於2021/10/20至2021/10/31內，可領取2D立體桌曆，限量1000組，快來領取，一起迎接虎虎生風的2022年吧~</span>
+                    </div>
+                
+                </div>
+
+                <div class="no-show">
+                    <label><input type="radio" name="variety" value="不再顯示此活動資訊" /><span class="round button">不再顯示此活動資訊</span></label>
+                </div>
+                
+                <!-- 選擇資訊確認關閉按鈕 -->
+                <div class="check-btns">
+                   
+                    <div class="no-sample-btn  btn">暫不領取</div>
+                    <div class="go-sample-btn  btn">前往領取</div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 確認領取樣品 -->
+        <section class="sample-information check-sample "  >
+            <div class="all-sample">
+                <div class="sample-title">
+                    <span>領取樣品</span>
+                </div>
+
+                <!-- 限定高度超出出現滾軸 -->
+                <div class="sample-content">
+                    <div class="sample-pic">
+                        <img src="../img/DSC_6114.jpg" alt="">
+                    </div>
+                    <div class="all-texts">
+                        <div class="sample-content-title">
+                            <span>樣品名稱：</span><span>2D立體桌曆</span>
+                        </div>
+                        <div class="sample-content-texts">
+                            <div class="sample-content-text">
+                                <span>剩餘數量：</span><span>800份</span>
+                            </div>
+                            <div class="sample-content-text">
+                                <span>領取數量：</span><span>1份</span>
+                            </div>
+
+                            <div class="sample-content-text">
+                                <span>領取樣品後，約7-14個工作天，以隨貨配送或郵寄送達</span>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- 選擇資訊確認關閉按鈕 -->
+                <div class="check-btns">
+                    
+                    <div class="close-sample-btn close-sample btn">暫不領取</div>
+                    <div class="get-sample-btn close-sample btn">確認領取</div>
+                </div>
+            </div>
+        </section>
+
+         <!-- 觀看影片-->
+         <section class="video" id="" >
+           
+           
+            <div class="video-information">
+                <div class="watch-videos">
+                    <iframe  src="https://www.youtube.com/embed/5HHKPjPejvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                    <i class="far fa-times-circle video-close"></i>  
+                </div>
+            </div>
+    
+        </section>
+
+      
+
+
+        <!-- 設計專區 -->
+          <!-- 登入畫面側邊滑動顯示 -->
+        <section class="design-projects"  >
+            <i class="fas fa-window-close design-projects-close" style="cursor: pointer;"></i>
+            <div class="design-projects-information">
+                <!-- 登入標題 -->
+                <div class="design-projects-title">
+                    <span>設計下載專區</span>
+                </div>
+    
+                <div class="design-projects-contents">
+                    <div class="design-project-card">
+                        <div class="design-project-pic">
+                            <img src="../img/DSC_6114.jpg" alt="">
+                        </div>
+
+                        <div class="design-project-card-title">
+                            <span>2D立體桌曆</span>
+                        </div>
+
+                        <div class="design-download">
+                            <a href="file" class="download-btn">
+                                <div class="download-icon">
+                                    <img src="../img/ai_icon.png" alt="">
+                                </div>
+                                <div class="download-text">Illustrator</div>
+
+                            </a>
+
+                            <a href="file" class="download-btn" >
+                                <div class="download-icon">
+                                    <img src="../img/cdr_icon.png" alt="">
+                                </div>
+                                <div class="download-text">CorelDRAW</div>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="design-project-card">
+                        <div class="design-project-pic">
+                            <img src="../img/DSC_6114.jpg" alt="">
+                        </div>
+
+                        <div class="design-project-card-title">
+                            <span>2D立體桌曆</span>
+                        </div>
+
+                        <div class="design-download">
+                            <a href="file" class="download-btn">
+                                <div class="download-icon">
+                                    <img src="../img/ai_icon.png" alt="">
+                                </div>
+                                <div class="download-text">Illustrator</div>
+
+                            </a>
+
+                            <a href="file" class="download-btn" >
+                                <div class="download-icon">
+                                    <img src="../img/cdr_icon.png" alt="">
+                                </div>
+                                <div class="download-text">CorelDRAW</div>
+
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="design-project-card">
+                        <div class="design-project-pic">
+                            <img src="../img/DSC_6114.jpg" alt="">
+                        </div>
+
+                        <div class="design-project-card-title">
+                            <span>2D立體桌曆</span>
+                        </div>
+
+                        <div class="design-download">
+                            <a href="file" class="download-btn">
+                                <div class="download-icon">
+                                    <img src="../img/ai_icon.png" alt="">
+                                </div>
+                                <div class="download-text">Illustrator</div>
+
+                            </a>
+
+                            <a href="file" class="download-btn" >
+                                <div class="download-icon">
+                                    <img src="../img/cdr_icon.png" alt="">
+                                </div>
+                                <div class="download-text">CorelDRAW</div>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="design-project-card">
+                        <div class="design-project-pic">
+                            <img src="../img/DSC_6114.jpg" alt="">
+                        </div>
+
+                        <div class="design-project-card-title">
+                            <span>2D立體桌曆</span>
+                        </div>
+
+                        <div class="design-download">
+                            <a href="file" class="download-btn">
+                                <div class="download-icon">
+                                    <img src="../img/ai_icon.png" alt="">
+                                </div>
+                                <div class="download-text">Illustrator</div>
+
+                            </a>
+
+                            <a href="file" class="download-btn" >
+                                <div class="download-icon">
+                                    <img src="../img/cdr_icon.png" alt="">
+                                </div>
+                                <div class="download-text">CorelDRAW</div>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="design-project-card">
+                        <div class="design-project-pic">
+                            <img src="../img/DSC_6114.jpg" alt="">
+                        </div>
+
+                        <div class="design-project-card-title">
+                            <span>2D立體桌曆</span>
+                        </div>
+
+                        <div class="design-download">
+                            <a href="file" class="download-btn">
+                                <div class="download-icon">
+                                    <img src="../img/ai_icon.png" alt="">
+                                </div>
+                                <div class="download-text">Illustrator</div>
+
+                            </a>
+
+                            <a href="file" class="download-btn" >
+                                <div class="download-icon">
+                                    <img src="../img/cdr_icon.png" alt="">
+                                </div>
+                                <div class="download-text">CorelDRAW</div>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="design-project-card">
+                        <div class="design-project-pic">
+                            <img src="../img/DSC_6114.jpg" alt="">
+                        </div>
+
+                        <div class="design-project-card-title">
+                            <span>2D立體桌曆</span>
+                        </div>
+
+                        <div class="design-download">
+                            <a href="file" class="download-btn">
+                                <div class="download-icon">
+                                    <img src="../img/ai_icon.png" alt="">
+                                </div>
+                                <div class="download-text">Illustrator</div>
+
+                            </a>
+
+                            <a href="file" class="download-btn" >
+                                <div class="download-icon">
+                                    <img src="../img/cdr_icon.png" alt="">
+                                </div>
+                                <div class="download-text">CorelDRAW</div>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="design-project-card">
+                        <div class="design-project-pic">
+                            <img src="../img/DSC_6114.jpg" alt="">
+                        </div>
+
+                        <div class="design-project-card-title">
+                            <span>2D立體桌曆</span>
+                        </div>
+
+                        <div class="design-download">
+                            <a href="file" class="download-btn">
+                                <div class="download-icon">
+                                    <img src="../img/ai_icon.png" alt="">
+                                </div>
+                                <div class="download-text">Illustrator</div>
+
+                            </a>
+
+                            <a href="file" class="download-btn" >
+                                <div class="download-icon">
+                                    <img src="../img/cdr_icon.png" alt="">
+                                </div>
+                                <div class="download-text">CorelDRAW</div>
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+    
+        </section>
+
+        <!-- 下方內容 -->
+        <main style="background-image: url(../img/背景.png);">
+            <!-- 所有資訊 -->
+            <div id="catalogContent" class="content mycontainer" >
+                <div class="last_types1">
+                    <!-- 側邊種類選單 pc -->
+                    <div class="all-types-bar">
+                        <!-- 側邊選擇大標 pc-->
+                        <div id="lblCatagory" class="all-types-title">木座桌曆種類</div>
+
+                        <!-- 選單內容 pc-->
+                        <div id="catagoryBox" class="dropdown-content">
+
+                            <!-- 單個種類 -->
+                            <button id="catagoryItem" class="small-type big-type">
+                                <span id="lblProductName" class="type_text" value>木座桌曆</span>
+                            </button>
+
+                            <!--<button class="small-type big-type">
+                                <span class="type_text">數位寫真名片</span>
+                            </button>
+
+                            <button class="small-type big-type">
+                                <span class="type_text">彩色名片合版</span>
+                            </button>
+
+                            <button class="small-type big-type">
+                                <span class="type_text">造型名片合版</span>
+                            </button>
+
+                            <button class="small-type big-type">
+                                <span class="type_text">雙摺名片合版</span>
+                            </button>-->
+
+                        </div>
+                    </div>
+
+                    <!-- 變版下拉式選單 -->
+                    <div class="dino-input-field  custom-select  phone-select">
+                        <label></label>
+
+                        <span class=" drop-phone-btn">
+                            <span id="lblProduct" class="drop-phone-btn-text">選擇彩色名片種類</span>
+
+                        </span>
+
+                        <!-- 下拉式選單內容 -->
+                        <ul id="cboProducts" class="select-options  phone-small-type-contents">
+                            <!--<li class="phone-small-type">雞尾酒彩色名片</li>
+                            <li class="phone-small-type">數位寫真名片</li>
+                            <li class="phone-small-type">彩色名片合版</li>
+                            <li class="phone-small-type">造型名片合板</li>
+                            <li class="phone-small-type">雙摺名片合版</li>-->
+                        </ul>
+
+                        <!-- 下拉式選單箭頭icon -->
+                        <i class="fas fa-sort-down"></i>
+
+                    </div>
+
+                    <!--  右側內容 變版為下方呈現 -->
+                    <div class="all-type-content show">
+
+                        <!-- 內容上方四個分頁按鈕 因為使用迴圈 順序不可對調 -->
+                        <div class="type-tab-btns">
+
+                            <div class="type-tab-btn ">產品介紹</div>
+                            <div class="type-tab-btn">適用紙材</div>
+                            <div class="type-tab-btn">適用加工</div>
+                            <div class="type-tab-btn">產品樣式</div>
+
+                        </div>
+
+                        <!-- 所有分頁內容 因為使用迴圈 順序不可對調-->
+                        <div id="catalogRightContent" class="type-tab-contents">
+
+                            <!-- 第一個分頁 產品介紹 用class是否為show的方式呈現-->
+                            <div class="type-tab-content ">
+
+                                <!-- 產品介紹卡片內容 -->
+                                <div class="all-type-content">
+                                    <div class="type-contents">
+                                        <!-- 產品介紹圖片 -->
+                                        <div class="type-pic">
+                                            <div class="watch-video" style="cursor: pointer;">
+                                                <span>觀看影片</span>
+                                            </div>
+                                            <!-- 輪播套件 架構不可更動 該層以上父層不可使用display:none屬性 swiper功能會失效-->
+                                            <div class="swiper-container mySwiper  ">
+
+                                                <div id="carouselBox_Product" class="swiper-wrapper ">
+
+                                                    <!-- 單張輪播圖 -->
+                                                    <div id="carouselItem_Product" class="swiper-slide">
+                                                        <img id="imgProduct" src="../img/數位_木作桌曆.png" alt="">
+                                                    </div>
+                                                    <div id="carouselItem_Product" class="swiper-slide">
+                                                        <img id="imgProduct" src="../img/數位_木作桌曆.png" alt="">
+                                                    </div>
+                                                    <div id="carouselItem_Product" class="swiper-slide">
+                                                        <img id="imgProduct" src="../img/數位_木作桌曆.png" alt="">
+                                                    </div>
+                                                    <div id="carouselItem_Product" class="swiper-slide">
+                                                        <img id="imgProduct" src="../img/數位_木作桌曆.png" alt="">
+                                                    </div>
+                                                    <!--<div class="swiper-slide">
+                                                        <img src="../img/彩色名片ICON/ICON彩色名片D造型合版1.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="../img/彩色名片ICON/ICON彩色名片D造型合版2.png" alt="">
+                                                    </div>-->
+
+                                                </div>
+
+                                                <!-- 輪播圖頁數 下方白色圓圈 -->
+                                                <div class="swiper-pagination"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- 產品介紹文字內容 -->
+                                        <div class=" type-texts">
+
+                                            <div class="sample-btn tab-small-btn">
+                                                <span>領取樣品</span>
+                                            </div>
+
+                                            <div class="texts">
+                                                <div class="small-title">
+                                                    <span class="small-title-text">商品資訊</span>
+                                                </div>
+                                                <!-- 產品介紹文字種類 -->
+                                                <div id="lblProductKind" class="text ">
+                                                   <span class=" big-text">商品名稱：</span ><span class=" big-text">木座桌曆</span>
+                                                </div>
+
+                                                <!-- 商品樣式 -->
+                                                <div  class="text" style="flex-direction: column;">
+                                                    <span class="font-600">商品樣式：</span>
+                                                   <div>A版_橫式(150x100mm)</div><div>B版_直式(95x170mm)</div><div>C版_橫式(95x82mm)</div><div> C版_直式(82x95mm)</div>
+                                                </div>
+
+                                                 <!-- 商品單位 -->
+                                                 <div  class="text" style="flex-direction: column;">
+                                                    <div><span class="font-600">商品單位：</span>1個</div>
+                                                     <div>A版_8張雙面印品，內含木座尺寸：<span>105x36x16mm</span></div> 
+                                                     <div>B版_7張雙面印品，內含木座尺寸：<span>105x36x16mm</span></div> 
+                                                     <div>C版_14張單面印品，內含木座尺寸：<span>35x36x16mm</span></div> 
+                                                </div>
+
+                                            </div>
+
+                                            <div class="texts">
+                                                <div class="small-title">
+                                                    <span class="small-title-text">印刷資訊</span>
+                                                </div>
+                                                <!-- 產品介紹文字種類 -->
+                                                <div id="lblProductKind" class="text">
+                                                    <span class="font-600">印刷方式：</span>
+                                                    雙面印刷
+                                                </div>
+
+                                                <!-- 商品樣式 -->
+                                                <div  class="text" style="flex-direction:initial;">
+                                                    <span class="font-600">適用紙材：</span>
+                                                    <span>雪面銅西卡250P</span>、
+                                                    <span>一級卡220P、一級卡260P</span>、
+                                                    <span>萊妮紙_白色220P</span>、
+                                                    <span>萊妮紙_白色270P</span>、
+                                                    <span>細紋紙_白色220P</span>、
+                                                    <span>象牙卡_白色222P</span>、
+                                                    <span>象牙卡_白色270P</span>、
+                                                    <span class="margin-right">映畫紙_白色240P</span>，共8種可供選擇
+                                                    <span class="color-red">(C版不適合260P以上材質)</span>
+                                                    
+                                                </div>
+
+                                                  <!-- 產品介紹文字種類 -->
+                                                <div id="lblProductKind" class="text">
+                                                    <span class="font-600">內含加工</span>
+                                                    ：<span>OPP袋包裝</span>
+                                                </div>
+
+                                                <div  class="text"   style="flex-direction: column;">
+                                                    <span class="font-600">加工項目：</span>
+                                                    <div style="display: flex; flex-wrap:wrap ;">
+                                                        <span>木座加工：</span>
+                                                        <span>彩噴（CMYK）</span>、
+                                                        <span>白墨</span>、
+                                                        <span>彩白（CMYK+白墨）</span>、
+                                                        <span>平雕</span>，共4種可供選擇。
+                                                    </div> 
+                                                </div>
+                                            </div>
+
+                                            <div class="texts">
+                                                <div class="small-title">
+                                                    <span class="small-title-text">加購商品</span>
+                                                </div>
+
+                                                <div  class="text" style="flex-direction: column;">
+                                                    <div class="font-600">紙盒加購：（附上紙盒，客人自行包裝）</div>
+                                                    <div>適合A版_紙盒尺寸：<span>105x36x16mm</span></div> 
+                                                    <div>適合B版_紙盒尺寸：<span>105x36x16mm</span></div> 
+                                                    <div>適合C版_紙盒尺寸：<span>35x36x16mm</span></div> 
+                                                </div>
+                                            </div>
+
+                                            <div class="texts">
+                                                <div class="small-title">
+                                                    <span class="small-title-text">下單數量</span>
+                                                </div>
+
+                                                <div  class="text">
+                                                    <span class="font-600">下單數量：</span>
+                                                    <span>100</span>,
+                                                    <span>200</span>,
+                                                    <span>300</span>,
+                                                    <span>500</span>,
+                                                    <span>1000</span>,
+                                                    <span>2000</span>,
+                                                    <span>3000</span>,
+                                                    <span>4000</span>,
+                                                    <span>5000</span>,
+                                                    <span>6000</span>,
+                                                    <span>8000</span>,
+                                                    <span>10000</span>,
+                                                    <span>12000</span>,
+                                                    <span>16000</span>,
+                                                    <span>20000</span>…
+                                                    <span class="margin-right">40000</span>
+                                                    <span>(單位：個，依數量級距下單)</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="texts" style="flex-direction: column;">
+                                                <div class="small-title">
+                                                    <span class="small-title-text">商品簡介</span>
+                                                </div>
+                                                <div class="product-text "> 木座桌曆有A版_橫式、B版_直式、C版_橫式、C版_直式，4種尺寸。可擺設居家或辦公空間做桌面展示使用。</div>
+                                                <div class="product-text "> 木座桌曆有A版_橫式、B版_直式、C版_橫式、C版_直式，4種尺寸。可擺設居家或辦公空間做桌面展示使用。</div>
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 第二個分頁 適用紙材 用class是否為show的方式呈現-->
+                            <div class="type-tab-content ">
+
+                                <!-- 上方選擇適用紙材欄 -->
+                                <div class="title-content">
+                                    <!-- 選擇適用紙材大標 -->
+                                    <div class="paper-process-title">『<span id="lblTitle">造型名片合版</span>』適用紙材介紹</div>
+
+                                    <!-- 適用紙材選單 -->
+                                    <div class="dino-input-field select custom-select process-style-select">
+                                        <label></label>
+
+                                        <!--選單標題 預設第一個 -->
+                                        <span class="option-selected process-select-title">
+                                            <span id="lblPaper"></span>
+                                        </span>
+
+                                        <!--適用紙材 下拉式選單內容 -->
+                                        <ul id="cboPapers" class="select-options process-select-option">
+                                            <li>200g合成卡</li>
+                                            <li>220g一級卡</li>
+                                            <li>一級卡雙亮</li>
+                                            <li>一級卡雙霧</li>
+                                            <li>一級卡局部上光</li>
+                                            <li>一級卡雙局部上光</li>
+                                            <li>萊妮紙</li>
+                                            <li>象牙卡250g</li>
+                                            <li>炫光紙白色</li>
+                                        </ul>
+
+                                        <!-- 下拉式選單 icon  -->
+                                        <i class="fas fa-sort-down"></i>
+
+                                    </div>
+                                </div>
+
+                                <!-- 適用紙材卡片內容 -->
+                                <div class="all-type-content">
+
+                                    <div class="type-contents">
+                                        <!-- 適用紙材圖片 -->
+                                        <div class="type-pic">
+                                            <!-- 輪播套件 架構不可更動 該層以上父層不可使用display:none屬性 swiper功能會失效-->
+                                            <div class="swiper-container mySwiper  ">
+
+                                                <div id="carouselBox_Paper" class="swiper-wrapper ">
+
+                                                    <!-- 單張輪播圖 -->
+                                                    <div id="carouselItem_Paper" class="swiper-slide">
+                                                        <img id="imgPaper" src="../img/彩色名片ICON/ICON彩色名片D造型合版.png" alt="">
+                                                    </div>
+                                                    <!--<div class="swiper-slide">
+                                                        <img src="../img/彩色名片ICON/ICON彩色名片D造型合版1.png" alt="">
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="../img/彩色名片ICON/ICON彩色名片D造型合版2.png" alt="">
+                                                    </div>-->
+
+                                                </div>
+
+                                                <!-- 輪播圖頁數 下方白色圓圈 -->
+                                                <div class="swiper-pagination"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- 適用紙材文字 -->
+                                        <div class=" type-texts">
+
+                                            <div class="texts">
+                                                <!-- 適用紙材種類 -->
+                                                <div id="lblPaperName" class="text  mb5-text">
+                                                    紙張種類：
+                                                </div>
+
+                                                <!-- 適用紙材介紹 -->
+                                                <div id="lblPaperIntro" class="text">
+                                                    紙張介紹：
+                                                </div>
+
+                                                <!-- 適用紙材注意須知 紅色文字 -->
+                                                <div id="lblPaperNote" class="paper-process-type-text warn-text text">
+                                                    注意事項：
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- 第三個分頁 適用紙材 用class是否為show的方式呈現 -->
+                            <div class="type-tab-content ">
+
+                                <!-- 上方選擇適用加工欄 -->
+                                <div class="title-content">
+                                    <!-- 選擇適用加工大標 -->
+                                    <div class="paper-process-title">『<span id="lblTitle">造型名片合版</span>』適用加工介紹</div>
+
+                                    <!-- 適用加工選單 -->
+                                    <div class="dino-input-field select custom-select process-style-select">
+                                        <label></label>
+
+                                        <!-- 選單標題 預設第一個 -->
+                                        <span class="option-selected process-select-title">
+                                            <span id="lblMachining"></span>
+                                        </span>
+
+                                        <!-- 適用加工 下拉式選單內容 -->
+                                        <ul id="cboMachinings" class="select-options process-select-option">
+                                            <li>燙金</li>
+                                            <li>局光</li>
+                                        </ul>
+
+                                        <!-- 下拉式選單 icon  -->
+                                        <i class="fas fa-sort-down"></i>
+
+                                    </div>
+                                </div>
+
+                                <!-- 適用加工卡片內容 -->
+                                <div class="all-type-content">
+
+                                    <div class="type-contents">
+                                        <!-- 適用加工圖片 -->
+                                        <div class="type-pic">
+                                            <img id="imgMachining" src="" alt="">
+                                        </div>
+
+
+                                        <!-- 適用加工文字 -->
+                                        <div class=" type-texts">
+
+                                            <div class="texts">
+
+                                                <!-- 適用加工方式 -->
+                                                <div id="lblMachiningName" class="text mb5-text">
+                                                    加工方式：
+                                                </div>
+
+                                                <!-- 適用加工介紹 -->
+                                                <div id="lblMachiningIntro" class="text">
+                                                    工法介紹：
+                                                </div>
+
+                                                <!-- 適用加工注意須知 紅色文字 -->
+                                                <div id="lblMachiningNote" class="paper-process-type-text warn-text text">注意事項：</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 第四個分頁 產品樣式 用class是否為show的方式呈現 -->
+                            <div class="type-tab-content">
+
+                                <!-- 上方選擇產品樣式欄 -->
+                                <div class="title-content">
+                                    <!-- 選擇商品樣式大標 -->
+                                    <div class="paper-process-title">『<span id="lblTitle">造型名片合版</span>』產品樣式選擇</div>
+
+                                    <!-- 產品樣式選單 -->
+                                    <div id="styleBox" class="dino-input-field select custom-select process-style-select">
+                                        <label></label>
+
+                                        <!-- 選單標題 預設第一個 -->
+                                        <span class="option-selected process-select-title">
+                                            <span id="lblStyle">A版_橫式(150x100mm)</span>
+                                        </span>
+
+                                        <!-- 產品樣式 下拉式選單內容 -->
+                                        <ul id="cboStyles" class="select-options process-select-option">
+                                            <li>A版_橫式(150x100mm)</li>
+                                            <li>B版_直式(95x170mm)</li>
+                                            <li>C版_橫式95x82mm</li>
+                                            <li>C版_直式(82x95mm)</li>
+                                        </ul>
+
+                                        <!-- 下拉式選單 icon  -->
+                                        <i class="fas fa-sort-down"></i>
+
+                                    </div>
+                                </div>
+
+                                <!-- 品樣式內容 -->
+                                <div class="style-types">
+
+                                    <!-- 產品樣式卡片內容 -->
+                                    <div class="style-type">
+                                        <div class="style-contents">
+
+                                            <!-- 產品樣式圖片 -->
+                                            <div class="style-type-pic">
+                                                <img id="imgStyle" src="" alt="">
+                                            </div>
+
+                                            <!-- 產品樣式文字 -->
+                                            <div class="style-type-content">
+                                                <div class=" tab-small-btn more-design">
+                                                    <span>設計稿下載</span>
+                                                </div>
+                                                <div class="type-content-texts">
+                                                  
+                                                    <!-- 樣式 尺寸 工作天數 -->
+                                                    <div class="type-content">
+
+                                                        <!-- 產品樣式 -->
+                                                        <div class="style-type-text product-style-type">
+                                                            <div id="lblStyleName" class="text ">產品樣式：</div>
+                                                        </div>
+                                                        <!-- 產品樣式尺寸 -->
+                                                        <div class="style-type-text">
+                                                            <div id="lblFinalizationSize" class="text">完稿尺寸：</div>
+                                                            <div id="lblProductSize" class="text">成品尺寸：</div>
+                                                        </div>
+
+                                                        <!-- 生產工序 目前不需要顯示在畫面上 -->
+                                                        <!-- <div class="style-type-text ">
+                                                            <div class="all-processs-title"> 產品製程：</div>
+                                                            <div class="text all-processs-text">
+                                                                <ul id="workingProcessBox" class="process-text">
+                                                                    <li id="workingProcessItem">
+                                                                        <span id="lblWorkingProcess">印刷</span><i class="fas fa-caret-right"></i>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div> -->
+                                                        <!-- 工作天數 -->
+                                                        <div class="style-type-text date">
+                                                            <div id="lblWorkingDays" class="text pd5">工作天數：</div>
+                                                            <div class="text warn-text"> (不含額外加工天數)</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- 所有選擇內容 若有單選選項 套用下拉式選單 -->
+                                                    <div class="type-content">
+                                                        <!-- 兩個短的下拉式 -->
+                                                        <div id="selectBox" class="style-selects">
+
+                                                            <!--單一個選單 選擇紙材選單 -->
+                                                            <div id="selectItem" class="dino-input-field select custom-select style-select">
+                                                                <label></label>
+
+                                                                <!--單一個選單(短的)=> 內容隨選單選擇內容變化 選擇紙材標題 -->
+                                                                <span class="option-selected style-select-title1">
+                                                                    <span id="lblSelectName">選擇產品紙材</span>
+                                                                </span>
+
+                                                                <!-- 單一個選單(短的)內容 選擇紙材內容-->
+                                                                <ul id="cboSelects" class="select-options  style-select-option">
+                                                                    <li>200g合成卡</li>
+                                                                    <li>220g一級卡</li>
+                                                                    <li>一級卡雙亮</li>
+                                                                    <li>一級卡雙霧</li>
+                                                                    <li>一級卡局部上光</li>
+                                                                    <li>一級卡雙局部上光</li>
+                                                                    <li>萊妮紙</li>
+                                                                    <li>象牙卡250g</li>
+                                                                    <li>炫光紙白色</li>
+                                                                </ul>
+
+                                                                <!-- 下拉式選單 icon  -->
+                                                                <i class="fas fa-sort-down"></i>
+
+                                                            </div>
+
+                                                            <div id="selectItem" class="dino-input-field select custom-select style-select">
+                                                                <label></label>
+
+                                                                <!--單一個選單(短的)=> 內容隨選單選擇內容變化 選擇紙材標題 -->
+                                                                <span class="option-selected style-select-title1">
+                                                                    <span id="lblSelectName">選擇產品紙材</span>
+                                                                </span>
+
+                                                                <!-- 單一個選單(短的)內容 選擇紙材內容-->
+                                                                <ul id="cboSelects" class="select-options  style-select-option">
+                                                                    <li>AAAAAAAA</li>
+                                                                    <li>BBBBBBBBB</li>
+                                                                    <li>CCCCCCCCC</li>
+                                                                    <li>DDDDDDD</li>
+                                                                    <li>EEEEEEEEE</li>
+                                                                    <li>FFFFFFFFF</li>
+                                                                    <li>GGGGGGGG</li>
+                                                                    <li>HHHHHHHHH</li>
+                                                                    <li>IIIIIIIIII</li>
+                                                                </ul>
+
+                                                                <!-- 下拉式選單 icon  -->
+                                                                <i class="fas fa-sort-down"></i>
+
+                                                            </div>
+
+                                                            <!-- 單一個選單 選擇印刷方式選單 需要增加直接複製這串html -->
+                                                            <!--<div class="dino-input-field select custom-select style-select">
+                                                                <label></label>-->
+                                                            <!-- 單一個選單(短的)=> 內容隨選單選擇內容變化 選擇印刷方式標題 -->
+                                                            <!--<span class="option-selected style-select-title1">
+                                                                <span id="lblPrintMode">選擇印刷方式</span>
+                                                            </span>-->
+                                                            <!-- 單一個選單(短的)內容 選擇印刷方式內容 -->
+                                                            <!--<ul id="cboPrintMode" class="select-options style-select-option">
+                                                                <li>單面</li>
+                                                                <li>雙面</li>
+                                                            </ul>-->
+                                                            <!-- 下拉式選單 icon -->
+                                                            <!--<i class="fas fa-sort-down"></i>
+
+                                                            </div>-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- 上方選擇資訊帶入該區 -->
+                                                <ul id="lblProductSelectInfo" class=" select-information">
+                                                    <!-- 小標 -->
+                                                    <li>產品選擇資訊：</li>
+
+                                                    <!-- 選單資訊 中間以 / 隔開 -->
+                                                    <!--<li>台灣造型</li>
+                                                    <li>200g合成卡</li>
+                                                    <li>雙面</li>
+                                                    <li>200個</li>-->
+                                                </ul>
+
+                                                <!-- 選擇加工方式內容  多選-->
+                                                <div class="process-select-content">
+
+                                                    <!-- 選擇加工方式標題 -->
+                                                    <div class="style-type-text">可額外增加之加工 ：</div>
+
+                                                    <!-- 複選內容 -->
+                                                    <form id="machiningBox" class="process-selects">
+
+                                                        <!-- 單個選項 -->
+                                                        <div id="machiningItem" class="process-select">
+                                                            <div id="lblStyle_Machining" class="process-selectname">燙金</div>
+                                                        </div>
+
+                                                        <!--<div class="process-select">
+                                                            <input type="checkbox" value="" name="">
+                                                            <div class="process-selectname">局部上光</div>
+                                                        </div>-->
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- 下載樣本檔 注意須知 -->
+                                        <div class="all-download-files">
+                                            <!-- 下載樣本檔 -->
+                                            <div class="download-files">
+                                                <!-- 下載樣本檔標題 -->
+                                                <span class="download-files-title">樣本檔下載：</span>
+                                                <!-- 下載樣本檔內容(多個) 目前預設最多四個-->
+                                                <div class="links" style="display: none;">
+                                                    <!-- 單個樣檔 -->
+                                                    <a class="link" href="" download="">
+                                                        <!-- 樣本檔圖片 -->
+                                                        <img src="../img/ai_icon.png" alt="">
+                                                        <!-- 樣本檔文字 -->
+                                                        <div class="link-text">Illustrator <br>(    雙面    ) </div>
+                                                    </a>
+
+                                                    <a class="link" href="" download="">
+                                                        <img src="../img/cdr_icon.png" alt="">
+                                                        <div class="link-text">CorelDRAW <br> (   雙面    )</div>
+                                                    </a>
+
+                                                    <a class="link" href="" download="">
+                                                        <img src="../img/ai_icon.png" alt="">
+                                                        <div class="link-text">Illustrator <br>(    單面    ) </div>
+                                                    </a>
+
+                                                    <a class="link" href="" download="">
+                                                        <img src="../img/cdr_icon.png" alt="">
+                                                        <div class="link-text">CorelDRAW <br> (   單面    )</div>
+                                                    </a>
+                                                </div>
+
+                                                <!-- 兩個樣本檔 -->
+                                                <div id="sampleFileBox" class="two-links">
+                                                    <!-- 單個樣檔 -->
+                                                    <a id="sampleAi" class="link" href="" download="">
+                                                        <!-- 樣本檔圖片 -->
+                                                        <img src="../img/ai_icon.png" alt="">
+                                                        <!-- 樣本檔文字 -->
+                                                        <div class="link-text">Illustrator <br> </div>
+                                                    </a>
+
+                                                    <a id="sampleCdr" class="link" href="" download="">
+                                                        <img src="../img/cdr_icon.png" alt="">
+                                                        <div class="link-text">CorelDRAW <br> </div>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+
+                                            <!-- 注意須知 -->
+                                            <div class="download-files">
+                                                <!-- 注意須知標題 -->
+                                                <span class="download-files-title">注意事項：</span>
+
+                                                <!-- 注意須知內容(多個) -->
+                                                <div class=" note-btns">
+                                                    <!-- 單個注意須知 順序不可更動 順序為 委印 => 完稿 => 加工 -->
+                                                    <button class=" note-btn print-note-btn">
+                                                        <div class="link-text note-text">委印須知</div>
+                                                    </button>
+
+                                                    <button class=" note-btn paper-note-btn">
+                                                        <div class="link-text note-text ">完稿須知</div>
+                                                    </button>
+
+                                                    <button class=" note-btn process-note-btn">
+                                                        <div class="link-text note-text">
+                                                            加工須知
+                                                            <br>(價格)
+                                                        </div>
+                                                    </button>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <!-- 加入查價清單 點擊出現彈跳題型式窗 -->
+                                        <div id="btnAddChecklist" class="add-list-btn">
+                                            <span class="add-list-btn-text">
+                                                加入查價清單
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+    </div>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- swiper -->
+    <script defer>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            loop: true,
+            autoplay:true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <!-- 種類選擇選擇欄 -->
+    <!--<script>
+        const bigtypes = document.querySelectorAll(".big-type")
+
+        // 初始化為預設
+        bigtypes[0].classList.add("active");
+
+        // pc點擊選單
+        bigtypes.forEach(i => {
+            i.onclick = function () {
+                clearbigtypes();
+                this.classList.add("active");
+            }
+        });
+
+        // 清空
+        function clearbigtypes() {
+            bigtypes.forEach(i => {
+                i.classList.remove("active");
+            });
+        }
+
+    </script>-->
+    <!-- 手機板下拉式選單 -->
+    <!--<script>
+        const phonesmalltypes = document.querySelectorAll(".phone-small-type")
+
+        // 初始化為預設
+        phonesmalltypes[0].classList.add("active");
+
+        // 手機點擊選單
+        phonesmalltypes.forEach(i => {
+            i.onclick = function () {
+                clearphonesmalltypes();
+                this.classList.toggle("active");
+            }
+        });
+
+        // 清空
+        function clearphonesmalltypes() {
+            phonesmalltypes.forEach(i => {
+                i.classList.remove("active");
+            });
+        }
+    </script>-->
+    <!-- 所有下拉式數量選單 -->
+    <script>
+        // $(document).ready(function (e) {
+        //     $('.custom-select').click(function (e) {
+        //         e.stopPropagation();
+        //         $('.select-options', this).slideToggle();
+        //     });
+
+        //     $('.select-options li').click(function (e) {
+        //         e.stopPropagation();
+        //         const text_inside = $(this).text();
+        //         $(this).parent().slideUp();
+        //         $(this).parent().prev().text(text_inside);
+        //     });
+
+        //     $(document).click(function (e) {
+        //         $('.select-options').slideUp();
+        //     });
+        // });
+
+        $(document).ready(function (e) {
+            $('.custom-select').click(function (e) {
+                e.stopPropagation();
+                $('.select-options').slideUp();
+
+                if ($('.select-options', this).is(':hidden')) {
+                    $('.select-options', this).slideDown();
+                }
+            });
+
+            $('.select-options li').click(function (e) {
+               e.stopPropagation();
+               const text_inside = $(this).text();
+               $(this).parent().slideUp();
+               $(this).parent().prev().text(text_inside);
+            });
+
+            $(document).click(function (e) {
+                $('.select-options').slideUp();
+            });
+        });
+    </script>
+    <!-- 分頁按鈕 -->
+    <script>
+        const type_tab_btns = document.querySelectorAll(".type-tab-btn")
+        const type_tab_contents = document.querySelectorAll(".type-tab-content")
+
+        // 初始化
+        type_tab_btns[0].classList.add("active");
+        type_tab_contents[0].classList.add("show");
+
+        // 分頁按鈕點擊
+        type_tab_btns.forEach(function (ele, i) {
+            ele.addEventListener('click', function () {
+                clear_type_tab_btns()
+                clear_type_tab_contents()
+                type_tab_btns[i].classList.add("active");
+                type_tab_contents[i].classList.add("show");
+            });
+        });
+
+        // 清空
+        function clear_type_tab_btns() {
+            type_tab_btns.forEach(function (ele, i) {
+                ele.classList.remove("active");
+            });
+        }
+
+        // 清空
+        function clear_type_tab_contents() {
+            type_tab_contents.forEach(function (ele, i) {
+                ele.classList.remove("show");
+            });
+        }
+    </script>
+
+
+    <!-- 完稿須知 -->
+    <script>
+        // 內容
+        const papernotecontents = document.querySelectorAll(".paper-note-content")
+        // 上面關閉按鈕
+        const papernoteclosebtns = document.querySelectorAll(".paper-note-close-btn")
+        // 橘色按鈕
+        const papernotebtns = document.querySelectorAll(".paper-note-btn")
+        // 下面關閉按鈕
+        const paperclosebtns = document.querySelectorAll(".paper-close-btn")
+
+        // 橘色按鈕點
+        papernotebtns.forEach(function (ele, i) {
+            ele.addEventListener('click', function () {
+                papernotecontents[i].classList.add("show");
+            });
+        });
+
+        papernotecontents.forEach(function (ele, i) {
+            ele.addEventListener('click', function () {
+                papernotecontents[i].classList.remove("show");
+            });
+        });
+
+        //    上面關閉按鈕
+        papernoteclosebtns.forEach(function (ele, i) {
+            ele.addEventListener('click', function () {
+                papernotecontents[i].classList.remove("show");
+            });
+        });
+
+        //    下面關閉按鈕
+        paperclosebtns.forEach(function (ele, i) {
+            ele.addEventListener('click', function () {
+                papernotecontents[i].classList.remove("show");
+            });
+        });
+    </script>
+
+    <!-- 委印須知 -->
+    <script>
+        const printnotecontents = document.querySelectorAll(".print-note-content")
+        const printnoteclosebtns = document.querySelectorAll(".print-note-close-btn")
+        console.log(printnoteclosebtns);
+
+        const printnotebtns = document.querySelectorAll(".print-note-btn")
+        const printclosebtns = document.querySelectorAll(".print-close-btn")
+
+        printnotebtns.forEach(function (ele, i) {
+            ele.addEventListener('click', function () {
+                printnotecontents[i].classList.add("show");
+            });
+        });
+
+
+        printnoteclosebtns.forEach(function (ele, i) {
+            ele.addEventListener('click', function () {
+                printnotecontents[i].classList.remove("show");
+            });
+        });
+
+        printclosebtns.forEach(function (ele, i) {
+            ele.addEventListener('click', function () {
+                printnotecontents[i].classList.remove("show");
+            });
+        });
+    </script>
+
+    <!-- 加工須知 -->
+    <script>
+        const processnotecontents = document.querySelectorAll(".process-note-content")
+        const processnoteclosebtns = document.querySelectorAll(".process-note-close-btn")
+        const processnotebtns = document.querySelectorAll(".process-note-btn")
+        const processclosebtns = document.querySelectorAll(".process-close-btn")
+
+        processnotebtns.forEach(function (ele, i) {
+            ele.addEventListener('click', function () {
+                processnotecontents[i].classList.add("show");
+            });
+        });
+
+        processnoteclosebtns.forEach(function (ele, i) {
+            ele.addEventListener('click', function () {
+                processnotecontents[i].classList.remove("show");
+            });
+        });
+
+        processclosebtns.forEach(function (ele, i) {
+            ele.addEventListener('click', function () {
+                processnotecontents[i].classList.remove("show");
+            });
+        });
+    </script>
+
+    <!-- 成功加入清單 -->
+    <script>
+        const successaddcontents = document.querySelectorAll(".success-add-contents")
+        const successclosebtn = document.querySelectorAll(".success-close-btn")
+        const checksuccessbtn = document.querySelectorAll(".check-success-btn")
+        const addlistbtn = document.querySelectorAll(".add-list-btn")
+
+        // 加入查價按鈕點擊
+        // addlistbtn.forEach(function (ele, i) {
+        //    ele.addEventListener('click', function () {
+        //        successaddcontents[i].classList.add("show");
+        //    });
+        // });
+
+        // 刪除按鈕
+        successclosebtn.forEach(function (ele, i) {
+            ele.addEventListener('click', function () {
+                successaddcontents[i].classList.remove("show");
+            });
+        });
+
+        // 確認按鈕
+        //checksuccessbtn.forEach(function (ele, i) {
+        //    ele.addEventListener('click', function () {
+        //        successaddcontents[i].classList.remove("show");
+        //    });
+        //});
+
+    </script>
+
+    <!-- 額外加工價格表分頁 -->
+    <script>
+        const processtabbtns = document.querySelectorAll(".process-tab-btn")
+        const processtabcontents = document.querySelectorAll(".process-tab-content")
+
+        // 分頁初始化，讓第一個按鈕、分頁開啟
+        processtabbtns[0].classList.add("show");
+        processtabcontents[0].classList.add("show");
+
+        // 新增按鈕分頁
+        processtabbtns.forEach(function (ele, i) {
+            ele.addEventListener('click', function () {
+                clearallprocesstabbtns()
+                clearallprocesstabcontents()
+                processtabbtns[i].classList.add("show");
+                processtabcontents[i].classList.add("show");
+            });
+        });
+
+        // 清除按鈕
+        function clearallprocesstabbtns() {
+            processtabbtns.forEach(function (ele, i) {
+                processtabbtns[i].classList.remove("show");
+            });
+        }
+
+        // 清除分頁
+        function clearallprocesstabcontents() {
+            processtabcontents.forEach(function (ele, i) {
+                processtabcontents[i].classList.remove("show");
+            });
+        }
+    </script>
+
+
+    <script>
+        // 領取樣品按鈕
+        const samplebtn = document.querySelector(".sample-btn")
+        // 會員登入畫面
+        const logininformations = document.querySelector(".login-informations")
+        // 關閉會員登入畫面
+        const loginclose = document.querySelector(".login-close")
+
+        const logmain = document.querySelector("main")
+        const nav = document.querySelector("nav")
+        const breadcrumb  = document.querySelector(".breadcrumb")
+
+        // 確認登入會員
+        const btnLogin  = document.querySelector("#btnLogin")
+
+        // 最終領取樣品畫面
+        const getsample = document.querySelector(".get-sample")
+        // 確認領取最終領取樣品按鈕
+        const checksample = document.querySelector(".check-sample")
+        // 關閉領取最終領取樣品按鈕
+        const closesample = document.querySelectorAll(".close-sample")
+
+        // 預設領取樣品 前往領取按鈕
+        const gosamplebtn = document.querySelector(".go-sample-btn")
+        // 預設領取樣品 暫不領取按鈕
+        const nosamplebtn = document.querySelector(".no-sample-btn")
+
+        const moredesign = document.querySelector(".more-design")
+        const designprojects = document.querySelector(".design-projects")
+        const designprojectsclose = document.querySelector(".design-projects-close")
+
+
+    
+        // 登入
+        samplebtn.addEventListener('click', function () {
+        logininformations.classList.add("show")
+        logmain.style.display = 'none';
+        nav.style.display = 'none';
+        breadcrumb.style.display = 'none';
+        })
+
+        // 會員關閉
+        loginclose.addEventListener('click', show );
+
+        // 會員確認
+        btnLogin.addEventListener('click', function () {
+            show();
+            sample();
+        });
+
+        // 預設畫面前往領取
+        gosamplebtn.addEventListener('click', function () {
+            hide();
+            getsample.classList.add("hide");
+            logininformations.classList.add("show");
+        });
+
+        // 關閉預設領取畫面
+        nosamplebtn.addEventListener('click', function () {
+            show();
+            getsample.classList.add("hide");
+        });
+
+        // 關閉最終取畫面
+        closesample.forEach(function (ele, i) {
+            ele.addEventListener('click', function () {
+                sample();
+            });
+        });
+
+
+        moredesign.addEventListener('click', function () {
+            hide();
+            designprojects.classList.add("show");
+        });
+        
+        designprojectsclose.addEventListener('click', function () {
+            show();
+            designprojects.classList.remove("show");
+        });
+
+        // 還原畫面
+        function show() {
+            logininformations.classList.remove("show")
+            logmain.style.display = 'block';
+            nav.style.display = 'block';
+            breadcrumb.style.display = 'block';
+        }
+
+        // 清除畫面
+        function hide() {
+            logmain.style.display = 'none';
+            nav.style.display = 'none';
+            breadcrumb.style.display = 'none';
+        }
+
+        // 最終領取樣品
+        function sample() {
+            checksample.classList.toggle("show")
+        }
+    </script>
+
+    <script>
+        const video = document.querySelector(".video")
+        const watchvideo = document.querySelector(".watch-video")
+        const videoclose = document.querySelector(".video-close")
+
+        watchvideo.addEventListener('click',function () {
+            video.classList.add("show")
+        })
+
+        videoclose.addEventListener('click',function () {
+            video.classList.remove("show")
+        })
+    </script>
+
+    <script src="../CommonJs/importJS-1.0.0.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var pagename = "Catalog_product"; //必要輸入項目
+
+        var Sys = Sys || {}; //未載入Sys為主體的JS檔，所以需要事先宣告變數。
+        var ckSpace = ckSpace || {}; //未載入ckSpace為主體的JS檔，所以需要事先宣告變數。
+        var scriptlist = scriptlist || [];
+        scriptlist[pagename] = [["../UseCaseJs/app.url.js", "Lib"], ["../UseCaseJs/app.js", "app"],
+        ["../UseCaseJs/app.model.js", "Const"], ["../UseCaseJs/app.param.js", "app.params"],
+        ["../CommonJs/ckSpace-1.0.5.js", "ckSpace.library"], ["../CommonJs/ckSpace-ckNet-jsSender-1.0.2.js", "ckSpace.ckNet"],
+        ["../UseCaseJs/catalog_product.js", "Catalog_product"]];
+
+        jQuery.get("../WebApi/getVersionTimestamp.ashx", function (r1) {
+            var index = 0;
+            importJS(scriptlist[pagename][index][0] + "?t=" + r1, scriptlist[pagename][index][1], loadbox);
+            function loadbox() {
+                index++;
+                if (scriptlist[pagename].length > index) {
+                    importJS(scriptlist[pagename][index][0] + "?t=" + r1, scriptlist[pagename][index][1], loadbox);
+                } else {
+                    Catalog_product.init();
+                }
+            }
+        });
+    </script>
+</body>
+</html>

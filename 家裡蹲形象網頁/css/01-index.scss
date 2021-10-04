@@ -2,44 +2,11 @@
 
 body{
     background-color: white;
+    overflow-x: hidden;
+  
 }
 
-.hamburger{
-    // margin-top: 125vh;
-    // /* margin-top: calc(100vh + 350px); */
 
-    // position: sticky;
-    // /* top:calc(500vh - 350px); */
-    // top: 30vh;
-    // transform: translateY(calc(100vh- 100%));
-    // float: right;
-
-    // transition-duration: 4s;
-    // transition-delay: 2s;
-
-    // background-color: white;
-
-
-    // z-index: 99;
-    .fa-bars{
-        // font-size: 28px;
-
-        // /* margin-top: -100vh; */
-      
-
-        // clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 24%);
-        // clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 24%);
-        // clip-path: polygon(53% 21%, 100% 0, 100% 71%, 51% 100%, 0 64%, 0 0);
-
-        // transition-duration: 4s;
-        // transition-delay: 2s;
-
-        position: fixed;
-        font-size: 48px;
-        z-index: 99;
-        right: 30px;
-    }
-}
 
 main{
     width: 100%;
@@ -50,21 +17,26 @@ main{
         position: relative;
         max-width: 100%;
         height: calc(100vh - 88px);
+
+        height: 100vh;
         overflow: hidden;
-        box-shadow: 10px 10px 15px rgba(128, 128, 128, 0.185);
-        // transform: blur(.5);
+        filter:drop-shadow(5px 5px 5px #333) ;
         background-color: white;
         background-image: initial;
         .banner-pic{
             max-width: 1920px;
             width: 100%;
             height: 100%;
-
+            background-color:$black ;
+          
 
             // max-height: 100%;
             // height: max-content;
-           
 
+        }
+        video{
+            object-fit: cover;
+            object-position:0px -60px;
         }
     }
     .about{
@@ -109,7 +81,6 @@ main{
             position: relative;
             z-index: 2;
             .about-title{
-                color: black;
                 margin-top:$font-8px*4 ;
                 margin-bottom: 104px;
             }
@@ -174,6 +145,7 @@ main{
                     .about-machine-text{
                         width: 100%;
                         padding: 0px $px-08*2;
+                        
                         .texts{
                             font-size: $font-18px;
                             margin-top: $px-08*2;
@@ -385,6 +357,9 @@ main{
                         height: 300px;
 
                         border-radius: $px-08;
+                        .place-card {
+                            border-radius: $px-08;
+                        }
                     }
                 }
             }

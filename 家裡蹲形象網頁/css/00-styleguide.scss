@@ -24,6 +24,8 @@ $font-28px:28px;
     font-size:$font-12px*4 ;
     font-weight: 600;
     letter-spacing: 8px;
+    position: relative;
+    color:#383838 ;
 }
 
 
@@ -34,10 +36,28 @@ $px-05:5px;
 $px-08:8px;
 $px-20:20px;
 
+// color
+$darkred:darkred;
+$white:white;
+$black:black;
+$whitesmoke:whitesmoke;
+$darkblue:#191942;
+$lightblue:#E6F3FF;
+$allfont:#383838;
+$navlinks:#020227;
+
+
 body{
+    max-width: 1920px;
+    width: 100%;
+
+
     margin: 0px;
     padding: 0px;
+
+    margin: 0px auto;
     position: relative;
+    color:$allfont ;
 
 }
 
@@ -48,6 +68,7 @@ body{
 a{
     display: block;
     text-decoration: none;
+    color:$allfont ;
 }
 
 img{

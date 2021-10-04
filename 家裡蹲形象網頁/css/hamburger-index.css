@@ -1,0 +1,270 @@
+.font-600 {
+  font-weight: 600;
+}
+
+.mycontainer {
+  width: 1400px;
+  margin: 0px auto;
+}
+
+@media screen and (max-width: 1450px) {
+  .mycontainer {
+    width: 100%;
+    padding: 0px 3vw;
+  }
+}
+
+.big-title {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 8px;
+  position: relative;
+  color: #383838;
+}
+
+body {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  margin: 0px auto;
+  position: relative;
+  color: #383838;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.trainsition-06s:hover {
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.trainsition-1s:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.hamburger-btn {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0px auto;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  z-index: 98;
+  top: 10px;
+}
+
+.hamburger-btn .hamburger {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  background-color: #191942;
+  border: 3px solid #191942;
+  -webkit-box-shadow: -5px -5px 3px inset #000007;
+          box-shadow: -5px -5px 3px inset #000007;
+  border-radius: 5px;
+  display: none;
+}
+
+.hamburger-btn .hamburger.show {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hamburger-btn .hamburger .fa-bars {
+  font-size: 36px;
+  z-index: 99;
+  color: white;
+}
+
+.hamburger-btn .hamburger:hover {
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 8px rgba(13, 13, 66, 0.548);
+          box-shadow: 2px 2px 8px rgba(13, 13, 66, 0.548);
+  -webkit-transition: .6s;
+  transition: .6s;
+  cursor: pointer;
+}
+
+.hamburger-btn .hamburger:hover .fa-bars {
+  color: #191942;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.hamburger-content {
+  max-width: 1920px;
+  width: 100%;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  min-height: 100vh;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #191942;
+  position: fixed;
+  overflow-y: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0px;
+  z-index: 99;
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.hamburger-content.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all .8s ease-out;
+  transition: all .8s ease-out;
+}
+
+.hamburger-content .close-btn {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 2px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.hamburger-content .close-btn .fa-times {
+  font-size: 68px;
+  color: white;
+}
+
+.hamburger-content .close-btn .fa-times:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.hamburger-content .hamburger-links {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hamburger-content .hamburger-links a {
+  border-bottom: 2px solid transparent;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+
+.hamburger-content .hamburger-links .hamburger-link {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 32px;
+  color: white;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  position: relative;
+}
+
+.hamburger-content .hamburger-links .hamburger-link:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+.hamburger-content .hamburger-links .hamburger-link .hamburger-link-hover {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0px;
+  height: 4px;
+  background-color: white;
+}
+
+.hamburger-content .hamburger-links .hamburger-link:hover .hamburger-link-hover {
+  width: 100%;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.hamburger-content .hamburger-links .hamburger-link .small-hamburger-link {
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.hamburger-content .hamburger-links .hamburger-link .small-hamburger-link .small-hamburger-link-hover {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0px;
+  height: 4px;
+  background-color: white;
+}
+
+.hamburger-content .hamburger-links .hamburger-link .small-hamburger-link:hover .small-hamburger-link-hover {
+  width: 100%;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+/*# sourceMappingURL=hamburger-index.css.map */
