@@ -152,6 +152,7 @@ main .cards .mycontainer .more {
   text-align: right;
   color: #666;
   padding-top: 15px;
+  cursor: pointer;
 }
 
 main .cards1 {
@@ -250,6 +251,7 @@ main .cards1 .mycontainer .more {
   text-align: right;
   color: #666;
   padding-top: 15px;
+  cursor: pointer;
 }
 
 main .news {

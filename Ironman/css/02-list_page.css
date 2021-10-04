@@ -172,7 +172,7 @@ body {
 
 .mycontainer {
   width: 1170px;
-  margin: auto;
+  margin: 0px auto;
 }
 
 @media screen and (max-width: 1200px) {
@@ -480,9 +480,9 @@ main .content .background {
   width: 1920px;
   position: absolute;
   left: 50%;
-  transition: -2s;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  transition: -2s;
 }
 
 @media screen and (max-width: 1200px) {
@@ -538,9 +538,9 @@ main .content .background .triangle_bg {
 main .content .background .triangle_bg .all_big {
   width: 1113px;
   height: 2226px;
-  position: relative;
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
           clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  position: relative;
 }
 
 @media screen and (max-width: 1200px) {
@@ -886,7 +886,7 @@ main .content .all_btns .mycontainer .search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
+  margin: 0px auto;
   margin-top: 35px;
   margin-bottom: 45px;
   --animate-duration: 0.5s;
@@ -1072,7 +1072,7 @@ main .content .all_cards .mycontainer {
       flex-wrap: wrap;
   position: relative;
   z-index: 2;
-  margin: auto;
+  margin: 0px auto;
   letter-spacing: 0.1rem;
 }
 
@@ -1387,7 +1387,7 @@ main .content .all_cards .mycontainer .card:nth-child(3n) {
 }
 
 main .content .btn_more {
-  margin: auto;
+  margin: 0px auto;
   margin-top: 30px;
   --animate-slow: 0.5s;
 }
