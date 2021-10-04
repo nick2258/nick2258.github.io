@@ -10,10 +10,11 @@ body {
     font-family: $fontFamily_Micro_JH;
 }
 
+// 容器大小
 .mycontainer{
     width: 1170px;
 
-    margin: auto;
+    margin:0px auto;
     @media screen and (max-width:1200px) {
         width: calc(100% - 60px);
     }
@@ -47,15 +48,15 @@ main {
         transform: translateY(80px);
         margin-bottom: 80px;
     }
-
     // 上方banner
     .banner {
         width: 100%;
+
         display: flex;
         @media screen and (max-width:400px) {
             flex-wrap: wrap;                   
         }
-        // 一進去選擇的畫面
+        // 預設一進去選擇的畫面樣式
         .pic_man{
             width: 50%;
             height: 400px;
@@ -88,9 +89,11 @@ main {
             @media screen and (max-width:400px) {
                 padding: 5px;                    
             }
+            // 黃色框框樣式
             .yellow_border_man{
                 width: 100%;
                 height: 100%;
+
                 border: solid 3px $colorOringe;
 
                 font-size: $fontSize_H1;
@@ -266,7 +269,6 @@ main {
     // bannner下方所有內容
     .content {
         width: 100%;
-        // overflow-x: hidden;
         // 下方卡片土色背景
         background-color: $colorLight;
         .background {
@@ -274,8 +276,9 @@ main {
                         
             position: absolute;
             left: 50%;
-            transition: -2s;   
             transform: translateX(-50%);
+
+            transition: -2s;   
             @media screen and (max-width: 1200px){
                 width: 1400px;           
             }
@@ -291,8 +294,10 @@ main {
             @media screen and (max-width: 320px){
                 width: 320px;       
             }
+            //三角形背景
             .triangle_bg {
                 width: 100%;
+
                 transform: translateY(100px);
                 @media screen and (max-width: 768px){
                     transform: translateY(91px);       
@@ -300,12 +305,13 @@ main {
                 @media screen and (max-width: 710px){
                     transform: translateY(80px);       
                 }
+                // 左邊大的
                 .all_big {
                     width: 1113px;
                     height: 2226px;
-                    position: relative;
+                    clip-path: polygon(0 0, 0% 100%, 100% 50%);  
 
-                    clip-path: polygon(0 0, 0% 100%, 100% 50%);      
+                    position: relative; 
                     @media screen and (max-width: 1200px){
                         width: 700px;
                         height: 1400px;
@@ -351,6 +357,7 @@ main {
                         left: 0;   
                     }
                 }
+                // 右邊上面
                 .all_small_top {
                     width: 510px;
                     height: 1020px;
@@ -399,6 +406,7 @@ main {
                         right: 0%;   
                     }
                 }
+                // 右邊下面
                 .all_small_bt {
                     width: 510px;
                     height: 1020px;
@@ -448,6 +456,7 @@ main {
                     .small_bottom_bg {
                         width: 100%;
                         height: 100%;
+
                         background-color: $colorOringeOpacity;
 
                         position: absolute;
@@ -455,9 +464,11 @@ main {
                         right: 0;       
                     }
                 }
+                // 白色背景
                 .bg_white{
                     width: 100%;
                     height: 515px;
+
                     background-color: $colorWhite;
 
                     position: absolute;
@@ -524,7 +535,7 @@ main {
                 }
             }
         }
-        // 按鈕
+        // 分類按鈕
         .all_btns {
             width: 100%;
             // 按鈕高度
@@ -536,6 +547,7 @@ main {
                 position: relative;
                 top: 0px;
                 z-index: 2;
+
                 padding-bottom: 50px;
                 @media screen and (max-width:1200px) {
                     width: 570px;
@@ -554,7 +566,7 @@ main {
 
                     display: flex;
 
-                    margin: auto;
+                    margin:0px auto;
                     margin-top: 35px;
                     margin-bottom: 45px;
 
@@ -576,16 +588,17 @@ main {
                         position: relative;
 
                         -webkit-user-select:auto ;
-                        
                     }
                     input::-webkit-input-placeholder {
                         font-weight: bold;
                         
                         color:$colorRed;
-                     }
+                    }
+                    // 單顆按鈕
                     .btn {
                         font-size: $fontSize_H4;
                         text-align: center;
+
                         border: solid 1px $colorRed;
                         
                         padding: 0px;
@@ -613,7 +626,7 @@ main {
                         }
                     }                    
                 }
-                // 隱藏分類按鈕後的選擇按鈕
+                // 下拉式選單分類按鈕
                 select{
                     text-align-last: center; 
                 }
@@ -623,7 +636,6 @@ main {
 
                     background-color:$colorRed;
                     color: $colorWhite;
-
                     
                     display: flex;
                     justify-content: center;
@@ -683,14 +695,12 @@ main {
                             @media screen and (max-width:1200px) {
                                 margin-right: 0px;
                             }
-                            
-
                         }
                     }   
                 }
             }
         }
-        // 卡片
+        // 卡片(多張)
         .all_cards {
             padding-bottom: 150px;
             @media screen and (max-width:768px) {    
@@ -710,18 +720,20 @@ main {
                 position: relative;
                 z-index: 2;
 
-                margin: auto;
+                margin:0px auto;
                 
                 letter-spacing: 0.1rem ;
                 @media screen and (max-width:1110px) {         
                     justify-content: space-between;
                 }
+                // 卡片(單張)
                 .card {
                     width: 370px;
                     height: auto;
 
                     background-color: $colorWhite;
                     box-shadow: 0 0 15px -10px #000000;;
+
                     margin-right: 30px;
                     margin-bottom: 30px;
 
@@ -743,6 +755,7 @@ main {
 
                         margin-right: 0px;                     
                     }
+                    // 卡片圖片
                     .pic {
                         width: 370px;
 
@@ -937,8 +950,9 @@ main {
                 }   
             }
         }
+        // 展開更多按鈕
         .btn_more {
-            margin: auto;
+            margin:0px auto;
             margin-top: 30px;
 
             --animate-slow: 0.5s;
