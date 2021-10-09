@@ -240,7 +240,7 @@ main .pagenation ul {
   display: -ms-flexbox;
   display: flex;
   border: 1px solid #EAF0ED;
-  margin-left: 0px auto;
+  margin-left: auto;
 }
 
 main .pagenation ul li {
