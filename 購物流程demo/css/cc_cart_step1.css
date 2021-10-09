@@ -3,8 +3,9 @@ main {
 }
 
 main .container {
+  max-width: 1000px;
   width: 1000px;
-  margin: auto;
+  margin: 0px auto;
 }
 
 main .container .cart_steps {
@@ -23,13 +24,13 @@ main .container .cart_steps .step {
   width: 15%;
   letter-spacing: 1.5px;
   font-weight: 600;
-  padding: 15px 10px;
-  border: 1px solid gainsboro;
   color: #646464;
-  border-radius: 2px;
   text-align: center;
   font-size: 16px;
   line-height: 32px;
+  padding: 15px 10px;
+  border: 1px solid gainsboro;
+  border-radius: 2px;
   border-radius: 5px;
 }
 
@@ -40,9 +41,9 @@ main .container .cart_steps .step.active {
 
 main .container .cart_steps .fa-angle-right {
   line-height: 90px;
-  padding: 0px 20px;
   font-size: 22px;
   color: #8b8585;
+  padding: 0px 20px;
 }
 
 main .container .back_home {
@@ -65,15 +66,14 @@ main .container .back_home .back_home_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 0px;
   padding: 6px  20px;
-  background-color: orange;
   margin: 20px  auto;
+  background-color: orange;
+  border-radius: 5px;
+  border: 2px solid orange;
   font-size: 18px;
   font-weight: 600;
   color: white;
-  border-radius: 5px;
-  border: 2px solid orange;
   cursor: pointer;
 }
 
@@ -123,26 +123,27 @@ main .container .all_checkout_information .check_products_cntent ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 0px;
-  list-style: none;
-  padding: 20px  8px;
-  border-bottom: 1px solid gainsboro;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0px;
+  padding-left: 0px;
+  padding: 20px  8px;
+  list-style: none;
+  border-bottom: 1px solid gainsboro;
 }
 
 main .container .all_checkout_information .check_products_cntent ul:nth-child(1) {
   margin-top: 20px;
-  nav-left: 0px;
-  border: 0px;
-  background-color: gainsboro;
-  background-color: #c1d2dd;
   padding: 6px 0px;
+  border: 0px;
+  background-color: #c1d2dd;
   border-radius: 3px;
 }
 
 main .container .all_checkout_information .check_products_cntent ul li {
-  margin: auto;
   width: 40%;
+  margin: 0px auto;
   text-align: center;
   font-size: 18px;
   font-weight: 600;
@@ -167,7 +168,9 @@ main .container .all_checkout_information .check_products_cntent ul li .product_
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  line-height: 65px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .container .all_checkout_information .check_products_cntent ul li .product_name .pic {
@@ -175,32 +178,36 @@ main .container .all_checkout_information .check_products_cntent ul li .product_
 }
 
 main .container .all_checkout_information .check_products_cntent ul li .product_name .pic img {
-  width: 150px;
-  height: 100px;
-  border-radius: 3px;
   width: 100px;
   height: 65px;
+  border-radius: 3px;
   display: block;
 }
 
 main .container .all_checkout_information .check_products_cntent ul li .text {
-  line-height: 65px;
   font-size: 16px;
   letter-spacing: 1.5px;
   font-weight: 500;
 }
 
 main .container .all_checkout_information .check_products_cntent ul li .fa-trash-alt {
-  line-height: 65px;
   font-size: 18px;
   margin-left: 10px;
   color: gray;
   cursor: pointer;
 }
 
-main .container .all_checkout_information .check_products_cntent ul li .cost_text {
+main .container .all_checkout_information .check_products_cntent ul li .texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container .all_checkout_information .check_products_cntent ul li .texts .cost_text {
   font-weight: 600;
-  line-height: 65px;
   font-size: 15px;
   letter-spacing: 1.5px;
 }
@@ -209,9 +216,10 @@ main .container .all_checkout_information .check_products_cntent ul li .allnumbe
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
-  line-height: 45px;
-  line-height: 30px;
   position: relative;
 }
 
@@ -220,43 +228,49 @@ main .container .all_checkout_information .check_products_cntent ul li .allnumbe
 }
 
 main .container .all_checkout_information .check_products_cntent ul li .allnumber input {
-  font-size: 18px;
   width: 120px;
+  font-size: 18px;
   margin: 0px  20px;
   outline: none;
 }
 
 main .container .all_checkout_information .check_products_cntent ul li .allnumber .numbers {
+  width: 80px;
+  height: 30px;
   text-align: center;
   font-size: 18px;
-  width: 80px;
-  height: 45px;
-  line-height: 45px;
-  height: 30px;
-  line-height: 30px;
   margin: 0px  15px;
   border: 1px solid gainsboro;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 main .container .all_checkout_information .check_products_cntent ul li .allnumber .a {
-  text-align: center;
-  line-height: 45px;
-  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 18px;
   font-weight: 600;
   border: 1px solid gainsboro;
   cursor: pointer;
-  width: 45px;
-  height: 45px;
-  width: 30px;
-  height: 30px;
+}
+
+main .container .all_checkout_information .check_products_cntent ul li .allnumber .a:hover {
+  border: 1px solid gray;
+  color: gray;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 main .container .all_checkout_information .check_products_cntent ul li .allnumber .a:active {
-  background-color: darkgrey;
-  color: wheat;
+  border: 1px solid gray;
+  color: gray;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
@@ -320,27 +334,26 @@ main .container .all_checkout_information .checkout .shipping_information .trans
 main .container .all_checkout_information .checkout .shipping_information .transport select {
   width: 100px;
   height: 30px;
-  padding: 0px 5px;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
+  padding: 0px 5px;
   margin: 0px 10px;
   outline: none;
   border: 1px solid gainsboro;
 }
 
 main .container .all_checkout_information .checkout .checkout_btn {
-  margin-left: auto;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  margin-left: auto;
   padding: 4px 25px;
+  margin-top: 30px;
   background-color: orange;
   border: 2px solid orange;
-  border-radius: px;
-  margin-top: 30px;
-  color: white;
   border-radius: 3px;
+  color: white;
   font-weight: 600;
 }
 

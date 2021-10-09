@@ -81,23 +81,27 @@
                      
                         <ul>
                             <li>
-                                <div class="product_name">
+                                <div class="product_name " >
                                     <div class="pic">
                                         <img src="https://i.picsum.photos/id/72/150/150.jpg?hmac=88NNYoUrPKBRE7CbkRKkXumt03IOma2wCZii6DX7jec" alt="">
                                     </div>
-                                    <div class="name text">3D便條紙 - 艾菲爾鐵塔
+                                    <div class="name text text-style">3D便條紙 - 艾菲爾鐵塔
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="allnumber b">
                 
-                                    <div class=" a remove">-</div>
+                                    <div class=" a remove">
+                                        <span>-</span>
+                                    </div>
             
                                     <!-- <div class="numbers">1</div> -->
                                     <input  id="Str" class="numbers" type="number" min="1"  value="1"  oninput="if(value>99)value=99"   / oninput="if(value<0)value=1" / onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"  
                                     onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}"  onchange="ShowStr(this.id)" >
-                                    <div class=" a add">+</div>
+                                    <div class=" a add">
+                                        <span>+</span>    
+                                    </div>
     
                                 </div>
                                 <div class="show " id="show">已達最高購買數量</div>
@@ -148,6 +152,7 @@
                     </div>
                 </div>
 
+                <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1GWjk7jeBnh45HvKbWWzFEjMTogIPqcLE" width="640" height="480"></iframe> -->
                
         </section>
     </main>
