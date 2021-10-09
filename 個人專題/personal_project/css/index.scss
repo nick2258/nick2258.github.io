@@ -102,7 +102,6 @@ input,select{
 
 nav{
     width: 100%;
-
     // background-color: #D9CEC5;
     .navbar-brand{
         img{
@@ -152,27 +151,27 @@ main{
     .banner{
         width: 100%;
         height: auto;
-
         // background-color: #f2f0ed;
-        
         position: relative;
         z-index: 3;
+        // 上方 banner大圖
         .pic{
             width: calc(100% - 100px);
 
             display: flex;
             align-self: flex-start;
 
-
             position: relative;
             .img{
                 width: 80vw;
                 height: 45.5vw;
+
                 border-radius: 0px 15px 15px 0px;
                 box-shadow: 8px 8px 10px #3838382d;
 
                 display: block;
             }
+            // 宮原眼科字
             .name{ 
                 display: flex;
                 flex-direction: column;
@@ -204,7 +203,6 @@ main{
     // 經營理念
     .management{
         width: 100%;
-
         // background-color: #f2f0ed;
         color: #605D4F;
 
@@ -215,13 +213,12 @@ main{
         .top{
             width:calc(100% - 160px);
 
-            // border-bottom:3px solid #605D4F ;
-
             display: flex;
             justify-content: space-evenly;
 
             padding-bottom: -20px;
-            margin: auto;
+            margin:0px auto;
+            // 經營理念大標
             .title{ 
                 font-size: 48px;
                 font-weight: bold;
@@ -259,17 +256,10 @@ main{
                     font-size: 22px;   
                 }
                 .text{
-                    // height: 40vw;
-
-
-                    // border-left: 3px solid #605D4F;
-
                     display: flex;
                     flex-direction: column-reverse;
 
-                    // transform: translateY(30px);
                     padding: 30px;
-                    // background-color: #eedba7;
                     border-radius: 5px;
                     @media screen and (max-width:1720px){
                         height: 38vw;  
@@ -298,13 +288,15 @@ main{
             }
             .pic{
                 width: auto;
-                z-index: 1;             
+                z-index: 1;   
+                // 經營理念影片          
                 video{
-                    width: auto;
+                    width:auto;
                     height: 37.5vw;
                     
                     object-fit: cover;
                     box-shadow:10px 10px 15px #58585885;
+                    border-radius: 3px;
                     @media screen and (max-width:1720px){
                         width: auto;
                         height: 36vw;
@@ -374,7 +366,7 @@ main{
         }
     }
 
-    // 建築
+    // 建築歷史
     .buliding{
         height: auto;
         // background-color: #D9CEC5;
@@ -390,12 +382,10 @@ main{
                 font-size: 24px;
                 font-weight: 700;
                 letter-spacing: 2px;
-
                 color: #605D4F;
+                
                 background-color: #D9D6D0;
                 box-shadow: -5px -5px 5px inset #bdb9b3;
-
-
                 border-radius: 8px;
                 @media screen and (max-width:1620px){
                     font-size: 22px;
@@ -410,6 +400,7 @@ main{
                     font-size: 16px;
                 }   
             }
+            // 建築歷史標題 直式
             .title{
                 writing-mode: vertical-rl; 
 
@@ -559,9 +550,6 @@ main{
 
                                 margin-top: 355px;   
                             }
-                            // @media screen and (max-width:1200px){
-                            //     padding: 20px;   
-                            // }
                             @media screen and (max-width:1570px){
                                 writing-mode: vertical-rl; 
 
@@ -569,7 +557,7 @@ main{
                                 flex-direction: column;
 
                                 padding: 30px 30px 30px 30px;
-                                margin: auto;
+                                margin:0px auto;
                                 margin-left: 60px;
                                 @media screen and (max-width:1100px){
                                     width: auto;
@@ -674,7 +662,6 @@ main{
                     }
                 }
             }
-    
             .part_3_bg{
                 padding: 60px 0px 170px 0px;
                 @media screen and (max-width:1100px){
@@ -826,7 +813,6 @@ main{
                     }
                 }
             }
-    
             .part_4_bg{
                 .part_4{
                     display: flex;
@@ -888,7 +874,6 @@ main{
                     }
                 }
             }
-    
             .part_5_bg{
                 padding: 60px 0px;
                 .part_5{
@@ -1039,7 +1024,6 @@ main{
         }
     }
 }
-
     // 產品
     .product_bg{
         // background-color:#F9E1C2 ;
@@ -1845,13 +1829,17 @@ main{
                 } 
                 .title{
                     width:100% ;
+
                     display: flex;
                     justify-content: center;
+
                     font-size: 60px;
                     font-weight: 600;
                     letter-spacing: 5px;
-                    padding-bottom: 24px;
+
                     border-bottom: 2px solid grey;
+
+                    padding-bottom: 24px;
                     margin: 0px auto;
                     margin-bottom: 24px;
                      @media screen and (max-width:1400px){
@@ -1880,7 +1868,7 @@ main{
                         display: flex;
                         flex-direction: column;
                         
-                        margin: auto;
+                        margin:0px auto;
                         margin-top: 0px;
                         .icon{
                             width: 100%;
@@ -1890,7 +1878,7 @@ main{
                             display: flex;
                             justify-content: center;
 
-                            margin: auto;
+                            margin:0px auto;
                             margin-bottom: 20px;
                             img{
                                 width: 120px ;
@@ -1923,6 +1911,7 @@ main{
                                 iframe{
                                     width: 100%;
                                     height: 20vw;
+
                                     border-radius: 8px;
                                     box-shadow: 5px 5px 10px #3838383b;
                                 }
@@ -1950,7 +1939,6 @@ main{
     // 聯絡我們
     .contact{
         height: auto;
-
         // background-color: #E6D3BE;
         color: #33322a;
 
@@ -1975,7 +1963,6 @@ main{
 
                 font-size: 24px;
                 font-weight: 600;
-
                 
                 display: flex;
                 justify-content: center;
@@ -2063,7 +2050,6 @@ footer{
     width: 100%;
 
     text-align: center;
-
     // background-color: #E6D3BE;
 
     padding: 0px 0px 20px 0px;

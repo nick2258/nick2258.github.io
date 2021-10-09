@@ -259,7 +259,7 @@ main .management .top {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding-bottom: -20px;
-  margin: auto;
+  margin: 0px auto;
 }
 
 main .management .top .title {
@@ -384,6 +384,7 @@ main .management .top .pic video {
      object-fit: cover;
   -webkit-box-shadow: 10px 10px 15px #58585885;
           box-shadow: 10px 10px 15px #58585885;
+  border-radius: 3px;
 }
 
 @media screen and (max-width: 1720px) {
@@ -766,7 +767,7 @@ main .buliding .mycontainer .content_bg .part_1_bg .part_1 .right .right_text {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 30px 30px 30px 30px;
-    margin: auto;
+    margin: 0px auto;
     margin-left: 60px;
   }
 }
@@ -2616,8 +2617,8 @@ main .social_media .mycontainer .allcontent .title {
   font-size: 60px;
   font-weight: 600;
   letter-spacing: 5px;
-  padding-bottom: 24px;
   border-bottom: 2px solid grey;
+  padding-bottom: 24px;
   margin: 0px auto;
   margin-bottom: 24px;
 }
@@ -2665,7 +2666,7 @@ main .social_media .mycontainer .allcontent .contents .content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: auto;
+  margin: 0px auto;
   margin-top: 0px;
 }
 
@@ -2678,7 +2679,7 @@ main .social_media .mycontainer .allcontent .contents .content .icon {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: auto;
+  margin: 0px auto;
   margin-bottom: 20px;
 }
 
