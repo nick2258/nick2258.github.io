@@ -1,6 +1,5 @@
 main{
     padding: 30px  0px;
-    // margin-bottom: 500px;
     .container{
         width: 1000px;
         margin: auto;
@@ -21,6 +20,7 @@ main{
                 text-align: center;
                 font-size: 16px;
                 line-height: 32px;
+                border-radius: 5px;
                 &.active{
                     border: 2px solid rgb(179, 171, 171);
                     color: #DF744A;
@@ -45,12 +45,15 @@ main{
             .back_home_btn{
                 display: flex;
                 border: 0px;
-                padding: 10px  20px;
+                padding: 6px  20px;
                 background-color: orange;
                 margin:20px  auto;
                 font-size: 18px;
+                font-weight: 600;
                 color: white;
                 border-radius: 5px;
+                border: 2px solid orange;
+                cursor: pointer;
                 .fa-home{
                     font-size: 20px;
                     color: white;
@@ -58,9 +61,22 @@ main{
                     z-index: 10;
                     font-weight: 900;
                 }
+                &:hover{
+                    background-color: white;
+                    color: orange;
+
+                    transition: .6s;
+                    .fa-home{
+                        color: orange;
+
+                        transition: .6s;
+                    }
+                }
             }
         }
+        // 確認訂購商品
         .all_checkout_information{
+            // 確認定購商品標題
             .check_products{
                 padding-top: 30px;
                  display: flex;
@@ -76,8 +92,9 @@ main{
                      font-weight: 600;
                  }
              }
+
+            //  確認訂購商品內容
              .check_products_cntent{
-             
                  ul{
                      // margin-bottom: 500px;
                      display: flex;
@@ -125,6 +142,7 @@ main{
                                  img{
                                      width: 150px;
                                      height: 100px;
+                                     border-radius: 3px;
      
                                      width: 100px;
                                      height: 65px;
@@ -143,6 +161,8 @@ main{
                              font-size: 18px;
                              margin-left: 10px;
                              color: gray;
+
+                             cursor: pointer;
                          }
                          .cost_text{
                              font-weight:600;
@@ -231,6 +251,7 @@ main{
                      }
                  }
              }
+            //  確認訂購商品下方文字
              .checkout{
                  width: max-content;
                  display: flex;
@@ -275,12 +296,21 @@ main{
                      margin-left: auto;
                      
                      width: max-content;
-                     padding: 8px 25px;
+                     padding: 4px 25px;
                      background-color: orange;
+                     border: 2px solid orange;
                      border-radius: px;
                      margin-top: 30px;
                      color: white;
                      border-radius: 3px;
+                     font-weight: 600;
+                     &:hover{
+                        background-color: white;
+                        color: orange;
+
+                        transition: .6s;
+
+                     }
                  }
              }
         }

@@ -25,6 +25,7 @@
          <section class="my-5">
             <div class="container">
                 <div class="cart_steps">
+                    <!-- 第一步驟顯示 -->
                     <div class="step active">
                         <div class="step_text">STEP1 <br>確認訂購商品</div>
                     </div>
@@ -51,20 +52,23 @@
 
                 <div class="back_home" >
                     <div class="back_home_text">
-                        尚未選購任何商品，請點擊按鈕
+                        <span>尚未選購任何商品</span>
+                        <span>，請點擊按鈕</span>
                     </div>
+
                     <a class="back_home_btn">
                         <div class="btn_text">回首頁</div>
-                        <i class="fas fa-home"></i>                        <!-- <i class="fas fa-home-lg"></i> -->
+                        <i class="fas fa-home"></i>                        
                     </a>
                 </div>
 
+                <!-- 確認訂購商品 -->
                 <div class="all_checkout_information" >
+
                     <div class="check_products">
                         <i class="fas fa-check-square"></i>
                         <div class="title">確認訂購商品</div>
                     </div>
-    
     
                     <div class="check_products_cntent">
                         <ul>
@@ -110,113 +114,7 @@
                                 "></i>
                             </li>
                         </ul>
-                        <ul>
-                            <li>
-                                <div class="product_name">
-                                    <div class="pic">
-                                        <img src="https://i.picsum.photos/id/72/150/150.jpg?hmac=88NNYoUrPKBRE7CbkRKkXumt03IOma2wCZii6DX7jec" alt="">
-                                    </div>
-                                    <div class="name text">3D便條紙 - 艾菲爾鐵塔
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="allnumber b">
-                
-                                    <div class=" a remove">-</div>
-            
-                                    <!-- <div class="numbers">1</div> -->
-                                    <input  id="Str" class="numbers" type="text" min="1"  value="1"  oninput="if(value>99)value=99"   / onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"  
-                                    onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}"  onchange="ShowStr(this.id)" >
-                                    <div class=" a add">+</div>
-    
-                                </div>
-                                <div class="show " id="show">已達最高購買數量</div>
-    
-                            </li>
-                            <li class="texts">
-                                <div class="text">NT$600
-                                </div>
-                            </li>
-    
-                            <li class="texts">
-                                <span class="cost_text">NT$600 </span>
-                                <i class="fas fas fa-trash-alt
-                                "></i>
-                            </li>
-                        </ul>
-    
-                        <ul>
-                            <li>
-                                <div class="product_name">
-                                    <div class="pic">
-                                        <img src="https://i.picsum.photos/id/72/150/150.jpg?hmac=88NNYoUrPKBRE7CbkRKkXumt03IOma2wCZii6DX7jec" alt="">
-                                    </div>
-                                    <div class="name text">3D便條紙 - 艾菲爾鐵塔
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="allnumber b">
-                
-                                    <div class=" a remove">-</div>
-            
-                                    <!-- <div class="numbers">1</div> -->
-                                    <input  id="Str" class="numbers" type="text" min="1"  value="1"  oninput="if(value>99)value=99"  / onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"  
-                                    onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}"  onchange="ShowStr(this.id)" >
-                                    <div class=" a add">+</div>
-    
-                                </div>
-                                <div class="show " id="show">已達最高購買數量</div>
-    
-                            </li>
-                            <li class="texts">
-                                <div class="text">NT$600
-                                </div>
-                            </li>
-    
-                            <li class="texts">
-                                <span class="cost_text">NT$600 </span>
-                                <i class="fas fas fa-trash-alt
-                                "></i>
-                            </li>
-                        </ul>
-    
-                        <ul>
-                            <li>
-                                <div class="product_name">
-                                    <div class="pic">
-                                        <img src="https://i.picsum.photos/id/72/150/150.jpg?hmac=88NNYoUrPKBRE7CbkRKkXumt03IOma2wCZii6DX7jec" alt="">
-                                    </div>
-                                    <div class="name text">3D便條紙 - 艾菲爾鐵塔
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="allnumber b">
-                
-                                    <div class=" a remove">-</div>
-            
-                                    <!-- <div class="numbers">1</div> -->
-                                    <input  id="Str" class="numbers" type="text" min="1"  value="1"  oninput="if(value>99)value=99"   / onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"  
-                                    onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}"  onchange="ShowStr(this.id)" >
-                                    <div class=" a add">+</div>
-    
-                                </div>
-                                <div class="show " id="show">已達最高購買數量</div>
-    
-                            </li>
-                            <li class="texts">
-                                <div class="text">NT$600
-                                </div>
-                            </li>
-    
-                            <li class="texts">
-                                <span class="cost_text">NT$600 </span>
-                                <i class="fas fas fa-trash-alt
-                                "></i>
-                            </li>
-                        </ul>
+                      
                     </div>
     
                     <div class="checkout">
@@ -226,21 +124,25 @@
                                 <div class="title">運送方式</div>
                                 <select name="" id="">
                                     <option value="">宅配</option>
+                                    <option value="">超商取貨</option>
+
                                 </select>
-                                <div class="text">元</div>
+                                <div class="text">
+                                    <span>80</span>
+                                    元</div>
                             </div>
                         </div>
     
                         
                     <div class="checkout_text top">
-                        購物車內合計有  項商品，消費總金額
-                        <span class="color">NT$
+                        購物車內合計有<span>1</span>項商品，消費總金額
+                        <span class="color">NT$ <span>680</span>
                         </span>
                     </div>
     
-                    <div class="checkout_btn">
+                    <a style="text-decoration: none;" href="./cc_cart_step2.html" class="checkout_btn">
                         下一步
-                    </div>
+                    </a>
     
                         
                     </div>
@@ -262,18 +164,20 @@
     var number_input =document.querySelectorAll('.numbers');
 
     // 減少按鈕
-    var reduce_btn = document.querySelectorAll('.remove')
+    var reduce_btn = document.querySelectorAll('.remove');
+
+    const show = document.querySelectorAll(".show");
+    console.log(show);
+
 
     // 增加商品的按鈕
     add_btn.forEach(function(ele, i) {
         // console.log(ele, '寫forEach的時候，帶進來的第一個參數，就是被遍歷的元素');
         ele.addEventListener('click', function() {
             // 商品數量顯示 +1
-            console.log(number_input[2].value);
 
             if (  number_input[i].value == 99 ) {
-                number_input[i].value = parseInt(number_input[i].value) ;
-            
+                number_input[i].value = parseInt(number_input[i].value) ;            
             }
             else{
                     number_input[i].value = parseInt(number_input[i].value) + 1;
