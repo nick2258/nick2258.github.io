@@ -144,10 +144,12 @@ main{
             }
         }
     }
+    // 三張卡片
     .cards1{
         margin-bottom: 30px;
         .mycontainer{
             width: 1024px;
+
             display: flex;
             flex-direction: column;
             @media screen and(max-width:1280px) { 
@@ -161,14 +163,14 @@ main{
                 }
                 .text{
                     font-size: 14px;
+                    line-height: 27px;
+
                     position: absolute;
                     right: 0px;
                     bottom: 0px;
-                    line-height: 27px;
                 }
-                    
+
             }
-            
             .all_cards{
                 display: flex;
                 flex-direction: row;
@@ -182,9 +184,7 @@ main{
                     position: relative;
                     @media screen and(max-width:1280px) { 
                         height: auto;
-                    }
-                        
-                    
+                    } 
                     &:nth-child(3n){
                         margin-right: 0px;
                     }
@@ -196,6 +196,7 @@ main{
                         position: absolute;
                         bottom: 10px;
                         left: 10px;
+
                         font-size: 14px;
                         font-weight: 600;
                     }
@@ -203,11 +204,12 @@ main{
                         position: absolute;
                         top: 10px;
                         left: 10px;
+
                         font-size: 14px;
                         font-weight: 600;
-                        background-color: black;
                         color: white;
-
+                        
+                        background-color: black;
                     }
                 }
             }     
@@ -237,10 +239,11 @@ main{
                 }
                 .text{
                     font-size: 14px;
+                    line-height: 27px;
+
                     position: absolute;
                     right: 0px;
                     bottom: 0px;
-                    line-height: 27px;
                 }     
             }
             .new{
@@ -252,25 +255,22 @@ main{
                 .text{
                     padding-top: 8px;
                     font-size: 13px;
-
                 }
             }
-
         }
     }
 }
 
 footer{
     background-color: black;
-
     .mycontainer{
         width: 1024px;
         color: white;
         .ul{
             list-style: none;
             display: flex;
+
             padding: 15px;
-            // border-bottom: 0.1px solid #999;
             border-top: 0.1px solid #999;
             margin: 0px;
             &:nth-child(1){

@@ -187,10 +187,10 @@ main .cards1 .mycontainer .title .tittle_text {
 
 main .cards1 .mycontainer .title .text {
   font-size: 14px;
+  line-height: 27px;
   position: absolute;
   right: 0px;
   bottom: 0px;
-  line-height: 27px;
 }
 
 main .cards1 .mycontainer .all_cards {
@@ -242,8 +242,8 @@ main .cards1 .mycontainer .all_cards .card1 .black_bg {
   left: 10px;
   font-size: 14px;
   font-weight: 600;
-  background-color: black;
   color: white;
+  background-color: black;
 }
 
 main .cards1 .mycontainer .more {
@@ -280,10 +280,10 @@ main .news .mycontainer .title .tittle_text {
 
 main .news .mycontainer .title .text {
   font-size: 14px;
+  line-height: 27px;
   position: absolute;
   right: 0px;
   bottom: 0px;
-  line-height: 27px;
 }
 
 main .news .mycontainer .new .date {
