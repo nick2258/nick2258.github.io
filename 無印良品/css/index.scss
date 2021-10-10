@@ -30,7 +30,7 @@ nav{
            width: max-content;
            height: max-content;
 
-           padding: 20px;
+           padding:15px 20px;
            padding-left: 0px;
             .logo{
                 width: 130px;
@@ -38,14 +38,26 @@ nav{
             }
         }
         .navbar-collapse{
+            width:100%;
+            .search{
+                width:15px ;
+                height:15px;
+                margin-right: 30px;
+            } 
             .navbar-nav{
+                display: flex;
+                align-items: center;
                 // nav連結
                 .nav-item{
+                    &:nth-last-child(1){
+                        justify-self: flex-end;
+                    }
                     .nav-link{
                        font-size: 13px;
-                        padding: 28px 10px; 
+                        padding: 18px 10px; 
                     } 
                 }
+               
             }
         }
    } 
@@ -56,12 +68,12 @@ main{
     border-bottom: 51px solid  #ebebeb;
     // 貼心提醒
     .title{
-        padding-top: 10px;
+        // padding-top: 10px;
         .mycontainer{
             width: 1024px;
             padding: 5px 0px;
             .text_title{
-                width: calc(100% - 15px);
+                width: 100%;
                 
                 padding-left: 8px;
                 padding: 3px 0px;
