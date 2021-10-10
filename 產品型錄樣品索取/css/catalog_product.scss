@@ -403,12 +403,13 @@ main{
                                     font-size: 14px;
                                     position: relative;
                                     margin: 0px auto;
-                                    margin-top: 8px;
+                                    // margin-top: 8px;
                                     padding: 1px 20px;
                                 }
                            
-                                @media all and (max-width: 520px) {
-                                    width: 100%;
+                                @media all and (max-width: 600px) {
+                                    // width: 100%;
+                                    margin-top: 0px;
                                 }
                             }
                             .texts{
@@ -457,13 +458,13 @@ main{
                                     // 產品介紹紅色文字
                                     .color-red{
                                         color:orangered;
+                                        
                                     }
                                     // 產品介紹右邊間距
                                     .margin-right{
                                         margin-right: 5px;
                                     }
                                 }
-                                
                                 .product-text{
                                     padding-top: 8px;
                                     font-size: 16px;
@@ -647,6 +648,7 @@ main{
                     // 產品介紹 適用紙材 適用加工 產品樣式 分頁內容
                     .type-contents{
                         display: flex;
+                        position: relative;
                         @media screen and (max-width: 1000px){ 
                             margin-top: 15px;  
                         }
@@ -655,32 +657,45 @@ main{
                             display: flex;
                             align-items: center;
                         }
-                      
-                        // 產品介紹 適用紙材 適用加工 產品樣式 圖片
-                        .type-pic{  
+                         // 產品介紹 適用紙材 適用加工 產品樣式 圖片
+                         .type-pic{  
                             width: 380px;
-                            height: 280px;
                             height: max-content;
-                           
-                            position: relative;
+
+                            background-color: white;
+
+                            position: sticky;
+                            z-index: 50;
+                            top: 0px;
+                            @media all and (max-width: 1250px) {
+                                position: relative;
+                            }
                             @media all and (max-width: 861px) {
                                 width: 350px;
-                                height: 258px;    
+                                // height: 258px;    
                             }
                             @media all and (max-width: 769px) {
                                 width: 280px;
-                                height: 206px;                  
+                                // height: 206px;                  
                             }
                             @media all and (max-width: 600px) {
                                 width: 300px;
                                 margin: 0px auto;
-                                height: 221px;
+                                // height: 221px;
                             }
                             @media all and (max-width: 400px) {
                                 width: 100%;
-                                height: auto;                           
+                                // height: auto;                           
                             }
-                           
+                            &:nth-child(1){
+                                // @media all and (max-width: 861px){                                             
+                                //     margin-bottom: 10px;
+                                // }
+                                @media all and (max-width: 600px) {
+                                    margin-bottom: 0px;
+                                }
+                            }
+                        
                             img{
                                 width: 100%;
                                 height: 100%;
@@ -717,15 +732,21 @@ main{
                             // swiper輪播圖
                             .swiper-container {
                                 width: 100%;
-                                height: 100%;
+                                height:max-content;
 
                                 position: relative;
                                 overflow-x: hidden;
-                                padding-bottom: 60px;
+                                // 控制輪播按鈕是否出現的留白距離
+                                &.bullet{
+                                    padding-bottom: 30px;
+                                    @media all and (max-width: 600px) {
+                                        padding-bottom: 20px;
+                                    }
+                                }
                                 .swiper-pagination{
                                     width: 380px;
-                                    position: absolute;
-                                    bottom: px;
+                                    // position: absolute;
+                                    bottom: 0px;
                                     z-index: 1;
                                     @media all and (max-width: 861px) {
                                         width: 350px;
@@ -755,15 +776,16 @@ main{
                                             // 調整輪播圖圖片 需與紙材 加工圖片大小同步
                                             @media all and (max-width: 861px){                                             
                                                 width: 350px;
-                                                height: 258px;
+                                                // height: 258px;
+                                                height: auto;
                                             }
                                             @media all and (max-width: 769px) {
                                                 width: 280px;
-                                                height: 206px;                  
+                                                // height: 206px;                  
                                             }
                                             @media all and (max-width: 600px) {
                                                 width: 300px;
-                                                height: 221px;
+                                                // height: 221px;
 
                                                 margin: 0px auto;
                                             }
@@ -778,15 +800,15 @@ main{
                                 // 輪播按鈕
                                 .swiper-pagination-bullets{
                                     z-index: 5;
-                                    bottom: 18px;
-                                    @media all and (max-width: 600px) {
-                                        bottom: 5px;
-                                    }
+                                    bottom: 0px;
+                                    // @media all and (max-width: 600px) {
+                                    //     bottom: 5px;
+                                    // }
                                 }
                                 // 輪播按鈕顏色
                                 .swiper-pagination-bullet{
-                                    width: 18px;
-                                    height: 18px;
+                                    width: 15px;
+                                    height: 15px;
 
                                     background-color: rgb(36, 49, 71);
                                     opacity: .5;
@@ -796,8 +818,8 @@ main{
                                         margin-right: 0px;
                                     }
                                     @media all and (max-width: 600px) {
-                                        width: 15px;
-                                        height: 15px;
+                                        width: 10px;
+                                        height: 10px;
 
                                         margin-right: 8px;
                                     }
@@ -816,6 +838,7 @@ main{
                                 }
                             }   
                         }
+                       
                         // 產品介紹 適用紙材 適用加工 產品樣式 文字
                         // 寬度檢調照片大小家間隔
                         .type-texts{
@@ -839,7 +862,7 @@ main{
                             @media all and (max-width: 540px) {
                                 width: 100%;
                                 padding: 0px;
-                                padding-top: 15px;
+                                padding-top: 8px;
                             }
                             @media all and (max-width: 350px) {
                                 width: 216px;
@@ -924,6 +947,8 @@ main{
                                 transform: translateX(-50%);
 
                                 bottom: 15px;
+
+                                cursor: pointer;
                                 // 按鈕調整至右
                                 @media all and (max-width: 1400px) {
                                     left: initial;
@@ -1074,9 +1099,10 @@ main{
                                             padding: 1px 20px;
                                         }
                                    
-                                        @media all and (max-width: 520px) {
-                                            width: 100%;
-                                        }
+                                        // @media all and (max-width: 520px) {
+                                        //     width: 100%;
+                                        //     max-width: 180px;
+                                        // }
                                     }
                                     .type-content-texts{
                                         @media all and (max-width: 1000px) {
@@ -1085,12 +1111,18 @@ main{
                                             display: flex;
                                             justify-content: space-between;
                                         }
-                                        @media all and (max-width: 740px) {
+                                        @media all and (max-width: 1000px) {
+                                            width: 80%;
+                                            margin: 0px auto;
+
                                             flex-direction: column;
                                         }
                                         @media all and (max-width: 740px) {
                                             width: 300px;
                                             margin: 0px auto;
+
+
+                                            flex-direction: column;
                                         }
                                         @media all and (max-width: 520px) {
                                             width: 100%;  
@@ -1376,6 +1408,14 @@ main{
                                         margin: 0px;
                                         padding: 0px;
                                         margin-bottom: 10px;
+                                        @media all and (max-width: 1000px) {
+                                            // width: 300px;
+                                            width: 80%;
+                                            margin: 0px auto;
+
+
+                                            flex-direction: column;
+                                        }
                                         @media all and (max-width: 500px) {
                                             margin-bottom: 8px;   
                                         }
@@ -1431,6 +1471,14 @@ main{
                                         width: 100%;
 
                                         display: flex;
+                                        @media all and (max-width: 1000px) {
+                                            // width: 300px;
+                                            width: 80%;
+                                            margin: 0px auto;
+
+
+                                            flex-direction: column;
+                                        }
                                         @media all and (max-width: 740px) {
                                             flex-direction: column;
                                         }
@@ -1520,6 +1568,12 @@ main{
                                 @media all and (max-width: 1640px) {
                                     flex-direction: column;      
                                 }  
+                                @media all and (max-width: 1000px) {
+                                    width: 80%;
+                                    margin: 0px auto;
+
+                                    flex-direction: column;
+                                }
                                 @media all and (max-width: 740px) {
                                     width: 300px;
                                     margin: 0px auto;
@@ -1715,6 +1769,8 @@ main{
                                             box-shadow: 3px 3px 10px rgba(165, 48, 5, 0.411);
                                             background-color: #E8652B;
                                             border: 2px solid transparent;
+
+                                            cursor: pointer;
                                             @media all and (max-width: 800px) {
                                                 width: 110px;
                                                 
