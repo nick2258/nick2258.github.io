@@ -1,0 +1,388 @@
+body{
+    max-width: 1920px;
+    width: 100%;
+    overflow-x: hidden;
+
+    margin: 0px auto;
+    padding: 0px;
+   
+    user-select: none;
+
+
+    background-color: whitesmoke;
+    color: #383838;
+
+    letter-spacing: 1px;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: #383838;
+}
+
+img{
+    display: block;
+}
+
+ul,ol{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+nav{
+    width: 100%;
+    max-width: 1920px;
+    height: 100vh;
+    max-height: 100vh;
+    // background-color: white;
+
+    overflow-y: auto;
+
+    transform: translateX(-100%);
+    opacity: 0;
+
+    position: fixed;
+
+
+    // display: none;
+    
+    &.show{
+        display: block;
+        transform: translateX(0px);
+        opacity: 1;
+
+        position: relative;
+        transition: .6s;
+    }
+    .nav-scroll{
+        width: 100%;
+        height: max-content;
+
+        .nav-items{
+            width: max-content;
+            height: max-content;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            .nav-item{
+                font-size: 48px;
+                font-weight: 600;
+                margin-bottom: 32px;
+                padding-bottom: 8px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                &::after{
+                    width: 0px;
+                    content: " ";
+                    position: absolute;
+                    bottom: 0px;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                }
+                &:hover{
+                    &::after{
+                        width: 100%;
+                        border-bottom: 2px solid gray;
+
+                        transition: .6s;
+                    }
+                }
+                // &:nth-last-child(1){
+                //     margin-bottom: 0px;
+                // }
+                
+               
+            }
+        }
+       
+    }
+    
+}
+
+.banner-bg{
+    max-width: 1920px;
+    width: 1920px;
+    height: 500px;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    // transform: translateX(-100%);
+    background-color: white;
+   
+}
+
+main{
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0px auto;
+ 
+    position: relative;
+    &.show{
+        display: none;
+    }
+    
+    .nav-btn{
+        width: max-content;
+
+        border: 2px solid steelblue;
+        background-color: steelblue;
+        box-shadow: -3px -3px 5px inset rgb(49, 92, 128);
+        border-radius: 5px;
+
+        position: fixed;
+        top: 16px;
+        right: 16px;
+
+        cursor: pointer;
+        .fa-bars{
+            width: max-content;
+
+            color: white;
+            font-size: 36px;
+            font-weight: 600;
+
+            padding: 8px 8px;
+        }
+        &:hover{
+            background-color: white;
+            box-shadow: 3px 3px 5px  rgba(70, 131, 180, 0.6);
+
+            transition: .6s;
+            .fa-bars{
+                color: steelblue;
+            }
+        }
+    }
+    
+    .personal-information{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 24px 0px;
+        .personal-pic{
+            img{
+               width: 300px; 
+               border-radius: 8px;
+            }
+        }
+        .information{
+            width: calc(100% - 348px);
+            margin-right: 48px;
+            
+            .name{
+                width: 100%;
+                font-size: 36px;
+                font-weight: 600;
+                letter-spacing: 2px;
+                padding: 24px 8px;
+                border-bottom: 1px solid gainsboro;
+            }
+            .information-items{
+                padding-left: 16px;
+                .information-item{
+                    padding-top: 24px;
+                    a{
+                        width: 100%;
+
+                        display: flex;
+                        align-items: center;
+                        .icon{
+                            width: 32px;
+                            font-size: 32px;
+                            margin-right: 24px;
+                            color: salmon;
+
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .item-content{
+                            font-size: 20px;
+                            line-height: 32px;
+                            font-weight: 600;
+
+                            display: flex;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            .skill{
+                                font-size: 16px;
+                                width: max-content;
+                                border-radius: 30px;
+                                padding: 1px 20px;
+                                background-color: sienna;
+                                color: gainsboro;
+                                margin-left: 8px;
+                                margin-bottom: 8px;
+                            }
+                        }
+                    }
+                    
+                }
+                
+            }
+        }
+
+    }
+
+    .part{
+        padding-top: 32px;
+        .title{
+            font-size: 48px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+
+            margin-top: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid gray;
+
+            display: flex;
+            justify-content: center;
+        }
+        .about-me-texts{
+            display: flex;
+            justify-content: center;
+            p{
+                max-width: 100%;
+                width: max-content;
+                padding: 16px ;
+                font-size: 18px;
+                font-weight: 600;
+                letter-spacing: 1.5px;
+                // text-align: center;
+                line-height: 28px;
+                br{
+                    display: block;
+                    content: " ";
+                    padding-top: 8px;
+                }
+
+            }
+        }
+
+        // 我的歷史
+        .my-history-content{
+            ul{
+                padding: 0px 32px;
+                padding-top: 24px;
+                li{
+                    padding-top: 24px;
+                    &:nth-child(1){
+                        padding-top: 0px;
+                    }
+                    .small-title{
+                        font-size: 24px;
+                        padding: 0px 8px;
+                        padding-bottom:8px ;
+                        border-bottom: 1px solid gainsboro;
+                        font-weight: 600;
+                    } 
+                    .small-content{
+                        padding: 0px 8px;
+                        .small-text{  
+                            font-size: 18px;
+                            br{
+                                display: block;
+                                content: " ";
+                                padding-top: 8px;
+                            }
+                        }
+                        .sub-title{
+                            font-size: 20px;
+                            font-weight: 600;
+                            padding-left: 8px;
+                            border-left:5px solid salmon ;
+                            margin-top: 16px;
+
+                        }
+                        .date{
+                            padding-top: 5px;
+                            padding-left: 16px;
+                            font-size: 16px;
+                            color: rgb(209, 174, 128);
+                        }
+                        .text{
+                            margin-top: 8px;
+                            padding-left: 16px;
+                            font-size: 18px;
+                            line-height: 36px;
+                        }
+                    }
+                  
+                }
+            }
+        }
+
+        // 作品集
+        .project-contents{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px 16px;
+            padding-top: 24px;
+            .project-pic{
+                width: 300px;
+                img{
+                    width: 100%;
+                    height: auto;
+                    border-radius:8px ;
+                }
+            }
+            .project-information{
+                padding: 8px;
+                .project-skills{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .project-skill{
+                        width: max-content;
+                        padding:4px 10px ;
+                        font-size: 14px;
+                        background-color: sienna;
+                        color: white;
+                        border-radius: 30px;
+                        margin-right: 5px;
+                    }
+                }
+                .project-name{
+                    font-size: 20px;
+                    font-weight: 600;
+                    text-align: center;
+                    margin-bottom: 8px;
+                }
+                .project-links{
+                    padding-top: 16px;
+                    .btn{
+                        width: 100%;
+                        padding: 4px 0px;
+                        background-color: salmon;
+                        border-radius:5px; 
+                        color: white;
+                        font-weight: 600;
+                        letter-spacing: 1.5px;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 5px;
+
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+    }
+}
