@@ -78,7 +78,6 @@
                             <li>小計</li>
                         </ul>
         
-                     
                         <ul>
                             <li>
                                 <div class="product_name " >
@@ -89,14 +88,14 @@
                                     </div>
                                 </div>
                             </li>
+
                             <li>
                                 <div class="allnumber b">
                 
                                     <div class=" a remove">
                                         <span>-</span>
                                     </div>
-            
-                                    <!-- <div class="numbers">1</div> -->
+
                                     <input  id="Str" class="numbers" type="number" min="1"  value="1"  oninput="if(value>99)value=99"   / oninput="if(value<0)value=1" / onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"  
                                     onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}"  onchange="ShowStr(this.id)" >
                                     <div class=" a add">
@@ -118,7 +117,6 @@
                                 "></i>
                             </li>
                         </ul>
-                      
                     </div>
     
                     <div class="checkout">
@@ -136,80 +134,68 @@
                                     元</div>
                             </div>
                         </div>
-    
                         
-                    <div class="checkout_text top">
-                        購物車內合計有<span>1</span>項商品，消費總金額
-                        <span class="color">NT$ <span>680</span>
-                        </span>
-                    </div>
-    
-                    <a style="text-decoration: none;" href="./cc_cart_step2.html" class="checkout_btn">
-                        下一步
-                    </a>
-    
-                        
+                        <div class="checkout_text top">
+                            購物車內合計有<span>1</span>項商品，消費總金額
+                            <span class="color">NT$ <span>680</span>
+                            </span>
+                        </div>
+        
+                        <a style="text-decoration: none;" href="./cc_cart_step2.html" class="checkout_btn">
+                            下一步
+                        </a>
                     </div>
                 </div>
-
-                <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1GWjk7jeBnh45HvKbWWzFEjMTogIPqcLE" width="640" height="480"></iframe> -->
-               
         </section>
     </main>
 
-    
-  
+    <script>
+        // var product = document.querySelectorAll('.product');
+        // 增加按鈕
+        var add_btn = document.querySelectorAll('.add');
 
-<script>
-    // var product = document.querySelectorAll('.product');
-    // 增加按鈕
-    var add_btn = document.querySelectorAll('.add');
+        // 單個產品總數
+        var number_input =document.querySelectorAll('.numbers');
 
-    // 單個產品總數
-    var number_input =document.querySelectorAll('.numbers');
+        // 減少按鈕
+        var reduce_btn = document.querySelectorAll('.remove');
 
-    // 減少按鈕
-    var reduce_btn = document.querySelectorAll('.remove');
-
-    const show = document.querySelectorAll(".show");
-    console.log(show);
+        const show = document.querySelectorAll(".show");
+        console.log(show);
 
 
-    // 增加商品的按鈕
-    add_btn.forEach(function(ele, i) {
-        // console.log(ele, '寫forEach的時候，帶進來的第一個參數，就是被遍歷的元素');
-        ele.addEventListener('click', function() {
-            // 商品數量顯示 +1
+        // 增加商品的按鈕
+        add_btn.forEach(function(ele, i) {
+            // console.log(ele, '寫forEach的時候，帶進來的第一個參數，就是被遍歷的元素');
+            ele.addEventListener('click', function() {
+                // 商品數量顯示 +1
 
-            if (  number_input[i].value == 99 ) {
-                number_input[i].value = parseInt(number_input[i].value) ;            
-            }
-            else{
-                    number_input[i].value = parseInt(number_input[i].value) + 1;
-            }  
+                if (  number_input[i].value == 99 ) {
+                    number_input[i].value = parseInt(number_input[i].value) ;            
+                }
+                else{
+                        number_input[i].value = parseInt(number_input[i].value) + 1;
+                }  
+            });
         });
-    });
 
-    // 減少商品的按鈕
-    reduce_btn.forEach(function(ele, i) {
-        // console.log(ele, '寫forEach的時候，帶進來的第一個參數，就是被遍歷的元素');
-        ele.addEventListener('click', function() {
-            // 商品數量顯示 -1
+        // 減少商品的按鈕
+        reduce_btn.forEach(function(ele, i) {
+            // console.log(ele, '寫forEach的時候，帶進來的第一個參數，就是被遍歷的元素');
+            ele.addEventListener('click', function() {
+                // 商品數量顯示 -1
 
-            if (  number_input[i].value == 1 || number_input[i].value < 1) {
-                number_input[i].value = 1 ;
-            }else{
-                    number_input[i].value = parseInt(number_input[i].value) - 1;
-            }
-          
+                if (  number_input[i].value == 1 || number_input[i].value < 1) {
+                    number_input[i].value = 1 ;
+                }else{
+                        number_input[i].value = parseInt(number_input[i].value) - 1;
+                }
+            
+            });
         });
-    });
 
-    
-</script>
-
-
-    </div>
+        
+    </script>
 </body>
 
 </html>

@@ -1,6 +1,10 @@
 body {
   margin: 0px;
   padding: 0px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 * {
@@ -10,7 +14,7 @@ body {
 
 main {
   width: 1000px;
-  margin: auto;
+  margin: 0px auto;
   padding: 30px  0px;
 }
 
@@ -30,13 +34,13 @@ main .cart_steps .step {
   width: 15%;
   letter-spacing: 1.5px;
   font-weight: 600;
-  padding: 15px 10px;
-  border: 1px solid gainsboro;
   color: #646464;
-  border-radius: 2px;
   text-align: center;
   font-size: 16px;
   line-height: 32px;
+  padding: 15px 10px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
 }
 
 main .cart_steps .step.active {
@@ -46,9 +50,9 @@ main .cart_steps .step.active {
 
 main .cart_steps .fa-angle-right {
   line-height: 90px;
-  padding: 0px 20px;
   font-size: 22px;
   color: #8b8585;
+  padding: 0px 20px;
 }
 
 main .complete_information {
@@ -61,10 +65,10 @@ main .complete_information .big_text {
   width: -moz-max-content;
   width: max-content;
   text-align: center;
-  background-color: orange;
   padding: 10px 30px;
+  margin: 0px auto;
+  background-color: orange;
   border-radius: 5px;
-  margin: auto;
 }
 
 main .complete_information .big_text .text {
@@ -76,14 +80,13 @@ main .complete_information .big_text .text {
 
 main .complete_information .texts {
   font-size: 16px;
-  padding: 20px 30px;
   font-weight: 600;
   letter-spacing: 1.5px;
+  line-height: 36px;
   border-radius: 5px;
   background-color: #f0efef;
-  margin-top: 20px;
-  line-height: 36px;
   margin: 48px  0px;
+  padding: 20px 30px;
 }
 
 main .complete_information .texts .text {
@@ -98,9 +101,9 @@ main .complete_information .texts .text .color {
 main .complete_information .texts .small_text {
   font-weight: 600;
   letter-spacing: 1.5px;
-  margin-top: 10px;
   font-size: 16px;
   color: orangered;
+  margin-top: 10px;
 }
 
 main .pay_information {
@@ -148,11 +151,25 @@ main .pay_information .content ul li .title {
   font-weight: 500;
 }
 
-main .pay_information .content ul li .padding {
+main .pay_information .content ul li .pay-btn {
   color: white;
-  padding: 6px 10px;
+  font-weight: 600;
+  padding: 4px 10px;
   background-color: orange;
   border-radius: 3px;
+  border: 1px solid orange;
+  -webkit-box-shadow: -1px -1px 1px inset #d68c02;
+          box-shadow: -1px -1px 1px inset #d68c02;
+  cursor: pointer;
+}
+
+main .pay_information .content ul li .pay-btn:hover {
+  background-color: white;
+  -webkit-box-shadow: -1px -1px 1px inset rgba(255, 166, 0, 0.6);
+          box-shadow: -1px -1px 1px inset rgba(255, 166, 0, 0.6);
+  color: orange;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 main .pay_information .content ul li .color {
@@ -178,26 +195,25 @@ main .order_information .check_products .fa-check-square {
 main .order_information .check_products .title {
   font-size: 20px;
   letter-spacing: 1.5px;
-  margin-left: 10px;
   font-weight: 600;
+  margin-left: 10px;
 }
 
 main .order_information .check_products_cntent ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 20px  0px;
+  margin: 0px;
   padding-left: 0px;
   list-style: none;
-  padding: 20px  0px;
   border-bottom: 1px solid gainsboro;
-  margin: 0px;
 }
 
 main .order_information .check_products_cntent ul:nth-child(1) {
   margin-top: 20px;
-  nav-left: 0px;
-  background-color: #c1d2dd;
   padding: 6px 0px;
+  background-color: #c1d2dd;
   border-radius: 3px;
 }
 
@@ -208,8 +224,8 @@ main .order_information .check_products_cntent ul:nth-child(1) li {
 }
 
 main .order_information .check_products_cntent ul li {
-  margin: auto;
   width: 40%;
+  margin: 0px auto;
   text-align: center;
   font-size: 20px;
   font-weight: 600;
@@ -248,10 +264,20 @@ main .order_information .check_products_cntent ul li .product_name {
           flex-direction: column;
 }
 
+main .order_information .check_products_cntent ul li .product_name .small_text {
+  margin-bottom: 5px;
+}
+
 main .order_information .check_products_cntent ul li .product_name .small_text .texts {
-  font-size: 14px;
-  padding-top: 5px;
+  font-size: 13px;
   color: gray;
+  padding-top: 5px;
+}
+
+main .order_information .check_products_cntent ul li .product_name .small_text .texts br {
+  display: block;
+  content: " ";
+  margin-top: 3px;
 }
 
 main .order_information .check_products_cntent ul li .text {
@@ -297,17 +323,17 @@ main .order_information .checkout .checkout_text .number {
 main .user_information {
   padding: 0px  8px;
   padding: 30px;
+  margin-top: 30px;
   border: 2px solid gainsboro;
   border-radius: 8px;
-  margin-top: 30px;
 }
 
 main .user_information .title {
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 1.5px;
-  margin-bottom: 10px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 main .user_information .content ul {
@@ -347,6 +373,7 @@ main .user_information .other_text .text {
 
 main .user_information .other_text .text .color {
   color: orange;
+  cursor: pointer;
 }
 
 main .back_home_btn {
@@ -356,20 +383,38 @@ main .back_home_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 0px;
-  padding: 10px  20px;
-  background-color: orange;
+  padding: 6px  20px;
   margin: 30px  auto;
+  background-color: orange;
+  border: 2px solid orange;
+  -webkit-box-shadow: -4px -4px 5px inset #d38b02;
+          box-shadow: -4px -4px 5px inset #d38b02;
+  border-radius: 5px;
   font-size: 18px;
   color: white;
-  border-radius: 5px;
+  cursor: pointer;
 }
 
 main .back_home_btn .fa-home {
   font-size: 20px;
+  font-weight: 900;
   color: white;
   margin-left: 10px;
   z-index: 10;
-  font-weight: 900;
+}
+
+main .back_home_btn:hover {
+  background-color: white;
+  -webkit-box-shadow: 4px 4px 5px rgba(255, 166, 0, 0.4);
+          box-shadow: 4px 4px 5px rgba(255, 166, 0, 0.4);
+  color: orange;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+main .back_home_btn:hover .fa-home {
+  color: orange;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 /*# sourceMappingURL=cc_cart_step4.css.map */

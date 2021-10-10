@@ -1,12 +1,26 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 main {
   width: 1000px;
-  margin: auto;
+  margin: 0px auto;
   padding: 30px  0px;
 }
 
 main .container {
   width: 1000px;
-  margin: auto;
+  margin: 0px auto;
 }
 
 main .container .cart_steps {
@@ -56,8 +70,8 @@ main .container .all_checkout_information .check_products {
 main .container .all_checkout_information .check_products .title {
   font-size: 24px;
   letter-spacing: 1.5px;
-  margin-left: 10px;
   font-weight: 600;
+  margin-left: 10px;
 }
 
 main .container .all_checkout_information .check_products_cntent ul {
@@ -448,8 +462,8 @@ main .invoice_information .title {
 
 main .invoice_information .title .text {
   font-size: 24px;
-  margin-right: 5px;
   font-weight: 600;
+  margin-right: 5px;
 }
 
 main .invoice_information .title .small_title {
@@ -550,9 +564,9 @@ main .invoice_information .invoice_content .all_content .contents .invoice_infor
 main .invoice_information .invoice_content .all_content .contents .invoice_information_text .input input {
   width: 300px;
   height: 30px;
+  font-size: 16px;
   outline: none;
   border: 1px  solid gainsboro;
-  font-size: 16px;
   border-radius: 3px;
 }
 
@@ -611,12 +625,12 @@ main .pay_information .information_content .btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 15px 8px;
-  margin-left: auto;
-  margin-top: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 15px 8px;
+  margin-left: auto;
+  margin-top: 30px;
   letter-spacing: 1.5px;
 }
 
@@ -629,15 +643,14 @@ main .pay_information .information_content .btns .btn {
   font-size: 18px;
   color: white;
   font-weight: 600;
-}
-
-main .pay_information .information_content .btns .btn.active {
-  background-color: orange;
+  cursor: pointer;
 }
 
 main .pay_information .information_content .btns .prev {
   background-color: gray;
   border: 2px solid gray;
+  -webkit-box-shadow: -3px -3px 5px inset #5c5c5c;
+          box-shadow: -3px -3px 5px inset #5c5c5c;
 }
 
 main .pay_information .information_content .btns .prev:hover {
@@ -645,11 +658,15 @@ main .pay_information .information_content .btns .prev:hover {
   transition: .4s;
   background-color: white;
   color: gray;
+  -webkit-box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.6);
+          box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.6);
 }
 
 main .pay_information .information_content .btns .next {
   background-color: orange;
   border: 2px solid orange;
+  -webkit-box-shadow: -3px -3px 5px inset #d68c01;
+          box-shadow: -3px -3px 5px inset #d68c01;
 }
 
 main .pay_information .information_content .btns .next:hover {
@@ -657,6 +674,8 @@ main .pay_information .information_content .btns .next:hover {
   transition: .4s;
   background-color: white;
   color: orange;
+  -webkit-box-shadow: 3px 3px 5px rgba(214, 139, 1, 0.6);
+          box-shadow: 3px 3px 5px rgba(214, 139, 1, 0.6);
 }
 
 main .pay_information .information_content .btn_text {
@@ -672,8 +691,20 @@ main .pay_information .information_content .btn_text .text {
 
 main .credit_card_back {
   background-color: #c1d2dd;
-  padding: 20px 15px;
   border-radius: 10px;
+  -webkit-box-shadow: -10px -10px 10px inset #bdc9d1;
+          box-shadow: -10px -10px 10px inset #bdc9d1;
+  padding: 20px 15px;
+  color: #383838;
+  display: none;
+  opacity: 0;
+}
+
+main .credit_card_back.show {
+  display: block;
+  opacity: 1;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 main .credit_card_back .small {
@@ -685,9 +716,10 @@ main .credit_card_back .small {
 }
 
 main .credit_card_back .title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   text-align: center;
+  letter-spacing: 2px;
   margin-bottom: 20px;
 }
 
@@ -706,26 +738,50 @@ main .credit_card_back .content .texts {
   font-weight: 600;
   padding-left: 5px;
   margin-left: 25px;
-  border-left: 5px solid #DF744A;
   margin-bottom: 15px;
+  border-left: 5px solid #DF744A;
 }
 
 main .credit_card_back .content .text {
   font-size: 14px;
   margin-bottom: 15px;
-  margin-left: 25px;
+  margin-left: 28px;
+}
+
+main .credit_card_back .content .text br {
+  display: block;
+  content: " ";
+  margin-top: 5px;
 }
 
 main .credit_card_back .content .btn {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin-top: 10px;
-  margin: auto;
-  padding: 6px 25px;
+  width: 100%;
+  max-width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px auto;
+  padding: 2px 25px;
   font-size: 16px;
   font-weight: 600;
   color: white;
   background-color: orange;
+  border: 2px solid orange;
+  border-radius: 3px;
+  -webkit-box-shadow: -1px -1px 5px inset #d68b01;
+          box-shadow: -1px -1px 5px inset #d68b01;
+  cursor: pointer;
+}
+
+main .credit_card_back .content .btn:hover {
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 5px rgba(214, 139, 1, 0.6);
+          box-shadow: 1px 1px 5px rgba(214, 139, 1, 0.6);
+  color: orange;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 /*# sourceMappingURL=cc_cart_step2.css.map */

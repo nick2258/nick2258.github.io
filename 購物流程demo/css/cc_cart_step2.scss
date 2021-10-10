@@ -1,11 +1,20 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
 main{
     width: 1000px;
-    margin: auto;
+    margin:0px auto;
     padding: 30px  0px;
-    // margin-bottom: 500px;
     .container{
         width: 1000px;
-        margin: auto;
+        margin:0px auto;
         // 購物流程步驟
         .cart_steps{
             padding: 20px 50px;
@@ -42,20 +51,21 @@ main{
                 padding: 0px 20px;
             }
         }
-        
+        // 購物明細
         .all_checkout_information{
             // 購物明細標題
             .check_products{
                 padding-top: 30px;
+
                 display: flex;
                 .title{
                     font-size: 24px;
                     letter-spacing: 1.5px;
-                    margin-left: 10px;
                     font-weight: 600;
+
+                    margin-left: 10px;
                 }
             }
-
             //  購物明細內容
              .check_products_cntent{
                 ul{
@@ -206,41 +216,40 @@ main{
                 font-weight: 600;
                 letter-spacing: 1.5px;
                 text-align: end;
-            .top{
-                margin-top: 16px;
-                &:nth-child(1){
-                    margin-top: 0px;
+                .top{
+                    margin-top: 16px;
+                    &:nth-child(1){
+                        margin-top: 0px;
+                    }
                 }
-            }
-            .low_shipping{
-                color: orangered;
-            }
-            .shipping_information{
-                margin-left: auto;
-                .transport{
-                    display: flex;
-                    line-height: 30px;
-                    select{
-                        width: 100px;
-                        height: 30px;
+                .low_shipping{
+                    color: orangered;
+                }
+                .shipping_information{
+                    margin-left: auto;
+                    .transport{
+                        display: flex;
+                        line-height: 30px;
+                        select{
+                            width: 100px;
+                            height: 30px;
 
-                        text-align: center;
-                        font-size: 16px;
-                        font-weight: 600;
+                            text-align: center;
+                            font-size: 16px;
+                            font-weight: 600;
 
-                        padding: 0px 5px;
-                        margin: 0px 10px;
+                            padding: 0px 5px;
+                            margin: 0px 10px;
 
-                        outline: none;
-                        border: 1px solid gainsboro;
+                            outline: none;
+                            border: 1px solid gainsboro;
+                        }
                     }
                 }
             }
-            }
         }
-      
     }
-
+    // 訂購人資料
     .order_information{
         width: 1000px;
 
@@ -409,13 +418,14 @@ main{
             color: #ff0000 ;
         }
         .title{
-            // padding-left: 8px;
             letter-spacing: 1.5px;
+
             margin-bottom: 20px;
             .text{
                 font-size: 24px;
-                margin-right: 5px;
                 font-weight: 600;
+
+                margin-right: 5px;
             }
             .small_title{
                 color: gray;
@@ -423,18 +433,21 @@ main{
                 font-size: 500;
             }
         }
+        // 發票內容
         .invoice_content{
             letter-spacing: 1.5px;
+
             margin: 30px 0px;
-            // padding: 20px;
-            // background-color: bisque;
+            // 發票標題
             .small_title{
                 font-size: 18px;
                 font-weight: 600;
+
                 margin-top: 30px;
                 margin-bottom: 10px;
                 padding-left: 12px;
             }
+            // 發票表格
             .all_content{
                 border: 1px solid rgb(184, 182, 182);
                 .contents{
@@ -477,7 +490,6 @@ main{
                         }
                         .small_text{
                             margin-top: 5px;
-                           
 
                             color: gray;
                         }
@@ -494,17 +506,22 @@ main{
                             input{
                                 width: 300px;
                                 height: 30px;
+
+                                font-size: 16px;
+
                                 outline: none;
                                 border: 1px  solid gainsboro;
-                                font-size: 16px;
                                 border-radius: 3px;
                             }
                             select{
                                 width: 150px;
+
                                 outline: none;
                                 border: 1px  solid gainsboro;
+
                                 font-size: 16px;
                                 font-weight: 600;
+
                                 padding: 0px 8px;
                                 padding-left: 8px;
                             }
@@ -517,12 +534,14 @@ main{
             }
         }
     }
+    // 付款方式
     .pay_information{
         padding: 30px  8px;
         .title{
             font-size: 20px;
             font-weight: 600;
             letter-spacing: 2px;
+
             margin-bottom:20px ;
         }
         .information_content{
@@ -547,49 +566,55 @@ main{
                     color: gray;
                 }
             }
+            // 選擇付款方式 上一步下一步按鈕
             .btns{
                 display: flex;
+                justify-content: space-between;
+
                 padding: 15px 8px;
                 margin-left: auto;
                 margin-top: 30px;
-                // width: max-content;
-                justify-content: space-between;
+
                 letter-spacing: 1.5px;
                 .btn{
                     width: max-content;
+
                     padding: 6px 22px;
+
                     border-radius: 3px;
+
                     font-size: 18px;
-                    // margin-left: 20px;
                     color: white;
                     font-weight: 600;
-                    &.active{
-                        background-color: orange;
-                    }
+
+                    cursor: pointer;
                 }
                 .prev{
                     background-color: gray;
                     border: 2px solid gray;
+                    box-shadow: -3px -3px 5px inset rgb(92, 92, 92);
                     &:hover{
                         transition: .4s;
                         background-color: white;
                         color: gray;
+                        box-shadow: 3px 3px 5px  rgba(128, 128, 128, 0.6);
                     }
                 }
                 .next{
                     background-color: orange;
                     border: 2px solid orange;
+                    box-shadow: -3px -3px 5px inset rgb(214, 140, 1);
                     &:hover{
                         transition: .4s;
                         background-color: white;
                         color: orange;
+                        box-shadow: 3px 3px 5px  rgba(214, 139, 1, 0.6);
+
                     }
                 }
-                
             }
             .btn_text{
                 text-align: center;
-                
                 .text{
                     font-size: 16px;
                     font-weight: 600;
@@ -599,52 +624,99 @@ main{
             }
         }
     }
+    // 信用卡退款流程
     .credit_card_back{
         background-color: #c1d2dd;
-        padding: 20px 15px;
         border-radius: 10px;
+        box-shadow: -10px -10px 10px inset #bdc9d1;
+
+        padding: 20px 15px;
+
+        color: #383838;
+
+        display: none;
+        opacity: 0;
+        &.show{
+            display: block;
+            opacity: 1;
+
+            transition: .6s;
+        }
         .small{
             font-size: 16px;
             color: orangered;
             font-weight: 600;
             text-align: center;
+            
             margin-bottom: 20px;
         }
         .title{
-            font-size: 20px;
+            font-size: 24px;
             font-weight: 600;
             text-align: center;
+            letter-spacing: 2px;
+
             margin-bottom: 20px;
         }
         .content{
             letter-spacing: 2px;
             .small_title{
                 margin-bottom: 15px;
+
                 font-weight: 600;
                 font-size: 16px;
             }
             .texts{
                 font-size: 16px;
                 font-weight: 600;
+
                 padding-left: 5px;
                 margin-left: 25px;
-                border-left: 5px solid #DF744A;
                 margin-bottom: 15px;
+
+                border-left: 5px solid #DF744A;
             }
             .text{
                 font-size: 14px;
+
                 margin-bottom: 15px;
-                margin-left: 25px;
+                margin-left: 28px;
+                // 文字間距
+                br{
+                    display: block;
+                    content: " ";
+                    margin-top: 5px;
+                }
             }
+            
             .btn{
-                width: max-content;
-                margin-top: 10px;
-                margin: auto;
-                padding: 6px 25px;
+                width: 100%;
+                max-width: 100px;
+
+                display: flex;
+                justify-content: center;
+                
+                margin:0px auto;
+                padding: 2px 25px;
+
                 font-size: 16px;
                 font-weight: 600;
                 color: white;
+
                 background-color: orange;
+                border: 2px solid orange;
+                border-radius: 3px;
+                box-shadow: -1px -1px 5px inset  rgba(214, 139, 1, 1);
+
+                cursor: pointer;
+                &:hover{
+                    background-color: white;
+                    box-shadow: 1px 1px 5px  rgba(214, 139, 1, 0.6);
+
+                    color: orange;
+
+                    transition: .6s;
+                }
             }
         }
     }
