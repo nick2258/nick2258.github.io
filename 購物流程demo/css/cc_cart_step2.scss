@@ -6,23 +6,29 @@ main{
     .container{
         width: 1000px;
         margin: auto;
+        // 購物流程步驟
         .cart_steps{
             padding: 20px 50px;
             padding-bottom: 50px;
+
             display: flex;
             justify-content: center;
             border-bottom: 1px solid gainsboro;
+            // 單個流程
             .step{
                 width: 15%;
+
                 letter-spacing: 1.5px;
                 font-weight: 600;
-                padding: 15px 10px;
-                border: 1px solid gainsboro;
                 color: rgb(100, 100, 100);
-                border-radius: 2px;
                 text-align: center;
                 font-size: 16px;
                 line-height: 32px;
+
+                padding: 15px 10px;
+
+                border: 1px solid gainsboro;
+                border-radius: 5px;
                 &.active{
                     border: 2px solid rgb(179, 171, 171);
                     color: #DF744A;
@@ -30,56 +36,59 @@ main{
             }
             .fa-angle-right{
                 line-height:90px ;
-                padding: 0px 20px;
                 font-size: 22px;
                 color: rgb(139, 133, 133);
+
+                padding: 0px 20px;
             }
         }
-
+        
         .all_checkout_information{
-            padding-top: 30px;
+            // 購物明細標題
             .check_products{
+                padding-top: 30px;
                 display: flex;
-                .fa-check-square{
-                    color: rgb(32, 148, 32);
-                    font-size: 24px;
-                }
                 .title{
-                    font-size: 20px;
+                    font-size: 24px;
                     letter-spacing: 1.5px;
                     margin-left: 10px;
                     font-weight: 600;
                 }
             }
-            .check_products_cntent{
+
+            //  購物明細內容
+             .check_products_cntent{
                 ul{
-                    // margin-bottom: 500px;
                     display: flex;
-                    // margin-left: 0px;
-                    padding-left: 0px;
-                    // text-decoration: none;
-                    list-style: none;
-                    padding:20px  8px;
-                    border-bottom: 1px solid gainsboro;
+                    align-items: center;
+
                     margin: 0px;
+                    padding-left: 0px;
+                    padding:20px  8px;
+
+                    list-style: none;
+
+                    border-bottom: 1px solid gainsboro;
                     &:nth-child(1){
                         margin-top: 20px;
-                        nav-left: 0px;
-                        background-color: #c1d2dd;
                         padding: 6px 0px;
+
+                        border: 0px;
+                        background-color: #c1d2dd;
                         border-radius: 3px;
                     }
-                    &:nth-last-child(1){
-                        
-                    }
                     li{
-                        margin: auto;
-                        width:40% ;
+                        width:40%;
+
+                        margin:0px auto;
+
                         text-align: center;
-                        font-size: 20px;
+                        font-size: 18px;
                         font-weight: 600 ;
+
                         display: flex;
                         justify-content: center;
+
                         position: relative;
                         &:nth-last-child(1){
                             width: 15%;
@@ -87,103 +96,183 @@ main{
                         &:nth-last-child(2){
                             width: 15%;
                         }
+                        // 品名
                         .product_name{
                             display: flex;
-                            line-height: 65px;
-                            // width: max-content;
+                            align-items: center;
+                            // 產品圖
                             .pic{
                                 margin-right: 20px;
                                 img{
-                                    width: 150px;
-                                    height: 100px;
-
                                     width: 100px;
                                     height: 65px;
+
+                                    border-radius: 3px;
+        
                                     display: block;
                                 }
                             }
                         }
                         .text{
-                            line-height: 65px;
                             font-size: 16px;
                             letter-spacing: 1.5px;
                             font-weight: 500;
                         }
                         .fa-trash-alt{
-                            line-height: 65px;
                             font-size: 18px;
                             margin-left: 10px;
                             color: gray;
+
+                            cursor: pointer;
                         }
-                        .cost_text{
-                            font-weight:600;
-                            line-height: 65px;
-                            font-size: 15px;
-                            letter-spacing: 1.5px;
+                        .texts{
+                            display: flex;
+                            align-items: center;
+                            .cost_text{
+                                font-weight:600;
+                                font-size: 15px;
+                                letter-spacing: 1.5px;
+                            }
                         }
+                     
                         .allnumber{
                             display: flex;
+                            align-items: center;
+                        
                             font-size: 16px;
-                            line-height: 45px;
-                            line-height: 30px;
+                       
                             position: relative;
-                           
+                            .mumber_text{
+                                margin-right: 15px;
+                            }
+                            input{
+                                width: 120px;
+
+                                font-size: 18px;
+
+                                margin: 0px  20px;
+                                outline: none;
+                            }
+                            .numbers{
+                                width: 80px;
+                                height: 30px;
+
+                                text-align: center;
+                                font-size: 18px;
+                               
+                                margin: 0px  15px;
+                            }
+                            .a{
+                                width: 30px;
+                                height: 30px;
+
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                font-size: 18px;
+                                font-weight: 600;
+
+                                border: 1px solid gainsboro;
+                                cursor: pointer;
+                                &:hover{
+                                    border: 1px solid gray;
+
+                                    color: gray;
+                                    transition: .6s;
+                                }
+                                &:active{
+                                    border: 1px solid gray;
+
+                                    color: gray;
+                                    transition: 0.1s;
+                                }
+                            }
                         }
                     }
                 }
             }
+            //  確認訂購商品下方文字
             .checkout{
                 width: max-content;
+
                 display: flex;
                 flex-direction: column;
+
                 margin-left: auto;
+                padding: 16px 0px;
+
                 font-size: 16px;
                 font-weight: 600;
                 letter-spacing: 1.5px;
                 text-align: end;
-                padding-bottom: 20px;
-                .top{
-                    margin-top: 20px;
+            .top{
+                margin-top: 16px;
+                &:nth-child(1){
+                    margin-top: 0px;
                 }
-                .checkout_text{
-                    .number{
-                        font-size: 24px;
-                        color: orangered;
+            }
+            .low_shipping{
+                color: orangered;
+            }
+            .shipping_information{
+                margin-left: auto;
+                .transport{
+                    display: flex;
+                    line-height: 30px;
+                    select{
+                        width: 100px;
+                        height: 30px;
+
+                        text-align: center;
+                        font-size: 16px;
+                        font-weight: 600;
+
+                        padding: 0px 5px;
+                        margin: 0px 10px;
+
+                        outline: none;
+                        border: 1px solid gainsboro;
                     }
                 }
+            }
             }
         }
       
     }
 
     .order_information{
-        position: relative;
         width: 1000px;
-        margin: auto;
+
+        position: relative;
+
+        margin:0px auto;
         padding: 30px  0px;
         padding-bottom: 45px;
+        
         border-top: 1px solid gainsboro;
         border-bottom: 1px  solid gainsboro;
-      
+        // 提醒文字
         .remind_text{
             position: absolute;
-            bottom:15px  ;
+            bottom:15px ;
             right: 10px;
+
             font-size: 14px;
             font-weight: 600;
             letter-spacing: 1.5px;
             color: orangered ;
         }
         .title{
-            // padding-left: 8px;
             font-weight: 600;
             letter-spacing: 1.5px;
-            // margin: auto;
-            text-align: center;
+
             margin-bottom: 20px;
             margin-top: 30px;
+
             display: flex;
             justify-content: center;
+            align-content: flex-end;
             .text{
                 font-size: 20px;
                 font-size: 24px;
@@ -193,124 +282,129 @@ main{
                 font-size: 14px;
                 transform: translateY(10px);
             }
+            // 同訂購人資料勾選框
             .form_check_input{
-                transform: translateY(1px);
+                border-radius: 3px;
             }
-            // .form_check {
-            //     margin-top: 10px;
-            // }
         }
+        // 收件人資料內容
         .order_information_content{
             display: flex;
             flex-wrap: wrap;
+
             padding: 0px  8px;
             padding: 30px 140px;
+            margin-bottom: 30px;
+
             border: 2px solid gainsboro;
             border-radius: 15px;
-            margin-bottom: 30px;
-            // background-color: bisque;
-            .contents{
-                // width: calc(50% - 15px);
-                // width: max-content;
-                
-                // margin-right: 30px;
-            
-                margin-bottom: 20px;
-
+            // 單個欄位
+            .contents{ 
                 width: 100%;
+        
+                margin-bottom: 20px;
                 &:nth-child(1){
                     margin-right: 0px;
-                    // width: 60%;
                 }
                 &:nth-child(2){
                     margin-right: 0px;
-               
                 }
                 &:nth-child(3){
                     width: 100%;
                     .informations{
                         input{
                             width: 650px;
+                            border-radius: 5px;
                         }
                     }
-                   
                 }
                 &:nth-child(4){
                     width: 100%;
-                    // margin-bottom: 0px;
                     input{
+                        width: 705px;
+                        height: 32px;
+
                         outline: none;
                         border-radius:3px ;
                         border: 1px solid gainsboro;
-                        width: 705px;
-                        height: 32px;
+                        border-radius: 5px;
+
                         margin-top: 10px;
-                    }
-                    .informations{
-                       
                     }
                 }
                 &:nth-last-child(1){
                     margin-bottom: 0px;
                 }
+                // 收件人資料
                 .informations{
                     display: flex;
-
                     .informations_title{
                         font-weight: 600;
                         font-size: 18px;
                         line-height: 32px;
+
                         margin-bottom: 0px;
                         margin-right: 10px;
                     }
                     input{
                         width: 220px;
                         height: 30px;
+
                         font-size: 16px;
-                        outline: none;
+
                         padding: 0px 5px;
+
                         border: 1px  solid gainsboro;
-                        border-radius: 2px;
+                        border-radius: 5px;
                     }
                     select{
-                        font-size: 16px;
                         width: 200px;
                         height: 32px;
+
                         margin-right: 20px;
-                        outline: none;
+
                         border: 1px solid gainsboro;
+                    }
+                    .input-style{
+                        font-size: 16px;
+                        outline: none;
                     }
                     .information_text{
                         font-size: 16px;
-                        margin-top: 5px;
                         letter-spacing: 1px;
                         color: gray;
+
+                        margin-top: 5px;
                     }
                 }
                 .information_small_text{
                     font-size: 14px;
-                    margin-top: 5px;
                     letter-spacing: 1px;
                     color: gray;
+
+                    margin-top: 5px;
                 }
             }
         }
-       
     }
+    // 發票資訊
     .invoice_information{
-        position: relative;
         width: 1000px;
-        margin: auto;
+
+        position: relative;
+
+        margin:0px auto;
         padding: 45px  8px;
         padding-bottom: 60px;
-        // border-top: 1px solid gainsboro;
+
         border-bottom: 1px  solid gainsboro;
         .remind_text{
             position: absolute;
-            font-weight: 600;
-            letter-spacing: 1.5px;
             bottom:15px  ;
             right: 10px;
+
+            font-weight: 600;
+            letter-spacing: 1.5px;
             font-size: 14px;
             color: #ff0000 ;
         }
