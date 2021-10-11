@@ -1,7 +1,8 @@
 body {
-  margin: 0px;
+  margin: 0px auto;
   padding: 0px;
   background-image: url(../img/bg.png);
+  position: relative;
 }
 
 * {
@@ -133,7 +134,9 @@ input, select {
 }
 
 nav {
+  max-width: 1920px;
   width: 100%;
+  margin: 0px auto;
 }
 
 nav .navbar-brand img {
@@ -177,12 +180,15 @@ nav .mr-auto .dropdown-menu .dropdown-item {
 }
 
 main {
+  width: 100%;
   overflow-x: hidden;
   max-width: 1920px;
+  margin: 0px auto;
   position: relative;
 }
 
 main .banner {
+  max-width: 1920px;
   width: 100%;
   height: auto;
   position: relative;
@@ -200,7 +206,7 @@ main .banner .pic {
 }
 
 main .banner .pic .img {
-  width: 80vw;
+  width: 80%;
   height: 45.5vw;
   border-radius: 0px 15px 15px 0px;
   -webkit-box-shadow: 8px 8px 10px #3838382d;

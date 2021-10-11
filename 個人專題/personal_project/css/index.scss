@@ -1,7 +1,9 @@
 body{
-    margin: 0px;
+    margin: 0px auto;
     padding: 0px;
     background-image: url(../img/bg.png);
+
+    position: relative;
 }
 
 *{
@@ -102,7 +104,9 @@ input,select{
 }
 
 nav{
+    max-width: 1920px;
     width: 100%;
+    margin: 0px auto;
     // background-color: #D9CEC5;
     .navbar-brand{
         img{
@@ -144,12 +148,15 @@ nav{
 }
 
 main{
+    width: 100%;
     overflow-x: hidden;
     max-width: 1920px;
+    margin: 0px auto;
 
     position: relative;
     // banner
     .banner{
+        max-width: 1920px;
         width: 100%;
         height: auto;
         // background-color: #f2f0ed;
@@ -164,7 +171,7 @@ main{
 
             position: relative;
             .img{
-                width: 80vw;
+                width: 80%;
                 height: 45.5vw;
 
                 border-radius: 0px 15px 15px 0px;
