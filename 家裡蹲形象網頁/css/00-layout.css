@@ -278,6 +278,7 @@ nav .nav-items .logo img {
 .hamburger-content .hamburger-links .hamburger-link .small-hamburger-link {
   position: relative;
   padding-bottom: 16px;
+  color: white;
 }
 
 .hamburger-content .hamburger-links .hamburger-link .small-hamburger-link .small-hamburger-link-hover {

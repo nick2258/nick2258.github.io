@@ -135,6 +135,8 @@ main .banner .banner-content .banner-pic .banner-title {
   right: 120px;
   color: rgba(46, 46, 138, 0.3);
   padding: 5px;
+  background-color: white;
+  border-radius: 8px;
   color: transparent;
   text-shadow: 3px 3px 3px rgba(21, 21, 51, 0.4);
 }
