@@ -149,25 +149,29 @@ nav{
 main{
     width: 100%;
     max-width: 1000px;
-
+    // max-width: 1920px;
+    // padding: 0px 480px;
     margin: 0px auto;
  
     position: relative;
+    // background-color: #383838;
     &.show{
         display: none;
     }
     
     .nav-btn{
         width: max-content;
-
         border: 2px solid steelblue;
         background-color: steelblue;
         box-shadow: -3px -3px 5px inset rgb(49, 92, 128);
         border-radius: 5px;
 
-        position: fixed;
+        // position: fixed;
+        position: sticky;
         top: 16px;
-        right: 16px;
+        right: 0px;
+        left: 100%;
+        transform: translateX(15vw);
 
         cursor: pointer;
         .fa-bars{
@@ -367,12 +371,13 @@ main{
                     overflow-x: hidden;
                     &:hover{
                         .demo{
-                            transform: translateX(0px);
+                            transform: translate(-50%,-50%) scale(1);
+                            // transform: translateX(0px);
                             align-items: center;
 
                             opacity: 1;
  
-                            transition: 1s ease-in-out;
+                            transition: .8s ease-in-out;
                             .demo-text{
                                 opacity: 1;
 
@@ -396,9 +401,9 @@ main{
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        // top: 50%;
-                        // left: 50%;
-                        transform: translate(-100%);
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%) scale(0);
                         // padding: 5px 10px;
                         background-color: rgba(220, 20, 60, 0.39);
                         background-color: #38383879;

@@ -169,9 +169,13 @@ main .nav-btn {
   -webkit-box-shadow: -3px -3px 5px inset #315c80;
           box-shadow: -3px -3px 5px inset #315c80;
   border-radius: 5px;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 16px;
-  right: 16px;
+  right: 0px;
+  left: 100%;
+  -webkit-transform: translateX(15vw);
+          transform: translateX(15vw);
   cursor: pointer;
 }
 
@@ -420,14 +424,14 @@ main .part .project-contents .project .project-pic {
 }
 
 main .part .project-contents .project .project-pic:hover .demo {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   opacity: 1;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition: .8s ease-in-out;
+  transition: .8s ease-in-out;
 }
 
 main .part .project-contents .project .project-pic:hover .demo .demo-text {
@@ -459,8 +463,10 @@ main .part .project-contents .project .project-pic .demo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transform: translate(-100%);
-          transform: translate(-100%);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
   background-color: rgba(220, 20, 60, 0.39);
   background-color: #38383879;
   border-radius: 8px;
