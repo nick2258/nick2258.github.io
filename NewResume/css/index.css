@@ -396,10 +396,6 @@ main .personal-information .information .information-items .information-item a .
   margin-bottom: 8px;
 }
 
-main .part {
-  padding-top: 32px;
-}
-
 main .part .title {
   font-size: 48px;
   font-weight: 600;
@@ -804,6 +800,7 @@ main .part .my-history-content .all-history-content .skill .skill-title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 16px;
 }
 
 main .part .my-history-content .all-history-content .skill .skill-title .fa-tools {
@@ -1024,7 +1021,6 @@ main .part .project-contents .project .project-information .demo {
 
 main .part .project-contents .project .project-information .demo .demo-text {
   margin: 0px auto;
-  margin-bottom: 24px;
   padding: 1px 32px;
   border-radius: 16px;
   background-color: lightcoral;
@@ -1032,6 +1028,23 @@ main .part .project-contents .project .project-information .demo .demo-text {
   color: white;
   letter-spacing: 1px;
   z-index: 99;
+}
+
+main .part .project-contents .project .project-information .view-size {
+  font-size: 14px;
+  color: #646464;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 8px auto;
+  padding-bottom: 16px;
+  letter-spacing: .5px;
 }
 
 main .part .project-contents .project .project-information .project-name {
