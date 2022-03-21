@@ -14,7 +14,6 @@ body{
     color: #383838;
 
     letter-spacing: 1px;
-
 }
 
 *{
@@ -50,10 +49,6 @@ nav{
     opacity: 0;
 
     position: fixed;
-
-
-    // display: none;
-    
     &.show{
         display: block;
         transform: translateX(0px);
@@ -88,29 +83,33 @@ nav{
         .nav-items{
             width: max-content;
             height: max-content;
+
             position: absolute;
-            display: flex;
-            flex-direction: column;
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
+
+            display: flex;
+            flex-direction: column;
             .nav-item{
-                font-size: 48px;
-                font-weight: 600;
                 margin-bottom: 32px;
                 padding-bottom: 8px;
+
                 position: relative;
                 display: flex;
                 justify-content: center;
+
+                font-size: 48px;
+                font-weight: 600;
                 color: rgb(86, 99, 112);
                 &::after{
-                    width: 0px;
                     content: " ";
+
+                    width: 0px;
                     position: absolute;
                     bottom: 0px;
                     left: 50%;
                     transform: translateX(-50%);
-
                 }
                 &:hover{
                     &::after{
@@ -120,16 +119,9 @@ nav{
                         transition: .6s;
                     }
                 }
-                // &:nth-last-child(1){
-                //     margin-bottom: 0px;
-                // }
-                
-               
             }
         }
-       
     }
-    
 }
 
 // 上方白色背景
@@ -168,7 +160,9 @@ main{
     // 漢堡標按鈕
     .nav-btn{
         width: max-content;
+
         display: none;
+
         border: 2px solid steelblue;
         background-color: steelblue;
         box-shadow: -3px -3px 5px inset rgb(49, 92, 128);
@@ -216,12 +210,8 @@ main{
         flex-direction: row-reverse;
         margin: 24px 0px;
         padding-top: 24px;
-        // padding-bottom: 24px;
+
         position: relative;
-        @media screen and (max-width:1100px) {
-            // flex-direction: row;
-            
-        }
         // 個人資訊大頭
         .personal-pic{
             @media screen and (max-width:1100px) {
@@ -229,10 +219,12 @@ main{
             }
             @media screen and (max-width:650px) {
                 width: 180px;
+
                 position: absolute;
-                z-index: 50;
                 top: 0px;
                 right: 0px;
+
+                z-index: 50;
             }
             img{
                 width: 300px; 
@@ -240,6 +232,7 @@ main{
                 @media screen and (max-width:1100px) {
                     width: 100%;
                     height: auto;
+
                     opacity: 0.9;
                 }
             }
@@ -247,6 +240,7 @@ main{
         // 個人資訊內容
         .information{
             width: calc(100% - 348px);
+
             margin-right: 48px;
             @media screen and (max-width:1100px) {
                 width: calc(65% - 32px);
@@ -255,24 +249,23 @@ main{
             @media screen and (max-width:650px) {
                 width: 100%;
                 position: relative;
-                // z-index: 50;
+
                 padding-top: 150px;
-                // background-color: rgba(255, 255, 255, 0.637);
-            }
-            @media screen and (max-width:550px) {
-                // width: calc(65% - 16px);
-                // margin-right: 16px;
             }
             // 姓名
             .name{
                 width: 100%;
+
                 font-size: 36px;
                 font-weight: 600;
                 letter-spacing: 2px;
+
                 padding: 24px 8px;
                 padding-top: 0px;
+
                 border-bottom: 1px solid gainsboro;
             }
+            // 個人資訊
             .information-items{
                 padding-left: 16px;
                 // 單個資訊
@@ -334,7 +327,6 @@ main{
     }
 
     .part{
-        // padding-top: 16px;
         // 標題
         .title{
             font-size: 48px;
@@ -364,19 +356,6 @@ main{
             width: 100%;
             height: max-content;
             position: relative;
-            // 白色遮罩
-            // &::after{
-            //     content: " ";
-            //     width: 100%;
-            //     height: 100%;
-            //     position: absolute;
-            //     top: 0px;
-            //     left: 0px;
-            //     background-color: rgba(255, 255, 255, 0.3);
-            //     @media screen and (max-width:800px) {
-            //         width: 80%;
-            //     }
-            // }
             @media screen and (max-width:800px) {
                 margin-bottom: 16px;
             }
@@ -384,6 +363,7 @@ main{
             img{
                 width: 100%;
                 height: auto;
+
                 opacity: .6;
                 border-radius: 8px;
                 @media screen and (max-width:800px) {
@@ -397,6 +377,7 @@ main{
                     content: " ";
                     width: 100%;
                     height: 100%;
+
                     position: absolute;
                     top: 0px;
                     left: 0px;
@@ -409,14 +390,17 @@ main{
             // 關於我文字內容
             .all-about-text{
                 width: max-content;
+                height: max-content;
+
                 padding: 32px 48px;
                 border-radius: 8px;
-                height: max-content;
+
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
                 right: 10%;
                 z-index: 5;
+
                 background-color: rgba(255, 255, 255, 0.7);
                 @media screen and (max-width:800px) {
                     position: relative;
@@ -424,6 +408,7 @@ main{
                     right: 0px;
                     left: 0px;
                     transform: translateY(0px);
+
                     margin-top: -45%;
                     margin-left: auto;
                     padding: 16px 24px;
@@ -438,11 +423,12 @@ main{
                     p{
                         max-width: 100%;
                         width: max-content;
+
                         padding: 16px ;
+
                         font-size: 18px;
                         font-weight: 600;
                         letter-spacing: 1.5px;
-                        // text-align: center;
                         line-height: 28px;
                         @media screen and (max-width:800px) {
                             font-size: 16px;
@@ -451,15 +437,15 @@ main{
                         @media screen and (max-width:550px) {
                             font-size: 14px;
                             line-height: 20px;
-                            padding: 8px;
                             letter-spacing: 0.8px;
+
+                            padding: 8px;
                         }
                         br{
                             display: block;
                             content: " ";
                             padding-top: 8px;
                         }
-        
                     }
                 }
             }
@@ -472,104 +458,23 @@ main{
             p{
                 max-width: 100%;
                 width: max-content;
+
                 padding: 16px ;
+
                 font-size: 18px;
                 font-weight: 600;
                 letter-spacing: 1.5px;
-                // text-align: center;
                 line-height: 28px;
                 br{
                     display: block;
                     content: " ";
                     padding-top: 8px;
                 }
-
             }
         }
 
         // 技能 學經歷
         .my-history-content{
-            ul{
-                padding: 0px 32px;
-                padding-top: 24px;
-                li{
-                    padding-top: 24px;
-                    &:nth-child(1){
-                        padding-top: 0px;
-                    }
-                    .small-title{
-                        font-size: 24px;
-                        padding: 0px 8px;
-                        padding-bottom:8px ;
-                        border-bottom: 1px solid gainsboro;
-                        font-weight: 600;
-                    } 
-                    .small-content{
-                        padding: 0px 8px;
-                        position: relative;
-                        // margin-left: 16px;
-                        // border-left: 2px solid aqua;
-
-                        
-                        // padding-left: 24px;
-                        &::after{
-                            content: " ";
-                            // width: 100%;
-                            width: 1px;
-                            height:100%;
-                            // border-radius: 50%;
-                            background-color: aqua;
-                            position: absolute;
-                            left: 0px;
-                        } 
-                        .small-text{  
-                            font-size: 18px;
-                            br{
-                                display: block;
-                                content: " ";
-                                padding-top: 8px;
-                            }
-                        }
-                        .sub-title{
-                            font-size: 20px;
-                            font-weight: 600;
-                            padding-left: 8px;
-                            padding-left: 30px;
-                            // border-left:5px solid salmon ;
-                            margin-top: 16px;
-
-                            position: relative;
-                            // transform: translateX(-15px);
-                            &::before{
-                                content: " ";
-                                width: 24px;
-                                height:24px;
-                                border-radius: 50%;
-                                background-color: aqua;
-                                position: absolute;
-                                left: 0px;
-                            }
-                         
-
-                        }
-                        .date{
-                            padding-top: 5px;
-                            padding-left: 16px;
-                            padding-left: 30px;
-                            font-size: 16px;
-                            color: rgb(209, 174, 128);
-                        }
-                        .text{
-                            margin-top: 8px;
-                            padding-left: 16px;
-                            padding-left: 30px;
-                            font-size: 18px;
-                            line-height: 36px;
-                        }
-                    }
-                  
-                }
-            }
             .all-history-content{
                 padding: 16px 32px;
                 @media screen and (max-width:800px) {
@@ -610,13 +515,15 @@ main{
                     border-left: 2px solid rgb(87, 147, 196);
                     // 菱形
                     &::before{
+                        content: " ";
+                        
+                        width: 22px;
+                        height: 22px;
+
                         position: absolute;
                         top: 3px;
                         left: -11px;
 
-                        content: " ";
-                        width: 22px;
-                        height: 22px;
                         transform: rotate(45deg);
                         background-color: rgb(87, 147, 196);
                     }
@@ -655,8 +562,8 @@ main{
                         // 學經歷內容
                         .texts{
                             margin: 0px;
-                            padding: 0px;
                             padding:16px 0px;
+
                             letter-spacing: 1px;
                             line-height: 24px;
                             li{
@@ -674,13 +581,14 @@ main{
                         font-size: 32px;
                         font-weight: 600;
                         color: rgb(165, 87, 42);
-                        padding-bottom: 8px;
+
                         border-bottom: 1px  solid #383838;
                         display: flex;
                         justify-content: center;
                         align-items: center;
 
                         margin-top: 16px;
+                        padding-bottom: 8px;
                         .fa-tools{
                             margin-right: 16px;
                         }
@@ -696,27 +604,25 @@ main{
                             padding: 0px 16px;
                         }
                         @media screen and (max-width:650px) {
-                            // justify-content: flex-start;
                             padding: 0px 8px;
                         }
-                        // @media screen and (max-width:550px) {
-                        //     padding: 8px ;
-                        // }
                         .skill-icon{
                             width: 110px;
                             height: 110px;
+
                             border-radius: 50%;
                             background-color: whitesmoke;
                             box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.712);
                             border: 5px solid rgb(165, 87, 42);
+
                             color: rgb(165, 87, 42);
                             font-size: 16px;
                             font-weight: 600;
+
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
                             align-items: center;
-                            // margin-right: 16px;
                             @media screen and (max-width:1100px) {
                                 width: calc(25% - 24px);
                                 height: 52px;
@@ -730,7 +636,6 @@ main{
                                 margin-right: 32px;
                                 margin-bottom: 16px;
                             }
-                        
                             @media screen and (max-width:800px) {
                                 width: calc(33% - 10.6666px);
                                 margin-right: 16px;
@@ -768,16 +673,13 @@ main{
             // 單個作品
             .project{
                 width: calc(50% - 30px);
-                // width: calc(33.333% - 30px);
-                // height: max-content;
-                // margin-right: 20px;
-                margin-bottom: 48px;
                 margin-bottom: 32px;
+
                 border-radius: 8px;
-                // overflow: hidden;
                 background-color: whitesmoke;
-                padding: 0px 16px;
                 box-shadow:-3px -3px 5px inset gainsboro ;
+
+                padding: 0px 16px;
                 @media screen and (max-width:1100px) {
                     width: calc(50% - 12px);
                 }
@@ -786,9 +688,10 @@ main{
                 }
                 @media screen and (max-width:720px) {
                     width: 60%;
+                    min-width: 350px;
+
                     margin: 0px auto;
                     margin-bottom: 16px;
-                    min-width: 350px;
                 }
                 @media screen and (max-width:550px) {
                     min-width: 320px;
@@ -796,7 +699,6 @@ main{
                 &:hover{
                     .project-pic{
                         img{
-                            // transform: scale(1.1);
                             transition: .4s ease-in-out;
                             transform: translateY(0px);
                             z-index: 910;
@@ -808,23 +710,22 @@ main{
                 .project-pic{
                     width: 100%;
                     height: max-content;
+
                     position: relative;
                     z-index: 5;
-                    // border-radius: 8px;
+
                     margin-bottom: 8px;
                     background-color: whitesmoke;
-                    // background-color: rgb(238, 238, 238);
                     clip-path: polygon(0% 0%, 100% 0, 100% 78%, 50% 100%, 0 78%);
+
                     padding: 0px 5px;
                     padding-top: 8px;
                     img{
                         width: 100%;
                         height: auto;
-                        // clip-path: polygon(0% 0%, 100% 0, 100% 78%, 50% 100%, 0 78%);
+
                         transform: translateY(16px);
                         box-shadow: 3px 3px 3px rgba(155, 155, 155, 0.425);
-
-                        // border-radius:8px ;
                         &:hover{
                             transition: .4s ease-in-out;
                             transform: translateY(0px);
@@ -836,28 +737,28 @@ main{
                 // 作品資訊
                 .project-information{
                     padding: 8px;
-                    background-color: whitesmoke;
                     padding-top: 24px;
-                    transform: translateY(-16px);
                     padding-bottom: 16px;
-                    border-radius: 0px 0px 8px 8px;
+
                     position: relative;
-                    
-                   
+                    transform: translateY(-16px);
+
+                    border-radius: 0px 0px 8px 8px;
+                    background-color: whitesmoke;
                     .demo{
                         width: 100%;
                         display: flex;
                         justify-content: center;
                         position: relative;
-                     
                         .demo-text{
                             margin: 0px auto;
-                            // margin-bottom: 24px;
-                            // margin-bottom: 8px;
+                         
                             padding: 1px 32px;
+
                             border-radius: 16px;
                             background-color: lightcoral;
-                             border: 2px solid lightcoral;
+                            border: 2px solid lightcoral;
+
                             color: white;
                             letter-spacing: 1px;
                             z-index: 99;
@@ -866,20 +767,23 @@ main{
                     .view-size{
                         font-size: 14px;
                         color: #646464;
+                        padding-bottom: 16px;
+
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        margin: 8px auto;
-                        padding-bottom: 16px;
-                        letter-spacing: .5px;
 
+                        margin: 8px auto;
+                        letter-spacing: .5px;
                     }
                     .project-name{
                         font-size: 20px;
                         font-weight: 600;
                         text-align: center;
+
                         margin-bottom: 8px;
                         padding-bottom: 8px;
+
                         border-bottom: 2px solid rgb(202, 202, 202);
                     }
                     .project-text{
@@ -914,6 +818,7 @@ main{
                             background-color: white;
                             border-radius: 16px;
                             margin-right: 5px;
+                            margin-bottom: 8px;
                             color: rgb(139, 139, 139);
                         }
                     }

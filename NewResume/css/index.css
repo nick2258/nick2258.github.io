@@ -92,6 +92,10 @@ nav .nav-scroll .nav-items {
   height: -moz-max-content;
   height: max-content;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,15 +103,9 @@ nav .nav-scroll .nav-items {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 nav .nav-scroll .nav-items .nav-item {
-  font-size: 48px;
-  font-weight: 600;
   margin-bottom: 32px;
   padding-bottom: 8px;
   position: relative;
@@ -117,12 +115,14 @@ nav .nav-scroll .nav-items .nav-item {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 48px;
+  font-weight: 600;
   color: #566370;
 }
 
 nav .nav-scroll .nav-items .nav-item::after {
-  width: 0px;
   content: " ";
+  width: 0px;
   position: absolute;
   bottom: 0px;
   left: 50%;
@@ -261,9 +261,9 @@ main .personal-information {
   main .personal-information .personal-pic {
     width: 180px;
     position: absolute;
-    z-index: 50;
     top: 0px;
     right: 0px;
+    z-index: 50;
   }
 }
 
@@ -482,11 +482,11 @@ main .part .about-content .all-about-text {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding: 32px 48px;
-  border-radius: 8px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  padding: 32px 48px;
+  border-radius: 8px;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -549,8 +549,8 @@ main .part .about-content .all-about-text .about-me-texts p {
   main .part .about-content .all-about-text .about-me-texts p {
     font-size: 14px;
     line-height: 20px;
-    padding: 8px;
     letter-spacing: 0.8px;
+    padding: 8px;
   }
 }
 
@@ -586,86 +586,6 @@ main .part .about-me-texts p br {
   display: block;
   content: " ";
   padding-top: 8px;
-}
-
-main .part .my-history-content ul {
-  padding: 0px 32px;
-  padding-top: 24px;
-}
-
-main .part .my-history-content ul li {
-  padding-top: 24px;
-}
-
-main .part .my-history-content ul li:nth-child(1) {
-  padding-top: 0px;
-}
-
-main .part .my-history-content ul li .small-title {
-  font-size: 24px;
-  padding: 0px 8px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid gainsboro;
-  font-weight: 600;
-}
-
-main .part .my-history-content ul li .small-content {
-  padding: 0px 8px;
-  position: relative;
-}
-
-main .part .my-history-content ul li .small-content::after {
-  content: " ";
-  width: 1px;
-  height: 100%;
-  background-color: aqua;
-  position: absolute;
-  left: 0px;
-}
-
-main .part .my-history-content ul li .small-content .small-text {
-  font-size: 18px;
-}
-
-main .part .my-history-content ul li .small-content .small-text br {
-  display: block;
-  content: " ";
-  padding-top: 8px;
-}
-
-main .part .my-history-content ul li .small-content .sub-title {
-  font-size: 20px;
-  font-weight: 600;
-  padding-left: 8px;
-  padding-left: 30px;
-  margin-top: 16px;
-  position: relative;
-}
-
-main .part .my-history-content ul li .small-content .sub-title::before {
-  content: " ";
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: aqua;
-  position: absolute;
-  left: 0px;
-}
-
-main .part .my-history-content ul li .small-content .date {
-  padding-top: 5px;
-  padding-left: 16px;
-  padding-left: 30px;
-  font-size: 16px;
-  color: #d1ae80;
-}
-
-main .part .my-history-content ul li .small-content .text {
-  margin-top: 8px;
-  padding-left: 16px;
-  padding-left: 30px;
-  font-size: 18px;
-  line-height: 36px;
 }
 
 main .part .my-history-content .all-history-content {
@@ -709,12 +629,12 @@ main .part .my-history-content .all-history-content .small-history-content {
 }
 
 main .part .my-history-content .all-history-content .small-history-content::before {
-  position: absolute;
-  top: 3px;
-  left: -11px;
   content: " ";
   width: 22px;
   height: 22px;
+  position: absolute;
+  top: 3px;
+  left: -11px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   background-color: #5793c4;
@@ -771,7 +691,6 @@ main .part .my-history-content .all-history-content .small-history-content .cont
 
 main .part .my-history-content .all-history-content .small-history-content .content .texts {
   margin: 0px;
-  padding: 0px;
   padding: 16px 0px;
   letter-spacing: 1px;
   line-height: 24px;
@@ -789,7 +708,6 @@ main .part .my-history-content .all-history-content .skill .skill-title {
   font-size: 32px;
   font-weight: 600;
   color: #a5572a;
-  padding-bottom: 8px;
   border-bottom: 1px  solid #383838;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -801,6 +719,7 @@ main .part .my-history-content .all-history-content .skill .skill-title {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 16px;
+  padding-bottom: 8px;
 }
 
 main .part .my-history-content .all-history-content .skill .skill-title .fa-tools {
@@ -919,13 +838,12 @@ main .part .project-contents a {
 
 main .part .project-contents .project {
   width: calc(50% - 30px);
-  margin-bottom: 48px;
   margin-bottom: 32px;
   border-radius: 8px;
   background-color: whitesmoke;
-  padding: 0px 16px;
   -webkit-box-shadow: -3px -3px 5px inset gainsboro;
           box-shadow: -3px -3px 5px inset gainsboro;
+  padding: 0px 16px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -943,9 +861,9 @@ main .part .project-contents .project {
 @media screen and (max-width: 720px) {
   main .part .project-contents .project {
     width: 60%;
+    min-width: 350px;
     margin: 0px auto;
     margin-bottom: 16px;
-    min-width: 350px;
   }
 }
 
@@ -999,13 +917,13 @@ main .part .project-contents .project .project-pic img:hover {
 
 main .part .project-contents .project .project-information {
   padding: 8px;
-  background-color: whitesmoke;
   padding-top: 24px;
+  padding-bottom: 16px;
+  position: relative;
   -webkit-transform: translateY(-16px);
           transform: translateY(-16px);
-  padding-bottom: 16px;
   border-radius: 0px 0px 8px 8px;
-  position: relative;
+  background-color: whitesmoke;
 }
 
 main .part .project-contents .project .project-information .demo {
@@ -1033,6 +951,7 @@ main .part .project-contents .project .project-information .demo .demo-text {
 main .part .project-contents .project .project-information .view-size {
   font-size: 14px;
   color: #646464;
+  padding-bottom: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1043,7 +962,6 @@ main .part .project-contents .project .project-information .view-size {
       -ms-flex-align: center;
           align-items: center;
   margin: 8px auto;
-  padding-bottom: 16px;
   letter-spacing: .5px;
 }
 
@@ -1110,6 +1028,7 @@ main .part .project-contents .project .project-information .project-tags .tag {
   background-color: white;
   border-radius: 16px;
   margin-right: 5px;
+  margin-bottom: 8px;
   color: #8b8b8b;
 }
 /*# sourceMappingURL=index.css.map */
