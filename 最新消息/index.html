@@ -7,6 +7,8 @@
     <title>觀光局最新消息內頁</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../../css/viewsize.css">
+
 <style>
     body{
         padding: 0px;
@@ -434,10 +436,12 @@
         padding: 5px 10px;     
     }
 </style>
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
 <body>
+    <div class="view-size">
+        <span>建議觀看尺寸為1500-1920px</span>
+    </div>
     <nav>
         <div class="navtop">
             <div class="container">
@@ -613,23 +617,23 @@
         </div>
     </footer>
 
-<script>
-    var navmiddle = document.querySelector(".navmiddle")
+    <script src="../../JS/viewsize.js"></script>
 
+    <script>
+        var navmiddle = document.querySelector(".navmiddle")
 
+        window.onscroll = function() {
+            myFunction()
+        };
 
-    window.onscroll = function() {
-        myFunction()
-    };
-
-    function myFunction() {
-        if (document.body.scrollTop > 74 || document.documentElement.scrollTop > 74) {
-            navmiddle.classList.add("fixed");
-        }else{
-            navmiddle.classList.remove("fixed");
+        function myFunction() {
+            if (document.body.scrollTop > 74 || document.documentElement.scrollTop > 74) {
+                navmiddle.classList.add("fixed");
+            }else{
+                navmiddle.classList.remove("fixed");
+            }
         }
-    }
-</script>
+    </script>
 
 </body>
 </html>

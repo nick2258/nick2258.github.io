@@ -1,0 +1,29 @@
+body {
+  position: relative;
+}
+
+.view-size {
+  width: 100%;
+  max-width: 1920px;
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(245, 245, 245, 0.801);
+  padding: 5px 0px;
+  z-index: 50;
+  color: #383838;
+  letter-spacing: 1.5px;
+}
+
+.view-size.hide {
+  display: none;
+}
+/*# sourceMappingURL=viewsize.css.map */

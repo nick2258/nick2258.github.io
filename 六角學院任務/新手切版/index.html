@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../../css/viewsize.css">
     <title>六角學院-切版任務1</title>
 </head>
 <body>
@@ -147,23 +148,7 @@
         </div>
     </main>
 
-    
+    <script src="../../JS/viewsize.js"></script>
 </body>
 
-<script>
-    var viewsize = document.querySelector('.viewsize')
-
-    let windowBottom = window.innerHeight
-  
-
-    function scroll() {
-        let windowTop = window.scrollY
-        if (windowTop > windowBottom) {
-            viewsize.classList.add("hide");
-        } else {
-            viewsize.classList.remove("hide");
-        }
-    }
-    window.addEventListener('scroll', scroll)
-</script>
 </html>

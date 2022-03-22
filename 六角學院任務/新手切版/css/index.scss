@@ -5,28 +5,28 @@ body{
     position: relative;
 }
 
-.view-size{
-    width: 100%;
-    max-width: 1920px;
-    position: fixed;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
+// .view-size{
+//     width: 100%;
+//     max-width: 1920px;
+//     position: fixed;
+//     bottom: 0px;
+//     left: 50%;
+//     transform: translateX(-50%);
 
-    display: flex;
-    justify-content: center;
+//     display: flex;
+//     justify-content: center;
 
-    background-color: rgba(245, 245, 245, 0.801);
-    padding: 5px 0px;
-    z-index: 50;
+//     background-color: rgba(245, 245, 245, 0.801);
+//     padding: 5px 0px;
+//     z-index: 50;
 
-    color: #383838;
-    letter-spacing: 1.5px;
-    display: none;
-    &.hide{
-        display: none;
-    }
-}
+//     color: #383838;
+//     letter-spacing: 1.5px;
+//     // display: none;
+//     &.hide{
+//         display: none;
+//     }
+// }
 
 *{
     box-sizing: border-box;
