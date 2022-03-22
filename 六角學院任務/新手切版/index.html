@@ -8,6 +8,9 @@
     <title>六角學院-切版任務1</title>
 </head>
 <body>
+    <div class="view-size">
+        <span>建議觀看尺寸為1280-1920px</span>
+    </div>
     <main>
         <!-- 標題 -->
         <h1 class="header container">Joanne <br> Chen</h1>
@@ -146,4 +149,21 @@
 
     
 </body>
+
+<script>
+    var viewsize = document.querySelector('.viewsize')
+
+    let windowBottom = window.innerHeight
+  
+
+    function scroll() {
+        let windowTop = window.scrollY
+        if (windowTop > windowBottom) {
+            viewsize.classList.add("hide");
+        } else {
+            viewsize.classList.remove("hide");
+        }
+    }
+    window.addEventListener('scroll', scroll)
+</script>
 </html>
