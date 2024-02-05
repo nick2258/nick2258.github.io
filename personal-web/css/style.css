@@ -92,7 +92,7 @@ a,img{
 /* about part */
 .about-section .about-mask{
     width: 100%;
-    background-image: url(/images/about-bg.jpg);
+    /* background-image: url(/images/about-bg.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -102,7 +102,7 @@ a,img{
     justify-content: center;
     align-items: center;
 
-    
+
 }
 
 .about-section .about-mask::after{
