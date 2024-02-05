@@ -101,6 +101,8 @@ a,img{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    
 }
 
 .about-section .about-mask::after{
