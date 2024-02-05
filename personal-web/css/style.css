@@ -481,6 +481,11 @@ i{
     .intro-items{
         padding: 0;
     }
+
+    .personal-info-section::after{
+        width: 200vw;
+        height: 100%;
+    }
 }
   
 @media (max-width: 600px) {
